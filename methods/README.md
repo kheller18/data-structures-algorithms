@@ -1249,6 +1249,7 @@ function contains(element) {
     hashmap.delete(<key>) // deletes the key/value pair that matches the key that is passed in as an argument
     hashmap.clear() // clears all elements from the hashmap
 
+    If you're dealing with functions that require counting with maps. Increment the value of the key every time if the key already exists and then add the value to the count.
   Hash Table Class (Simple Hash not great):
     Constructor:
       function HashTable() {
