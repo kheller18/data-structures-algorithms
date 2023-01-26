@@ -31,5 +31,5 @@ const expectedOutput = 2;
 if (output === expectedOutput) {
   console.log(`Success! You found ${output} arithmetic triplets`);
 } else {
-  console.log(`Unsuccessful. There are ${expectedOutput} arithmetic triplets.`)
+  console.log(`Unsuccessful. There are ${expectedOutput} arithmetic triplets.`);
 }
