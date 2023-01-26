@@ -7,8 +7,8 @@
 
 var checkIfPangram = function(sentence) {
     let map = new Map();
-    let tempSentence = sentence.split('')
-    tempSentence.forEach((letter, idx) => map.set(letter, idx))
+    let tempSentence = sentence.split('');
+    tempSentence.forEach((letter, idx) => map.set(letter, idx));
     if (map.size === 26) {
         return true;
     }
@@ -19,7 +19,7 @@ const output = checkIfPangram('thequickbrownfoxjumpsoverthelazydog');
 const expectedOutput = true;
 
 if (output === expectedOutput) {
-  console.log(`Success! String is a pangram.`)
+  console.log(`Success! String is a pangram.`);
 } else {
-  console.log(`String is not a pangram.`)
+  console.log(`String is not a pangram.`);
 }
