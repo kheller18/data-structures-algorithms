@@ -7,6 +7,8 @@
  * Each letter in message is then substituted using the table. Spaces ' ' are transformed to themselves.
  * For example, given key = "happy boy" (actual key would have at least one instance of each letter in the alphabet), we have the partial substitution table of ('h' -> 'a', 'a' -> 'b', 'p' -> 'c', 'y' -> 'd', 'b' -> 'e', 'o' -> 'f').
  * Return the decoded message.
+ * RUNTIME: 66 ms (beats 90%)
+ * MEMORY: 43.9 MB (beats 88.81%)
  */
 var decodeMessage = function(key, message) {
   const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
