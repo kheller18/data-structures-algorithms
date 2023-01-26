@@ -7,7 +7,10 @@
  * nums[j] - nums[i] == diff,
  * nums[k] - nums[j] == diff.
  * Return the number of unique arithmetic triplets.
+ * RUNTIME: 84 ms (beats 56.38%)
+ * MEMORY: 42.8 MB (beats 11.7%)
  */
+
 var arithmeticTriplets = function(nums, diff) {
   let map = new Map();
   let count = 0;

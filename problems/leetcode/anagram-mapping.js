@@ -10,11 +10,11 @@
 var anagramMappings = function(nums1, nums2) {
   let map = new Map();
   nums2.forEach((num, idx) => map.set(num, idx));
-  return nums1.map(num => map.get(num))
+  return nums1.map(num => map.get(num));
 };
 
 let output = anagramMappings([12,28,46,32,50], [50,12,32,46,28]);
 let expectedOutput = [1,4,3,2,0];
 
-console.log(`Your output: ${output}.`)
-console.log(`Expected ouput: ${expectedOutput}.`)
+console.log(`Your output: ${output}.`);
+console.log(`Expected ouput: ${expectedOutput}.`);
