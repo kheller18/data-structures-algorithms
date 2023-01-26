@@ -31,7 +31,7 @@ let output = uniqueOccurrences([1,2,2,1,1,3]);
 let expectedOutput = true;
 
 if (output === expectedOutput) {
-  console.log(`Each occurrence is unique!`)
+  console.log(`Each occurrence is unique!`);
 } else {
-  console.log('Each occurrence is not unique')
+  console.log('Each occurrence is not unique');
 }
