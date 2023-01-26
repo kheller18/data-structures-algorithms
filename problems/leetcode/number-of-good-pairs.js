@@ -23,7 +23,7 @@ let output = numIdenticalPairs([1,2,3,1,1,3]);
 let expectedOutput = 4;
 
 if (output === expectedOutput) {
-  console.log(`Success! Found ${output}/${expectedOutput} pairs.`)
+  console.log(`Success! Found ${output}/${expectedOutput} pairs.`);
 } else {
-  console.log(`Incorrect number of pairs found. Expected ${expectedOutput}.`)
+  console.log(`Incorrect number of pairs found. Expected ${expectedOutput}.`);
 }
