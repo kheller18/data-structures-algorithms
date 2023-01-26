@@ -37,5 +37,5 @@ let expectedOutput = 'this is a secret';
 if (output === expectedOutput) {
   console.log('Message decoded successfully.');
 } else {
-  console.log('Message unsuccessfully decoded.')
+  console.log('Message unsuccessfully decoded.');
 }
