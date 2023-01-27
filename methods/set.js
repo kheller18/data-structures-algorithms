@@ -20,7 +20,7 @@ function add(data) {
   }
 }
 
-// remove function. first check to see if the requested data is in the array. If it is, we cal the splice function to remove it and return true. If it's not there, return false.
+// remove function. first check to see if the requested data is in the array. If it is, we call the splice function to remove it and return true. If it's not there, return false.
 function remove (data) {
   var pos = this.dataStore.indexOf(data);
   if (pos > -1) {
