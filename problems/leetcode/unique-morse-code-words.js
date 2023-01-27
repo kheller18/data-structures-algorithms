@@ -11,30 +11,29 @@
  */
 var uniqueMorseRepresentations = function(words) {
   let map = new Map();
-  const a = "abcdefghijklmnopqrstuvwxyz";
   let code = {a:".-",b:"-...",c:"-.-.",d:"-..",e:".",f:"..-.",g:"--.",h:"....",i:"..",j:".---",k:"-.-",l:".-..",m:"--",n:"-.",o:"---",p:".--.",q:"--.-",r:".-.",s:"...",t:"-",u:"..-",v:"...-",w:".--",x:"-..-",y:"-.--",z:"--.."};
 
   words.map((word) => {
-      let ret = ''
+      let ret = '';
       word.split('').map((letter) => {
-          ret += code[letter]
+          ret += code[letter];
       })
-      let temp = map.get(ret)
+      let temp = map.get(ret);
       if (!temp) {
-          map.set(ret, 1)
+          map.set(ret, 1);
       } else {
-          map.set(ret, temp + 1)
+          map.set(ret, temp + 1);
       }
   })
 
-  return map.size
+  return map.size;
 }
 
 const output = uniqueMorseRepresentations(["gin","zen","gig","msg"]);
 const expectedOutput = 2;
 
 if (output === expectedOutput) {
-  console.log(`Success, you found ${output}.`)
+  console.log(`Success, you found ${output}.`);
 } else {
-  console.log(`Unsuccessful. The output should be ${expectedOutput}.`)
+  console.log(`Unsuccessful. The output should be ${expectedOutput}.`);
 }
