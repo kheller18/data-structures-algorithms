@@ -23,7 +23,7 @@ let output = differenceOfSum([1,15,6,3]);
 let expectedOutput = 9;
 
 if (output === expectedOutput) {
-  console.log(`Success! Found ${output} for maximum value.`)
+  console.log(`Success! Found ${output} for maximum value.`);
 } else {
-  console.log(`Incorrect. Maximum value should be ${expectedOutput}.`)
+  console.log(`Incorrect. Maximum value should be ${expectedOutput}.`);
 }
