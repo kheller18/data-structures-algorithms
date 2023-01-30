@@ -22,7 +22,7 @@ const output = maximumWealth([[1,2,3],[3,2,1]]);
 const expectedOutput = 6;
 
 if (output === expectedOutput) {
-  console.log(`Success! Found ${output} for maximum value.`)
+  console.log(`Success! Found ${output} for maximum value.`);
 } else {
-  console.log(`Incorrect. Maximum value should be ${expectedOutput}.`)
+  console.log(`Incorrect. Maximum value should be ${expectedOutput}.`);
 }
