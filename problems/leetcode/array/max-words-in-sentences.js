@@ -6,7 +6,7 @@
  * RUNTIME: 65 ms (beats 84.56%)
  * MEMORY: 44.4 MB (beats 20.41%)
  */
-var mostWordsFound = function(sentences) {
+const mostWordsFound = function(sentences) {
   let max = 0;
 
   sentences.forEach((sentence) => {

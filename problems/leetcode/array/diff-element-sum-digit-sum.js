@@ -6,7 +6,7 @@
  * RUNTIME: 63 ms (beats 94.68%);
  * MEMORY: 46.6 MB (beats 27.2%);
  */
-var differenceOfSum = function(nums) {
+const differenceOfSum = function(nums) {
   let digitSum = 0;
   let elementSum = 0;
 

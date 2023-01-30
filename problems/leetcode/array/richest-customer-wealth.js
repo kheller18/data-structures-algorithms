@@ -9,7 +9,7 @@
  * RUNTIME: 51 ms (beats 98.93%)
  * MEMORY: 42.1 MB (beats 52.92%)
  */
-var maximumWealth = function(accounts) {
+const maximumWealth = function(accounts) {
   let maxReturn = 0;
   accounts.forEach((account) => {
       const max = account.reduce((accumulator, currentValue) => accumulator + currentValue, 0);

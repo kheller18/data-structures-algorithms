@@ -11,7 +11,7 @@
  * MEMORY: 45.3 MB (beats. 84%)
  */
 
-var buildArray = function(nums) {
+const buildArray = function(nums) {
   return nums.map((num, idx) => (nums[nums[idx]]));
 };
 

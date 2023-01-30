@@ -8,7 +8,7 @@
  * RUNTIME: 72 ms (beats 57.7%)
  * MEMORY: 41.9 MB (beats 86.55%)
  */
-var kidsWithCandies = function(candies, extraCandies) {
+const kidsWithCandies = function(candies, extraCandies) {
   let tempArr = [...candies];
   let sort = tempArr.sort((a, b) => a - b);
   let max = sort[sort.length - 1];

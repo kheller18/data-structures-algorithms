@@ -7,7 +7,7 @@
  * RUNTIME: 80 ms (beats 40.53%)
  * MEMORY: 42.5 MB (beats 46.59%)
  */
-var finalValueAfterOperations = function(operations) {
+const finalValueAfterOperations = function(operations) {
   let X = 0;
   operations.forEach((oper) => {
       (oper[1] === '+') ? X++ : X--

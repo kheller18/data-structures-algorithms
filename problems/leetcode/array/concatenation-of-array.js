@@ -9,7 +9,7 @@
  * RUNTIME: 71 ms (beats 95.74%)
  * MEMORY: 44.5 MB (beats 94.6%)
  */
-var getConcatenation = function(nums) {
+const getConcatenation = function(nums) {
   let ans = nums;
   nums.forEach((num) => {
       ans.push(num);
