@@ -27,7 +27,7 @@ let output = digitAnagrams([25,35,872,228,53,278,872]);
 let expectedOutput = 4;
 
 if (output === expectedOutput) {
-  console.log('Success!')
+  console.log('Success!');
 } else {
-  console.log(`Unsuccessful ${output}`)
+  console.log(`Unsuccessful ${output}`);
 }
