@@ -18,3 +18,15 @@ Data Structures:
 + Stack - list of elements that are accessible only from one end of the list, which is the top. Stack is known as a last-in, first-out (LIFO) data structure. Because of the last in, first-out nature of the stack, any element that is not currently at the top of the stack cannot be accessed, you have to dispose of the elements above it first.
 + Queue - type of list where data are inserted at the end and are removed from the front. Example of First-In, First Out (FIFO) data strucutre. Good example of a queue is to model scenarios such as customers standing in the line at a bank or a grocery store.
 + Linked Lists - collection of objects called nodes. Each node is linked to a successor node in the list using an object reference. The reference to another node is called a link. While array elements are referenced by their position, linked list elements are referenced by their relationship to the other elements in the linked list. We mark the end of the linked list with the "null" node. We mark the beginning of a linked list with the "head" node.
++ Doubly Linked Lists - gain efficiency vs a single linked list for removal purposes because we no longer have to search for the node.
++ Circularly Linked Lists - similar to singular linked lists. Except its head nodes "next" property points back to itself (head.next = head). Every new node has its "next" property pointing to the head of the list. This is why it's circular in nature. The reason you would create this is to move backward through a linked list without having to define the doubly part.
++ Dictionary (Object) - data strucutre that stores data as key-value pairs. The basis of this class is an Object, but using Array access notation, since objects in Javascript are associative arrays. This allows us to dynamically add key value pairs, and use Array functionality such as sorting, but at the same time, allowing us to have string keys rather than just numeric.
++ Hashmap - data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure.
++ Set - collection of unique elements. These elements are called members.
+  + Members are unordered
+  + Members cannot occur more than once
+  + Built around an array
+  + Operations:
+    + Union: a new is obtained by combining the members of one set with the members of another set
+    + Intersection: a new set is obtained by adding all the members of one set that also exist in a second set
+    + Difference: a new set is obtained by adding all the memebers of one set except those that also exist in the second set

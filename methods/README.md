@@ -1237,9 +1237,9 @@ function contains(element) {
         Raymond -> 123
 
 <!-- Chapter 8 Data Strucutres and Algorithms Hashing -->
-  Hashing: common technique for storing data in such a way that the data can be inserted and retrieved quickly. Uses a "has table". Although it's fast for insertion, deletion and retrieval, they perform poorly for operations that involve searching, such as finding the minimum and maximum values in a data set. For these operations, other data strcuutres such as the binary search tree are more appropriate.
+  Hashing: common technique for storing data in such a way that the data can be inserted and retrieved quickly. Uses a "hash table". Although it's fast for insertion, deletion and retrieval, they perform poorly for operations that involve searching, such as finding the minimum and maximum values in a data set. For these operations, other data strcuutres such as the binary search tree are more appropriate.
 
-  Hash-Table data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure. to store a piece of data in a hash table, the key is mapped into a number in the range of 0 through the hash table size, using a hash function. Ideally, ht ehash function stores each key in its own array element. It's good practice to try and distribute the keys as evenly as possible among the elements of the array. It's possible for two keys to hash(the result of the hash function) to the same value. This is called a collision. There are strategies to handle this. The last thing we have to determine is how large an array to create. it should be a prime number.
+  Hash-Table data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure. to store a piece of data in a hash table, the key is mapped into a number in the range of 0 through the hash table size, using a hash function. Ideally, the hash function stores each key in its own array element. It's good practice to try and distribute the keys as evenly as possible among the elements of the array. It's possible for two keys to hash(the result of the hash function) to the same value. This is called a collision. There are strategies to handle this. The last thing we have to determine is how large an array to create. it should be a prime number.
 
   Hash functions:
     hashmap.size() // returns # of elements
@@ -1497,11 +1497,11 @@ function contains(element) {
     Definitions:
       empty set: set containing no members
       equal: two sets contain exactly the same members
-      subset: all memebers of the first set are contained in the second set
+      subset: all members of the first set are contained in the second set
 
     Operations:
       1. Union: a new is obtained by combining the members of one set with the members of another set
-      2. Intersection:  anew set is obtained by adding all the members of one set that also exist in a second set
+      2. Intersection: a new set is obtained by adding all the members of one set that also exist in a second set
       3. Difference: a new set is obtained by adding all the memebers of one set except those that also exist in the second set
 
     Class Implementation: built around an array for storing the data.
