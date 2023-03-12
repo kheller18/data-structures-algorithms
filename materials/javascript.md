@@ -46,4 +46,4 @@ Data Structures:
   + Levels: tree can be broken into levels. The root node is at level 0, it's children at 1, and their children at level 2 and so on.
   + Subtree: consists of the root node's chilren, it's children's children and so on.
   + Key-Value: each node in a tree has a value associated with it
-  + Child Nodes: referred to as "left" and "right"
+  + Child Nodes: referred to as "left" and "right".
