@@ -663,7 +663,7 @@ function contains(element) {
   Using the Stack Class:
     Multiple Base Conversions (only works with converting a number to any of the bases 2 through 9): stack can be used to convert a number from one base to another base. Given a number, n, which we want to convert to a base, b, there is an algorithm for performing the conversion.
     STEPS:
-      1. The rightmost digit of n is n % b. PUsh this digit onto the stack.
+      1. The rightmost digit of n is n % b. Push this digit onto the stack.
       2. Replace n with n/b.
       3. Repeat steps 1 and 2 until n = 0 and there are no significant digits remaining.
       4. Build the converted number string by popping the stack until the stack is empty.
