@@ -1612,16 +1612,16 @@ function contains(element) {
   Trees: commonly used data structure in computer science. Non linear data structure used to store data in a herarchical manner. Examples include files in a file system or storing sorted lists of data. Binary trees are chosen over more primary data structures because you can search a binary tree very quickly (as opposed to a link list) and you can quickly insert and delete data from a binary tree (as opposed to an array). A tree is made up of a set of nodes connected by edges (example is an org shot). each box is a node and the lines connecting the boxes are edges. The nodes represent the positions that make up an organization, and the edges represent the relationships between those positions.
     root node: top node of a tree.
     parent node: If a node is connected to other nodes below it, the preceding node is called the parent node
-    child nodes (referred to as "left" and "right"): nodes following the parent node A node cna have zero, one or more child nodes connected to it
+    child nodes (referred to as "left" and "right"): nodes following the parent node A node can have zero, one or more child nodes connected to it
     leaf node: a node without any children
 
     Binary Trees: restrict the number of child nodes to no more than two.
       Path: the series of edges you follow to get from one node to another node.
       Tree traversal: visiting all the nodes in a tree in some particular order
-      levels: tree can be broken into levels. The root node is at level 0, it's children at 1, and their children at level 2 and so on.
-      subtree: consists of the root node's chilren, it's children's children and so on.
-      key value: each node in a tree has a value associated with it
-      child nodes: referred to as "left" and "right"
+      Levels: tree can be broken into levels. The root node is at level 0, it's children at 1, and their children at level 2 and so on.
+      Subtree: consists of the root node's chilren, it's children's children and so on.
+      Key-Value: each node in a tree has a value associated with it
+      Child Nodes: referred to as "left" and "right"
 
       Binary Search Tree: binary tree in which data with lesser values are stored in left nodes and data with greater values are stored in right nodes
         // Node class
