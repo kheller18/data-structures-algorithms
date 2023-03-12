@@ -393,7 +393,7 @@ Arrays: most common data structure in computer programming. Standardly defined a
       4, 4
       12, -3
 
-  Arrays in Objects: common to use arrays to store complex data in an object. Many data strucutrees are implemented as class objects with an underlying array used to store data. Example below is for storing weekly highs.
+  Arrays in Objects: common to use arrays to store complex data in an object. Many data structures are implemented as class objects with an underlying array used to store data. Example below is for storing weekly highs.
     function weekTemps() {
       this.dataStore = [];
       this.add = add;
