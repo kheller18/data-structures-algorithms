@@ -22,10 +22,15 @@ Data Structures:
 + Circularly Linked Lists - similar to singular linked lists. Except its head nodes "next" property points back to itself (head.next = head). Every new node has its "next" property pointing to the head of the list. This is why it's circular in nature. The reason you would create this is to move backward through a linked list without having to define the doubly part.
 + Dictionary (Object) - data strucutre that stores data as key-value pairs. The basis of this class is an Object, but using Array access notation, since objects in Javascript are associative arrays. This allows us to dynamically add key value pairs, and use Array functionality such as sorting, but at the same time, allowing us to have string keys rather than just numeric.
 + Hashmap - data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure.
+  + Instance
+    + let map = new Map()
+
 + Set - collection of unique elements. These elements are called members.
   + Members are unordered
   + Members cannot occur more than once
   + Built around an array
+  + Instance:
+    + let set = new Set()
   + Operations:
     + Union: a new is obtained by combining the members of one set with the members of another set
     + Intersection: a new set is obtained by adding all the members of one set that also exist in a second set
