@@ -13,7 +13,11 @@ Non-Primative Data Types (can store multiple values):
 
 Data Structures:
 + Objects - a standalone entity, with properties and type.
+  + Instance:
+    + const obj = new Object();
 + Arrays - linear collection of elements, which can be accessed via indices.
+  + Instance:
+    + const array = new Array();
 + Lists (Abstract Data Type) - can be any data type. Creates a class. Each item in a list is called an element.
 + Stack - list of elements that are accessible only from one end of the list, which is the top. Stack is known as a last-in, first-out (LIFO) data structure. Because of the last in, first-out nature of the stack, any element that is not currently at the top of the stack cannot be accessed, you have to dispose of the elements above it first.
 + Queue - type of list where data are inserted at the end and are removed from the front. Example of First-In, First Out (FIFO) data strucutre. Good example of a queue is to model scenarios such as customers standing in the line at a bank or a grocery store.
