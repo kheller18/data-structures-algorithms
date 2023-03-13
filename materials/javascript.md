@@ -19,6 +19,16 @@ Data Structures:
   + Instance:
     + const array = new Array();
 + Lists (Abstract Data Type) - can be any data type. Creates a class. Each item in a list is called an element.
+  + Instance:
+    + Create list class with methods and call with:
+      + let queue = new Queue();
+  + Methods:
+    + enqueue: To add elements at end of the queue.
+    + dequeue: To remove an element from the front of the queue.
+    + peek: To get the front element without removing it.
+    + isEmpty: To check whether an element is present in the queue or not.
+    + printQueue: To print the elements present in queue.
+
 + Stack - list of elements that are accessible only from one end of the list, which is the top. Stack is known as a last-in, first-out (LIFO) data structure. Because of the last in, first-out nature of the stack, any element that is not currently at the top of the stack cannot be accessed, you have to dispose of the elements above it first.
 + Queue - type of list where data are inserted at the end and are removed from the front. Example of First-In, First Out (FIFO) data strucutre. Good example of a queue is to model scenarios such as customers standing in the line at a bank or a grocery store.
 + Linked Lists - collection of objects called nodes. Each node is linked to a successor node in the list using an object reference. The reference to another node is called a link. While array elements are referenced by their position, linked list elements are referenced by their relationship to the other elements in the linked list. We mark the end of the linked list with the "null" node. We mark the beginning of a linked list with the "head" node.
