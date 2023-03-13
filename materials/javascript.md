@@ -135,4 +135,23 @@ Built-In Helper Classes:
       + UTC(): Return the number of milliseconds in a Date object since January 1, 1970, 00:00:00, universal time.
       + valueOf(): Get the number of milliseconds between 1 January 1970 00:00:00 UTC and the given date.
   + Math:
+    + Methods:
+      + abs(x):	Absolute value of x
+      + acos(x): Arccosine of x, in radian
+      + asin(x): Arcsine of x, in radian
+      + atan(x): Arctangent of x, a numeric value between -PI/2 and PI/2 radian
+      + atan2(y, x): Arctangent of the quotient of its arguments
+      + ceil(x): Value of x rounded up to the nearest integer
+      + cos(x):	Cosine of x (x in radians)
+      + exp(): Value of E^x
+      + floor(): Value of x rounded below to the nearest integer
+      + log(): Natural logarithm (base E) of x
+      + max(a, b, …):	Highest value
+      + min(a, b, …):	Lowest value
+      + pow(x, y): Value of x to power of y
+      + random():	Random number between 0 and 1
+      + round(x):	Value of x rounded to the nearest integer
+      + sin(x):	Sine of x (x in radians)
+      + sqrt(x): Square root of x
+      + tan(x):	Tangent of angle
   + Boolean:
