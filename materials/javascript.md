@@ -178,3 +178,25 @@ Built-In Helper Classes:
       + tan(x):	Tangent of angle
 
   + Boolean:
+    + Methods:
+      + toString():	Return a string either “true” or “false” depending upon the value of the specified boolean object
+      + valueOf(): Return a boolean value either “true” or “false” depending upon the value of the specified boolean object
+
+  + DataView:
+    + Methods:
+      + getFloat32():	Get a 32-bit float at the specified location
+      + getFloat64():	Get a 64-bit float at the specified location
+      + getInt8(): Get an 8-bit integer in the byte at the specified location
+      + getInt16():	Get a 16-bit integer at the specified location
+      + getInt32():	Get a 32-bit integer at the specified location
+      + getUint8():	Get an unsigned 8-bit integer at the specified location
+      + getUint16(): Get an unsigned 16-bit integer at the specified location
+      + getUint32(): Get an unsigned 32-bit integer at the specified location
+      + setFloat32():	Get an assigned 32-bit float value at the specified location
+      + setFloat64():	Get an assigned 64-bit float value at the specified location;
+      + setInt8(): Get an signed 8-bit integer at the specified location
+      + setInt16():	Get an assigned 16-bit integers at the specified location
+      + setInt32():	Get an assigned 32-bit integers at the specified location
+      + setUint8():	Get an unsigned 8-bit integer at the specified location
+      + setUint16(): Get an unsigned 16-bit integer at the specified location
+      + setUint32(): Get an unsigned 32-bit integer at the specified location
