@@ -85,6 +85,27 @@ Data Structures:
 
 Built-In Helper Classes:
   + String:
+    + Methods:
+      + length(): This property returns the number of characters present in the string. In the case of an array, this property returns the number of elements present in the array.
+      + indexOf(): This method returns the index of the last occurrence of a specified value in a string, or -1 if the value is not found.
+      + lastIndexOf(): This method returns the index of the last occurrence of a specified value in a string, or -1 if the value is not found.
+      + slice(startIndex, endIndex): This method extracts a part of the string based on the given starting-index and ending-index and returns a new string.
+      + substring(startIndex, endIndex): This method returns the part of the given string from the start index to the end index. Indexing start from zero (0).
+      + substr(start, length): This method returns the specified number of characters from the specified index from the given string. It basically extracts a part of the original string.
+      + replace(replaceValue, replaceValueWith): This method replaces a part of the given string with another string or a regular expression. The original string will remain unchanged.
+      + replaceAll(regexp | substr, newSubstr | function): This method returns a new string after replacing all the matches of a string with a specified string or a regular expression. The original string is left unchanged after this operation.
+      + toUpperCase(stringVariable): This method returns a new string after replacing all the matches of a string with a specified string or a regular expression. The original string is left unchanged after this operation.
+      + toLowerCase(stringVariable): This method converts all the characters present in the so lowercase and returns a new string with all the characters in lowercase.
+      + concat(objectOfString): This method combines the text of two strings and returns a new combined or joined string. To concatenate two strings, we use concat() method on one object of string and send another object of string as a parameter. This method accepts one argument. The variable contains text in double quotes or single quotes.
+      + trim(): This method is used to remove either white spaces from the given string. This method returns a new string with removed white spaces. This method is called on a String object. This method doesn’t accept any parameter.
+      + trimStart(): This method removes whitespace from the beginning of a string. The value of the string is not modified in any manner, including any whitespace present after the string.
+      + trimEnd(): This method removes white space from the end of a string. The value of the string is not modified in any manner, including any white-space present before the string.
+      + padStart(): This method pad a string with another string until it reaches the given length. The padding is applied from the left end of the string.
+      + padEnd(): This method pad a string with another string until it reaches the given length. The padding is applied from the right end of the string.
+      + charAt(indexOfCharacter): This method returns the character at the specified index. String in JavaScript has zero-based indexing.
+      + charCodeAt(indexOfCharacter): This method returns a number that represents the Unicode value of the character at the specified index. This method accepts one argument.
+      + split(character): This method splits the string into an array of sub-strings. This method returns an array. This method accepts a single parameter character on which you want to split the string.
+
   + Date:
     + Instance:
       + let date = new Date();
@@ -134,6 +155,7 @@ Built-In Helper Classes:
       + toUTCString(): Convert the given date object’s contents into a string according to the universal time zone UTC.
       + UTC(): Return the number of milliseconds in a Date object since January 1, 1970, 00:00:00, universal time.
       + valueOf(): Get the number of milliseconds between 1 January 1970 00:00:00 UTC and the given date.
+
   + Math:
     + Methods:
       + abs(x):	Absolute value of x
@@ -154,4 +176,5 @@ Built-In Helper Classes:
       + sin(x):	Sine of x (x in radians)
       + sqrt(x): Square root of x
       + tan(x):	Tangent of angle
+
   + Boolean:
