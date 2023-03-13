@@ -1,13 +1,13 @@
 JavaScript, created by Brendan Eich in 1995, is one of the most widely used web development languages. It was designed to build dynamic web pages at first. A script is a JS program that may be added to the HTML of any web page. When the page loads, these scripts execute automatically.
 
 Primitive Data Types (stores one value):
-+ String - It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.
-+ Number - It represents a number and can be written with or without decimals.
-+ BigInt - This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.
-+ Boolean - It represents a logical entity and can have only two values : true or false. Booleans are generally used for conditional testing.
-+ Undefined - When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.
-+ Null - It represents a non-existent or a invalid value.
-+ Symbol - It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
+  + String - It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.
+  + Number - It represents a number and can be written with or without decimals.
+  + BigInt - This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.
+  + Boolean - It represents a logical entity and can have only two values : true or false. Booleans are generally used for conditional testing.
+  + Undefined - When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.
+  + Null - It represents a non-existent or a invalid value.
+  + Symbol - It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
 
 Non-Primative Data Types (can store multiple values):
 
@@ -15,6 +15,28 @@ Data Structures:
   + Objects - a standalone entity, with properties and type.
     + Instance (built in):
       + const obj = new Object();
+    + Methods:
+      + Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
+      + Object.create(): Creates a new object with the specified prototype object and properties.
+      + Object.defineProperty(): Adds the named property described by a given descriptor to an object.
+      + Object.defineProperties(): Adds the named properties described by the given descriptors to an object.
+      + Object.entries(): Returns an array containing all of the [key, value] pairs of a given object's own enumerable string properties.
+      + Object.freeze(): Freezes an object. Other code cannot delete or change its properties.
+      + Object.fromEntries(): Returns a new object from an iterable of [key, value] pairs. (This is the reverse of Object.entries).
+      + Object.getOwnPropertyDescriptor(): Returns a property descriptor for a named property on an object.
+      + Object.getOwnPropertyDescriptors(): Returns an object containing all own property descriptors for an object.
+      + Object.getOwnPropertyNames(): Returns an array containing the names of all of the given object's own enumerable and non-enumerable properties.
+      + Object.getOwnPropertySymbols(): Returns an array of all symbol properties found directly upon a given object.
+      + Object.getPrototypeOf(): Returns the prototype (internal [[Prototype]] property) of the specified object.
+      + Object.is(): Compares if two values are the same value. Equates all NaN values (which differs from both IsLooselyEqual used by == and IsStrictlyEqual used by ===).
+      + Object.isExtensible(): Determines if extending of an object is allowed.
+      + Object.isFrozen(): Determines if an object was frozen.
+      + Object.isSealed(): Determines if an object is sealed.
+      + Object.keys(): Returns an array containing the names of all of the given object's own enumerable string properties.
+      + Object.preventExtensions(): Prevents any extensions of an object.
+      + Object.seal(): Prevents other code from deleting properties of an object.
+      + Object.setPrototypeOf(): Sets the object's prototype (its internal [[Prototype]] property).
+      + Object.values(): Returns an array containing the values that correspond to all of a given object's own enumerable string properties.
 
   + Arrays - linear collection of elements, which can be accessed via indices.
     + Instance (built in):
