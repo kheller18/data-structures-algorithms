@@ -95,6 +95,17 @@ Data Structures:
     + Built around an array
     + Instance:
       + let set = new Set();
+    + Properties:
+      + Set.size(): Returns the number of values in the Set object.
+    + Methods:
+      + add(): Adds a new element to the Set
+      + delete():	Removes an element from a Set
+      + has(): Returns true if a value exists
+      + clear(): Removes all elements from a Set
+      + forEach(): Invokes a callback for each element
+      + values():	Returns an Iterator with all the values in a Set
+      + keys():	Same as values()
+      + entries(): ∂Returns an Iterator with the [value,value] pairs from a Set
     + Operations:
       + Union: a new is obtained by combining the members of one set with the members of another set
       + Intersection: a new set is obtained by adding all the members of one set that also exist in a second set
