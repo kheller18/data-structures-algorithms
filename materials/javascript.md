@@ -12,73 +12,127 @@ Primitive Data Types (stores one value):
 Non-Primative Data Types (can store multiple values):
 
 Data Structures:
-+ Objects - a standalone entity, with properties and type.
-  + Instance (built in):
-    + const obj = new Object();
+  + Objects - a standalone entity, with properties and type.
+    + Instance (built in):
+      + const obj = new Object();
 
-+ Arrays - linear collection of elements, which can be accessed via indices.
-  + Instance (built in):
-    + const array = new Array();
+  + Arrays - linear collection of elements, which can be accessed via indices.
+    + Instance (built in):
+      + const array = new Array();
 
-+ Lists (Abstract Data Type, array) - can be any data type. Creates a class. Each item in a list is called an element.
-  + Instance (built in if array):
-    + const list = new Array();
+  + Lists (Abstract Data Type, array) - can be any data type. Creates a class. Each item in a list is called an element.
+    + Instance (built in if array):
+      + const list = new Array();
 
-+ Stack - list of elements that are accessible only from one end of the list, which is the top. Stack is known as a last-in, first-out (LIFO) data structure. Because of the last in, first-out nature of the stack, any element that is not currently at the top of the stack cannot be accessed, you have to dispose of the elements above it first.
-  + Instance: create the stack class and then call:
-    + let stack = new Stack();
+  + Stack - list of elements that are accessible only from one end of the list, which is the top. Stack is known as a last-in, first-out (LIFO) data structure. Because of the last in, first-out nature of the stack, any element that is not currently at the top of the stack cannot be accessed, you have to dispose of the elements above it first.
+    + Instance: create the stack class and then call:
+      + let stack = new Stack();
 
-+ Queue - type of list where data are inserted at the end and are removed from the front. Example of First-In, First Out (FIFO) data strucutre. Good example of a queue is to model scenarios such as customers standing in the line at a bank or a grocery store.
-  + Instance:
-    + Create list class with methods and call with:
-      + let queue = new Queue();
-  + Methods:
-    + enqueue: To add elements at end of the queue.
-    + dequeue: To remove an element from the front of the queue.
-    + peek: To get the front element without removing it.
-    + isEmpty: To check whether an element is present in the queue or not.
-    + printQueue: To print the elements present in queue.
+  + Queue - type of list where data are inserted at the end and are removed from the front. Example of First-In, First Out (FIFO) data strucutre. Good example of a queue is to model scenarios such as customers standing in the line at a bank or a grocery store.
+    + Instance:
+      + Create list class with methods and call with:
+        + let queue = new Queue();
+    + Methods:
+      + enqueue: To add elements at end of the queue.
+      + dequeue: To remove an element from the front of the queue.
+      + peek: To get the front element without removing it.
+      + isEmpty: To check whether an element is present in the queue or not.
+      + printQueue: To print the elements present in queue.
 
-+ Linked Lists - collection of objects called nodes. Each node is linked to a successor node in the list using an object reference. The reference to another node is called a link. While array elements are referenced by their position, linked list elements are referenced by their relationship to the other elements in the linked list. We mark the end of the linked list with the "null" node. We mark the beginning of a linked list with the "head" node.
-  + Instance:
-    + Create Node Class
-    + Create Linked List Class
+  + Linked Lists - collection of objects called nodes. Each node is linked to a successor node in the list using an object reference. The reference to another node is called a link. While array elements are referenced by their position, linked list elements are referenced by their relationship to the other elements in the linked list. We mark the end of the linked list with the "null" node. We mark the beginning of a linked list with the "head" node.
+    + Instance:
+      + Create Node Class
+      + Create Linked List Class
 
-+ Doubly Linked Lists - gain efficiency vs a single linked list for removal purposes because we no longer have to search for the node.
-  + Instance:
-    + Create Node Class
-    + Create Linked List Class
+  + Doubly Linked Lists - gain efficiency vs a single linked list for removal purposes because we no longer have to search for the node.
+    + Instance:
+      + Create Node Class
+      + Create Linked List Class
 
-+ Circularly Linked Lists - similar to singular linked lists. Except its head nodes "next" property points back to itself (head.next = head). Every new node has its "next" property pointing to the head of the list. This is why it's circular in nature. The reason you would create this is to move backward through a linked list without having to define the doubly part.
+  + Circularly Linked Lists - similar to singular linked lists. Except its head nodes "next" property points back to itself (head.next = head). Every new node has its "next" property pointing to the head of the list. This is why it's circular in nature. The reason you would create this is to move backward through a linked list without having to define the doubly part.
 
-+ Dictionary (Object) - data strucutre that stores data as key-value pairs. The basis of this class is an Object, but using Array access notation, since objects in Javascript are associative arrays. This allows us to dynamically add key value pairs, and use Array functionality such as sorting, but at the same time, allowing us to have string keys rather than just numeric.
-  + Instance
-    + let obj = new Object();
+  + Dictionary (Object) - data strucutre that stores data as key-value pairs. The basis of this class is an Object, but using Array access notation, since objects in Javascript are associative arrays. This allows us to dynamically add key value pairs, and use Array functionality such as sorting, but at the same time, allowing us to have string keys rather than just numeric.
+    + Instance
+      + let obj = new Object();
 
-+ Hashmap (Map) - data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure.
-  + Instance
-    + let map = new Map();
+  + Hashmap (Map) - data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure.
+    + Instance
+      + let map = new Map();
 
-+ Set - collection of unique elements. These elements are called members.
-  + Members are unordered
-  + Members cannot occur more than once
-  + Built around an array
-  + Instance:
-    + let set = new Set();
-  + Operations:
-    + Union: a new is obtained by combining the members of one set with the members of another set
-    + Intersection: a new set is obtained by adding all the members of one set that also exist in a second set
-    + Difference: a new set is obtained by adding all the memebers of one set except those that also exist in the second set
+  + Set - collection of unique elements. These elements are called members.
+    + Members are unordered
+    + Members cannot occur more than once
+    + Built around an array
+    + Instance:
+      + let set = new Set();
+    + Operations:
+      + Union: a new is obtained by combining the members of one set with the members of another set
+      + Intersection: a new set is obtained by adding all the members of one set that also exist in a second set
+      + Difference: a new set is obtained by adding all the memebers of one set except those that also exist in the second set
 
-+ Trees - commonly used data structure in computer science. Non linear data structure used to store data in a herarchical manner. Examples include files in a file system or storing sorted lists of data. Binary trees are chosen over more primary data structures because you can search a binary tree very quickly (as opposed to a link list) and you can quickly insert and delete data from a binary tree (as opposed to an array). A tree is made up of a set of nodes connected by edges (example is an org shot). each box is a node and the lines connecting the boxes are edges. The nodes represent the positions that make up an organization, and the edges represent the relationships between those positions.
-  + root node: top node of a tree.
-  + parent node: If a node is connected to other nodes below it, the preceding node is called the parent node
-  + child nodes (referred to as "left" and "right"): nodes following the parent node A node can have zero, one or more child nodes connected to it
-  + leaf node: a node without any children
-+ Binary Trees - restrict the number of child nodes to no more than two.
-  + Path: the series of edges you follow to get from one node to another node.
-  + Tree traversal: visiting all the nodes in a tree in some particular order
-  + Levels: tree can be broken into levels. The root node is at level 0, it's children at 1, and their children at level 2 and so on.
-  + Subtree: consists of the root node's chilren, it's children's children and so on.
-  + Key-Value: each node in a tree has a value associated with it
-  + Child Nodes: referred to as "left" and "right".
+  + Trees - commonly used data structure in computer science. Non linear data structure used to store data in a herarchical manner. Examples include files in a file system or storing sorted lists of data. Binary trees are chosen over more primary data structures because you can search a binary tree very quickly (as opposed to a link list) and you can quickly insert and delete data from a binary tree (as opposed to an array). A tree is made up of a set of nodes connected by edges (example is an org shot). each box is a node and the lines connecting the boxes are edges. The nodes represent the positions that make up an organization, and the edges represent the relationships between those positions.
+    + root node: top node of a tree.
+    + parent node: If a node is connected to other nodes below it, the preceding node is called the parent node
+    + child nodes (referred to as "left" and "right"): nodes following the parent node A node can have zero, one or more child nodes connected to it
+    + leaf node: a node without any children
+  + Binary Trees - restrict the number of child nodes to no more than two.
+    + Path: the series of edges you follow to get from one node to another node.
+    + Tree traversal: visiting all the nodes in a tree in some particular order
+    + Levels: tree can be broken into levels. The root node is at level 0, it's children at 1, and their children at level 2 and so on.
+    + Subtree: consists of the root node's chilren, it's children's children and so on.
+    + Key-Value: each node in a tree has a value associated with it
+    + Child Nodes: referred to as "left" and "right".
+
+Built-In Helper Classes:
+  + String:
+  + Date:
+    + Instance:
+      + let date = new Date();
+    + Methods:
+      + getDate(): Fetch the date of a month from a given Date object.
+      + getDay(): Fetch the day of a week(0 to 6) from a given Date object.
+      + getFullYear(): Fetch the year from a given Date object.
+      + getHours(): Return the hours from a given Date object.
+      + getMilliseconds(): Fetch the milliseconds from a given Date object.
+      + getMinutes():	Fetch the minutes from the given Date object .
+      + getMonth():	Fetch the month(0 to 11) from the given Date object.
+      + getSeconds():	Fetch the seconds from the given Date object.
+      + getTime(): Return the number of milliseconds since 1 January 1970 .
+      + getTimezoneOffset(): Return the time difference between in minutes.
+      + getUTCDate(): Fetch the date of a month according to universal time from a given Date object.
+      + getUTCDay(): Fetch the date of a month according to universal time from a given Date object.
+      + getUTCFullYear(): Fetch the year according to universal time from a given Date object.
+      + getUTCHours(): Fetch the hours according to universal time from a given Date object.
+      + getUTCMilliseconds():	Fetch the millisecond according to universal time from a given Date object.
+      + getUTCMinutes(): Fetch the minutes according to universal time from a given Date object.
+      + getUTCMonth(): Fetch the month according to universal time from a given Date object.
+      + getUTCSeconds(): Fetch the second according to universal time from a given Date object
+      + now(): Return the number of milliseconds elapsed since January 1, 1970, 00:00:00 UTC.
+      + parse(): Return the time difference in milliseconds from, January 1, 1970, till the date we provide.
+      + setDate(): Set date of a month into a date object which is created using date() constructor.
+      + setFullYear(): Set year into a date object which is created using Date() constructor.
+      + setHours(): Set hours into a date object which is created using the Date() constructor.
+      + setMilliseconds(): Set milliseconds into a date object which are created using date() constructor.
+      + setMinutes():	Set minutes into a Date object which is created using Date() constructor.
+      + setMonth(): Set month into a date object which is created using the Date() constructor.
+      + setSeconds():	Set seconds into a Date object which is created using Date() constructor.
+      + setUTCDate():	Set date of a month according to universal time into a date object.
+      + setUTCFullYear():	Set year into a date object according to universal time.
+      + setUTCHours(): Set hours into a date object according to universal time.
+      + setUTCMilliseconds(): Set milliseconds according to universal time into a date object.
+      + setUTCMinutes(): Set minutes according to universal time into a date object.
+      + setUTCMonth(): Set month according to universal time into a date object.
+      + setUTCSeconds(): Set seconds according to universal time into a date object.
+      + toDateString():	Convert the given date object’s contents of the date portion into a string.
+      + toISOString(): Convert the given date object’s contents into a string in ISO format (ISO 8601).
+      + toJSON():	Convert the given date object’s contents into a string.
+      + toLocaleDateString(): Convert a date to a string.
+      + toLocaleTimeString():	Fetch the time from a given Date object.
+      + toLocaleString():	Convert a date and time to a string.
+      + toString():	Convert the given date object’s contents into a string.
+      + toTimeString():	Return the time portion of the given date object in English.
+      + toUTCString(): Convert the given date object’s contents into a string according to the universal time zone UTC.
+      + UTC(): Return the number of milliseconds in a Date object since January 1, 1970, 00:00:00, universal time.
+      + valueOf(): Get the number of milliseconds between 1 January 1970 00:00:00 UTC and the given date.
+  + Math:
+  + Boolean:
