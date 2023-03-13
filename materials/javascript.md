@@ -19,6 +19,14 @@ Data Structures:
   + Arrays - linear collection of elements, which can be accessed via indices.
     + Instance (built in):
       + const array = new Array();
+    + Methods:
+      + push(element): Adds an element to the end of the array
+      + pop(): Removes the last element of the array
+      + shift(): Removes the first element of the array
+      + slice(beginIndex, endIndex): Returns a part of the array from beginIndex to endIndex
+      + splice(beginIndex, endIndex):	Returns a part of the array from beginIndex to endIndex
+      and modifies the original array by removing those elements
+      + concat(arr): Adds new elements (from arr) into the array at the end of the array
 
   + Lists (Abstract Data Type, array) - can be any data type. Creates a class. Each item in a list is called an element.
     + Instance (built in if array):
