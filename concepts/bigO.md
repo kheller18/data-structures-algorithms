@@ -79,4 +79,45 @@
 ![Big O Search and Sorting Algorithms](../images/bigO_search_sort_algorithms.png)
 ![Big O Graph](../images/bigO_graph.png)
 
+## Calculating Complexity
++ To determine the time complexity of our code, we must examine it line by line, taking note of the following factors:
+  + Assignments, bits, and math operators are all basic operations.
+  + Loops and nested loops
+  + Recursions and function invocations
+
++ Dropping the Constants
+  + Whenever you calculate the Big O complexity of any algorithm, you can throw out or ignore the constants.
+    + ```
+      def print_twice(lst, size):
+        print("First Print")
+        for i in range(size):
+            print("Element at index", i, " has value: ", lst[i])
+
+        print("Second Print")
+        for i in range(size):
+            print("Element at index", i, " has value: ", lst[i])
+      ```
+      + This is O(2n), which simplifies to just O(n).
+
+    + ```
+      def example_printing(lst, size):
+        print("First Element is: ", lst[0])
+
+        print("Printing first half of list)
+        for i in range(size//2):
+            print("Element at index", i, " has value: ", lst[i])
+
+        print("Printing Entire list")
+        for i in range(size):
+            print("Element at index", i, " has value: ", lst[i])
+      ```
+      + This is O(1 + n/2 + 100), which simplifies to just O(n). When n grows arbitrarily large, we look for the big O notation. Adding 100 or dividing by two drops dramatically as n grows larger.
+
++ Base of Logarithm in Big O
+  + It makes no difference what the logarithm base is in Big-O complexity analysis; they are asymptotically the same or differ by just a constant factor.
+    + `Thus, O(log2 n) = O(log10 n) = O(log n).`
+
+![Big O Advanced Data Structures](../images/bigO_advanced_data_structures.png)
+
+
 
