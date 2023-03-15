@@ -1,6 +1,6 @@
 <!-- The purpose of this document is to outline data structues and algorithsm, provide meaning to the terms and keep examples, which I will impliment as a module for software development purposes -->
 
-<!-- Chapter 1 in Data Strucutures and Algorithms in JavaScript -->
+## Chapter 1: The JavaScript Programming Environment and Model
 while loop: execute until a condition is true
 for loop: execute a specified number of times
 
@@ -99,7 +99,7 @@ Objects and Object Oriented Programming: Javascript provides many different ways
   account.withdraw(800); // "Insufficient Funds"
   console.log(account.toString()); // Balance: 750
 
-<!-- Chapter 2 in Data Strucutures and Algorithms in JavaScript -->
+## Chapter 2: Arrays
 Arrays: most common data structure in computer programming. Standardly defined as a "linear collection of elements, where the elements can be accessed via indices, which are usually integers used to compare offsets." In JavaScript, an array is actually a specialized type of Javascript object.
   Creating Arrays:
     var numbers = [];
@@ -423,7 +423,7 @@ Arrays: most common data structure in computer programming. Standardly defined a
     thisWeek.add(49);
     console.log(thisWeek.average()) // displays 54.875
 
-<!-- Chapter 3 in Data Structures in Algorithms Lists -->
+## Chapter 3: Lists
   List ADT (Abstract Data Type): creates a class. Each item stored in a list is called an element. In JavaScript, lists can be of any data type.
 
   List properties and functions:
@@ -584,7 +584,7 @@ function contains(element) {
     console.log(names.next())
   }
 
-<!-- Chapter 4 in Data Structures and Algorithms Stacks -->
+## Chapter 4: Stacks
   Stack Operations: stack is a list of elements that are accessible only from one end of the list, which is called the top. Stack is known as a last-in, first-out (LIFO) data structure. Because of the last in, first-out nature of the stack, any element that is not currently at the top of the stack cannot be accessed, you have to dispose of the elements above it first.
 
   Two Primary Operations:
@@ -756,7 +756,7 @@ function contains(element) {
       console.log(factorial(5)) returns 120
       console.log(fact(5)) // returns 120
 
-<!-- Chapter 5 in Data Structures and Algorithms Queue -->
+## Chapter 5: Queues
   Queue: type of list where data are inserted at the end and are removed from the front. Example of First-In, First Out (FIFO) data strucutre. Good example of a queue is to model scenarios such as customers standing in the line at a bank or a grocery store.
     Queue Operations:
       enqueue: insertion operation
@@ -924,7 +924,7 @@ function contains(element) {
           return retStr;
         }
 
-<!-- Chapter 6 of Data Structures and Algorithms Linked Lists -->
+## Chapter 6: Linked Lists
   Shortcomings of Arrays: In many languages, arrays are fixed in length, which makes adding and removing data difficult. Javascript arrays are good because of the split() function without having to perform addtional array element accesses. The main problem with JavaScript arrays is that they are implimented as objects, causing them to be less effective.
 
   Linked Lists: collection of objects called nodes. Each node is linked to a successor node in the list using an object reference. The reference to another node is called a link.
@@ -1120,7 +1120,7 @@ function contains(element) {
     back(n): Moves n nodes backward in a doublyl linked list
     show(n): displays the current node only
 
-<!-- Chapter 7 in Data Structures and Algorithms Dictionaries -->
+## Chapter 7: Dictionaries
   Dictionaries: data strucutre that stores data as key-value pairs. The JavaScript "Object" class is designed to operate as a dictionary. Creating a "Dictionary" class makes doing the work easier and more fun. It's a lot easier to use "()" to reference keys rather than having to use "[]" notation. There is also a big advantage of being able to define functions for performing collective operations, such as displaying all entries in a dictionary, rather than having to write loops in the main program to perform the same operations.
 
     Dictionary Class: the basis of this class is an Object, but using Array access notation, since objects in Javascript are associative arrays. This allows us to dynamically add key value pairs, and use Array functionality such as sorting, but at the same time, allowing us to have string keys rather than just numeric.
@@ -1236,7 +1236,7 @@ function contains(element) {
         Mike -> 723
         Raymond -> 123
 
-<!-- Chapter 8 Data Strucutres and Algorithms Hashing -->
+## Chapter 8: Hashing
   Hashing: common technique for storing data in such a way that the data can be inserted and retrieved quickly. Uses a "hash table". Although it's fast for insertion, deletion and retrieval, they perform poorly for operations that involve searching, such as finding the minimum and maximum values in a data set. For these operations, other data strcuutres such as the binary search tree are more appropriate.
 
   Hash-Table data strucutre is designed around an array. Each data element is stored in the array based on an associated data element called the key, which is similar to the concept of the key with the dictionary data structure. to store a piece of data in a hash table, the key is mapped into a number in the range of 0 through the hash table size, using a hash function. Ideally, the hash function stores each key in its own array element. It's good practice to try and distribute the keys as evenly as possible among the elements of the array. It's possible for two keys to hash(the result of the hash function) to the same value. This is called a collision. There are strategies to handle this. The last thing we have to determine is how large an array to create. it should be a prime number.
@@ -1488,7 +1488,7 @@ function contains(element) {
             return undefined;
           }
 
-<!-- Chapter 9 of Data Structures and Algorithms Sets -->
+## Chapter 9: Sets
   Set: collection of unique elements. These elements are called members.
     Important Properties:
       1. the memebers of a set are unordered
@@ -1608,7 +1608,7 @@ function contains(element) {
           return tempSet;
         }
 
-<!-- Chapter 10 in Data Structures and Algorithms Binary Trees and Binary Search Trees -->
+## Chapter 10: Binary Trees and Binary Search Trees
   Trees: commonly used data structure in computer science. Non linear data structure used to store data in a herarchical manner. Examples include files in a file system or storing sorted lists of data. Binary trees are chosen over more primary data structures because you can search a binary tree very quickly (as opposed to a link list) and you can quickly insert and delete data from a binary tree (as opposed to an array). A tree is made up of a set of nodes connected by edges (example is an org shot). each box is a node and the lines connecting the boxes are edges. The nodes represent the positions that make up an organization, and the edges represent the relationships between those positions.
     root node: top node of a tree.
     parent node: If a node is connected to other nodes below it, the preceding node is called the parent node
@@ -1828,10 +1828,10 @@ function contains(element) {
               retrun grade;
             }
 
-<!-- Chapter 11 in Data Structures and Algorithms: Graphs and Graph Algorithms -->
+## Chapter 11: Graphs and Graph Algorithms
 
 
-<!-- Chapter 12 in Data Structures and Algorithms: Sorting Algorithms -->
+## Chapter 12: Sorting Algorithms
   Sorting Algorithms: array based
     Array test bed class for sorting:
       function CArray(numElements) {
@@ -1934,7 +1934,7 @@ function contains(element) {
       Mergesort:
       Quicksort:
 
-<!-- Chapter 13 in Data Structures and Algorithms: Searching Algorithms -->
+## Chapter 13: Searching Algorithms
   Searching algorithms (used for items in a list):
     1. sequential search: used when the items in a list are in random order
       function seqSearch(arr, data) { // returns where it's found or if not(-1)
@@ -2036,5 +2036,5 @@ function contains(element) {
         }
 
 
-<!-- Chapter 14 in Data Structures and Algorithms: Advanced Algorithms -->
+## Chapter 14: Advanced Algorithms
 
