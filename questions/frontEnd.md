@@ -212,6 +212,188 @@
 45.  What do you know about the CSS image sprites and why it is utilized?
      + CSS image sprites assist to render numerous images in a single line image. In a nutshell, the CSS sprites merge numerous photos into a single large image. If a web page comprises different images, then it would raise its loading time as for every image the browser has to send a distinct HTTP request, but with the help of sprites, we have a single image to request.
 
+46. What is Ajax?
+    + AJAX stands for Asynchronous JavaScript And XML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with servers. It can send and receive information in various formats, including JSON, XML, HTML, and text files. AJAX's most appealing characteristic is its "asynchronous" nature, which means it can communicate with the server, exchange data, and update the page without having to refresh the page.
+    + The two major features of AJAX allow you to do the following:
+      + Make requests to the server without reloading the page
+      + Receive and work with data from the server
+
+47. What is Babel?
+    + Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:
+      + Transform syntax
+      + Polyfill features that are missing in your target environment (through a third-party polyfill such as core-js)
+      + Source code transformations (codemods)
+      + ```
+        // Babel Input: ES2015 arrow function
+        [1, 2, 3].map(n => n + 1);
+
+        // Babel Output: ES5 equivalent
+        [1, 2, 3].map(function(n) {
+          return n + 1;
+        });
+        ```
+
+48. What is Yarn?
+    + Yarn is a package manager for your code. It allows you to use and share (e.g. JavaScript) code with other developers from around the world. Yarn does this quickly, securely, and reliably so you don't ever have to worry.
+
+49. What is a Progressive Web App (PWA)?
+    + A progressive web application, or progressive web app, is a type of application software delivered through the web, built using common web technologies including HTML, CSS, JavaScript, and WebAssembly. It is intended to work on any platform with a standards-compliant browser, including desktop and mobile devices.
+
+50. What is the difference between a PWA and a regular app?
+    + While native apps are written to run on mobile devices, PWAs are written to run inside a web browser. Native apps are developed with the programming languages of each platform (Objective-C and Swift for iOS and Java for Android), whereas, PWA uses HTML, CSS, and JavaScript.
+
+51. What is GraphQL?
+    + GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+
+52. What is the difference between RESTful APIs and GraphQL?
+    + GraphQL is an application layer server-side technology which is developed by Facebook for executing queries with existing data. REST is a software architectural style that defines a set of constraints for creating Web services.
+
+53. Why and when should I Use Babel and Webpack?
+    + Makes the code compatible with all web browsers. Bundles up the assets and minifies the components, making it easier for the browsers to load content. Improves the maintainability. Generates a dependency graph based on the dependencies of the assets.
+
+54. What are the difference between defer and async attributes in script tag?
+    + Async allows your script to run as soon as it's loaded, without blocking other elements on the page. Defer means your script will only execute after the page has finished loading.
+
+55. What is the difference between package.json and package-lock.json?
+    + In Node.js, package.json is a versioning file used to install multiple packages in your project. As you initialize your node application, you will see three files installed in your app that is node_modules, package.json, and package.lock.json.
+    + package.lock.json is created for locking the dependency with the installed version. It will install the exact latest version of that package in your application and save it in package.json. Let’s say if the current version of the package is 1.3.2 then it will save the version with (^) sign. Here carot(^) means, it will support any higher version with major version 1 for eg. 1.2.2.
+    ![package.json vs package-lock.json](../images/package_package_lock.png)
+
+1.  What is difference between apply, call and bind?
+    + The call and apply methods set this to a function and call the function.
+    + The bind method will only set this to a function. We will need to separately invoke the function.
+    + call() and apply() are identical in functionality, the only difference is that call() accepts a list of arguments; whereas, apply() accepts a single array of arguments.
+    + call: binds the this value, invokes the function, and allows you to pass a list of arguments.
+    + apply: binds the this value, invokes the function, and allows you to pass arguments as an array.
+    + bind: binds the this value, returns a new function, and allows you to pass in a list of arguments.
+    + call
+      + The call method binds the this value to the function and executes the function. It takes the this value and a list of arguments as parameters. Then, it returns the value returned by the function, which is called using the call method.
+      + ```
+        function test(arg1, arg2){
+          console.log(this.num, arg1, arg2); // 100, 10, 20
+        }
+
+        test.call({num: 100}, 10, 20);
+        ```
+      + In the code above, we have called the test function using the call method. The call method will invoke the test function with the this value as the object passed to the call method.
+    + apply
+      + The apply method binds the this value to the function and executes the function. It takes the this value and a single array object as parameters, and it returns the value returned by the function, which is called using the apply method.
+      + ```
+        function test(...arguments){
+          console.log(this.num, arguments);//100, [1,2,3]
+        }
+
+        test.apply({num: 100}, [1,2,3]); 
+        ```
+      + In the code above, we have called the test function using the apply method and with the this value as the object passed to the apply method.
+    + bind
+      + The bind method binds the this value to the function and returns a new function. However, we still need to separately invoke the returned function.
+      + ```
+        function test(arg){
+        console.log(this.number, arg);
+        }
+
+        let bindedFn = test.bind({number: 99}, "argument");
+
+        bindedFn(); // 99, "argument"
+        ```
+      + In the above code, we bind the this value for the test function and invoke the returned function from the bind method.
+
+
+57. What is the difference between internal and external JavaScript?
+    + Directly write our program in an HTML file within `<script>` tags. This is called Internal JavaScript. Write a JavaScript program in a file having a . js extension and then link the file inside the `<head>` or `<body>` tag of our HTML file. This way of writing code in JavaScript is called External JavaScript.
+
+58. What is the difference between visibility:hidden and display:none?
+    + display:none , visibility:hidden , and opacity:0 can be used to hide elements visually but: display:none turns off the layout of the elements, so they are not rendered. visibility:hidden hides the elements without changing their layouts.
+
+59. What is the difference between local storage session storage and cookies?
+    + Local storage is useful for storing data that the user will need to access later, such as offline data. Session storage is a great way to improve the performance of your web applications. Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.
+
+60. What is the difference between responsive and adaptive web-design?
+    + The responsive design will reconfigure all design elements whether it's viewed on a desktop, laptop, tablet, or mobile phone. With adaptive design, different fixed layouts are created that adapt to the users screen size.
+
+61. What is a CDN and what is the benefit of using CDN?
+    + Stands for Content Delivery Network
+    + CDNs cache content like web pages, images, and video in proxy servers near to your physical location. This allows you to do things like watch a movie, download software, check your bank balance, post on social media, or make purchases, without having to wait for content to load. You could think of a CDN like an ATM.
+
+62. What is domain pre-fetching and how does it help with performance?
+    + A DNS prefetch is a resource hint to make a DNS lookup for a domain the browser has not yet determined needs to be made. This can improve performance because when the browser does need to make a request for a resource, the DNS lookup for that domain has already occurred.
+
+63. What is the difference between a unit test and a functional test?
+    + Functional Testing is carried out to ensure that the application's overall functionality meets the business requirements. Unit Testing is performed on every individual element of an application to ensure that the element works as expected.
+
+64. What security measures would you take while developing a frontend app?
+    + Preventing cross-site scripting (XSS) attacks
+      + XSS attacks are one of the largest and most dangerous forms of attack. They're crafted in such a way that they inject code into a web application, which ends up performing malicious actions when accessed by an end user.
+    + DoS (denial of service) attacks
+      + DoS attacks and DDoS attacks on web applications are common. They're also difficult to deal with, as they use a swarm of compromised systems to make requests to your web application.DoS attacks, which originate from a single system or small number of them, can often be tackled by simply blocking the end system's IP address.
+    + Preventing cross-site request forgery (CSRF)
+      + CSRF attacks are aimed at tricking users into submitting forms which end up performing a different action from the one the user wishes to perform.
+    + Using Content Security Policy (CSP)
+      + Using Content Security Policy is an effective form of XSS attack prevention. It calls for an HTTP flag which informs your browser about the sources that can be trusted, and included as iFrames within your web application.
+    + Using modern frameworks
+      + Often, web application front ends are built using commonly available frameworks. These frameworks make up the core of your web application's front end, and any security vulnerability within this framework can lead to a compromise of your web application as a whole.
+    + Auditing of 3rd-party libraries in use
+      + 3rd-party libraries are in use everywhere. They help speed up coding time and make implementation of new features into your web application that much easier—but any possible vulnerability in these 3rd-party libraries can impact your web application's overall security as well.
+    + Incorporating security from the start
+      + Web application development generally runs for months if not years. Developers come, developers go, budgets change, ideas change and projects change direction
+    + Avoiding iFrames where possible
+      + While iFrames make your development process easier by allowing you to incorporate/load other pages/frames in your existing view, iFrames usage is often used without appropriate X-Frame-Options. Unfortunately, this allows for clickjacking attacks and the compromise of your web application's integrity.
+    + Restricting available Feature Policy
+      + By default, your web application can access or request any feature from your end user's device—while this may be a nice-to-have during the development stage, if left enabled it can lead to attackers exploiting your web application and using these unrestricted feature flags/policies to ask end users' devices to enable certain features that appear legitimately offered by your web application itself. Using the Feature-Policy HTTP header is ideal for preventing such requests from originating from your web application.
+      + `"Feature-Policy": camera 'none'; microphone 'none';`
+    + Ensuring CDN-pulled libraries undergo subresource integrity checks
+      + Also critical is checking whether libraries loaded via 3rd-party CDNs are intact and untouched. Many web applications load libraries off 3rd-party CDNs for quicker loading of pages and better overall performance, but if these libraries are compromised via MITM attacks or if the CDN itself is compromised, it's possible to load bad code into your web application on the user side, leading to a poor experience.
+      + `<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">`
+
+65. What is the advantage of using a code style linting tool?
+    + They help you write more maintainable, more secure, more robust and more efficient code. They help experienced programmers transfer their knowledge of good practices to the entire team.
+
+66. What SEO best practices or techniques do you use in your frontend app?
+    + Isomorphic React Apps
+      + somorphic React applications can be worked on both the server-side and client-side applications. With isomorphic JavaScript, you can work with React JS application and fetch the rendered HTML file which is generally rendered by the browser. This very HTML file is being executed for everyone who tries to search for the particular app, along with Google bots. When it comes to client-side scripting, the application can use this HTML file and continue to operate the same on the browser. The data is added using JavaScript if required, the isomorphic app still remains dynamic. Isomorphic applications ensure that the client is able to operate the scripts or not. While JavaScript is not active, the code is rendered on the server, and the browser can fetch all the meta tags and text in HTML and CSS files. However, developing real-time isomorphic applications is such a challenging and complex task. But, here these two frameworks can make the process of the same pretty quicker and simpler: Gatsby and Next.js. Gatsby is an open-source compiler that allows developers to create robust and scalable web applications. But, its biggest issue is that it does not offer server-side rendering. It generates a static website and then creates HTML files to store it in the cloud.
+    + Server-side rendering with Next.js
+      + If a single-page application is what you have decided to go with, then server-side rendering is the best way to improve page ranking in search results. As Google bots easily index and rank pages that are rendered on the server. For server-side rendering, the ideal choice for implementing it is Next.js: a react framework.
+      ![Server side rendering with Next.js](../images/server-side-nextjs.png)
+    + Best Practices:
+      + Building static or dynamic web applications
+        + As we have discussed before, SPA (single-page applications) are often difficult to be fetched by Google when it comes to SEO. Static or dynamic web apps come to rescue you as they use server-side rendering which helps Google pods crawl your website smoothly.
+      + URL case
+        + Google bots always consider some pages separate when their URLs have lowercase or uppercase (/Invision and /invision). Now, these two URLs will be considered different due to the difference in their case. For avoiding these common blunders, always try to generate your URL in lowercase.
+      + 404 code
+        + Be it any page with an error in the data, they all run a 404 code. So, try to set up files in server.js and route.js as soon as you can. Updating the files with server.js or route.js can relatively augment traffic on your web app or website.
+      + Try not to use hashed URLs
+        + Well, this is not the major issue but the Google bot does not see anything after the hash in URLs.
+      + Use `<a href>` only if required
+        + A general error with SPAs is using a `<div>` or a `<button>` to change the URL. This is not a problem with React itself, but how the library is used. But the issue is about the search engines, Google bots process a URL, and they search for more URLs to crawl within `<a href>` elements. If the `<a href>` element is not being found, Google bots will not crawl the URLs and pass PageRank. What we can do is we can define links with `<a href>` for the Google bot to see the fetch the other pages and go through them.
+    + Best Tools:
+      + React Helmet
+        + React helmet is a library that allows you to deal with Google bots and social media crawlers seamlessly. It adds meta tags to your pages on React so your web app helps with more important information to the crawlers.
+        + ```
+          import React from 'react';
+          import {Helmet} from "react-helmet/es/Helmet";
+          ‍import ProductList from '../components/ProductList';
+          ‍‍const Home = () => {
+          return (
+                  <React.Fragment>
+                      <Helmet>
+                          <title>title</title>
+                          <link rel="icon" href={"path"}/>
+                          <meta name="description" content={"description"}/>
+                          <meta name="keywords" content={"keyword"}/>
+                          <meta property="og:title" content={"og:title"}/>
+                          <meta property="og:description" content={"og:description"}/>
+                      </Helmet>
+                      <ProductList />
+                  </React.Fragment>
+          )‍};
+          ‍export default Home;
+          ```
+      + React Router
+        + The problem to optimize the react web apps is the React SPAs. Single-page applications are a great source of comfort for the users. However, you can make great utilization of the SPA model with certain SEO rules and elements in your pages. Hence, we should create URLs in a way that opens in separate pages by using React Router hooks in URLs.
+
+
+
 
 
 
