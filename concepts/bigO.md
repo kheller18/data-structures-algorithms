@@ -63,7 +63,7 @@
       ```
       + We have two nested loops in the example above. If the array has n items, the outer loop will execute n times, and the inner loop will execute n times for each iteration of the outer loop, resulting in n^2 prints. If the size of the array is 10, then the loop runs 10x10 times. So the function ten will print 100 times. As a result, this function will take O(n^2) time to complete.
 
-+ Exponential time: 2 ^(n)
++ Exponential time: 2^(n)
   + With each addition to the input (n), the growth rate doubles, and the algorithm iterates across all subsets of the input elements. When an input unit is increased by one, the number of operations executed is doubled.
     + ```
       def fibonacci(n):
@@ -118,6 +118,3 @@
     + `Thus, O(log2 n) = O(log10 n) = O(log n).`
 
 ![Big O Advanced Data Structures](../images/bigO_advanced_data_structures.png)
-
-
-
