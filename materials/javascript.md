@@ -10,7 +10,7 @@ JavaScript, created by Brendan Eich in 1995, is one of the most widely used web 
 + Null - It represents a non-existent or a invalid value.
 + Symbol - It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
 
-Non-Primative Data Types (can store multiple values):
+### Non-Primative Data Types (can store multiple values):
 
 ### Data Structures
 + Objects - a standalone entity, with properties and type.
