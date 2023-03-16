@@ -122,19 +122,96 @@
       + Layout: When the renderer is developed and incorporated into the tree, it does not have a size or position. Computing these values is defined as layout. We use the coordinates system to position the element, such as the position of the root renderer is 0,0. The layout continues recursively via a part of the entire renderer hierarchy, calculating geometric info for every renderer that needs it. Beginning the layout process implies allowing every node the exact coordinates where it should show up on the screen.
       + Painting of the Render Tree: The renderer tree is traversed in this stage and the renderer’s paint() method is hailed to exhibit the content on the screen. For good UX, the rendering engine will aim to exhibit the contents on the screen as soon as possible. It will not stand by until all the HTML is parsed to develop and layout the render tree.
 
-31.  Describe the distinction between Class and Prototypal inheritance in Javascript?
+31.  What is the distinction between Class and Prototypal inheritance in Javascript?
+     + From most other programming languages, Inheritance in JavaScript is different. JavaScript's object system is prototype-based, not class-based. Objects in JavaScript are just a set of value pairs and a name (key). Talking about inheritance, JavaScript just has one construct: objects. Each object has a private property that includes a link to another object named its prototype.
+
 32.  Tell me when and why should I make use of Webpack?
-33.  Explain user-centered design?
+     + While creating a complicated front-end application with tons of non-code static possessions, for instance, CSS, fonts, images, etc, then, of course, you should make use of Webpack since it has a lot of amazing benefits.
+
+33.  What is user-centered design?
+     + An iterative design procedure, User-centred design lets the designers focus on the clients and their needs in every design process phase. The user-centered design calls for linking users in the design process via a variability of design and research techniques to make usable and highly accessible products. User-centered design demands that designers should utilize a combination of generative (such as brainstorming) and investigative (interviews and surveys) methods and instruments to create an understanding of user requirements.
+
 34.  How does the server hanger the page in which content is present in several languages?
-35.  Why did we utilize the data- the attribute in HTML and why it is now advised not to use?
-36.  Mention the benefits of CoffeeScript over JavaScript?
+     + When an HTTP request is sent to the server by the user, the user browser also sends a chunk of additional information regarding the language preference as the Accept-Language header. Then the server reads the HTTP request with the Accept-Language header and sends the document version back along with the right language and declares the language attribute Lang in the HTML tag.
+     + `<html lang="en">...</html>`
+
+35.  Why did we utilize the data - the attribute in HTML and why it is now advised not to use?
+     + Generally, Data-* attributes of HTML are utilized to accumulate the custom data, which is private to the web application or page. This custom data is for personalizing the JavaScript of the user as per the user action on the web page. These days, Data-*attributes are not advised to utilize as the user can change the attribute easily just by utilizing the browser inspect console.
+     + ```
+        <ul>
+          <li data-car-type="GTC">Ferrari</li>
+          <li data-car-type="X5">BMW</li>
+          <li data-car-type="Benz E-Class">Mercedes</li>
+        </ul>
+        ```
+
+36.  What are the benefits of CoffeeScript over JavaScript?
+     + Write less do more − For a huge code in JavaScript, we require comparatively a very less number of lines of CoffeeScript.
+     + Easily understandable − The shorthand form of JavaScript is CoffeeScript, its syntax is quite simple as compared to JavaScript. Making use of CoffeeScript, we can document clean, clear, and easily discernible codes.
+     + Reliable − CoffeeScript is a secure and reliable programming language to create dynamic programs.
+     + Readable and maintainable − CoffeeScript offers aliases for most of the operators, making the code readable. Also maintaining the programs written in CoffeeScript is effortless.
+     + Class-based inheritance − JavaScript does not have classes, in place of them, it offers powerful but complicated prototypes. Unlike JavaScript, in CoffeeScript, we can make classes and inherit them. Additionally, it also provides instant and static properties along with mixins. It utilizes JavaScript's native prototype to construct classes.
+     + No var keyword − There is no requirement to utilize the var keyword to form a variable in CoffeeScript, hence we can evade accidental or undesirable scope deceleration.
+     + Avoids problematic symbols − There is no requirement to utilize the problematic parenthesis and semicolons in CoffeeScript. In place of curly braces, we can utilize whitespaces to distinguish the block codes such as functions, loops, etc.
+     + Extensive library support − In CoffeeScript, we can utilize the JavaScript libraries and vice versa. Thus, we have access to a myriad set of libraries while operating with CoffeeScript.
+
 37.  What is Progressive Rendering?
-38.  Define the Anonymous function in JS?
-39.  Suggest some ways on how to fix the browser-specific styling issue?
-40.  Mention the pitfalls for using a CSS Preprocessor like Sass?
-41.  Suggest how can we optimize our front-end page.
+     + Progressive rendering is a process that is utilized generally to boost the web page's rendering content process. Now the rendering process is utilized in modern web development to enhance the mobile data uses of the user, async HTML fragments, prioritizing visible content, and lazy loading of images.
+
+
+38.  What is the the Anonymous function in JS?
+     + Generally, the function name is defined when we define the function itself, in normal user-defined functions, but in the case of an anonymous function, the function name is not defined. Here we make use of an assignment operator and variable to stow the function as an object, then utilizing that variable, we will be capable to invoke the function itself.
+     + `var add = function(a,b) { console.log(a+b) }`
+
+39.  What are some ways on how to fix the browser-specific styling issues?
+     + We can make a distinctive stylesheet for various browsers making use of server-side rendering.
+     + Another method is utilizing a library such as Bootstrap, which already has the code to manage the browser-specific styling issue.
+     + Reset or Normalize CSS can also be utilized. Multiple 3rd party plugins equip libraries for browser styling issues.
+
+40.  What are the pitfalls for using a CSS Preprocessor like Syntactically Awesome Style Sheets (Sass)?
+     + An extra tool for the preprocessor is required.
+     + Preprocessor files can not be performed directly on the browser.
+     + Slow re-compilation of the preprocessor.
+     + For the preprocessor, you ought to know extra tools, which improve the learning curve of CSS.
+
+41.  How can we optimize our front-end page.
+     + The consumption of resources can be reduced by the pages by enhancing the server response.
+     + Utilize JavaScript and External CSS instead of internal or in-line.
+     + Utilize the framework to ensure the front-end becomes more responsive to different devices.
+     + Open-source libraries can be used to manage the browser-specific styling issue.
+     + Make use of progressive loading like Lazy Loading to enhance the rendering of heavy elements, like videos and images.
+     + Connect the style sheet in the header and script at the top of the HTML's body tag.
+     + Utilize browser storage to keep user-specific private data.
+
 42.  What is the difference between attribute and property?
-43.  State the difference between == and ===?
-44.  What the major HTTP requests
+     + Attributes are an element of an HTML document while properties are a part of the Document Object Model (DOM).
+     + `<input type="text" value="Tech">`
+     + Here, value and type are the attributes of HTML, but when the statement is read by the browser and parses this code it will make a DOM with different properties, like accept, autofocus, accessKey, baseURI, checked, childElementCount, align, alt, childNodes, children, classList, className, attributes, and clientHeight.
+     + ```
+         var data = document.querySelector(input);  // here we created a document object of input tag
+         console.log(input.getAttribute('value')); // tech  // getting the attribute value
+         console.log(input.value); // tech   // getting the property of the input object
+       ```
+
+43.  What is the difference between == and ===?
+     +  == denotes abstract equality operator, and it inspects if two values are equal or not apart from their data types. Automatically, it transforms the type of both the operands and compares them.
+        +  ```
+           1=='1';    //true
+           1==1;   // true
+           ```
+     + === denotes identity equality operator, and it inspects the values of both the operands and their data type. The outcome of the operation will be true considering both the operands are equal and have the same data type, or else it returns false.
+       + ```
+           1===1   //true
+           1==='1'   // false
+         ```
+
+44.  What the major HTTP requests?
+![http methods](../images/http_requests.png)
+![http status codes](../images/status_codes.png)
+
+45.  What do you know about the CSS image sprites and why it is utilized?
+     + CSS image sprites assist to render numerous images in a single line image. In a nutshell, the CSS sprites merge numerous photos into a single large image. If a web page comprises different images, then it would raise its loading time as for every image the browser has to send a distinct HTTP request, but with the help of sprites, we have a single image to request.
+
+
 
 
