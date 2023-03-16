@@ -1,5 +1,7 @@
 # Software Development Processes
 
+---
+
 ## Seven Stages of Software Development Lifecycle (SDLC)
 ### 1. Analysis and Planning
 + Once a customer or stakeholder has requested a project, the first step of the SDLC is planning. This usually means looking into:
@@ -41,6 +43,8 @@
 + The SDLC isn’t over once your software is in the wild. It’s a “lifecycle”, remember? The ending of one phase is just the beginning of another, and that goes for post-launch as well.
 + Requirements and customer needs are always evolving. And as people begin to use your software, they’ll undoubtedly find bugs, request new features, and ask for more or different functionality. (Not to mention the basic upkeep and maintenance of your application or software to ensure uptime and customer satisfaction.)
 + All of these requests need to flow back into your product backlog of task list so they can be prioritized and become part of your product roadmap.
+
+---
 
 ## Five Software Development Processes
 ### 1. Waterfall
@@ -159,6 +163,8 @@
 + Who it's not for:
   + Most people.
   + While fantastic in theory, the spiral software development process is rarely actually put into practice due to the time and costs associated with taking such a calculated approach. Instead, it’s mostly used as an example of how to think critically about an iterative approach to development.
+
+---
 
 ## Summary
 + Processes and plans are just guesses
