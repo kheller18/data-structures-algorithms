@@ -6,22 +6,25 @@
 
 + scope (variable): refers to wherein a program a variables value can be accessed
   + function scope: variables value is visible within the function definition where the variable is declared and defined and within any functions that are nested within that function.
-  function showScope() {
-    var scope = 'local';
-    return scope;
-  }
-  var scope = "global";
-  console.log(scope); // displays "global"
-  console.log(showScope()); // displays "local"
-
-  global scope: variable defined outside of a funciton, in the main program
-    KEY: if you leave out "var" when defining a variable, even within a function, it is global.
+  + ```
     function showScope() {
+      var scope = 'local';
       return scope;
     }
     var scope = "global";
     console.log(scope); // displays "global"
-    console.log(showScope()); // displays "global"
+    console.log(showScope()); // displays "local"
+   ```
+  + global scope: variable defined outside of a funciton, in the main program
+    KEY: if you leave out "var" when defining a variable, even within a function, it is global.
+    + ```
+      function showScope() {
+        return scope;
+      }
+      var scope = "global";
+      console.log(scope); // displays "global"
+      console.log(showScope()); // displays "global"
+      ```
 
 Functions: value-returning functions and functions that don't return values (sometimes called subprocedures or void functions). All function parameters in JavaScript are passed by value, and there are no reference parameters. However, there a reference objects, such as arrays which are passed to functions by reference (see non value returning below)
   value returning:
