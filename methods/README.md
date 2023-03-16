@@ -1,11 +1,11 @@
-<!-- The purpose of this document is to outline data structues and algorithsm, provide meaning to the terms and keep examples, which I will impliment as a module for software development purposes -->
+# Data Structures and Algorithms in JavaScript by Oreilly
 
 ## Chapter 1: The JavaScript Programming Environment and Model
-while loop: execute until a condition is true
-for loop: execute a specified number of times
++ while loop: execute until a condition is true
++ for loop: execute a specified number of times
 
-scope (variable): refers to wherein a program a variables value can be accessed
-  function scope: variables value is visible within the function definition where the variable is declared and defined and within any functions that are nested within that function
++ scope (variable): refers to wherein a program a variables value can be accessed
+  + function scope: variables value is visible within the function definition where the variable is declared and defined and within any functions that are nested within that function.
   function showScope() {
     var scope = 'local';
     return scope;

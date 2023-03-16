@@ -1,3 +1,4 @@
+# JavaScript
 JavaScript, created by Brendan Eich in 1995, is one of the most widely used web development languages. It was designed to build dynamic web pages at first. A script is a JS program that may be added to the HTML of any web page. When the page loads, these scripts execute automatically.
 
 ### Primitive Data Types (stores one value)
