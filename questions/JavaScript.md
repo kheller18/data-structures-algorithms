@@ -191,3 +191,124 @@
 65. What is the output of the following code?
 
 
+66. Mention some popular features of ES6.
+
+
+67. What are the object oriented features supported in ES6.
+
+
+68. Give a thorough comparison between ES5 and ES6.
+
+
+69. What is the difference between let and const? What distinguishes both from var?
+
+
+70. Discuss the arrow function.
+
+
+71. When should one not use arrow functions?
+
+
+72. What is the generator function?
+
+
+73. What is the “spread” operator in ES6?
+
+
+74. Explain Destructuring in ES6.
+
+
+75. What are Promises in ES6?
+
+
+76. Explain the Rest parameter in ES6.
+
+
+77. Discuss the template literals in ES6.
+
+
+78. Why should one use ES6 classes?
+
+
+79. How can you create a class in ES6?
+
+
+80. What is a class expression?
+
+
+81. What do you understand about default parameters?
+
+
+82. What do you understand about IIFE (Immediately Invoked Function Expressions)?
+
+
+83. What are the states of Promises in ES6?
+
+
+84. What is Export Default and Named Export in ES6?
+
+
+85. Which keyword can be used to deploy inheritance in ES6?
+
+
+86. What is Bubbling and Capturing?
+
+
+87. What is the difference between for..of and for..in?
+
+
+88. What is the reason behind adding Symbol to ES6?
+
+
+89. What is Babel?
+
+
+90. Name some array methods that were introduced in ES6.
+
+
+91. Name some string functions introduced in ES6.
+
+
+92. Compare the ES5 and ES6 codes for object initialization and parsing returned objects.
+
+
+93. How do you use Destructuring Assignment to swap variables?
+
+
+94. What is the result of the spread operator array shown below?
+
+
+95. What is the Prototype Design Pattern?
+
+
+96. What is a WeakMap in ES6? How is it different from a Map?
+
+
+97. What is the advantage of using the arrow syntax for a constructor method?
+
+
+98. What is a Temporal Dead Zone?
+
+
+99.  What is the difference between Set and WeakSet in ES6?
+
+
+100. What are Proxy in ES6?
+
+
+101. What is the difference between const and Object.freeze()?
+
+
+102. Why does the following not work as an IIFE (Immediately Invoked Function Expressions) ? What needs to be modified in order for it to be classified as an IIFE?
+
+
+103. Explain Internationalization and Localization.
+
+
+104. What is Webpack?
+
+
+
+
+
+
