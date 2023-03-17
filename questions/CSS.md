@@ -491,97 +491,535 @@
 
 
 23. What is cascading in CSS?
-   + 
+    + “Cascading” refers to the process of going through the style declarations and defining weight or importance to the styling rules that help the browser to select what rules have to be applied in times of conflict. The conflict here refers to multiple rules that are applicable to a particular HTML element. In such cases, we need to let the browser know what style needs to be applied to the element. This is done by cascading down the list of style declarations elements.
+    + ```
+      p {
+          color:white;
+      }
+     ```
+    + ```
+      p {
+          color: black;
+      }
+     ```
+    + We have a conflict in color property here for the paragraph elements. Here, the browser just cascades down to identify what is the most recent and most specific style and applies that. Since we have the `color:black;` as the most specific declaration, the color black is applied to the paragraph elements. Now if you want to ensure color white is applied to the paragraph, we can define weight to that style by adding `!important` as shown below:
+     + ```
+        p {
+            color:white !important;
+        }
+       ```
+    + `!important` ensures that the property has the maximum weight in presence of other conflicting properties.
 
 24. Explain CSS position property?
-   + 
+   + Absolute: To place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent is available then the relative place to the page itself (it will default all the way back up to the element).
+   + Relative: "Relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on its positioning. It allows the use of z-index on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block.
+   + Fixed: The element is positioned relative to the viewport or the browser window itself. viewport doesn't change if you scroll and hence the fixed element will stay right in the same position.
+   + Static: Static default for every single page element. The only reason you would ever set an element to position: static is to forcefully remove some positioning that got applied to an element outside of your control.
+   + Sticky: Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.
 
 25. When does DOM reflow occur?
-   + 
+   + Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
+   + Reflow occurs when:
+     + Insert, remove or update an element in the DOM.
+     + Modify content on the page, e.g. the text in an input box.
+     + Move a DOM element.
+     + Animate a DOM element.
+     + Take measurements of an element such as offsetHeight or getComputedStyle.
+     + Change a CSS style.
 
 26. Different Box Sizing Property?
-   + 
+   + The box-sizing CSS property sets how the total width and height of an element are calculated.
+     + Content-box: The default width and height values apply to the element's content only. The padding and border are added to the outside of the box.
+     + Padding-box: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
+     + Border-box: Width and height values apply to the content, padding, and border.
 
 27. How to center align a div inside another div?
-   + 
+   + Centering with Table:
+     + HTML:
+       + `<div class=”cn”><div class=”inner”>your content</div></div>`
+     + CSS:
+       + ```
+          .cn {
+            display: table-cell;
+            width: 500px;
+            height: 500px;
+            vertical-align: middle;
+            text-align: center;
+          }
+
+          .inner {
+            display: inline-block;
+            width: 200px; height: 200px;
+          }
+         ```
+   + Centering with Transform
+     + HTML:
+       + `<div class="cn"><div class="inner">your content</div></div>`
+     + CSS:
+       + ```
+          .cn {
+            position: relative;
+            width: 500px;
+            height: 500px;
+          }
+
+          .inner {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            height: 200px;
+          }
+         ```
+   + Centering with Flexbox
+     + HTML:
+       + `<div class="cn"><div class="inner">your content</div></div>`
+     + CSS:
+       + ```
+          .cn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+         ```
+   + Centering with Grid
+     + HTML:
+       + ```
+          <div class=”wrap_grid”>
+            <div id=”container”>vertical aligned text<br />some more text here
+            </div>
+          </div>
+         ```
+     + CSS:
+       + ```
+          .wrap-grid {
+            display: grid;
+            place-content: center;
+          }
+         ```
+
 
 28. Can you name the four types of @media properties?
-   + 
+   + All → It’s the default property. Used for all media-type devices.
+   + Screen → Used for computer screen, mobile screen.
+   + Print → Used for printers.
+   + Speech → Used for screen readers.
 
 29. What is the grid system?
-   + 
+   + CSS Grid Layout is the most powerful layout system available in CSS. It is said to be a 2-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system.
+
+
 
 30. What are the different ways to hide the element using CSS?
-   + 
+   + Using display property(display: none). It’s not available for screen readers. The element will not exist in the DOM if display: none is used.
+   + Using visibility property(visibility: hidden), will take up the space of the element. It will be available to screen reader users. The element will actually be present in the DOM, but not shown on the screen.
+   + Using position property (position: absolute). Make it available outside the screen.
+
 
 31. What does the `:root` pseudo-class refer to?
-   + 
+   + The :root selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
+
+
 
 32. What does Accessibility (a11y) mean?
-   + 
+   + Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as visual impairment, hearing loss, or limited dexterity.
+   + For example, a website developed with accessibility in mind might have text-to-speech capabilities. In the USA public websites have to have accessible compliance. It’s defined in 508 compliance. It gives the guidelines and best practices for all website users that should be met with key areas of accessibility.
+
+
 
 33. How do I restore the default value of a property?
-   + 
+   + The keyword initial can be used to reset it to its default value.
+
+
 
 34. Difference between CSS grid vs flexbox?
-   + 
+   + CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows. Grid layout is intended for larger-scale layouts which aren’t linear in design.
+   + Flexbox is largely a one-dimensional system (either in a column or a row). Flexbox layout is most appropriate to the components of an application.
+
+
 
 35. How does Calc work?
-   + 
+   + The CSS3 calc() function allows us to perform mathematical operations on property values. Instead of declaring, for example, static pixel values for an element's width, we can use calc() to specify that the width is the result of the addition of two or more numeric values.
+   + ```
+      .foo {
+        Width: calc(100px + 50px)
+      }
+     ```
+
 
 36. What do CSS Custom properties variables mean?
-   + 
+   + Custom properties (sometimes referred to as CSS variables or cascading variables) are defined by users that contain specific values to be reused throughout a document. The value is set using -- notion. And the values are accessed using the var() function.
+   + ```
+      :root {
+        --main-bg-color: brown
+      }
+
+      .one {
+        color: white;
+        background-color· var (--main-bg-color);
+        margin: l0px,
+        width: 50px,
+        height: 5Opx;
+        display: inline-block;
+      }
+     ```
 
 37. What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?
-   + 
+   + CSS variables can be used without the need for a preprocessor. Currently, all the major browsers support the CSS variables.
+   + CSS variable cascade. But the preprocessor variables don’t cascade.
+   + CSS variable can be accessed and manipulated in JavaScript.
+
 
 38. What does `* { box-sizing: border-box; }` do? What are its advantages?
-   + 
+   + It makes every element in the document include the padding and border in the element’s inner dimension for the height and width computation.
+   + In box-sizing: border-box, The height of an element is now calculated by the content's height + vertical padding + vertical border width.
+   + The width of an element is now calculated by the content's width + horizontal padding + horizontal border width.
 
 39. What does `!important` mean in CSS?
-   + 
+   + The style is having the important will have the highest precedence and it overrides the cascaded property.
+   + ```
+      p {
+        color: red !important;
+      }
+      #thing {
+        color: green;
+      }
+      <p id="thing">Will be RED.</p>
+     ```
 
 40. What is specificity? How to calculate specificity?
-   + 
+   + A process of determining which CSS rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then the class value (or pseudo-class or attribute selector), the universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
+
+
 
 41. What is progressive rendering? How do you implement progressive rendering in the website?. What are the advantages of it?
-   + 
+   + Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
+   + We can implement the progressive rendering of the page by loading the lazy loading of the images.  We can use Intersection Observer API to lazy load the image. The API makes it simple to detect when an element enters the viewport and take an action when it does. Once the image enters the viewport, we will start loading the images.
+   + ```
+      <img class="lazy"
+      src="placeholder-image.jpg"
+      data-src="image-to-lazy-load-1x.jpg"
+      data-srcset="image-to-lazy-load-2x.jpg 2x, image-to-lazy-load-1x.jpg 1x"
+      alt="I'm an image!">
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+        if ("IntersectionObserver" in window) {
+          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                let lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.srcset = lazyImage.dataset.srcset;
+                lazyImage.classList.remove("lazy");
+                lazyImageObserver.unobserve(lazyImage);
+              }
+            });
+          });
+
+          lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+          });
+        } else {
+          // Possibly fall back to event handlers here
+        }
+      });
+     ```
 
 42. What are the advantages of using `translate()` instead of absolute position?
-   + 
+   + Translate() does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM reflow. So, translate() gives better performance.
+
+
 
 43. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
-   + 
+    + No, the browsers will download the CSS in the order of its appearance on the HTML page.
+    + ```
+      <head>
+        <link h ref=" stylel. css" rel=" stylesheet">
+        <link href="style2.css" rel="stylesheet">
+      </head>
+     ```
 
 44. How to determine if the browser supports a certain feature?
-   + 
+   + The @support in CSS can be very useful to scan if the current browser has support for a certain feature.
+   + ```
+      @supports (display: grid) {
+        div {
+          display: grid;
+        }
+      }
+     ```
 
 45. How does the absolute positioning work?
-   + 
+   + Absolute positioning is a very powerful positioning mechanism that allows users to place any element wherever they want in an exact location. The CSS properties right, left, top, bottom and define the exact locations where you need to place the element. In absolute positioning, the following points need to be considered:
+     + The element to which the absolute positioning is applied is removed from the normal workflow of the HTML document.
+       + The HTML layout does not create any space for that element in its page layout.
+     + The element is positioned relative to the closest positioned ancestor. If no such ancestor is present, then the element is placed relative to the initial container block.
+     + The final position of the element is determined based on values provided to the top, right, left, bottom.
 
 46. How does this property work `overflow: hidden`?
-   + 
+   + The overflow property in CSS is used for specifying whether the content has to be clipped or the scrollbars have to be added to the content area when the content size exceeds the specified container size where the content is enclosed. If the value of overflow is hidden, the content gets clipped post the size of the container thereby making the content invisible.
+   + ```
+      div {
+          width: 150px;
+          height: 50px;
+          overflow: hidden;
+      }
+     ```
+     + If the content of the div is very large and exceeds the height of 50px, the content gets clipped post 50px and the rest of the content is not made visible.
+
+
 
 47. How will you align content inside the p tag at the exact center inside the div?
-   + 
+   + We can add the `text-align: center` property inside the parent div for aligning the contents horizontally. But it will not align the contents vertically. We can align the content vertically by making the parent element have relative positioning and the child element have absolute positioning. The child element should have the values of top, bottom, right, left as 0 to center it in the middle vertically. Then we need to set the margin as auto. It is assumed that both the child and mother elements will have height and width values.
+   + Consider we have a div element of height and width taking 20% of the screen size, and we have a paragraph element taking the height of 1.2em and width of 20%. If we want to align the paragraph element at the center (vertically and horizontally), we write the following styles:
+     + ```
+        div {
+            position : relative;  // Make position relative
+            height : 20%;
+            width : 20%;
+            text-align : center; //Align to center horizontally
+        }
+        p {
+            position : absolute; // Make position absolute
+            top:0;                // Give values of top, bottom,left, right to 0
+            bottom:0;
+            left:0;
+            right:0;
+            margin : auto;        // Set margin as auto
+            height : 1.2 em;
+            width : 20%;
+        }
+       ```
 
 48. How is margin different from padding in CSS?
-   + 
+   + Margin property using which we can create space around the elements. We can also create space for borders defined at the exteriors. We have the following properties for defining the margin:
+     + margin-top
+     + margin-right
+     + margin-bottom
+     + margin-left
+     + margin property by itself has the values as:
+     + auto – The browser auto-calculates the margin while we use this.
+     + length – The value of this property can be in px, pt, cm, em etc. The values can be positive or negative.
+     + % – We can also give percentage value as margin to the element.
+     + inherit – Using this property, the margin properties can be inherited from the parent elements.
+   + The padding property is used for generating the space around the element’s content and inside any known border. Padding does not allow negative values. The padding also has sub-properties like:
+     + padding-top
+     + padding-right
+     + padding-bottom
+     + padding-left
 
 49. What do you have to do to automatically number the heading values of sections and categories?
-   + 
+   + We can use the concept of CSS counters. This lets us adjust the appearance of the content based on the location in a document. While using this, we need to first initialize the value of the counter-reset property which is 0 by default. The same property is also used for changing the value to any number that we need. Post initialization, the counter’s value can be incremented or decremented by using the counter-increment property. The name of the counter cannot be CSS keywords like “none”, “initial”, “inherit” etc. If the CSS keywords are used, then the declaration would be ignored.
+   + ```
+      body {
+        counter-reset: header;   /* define counter named 'header' whose initial value is 0 by default */
+      }
+
+      h2::before {
+        counter-increment: header;   /* The value of header counter by 1.*/
+        content: "Header " counter(header) ": ";  /* To display word Header and the value of the counter with colon before it.*/
+      }
+     ```
+     + Here, we are trying to achieve auto count increment and display feature for the h2 tag. Wherever we use h2 tag, the content will be prefixed by "Header 1 : " , "Header 2 : ", "Header 3 : " etc.
 
 50. How is the `nth-child()` different from nth of type selectors?
-   + 
+   + Both are pseudo-classes (Pseudo-classes are those keywords that specifies the special state of the selected element). The `nth-child()` pseudo-class is used for matching elements based on the number that represents the position of an element based on the siblings. The number is used to match an element on the basis of the element’s position amongst its siblings.
+   + For example, in the below piece of code, if we give nth-child(4) for the example class, then the 4th child of the example class is selected irrespective of the element type. Here, the fourth child of the example class is the div element. The element is selected and a background of black is added to it.
+     + ```
+        .example:nth-child(4) {
+            background: black;
+        }
+        <div class="example">
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <div>This is a div.</div> <!-- 4th Element to select and apply style-->
+          <div>This is a div.</div>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <div>This is a div.</div>
+        </div>
+       ```
+   + The nth-of-type() pseudo-class is similar to the nth-child but it helps in matching the selector based on a number that represents the position of the element within the elements that are the siblings of its same type. The number can also be given as a function or give keywords like odd or even.
+     + For example, in the below piece of code, if we give p:nth-of-type(even) for the example class, then all the even paragraph tags are selected within the example class and the style of background black is applied to them. The selected elements are marked in comments in the below code:
+       + ```
+          .example p:nth-of-type(even) {
+              background: black;
+          }
+          <div class="example">
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p> <!-- Select this and apply style-->
+            <p>This is a paragraph.</p>
+            <div>This is a div.</div>
+            <div>This is a div.</div>
+            <p>This is a paragraph.</p> <!-- Select this and apply style-->
+            <p>This is a paragraph.</p>
+            <div>This is a div.</div>
+            <p>This is a paragraph.</p> <!-- Select this and apply style-->
+            <div>This is a div.</div>
+          </div>
+         ```
 
 51. What is the importance of CSS Sprites?
-   + 
+   + CSS sprites are used for combining multiple images in a single larger image. They are commonly used for representing icons that are used in the user interfaces. The main advantages of using sprites are:
+     + It reduces the number of HTTP requests to get data of multiple images as they are acquired only by sending a single request.
+     + It helps in downloading assets in advance that help display icons or images upon hover or other pseudo-states.
+     + When there are multiple images, the browser makes separate calls to get the image for each of them. Using sprites, the images are combined in one and we can just call for that image using one call.
+   + Consider an example where our application requires 3 images as shown below (Without Sprites Section). If we are trying to load the images independently, we require 3 different HTTP Requests to get the data. But if we have CSS Sprites where all 3 images are combines into 1 separated by some spaces, then we require only 1 HTTP Request.
+     + IMAGE
+       + We can access each image from the sprite by accessing the positioning properties as shown in the below code:
+         + ```
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+            #home-icon {
+              left: 0px;
+              width: 46px;
+              background: url('spriteFile.gif') 0 0;
+            }
+
+            #prev-icon {
+              left: 63px;
+              width: 43px;
+              background: url('spriteFile.gif') -47px 0;
+            }
+
+            #next-icon {
+              left: 129px;
+              width: 43px;
+              background: url('spriteFile.gif') -91px 0;
+            }
+            </style>
+            </head>
+            <body>
+
+            <img id="home-icon" src="spriteFile.gif" width="1" height="1">    <!-- To display home icon here -->
+            <img id="next-icon" src="spriteFile.gif" width="1" height="1">    <!-- To display next icon icon here -->
+            <img id="prev-icon" src="spriteFile.gif" width="1" height="1">    <!-- To display previous icon icon here -->
+
+            </body>
+            </html>
+           ```
+            + In the above code, we are trying to access each element - house, previous and next icon - from the sprite file by using the left, width properties. The image is displayed in the img section by means of the background property. Do note that the source of the image (src attribute of the img tag) is just one file which is the spriteFile.gif and depending on the rules specified in the id selectors, the images are loaded accordingly.
+
+
 
 52. What do you understand by tweening in CSS?
-   + 
+   + Tweening is the process of filling the gaps between the key sequences, i.e between the keyframes that are already created. Keyframes are those frames that represent start and end point of animation action. Tweening involves generating intermediate keyframes between two images that give the impression that the first one has evolved smoothly to the second image. For this purpose, we use properties like transforms - matrix, translate, scale, rotate etc.
+   + In the below example, we are generating intermediate frames of paragraph elements to slide through from the start to the right edge of the browser.
+     + ```
+        p {
+          animation-duration: 2s;
+          animation-name: slidethrough;
+        }
+
+        @keyframes slidethrough {
+          from {
+            margin-left: 100%;
+            width: 300%;
+          }
+
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+        }
+       ```
+       + Here, the paragraph element specifies that the animation process should take 2 seconds for execution from start to the finish. This is done by using the animation-duration property. The animation-name of the @keyframes is defined by using the property animation-name. The intermediate keyframes are defined by using @keyframes rule. In the example, we have just 2 keyframes. The first keyframe starts at 0% and runs till the left margin of 100% which is the rightmost edge of the containing element. The second keyframe starts at 100% where the left margin is set as 0% and the width to be set as 100% which results in finishing the animation flush against the left edge of the container area.
+
+
 
 53. Why do we need to use clear property along with floats in CSS?
-   + 
+   + The clear property along with floats is used for specifying which side of floating elements is not supposed to float. An element having clear property ensures that the element does not move up adjacent to the float. But the element will be moved down past the float.
+   + Let us understand this with the help of an example. We know that the floated objects do not add to the height of the objects where they reside. Consider we have a div element with class “floated_div” within another div element with id “main_div”.
+     + ```
+        <html>
+            <head>
+            <style>
+                #main_div {
+                    width: 400px;
+                    margin: 10px auto;
+                    border: 4px solid #cccccc;
+                    padding: 5px;
+                }
+
+                .floated_div {
+                    float: left;
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid #990000;
+                    margin: 10px;
+                }
+            </style>
+            </head>
+            <body>
+                <div id="main_div">
+                    <p>Clear Float Demo</p>
+                    <div class="floated_div"></div>
+                    <div class="floated_div"></div>
+                    <div class="floated_div"></div>
+                    <div class="floated_div"></div>
+                    <div class="floated_div"></div>
+                </div>
+            </body>
+        </html>
+       ```
+       + The result of this code would be as shown below. We see that the squares that are expected to be within dev are not within the main parent div. How do we fix this?
+         + IMAGE HERE
+         + We can do it just by adding `<div style="clear:both"></div>` line at the end of the last floated element so that the floated elements are fit in properly within the main div container.
+           + ```
+              <html>
+                  <head>
+                  <style>
+                      #main_div {
+                          width: 400px;
+                          margin: 10px auto;
+                          border: 4px solid #cccccc;
+                          padding: 5px;
+                      }
+
+                      .floated_div {
+                          float: left;
+                          width: 50px;
+                          height: 50px;
+                          border: 2px solid #990000;
+                          margin: 10px;
+                      }
+                  </style>
+                  </head>
+                  <body>
+                      <div id="main_div">
+                          <p>Clear Float Demo</p>
+
+                          <div class="floated_div"></div>
+                          <div class="floated_div"></div>
+                          <div class="floated_div"></div>
+                          <div class="floated_div"></div>
+                          <div class="floated_div"></div>
+                          <div style="clear:both"></div>    <!-- Adding this fixed the issue -->
+                      </div>
+                  </body>
+              </html>
+             ```
+              + IMAGE
 
 54. How will you fix browser-specific styling issues?
-   + 
+   + We can write browser-specific styles separately in different sheets and load that only when the specific browser is used. This makes use of the server-side rendering technique.
+   + We can use auto-prefix for automatically adding vendor prefixes in the code.
+   + We can also use normalize.css or reset CSS techniques.
+   + Avoiding browser compatibility issues
+     + Validate HTML and CSS: We know that the code will be read, interpreted and handled differently by different browsers. We need to validate our HTML and CSS files for the missing closing tags, or missing semicolons in the syntaxes because there are chances that the old browsers will throw errors while rendering the code. We can avoid those errors by:
+       + Maintaining well-aligned code that helps in easy readability.
+       + Inserting comments at necessary places.
+       + Make use of validation tools like Jigsaw CSS validator, W3C HTML Validators to identify syntax issues in the code.
+     + Maintain Cross-Browser Compatibility in the Layouts: Cross-Browser compatibility is a must while developing web applications. We expect our application to be responsive across all devices, browsers and platforms. Some of the effects of layout incompatibilities are unresponsiveness of the layouts in mobile devices, the difference in layout rendering between modern and old browsers, etc. These incompatibilities can be avoided by using:
+       + CSS Multi-Column layouts - For maintaining proper layouts w.r.t columns and containers.
+       + HTML viewport metatag – For ensuring content is properly spanned across mobile devices.
+       + CSS Flexbox and Grids - To layout child elements depending on the content and available space.
+       + CSS resets stylesheets - For reducing browser inconsistencies in default line heights, font sizes, margins etc.
+     + Check JavaScript Library issues: Ensure the libraries are used judiciously and the ones used are supported by the browsers.
+     + Check DOCTYPE tag keyword: The DOCTYPE keyword is meant for defining rules of what needs to be used in the code. Older browser versions check for DOCTYPE tag at the beginning and if not found, the application rendering won't be proper.
+     + Test on real devices: Although applications can be tested on virtual environments, it would be more beneficial if the testing is carried out on real devices and platforms. We can use tools like Testsigma for this purpose that enables us to test in real devices parallelly.
