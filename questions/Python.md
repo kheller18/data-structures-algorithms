@@ -8,7 +8,7 @@
 3. What is an Interpreted language?
 
 
-4. What is PEP 8 and why is it important?
+4. What is `PEP 8` and why is it important?
 
 
 5. What is Scope in Python?
@@ -86,10 +86,10 @@
 29. What is PYTHONPATH in Python?
 
 
-30. What is the use of help() and dir() functions?
+30. What is the use of `help()` and `dir()` functions?
 
 
-31. What is the difference between .py and .pyc files?
+31. What is the difference between `.py` and `.pyc` files?
 
 
 32. How Python is interpreted?
@@ -104,7 +104,7 @@
 35. Explain how to delete a file in Python?
 
 
-36. Explain split() and join() functions in Python?
+36. Explain `split()` and `join()` functions in Python?
 
 
 37. What does `*args` and `**kwargs` mean?
@@ -224,13 +224,13 @@
 75. What are the differences between pickling and unpickling?
 
 
-76. Define GIL.
+76. Define `GIL`.
 
 
-77. Define PYTHONPATH.
+77. Define `PYTHONPATH`.
 
 
-78. Define PIP.
+78. Define `PIP`.
 
 
 79. Are there any tools for identifying bugs and performing static analysis in python?
@@ -257,10 +257,10 @@
 86. Write a Program to add two integers >0 without using the plus operator.
 
 
-87. Write a Program to solve the given equation assuming that a,b,c,m,n,o are constants:
+87. Write a Program to solve the given equation assuming that `a,b,c,m,n,o` are constants:
 
 
-88. Write a Program to match a string that has the letter ‘a’ followed by 4 to 8 'b’s.
+88. Write a Program to match a string that has the letter `a` followed by 4 to 8 `b’s`.
 
 
 89. Write a Program to convert date from yyyy-mm-dd format to dd-mm-yyyy format.
