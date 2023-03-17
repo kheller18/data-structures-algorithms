@@ -13,14 +13,14 @@
    + Bandwidth - Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again.
 
 3. What are the limitations of CSS?
-   + Browser Compatibility: Some style selectors are supported and some are not. We have to determine which style is supported or not using the @support selector).
+   + Browser Compatibility: Some style selectors are supported and some are not. We have to determine which style is supported or not using the `@support` selector).
    + Cross Browser issue: Some selectors behave differently in a different browser).
    + There is no parent selector: Currently, Using CSS, you can’t select a parent tag.
 
 4. How to include CSS in the webpage?
-   + External Style Sheet: An external file linked to your HTML document: Using link tag, we can link the style sheet to the HTML page.
+   + External Style Sheet: An external file linked to your HTML document: Using `link` tag, we can link the style sheet to the HTML page.
      + `<link rel="stylesheet" type="text/css" href="mystyles.css" />`
-   + Embed CSS with a style tag: A set of CSS styles included within your HTML page.
+   + Embed CSS with a `style` tag: A set of CSS styles included within your HTML page.
      + ```
       <style type="text/css">
 
@@ -28,9 +28,9 @@
 
       </style>
       ```
-   + Add inline styles to HTML elements(CSS rules applied directly within an HTML tag.): Style can be added directly to the HTML element using a style tag.
+   + Add inline styles to HTML elements(CSS rules applied directly within an HTML tag.): Style can be added directly to the HTML element using a `style` tag.
      + `<h2 style="color:red;background:black">Inline Style</h2>`
-   + Import a stylesheet file (An external file imported into another CSS file): Another way to add CSS is by using the @import rule. This is to add a new CSS file within CSS itself.
+   + Import a stylesheet file (An external file imported into another CSS file): Another way to add CSS is by using the `@import` rule. This is to add a new CSS file within CSS itself.
      + `@import "path/to/style.css";`
 
 
@@ -50,7 +50,7 @@
           border: solid 1px #ccc;
         }
        ```
-    + ID Selector: This selector matches any HTML element that has an ID attribute with the same value as that of the selector. In the given example, the provided styles will get applied to all the elements having ID as a container on the page.
+    + id Selector: This selector matches any HTML element that has an `id` attribute with the same value as that of the selector. In the given example, the provided styles will get applied to all the elements having id as a container on the page.
       + ```
           #container {
             width: 960px;
@@ -59,7 +59,7 @@
 
           <div id="container"></div>
         ```
-    + Class Selector: The class selector also matches all elements on the page that have their class attribute set to the same value as the class.  In the given example, the provided styles will get applied to all the elements having ID as the box on the page.
+    + Class Selector: The `class` selector also matches all elements on the page that have their class attribute set to the same value as the class.  In the given example, the provided styles will get applied to all the elements having ID as the box on the page.
       + ```
           .box {
             padding: 10px;
@@ -84,7 +84,7 @@
 
           <div class=”box”></div>
         ```
-      + This declaration block will apply to all elements that have a class of box that is inside an element with an ID of the container. It’s worth noting that the .box element doesn’t have to be an immediate child: there could be another element wrapping .box, and the styles would still apply.
+      + This declaration block will apply to all elements that have a class of box that is inside an element with an ID of the container. It’s worth noting that the `.box` element doesn’t have to be an immediate child: there could be another element wrapping `.box`, and the styles would still apply.
     + Child Combinator: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.
       + ```
           #container> .box {
@@ -115,8 +115,8 @@
             <p>Paragraph example.</p>
           </div>
         ```
-      + In this example, all paragraph elements (<p>) will be styled with the specified rules, but only if they are siblings of `<h2>` elements. There could be other elements in between the `<h2>` and `<p>`, and the styles would still apply.
-    + Adjacent Sibling Combinator: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
+      + In this example, all paragraph elements (`<p>`) will be styled with the specified rules, but only if they are siblings of `<h2>` elements. There could be other elements in between the `<h2>` and `<p>`, and the styles would still apply.
+    + Adjacent Sibling Combinator: A selector that uses the adjacent sibling combinator uses the plus symbol (`+`), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
       + ```
           p + p {
             text-indent: 1.Sem;
@@ -149,7 +149,7 @@
    + SASS: Sass is the acronym for “Syntactically Awesome Style Sheets”. SASS can be written in two different syntaxes using SASS or SCSS
    + SASS vs SCSS
      + SASS is based on indentation and SCSS(Sassy CSS) is not.
-     + SASS uses .sass extension while SCSS uses .scss extension.
+     + SASS uses `.sass` extension while SCSS uses `.scss` extension.
      + SASS doesn’t use curly brackets or semicolons. SCSS uses it, just like the CSS.
    + SASS Syntax
       + ```
@@ -170,7 +170,7 @@
             background: $bg-color;
           }
         ```
-    + LESS: LESS is an acronym for “Leaner Stylesheets”. LESS is easy to add to any javascript projects by using NPM or less.js file. It uses the extension .less. LESS syntax is the same as the SCSS with some exceptions. LESS uses @ to define the variables.
+    + LESS: LESS is an acronym for “Leaner Stylesheets”. LESS is easy to add to any javascript projects by using NPM or less.js file. It uses the extension .less. LESS syntax is the same as the SCSS with some exceptions. LESS uses `@` to define the variables.
       + ```
           @font-color: #fff;
           @bg-color: #00f
@@ -180,7 +180,7 @@
             background: @bg-color;
           }
         ```
-    + Stylus: Stylus offers a great deal of flexibility in writing syntax, supports native CSS as well as allows omission of brackets, colons, and semicolons. It doesn’t use @ or $ for defining variables.
+    + Stylus: Stylus offers a great deal of flexibility in writing syntax, supports native CSS as well as allows omission of brackets, colons, and semicolons. It doesn’t use `@` or `$` for defining variables.
       + ```
           /* STYLUS SYNTAX WRITTEN LIKE NATIVE CSS */
           font-color= #fff;
@@ -253,7 +253,7 @@
          ```
 
 12. How do you specify units in the CSS?. What are the different ways to do it?
-   + There are different ways to specify units in CSS like px, em, pt, percentage (%). px(Pixel) gives fine-grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade. em maintains relative size. you can have responsive fonts. Em, will cascade 1em is equal to the current font-size of the element or the browser default. If u sent font-size to 16px then 1em = 16px. The common practice is to set default body font-size to 62.5% (equal to 10px).
+   + There are different ways to specify units in CSS like `px`, `em`, `pt`, percentage (`%`). px(`Pixel`) gives fine-grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade. em maintains relative size. you can have responsive fonts. Em, will cascade 1em is equal to the current font-size of the element or the browser default. If u sent font-size to 16px then 1em = 16px. The common practice is to set default body font-size to 62.5% (equal to 10px).
    + pt(point) are traditionally used in print. 1pt = 1/72 inch and it is a fixed-size unit.
    + %(percentage) sets font-size relative to the font size of the body. Hence, you have to set the font-size of the body to a reasonable size.
 
@@ -265,7 +265,7 @@
 
 
 14. What property is used for changing the font face?
-   + We can use the font-family property for achieving this. The `font-family` property is used for specifying what font needs to be applied on the targeted DOM element. It can hold several font names as part of “fallback” mechanism in case the browser does not support the fonts. For example, we can use:
+   + We can use the `font-family` property for achieving this. The `font-family` property is used for specifying what font needs to be applied on the targeted DOM element. It can hold several font names as part of “fallback” mechanism in case the browser does not support the fonts. For example, we can use:
      + ```
         p {
           font-family: "Times New Roman", Times, serif;
@@ -293,7 +293,7 @@
         }
        ```
      + Here, the browser first finds all `span` elements in the DOM and then it traverses to each of its parent elements to check if they are the paragraph `p` elements.
-     + Once the browser finds all matching span tags having paragraph elements as parent and applies the color of black to the content, the matching process is stopped.
+     + Once the browser finds all matching `span` tags having paragraph elements as parent and applies the color of black to the content, the matching process is stopped.
 
 
 
@@ -311,7 +311,7 @@
             box-sizing:content-box;
         }
        ```
-       + Here, the box-sizing for the div element is given as content-box. That means, the height and width considered for the div content exclude the padding and border. We will get full height and width parameters specified for the content as shown in the below image.
+       + Here, the box-sizing for the `div` element is given as content-box. That means, the height and width considered for the `div` content exclude the padding and border. We will get full height and width parameters specified for the content as shown in the below image.
    + `border-box` property includes the content, padding and border in the height and width properties.
      + ```
         div {
@@ -325,7 +325,7 @@
             box-sizing:border-box;
         }
        ```
-       + Here, the box-sizing for the div element is given as border-box. That means the height and width considered for the div content will also include the padding and border. This means that the actual height of the div content will be:
+       + Here, the box-sizing for the `div` element is given as `border-box`. That means the height and width considered for the `div` content will also include the padding and border. This means that the actual height of the div content will be:
          + ```
             actual height = height -
                             padding on top and bottom -
@@ -383,7 +383,7 @@
 
 21. What do the following CSS selectors mean?
    + div, p
-     + This selector implies selecting all div elements and all p elements
+     + This selector implies selecting all `div` elements and all `p` elements
      + ```
         <h1>Heading 1</h1>
           <div>
@@ -399,7 +399,7 @@
        ```
        + Here, all the `div` elements and the `p` elements would be selected by the browser irrespective of their parents or where they are placed. The remaining tags like `h1` and `span` are ignored.
    + div p
-     + This selector tells to select all p elements that are inside div elements.
+     + This selector tells to select all `p` elements that are inside `div` elements.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -418,7 +418,7 @@
        ```
        + Here, `<p>paragraph 1</p>` and `<p> Inner Div Paragraph </p>` would be selected by the browser and the properties are applied. The rest of the paragraph tags are not selected.
    + div ~ p
-     + This selector tells to select all p elements that have div elements preceeded anywhere.
+     + This selector tells to select all `p` elements that have `div` elements preceeded anywhere.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -434,7 +434,7 @@
        ```
        + Here, paragraph 2 and paragraph 3 elements would be selected as marked in the code above.
    + div + p
-     + This selector says to select all p elements placed immediately after the div element.
+     + This selector says to select all `p` elements placed immediately after the `div` element.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -442,15 +442,15 @@
             <p> paragraph 1</p>
         </div>
         <p> paragraph 2</p> <!-- Will be selected -->
-        <p> paragraph 3</p> 
+        <p> paragraph 3</p>
         <div>
             Division 2
         </div>
         <span> Span 1 </span>
        ```
-       + In this case, we have paragraph 2 element immediately after the div tag.
+       + In this case, we have 2 `p` elements immediately after the `div` tag.
    + div > p
-     + This selector says to select all p elements which has div as an immediate parent.
+     + This selector says to select all `p` elements which has `div` as an immediate parent.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -464,7 +464,7 @@
         </div>
         <span> Span 1 </span>
        ```
-       + Only `<p> paragraph 1</p>` will be selected in this case because it has immediate div as the parent.
+       + Only `<p> paragraph 1</p>` will be selected in this case because it has immediate `div` as the parent.
 
 
 
@@ -617,7 +617,7 @@
 
 
 31. What does the `:root` pseudo-class refer to?
-   + The :root selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
+   + The `:root` selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
 
 
 
@@ -639,7 +639,7 @@
 
 
 35. How does Calc work?
-   + The CSS3 calc() function allows us to perform mathematical operations on property values. Instead of declaring, for example, static pixel values for an element's width, we can use calc() to specify that the width is the result of the addition of two or more numeric values.
+   + The CSS3 `calc()` function allows us to perform mathematical operations on property values. Instead of declaring, for example, static pixel values for an element's width, we can use `calc()` to specify that the width is the result of the addition of two or more numeric values.
    + ```
       .foo {
         Width: calc(100px + 50px)
@@ -648,7 +648,7 @@
 
 
 36. What do CSS Custom properties variables mean?
-   + Custom properties (sometimes referred to as CSS variables or cascading variables) are defined by users that contain specific values to be reused throughout a document. The value is set using -- notion. And the values are accessed using the var() function.
+   + Custom properties (sometimes referred to as CSS variables or cascading variables) are defined by users that contain specific values to be reused throughout a document. The value is set using -- notion. And the values are accessed using the `var()` function.
    + ```
       :root {
         --main-bg-color: brown
@@ -672,8 +672,8 @@
 
 38. What does `* { box-sizing: border-box; }` do? What are its advantages?
    + It makes every element in the document include the padding and border in the element’s inner dimension for the height and width computation.
-   + In box-sizing: border-box, The height of an element is now calculated by the content's height + vertical padding + vertical border width.
-   + The width of an element is now calculated by the content's width + horizontal padding + horizontal border width.
+   + In box-sizing: border-box, The height of an element is now calculated by the `content's height + vertical padding + vertical border width`.
+   + The width of an element is now calculated by the content's `width + horizontal padding + horizontal` border width.
 
 39. What does `!important` mean in CSS?
    + The style is having the important will have the highest precedence and it overrides the cascaded property.
@@ -728,7 +728,7 @@
      ```
 
 42. What are the advantages of using `translate()` instead of absolute position?
-   + Translate() does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM reflow. So, translate() gives better performance.
+   + `Translate()` does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM reflow. So, `translate()` gives better performance.
 
 
 
@@ -742,7 +742,7 @@
      ```
 
 44. How to determine if the browser supports a certain feature?
-   + The @support in CSS can be very useful to scan if the current browser has support for a certain feature.
+   + The `@support` in CSS can be very useful to scan if the current browser has support for a certain feature.
    + ```
       @supports (display: grid) {
         div {
@@ -772,8 +772,8 @@
 
 
 47. How will you align content inside the p tag at the exact center inside the div?
-   + We can add the `text-align: center` property inside the parent div for aligning the contents horizontally. But it will not align the contents vertically. We can align the content vertically by making the parent element have relative positioning and the child element have absolute positioning. The child element should have the values of top, bottom, right, left as 0 to center it in the middle vertically. Then we need to set the margin as auto. It is assumed that both the child and mother elements will have height and width values.
-   + Consider we have a div element of height and width taking 20% of the screen size, and we have a paragraph element taking the height of 1.2em and width of 20%. If we want to align the paragraph element at the center (vertically and horizontally), we write the following styles:
+   + We can add the `text-align: center` property inside the parent `div` for aligning the contents horizontally. But it will not align the contents vertically. We can align the content vertically by making the parent element have relative positioning and the child element have absolute positioning. The child element should have the values of top, bottom, right, left as 0 to center it in the middle vertically. Then we need to set the margin as auto. It is assumed that both the child and mother elements will have height and width values.
+   + Consider we have a `div` element of height and width taking 20% of the screen size, and we have a paragraph element taking the height of 1.2em and width of 20%. If we want to align the paragraph element at the center (vertically and horizontally), we write the following styles:
      + ```
         div {
             position : relative;  // Make position relative
@@ -800,10 +800,10 @@
      + margin-bottom
      + margin-left
      + margin property by itself has the values as:
-     + auto – The browser auto-calculates the margin while we use this.
-     + length – The value of this property can be in px, pt, cm, em etc. The values can be positive or negative.
-     + % – We can also give percentage value as margin to the element.
-     + inherit – Using this property, the margin properties can be inherited from the parent elements.
+       + auto – The browser auto-calculates the margin while we use this.
+       + length – The value of this property can be in `px`, `pt`, `cm`, `em`, etc. The values can be positive or negative.
+       + % – We can also give percentage value as margin to the element.
+       + inherit – Using this property, the margin properties can be inherited from the parent elements.
    + The padding property is used for generating the space around the element’s content and inside any known border. Padding does not allow negative values. The padding also has sub-properties like:
      + padding-top
      + padding-right
@@ -811,7 +811,7 @@
      + padding-left
 
 49. What do you have to do to automatically number the heading values of sections and categories?
-   + We can use the concept of CSS counters. This lets us adjust the appearance of the content based on the location in a document. While using this, we need to first initialize the value of the counter-reset property which is 0 by default. The same property is also used for changing the value to any number that we need. Post initialization, the counter’s value can be incremented or decremented by using the counter-increment property. The name of the counter cannot be CSS keywords like “none”, “initial”, “inherit” etc. If the CSS keywords are used, then the declaration would be ignored.
+   + We can use the concept of CSS counters. This lets us adjust the appearance of the content based on the location in a document. While using this, we need to first initialize the value of the counter-reset property which is 0 by default. The same property is also used for changing the value to any number that we need. Post initialization, the counter’s value can be incremented or decremented by using the counter-increment property. The name of the counter cannot be CSS keywords like `“none”`, `“initial”`, `“inherit”` etc. If the CSS keywords are used, then the declaration would be ignored.
    + ```
       body {
         counter-reset: header;   /* define counter named 'header' whose initial value is 0 by default */
@@ -822,11 +822,11 @@
         content: "Header " counter(header) ": ";  /* To display word Header and the value of the counter with colon before it.*/
       }
      ```
-     + Here, we are trying to achieve auto count increment and display feature for the h2 tag. Wherever we use h2 tag, the content will be prefixed by "Header 1 : " , "Header 2 : ", "Header 3 : " etc.
+     + Here, we are trying to achieve auto count increment and display feature for the `h2` tag. Wherever we use `h2` tag, the content will be prefixed by "Header 1 : " , "Header 2 : ", "Header 3 : " etc.
 
 50. How is the `nth-child()` different from nth of type selectors?
    + Both are pseudo-classes (Pseudo-classes are those keywords that specifies the special state of the selected element). The `nth-child()` pseudo-class is used for matching elements based on the number that represents the position of an element based on the siblings. The number is used to match an element on the basis of the element’s position amongst its siblings.
-   + For example, in the below piece of code, if we give nth-child(4) for the example class, then the 4th child of the example class is selected irrespective of the element type. Here, the fourth child of the example class is the div element. The element is selected and a background of black is added to it.
+   + For example, in the below piece of code, if we give `nth-child(4)` for the example class, then the 4th child of the example class is selected irrespective of the element type. Here, the fourth child of the example class is the `div` element. The element is selected and a background of black is added to it.
      + ```
         .example:nth-child(4) {
             background: black;
@@ -842,8 +842,8 @@
           <div>This is a div.</div>
         </div>
        ```
-   + The nth-of-type() pseudo-class is similar to the nth-child but it helps in matching the selector based on a number that represents the position of the element within the elements that are the siblings of its same type. The number can also be given as a function or give keywords like odd or even.
-     + For example, in the below piece of code, if we give p:nth-of-type(even) for the example class, then all the even paragraph tags are selected within the example class and the style of background black is applied to them. The selected elements are marked in comments in the below code:
+   + The `nth-of-type()` pseudo-class is similar to the nth-child but it helps in matching the selector based on a number that represents the position of the element within the elements that are the siblings of its same type. The number can also be given as a function or give keywords like odd or even.
+     + For example, in the below piece of code, if we give `p:nth-of-type(even)` for the example class, then all the even paragraph tags are selected within the example class and the style of background black is applied to them. The selected elements are marked in comments in the below code:
        + ```
           .example p:nth-of-type(even) {
               background: black;
@@ -903,12 +903,12 @@
             </body>
             </html>
            ```
-            + In the above code, we are trying to access each element - house, previous and next icon - from the sprite file by using the left, width properties. The image is displayed in the img section by means of the background property. Do note that the source of the image (src attribute of the img tag) is just one file which is the spriteFile.gif and depending on the rules specified in the id selectors, the images are loaded accordingly.
+            + In the above code, we are trying to access each element - house, previous and next icon - from the sprite file by using the left, width properties. The image is displayed in the img section by means of the background property. Do note that the source of the image (`src` attribute of the `img` tag) is just one file which is the spriteFile.gif and depending on the rules specified in the id selectors, the images are loaded accordingly.
 
 
 
 52. What do you understand by tweening in CSS?
-   + Tweening is the process of filling the gaps between the key sequences, i.e between the keyframes that are already created. Keyframes are those frames that represent start and end point of animation action. Tweening involves generating intermediate keyframes between two images that give the impression that the first one has evolved smoothly to the second image. For this purpose, we use properties like transforms - matrix, translate, scale, rotate etc.
+   + Tweening is the process of filling the gaps between the key sequences, i.e between the keyframes that are already created. Keyframes are those frames that represent start and end point of animation action. Tweening involves generating intermediate keyframes between two images that give the impression that the first one has evolved smoothly to the second image. For this purpose, we use properties like `transforms - matrix`, `translate`, `scale`, `rotate`, etc.
    + In the below example, we are generating intermediate frames of paragraph elements to slide through from the start to the right edge of the browser.
      + ```
         p {
@@ -928,13 +928,13 @@
           }
         }
        ```
-       + Here, the paragraph element specifies that the animation process should take 2 seconds for execution from start to the finish. This is done by using the animation-duration property. The animation-name of the @keyframes is defined by using the property animation-name. The intermediate keyframes are defined by using @keyframes rule. In the example, we have just 2 keyframes. The first keyframe starts at 0% and runs till the left margin of 100% which is the rightmost edge of the containing element. The second keyframe starts at 100% where the left margin is set as 0% and the width to be set as 100% which results in finishing the animation flush against the left edge of the container area.
+       + Here, the paragraph element specifies that the animation process should take 2 seconds for execution from start to the finish. This is done by using the animation-duration property. The animation-name of the `@keyframes` is defined by using the property animation-name. The intermediate keyframes are defined by using `@keyframes` rule. In the example, we have just 2 keyframes. The first keyframe starts at 0% and runs till the left margin of 100% which is the rightmost edge of the containing element. The second keyframe starts at 100% where the left margin is set as 0% and the width to be set as 100% which results in finishing the animation flush against the left edge of the container area.
 
 
 
 53. Why do we need to use clear property along with floats in CSS?
    + The clear property along with floats is used for specifying which side of floating elements is not supposed to float. An element having clear property ensures that the element does not move up adjacent to the float. But the element will be moved down past the float.
-   + Let us understand this with the help of an example. We know that the floated objects do not add to the height of the objects where they reside. Consider we have a div element with class “floated_div” within another div element with id “main_div”.
+   + Let us understand this with the help of an example. We know that the floated objects do not add to the height of the objects where they reside. Consider we have a div element with `class “floated_div”` within another `div` element with `id “main_div”`.
      + ```
         <html>
             <head>
@@ -969,7 +969,7 @@
        ```
        + The result of this code would be as shown below. We see that the squares that are expected to be within dev are not within the main parent div. How do we fix this?
          + IMAGE HERE
-         + We can do it just by adding `<div style="clear:both"></div>` line at the end of the last floated element so that the floated elements are fit in properly within the main div container.
+         + We can do it just by adding `<div style="clear:both"></div>` line at the end of the last floated element so that the floated elements are fit in properly within the main `div` container.
            + ```
               <html>
                   <head>
@@ -1021,5 +1021,5 @@
        + CSS Flexbox and Grids - To layout child elements depending on the content and available space.
        + CSS resets stylesheets - For reducing browser inconsistencies in default line heights, font sizes, margins etc.
      + Check JavaScript Library issues: Ensure the libraries are used judiciously and the ones used are supported by the browsers.
-     + Check DOCTYPE tag keyword: The DOCTYPE keyword is meant for defining rules of what needs to be used in the code. Older browser versions check for DOCTYPE tag at the beginning and if not found, the application rendering won't be proper.
+     + Check DOCTYPE tag keyword: The `DOCTYPE` keyword is meant for defining rules of what needs to be used in the code. Older browser versions check for `DOCTYPE` tag at the beginning and if not found, the application rendering won't be proper.
      + Test on real devices: Although applications can be tested on virtual environments, it would be more beneficial if the testing is carried out on real devices and platforms. We can use tools like Testsigma for this purpose that enables us to test in real devices parallelly.
