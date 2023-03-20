@@ -1,4 +1,7 @@
 # Cascading Style Sheet (CSS) Interview Questions
+
+---
+
 1. What is the Box model in CSS? Which CSS properties are a part of it?
    + A rectangle box is wrapped around every HTML element. The box model is used to determine the height and width of the rectangular box. The CSS Box consists of Width and height (or in the absence of that, default values and the content inside), padding, borders, margin.
     ![box model](../images/css/box_model_css.png)

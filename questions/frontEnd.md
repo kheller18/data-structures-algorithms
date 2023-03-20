@@ -1,4 +1,7 @@
 # Front End Interview Questions
+
+---
+
 1. What are meta tags in HTML?
    + Meta tags are those tags which go inside the Head tag of the HTML page
    + Meta tags are not for the interface they are important for the browser.
