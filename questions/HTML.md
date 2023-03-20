@@ -13,12 +13,12 @@
 
 5. What are HTML Entities?
    + In HTML some characters are reserved like ‘<’, ‘>’, ‘/’, etc. To use these characters in our webpage we need to use the character entities called HTML Entities. Below are a few mapping between the reserved character and its respective entity character to be used.
-   ![html entities](../images/html_entities.png)
+   ![html entities](../images/html/html_entities.png)
 
 6. What are different types of lists in HTML?
    + Ordered (`<li></li>`)
    + Unordered (`<ul></ul>`)
-  ![ordered vs unordered lists](../images/ordered_unordered_list.png)
+  ![ordered vs unordered lists](../images/html/ordered_unordered_list.png)
 
 7. What is the ‘class’ attribute in HTML?
    + The class attribute is used to specify the class name for an HTML element. Multiple elements in HTML can have the same class value. Also, it is mainly used to associate the styles written in the stylesheet with the HTML elements.
@@ -130,7 +130,7 @@
       + Inline: Here we use the ‘style’ attribute inside the HTML element.
       + Internal: Here we use the `<style>` tag inside the `<head>` tag. To apply the style we bind the elements using ‘id’ or ‘class’ attributes.
       + External: Here we use the `<link>` tag inside `<head>` tag to reference the CSS file into our HTML code. Again the binding between elements and styles is done using ‘id’ or ‘class’ attributes.
-    ![inline internal external css](../images/css_styles_html.png)
+    ![inline internal external css](../images/html/css_styles_html.png)
 
 26. Difference between link tag `<link>` and anchor tag `<a>`?
     + The anchor tag `<a>` is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, whereas, link tag `<link>` defines a link between a document and an external resource and these are not clickable.
@@ -163,7 +163,7 @@
       + ```
           <form action="/submit_data.php">
             <label>Enter your name: </label>
-            <input type="text" name="name" /> 
+            <input type="text" name="name" />
             <label>Enter Mobile number </label>
             <input type="number" name="mobile_no"/>
             <input type="submit" value="Submit">
@@ -205,18 +205,18 @@
     + HTML5 provides two tags: `<audio>` and `<video>` tags using which we can add the audio or video directly in the webpage.
 
 33. Inline and block elements in HTML5?
-  ![inline and block elements](../images/inline_block.png)
+  ![inline and block elements](../images/html/inline_block.png)
 
 34. What is the difference between `<figure>` tag and `<img>` tag?
     + The `<figure>` tag specifies the self-contained content, like diagrams, images, code snippets, etc. `<figure>` tag is used to semantically organize the contents of an image like image, image caption, etc., whereas the `<img>` tag is used to embed the picture in the HTML5 document.
 
 35. How to specify the metadata in HTML5?
     + To specify we can use `<meta>` tag which is a void tag,i.e., it does not have a closing tag. Some of the attributes used with meta tags are name, content, http-equiv, etc. The below image tells how to specify the metadata.
-    ![metadata](../images/meta_tags.png)
+    ![metadata](../images/html/meta_tags.png)
 
 36. Is the `<datalist>` tag and `<select>` tag same?
     + No. The `<datalist>` tag and `<select>` tag are different. In the case of `<select>` tag a user will have to choose from a list of options, whereas `<datalist>` when used along with the `<input>` tag provides a suggestion that the user selects one of the options given or can enter some entirely different value.
-    ![datalist](../images/datalist.png)
+    ![datalist](../images/html/datalist.png)
 
 37. Define Image Map?
     + Image Map lets a developer map/link different parts of images with the different web pages. It can be achieved by the `<map>` tag in HTML5, using which we can link images with clickable areas.
@@ -232,7 +232,7 @@
     + Semantic elements are those which describe the particular meaning to the browser and the developer. Elements like `<form>`, `<table>`, `<article>`, `<figure>`, etc., are semantic elements.
 
 39. Convert the below data into Tabular format in HTML5?
-    ![cell padding and spacing](../images/cell_padding_spacing.png)
+    ![cell padding and spacing](../images/html/cell_padding_spacing.png)
 
 40. What is the difference between `<meter>` tag and `<progress>` tag?
     + `<progress>` tag should be used when we want to show the completion progress of a task, whereas if we just want a scalar measurement within a known range or fraction value. Also, we can specify multiple extra attributes for `<meter>` tags like ‘form’, ‘low’, ‘high’, ‘min’, etc.
@@ -241,7 +241,7 @@
     + Yes, in HTML5 we can drag and drop an element. This can be achieved using the drag and drop-related events to be used with the element which we want to drag and drop.
 
 41. Difference between SVG and Canvas HTML5 element?
-    ![svg vs canvas](../images/svg_canvas.png)
+    ![svg vs canvas](../images/html/svg_canvas.png)
 
 42. What type of audio files can be played using HTML5?
     + Mp3
@@ -282,7 +282,7 @@
       + itemref – Provides a list of element ids with additional properties.
       + itemscope – It defines the scope of the itemtype associated with it.
       + itemtype – Specifies the URL of the vocabulary that will be used to define itemprop.
-    ![microdata](../images/microdata.png)
+    ![microdata](../images/html/microdata.png)
 
 46. Which tag is used for representing the result of a calculation? Explain its attributes.
     + The `<output>` tag is used for representing the result of a calculation. It has the following attributes:
@@ -309,7 +309,7 @@
           <head>
           </head>
           <body>
-            <canvas width="300" height="100" style="border:2px solid;"></canvas>  
+            <canvas width="300" height="100" style="border:2px solid;"></canvas>
           </body>
           </html>
           ```
@@ -438,7 +438,7 @@
       </body>
       </html>
       ```
-    ![media types html](../images/media_tags.png)
+    ![media types html](../images/html/media_tags.png)
 
 52. Why do we need the MathML element in HTML5?
     + MathML stands for Mathematical Markup Language. It is used for displaying mathematical expressions on web pages. For this `<math>` tag is used.
@@ -510,9 +510,9 @@
     + Its value is a boolean type that indicates whether or not the data being submitted by the form will be validated beforehand. By making this false, forms can be submitted without validation which helps users to resume later also.
     + ```
       <form action = "" method = "get" novalidate>
-              Name:<br><input type="name" name="sname"><br>
-            Doubt:<br><input type="number" name="doubt"><br>
-              <input type="submit" value="Submit">
+        Name:<br><input type="name" name="sname"><br>
+        Doubt:<br><input type="number" name="doubt"><br>
+        <input type="submit" value="Submit">
       </form>
       ```
 
@@ -579,20 +579,20 @@
               function getLocation() {
                 if (navigator.geolocation) {
                   navigator.geolocation.getCurrentPosition(showPosition);
-                } else { 
+                } else {
                   x.innerHTML = "Geolocation functionality is not supported by this browser.";
                 }
               }
 
               function showPosition(position) {
-                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                x.innerHTML = "Latitude: " + position.coords.latitude +
                 "<br>Longitude: " + position.coords.longitude;
               }
           </script>
         </body>
       </html>
       ```
-    ![geolocation](../images/geolocation.png)
+    ![geolocation](../images/html/geolocation.png)
     + The above example asks for user permission for accessing the location data via geolocation API and after clicking the button the coordinates of the physical location of the client get displayed.
 
 61. Explain Web Components and it’s usage.
@@ -617,24 +617,24 @@
       + ```
         customElements.define('open-shadow',
         class extends HTMLElement {
-        constructor() {
-          super();
-          const pElem = document.createElement('p');
-          pElem.textContent = this.getAttribute('text');
-          const shadowRoot = this.attachShadow({mode: 'open'});
-          shadowRoot.appendChild(pElem);
-        }
+          constructor() {
+            super();
+            const pElem = document.createElement('p');
+            pElem.textContent = this.getAttribute('text');
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.appendChild(pElem);
+          }
         }
         );
         customElements.define('closed-shadow',
         class extends HTMLElement {
-        constructor() {
-          super();
-          const pElem = document.createElement('p');
-          pElem.textContent = this.getAttribute('text');
-          const shadowRoot = this.attachShadow({mode: 'closed'});
-          shadowRoot.appendChild(pElem);
-        }
+          constructor() {
+            super();
+            const pElem = document.createElement('p');
+            pElem.textContent = this.getAttribute('text');
+            const shadowRoot = this.attachShadow({mode: 'closed'});
+            shadowRoot.appendChild(pElem);
+          }
         }
         );
         document.querySelector('html').addEventListener('click', e => {
