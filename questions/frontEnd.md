@@ -101,7 +101,7 @@
     + Version control: The way of tracking and the modifications to the project's code is version control. Git is regarded as a popular software that is utilized to track your code. If your code gets messed up, you can utilize Git to go back to an earlier version of your code rather than manually rewriting everything. Learning Git also lets you cooperate with others on a team and make modifications to the same code base from various locations. It is advised that you should start to learn Git and use a service like GitHub to host your projects.
 
 27. What is the difference between div and span?
-![Div vs Span](../images/fe_div_span.png)
+![Div vs Span](../images/front-end/fe_div_span.png)
 
 28. What are the advantages of REST web services?
     + The curve of learning is simple since it works on the HTTP protocol.
@@ -206,8 +206,8 @@
          ```
 
 44.  What the major HTTP requests?
-![http methods](../images/http_requests.png)
-![http status codes](../images/status_codes.png)
+![http methods](../images/front-end/http_requests.png)
+![http status codes](../images/front-end/status_codes.png)
 
 45.  What do you know about the CSS image sprites and why it is utilized?
      + CSS image sprites assist to render numerous images in a single line image. In a nutshell, the CSS sprites merge numerous photos into a single large image. If a web page comprises different images, then it would raise its loading time as for every image the browser has to send a distinct HTTP request, but with the help of sprites, we have a single image to request.
@@ -257,7 +257,7 @@
 55. What is the difference between package.json and package-lock.json?
     + In Node.js, package.json is a versioning file used to install multiple packages in your project. As you initialize your node application, you will see three files installed in your app that is node_modules, package.json, and package.lock.json.
     + package.lock.json is created for locking the dependency with the installed version. It will install the exact latest version of that package in your application and save it in package.json. Let’s say if the current version of the package is 1.3.2 then it will save the version with (^) sign. Here carot(^) means, it will support any higher version with major version 1 for eg. 1.2.2.
-    ![package.json vs package-lock.json](../images/package_package_lock.png)
+    ![package.json vs package-lock.json](../images/front-end/package_package_lock.png)
 
 1.  What is difference between apply, call and bind?
     + The call and apply methods set this to a function and call the function.
@@ -283,7 +283,7 @@
           console.log(this.num, arguments);//100, [1,2,3]
         }
 
-        test.apply({num: 100}, [1,2,3]); 
+        test.apply({num: 100}, [1,2,3]);
         ```
       + In the code above, we have called the test function using the apply method and with the this value as the object passed to the apply method.
     + bind
@@ -298,7 +298,6 @@
         bindedFn(); // 99, "argument"
         ```
       + In the above code, we bind the this value for the test function and invoke the returned function from the bind method.
-
 
 57. What is the difference between internal and external JavaScript?
     + Directly write our program in an HTML file within `<script>` tags. This is called Internal JavaScript. Write a JavaScript program in a file having a . js extension and then link the file inside the `<head>` or `<body>` tag of our HTML file. This way of writing code in JavaScript is called External JavaScript.
@@ -354,7 +353,7 @@
       + somorphic React applications can be worked on both the server-side and client-side applications. With isomorphic JavaScript, you can work with React JS application and fetch the rendered HTML file which is generally rendered by the browser. This very HTML file is being executed for everyone who tries to search for the particular app, along with Google bots. When it comes to client-side scripting, the application can use this HTML file and continue to operate the same on the browser. The data is added using JavaScript if required, the isomorphic app still remains dynamic. Isomorphic applications ensure that the client is able to operate the scripts or not. While JavaScript is not active, the code is rendered on the server, and the browser can fetch all the meta tags and text in HTML and CSS files. However, developing real-time isomorphic applications is such a challenging and complex task. But, here these two frameworks can make the process of the same pretty quicker and simpler: Gatsby and Next.js. Gatsby is an open-source compiler that allows developers to create robust and scalable web applications. But, its biggest issue is that it does not offer server-side rendering. It generates a static website and then creates HTML files to store it in the cloud.
     + Server-side rendering with Next.js
       + If a single-page application is what you have decided to go with, then server-side rendering is the best way to improve page ranking in search results. As Google bots easily index and rank pages that are rendered on the server. For server-side rendering, the ideal choice for implementing it is Next.js: a react framework.
-      ![Server side rendering with Next.js](../images/server-side-nextjs.png)
+      ![Server side rendering with Next.js](../images/front-end/server-side-nextjs.png)
     + Best Practices:
       + Building static or dynamic web applications
         + As we have discussed before, SPA (single-page applications) are often difficult to be fetched by Google when it comes to SEO. Static or dynamic web apps come to rescue you as they use server-side rendering which helps Google pods crawl your website smoothly.
@@ -394,9 +393,3 @@
 
 67. What is CORS?
   + CORS (Cross-Origin Resource Sharing) is a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin requests. The same-origin security policy forbids cross-origin access to resources.
-
-
-
-
-
-
