@@ -75,9 +75,9 @@
       + In the above example, we use recursion to calculate the Fibonacci sequence. The algorithm O(2^n) specifies a growth rate that doubles every time the input data set is added. An O(2^n) function's exponential growth curve starts shallow and then rises rapidly.
 + Factorial time: O(n!)
 
-![Big O Data Structures](../images/bigO_data_structures.png)
-![Big O Search and Sorting Algorithms](../images/bigO_search_sort_algorithms.png)
-![Big O Graph](../images/bigO_graph.png)
+![Big O Data Structures](../images/bigO/bigO_data_structures.png)
+![Big O Search and Sorting Algorithms](../images/bigO/bigO_search_sort_algorithms.png)
+![Big O Graph](../images/bigO/bigO_graph.png)
 
 ## Calculating Complexity
 + To determine the time complexity of our code, we must examine it line by line, taking note of the following factors:
@@ -117,4 +117,4 @@
   + It makes no difference what the logarithm base is in Big-O complexity analysis; they are asymptotically the same or differ by just a constant factor.
     + `Thus, O(log2 n) = O(log10 n) = O(log n).`
 
-![Big O Advanced Data Structures](../images/bigO_advanced_data_structures.png)
+![Big O Advanced Data Structures](../images/bigO/bigO_advanced_data_structures.png)
