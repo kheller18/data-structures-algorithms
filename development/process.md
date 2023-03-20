@@ -48,7 +48,7 @@
 
 ## Five Software Development Processes
 ### 1. Waterfall
-![waterfall image](../images/waterfall.png)
+![waterfall image](../images/development-process/waterfall.png)
 + What it is:
   + The Waterfall software development process (also known as the “linear sequential model” or “Classic lifecycle model”) is one of the oldest and most traditional models for building software. In its most basic form, you can think of the Waterfall method as following each step of the SDLC in sequence–you have to finish each one sequentially before moving on. However, in most practical applications the phases overlap slightly, with feedback and information being passed between them.
   + Some people also like to call this a “plan-driven” process as in order to complete a project, you first need to know everything that needs to be done and in what order. Hence the name “Waterfall” as each section flows into the next one.
@@ -69,7 +69,7 @@
   + While straightforward, this process’s biggest drawback is that it lacks flexibility. You won’t be creating and testing MVPs or prototypes and changing your mind along the way. And because of this, unless your scope is tightly written, you might end up committing to the wrong path without knowing it until launch day.
 
 ### 2. Agile and Scrum
-![agile and scrum image](../images/agile_scrum.png)
+![agile and scrum image](../images/development-process/agile_scrum.png)
 + What it is:
   + The Agile software development process (and its most popular methodology, Scrum) opt for an iterative and dynamic approach to development.
   + As opposed to the Waterfall process’ strict, sequential flow, in Agile, cross-functional teams work in “Sprints” of 2 weeks to 2 months to build and release usable software to customers for feedback.
@@ -95,9 +95,9 @@
 + What it is:
   + The incremental and iterative software development processes are a middle-ground between the structure and upfront planning of the Waterfall process and the flexibility of Agile.
   + While both follow the idea of creating small bits of software and exposing them to users for feedback, they differ in what you create during each release.
-![incremental image](../images/incremental.png)
+![incremental image](../images/development-process/incremental.png)
   + In the Incremental software development process, each “incremental” increase of the product adds a simple form of a new function or feature. Think of it like coming up with an overall plan, building an MVP with only the core functionality, and then adding features based on feedback.
-![iterative image](../images/iterative.png)
+![iterative image](../images/development-process/iterative.png)
   + In the Iterative software development process, however, each version you release includes a version of all your planned features. Think of it like building a v0.1 with the most simple version of each feature and then upgrading it across the board in v0.2, v0.3, and so on.
 + Incremental Phases:
   + Increment Planning
@@ -125,7 +125,7 @@
   + Agile, on the other hand, combines aspects of both approaches. In each Agile sprint, you build a small portion of each feature, one at a time, and then gradually add functionality and new features over time.
 
 ### 4. V-Shaped
-![v-shaped image](../images/v_shaped.png)
+![v-shaped image](../images/development-process/v_shaped.png)
 + What it is:
   + The V-shaped software development process is a take on the classic Waterfall method that makes up for its biggest downfall: A lack of testing.
   + Rather than work sequentially through the development process and save all your testing for the end, each stage of the V-shaped process is followed by a strict “validation and verification” step where requirements are tested before moving on.
@@ -148,7 +148,7 @@
   + First, there’s a lack of control due to the fact that you’re following a rigid structure and testing schedule. Without early input and feedback from your users, you still run the risk of building the wrong software for your business case. And finally, if you’re building anything beyond a simple, small project, it’s nearly impossible to create a specific enough development plan beforehand.
 
 ### 5. Spiral
-![spiral image](../images/spiral.png)
+![spiral image](../images/development-process/spiral.png)
 + What it is:
   + The Spiral software development process combines the V-shaped process’ focus on testing and risk assessment with the incremental nature of Iterative, Incremental, and Agile.
   + Once a plan is in place for a specific iteration or milestone, the next step is to do an in-depth risk analysis to identify errors or areas of excessive risk. For example, let’s say as part of your plan you come up with a feature that hasn’t been validated with customers. Rather than just add it to your current milestone, you might build out a prototype to test with users before moving into the full development phase. After each milestone has been completed, the scope expands further out (like a spiral) and you start with planning and another risk assessment.
