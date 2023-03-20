@@ -1,7 +1,7 @@
 # Cascading Style Sheet (CSS) Interview Questions
 1. What is the Box model in CSS? Which CSS properties are a part of it?
    + A rectangle box is wrapped around every HTML element. The box model is used to determine the height and width of the rectangular box. The CSS Box consists of Width and height (or in the absence of that, default values and the content inside), padding, borders, margin.
-    ![box model](../images/box_model_css.png)
+    ![box model](../images/css/box_model_css.png)
      + Content:  Actual Content of the box where the text or image is placed.
      + Padding: Area surrounding the content (Space between the border and content).
      + Border: Area surrounding the padding.
@@ -271,7 +271,7 @@
          ```
 
 15. What are the differences between adaptive design and responsive design?
-  ![adaptive vs responsive design](../images/adaptive_responsive_design.png)
+  ![adaptive vs responsive design](../images/css/adaptive_responsive_design.png)
 
 1.  How are the CSS selectors matched against the elements by the browser?
     + The order of matching selectors goes from right to left of the selector expression. The elements in the DOM are filtered by browsers based on the key selectors and are then traversed up to the parent elements for determining the matches. The speed of determining the elements depends on the length of the chain of selectors. Consider an example:
@@ -280,7 +280,7 @@
             color: black;
         }
        ```
-      ![css selectors](../images/selectors_css.png)
+      ![css selectors](../images/css/selectors_css.png)
      + Here, the browser first finds all `span` elements in the DOM and then it traverses to each of its parent elements to check if they are the paragraph `p` elements.
      + Once the browser finds all matching `span` tags having paragraph elements as parent and applies the color of black to the content, the matching process is stopped.
 
@@ -299,7 +299,7 @@
         }
        ```
        + Here, the box-sizing for the `div` element is given as content-box. That means, the height and width considered for the `div` content exclude the padding and border. We will get full height and width parameters specified for the content as shown in the below image.
-        ![content-box box model](../images/content_box_model.png)
+        ![content-box box model](../images/css/content_box_model.png)
     + `border-box` property includes the content, padding and border in the height and width properties.
      + ```
         div {
@@ -329,7 +329,7 @@
                               = 300 - (15*2) - (5*2)
                               = 260 px
                ```
-            ![border-box box model](../images/border_box_model.png)
+            ![border-box box model](../images/css/border_box_model.png)
 
 3.  How is opacity specified in CSS3?
     + Opacity refers to the degree to which the content is transparent or opaque. We can use the property named opacity which takes the values ranging from 0 to 1. 0 specifies that the element is completely transparent where 1 means that the element is completely opaque. We can use the opacity property as follows:
@@ -345,7 +345,7 @@
                 filter: alpha(opacity=60);
             }
            ```
-        ![opacity](../images/opacity.png)
+        ![opacity](../images/css/opacity.png)
 
 4.  Why should we use float property in CSS?
     + The float property is used for positioning the HTML elements horizontally either towards the left or right of the container. For instance,
@@ -364,7 +364,7 @@
      + Initial: The default value of 0 is set to the property.
      + Inherit: The properties are inherited from the parent.
     + The elements having a lesser value of z-index is stacked lower than the ones with a higher z-index.
-      ![z-index](../images/z_index_css.png)
+      ![z-index](../images/css/z_index_css.png)
        + From the above figure, we can see that as the value of the z-index increases along the z-axis, the order of stacking would be towards the top of other elements along the vertical axis.
 
 6.  What do the following CSS selectors mean?
@@ -499,7 +499,7 @@
     + Fixed: The element is positioned relative to the viewport or the browser window itself. viewport doesn't change if you scroll and hence the fixed element will stay right in the same position.
     + Static: Static default for every single page element. The only reason you would ever set an element to position: static is to forcefully remove some positioning that got applied to an element outside of your control.
     + Sticky: Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.
-    ![position property](../images/position_css.png)
+    ![position property](../images/css/position_css.png)
 
 10. When does DOM reflow occur?
     + Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
@@ -773,7 +773,7 @@
        + padding-right
        + padding-bottom
        + padding-left
-    ![padding vs margin model](../images/margin_padding_css.png)
+    ![padding vs margin model](../images/css/margin_padding_css.png)
 
 34. What do you have to do to automatically number the heading values of sections and categories?
     + We can use the concept of CSS counters. This lets us adjust the appearance of the content based on the location in a document. While using this, we need to first initialize the value of the counter-reset property which is 0 by default. The same property is also used for changing the value to any number that we need. Post initialization, the counter’s value can be incremented or decremented by using the counter-increment property. The name of the counter cannot be CSS keywords like `“none”`, `“initial”`, `“inherit”` etc. If the CSS keywords are used, then the declaration would be ignored.
@@ -833,7 +833,7 @@
        + It helps in downloading assets in advance that help display icons or images upon hover or other pseudo-states.
        + When there are multiple images, the browser makes separate calls to get the image for each of them. Using sprites, the images are combined in one and we can just call for that image using one call.
       + Consider an example where our application requires 3 images as shown below (Without Sprites Section). If we are trying to load the images independently, we require 3 different HTTP Requests to get the data. But if we have CSS Sprites where all 3 images are combines into 1 separated by some spaces, then we require only 1 HTTP Request.
-       ![sprites](../images/sprites_css.png)
+       ![sprites](../images/css/sprites_css.png)
          + We can access each image from the sprite by accessing the positioning properties as shown in the below code:
            + ```
               <!DOCTYPE html>
@@ -929,7 +929,7 @@
           </html>
         ```
         + The result of this code would be as shown below. We see that the squares that are expected to be within dev are not within the main parent div. How do we fix this?
-         ![clear property initial](../images/clear_float_initial.png)
+         ![clear property initial](../images/css/clear_float_initial.png)
          + We can do it just by adding `<div style="clear:both"></div>` line at the end of the last floated element so that the floated elements are fit in properly within the main `div` container.
            + ```
               <html>
@@ -965,7 +965,7 @@
                   </body>
               </html>
              ```
-             ![clear property after](../images/clear_float_after.png)
+             ![clear property after](../images/css/clear_float_after.png)
 
 39. How will you fix browser-specific styling issues?
     + We can write browser-specific styles separately in different sheets and load that only when the specific browser is used. This makes use of the server-side rendering technique.
