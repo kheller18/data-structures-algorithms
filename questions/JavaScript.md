@@ -1,4 +1,7 @@
 # JavaScript Interview Questions
+
+---
+
 1. What are the different data types present in javascript?
 
 

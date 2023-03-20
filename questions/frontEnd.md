@@ -1,4 +1,7 @@
 # Front End Interview Questions
+
+---
+
 1. What are meta tags in HTML?
    + Meta tags are those tags which go inside the Head tag of the HTML page
    + Meta tags are not for the interface they are important for the browser.
@@ -392,4 +395,4 @@
         + The problem to optimize the react web apps is the React SPAs. Single-page applications are a great source of comfort for the users. However, you can make great utilization of the SPA model with certain SEO rules and elements in your pages. Hence, we should create URLs in a way that opens in separate pages by using React Router hooks in URLs.
 
 67. What is CORS?
-  + CORS (Cross-Origin Resource Sharing) is a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin requests. The same-origin security policy forbids cross-origin access to resources.
+    + CORS (Cross-Origin Resource Sharing) is a system, consisting of transmitting HTTP headers, that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin requests. The same-origin security policy forbids cross-origin access to resources.
