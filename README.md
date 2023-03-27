@@ -23,7 +23,7 @@ This project contains studying materials and practice problems for Software Engi
 
 ## 1. Installation
 
-  If you would like to clone the repository, type "git clone https://github.com/kheller18/data-structures-algorithms.git".
+  If you would like to clone the repository, type `git clone https://github.com/kheller18/data-structures-algorithms.git`.
 
 
 ## 2. Usage
@@ -70,7 +70,7 @@ This project contains studying materials and practice problems for Software Engi
 ## 6. Deployment
 
   + There is currently no live deployment of this notebook on a common server, but the user has the ability to run this notebook locally on their machine via:
-    + `Node`: Navigate to the root directory of the file you'd like to run and type "node file_name.js".
+    + `Node`: Navigate to the root directory of the file you'd like to run and type `node file_name.js`.
 
 
 ## 7. Contact
