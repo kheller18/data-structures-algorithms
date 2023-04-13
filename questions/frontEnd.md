@@ -9,10 +9,10 @@
    + Meta tags consist of character encoding, title, or even description.
 
 2. What are some basic design elements?
-   + Line - a line mark made with any pen or brush or even any edge created when two shape meets
-   + Size - it is the area occupied by one shape with the other
-   + Texture- the surface of the shape - Smooth, soft, hard, glossy, and such
-   + Color - The light reflected from the objects. The three characteristics of color are hue, value, and the intensity.
+   + `Line`: a line mark made with any pen or brush or even any edge created when two shape meets
+   + `Size`: it is the area occupied by one shape with the other
+   + `Texture`: the surface of the shape - Smooth, soft, hard, glossy, and such
+   + `Color`: The light reflected from the objects. The three characteristics of color are hue, value, and the intensity.
 
 3. What is load balancing?
    + Load balancing is distribution of all the incoming network traffic all across the backend servers.
@@ -71,19 +71,19 @@
     + A Mixin is a code block that lets the group of CSS declarations which we can reuse in our site.
 
 20. What are ways to descrease page load time?
-    + Image optimization - It is always advised to scale your videos and pictures before uploading them to a page.
-    + Browser cache - The utilization of cache will boost speed for pages that you have visited already.
-    + Compress and optimize content - Compressing the content of a website decreases the load time of a page to a great extent.
-    + StyleSheet Reference on Top - Setting stylesheet reference to the header of a doc allows your page to load quickly.
+    + `Image optimization`: It is always advised to scale your videos and pictures before uploading them to a page.
+    + `Browser cache`: The utilization of cache will boost speed for pages that you have visited already.
+    + `Compress and optimize content`: Compressing the content of a website decreases the load time of a page to a great extent.
+    + `StyleSheet Reference on Top`: Setting stylesheet reference to the header of a doc allows your page to load quickly.
 
 21. What is Stringify?
     + To transform a JavaScript object to a string Stringify is used.
 
 22. What are the elements of the CSS Box Model?
-    + Content - Displays the main content and the text of the web page.
-    + Padding - This area encircles the content.
-    + Border - The border is the padding's outer layer.
-    + Margin - Margin is the area outside the border.
+    + `Content`: Displays the main content and the text of the web page.
+    + `Padding`: This area encircles the content.
+    + `Border`: The border is the padding's outer layer.
+    + `Margin`: Margin is the area outside the border.
 
 23. What is the benefit of Srcset?
     + When we want to generate many new solutions of exact images on several devices, Srcset is used. This helps improve the UI.
@@ -96,12 +96,12 @@
 
 26. What Skills does a front-end devloper need?
     + Frontend developers utilize different web technologies to change coded data into user-friendly interfaces. Many among these are Cascading Style Sheets (CSS), JavaScript, HyperText Markup Language (HTML), etc. Mentioned below are brief explanations of these technologies that frontend developers must be acquainted with.
-    + HTML: HyperText Markup Language depicts the content on the page like buttons, links, headings, paragraphs, and lists. It is the building block of websites and is utilized to define and mark content, so a browser shows it correctly. For instance, on a blog post, an image can be seen as an `<img>` in HTML code, so browsers will understand that they have to display an image.
-    + CSS: CSS stands for Cascading Style Sheets and is accountable for the style of your web pages such as animations., colours, and layouts. CSS appears more like a group of instructions that gives structure and style to a webpage than a programming language. It enables programmers to control a web application or website's layout, formatting, and presentation. While HTML depicts elements on a page, CSS is accountable for how users see the content. For instance, it handles the border, alignment, size, of an image in a blog post.
-    + JavaScript: JavaScript is one of three main elements, in front-end web development, that is required to end up with a web page that can be rendered accurately. It is now challenging to visualize websites without JavaScript as it allows programmers to make the sites interactive. This programming language can transform website content on the basis of a user’s action. For instance, at the top of the page, when you click on the Menu button, it will display a dropdown list of options or when you click on a button, it will toggle back and forth between closing and opening the Menu. JavaScript is great at figuring out the kind of browser being utilised, and then rendering the page in such a way that it is not only compatible with that page, but that it works the way it is designed. Using plugins is made easier by JavaScript. When complicated dynamic interactions are required for a site, JavaScript can be implemented to design its framework instead of simply depending only on HTML.
-    + CSS Frameworks, Libraries, and Preprocessors: Once you understand the fundamentals of CSS, then you can begin to work with various libraries and frameworks. These tools were designed as a way to help hasten the development process. Frameworks like Tailwind CSS, and Bootstrap let you incorporate the catalogue of classes into your webpage. Hence, you end up with mobile-friendly and professional designs. There are ample choices on the market and you don't require to know them all. It's often useful to look at related jobs and check what technologies they're employing. Then you can concentrate on the most in-demand skills.
-    + Testing and Debugging skills: As you are creating your application, there will be mistakes in your code that require to be fixed. Debugging is the act of recognizing those bugs and resolving them. Another essential skill to know is debugging. Documenting tests for your code is a way to assure that your code is accomplishing what it is meant to do.
-    + Version control: The way of tracking and the modifications to the project's code is version control. Git is regarded as a popular software that is utilized to track your code. If your code gets messed up, you can utilize Git to go back to an earlier version of your code rather than manually rewriting everything. Learning Git also lets you cooperate with others on a team and make modifications to the same code base from various locations. It is advised that you should start to learn Git and use a service like GitHub to host your projects.
+    + `HTML`: HyperText Markup Language depicts the content on the page like buttons, links, headings, paragraphs, and lists. It is the building block of websites and is utilized to define and mark content, so a browser shows it correctly. For instance, on a blog post, an image can be seen as an `<img>` in HTML code, so browsers will understand that they have to display an image.
+    + `CSS`: CSS stands for Cascading Style Sheets and is accountable for the style of your web pages such as animations., colours, and layouts. CSS appears more like a group of instructions that gives structure and style to a webpage than a programming language. It enables programmers to control a web application or website's layout, formatting, and presentation. While HTML depicts elements on a page, CSS is accountable for how users see the content. For instance, it handles the border, alignment, size, of an image in a blog post.
+    + `JavaScript`: JavaScript is one of three main elements, in front-end web development, that is required to end up with a web page that can be rendered accurately. It is now challenging to visualize websites without JavaScript as it allows programmers to make the sites interactive. This programming language can transform website content on the basis of a user’s action. For instance, at the top of the page, when you click on the Menu button, it will display a dropdown list of options or when you click on a button, it will toggle back and forth between closing and opening the Menu. JavaScript is great at figuring out the kind of browser being utilised, and then rendering the page in such a way that it is not only compatible with that page, but that it works the way it is designed. Using plugins is made easier by JavaScript. When complicated dynamic interactions are required for a site, JavaScript can be implemented to design its framework instead of simply depending only on HTML.
+    + `CSS Frameworks, Libraries, and Preprocessors`: Once you understand the fundamentals of CSS, then you can begin to work with various libraries and frameworks. These tools were designed as a way to help hasten the development process. Frameworks like Tailwind CSS, and Bootstrap let you incorporate the catalogue of classes into your webpage. Hence, you end up with mobile-friendly and professional designs. There are ample choices on the market and you don't require to know them all. It's often useful to look at related jobs and check what technologies they're employing. Then you can concentrate on the most in-demand skills.
+    + `Testing and Debugging skills`: As you are creating your application, there will be mistakes in your code that require to be fixed. Debugging is the act of recognizing those bugs and resolving them. Another essential skill to know is debugging. Documenting tests for your code is a way to assure that your code is accomplishing what it is meant to do.
+    + `Version control`: The way of tracking and the modifications to the project's code is version control. Git is regarded as a popular software that is utilized to track your code. If your code gets messed up, you can utilize Git to go back to an earlier version of your code rather than manually rewriting everything. Learning Git also lets you cooperate with others on a team and make modifications to the same code base from various locations. It is advised that you should start to learn Git and use a service like GitHub to host your projects.
 
 27. What is the difference between div and span?
 ![Div vs Span](../images/front-end/fe_div_span.png)
@@ -122,8 +122,8 @@
     + Construct the DOM tree: Parsed the HTML to the parsed tree and then set up the DOM tree, making use of it.
     + Construct the CSSOM: CSSOM stands for CSS Object Model. Post the construction of the DOM tree, it identifies a link tag in the head section, which references the external style.css CSS style sheet. So, it parsed the CSS file in CSSOM tree, something which the Browser can comprehend as the DOM tree.
     + Construct the Render tree: Utilise the HTML DOM tree coupled with the styling data of the CSSOM tree to set up a render tree. Render tree is the graphical depiction of the HTML, with the corresponding CSS. This tree enables painting the contents in their right order. Every node in the Render Tree is regarded as a renderer. The Render tree looks like this:
-      + Layout: When the renderer is developed and incorporated into the tree, it does not have a size or position. Computing these values is defined as layout. We use the coordinates system to position the element, such as the position of the root renderer is 0,0. The layout continues recursively via a part of the entire renderer hierarchy, calculating geometric info for every renderer that needs it. Beginning the layout process implies allowing every node the exact coordinates where it should show up on the screen.
-      + Painting of the Render Tree: The renderer tree is traversed in this stage and the renderer’s paint() method is hailed to exhibit the content on the screen. For good UX, the rendering engine will aim to exhibit the contents on the screen as soon as possible. It will not stand by until all the HTML is parsed to develop and layout the render tree.
+      + `Layout`: When the renderer is developed and incorporated into the tree, it does not have a size or position. Computing these values is defined as layout. We use the coordinates system to position the element, such as the position of the root renderer is 0,0. The layout continues recursively via a part of the entire renderer hierarchy, calculating geometric info for every renderer that needs it. Beginning the layout process implies allowing every node the exact coordinates where it should show up on the screen.
+      + `Painting of the Render Tree`: The renderer tree is traversed in this stage and the renderer’s paint() method is hailed to exhibit the content on the screen. For good UX, the rendering engine will aim to exhibit the contents on the screen as soon as possible. It will not stand by until all the HTML is parsed to develop and layout the render tree.
 
 31.  What is the distinction between Class and Prototypal inheritance in Javascript?
      + From most other programming languages, Inheritance in JavaScript is different. JavaScript's object system is prototype-based, not class-based. Objects in JavaScript are just a set of value pairs and a name (key). Talking about inheritance, JavaScript just has one construct: objects. Each object has a private property that includes a link to another object named its prototype.
@@ -149,18 +149,17 @@
         ```
 
 36.  What are the benefits of CoffeeScript over JavaScript?
-     + Write less do more − For a huge code in JavaScript, we require comparatively a very less number of lines of CoffeeScript.
-     + Easily understandable − The shorthand form of JavaScript is CoffeeScript, its syntax is quite simple as compared to JavaScript. Making use of CoffeeScript, we can document clean, clear, and easily discernible codes.
-     + Reliable − CoffeeScript is a secure and reliable programming language to create dynamic programs.
-     + Readable and maintainable − CoffeeScript offers aliases for most of the operators, making the code readable. Also maintaining the programs written in CoffeeScript is effortless.
-     + Class-based inheritance − JavaScript does not have classes, in place of them, it offers powerful but complicated prototypes. Unlike JavaScript, in CoffeeScript, we can make classes and inherit them. Additionally, it also provides instant and static properties along with mixins. It utilizes JavaScript's native prototype to construct classes.
-     + No var keyword − There is no requirement to utilize the var keyword to form a variable in CoffeeScript, hence we can evade accidental or undesirable scope deceleration.
-     + Avoids problematic symbols − There is no requirement to utilize the problematic parenthesis and semicolons in CoffeeScript. In place of curly braces, we can utilize whitespaces to distinguish the block codes such as functions, loops, etc.
-     + Extensive library support − In CoffeeScript, we can utilize the JavaScript libraries and vice versa. Thus, we have access to a myriad set of libraries while operating with CoffeeScript.
+     + `Write less do more`: For a huge code in JavaScript, we require comparatively a very less number of lines of CoffeeScript.
+     + `Easily understandable`: The shorthand form of JavaScript is CoffeeScript, its syntax is quite simple as compared to JavaScript. Making use of CoffeeScript, we can document clean, clear, and easily discernible codes.
+     + `Reliable`: CoffeeScript is a secure and reliable programming language to create dynamic programs.
+     + `Readable and maintainable`: CoffeeScript offers aliases for most of the operators, making the code readable. Also maintaining the programs written in CoffeeScript is effortless.
+     + `Class-based inheritance`: JavaScript does not have classes, in place of them, it offers powerful but complicated prototypes. Unlike JavaScript, in CoffeeScript, we can make classes and inherit them. Additionally, it also provides instant and static properties along with mixins. It utilizes JavaScript's native prototype to construct classes.
+     + `No var keyword`: There is no requirement to utilize the var keyword to form a variable in CoffeeScript, hence we can evade accidental or undesirable scope deceleration.
+     + `Avoids problematic symbols`: There is no requirement to utilize the problematic parenthesis and semicolons in CoffeeScript. In place of curly braces, we can utilize whitespaces to distinguish the block codes such as functions, loops, etc.
+     + `Extensive library support`: In CoffeeScript, we can utilize the JavaScript libraries and vice versa. Thus, we have access to a myriad set of libraries while operating with CoffeeScript.
 
 37.  What is Progressive Rendering?
      + Progressive rendering is a process that is utilized generally to boost the web page's rendering content process. Now the rendering process is utilized in modern web development to enhance the mobile data uses of the user, async HTML fragments, prioritizing visible content, and lazy loading of images.
-
 
 38.  What is the the Anonymous function in JS?
      + Generally, the function name is defined when we define the function itself, in normal user-defined functions, but in the case of an anonymous function, the function name is not defined. Here we make use of an assignment operator and variable to stow the function as an object, then utilizing that variable, we will be capable to invoke the function itself.
@@ -266,10 +265,10 @@
     + The call and apply methods set this to a function and call the function.
     + The bind method will only set this to a function. We will need to separately invoke the function.
     + call() and apply() are identical in functionality, the only difference is that call() accepts a list of arguments; whereas, apply() accepts a single array of arguments.
-    + call: binds the this value, invokes the function, and allows you to pass a list of arguments.
-    + apply: binds the this value, invokes the function, and allows you to pass arguments as an array.
-    + bind: binds the this value, returns a new function, and allows you to pass in a list of arguments.
-    + call
+    + `call`: binds the this value, invokes the function, and allows you to pass a list of arguments.
+    + `apply`: binds the this value, invokes the function, and allows you to pass arguments as an array.
+    + `bind`: binds the this value, returns a new function, and allows you to pass in a list of arguments.
+    + `call`
       + The call method binds the this value to the function and executes the function. It takes the this value and a list of arguments as parameters. Then, it returns the value returned by the function, which is called using the call method.
       + ```
         function test(arg1, arg2){
@@ -279,7 +278,7 @@
         test.call({num: 100}, 10, 20);
         ```
       + In the code above, we have called the test function using the call method. The call method will invoke the test function with the this value as the object passed to the call method.
-    + apply
+    + `apply`
       + The apply method binds the this value to the function and executes the function. It takes the this value and a single array object as parameters, and it returns the value returned by the function, which is called using the apply method.
       + ```
         function test(...arguments){
@@ -289,7 +288,7 @@
         test.apply({num: 100}, [1,2,3]);
         ```
       + In the code above, we have called the test function using the apply method and with the this value as the object passed to the apply method.
-    + bind
+    + `bind`
       + The bind method binds the this value to the function and returns a new function. However, we still need to separately invoke the returned function.
       + ```
         function test(arg){
@@ -306,7 +305,7 @@
     + Directly write our program in an HTML file within `<script>` tags. This is called Internal JavaScript. Write a JavaScript program in a file having a . js extension and then link the file inside the `<head>` or `<body>` tag of our HTML file. This way of writing code in JavaScript is called External JavaScript.
 
 58. What is the difference between visibility:hidden and display:none?
-    + display:none , visibility:hidden , and opacity:0 can be used to hide elements visually but: display:none turns off the layout of the elements, so they are not rendered. visibility:hidden hides the elements without changing their layouts.
+    + `display:none` , `visibility:hidden` , and `opacity:0` can be used to hide elements visually but: `display:none` turns off the layout of the elements, so they are not rendered.` visibility:hidden` hides the elements without changing their layouts.
 
 59. What is the difference between local storage session storage and cookies?
     + Local storage is useful for storing data that the user will need to access later, such as offline data. Session storage is a great way to improve the performance of your web applications. Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.
@@ -325,26 +324,26 @@
     + Functional Testing is carried out to ensure that the application's overall functionality meets the business requirements. Unit Testing is performed on every individual element of an application to ensure that the element works as expected.
 
 64. What security measures would you take while developing a frontend app?
-    + Preventing cross-site scripting (XSS) attacks
+    + `Preventing cross-site scripting (XSS) attacks`
       + XSS attacks are one of the largest and most dangerous forms of attack. They're crafted in such a way that they inject code into a web application, which ends up performing malicious actions when accessed by an end user.
-    + DoS (denial of service) attacks
+    + `DoS (denial of service) attacks`
       + DoS attacks and DDoS attacks on web applications are common. They're also difficult to deal with, as they use a swarm of compromised systems to make requests to your web application.DoS attacks, which originate from a single system or small number of them, can often be tackled by simply blocking the end system's IP address.
-    + Preventing cross-site request forgery (CSRF)
+    + `Preventing cross-site request forgery (CSRF)`
       + CSRF attacks are aimed at tricking users into submitting forms which end up performing a different action from the one the user wishes to perform.
-    + Using Content Security Policy (CSP)
+    + `Using Content Security Policy (CSP)`
       + Using Content Security Policy is an effective form of XSS attack prevention. It calls for an HTTP flag which informs your browser about the sources that can be trusted, and included as iFrames within your web application.
-    + Using modern frameworks
+    + `Using modern frameworks`
       + Often, web application front ends are built using commonly available frameworks. These frameworks make up the core of your web application's front end, and any security vulnerability within this framework can lead to a compromise of your web application as a whole.
-    + Auditing of 3rd-party libraries in use
+    + `Auditing of 3rd-party libraries in use`
       + 3rd-party libraries are in use everywhere. They help speed up coding time and make implementation of new features into your web application that much easier—but any possible vulnerability in these 3rd-party libraries can impact your web application's overall security as well.
-    + Incorporating security from the start
+    + `Incorporating security from the start`
       + Web application development generally runs for months if not years. Developers come, developers go, budgets change, ideas change and projects change direction
-    + Avoiding iFrames where possible
+    + `Avoiding iFrames where possible`
       + While iFrames make your development process easier by allowing you to incorporate/load other pages/frames in your existing view, iFrames usage is often used without appropriate X-Frame-Options. Unfortunately, this allows for clickjacking attacks and the compromise of your web application's integrity.
-    + Restricting available Feature Policy
+    + `Restricting available Feature Policy`
       + By default, your web application can access or request any feature from your end user's device—while this may be a nice-to-have during the development stage, if left enabled it can lead to attackers exploiting your web application and using these unrestricted feature flags/policies to ask end users' devices to enable certain features that appear legitimately offered by your web application itself. Using the Feature-Policy HTTP header is ideal for preventing such requests from originating from your web application.
       + `"Feature-Policy": camera 'none'; microphone 'none';`
-    + Ensuring CDN-pulled libraries undergo subresource integrity checks
+    + `Ensuring CDN-pulled libraries undergo subresource integrity checks`
       + Also critical is checking whether libraries loaded via 3rd-party CDNs are intact and untouched. Many web applications load libraries off 3rd-party CDNs for quicker loading of pages and better overall performance, but if these libraries are compromised via MITM attacks or if the CDN itself is compromised, it's possible to load bad code into your web application on the user side, leading to a poor experience.
       + `<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">`
 
@@ -352,24 +351,24 @@
     + They help you write more maintainable, more secure, more robust and more efficient code. They help experienced programmers transfer their knowledge of good practices to the entire team.
 
 66. What SEO best practices or techniques do you use in your frontend app?
-    + Isomorphic React Apps
+    + `Isomorphic React Apps`
       + somorphic React applications can be worked on both the server-side and client-side applications. With isomorphic JavaScript, you can work with React JS application and fetch the rendered HTML file which is generally rendered by the browser. This very HTML file is being executed for everyone who tries to search for the particular app, along with Google bots. When it comes to client-side scripting, the application can use this HTML file and continue to operate the same on the browser. The data is added using JavaScript if required, the isomorphic app still remains dynamic. Isomorphic applications ensure that the client is able to operate the scripts or not. While JavaScript is not active, the code is rendered on the server, and the browser can fetch all the meta tags and text in HTML and CSS files. However, developing real-time isomorphic applications is such a challenging and complex task. But, here these two frameworks can make the process of the same pretty quicker and simpler: Gatsby and Next.js. Gatsby is an open-source compiler that allows developers to create robust and scalable web applications. But, its biggest issue is that it does not offer server-side rendering. It generates a static website and then creates HTML files to store it in the cloud.
-    + Server-side rendering with Next.js
+    + `Server-side rendering with Next.js`
       + If a single-page application is what you have decided to go with, then server-side rendering is the best way to improve page ranking in search results. As Google bots easily index and rank pages that are rendered on the server. For server-side rendering, the ideal choice for implementing it is Next.js: a react framework.
       ![Server side rendering with Next.js](../images/front-end/server-side-nextjs.png)
     + Best Practices:
-      + Building static or dynamic web applications
+      + `Building static or dynamic web applications`
         + As we have discussed before, SPA (single-page applications) are often difficult to be fetched by Google when it comes to SEO. Static or dynamic web apps come to rescue you as they use server-side rendering which helps Google pods crawl your website smoothly.
-      + URL case
+      + `URL case`
         + Google bots always consider some pages separate when their URLs have lowercase or uppercase (/Invision and /invision). Now, these two URLs will be considered different due to the difference in their case. For avoiding these common blunders, always try to generate your URL in lowercase.
-      + 404 code
+      + `404 code`
         + Be it any page with an error in the data, they all run a 404 code. So, try to set up files in server.js and route.js as soon as you can. Updating the files with server.js or route.js can relatively augment traffic on your web app or website.
-      + Try not to use hashed URLs
+      + `Try not to use hashed URLs`
         + Well, this is not the major issue but the Google bot does not see anything after the hash in URLs.
-      + Use `<a href>` only if required
+      + `Use <a href> only if required`
         + A general error with SPAs is using a `<div>` or a `<button>` to change the URL. This is not a problem with React itself, but how the library is used. But the issue is about the search engines, Google bots process a URL, and they search for more URLs to crawl within `<a href>` elements. If the `<a href>` element is not being found, Google bots will not crawl the URLs and pass PageRank. What we can do is we can define links with `<a href>` for the Google bot to see the fetch the other pages and go through them.
     + Best Tools:
-      + React Helmet
+      + `React Helmet`
         + React helmet is a library that allows you to deal with Google bots and social media crawlers seamlessly. It adds meta tags to your pages on React so your web app helps with more important information to the crawlers.
         + ```
           import React from 'react';
@@ -391,7 +390,7 @@
           )‍};
           ‍export default Home;
           ```
-      + React Router
+      + `React Router`
         + The problem to optimize the react web apps is the React SPAs. Single-page applications are a great source of comfort for the users. However, you can make great utilization of the SPA model with certain SEO rules and elements in your pages. Hence, we should create URLs in a way that opens in separate pages by using React Router hooks in URLs.
 
 67. What is CORS?
