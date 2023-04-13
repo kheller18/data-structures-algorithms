@@ -22,11 +22,11 @@
 4. What do you know about the Bootstrap Grid System?
    + The Bootstrap Grid System is a mobile-first, responsive grid system that scales up to 12 columns as the device or viewport size grows. Predefined classes for quick layout options and powerful mix-ins for creating successful semantic layouts are included in the system.
    + There are five classes in the Bootstrap 4 grid system:
-     + .col- for extra small devices, whose screen width is less than 576px.
-     + .col-sm- small devices, whose screen width is equal to or greater than 576px.
-     + .col-md- medium devices, whose screen width is equal to or greater than 768px.
-     + .col-lg- large devices, whose screen width is equal to or greater than 992px.
-     + .col-xl- extra large devices, whose screen width is equal to or greater than 1200px.
+     + `.col-` for extra small devices, whose screen width is less than 576px.
+     + `.col-sm-` small devices, whose screen width is equal to or greater than 576px.
+     + `.col-md-` medium devices, whose screen width is equal to or greater than 768px.
+     + `.col-lg-` large devices, whose screen width is equal to or greater than 992px.
+     + `.col-xl-` extra large devices, whose screen width is equal to or greater than 1200px.
    + The classes listed above can be combined to build layouts that are more dynamic and adaptable.
      ![grid system](../images/bootstrap/grid.png)
 
@@ -96,22 +96,22 @@
       ![card 2](../images/bootstrap/card2.png)
 
 17. What are the two types of spinners that you can create using Bootstrap?
-    + Use the .spinner-border class to make a spinner/loader.
+    + Use the `.spinner-border` class to make a spinner/loader.
       + `<div class= "spinner-border" ></div>`
-    + If you want the spinner/loader to grow instead of "spin", use the .spinner-grow class.
+    + If you want the spinner/loader to grow instead of "spin", use the `.spinner-grow` class.
       + `<div class= "spinner-grow" ></div>`
 
 18. Explain input groups in Bootstrap.
-    + The .input-group class is a container for enhancing an input by adding a "help text" icon, text, or button in front or behind the input field.
-    + To add the help text in front of the input, use .input-group-prepend, and to add it behind the input, use .input-group-append.
-    + Finally, style the provided help text with the .input-group-text class.
+    + The `.input-group` class is a container for enhancing an input by adding a "help text" icon, text, or button in front or behind the input field.
+    + To add the help text in front of the input, use `.input-group-prepend`, and to add it behind the input, use `.input-group-append`.
+    + Finally, style the provided help text with the `.input-group-text` class.
 
 19. Discuss Bootstrap table and various classes that can change the appearance of the table.
     + A basic Bootstrap 4 table features horizontal divisions and light padding.
-    + The .table class gives a table some basic styling.
-    + The .table-striped class gives zebra stripes to the table.
-    + The .table-bordered class adds borders to the table and cells on all sides.
-    + On table rows, the .table-hover class adds a hover effect (grey background color).
+    + The `.table` class gives a table some basic styling.
+    + The `.table-striped` class gives zebra stripes to the table.
+    + The `.table-bordered` class adds borders to the table and cells on all sides.
+    + On table rows, the `.table-hover` class adds a hover effect (grey background color).
     ![table](../images/bootstrap/table.png)
 
 20. Write the HTML code to create a basic toast.
@@ -129,8 +129,8 @@
 
 21. What is the media object in Bootstrap and what are their types?
     + Bootstrap's media objects allow you to position media objects such as images, videos, and audio to the left or right of content blocks. Media elements can be constructed using the class .media and the source is specified by using the class .media-object. There are two types of media objects:
-      + .media
-      + .media-list
+      + `.media`
+      + `.media-list`
 
 22. How would you implement a carousel in bootstrap?
     ```
@@ -175,19 +175,19 @@
     </div>
     ```
     + The outermost `<div>` is as follows:
-      + For carousel controls to work properly, they must have an id (in this case, id="myCarousel").
+      + For carousel controls to work properly, they must have an id (in this case, `id="myCarousel"`).
       + This `<div>` has the class="carousel" to indicate that it contains a carousel.
-      + When a new item is displayed, the .slide class adds a CSS transition and animation effect that causes the objects to slide. If you don't want this effect, leave this class out.
-      + When the page loads, the data-ride= "carousel" attribute tells Bootstrap to start animating the carousel right away.
+      + When a new item is displayed, the `.slide` class adds a CSS transition and animation effect that causes the objects to slide. If you don't want this effect, leave this class out.
+      + When the page loads, the `data-ride= "carousel"` attribute tells Bootstrap to start animating the carousel right away.
     + The section on "Indicators" is as follows:
       + Each slide's indicators are the small dots at the bottom (which indicates how many slides there are in the carousel, and which slide the user is currently viewing).
-      + With the class .carousel-indications, the indicators are supplied in an ordered list.
+      + With the class `.carousel-indications`, the indicators are supplied in an ordered list.
       + The data-target attribute refers to the carousel's id.
-      + When a user clicks on a given dot, the data-slide-to attribute defines the slide they should go to.
+      + When a user clicks on a given dot, the `data-slide-to` attribute defines the slide they should go to.
     + The "Wrapper" section is as follows:
-      + A div with the class .carousel-inner specifies the slides.
-      + Each slide's content is defined by a div with the class .item. This can be in the form of text or visuals.
-      + One of the slides must have the .active class applied to it. The carousel will not be viewable otherwise.
+      + A div with the class `.carousel-inner` specifies the slides.
+      + Each slide's content is defined by a `div` with the class `.item`. This can be in the form of text or visuals.
+      + One of the slides must have the `.active` class applied to it. The carousel will not be viewable otherwise.
       + To generate a caption for each slide, a `<div class="carousel-caption">` is added within each `<div class="item">`
     + The section on "Left and Right Controls" is as follows:
       + This code adds "left" and "right" buttons, allowing the user to manually navigate between slides.
@@ -217,9 +217,9 @@
         </ul>
         ```
     + Pagination is how Bootstrap handles an unordered list. The following classes are provided by bootstrap to manage pagination:
-      + .pagination: This class is required to enable pagination on your page.
-      + .disabled, .active: Use .disabled for unclickable links and .active to indicate the current page when customising links.
-      + .pagination-Ig and .pagination-sm: use these to get different size items.
+      + `.pagination`: This class is required to enable pagination on your page.
+      + `.disabled, .active`: Use .disabled for unclickable links and .active to indicate the current page when customising links.
+      + `.pagination-Ig and .pagination-sm`: use these to get different size items.
 
 26. What are badges? Which class will you use to make your badge look more rounded?
     + Badges are used to supplement any content with additional information. To make rectangular badges, use the .badge class with a contextual class (like .badge-secondary) within `<span>` elements. It's worth noting that badges scale to fit the parent element's size (if any).
@@ -227,20 +227,20 @@
     ![badges](../images/bootstrap/badges.png)
 
 27. What do you understand by column ordering in Bootstrap?
-    + One of the most intriguing properties of bootstrap is column ordering. The columns can be readily written in a specific order by utilizing relevant functions. You might alternatively put them in a different column. Use the push and pull column classes to easily rearrange or rearrange the order of the columns. These classes are used in conjunction with the .col-xs-#, .col-sm-#, .col-md-#, and .col-lg-# Bootstrap grid classes.
-    + .col-xs-push-# and .col-xs-pull-# are the push and pull classes for the Bootstrap grid. This also works well for sm, md, and lg. The pull class moves columns to the left, whereas the push class moves them to the right.
+    + One of the most intriguing properties of bootstrap is column ordering. The columns can be readily written in a specific order by utilizing relevant functions. You might alternatively put them in a different column. Use the push and pull column classes to easily rearrange or rearrange the order of the columns. These classes are used in conjunction with the `.col-xs-#`, `.col-sm-#`, `.col-md-#`, and `.col-lg-#` Bootstrap grid classes.
+    + `.col-xs-push-#` and `.col-xs-pull-#` are the push and pull classes for the Bootstrap grid. This also works well for sm, md, and lg. The pull class moves columns to the left, whereas the push class moves them to the right.
 
 28. Explain the affix plugin.
     + The affix plugin allows you to affix a `<div>` to a particular location on the page. You may also use this plugin to turn on and off the pinning. Social icons are a good example of this. They'll start in one position, but when the page reaches a certain point, the `<div>` will be frozen in place and will no longer scroll with the rest of the page.
 
 29. What are Bootstrap collapsing elements?
-    + You may collapse any element with Bootstrap collapsing elements without creating any JavaScript code or accordion markup. To automatically delegate control of a collapsible element in bootstrap, add data-toggle= "collapse" to the controller element along with a data-target or href. You may also do the same thing with .collapse (options), .collapse (‘show'), or .collapse (‘hide').
+    + You may collapse any element with Bootstrap collapsing elements without creating any JavaScript code or accordion markup. To automatically delegate control of a collapsible element in bootstrap, add data-toggle= "collapse" to the controller element along with a data-target or href. You may also do the same thing with `.collapse (options)`, `.collapse (‘show')`, or `.collapse (‘hide')`.
 
 30. In Bootstrap, what is a scrollspy?
     + It's an auto-updating nav component that allows you to grab sections of the page based on where you're scrolling. Based on the scroll position, the .active class will update from one nav item to the next.
 
 31. Why is Jumbotron used in Bootstrap?
-    + In Bootstrap, Jumbotron is used to highlight contents. It enlarges the headline and provides a margin for the landing page's content. In order to implement Jumbotron in Bootstrap, create a container div with the .jumbotron class.
+    + In Bootstrap, Jumbotron is used to highlight contents. It enlarges the headline and provides a margin for the landing page's content. In order to implement Jumbotron in Bootstrap, create a container div with the `.jumbotron` class.
 
 32. How is tooltip different from popover?
     + When the user moves the mouse pointer over an element, the Tooltip component appears as a little pop-up box. The Popover component is a pop-up box that emerges when the user clicks on an element. The popover may hold a lot more information.
@@ -254,41 +254,41 @@
 
 34. Discuss the properties of flexbox.
     + The properties of flexbox are:
-      + Enable flex behaviors:
+      + `Enable flex behaviors`:
         + To make a flexible container and convert direct children elements into flex items, use the "display" utility.
         + Additional flex characteristics can be used to further customize flex containers and items.
         + Default flexbox container:
           + `<div class="d-flex p-2">flexbox container</div>`
-      + Direction:
+      + `Direction`:
         + You can use direction utilities to change the direction of a flex item in a flex container. It is not essential to create a horizontal class because it is set to row by default.
-        + To show the flex items horizontally, use .flex-row (side by side). To right-align the horizontal direction, use .flex-row-reverse.
-        + Use .flex-column to display flex items vertically (on top of each other), or .flex-column-reverse to display them in the other direction.
-      + Justify content:
-        + To adjust the alignment of flex elements, use the.justify-content-* classes. Start (default), end, center, between, and around are all valid classes.
+        + To show the flex items horizontally, use `.flex-row (side by side)`. To right-align the horizontal direction, use `.flex-row-reverse`.
+        + Use `.flex-column` to display flex items vertically (on top of each other), or `.flex-column-reverse` to display them in the other direction.
+      + `Justify content`:
+        + To adjust the alignment of flex elements, use the `.justify-content-*` classes. Start (default), end, center, between, and around are all valid classes.
           ![justify content](../images/bootstrap/flexbox_justify_content.png)
       + Align items:
-        + You can change the vertical alignment of single rows of flex items with the .align-items-* classes. .align-items-start, .align-items-end, .align-items-center, .align-items-baseline, and .align-items-stretch (default) are valid classes.
-      + Align self:
-        + You can change the vertical alignment of a specific flex item with the .align-self-* classes. .align-self-start, .align-self-end, .align-self-center, .align-self-baseline, and .align-self-stretch (default) are valid classes.
-      + Auto margins:
-        + You can easily add auto margins to flex items with .mr-auto which pushes items to the right, or by using .ml-auto which pushes items to the left.
-      + Grow:
-        + You can use .flex-grow-1 on a flex item to take up the unused space. In the example below, the second flex item uses all the available space since we have used the .flex-grow-1 class with the second flex item.
+        + You can change the vertical alignment of single rows of flex items with the `.align-items-* classes`. `.align-items-start`, `.align-items-end`, `.align-items-center`, `.align-items-baseline`, and `.align-items-stretch` (default) are valid classes.
+      + `Align self`:
+        + You can change the vertical alignment of a specific flex item with the `.align-self-*` classes. .`align-self-start`, `.align-self-end`, `.align-self-center`, `.align-self-baseline`, and `.align-self-stretch` (default) are valid classes.
+      + `Auto margins`:
+        + You can easily add auto margins to flex items with .mr-auto which pushes items to the right, or by using `.ml-auto` which pushes items to the left.
+      + `Grow`:
+        + You can use `.flex-grow-1` on a flex item to take up the unused space. In the example below, the second flex item uses all the available space since we have used the `.flex-grow-1` class with the second flex item.
           ![grow](../images/bootstrap/flex_grow.png)
-        + You can use .flex-shrink-1 on a flex item to make it shrink if required.
-      + Fill:
-        + You can use .flex-fill on flex items to make them into equal widths.
-      + Wrap:
+        + You can use `.flex-shrink-1` on a flex item to make it shrink if required.
+      + `Fill`:
+        + You can use `.flex-fill` on flex items to make them into equal widths.
+      + `Wrap`:
         + flex-wrap:
           ![flex-wrap](../images/bootstrap/flex_wrap.png)
         + flex-wrap-reverse:
           ![flex-wrap-reverse](../images/bootstrap/flex_wrap_reverse.png)
         + flex-nowrap:
           ![flex-nowrap](../images/bootstrap/flex_nowrap.png)
-      + Order:
-        + With the .order classes, you can change the visual order of a given flex item(s). The number of valid classes ranges from 0 to 12, with the lowest number having the highest importance (order-1 is shown before order-2, etc..).
-      + Align content:
-        + You can change the vertical alignment of gathered flex items with the .align-content-* classes. .align-content-start (default), .align-content-end, .align-content-center, .align-content-baseline, and .align-content-stretch are valid classes.
+      + `Order`:
+        + With the `.order` classes, you can change the visual order of a given flex item(s). The number of valid classes ranges from 0 to 12, with the lowest number having the highest importance (order-1 is shown before order-2, etc..).
+      + `Align content`:
+        + You can change the vertical alignment of gathered flex items with the `.align-content-*` classes. .`align-content-start` (default), `.align-content-end`, `.align-content-center`, `.align-content-baseline`, and `.align-content-stretch` are valid classes.
 
 35. What are the important rules that you should follow while using Grids in Bootstrap?
     + The following three rules should be strictly kept in mind while using Grids in Bootstrap:
