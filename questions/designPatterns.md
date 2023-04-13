@@ -20,9 +20,9 @@
    + What are the real-time use cases and the efficiency of the software that uses these patterns?
 
 4. What are the types of design patterns in Java?
-   + Creational Patterns: These patterns provide freedom of choice between creating objects by hiding the logic. The objects constructed are decoupled from the implemented system. Some of the examples of creational patterns are - Factory design pattern, Builder design, Prototype design, Singleton design, Abstract Factory design.
-   + Structural Patterns: These patterns help in defining how the structures of classes and objects should be like for defining the composition between classes, interfaces and objects. Some of the examples of structural patterns are - Adaptor design, Facade design, Decorator design, proxy design etc.
-   + Behavioural Patterns: These patterns help to define how the objects should communicate and interact with one another. Some of the examples of behavioural patterns are - Command pattern, Iterator pattern, Observer pattern, Strategy pattern, etc.
+   + `Creational Patterns`: These patterns provide freedom of choice between creating objects by hiding the logic. The objects constructed are decoupled from the implemented system. Some of the examples of creational patterns are - Factory design pattern, Builder design, Prototype design, Singleton design, Abstract Factory design.
+   + `Structural Patterns`: These patterns help in defining how the structures of classes and objects should be like for defining the composition between classes, interfaces and objects. Some of the examples of structural patterns are - Adaptor design, Facade design, Decorator design, proxy design etc.
+   + `Behavioural Patterns`: These patterns help to define how the objects should communicate and interact with one another. Some of the examples of behavioural patterns are - Command pattern, Iterator pattern, Observer pattern, Strategy pattern, etc.
    + The following diagram represents the summary of the types of design patterns.
      ![design pattern types](../images/design-patterns/design_patterns_types.png)
 
@@ -276,10 +276,10 @@
     + The bridge pattern is a type of structural design pattern that lets to split large class or closely related classes into 2 hierarchies - abstraction and implementation. These hierarchies are independent of each other and are used whenever we need to decouple an abstraction from implementation. This is called a Bridge pattern because it acts as a bridge between the abstract class and the implementation class. In this pattern, the abstract classes and the implementation classes can be altered or modified independently without affecting the other one.
       ![bridge design pattern](../images/design-patterns/bridge_design_pattern.png)
       + The above image is the UML representation of the Bridge Pattern. There are 4 main elements of Bridge Pattern. They are:
-        + Abstraction – This is the core of the pattern and it defines its crux. This contains a reference to the implementer.
-        + Refined Abstraction – This extends the abstraction and takes refined details of the requirements and hides it from the implementors.
-        + Implementer – This is the interface for the implementation classes.
-        + Concrete Implementation – These are the concrete implementation classes that implement the Implementer interface.
+        + `Abstraction`: This is the core of the pattern and it defines its crux. This contains a reference to the implementer.
+        + `Refined Abstraction`: This extends the abstraction and takes refined details of the requirements and hides it from the implementors.
+        + `Implementer`: This is the interface for the implementation classes.
+        + `Concrete Implementation`: These are the concrete implementation classes that implement the Implementer interface.
 
 16. What are some instances where we prefer abstract classes over interfaces in Java?
     + Both Abstract classes and interfaces in Java follow the principle of writing code for interface rather than the implementation. This principle ensures that flexibility is added to the code to tackle dynamic requirements. Some of the pointers for deciding what to prefer over what are as follows:
@@ -292,9 +292,9 @@
     + Chain of Responsibility belongs to the category of a behavioural design pattern that passes requests via a chain of handlers. Whenever a request is received, the handler decides whether to process the request or pass it to the next handler of the chain. It is used for achieving loose coupling where the client request is passed through an object chain to process them.
       ![chain of responsibility](../images/design-patterns/chain_responsibility.png)
       + The above image represents the UML diagram of this pattern. There are 3 components of this design, they are:
-        + Client: This is the point of request origination and the component that accesses the handler for handling the request.
-        + Handler: Handler can either be a class or an interface that received the request primarily and dispatches it to the chain of handlers. This Handler knows only the first handler of the chain.
-        + Concrete Handlers: These are the actual request handlers in sequential order.
+        + `Client`: This is the point of request origination and the component that accesses the handler for handling the request.
+        + `Handler`: Handler can either be a class or an interface that received the request primarily and dispatches it to the chain of handlers. This Handler knows only the first handler of the chain.
+        + `Concrete Handlers`: These are the actual request handlers in sequential order.
       + This pattern can be used in the following cases:
         + Whenever we want to decouple the sender and the receiver of the request.
         + Whenever we want multiple objects to handle a request at runtime.
@@ -560,9 +560,9 @@
     + An observer design pattern is a type of behavioural design pattern that is used for defining the one to many dependencies between the objects. It is most useful when we want to get notified about any change in the state of an object. In this pattern, when the state of one object changes, all the dependent objects are notified automatically. The object whose state is monitored is called the Subject whereas the dependents are called the Observers. In Java, we can implement this pattern by making use of the java.util.Observable class and the java.util.Observer interface. The following UML diagram represents the observer design pattern clearly:
       ![observer design pattern](../images/design-patterns/observer_design_pattern.png)
     + This design pattern has 3 main components:
-      + Subject - This can be an interface or an abstract class that defines operations for attaching (registerObserver()) and detaching the observers (removeObserver()) to the subject.
-      + Concrete Subject - This is a concrete class of the Subject. This maintains the object state and whenever any change occurs in that state, the observers are notified about it using notifyObservers() method.
-      + Observer - This is an interface or an abstract class that defines the operations for notifying this object (update()). One real work example of this pattern is Facebook or Twitter. Whenever a person updates the status, all the followers would get a notification about his update. An observer can get the notification of the subject as long as it is subscribed or keeping track of it.
+      + `Subject`: This can be an interface or an abstract class that defines operations for attaching (registerObserver()) and detaching the observers (removeObserver()) to the subject.
+      + `Concrete Subject`: This is a concrete class of the Subject. This maintains the object state and whenever any change occurs in that state, the observers are notified about it using notifyObservers() method.
+      + `Observer`: This is an interface or an abstract class that defines the operations for notifying this object (update()). One real work example of this pattern is Facebook or Twitter. Whenever a person updates the status, all the followers would get a notification about his update. An observer can get the notification of the subject as long as it is subscribed or keeping track of it.
 
 21. What problem does Builder Pattern try to solve?
     + A builder pattern is a type of creational design pattern that lets to construct complex objects in a step by step manner. The pattern lets to produce different representations of an object using the same construction logic. It helps in creating immutable classes having a large set of attributes. In the Factory and Abstract Factory Design Patterns, we encounter the following issues if the object contains a lot of attributes:
@@ -706,18 +706,18 @@
 
 24. What is the MVC design pattern?
     + MVC stands for Model-View-Controller. This pattern is used for separating the application’s concerns as listed below:
-      + Model - This represents the object (Java POJO) that carries the data. It can also consist of the logic of updating the controller in case the data changes.
-      + View - This represents the data visualization of the model.
-      + Controller - This is an interface between the Model and the View by controlling the flow of data into the model and updating the view whenever the model gets updated. This ensures that the model and the views are kept separate.
+      + `Model`: This represents the object (Java POJO) that carries the data. It can also consist of the logic of updating the controller in case the data changes.
+      + `View`: This represents the data visualization of the model.
+      + `Controller`: This is an interface between the Model and the View by controlling the flow of data into the model and updating the view whenever the model gets updated. This ensures that the model and the views are kept separate.
       ![MVC](../images/design-patterns/mvc_design_pattern.png)
         + The above image represents how the request flow happens in the MVC Pattern. First, the Browser (client) sends request for a page to the controller of the server. The controller invokes the model, retrieves the data and sends the response. The response is then sent to the view for rendering. The view will be rendered and it is sent back to the client for display.
 
 25. What are the components of the Composite Entity pattern?
     + This pattern is used in EJB (Enterprise Java Beans) persistence mechanism. A composite entity represents the object graph and is an EJB entity. Whenever a composite entity is updated, the object beans that are internally dependent on this bean are updated automatically. There are 4 main components of the Composite Entity Pattern:
-      + Composite Entity - Primary entity bean that can have a coarse-grained object that is meant for persistence.
-      + Coarse-Grained Object - This contains the dependent objects which have their life cycle and in turn manages the lifecycle of dependent objects.
-      + Dependent Object - This object is dependent on the coarse-grained object throughout the persistence lifecycle.
-      + Strategies - These represent how to implement the composite entity.
+      + `Composite Entity`: Primary entity bean that can have a coarse-grained object that is meant for persistence.
+      + `Coarse-Grained Object`: This contains the dependent objects which have their life cycle and in turn manages the lifecycle of dependent objects.
+      + `Dependent Object`: This object is dependent on the coarse-grained object throughout the persistence lifecycle.
+      + `Strategies`: These represent how to implement the composite entity.
 
 26. What is the main advantage of using a prototype design pattern over object creation using a new keyword?
     + Prototype design pattern is used for creating duplicate objects based on the prototype of the already existing object using cloning. Doing this has a positive impact on the performance of object creation. Creating objects using the new keyword requires a lot of resources and is a heavyweight process that impacts performance. Hence, the prototype design pattern is more advantageous than the object created using a new keyword.
