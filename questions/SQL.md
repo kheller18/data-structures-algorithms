@@ -205,9 +205,9 @@
       WHERE subject = 'Maths');
       ```
     + There are two types of subqueries:
-      + Correlated
+      + `Correlated`
         + A correlated subquery cannot be considered as an independent query, but it can refer to the column in a table listed in the FROM of the main query.
-      + Non-Correlated
+      + `Non-Correlated`
         + A non-correlated subquery can be considered as an independent query and the output of the subquery is substituted in the main query.
 
 19. What is the SELECT statement?
@@ -215,16 +215,16 @@
       + `SELECT * FROM myDB.students;`
 
 20. What are some common clauses used with SELECT query in SQL?
-    + WHERE clause in SQL is used to filter records that are necessary, based on specific conditions.
-    + ORDER BY clause in SQL is used to sort the records based on some field(s) in ascending (ASC) or descending order (DESC).
+    + `WHERE` clause in SQL is used to filter records that are necessary, based on specific conditions.
+    + `ORDER BY` clause in SQL is used to sort the records based on some field(s) in ascending (ASC) or descending order (DESC).
       ```
       SELECT *
       FROM myDB.students
       WHERE graduation_year = 2019
       ORDER BY studentID DESC;
       ```
-    + GROUP BY clause in SQL is used to group records with identical data and can be used in conjunction with some aggregation functions to produce summarized results from the database.
-    + HAVING clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
+    + `GROUP BY` clause in SQL is used to group records with identical data and can be used in conjunction with some aggregation functions to produce summarized results from the database.
+    + `HAVING` clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
       ```
       SELECT COUNT(studentId), country
       FROM myDB.students
@@ -234,9 +234,9 @@
       ```
 
 21. What are UNION, MINUS and INTERSECT commands?
-    + The UNION operator combines and returns the result-set retrieved by two or more SELECT statements.
-    + The MINUS operator in SQL is used to remove duplicates from the result-set obtained by the second SELECT query from the result-set obtained by the first SELECT query and then return the filtered results from the first.
-    + The INTERSECT clause in SQL combines the result-set fetched by the two SELECT statements where records from one match the other and then returns this intersection of result-sets.
+    + The `UNION` operator combines and returns the result-set retrieved by two or more SELECT statements.
+    + The `MINUS` operator in SQL is used to remove duplicates from the result-set obtained by the second SELECT query from the result-set obtained by the first SELECT query and then return the filtered results from the first.
+    + The `INTERSECT` clause in SQL combines the result-set fetched by the two SELECT statements where records from one match the other and then returns this intersection of result-sets.
     + Certain conditions need to be met before executing either of the above statements in SQL
       + Each SELECT statement within the clause must have the same number of columns
       + The columns must also have similar data types
@@ -274,7 +274,7 @@
         SELECT name
         FROM myDB.students
         WHERE parent_name IN ('Sara', 'Ansh')
-        OPEN db_cursor   /* Open cursor and Fetch data into @name */ 
+        OPEN db_cursor   /* Open cursor and Fetch data into @name */
         FETCH next
         FROM db_cursor
         INTO @name
@@ -288,10 +288,10 @@
     ![entities and relationships](../images/sql/entities_relationships.png)
 
 24. List the different types of relationships in SQL.
-    + One-to-One - This can be defined as the relationship between two tables where each record in one table is associated with the maximum of one record in the other table.
-    + One-to-Many & Many-to-One - This is the most commonly used relationship where a record in a table is associated with multiple records in the other table.
-    + Many-to-Many - This is used in cases when multiple instances on both sides are needed for defining a relationship.
-    + Self-Referencing Relationships - This is used when a table needs to define a relationship with itself.
+    + `One-to-One`: This can be defined as the relationship between two tables where each record in one table is associated with the maximum of one record in the other table.
+    + `One-to-Many & Many-to-One`: This is the most commonly used relationship where a record in a table is associated with multiple records in the other table.
+    + `Many-to-Many`: This is used in cases when multiple instances on both sides are needed for defining a relationship.
+    + `Self-Referencing Relationships`: This is used when a table needs to define a relationship with itself.
 
 25. What is an Alias in SQL?
     + An alias is a feature of SQL that is supported by most, if not all, RDBMSs. It is a temporary name assigned to the table or table column for the purpose of a particular SQL query. In addition, aliasing can be employed as an obfuscation technique to secure the real names of database fields. A table alias is also called a correlation name.
@@ -315,12 +315,12 @@
 
 29. What are the various forms of Normalization?
     + Normal Forms are used to eliminate or reduce redundancy in database tables. The different forms are as follows:
-      + First Normal Form:
+      + `First Normal Form`:
         + A relation is in first normal form if every attribute in that relation is a single-valued attribute. If a relation contains a composite or multi-valued attribute, it violates the first normal form. Let's consider the following students table. Each student in the table, has a name, his/her address, and the books they issued from the public library.
         ![students initial](../images/sql/students_table_initial.png)
           + As we can observe, the Books Issued field has more than one value per record, and to convert it into 1NF, this has to be resolved into separate individual records for each book issued. Check the following table in 1NF form
           ![students table first](../images/sql/students_table_first.png)
-      + Second Normal Form:
+      + `Second Normal Form`:
         + A relation is in second normal form if it satisfies the conditions for the first normal form and does not contain any partial dependency. A relation in 2NF has no partial dependency, i.e., it has no non-prime attribute that depends on any proper subset of any candidate key of the table. Often, specifying a single column Primary Key is the solution to the problem.
         + Example 1 - Consider the above example. As we can observe, the Students Table in the 1NF form has a candidate key in the form of [Student, Address] that can uniquely identify all records in the table. The field Books Issued (non-prime attribute) depends partially on the Student field. Hence, the table is not in 2NF. To convert it into the 2nd Normal Form, we will partition the tables into two while specifying a new Primary Key attribute to identify the individual records in the Students table. The Foreign Key constraint will be set on the other table to ensure referential integrity.
         ![students table second](../images/sql/students_table_two.png)
@@ -331,7 +331,7 @@
           XY -> Z    [X and Y together determine Z]
           ```
           + Here, WX is the only candidate key and there is no partial dependency, i.e., any proper subset of WX doesn’t determine any non-prime attribute in the relation.
-      + Third Normal Form:
+      + `Third Normal Form`:
         + A relation is said to be in the third normal form, if it satisfies the conditions for the second normal form and there is no transitive dependency between the non-prime attributes, i.e., all non-prime attributes are determined only by the candidate keys of the relation and not by any other non-prime attribute.
         + Example 1 - Consider the Students Table in the above example. As we can observe, the Students Table in the 2NF form has a single candidate key Student_ID (primary key) that can uniquely identify all records in the table. The field Salutation (non-prime attribute), however, depends on the Student Field rather than the candidate key. Hence, the table is not in 3NF. To convert it into the 3rd Normal Form, we will once again partition the tables into two while specifying a new Foreign Key constraint to identify the salutations for individual records in the Students table. The Primary Key constraint for the same will be set on the Salutations table to identify each record uniquely.
         ![student table third](../images/sql/students_table.png)
@@ -345,18 +345,18 @@
           T -> P
           ```
           + For the above relation to exist in 3NF, all possible candidate keys in the above relation should be {P, RS, QR, T}.
-      + Boyce-Codd Normal Form:
+      + `Boyce-Codd Normal Form`:
         + A relation is in Boyce-Codd Normal Form if satisfies the conditions for third normal form and for every functional dependency, Left-Hand-Side is super key. In other words, a relation in BCNF has non-trivial functional dependencies in form X –> Y, such that X is always a super key. For example - In the above example, Student_ID serves as the sole unique identifier for the Students Table and Salutation_ID for the Salutations Table, thus these tables exist in BCNF. The same cannot be said for the Books Table and there can be several books with common Book Names and the same Student_ID.
 
 30. What are the TRUNCATE, DELETE and DROP statements?
-    + DELETE statement is used to delete rows from a table.
+    + `DELETE` statement is used to delete rows from a table.
       ```
       DELETE FROM Candidates
       WHERE CandidateId > 1000;
       ```
-    + TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
+    + `TRUNCATE` command is used to delete all the rows from the table and free the space containing the table.
       + `TRUNCATE TABLE Candidates;`
-    + DROP command is used to remove an object from the database. If you drop a table, all the rows in the table are deleted and the table structure is removed from the database.
+    + `DROP` command is used to remove an object from the database. If you drop a table, all the rows in the table are deleted and the table structure is removed from the database.
       + `DROP TABLE Candidates;`
 
 31. What is the difference between DROP and TRUNCATE statements?
@@ -574,10 +574,10 @@
 
 55. What are ACID properties? Is PostgreSQL compliant with ACID?
     + ACID stands for Atomicity, Consistency, Isolation, Durability. They are database transaction properties which are used for guaranteeing data validity in case of errors and failures.
-      + Atomicity: This property ensures that the transaction is completed in all-or-nothing way.
-      + Consistency: This ensures that updates made to the database is valid and follows rules and restrictions.
-      + Isolation: This property ensures integrity of transaction that are visible to all other transactions.
-      + Durability: This property ensures that the committed transactions are stored permanently in the database.
+      + `Atomicity`: This property ensures that the transaction is completed in all-or-nothing way.
+      + `Consistency`: This ensures that updates made to the database is valid and follows rules and restrictions.
+      + `Isolation`: This property ensures integrity of transaction that are visible to all other transactions.
+      + `Durability`: This property ensures that the committed transactions are stored permanently in the database.
     + PostgreSQL is compliant with ACID properties.
 
 56. Can you explain the architecture of PostgreSQL?
@@ -593,14 +593,14 @@
 
 59. How do you check the rows affected as part of previous transactions?
     + SQL standards state that the following three phenomena should be prevented whilst concurrent transactions. SQL standards define 4 levels of transaction isolations to deal with these phenomena.
-      + Dirty reads: If a transaction reads data that is written due to concurrent uncommitted transaction, these reads are called dirty reads.
-      + Phantom reads: This occurs when two same queries when executed separately return different rows. For example, if transaction A retrieves some set of rows matching search criteria. Assume another transaction B retrieves new rows in addition to the rows obtained earlier for the same search criteria. The results are different.
-      + Non-repeatable reads: This occurs when a transaction tries to read the same row multiple times and gets different values each time due to concurrency. This happens when another transaction updates that data and our current transaction fetches that updated data, resulting in different values.
+      + `Dirty reads`: If a transaction reads data that is written due to concurrent uncommitted transaction, these reads are called dirty reads.
+      + `Phantom reads`: This occurs when two same queries when executed separately return different rows. For example, if transaction A retrieves some set of rows matching search criteria. Assume another transaction B retrieves new rows in addition to the rows obtained earlier for the same search criteria. The results are different.
+      + `Non-repeatable reads`: This occurs when a transaction tries to read the same row multiple times and gets different values each time due to concurrency. This happens when another transaction updates that data and our current transaction fetches that updated data, resulting in different values.
     + To tackle these, there are 4 standard isolation levels defined by SQL standards. They are as follows:
-      + Read Uncommitted – The lowest level of the isolations. Here, the transactions are not isolated and can read data that are not committed by other transactions resulting in dirty reads.
-      + Read Committed – This level ensures that the data read is committed at any instant of read time. Hence, dirty reads are avoided here. This level makes use of read/write lock on the current rows which prevents read/write/update/delete of that row when the current transaction is being operated on.
-      + Repeatable Read – The most restrictive level of isolation. This holds read and write locks for all rows it operates on. Due to this, non-repeatable reads are avoided as other transactions cannot read, write, update or delete the rows.
-      + Serializable – The highest of all isolation levels. This guarantees that the execution is serializable where execution of any concurrent operations are guaranteed to be appeared as executing serially.
+      + `Read Uncommitted`: The lowest level of the isolations. Here, the transactions are not isolated and can read data that are not committed by other transactions resulting in dirty reads.
+      + `Read Committed`: This level ensures that the data read is committed at any instant of read time. Hence, dirty reads are avoided here. This level makes use of read/write lock on the current rows which prevents read/write/update/delete of that row when the current transaction is being operated on.
+      + `Repeatable Read`: The most restrictive level of isolation. This holds read and write locks for all rows it operates on. Due to this, non-repeatable reads are avoided as other transactions cannot read, write, update or delete the rows.
+      + `Serializable`: The highest of all isolation levels. This guarantees that the execution is serializable where execution of any concurrent operations are guaranteed to be appeared as executing serially.
     + The following table clearly explains which type of unwanted reads the levels avoid:
       ![rows affected transactions](../images/sql/rows_affected_previous_transactions.png)
 
@@ -636,13 +636,13 @@
     + MySQL is a database management system for web servers. It can grow with the website as it is highly scalable. Most of the websites today are powered by MySQL.
 
 68. What are some of the advantages of using MySQL?
-    + Flexibility: MySQL runs on all operating systems
-    + Power: MySQL focuses on performance
-    + Enterprise-Level SQL Features: MySQL had for some time been lacking in advanced features such as subqueries, views, and stored procedures.
-    + Full-Text Indexing and Searching
-    + Query Caching: This helps enhance the speed of MySQL greatly
-    + Replication: One MySQL server can be duplicated on another, providing numerous advantages
-    + Configuration and Security
+    + `Flexibility`: MySQL runs on all operating systems
+    + `Power`: MySQL focuses on performance
+    + `Enterprise-Level SQL Features`: MySQL had for some time been lacking in advanced features such as subqueries, views, and stored procedures.
+    + `Full-Text Indexing and Searching`
+    + `Query Caching`: This helps enhance the speed of MySQL greatly
+    + `Replication`: One MySQL server can be duplicated on another, providing numerous advantages
+    + `Configuration and Security`
 
 69. What do you mean by ‘databases’?
     + A database is a structured collection of data stored in a computer system and organized in a way to be quickly searched. With databases, information can be rapidly retrieved.
@@ -666,7 +666,7 @@
 74. What are some of the common MySQL commands?
 ![mysql commands](../images/sql/mysql_commands.png)
 
-75.  How do you create a database in MySQL?
+75. How do you create a database in MySQL?
      + Use the following command to create a new database called ‘books’
        + `CREATE DATABASE books;`
 
@@ -723,17 +723,17 @@
 83. What are the String Data Types in MySQL?
 ![string data types](../images/sql/string_data_types.png)
 
-84. What are the Temporal Data Types in MySQL?
+84.  What are the Temporal Data Types in MySQL?
 ![temporal data types](../images/sql/temporal_data_types.png)
 
-85. What is BLOB in MySQL?
-    + BLOB is an acronym that stands for a binary large object. It is used to hold a variable amount of data.
-    + There are four types of BLOB:
+85.  What is BLOB in MySQL?
+     + BLOB is an acronym that stands for a binary large object. It is used to hold a variable amount of data.
+     + There are four types of BLOB:
       + TINYBLOB
       + BLOB
       + MEDIUMBLOB
       + LONGBLOB
-    + A BLOB can hold a very large amount of data. For example - documents, images, and even videos. You could store your complete novel as a file in a BLOB if needed.
+     + A BLOB can hold a very large amount of data. For example - documents, images, and even videos. You could store your complete novel as a file in a BLOB if needed.
 
 86. How to add users in MySQL?
     + You can add a User by using the CREATE command and specifying the necessary credentials. For example:
@@ -779,16 +779,16 @@
 
 92. What are the MySQL clients and utilities?
     + Several MySQL programs are available to help you communicate with the server. For administrative tasks, some of the most important ones are listed here:
-      + mysql—An interactive program that enables you to send SQL statements to the server and to view the results. You can also use mysql to execute batch scripts (text files containing SQL statements).
-      + mysqladmin—An administrative program for performing tasks such as shutting down the server, checking its configuration, or monitoring its status if it appears not to be functioning properly.
-      + mysqldump—A tool for backing up your databases or copying databases to another server.
-      + mysqlcheck and myisamchk—Programs that help you perform table checking, analysis, and optimization, as well as repairs if tables become damaged. mysqlcheck works with MyISAM tables and to some extent with tables for other storage engines. myisamchk is for use only with MyISAM tables.
+      + `mysql—An` interactive program that enables you to send SQL statements to the server and to view the results. You can also use mysql to execute batch scripts (text files containing SQL statements).
+      + `mysqladmin—An` administrative program for performing tasks such as shutting down the server, checking its configuration, or monitoring its status if it appears not to be functioning properly.
+      + `mysqldump—A` tool for backing up your databases or copying databases to another server.
+      + `mysqlcheck` and `myisamchk—Programs` that help you perform table checking, analysis, and optimization, as well as repairs if tables become damaged. mysqlcheck works with MyISAM tables and to some extent with tables for other storage engines. myisamchk is for use only with MyISAM tables.
 
 93. What are the types of relationships used in MySQL?
     + There are three categories of relationships in MySQL:
-      + One-to-One: Usually, when two items have a one-to-one relationship, you just include them as columns in the same table.
-      + One-to-Many: One-to-many (or many-to-one) relationships occur when one row in one table is linked to many rows in another table.
-      + Many-to-Many: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of
+      + `One-to-One`: Usually, when two items have a one-to-one relationship, you just include them as columns in the same table.
+      + `One-to-Many`: One-to-many (or many-to-one) relationships occur when one row in one table is linked to many rows in another table.
+      + `Many-to-Many`: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of
 
 94. Can you explain the logical architecture of MySQL?
     + The top layer contains the services most network-based client/server tools or servers need such as connection handling, authentication, security, and so forth.
