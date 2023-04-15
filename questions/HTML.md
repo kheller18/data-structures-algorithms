@@ -42,12 +42,12 @@
       + `<aside>`: Sidebar content of the page.
 
 11.  How to optimize website assets loading?
-     + CDN hosting - A CDN or content delivery network is geographically distributed servers to help reduce latency.
-     + File compression - This is a method that helps to reduce the size of an asset to reduce the data transfer
-     + File concatenation - This reduces the number of HTTP calls
-     + Minify scripts - This reduces the overall file size of js and CSS files
-     + Parallel downloads - Hosting assets in multiple subdomains can help to bypass the download limit of 6 assets per domain of all modern browsers. This can be configured but most general users never modify these settings
-     + Lazy Loading - Instead of loading all the assets at once, the non-critical assets can be loaded on a need basis.
+     + `CDN hosting` - A CDN or content delivery network is geographically distributed servers to help reduce latency.
+     + `File compression` - This is a method that helps to reduce the size of an asset to reduce the data transfer
+     + `File concatenation` - This reduces the number of HTTP calls
+     + `Minify scripts` - This reduces the overall file size of js and CSS files
+     + `Parallel downloads` - Hosting assets in multiple subdomains can help to bypass the download limit of 6 assets per domain of all modern browsers. This can be configured but most general users never modify these settings
+     + `Lazy Loading` - Instead of loading all the assets at once, the non-critical assets can be loaded on a need basis.
 
 12. What are the various formatting tags in HTML?
     + `<b>` - makes text bold
