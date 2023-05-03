@@ -1,4 +1,4 @@
-# NodeJS Interview Questions
+# Node.js Interview Questions
 
 ---
 
@@ -24,10 +24,10 @@
    + Call the following step in the program.
 
 6. What are some commonly used timing features of Node.js?
-   + setTimeout/clearTimeout – This is used to implement delays in code execution.
-   + setInterval/clearInterval – This is used to run a code block multiple times.
-   + setImmediate/clearImmediate – Any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop.
-   + process.nextTick – Both setImmediate and process.nextTick appear to be doing the same thing; however, you may prefer one over the other depending on your callback’s urgency.
+   + `setTimeout/clearTimeout`: This is used to implement delays in code execution.
+   + `setInterval/clearInterval`: This is used to run a code block multiple times.
+   + `setImmediate/clearImmediate`: Any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop.
+   + `process.nextTick`: Both setImmediate and process.nextTick appear to be doing the same thing; however, you may prefer one over the other depending on your callback’s urgency.
 
 7. What are the advantages of using promises instead of callbacks?
    + The main advantage of using promise is you get an object to decide the action that needs to be taken after the async task completes. This gives more manageable code and avoids callback hell.
@@ -50,11 +50,11 @@
 
 11. How many types of API functions are there in Node.js?
     + There are two types of API functions:
-      + Asynchronous, non-blocking functions - mostly I/O operations which can be fork out of the main loop.
-      + Synchronous, blocking functions - mostly operations that influence the process running in the main loop.
+      + `Asynchronous, non-blocking functions` - mostly I/O operations which can be fork out of the main loop.
+      + `Synchronous, blocking functions` - mostly operations that influence the process running in the main loop.
 
 12. What is REPL?
-    + PL in Node.js stands for Read, Eval, Print, and Loop, which further means evaluating code on the go.
+    + `REPL` in Node.js stands for Read, Eval, Print, and Loop, which further means evaluating code on the go.
 
 13. List down the two arguments that async.queue takes as input?
     + Task Function
@@ -65,12 +65,12 @@
       + For example, you have a file for all utils functions with util to get solutions in a different programming language of a problem statement.
         ```
         const getSolutionInJavaScript = async ({
-        problem_id
+          problem_id
         }) => {
         ...
         };
         const getSolutionInPython = async ({
-        problem_id
+          problem_id
         }) => {
         ...
         };
@@ -108,8 +108,8 @@
         const crypto = require("crypto");
         const start = Date.now();
         function logHashTime() {
-        crypto.pbkdf2("a", "b", 100000, 512, "sha512", () => {
-        console.log("Hash: ", Date.now() - start);
+          crypto.pbkdf2("a", "b", 100000, 512, "sha512", () => {
+          console.log("Hash: ", Date.now() - start);
         });
         }
         logHashTime();
@@ -128,7 +128,7 @@
 
 19. Differentiate between process.nextTick() and setImmediate()?
     + Both can be used to switch to an asynchronous mode of operation by listener functions.
-    + process.nextTick() sets the callback to execute but setImmediate pushes the callback in the queue to be executed. So the event loop runs in the following manner
+    + `process.nextTick()` sets the callback to execute but setImmediate pushes the callback in the queue to be executed. So the event loop runs in the following manner
       + `timers–>pending callbacks–>idle,prepare–>connections(poll,data,etc)–>check–>close callbacks`
         + In this process.nextTick() method adds the callback function to the start of the next event queue and setImmediate() method to place the function in the check phase of the next event queue.
 
@@ -141,11 +141,11 @@
     ```
     // this code is to retry with exponential backoff
     function wait (timeout) {
-    return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve()
-    }, timeout);
-    });
+      return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve()
+      }, timeout);
+      });
     }
     async function requestWithRetry (url) {
     const MAX_RETRIES = 10;
@@ -165,10 +165,10 @@
 22. What is node.js streams?
     + Streams are instances of EventEmitter which can be used to work with streaming data in Node.js. They can be used for handling and manipulating streaming large files(videos, mp3, etc) over the network. They use buffers as their temporary storage.
     + There are mainly four types of the stream:
-      + Writable: streams to which data can be written (for example, fs.createWriteStream()).
-      + Readable: streams from which data can be read (for example, fs.createReadStream()).
-      + Duplex: streams that are both Readable and Writable (for example, net.Socket).
-      + Transform: Duplex streams that can modify or transform the data as it is written and read (for example, zlib.createDeflate()).
+      + `Writable`: streams to which data can be written (for example, fs.createWriteStream()).
+      + `Readable`: streams from which data can be read (for example, fs.createReadStream()).
+      + `Duplex`: streams that are both Readable and Writable (for example, net.Socket).
+      + `Transform`: Duplex streams that can modify or transform the data as it is written and read (for example, zlib.createDeflate()).
 
 23. What are node.js buffers?
     + In general, buffers is a temporary memory that is mainly used by stream to hold on to some data until consumed. Buffers are introduced with additional use cases than JavaScript’s Unit8Array and are mainly used to represent a fixed-length sequence of bytes. This also supports legacy encodings like ASCII, utf-8, etc. It is a fixed(non-resizable) allocated memory outside the v8.
@@ -179,8 +179,8 @@
 25. Explain what a Reactor Pattern in Node.js?
     + Reactor pattern again a pattern for nonblocking I/O operations. But in general, this is used in any event-driven architecture.
     + There are two components in this:
-      + Reactor: Its job is to dispatch the I/O event to appropriate handlers
-      + Handler: Its job is to actually work on those events
+      + `Reactor`: Its job is to dispatch the I/O event to appropriate handlers
+      + `Handler`: Its job is to actually work on those events
 
 26. Why should you separate Express app and server?
     + The server is responsible for initializing the routes, middleware, and other application logic whereas the app has all the business logic which will be served by the routes initiated by the server. This ensures that the business logic is encapsulated and decoupled from the application logic which makes the project more readable and maintainable.
@@ -190,11 +190,11 @@
 
 28. Describe the exit codes of Node.js?
     + Exit codes give us an idea of how a process got terminated/the reason behind termination.
-      + Uncaught fatal exception - (code - 1) - There has been an exception that is not handled
-      + Unused - (code - 2) - This is reserved by bash
-      + Fatal Error - (code - 5) - There has been an error in V8 with stderr output of the description
-      + Internal Exception handler Run-time failure - (code - 7) - There has been an exception when bootstrapping function was called
-      + Internal JavaScript Evaluation Failure - (code - 4) - There has been an exception when the bootstrapping process failed to return function value when evaluated.
+      + `Uncaught fatal exception - (code - 1)` - There has been an exception that is not handled
+      + `Unused - (code - 2)` - This is reserved by bash
+      + `Fatal Error - (code - 5)` - There has been an error in V8 with stderr output of the description
+      + `Internal Exception handler Run-time failure - (code - 7)` - There has been an exception when bootstrapping function was called
+      + `Internal JavaScript Evaluation Failure - (code - 4)` - There has been an exception when the bootstrapping process failed to return function value when evaluated.
 
 29. Explain the concept of stub in Node.js?
     + Stubs are used in writing tests which are an important part of development. It replaces the whole function which is getting tested.
@@ -288,11 +288,11 @@
     + Web assembly provides an implementation of WebAssembly System Interface specification through WASI API in node.js implemented using WASI class. The introduction of WASI was done by keeping in mind its possible to use the underlying operating system via a collection of POSIX-like functions thus further enabling the application to use resources more efficiently and features that require system-level access.
 
 34. How are worker threads different from clusters?
-    + Cluster:
+    + `Cluster`:
       + There is one process on each CPU with an IPC to communicate.
       + In case we want to have multiple servers accepting HTTP requests via a single port, clusters can be helpful.
       + The processes are spawned in each CPU thus will have separate memory and node instance which further will lead to memory issues.
-    + Worker threads:
+    + `Worker threads`:
       + There is only one process in total with multiple threads.
       + Each thread has one Node instance (one event loop, one JS engine) with most of the APIs accessible.
       + Shares memory with other threads (e.g. SharedArrayBuffer)
@@ -319,17 +319,19 @@
       if (set.has(id)) {
         set.delete(id);
         performance.mark(`Timeout-${id}-Destroy`);
-        performance.measure(`Timeout-${id}`,
-                            `Timeout-${id}-Init`,
-                            `Timeout-${id}-Destroy`);
+        performance.measure(
+          `Timeout-${id}`,
+          `Timeout-${id}-Init`,
+          `Timeout-${id}-Destroy`
+        );
       }
       }
       });
       hook.enable();
       const obs = new PerformanceObserver((list, observer) => {
-      console.log(list.getEntries()[0]);
-      performance.clearMarks();
-      observer.disconnect();
+        console.log(list.getEntries()[0]);
+        performance.clearMarks();
+        observer.disconnect();
       });
       obs.observe({ entryTypes: ['measure'], buffered: true });
       setTimeout(() => {}, 1000);
