@@ -43,12 +43,12 @@
 
 6. List out newly introduced input types, APIs, form elements, and elements that support media content in HTML5.
    + HTML5 has been updated repeatedly in the last few years, and the addition of input types has greatly simplified its use. Among some of these input types are:
-     + Colour: Enable users to select or choose a colour using the colour picker.
-     + Date: Enable users to select or choose a date from a drop-down calendar.
-     + Datetime-local: Enable users to select or choose both local date and time.
-     + Email: Enable users to enter an email address.
-     + Month: Enable users to select or choose a month and year from a drop-down calendar.
-     + Week: Enable users to select or choose week and year from a drop-down calendar.
+     + `Colour`: Enable users to select or choose a colour using the colour picker.
+     + `Date`: Enable users to select or choose a date from a drop-down calendar.
+     + `Datetime-local`: Enable users to select or choose both local date and time.
+     + `Email`: Enable users to enter an email address.
+     + `Month`: Enable users to select or choose a month and year from a drop-down calendar.
+     + `Week`: Enable users to select or choose week and year from a drop-down calendar.
    + HTML5 introduces the following new form elements:
      + `<datalist>`: Specifies a list of options for input controls.
      + `<keygen>`: Creates an encryption key.
