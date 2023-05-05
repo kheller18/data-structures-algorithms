@@ -56,11 +56,11 @@
      + `<progress>`: Heads in the direction of 100% of the maximum value.
      + `<meter>`: Provides a gauge that shows a general value within a range.
    + The following are some of the new APIs introduced in HTML5:
-     + History API: Provides programs with access to the browser's history.
-     + Page visibility API: Enables us to determine the current visibility state of a page.
-     + Battery Status API: Displays the current battery status of the device.
-     + User Timing API: Provides programmers with high-precision timestamps for measuring application performance.
-     + Vibration API: Provides access to the device's vibration functionality.
+     + `History API`: Provides programs with access to the browser's history.
+     + `Page visibility API`: Enables us to determine the current visibility state of a page.
+     + `Battery Status API`: Displays the current battery status of the device.
+     + `User Timing API`: Provides programmers with high-precision timestamps for measuring application performance.
+     + `Vibration API`: Provides access to the device's vibration functionality.
    + HTML5 includes five elements that support media as follows:
      + `<audio>`: Used to embed audio files in a web page
      + `<video>`: Used to embed video files in a web page.
@@ -83,7 +83,7 @@
 9.  Explain DOM (Document Object Model)?
     + DOM stands for Document Object Model. It is basically a cross-platform, language-independent API (Application Programming Interface) for XML (Extensible Markup Language) and HTML documents. To put it simply, DOM describes the logical structure of documents and how one can access and manipulate them. For example, here is an HTML document that illustrates the DOM hierarchy.
       ![DOM](../images/web-developer/dom.png)
-    + These documents are usually treated as a tree structure in which every node is an object that represents a specific part of the document. In a tree, each branch ends with a node, and each node contains objects. The DOM represents the webpage in a hierarchical structure in order for programmers and users to navigate it more easily. 
+    + These documents are usually treated as a tree structure in which every node is an object that represents a specific part of the document. In a tree, each branch ends with a node, and each node contains objects. The DOM represents the webpage in a hierarchical structure in order for programmers and users to navigate it more easily.
 
 10. What do you know about pair programming?
     + Pair programming is sometimes referred to as pairing. In pair programming, two programmers work together at one (single) workstation. Those who write code are known as drivers, and those who monitor and navigate each line of code are known as navigators. Both of them may switch roles frequently.
@@ -116,11 +116,11 @@
       + onDocumentReady: The "onDocumentReady" method, on the other hand, executes the code when the DOM has been loaded. It typically waits for HTML tags, anchor tags, etc., but not for images, videos, or other contents.
 
 15. Describe the different kinds of HTTP requests supported by RESTful Web services.
-    + GET: It is used to retrieve data or resources from the server but only allows read-only access. You cannot modify it.
-    + POST: It is used for creating a new resource.
-    + PUT: This is similar to POST, but used for updating an existing resource (if the resource doesn't exist, the API will decide whether a new resource should be created).
-    + DELETE: It is used to delete the resource from the server.
-    + TRACE: It validates the content along with the network during an HTTP request.
+    + `GET`: It is used to retrieve data or resources from the server but only allows read-only access. You cannot modify it.
+    + `POST`: It is used for creating a new resource.
+    + `PUT`: This is similar to POST, but used for updating an existing resource (if the resource doesn't exist, the API will decide whether a new resource should be created).
+    + `DELETE`: It is used to delete the resource from the server.
+    + `TRACE`: It validates the content along with the network during an HTTP request.
 
 16. What is the best way to integrate different stylesheets into a website?
     + Typically, it depends on how your site is laid out and how users interact with it. The most efficient way, however, would be to use just a single file called styles.css (or something similar). Combining them into a single document is preferable. Loading one file is easier for a client than loading five. In order to change the style, you simply open the styles.css file, scroll down to find the appropriate section, and modify the CSS. The sheet can be linked in your HTML as follows:
