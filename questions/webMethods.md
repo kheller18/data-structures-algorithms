@@ -4,20 +4,20 @@
 
 1. List some Components of WebMethods.
    + WebMethods Integration platform provides components for designing, executing, and managing integration solutions. You can categorize these components as follows:
-     + Runtime components: Run the Integration solution you developed.
-     + WebMethods Integration server: In webMethods, it is one of the core application servers. It's a multiplatform and Java-based enterprise integration server. Integration of diverse services, such as the conversion of data between formats and communication between systems, is supported by this component.
-     + WebMethods Broker: It is a high-performance message router. The Publish-Subscribe Model supports both synchronous and asynchronous message-based integrations.
-     + WebMethods Trading networks (TN): Trading networks are an essential part of the webMethods product suite that facilitates B2B transactions. This component runs on the webMethods IS (Integration server) and allows your firm to interact with external companies, generally referring to them as partners and marketplaces, etc.
-     + WebMethods Adapters: Adapters run on webMethods IS (Integration server). These adapters connect back-end resources in the enterprise to the integration platform.
-     + Webmethods workflow: A set of activities performed by several individuals.
-     + MywebMethods Server: As a major component of the webMethods Suite, it plays a critical role in providing the UI (User Interface) framework so that customers can develop Web, portlet, and BPM (Business process management) applications. Moreover, my webMethods Server provides a central administration and monitoring platform for most of the webMethods Suite's products.
-   + Design-time components: These components provide tools for designing and integrating solutions.
-     + WebMethods Developer: This is the IDE (Integrated development environment) that allows you to open sessions on IS (Integration server) and develop your services.
-     + WebMethods workflow Designer: It is used to develop and deploy workflows. A customized Eclipse-based tool, WebMethods Designer can be used for a wide variety of purposes, including service development, CAF (Composite Application Framework) page design and coding, and deployment to the My WebMethods Server.
-     + WebMethods Modeler: It is a graphical tool used for designing and implementing business processes.
-   + Administrative components: They configure the runtime environment and monitor how Integration solutions are executing on the Platform.
-     + WebMethods Administrator: The administrator installs, configures, and maintains the WebMethods IS (Integration Server).
-     + WebMethods Monitor: This tool allows you to view information logged by webMethods IS and webMethods Optimize.
+     + `Runtime components`: Run the Integration solution you developed.
+     + `WebMethods Integration server`: In webMethods, it is one of the core application servers. It's a multiplatform and Java-based enterprise integration server. Integration of diverse services, such as the conversion of data between formats and communication between systems, is supported by this component.
+     + `WebMethods Broker`: It is a high-performance message router. The Publish-Subscribe Model supports both synchronous and asynchronous message-based integrations.
+     + `WebMethods Trading networks (TN)`: Trading networks are an essential part of the webMethods product suite that facilitates B2B transactions. This component runs on the webMethods IS (Integration server) and allows your firm to interact with external companies, generally referring to them as partners and marketplaces, etc.
+     + `WebMethods Adapters`: Adapters run on webMethods IS (Integration server). These adapters connect back-end resources in the enterprise to the integration platform.
+     + `Webmethods workflow`: A set of activities performed by several individuals.
+     + `MywebMethods Server`: As a major component of the webMethods Suite, it plays a critical role in providing the UI (User Interface) framework so that customers can develop Web, portlet, and BPM (Business process management) applications. Moreover, my webMethods Server provides a central administration and monitoring platform for most of the webMethods Suite's products.
+   + `Design-time components`: These components provide tools for designing and integrating solutions.
+     + `WebMethods Developer`: This is the IDE (Integrated development environment) that allows you to open sessions on IS (Integration server) and develop your services.
+     + `WebMethods workflow Designer`: It is used to develop and deploy workflows. A customized Eclipse-based tool, WebMethods Designer can be used for a wide variety of purposes, including service development, CAF (Composite Application Framework) page design and coding, and deployment to the My WebMethods Server.
+     + `WebMethods Modeler`: It is a graphical tool used for designing and implementing business processes.
+   + `Administrative components`: They configure the runtime environment and monitor how Integration solutions are executing on the Platform.
+     + `WebMethods Administrator`: The administrator installs, configures, and maintains the WebMethods IS (Integration Server).
+     + `WebMethods Monitor`: This tool allows you to view information logged by webMethods IS and webMethods Optimize.
 
 2. What are the modules in the WebMethods Product Suite?
    + Service-Oriented Architecture.
@@ -76,17 +76,17 @@
     + Delete is a design-time operation that removes a variable from the current view. It is only useful if you create a variable by mistake. When you change the view in developer after you delete a variable that was previously in the pipeline, the variable will appear again.
 
 13. How will you check memory usage?
-    + Top command: It provides a dynamic, real-time view of the current state of the system. You can view system information and process information, including up-time, average load, running tasks, number of logged-in users, and RAM usage. Also, you can view the processes that your users are running/using on your server.
-    + Free command: Top command, however, can sometimes be too much for your purposes. If all you need is to see how much memory is free and used on your system, you can use the free command.
+    + `Top command`: It provides a dynamic, real-time view of the current state of the system. You can view system information and process information, including up-time, average load, running tasks, number of logged-in users, and RAM usage. Also, you can view the processes that your users are running/using on your server.
+    + `Free command`: Top command, however, can sometimes be too much for your purposes. If all you need is to see how much memory is free and used on your system, you can use the free command.
 
 14. What are the steps to open a session on a different server?
     + Open the Integration Server and click the 'session' menu on the toolbar. Please enter the IP address and port details for the server you wish to connect to. Enter the username and password and simply click 'Connect'.
 
 15. Explain UDDI (Universal, Description, Discovery and Integration).
     + UDDI stands for Universal, Description, Discovery, and Integration. UDDI is a platform-independent standard that describes SOA (Service Oriented Architecture) registry and its interface. By using UDDI, clients can discover registered businesses (organizations or service providers) and their web services. Furthermore, UDDI provides APIs for creating and updating registry information. UDDI defines a set of APIs that can be used to access and modify data stored in the registry. Some of these APIs are as follows:
-      + UDDI Inquiry: Through this API, you can find registry entries and retrieve their information.
-      + UDDI Publication: You can add new entries to the registry with this API or edit existing ones.
-      + UDDI Security: It determines which security settings are applied to registry entities.
+      + `UDDI Inquiry`: Through this API, you can find registry entries and retrieve their information.
+      + `UDDI Publication`: You can add new entries to the registry with this API or edit existing ones.
+      + `UDDI Security`: It determines which security settings are applied to registry entities.
 
 16. What is Integration Server in WebMethods?
     + webMethods Integration Server is one of the core application servers in the webMethods platform. It is a Java-based, multiplatform enterprise integration server. It supports the integration of diverse services, such as mapping data between formats and communication between systems.
@@ -96,9 +96,9 @@
 
 18. Explain data transformation.
     + In most cases, systems do not produce data in the exact format that other systems require, so you often need to build flow services that transform the data. When applications and systems exchange documents, data transformation resolves differences in data representations. In Designer, data transformations are accomplished through mapping. Among the types of transformation you can achieve via mapping are:
-      + Name transformations: The purpose of this transformation is to correct naming differences. By performing name transformations, the value and position of a variable remain the same in the document structure, but the variable's name is altered.
-      + Structural transformations: These types of transformations resolve differences in the data types or structures that represent an item. The value of the variable does not change when you perform structural transformations; only its data type or position in the Document structure changes.
-      + Value transformations: These types of transformations resolve differences in how values are expressed. A value transformation changes the data contained in the variable, but the variable's name and position remain the same.
+      + `Name transformations`: The purpose of this transformation is to correct naming differences. By performing name transformations, the value and position of a variable remain the same in the document structure, but the variable's name is altered.
+      + `Structural transformations`: These types of transformations resolve differences in the data types or structures that represent an item. The value of the variable does not change when you perform structural transformations; only its data type or position in the Document structure changes.
+      + `Value transformations`: These types of transformations resolve differences in how values are expressed. A value transformation changes the data contained in the variable, but the variable's name and position remain the same.
 
 19. Is there a way to see the Java code for the flow service?
     + Flow service is not curved or turned into Java code. It resides as XML on the disk on behalf of the flow operations. Afterwards, it parsed and transformed into a Java tree of operations. Although the flow operation is coded in Java, it is stored on a disk as XML.
@@ -108,8 +108,8 @@
 
 21. How can the existing pipeline be preserved before the restorePipeline step?
     + Pipelines are stored in memory using the pub.flow:savePipeline service, and can be retrieved later with the pub.flow:restorePipeline service. There is an input parameter in restorePipeline called $merge that indicates whether the values in the existing pipeline should be merged with those in the saved pipeline. You can set $merge to "true" or "false".
-      + False: $merge is set to false to clear existing pipelines before restoring saved pipelines. By default, it is set to false.
-      + True: When $merge is set to true, the existing pipeline will be merged with the saved pipeline. When a field appears in both the saved pipeline and the existing pipeline, the saved field prevails.
+      + `False`: $merge is set to false to clear existing pipelines before restoring saved pipelines. By default, it is set to false.
+      + `True`: When $merge is set to true, the existing pipeline will be merged with the saved pipeline. When a field appears in both the saved pipeline and the existing pipeline, the saved field prevails.
     + You can preserve the existing pipeline by setting the "$merge" variable in restorePipeline to true. In this way, everything in the pipeline is preserved before the restorePipeline step.
 
 22. Can a system lock be removed from an element?
