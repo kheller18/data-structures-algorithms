@@ -10,11 +10,11 @@
      + It uses reusable or composable UI components for developing the view.
 
 2. What are the advantages of using React?
-   + Use of Virtual DOM to improve efficiency: React uses virtual DOM to render the view. As the name suggests, virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser. Therefore, with the use of virtual DOM, the efficiency of the app improves.
-   + Gentle learning curve: React has a gentle learning curve when compared to frameworks like Angular. Anyone with little knowledge of javascript can start building web applications using React.
-   + SEO friendly: React allows developers to develop engaging user interfaces that can be easily navigated in various search engines. It also allows server-side rendering, which boosts the SEO of an app.
-   + Reusable components: React uses component-based architecture for developing applications. Components are independent and reusable bits of code. These components can be shared across various applications having similar functionality. The re-use of components increases the pace of development.
-   + Huge ecosystem of libraries to choose from: React provides you with the freedom to choose the tools, libraries, and architecture for developing an application based on your requirement.
+   + `Use of Virtual DOM to improve efficiency`: React uses virtual DOM to render the view. As the name suggests, virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser. Therefore, with the use of virtual DOM, the efficiency of the app improves.
+   + `Gentle learning curve`: React has a gentle learning curve when compared to frameworks like Angular. Anyone with little knowledge of javascript can start building web applications using React.
+   + `SEO friendly`: React allows developers to develop engaging user interfaces that can be easily navigated in various search engines. It also allows server-side rendering, which boosts the SEO of an app.
+   + `Reusable components`: React uses component-based architecture for developing applications. Components are independent and reusable bits of code. These components can be shared across various applications having similar functionality. The re-use of components increases the pace of development.
+   + `Huge ecosystem of libraries to choose from`: React provides you with the freedom to choose the tools, libraries, and architecture for developing an application based on your requirement.
 
 3. What are the limitations of React?
    + React is not a full-blown framework as it is only a library.
@@ -44,11 +44,11 @@
    ```
    const ids = [1,2,3,4,5];
    const listElements = ids.map((id)=>{
-   return(
-   <li key={id.toString()}>
-     {id}
-   </li>
-   )
+    return(
+      <li key={id.toString()}>
+        {id}
+      </li>
+    )
    })
    ```
    + Importance of keys:
@@ -71,9 +71,9 @@
    + Using JSX, the above code can be simplified:
      ```
      const container = (
-     <div>
-       <p>This is a text</p>
-     </div>
+      <div>
+        <p>This is a text</p>
+      </div>
      );
      ReactDOM.render(container,rootElement);
      ```
@@ -83,7 +83,7 @@
    + Before the introduction of Hooks in React, functional components were called stateless components and were behind class components on a feature basis. After the introduction of Hooks, functional components are equivalent to class components.
    + Although functional components are the new trend, the react team insists on keeping class components in React. Therefore, it is important to know how these components differ.
    + Declaration
-     + Functional
+     + `Functional`
        ```
        function card(props){
          return(
@@ -100,7 +100,7 @@
          )
        }
        ```
-     + Class
+     + `Class`
        ```
        class Card extends React.Component{
        constructor(props){
@@ -324,8 +324,8 @@
 
 12. Explain about types of side effects in React component.
     + There are two types of side effects in React component. They are:
-      + Effects without Cleanup: This side effect will be used in useEffect which does not restrict the browser from screen update. It also improves the responsiveness of an application. A few common examples are network requests, Logging, manual DOM mutations, etc.
-      + Effects with Cleanup: Some of the Hook effects will require the cleanup after updating of DOM is done. For example, if you want to set up an external data source subscription, it requires cleaning up the memory else there might be a problem of memory leak. It is a known fact that React will carry out the cleanup of memory when the unmounting of components happens. But the effects will run for each render() method rather than for any specific method. Thus we can say that, before execution of the effects succeeding time the React will also cleanup effects from the preceding render.
+      + `Effects without Cleanup`: This side effect will be used in useEffect which does not restrict the browser from screen update. It also improves the responsiveness of an application. A few common examples are network requests, Logging, manual DOM mutations, etc.
+      +` Effects with Cleanup`: Some of the Hook effects will require the cleanup after updating of DOM is done. For example, if you want to set up an external data source subscription, it requires cleaning up the memory else there might be a problem of memory leak. It is a known fact that React will carry out the cleanup of memory when the unmounting of components happens. But the effects will run for each render() method rather than for any specific method. Thus we can say that, before execution of the effects succeeding time the React will also cleanup effects from the preceding render.
 
 13. What is prop drilling in React?
     ![prop drilling](../images/react/prop_drilling.png)
@@ -393,7 +393,7 @@
         + Now with the error boundary, we can render the CounterComponent in the following way:
           ```
           <ErrorBoundary>
-          <CounterComponent/>
+            <CounterComponent/>
           </ErrorBoundary>
           ```
 
@@ -425,11 +425,11 @@
       ```
       import { useEffect } from 'react';
       function WelcomeGreetings({ name }) {
-      const msg = `Hi, ${name}!`;     // Calculates output
-      useEffect(() => {
-        document.title = `Welcome to you ${name}`;    // Side-effect!
-      }, [name]);
-      return <div>{msg}</div>;         // Calculates output
+        const msg = `Hi, ${name}!`;     // Calculates output
+        useEffect(() => {
+          document.title = `Welcome to you ${name}`;    // Side-effect!
+        }, [name]);
+        return <div>{msg}</div>;         // Calculates output
       }
       ```
       + The above code will update the document title which is considered to be a side-effect as it will not calculate the component output directly. That is why updating of document title has been placed in a callback and provided to useEffect().
@@ -478,20 +478,20 @@
       );
       ```
     + StrictMode currently helps with the following issues:
-      + Identifying components with unsafe lifecycle methods:
+      + `Identifying components with unsafe lifecycle methods`:
         + Certain lifecycle methods are unsafe to use in asynchronous react applications. With the use of third-party libraries, it becomes difficult to ensure that certain lifecycle methods are not used.
         + StrictMode helps in providing us with a warning if any of the class components use an unsafe lifecycle method.
-      + Warning about the usage of legacy string API:
+      + `Warning about the usage of legacy string API`:
         + If one is using an older version of React, callback ref is the recommended way to manage refs instead of using the string refs. StrictMode gives a warning if we are using string refs to manage refs.
-      + Warning about the usage of findDOMNode:
+      + `Warning about the usage of findDOMNode`:
         + Previously, findDOMNode( ) method was used to search the tree of a DOM node. This method is deprecated in React. Hence, the StrictMode gives us a warning about the usage of this method.
-      + Warning about the usage of legacy context API (because the API is error-prone).
+      + `Warning about the usage of legacy context API (because the API is error-prone).`
 
 22. How to prevent re-renders in React?
-    + Reason for re-renders in React:
+    + `Reason for re-renders in React`:
       + Re-rendering of a component and its child components occur when props or the state of the component has been changed.
       + Re-rendering components that are not updated, affects the performance of an application.
-    + How to prevent re-rendering:
+    + `How to prevent re-rendering`:
       + Consider the following components:
         ```
         class Parent extends React.Component {
@@ -550,7 +550,7 @@
 
 23. What are the different ways to style a React component?
     + There are many different ways through which one can style a React component. Some of the ways are:
-      + Inline Styling: We can directly style an element using inline style attributes. Make sure the value of style is a JavaScript object:
+      + `Inline Styling`: We can directly style an element using inline style attributes. Make sure the value of style is a JavaScript object:
         ```
         class RandomComponent extends React.Component {
         render() {
@@ -563,7 +563,7 @@
         }
         }
         ```
-      + Using JavaScript object: We can create a separate JavaScript object and set the desired style properties. This object can be used as the value of the inline style attribute.
+      + `Using JavaScript object`: We can create a separate JavaScript object and set the desired style properties. This object can be used as the value of the inline style attribute.
         ```
         class RandomComponent extends React.Component {
           paragraphStyles = {
@@ -586,7 +586,7 @@
           }
         }
         ```
-      + CSS Stylesheet: We can create a separate CSS file and write all the styles for the component inside that file. This file needs to be imported inside the component file.
+      + `CSS Stylesheet`: We can create a separate CSS file and write all the styles for the component inside that file. This file needs to be imported inside the component file.
         ```
         import './RandomComponent.css';
 
@@ -601,7 +601,7 @@
           }
         }
         ```
-      + CSS Modules: We can create a separate CSS module and import this module inside our component. Create a file with “.module.css”‘ extension, styles.module.css:
+      + `CSS Modules`: We can create a separate CSS module and import this module inside our component. Create a file with “.module.css”‘ extension, styles.module.css:
         ```
         .paragraph{
           color:"red";
@@ -626,18 +626,18 @@
 
 24. Name a few techniques to optimize React app performance.
     + There are many ways through which one can optimize the performance of a React app, let’s have a look at some of them:
-      + Using useMemo( )
+      + `Using useMemo()`
         + It is a React hook that is used for caching CPU-Expensive functions.
         + Sometimes in a React app, a CPU-Expensive function gets called repeatedly due to re-renders of a component, which can lead to slow rendering.
         + useMemo( ) hook can be used to cache such functions. By using useMemo( ), the CPU-Expensive function gets called only when it is needed.
-      + Using React.PureComponent
+      + `Using React.PureComponent`
         + It is a base component class that checks the state and props of a component to know whether the component should be updated.
         + Instead of using the simple React.Component, we can use React.PureComponent to reduce the re-renders of a component unnecessarily.
-      + Maintaining State Colocation
+      + `Maintaining State Colocation`
         + This is a process of moving the state as close to where you need it as possible.
         + Sometimes in React app, we have a lot of unnecessary states inside the parent component which makes the code less readable and harder to maintain. Not to forget, having many states inside a single component leads to unnecessary re-renders for the component.
         + It is better to shift states which are less valuable to the parent component, to a separate component.
-      + Lazy Loading
+      + `Lazy Loading`
         + It is a technique used to reduce the load time of a React app. Lazy loading helps reduce the risk of web app performances to a minimum.
 
 25. How to pass data between react components?
@@ -831,10 +831,10 @@
 
 27. What are the different phases of the component lifecycle?
     + There are four different phases in the lifecycle of React component. They are:
-      + Initialization: During this phase, React component will prepare by setting up the default props and initial state for the upcoming tough journey.
-      + Mounting: Mounting refers to putting the elements into the browser DOM. Since React uses VirtualDOM, the entire browser DOM which has been currently rendered would not be refreshed. This phase includes the lifecycle methods `componentWillMount` and `componentDidMount`.
-      + Updating: In this phase, a component will be updated when there is a change in the state or props of a component. This phase will have lifecycle methods like `componentWillUpdate`, `shouldComponentUpdate`, `render`, and `componentDidUpdate`.
-      + Unmounting: In this last phase of the component lifecycle, the component will be removed from the DOM or will be unmounted from the browser DOM. This phase will have the lifecycle method named `componentWillUnmount`.
+      + `Initialization`: During this phase, React component will prepare by setting up the default props and initial state for the upcoming tough journey.
+      + `Mounting`: Mounting refers to putting the elements into the browser DOM. Since React uses VirtualDOM, the entire browser DOM which has been currently rendered would not be refreshed. This phase includes the lifecycle methods `componentWillMount` and `componentDidMount`.
+      + `Updating`: In this phase, a component will be updated when there is a change in the state or props of a component. This phase will have lifecycle methods like `componentWillUpdate`, `shouldComponentUpdate`, `render`, and `componentDidUpdate`.
+      + `Unmounting`: In this last phase of the component lifecycle, the component will be removed from the DOM or will be unmounted from the browser DOM. This phase will have the lifecycle method named `componentWillUnmount`.
     ![lifecycle phases and methods](../images/react/lifecycle_phases_methods.png)
 
 28. What are the lifecycle methods of React?
@@ -842,14 +842,14 @@
     + For example, if you are developing the YouTube application, then the application will make use of a network for buffering the videos and it consumes the power of the battery (assume only these two). After playing the video if the user switches to any other application, then you should make sure that the resources like network and battery are being used most efficiently. You can stop or pause the video buffering which in turn stops the battery and network usage when the user switches to another application after video play.
     + So we can say that the developer will be able to produce a quality application with the help of lifecycle methods and it also helps developers to make sure to plan what and how to do it at different points of birth, growth, or death of user interfaces.
     + The various lifecycle methods are:
-      + constructor(): This method will be called when the component is initiated before anything has been done. It helps to set up the initial state and initial values.
-      + getDerivedStateFromProps(): This method will be called just before element(s) rendering in the DOM. It helps to set up the state object depending on the initial props. The getDerivedStateFromProps() method will have a state as an argument and it returns an object that made changes to the state. This will be the first method to be called on an updating of a component.
-      + render(): This method will output or re-render the HTML to the DOM with new changes. The render() method is an essential method and will be called always while the remaining methods are optional and will be called only if they are defined.
-      + componentDidMount(): This method will be called after the rendering of the component. Using this method, you can run statements that need the component to be already kept in the DOM.
-      + shouldComponentUpdate(): The Boolean value will be returned by this method which will specify whether React should proceed further with the rendering or not. The default value for this method will be True.
-      + getSnapshotBeforeUpdate(): This method will provide access for the props as well as for the state before the update. It is possible to check the previously present value before the update, even after the update.
-      + componentDidUpdate(): This method will be called after the component has been updated in the DOM.
-      + componentWillUnmount(): This method will be called when the component removal from the DOM is about to happen.
+      + `constructor()`: This method will be called when the component is initiated before anything has been done. It helps to set up the initial state and initial values.
+      + `getDerivedStateFromProps()`: This method will be called just before element(s) rendering in the DOM. It helps to set up the state object depending on the initial props. The getDerivedStateFromProps() method will have a state as an argument and it returns an object that made changes to the state. This will be the first method to be called on an updating of a component.
+      + `render()`: This method will output or re-render the HTML to the DOM with new changes. The render() method is an essential method and will be called always while the remaining methods are optional and will be called only if they are defined.
+      + `componentDidMount()`: This method will be called after the rendering of the component. Using this method, you can run statements that need the component to be already kept in the DOM.
+      + `shouldComponentUpdate()`: The Boolean value will be returned by this method which will specify whether React should proceed further with the rendering or not. The default value for this method will be True.
+      + `getSnapshotBeforeUpdate()`: This method will provide access for the props as well as for the state before the update. It is possible to check the previously present value before the update, even after the update.
+      + `componentDidUpdate()`: This method will be called after the component has been updated in the DOM.
+      + `componentWillUnmount()`: This method will be called when the component removal from the DOM is about to happen.
 
 29. Do React Hooks work with static typing?
     + Static typing refers to the process of code check during the time of compilation for ensuring all variables will be statically typed. React Hooks are functions that are designed to make sure about all attributes must be statically typed. For enforcing stricter static typing within our code, we can make use of the React API with custom Hooks.
@@ -857,17 +857,17 @@
 30. Explain about types of Hooks in React.
     + Built-in Hooks: The built-in Hooks are divided into 2 parts as given below:
       + Basic Hooks:
-        + useState(): This functional component is used to set and retrieve the state.
-        + useEffect(): It enables for performing the side effects in the functional components.
-        + useContext(): It is used for creating common data that is to be accessed by the components hierarchy without having to pass the props down to each level.
+        + `useState()`: This functional component is used to set and retrieve the state.
+        + `useEffect()`: It enables for performing the side effects in the functional components.
+        + `useContext()`: It is used for creating common data that is to be accessed by the components hierarchy without having to pass the props down to each level.
       + Additional Hooks:
-        + useReducer() : It is used when there is a complex state logic that is having several sub-values or when the upcoming state is dependent on the previous state. It will also enable you to optimization of component performance that will trigger deeper updates as it is permitted to pass the dispatch down instead of callbacks.
-        + useMemo() : This will be used for recomputing the memoized value when there is a change in one of the dependencies. This optimization will help for avoiding expensive calculations on each render.
-        + useCallback() : This is useful while passing callbacks into the optimized child components and depends on the equality of reference for the prevention of unneeded renders.
-        + useImperativeHandle():  It will enable modifying the instance that will be passed with the ref object.
-        + useDebugValue(): It is used for displaying a label for custom hooks in React DevTools.
-        + useRef(): It will permit creating a reference to the DOM element directly within the functional component.
-        + useLayoutEffect(): It is used for the reading layout from the DOM and re-rendering synchronously.
+        + `useReducer()`: It is used when there is a complex state logic that is having several sub-values or when the upcoming state is dependent on the previous state. It will also enable you to optimization of component performance that will trigger deeper updates as it is permitted to pass the dispatch down instead of callbacks.
+        + `useMemo()`: This will be used for recomputing the memoized value when there is a change in one of the dependencies. This optimization will help for avoiding expensive calculations on each render.
+        + `useCallback()`: This is useful while passing callbacks into the optimized child components and depends on the equality of reference for the prevention of unneeded renders.
+        + `useImperativeHandle()`:  It will enable modifying the instance that will be passed with the ref object.
+        + `useDebugValue()`: It is used for displaying a label for custom hooks in React DevTools.
+        + `useRef()`: It will permit creating a reference to the DOM element directly within the functional component.
+        + `useLayoutEffect()`: It is used for the reading layout from the DOM and re-rendering synchronously.
     + Custom Hooks: A custom Hook is basically a function of JavaScript. The Custom Hook working is similar to a regular function. The “use” at the beginning of the Custom Hook Name is required for React to understand that this is a custom Hook and also it will describe that this specific function follows the rules of Hooks. Moreover, developing custom Hooks will enable you for extracting component logic from within reusable functions.
     ![types of hooks](../images/react/types_of_hooks.png)
 
@@ -887,12 +887,12 @@
 34. What is React Router?
     + React Router refers to the standard library used for routing in React. It permits us for building a single-page web application in React with navigation without even refreshing the page when the user navigates. It also allows to change the browser URL and will keep the user interface in sync with the URL. React Router will make use of the component structure for calling the components, using which appropriate information can be shown. Since React is a component-based framework, it’s not necessary to include and use this package. Any other compatible routing library would also work with React.
     + The major components of React Router are given below:
-      + BrowserRouter: It is a router implementation that will make use of the HTML5 history API (pushState, popstate, and event replaceState) for keeping your UI to be in sync with the URL. It is the parent component useful in storing all other components.
-      + Routes: It is a newer component that has been introduced in the React v6 and an upgrade of the component.
-      + Route: It is considered to be a conditionally shown component and some UI will be rendered by this whenever there is a match between its path and the current URL.
-      + Link: It is useful in creating links to various routes and implementing navigation all over the application. It works similarly to the anchor tag in HTML.
+      + `BrowserRouter`: It is a router implementation that will make use of the HTML5 history API (pushState, popstate, and event replaceState) for keeping your UI to be in sync with the URL. It is the parent component useful in storing all other components.
+      + `Routes`: It is a newer component that has been introduced in the React v6 and an upgrade of the component.
+      + `Route`: It is considered to be a conditionally shown component and some UI will be rendered by this whenever there is a match between its path and the current URL.
+      + `Link`: It is useful in creating links to various routes and implementing navigation all over the application. It works similarly to the anchor tag in HTML.
 
-35. Can React Hook replaces Redux?
+35. Can React Hooks replace Redux?
     + The React Hook cannot be considered as a replacement for Redux (It is an open-source, JavaScript library useful in managing the application state) when it comes to the management of the global application state tree in large complex applications, even though the React will provide a useReducer hook that manages state transitions similar to Redux. Redux is very useful at a lower level of component hierarchy to handle the pieces of a state which are dependent on each other, instead of a declaration of multiple useState hooks.
     + In commercial web applications which is larger, the complexity will be high, so using only React Hook may not be sufficient. Few developers will try to tackle the challenge with the help of React Hooks and others will combine React Hooks with the Redux.
 
@@ -959,19 +959,19 @@
       import ContactPage from './ContactPage'
       import HelpPage from './HelpPage'
       const PAGES = {
-      home: HomePage,
-      about: AboutPage,
-      facilitiess: FacilitiesPage,
-      contact: ContactPage
-      help: HelpPage
+        home: HomePage,
+        about: AboutPage,
+        facilitiess: FacilitiesPage,
+        contact: ContactPage
+        help: HelpPage
       }
       const Page = (props) => {
-      const Handler = PAGES[props.page] || HelpPage
-      return <Handler {...props} />
+        const Handler = PAGES[props.page] || HelpPage
+        return <Handler {...props} />
       }
       // The PAGES object keys can be used in the prop types for catching errors during dev-time.
       Page.propTypes = {
-      page: PropTypes.oneOf(Object.keys(PAGES)).isRequired
+        page: PropTypes.oneOf(Object.keys(PAGES)).isRequired
       }
       ```
 
