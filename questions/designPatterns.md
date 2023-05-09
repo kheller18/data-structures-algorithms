@@ -55,11 +55,11 @@
 7. What are the SOLID Principles?
    + SOLID principles were the Object-Oriented principles introduced by Robert C. Martin in his paperwork “Design Principles and Design patterns” in the year 2000. The acronym for SOLID goes as follows:
      ![SOLID](../images/design-patterns/solid.png)
-     + S - Single Responsibility Principle (SRP): The single responsibility principle ensures that every class or module should be accountable and responsible for only one functionality. There should be one and only one reason for changing any class.
-     + O - Open Closed Principle (OCP): Every class is open for extension but closed for modification. Here, we are allowed to extend the entities behaviour by not modifying anything in the existing source code.
-     + L - Liskov Substitution Principle(LSP): LSP principle states that the objects can be replaced by the subtype instances without affecting the correctness of the program.
-     + I - Interface Segregation Principle (ISP): The ISP principle states that we can use as many interfaces specific to the client’s requirements instead of creating only one general interface. Clients should not be forced to implement the functionalities that they do not require.
-     + D - Dependency Inversion Principle: Here, the high-level modules should not be dependent on the lower level modules or concrete implementations. Instead, they should be dependent on the abstractions.
+     + `S`: Single Responsibility Principle (SRP): The single responsibility principle ensures that every class or module should be accountable and responsible for only one functionality. There should be one and only one reason for changing any class.
+     + `O`: Open Closed Principle (OCP): Every class is open for extension but closed for modification. Here, we are allowed to extend the entities behaviour by not modifying anything in the existing source code.
+     + `L`: Liskov Substitution Principle(LSP): LSP principle states that the objects can be replaced by the subtype instances without affecting the correctness of the program.
+     + `I`: Interface Segregation Principle (ISP): The ISP principle states that we can use as many interfaces specific to the client’s requirements instead of creating only one general interface. Clients should not be forced to implement the functionalities that they do not require.
+     + `D`: Dependency Inversion Principle: Here, the high-level modules should not be dependent on the lower level modules or concrete implementations. Instead, they should be dependent on the abstractions.
 
 8. What do you understand by the Open-Closed Principle (OCP)?
    + The Open close principle states that any class, component or entity should be open for extension but closed for modification. A class can be extended via Inheritance, Interfaces, Composition whenever required instead of modifying the code of the class. Consider an instance where we have a class that calculates the area of a square. Later, we get the requirement of calculating the area of a rectangle. Here, instead of modifying the original class, we can create one base class and this base class can be extended by the new class rectangle.
@@ -170,7 +170,7 @@
       ![adapter design pattern](../images/design-patterns/adapter_design_patterns.png)
     + Let us consider that we have a MediaPlayer Interface which is implemented by the AudioPlayer class. The AudioPlayer can play mp3 format by default. Consider another interface AdvancedPlayer that is being implemented by MP4Player class that plays mp4 formats and WAVPlayer that plays wav formats. If we want to make AudioPlayer class play other formats, then we make use of the MediaAdapter class that implements the MediaPlayer Interface and uses the AdvancedPlayer objects for playing the required format. The code implementation of this scenario is as follows:
       ```
-      //MediaPlayer.java
+      // MediaPlayer.java
       public interface MediaPlayer {
         public void play(String format, String file);
       }
@@ -724,7 +724,7 @@
 
 27. How can you achieve thread-safe singleton patterns in Java?
     + A thread-safe singleton class is created which helps in object initialization in the presence of multiple threads. It can be done using multiple ways:
-      + Using Enums: Enums are the simplest means of creating a thread-safe singleton class in Java because the synchronization support is inherently done by Java itself. Enums are by default final and this also helps in preventing multiple initializations at the time of serialization.
+      + `Using Enums`: Enums are the simplest means of creating a thread-safe singleton class in Java because the synchronization support is inherently done by Java itself. Enums are by default final and this also helps in preventing multiple initializations at the time of serialization.
         ```
         public enum ThreadSafeSingleton{
           SINGLETON_INSTANCE;
@@ -735,7 +735,7 @@
         // The Singleton class methods can be invoked as below
         ThreadSafeSingleton.SINGLETON_INSTANCE.show();
         ```
-      + Using Static Field Initialization: Thread-safe singleton can also be created by creating the instance at the time of class loading. This is achieved by making use of static fields as the Classloader guarantees that the instances are initialized during class loading and the instance is not visible until that has been fully created.
+      + `Using Static Field Initialization`: Thread-safe singleton can also be created by creating the instance at the time of class loading. This is achieved by making use of static fields as the Classloader guarantees that the instances are initialized during class loading and the instance is not visible until that has been fully created.
         ```
         public class ThreadSafeSingleton{
           private static final ThreadSafeSingleton INSTANCE = new ThreadSafeSingleton();
@@ -750,7 +750,7 @@
         ThreadSafeSingleton.getInstance().display();
         ```
         + But the disadvantage of this way is that the initialization cannot be done lazily and the getInstance() method is called even before any client can call.
-      + Using synchronized keyword: We can make use of the synchronized keyword upon the getInstance method as shown below:
+      + `Using synchronized keyword`: We can make use of the synchronized keyword upon the getInstance method as shown below:
         + In this method, we can achieve lazy initialization, and also since we use synchronized keywords, the object initialization is thread-safe.
         + The only problem is that since the whole method is synchronized, the performance is impacted in the presence of multiple threads.
         ```
@@ -773,7 +773,7 @@
         }
         }
         ```
-      + Double-check locking: Here, we will be using a synchronized block of code within the getInstance method instead of making the whole method synchronized. This ensures that only a handful of threads have to wait only for the first time thereby not impacting the performance.
+      + `Double-check locking`: Here, we will be using a synchronized block of code within the getInstance method instead of making the whole method synchronized. This ensures that only a handful of threads have to wait only for the first time thereby not impacting the performance.
         ```
         public class ThreadSafeSingleton {
         // Creating private instance to make it accessible only by getInstance() method

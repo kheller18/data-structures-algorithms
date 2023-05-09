@@ -208,8 +208,8 @@
    + It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
 
 8. Difference between reset vs normalize CSS?. How do they differ?
-   + Reset CSS: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same.
-   + Normalize CSS: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
+   + `Reset CSS`: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same.
+   + `Normalize CSS`: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
 
 9.  What is the difference between inline, inline-block, and block?
     + `Block Element`: The block elements always start on a new line. They will also take space for an entire row or width. List of block elements are `<div>`, `<p>`.
@@ -458,21 +458,21 @@
 22. What are the properties of flexbox?
     + Flexbox stands for flexible box and it was introduced around 2017 in CSS with the purpose of providing an efficient way to handle layouts, align elements within them and distribute spaces amongst the items in dynamic/responsive conditions. It provides an enhanced ability to alter the dimensions of the items and make use of the available space in the container efficiently. In order to achieve this, CSS3 provides some properties.
     + `flex-direction`: This property helps in defining the direction the container should stack the items targetted for flex. The values of this property can be
-       + row: Stacks items horizontally from left to right in the flex container.
-       + column: Stacks items vertically from top to bottom in the flex container.
-       + row-reverse: Stacks items horizontally from right to left in the flex container.
-       + column-reverse: Stacks items vertically from bottom to top in the flex container.
+       + `row`: Stacks items horizontally from left to right in the flex container.
+       + `column`: Stacks items vertically from top to bottom in the flex container.
+       + `row-reverse`: Stacks items horizontally from right to left in the flex container.
+       + `column-reverse`: Stacks items vertically from bottom to top in the flex container.
     + `flex-wrap`: This property specifies of the flex items should be wrapped or not Possible values are:
-       + wrap: The flex items would be wrapped if needed.
-       + nowrap: This is the default value that says the items won’t be wrapped.
-       + wrap-reverse: This specifies that the items will be wrapped if needed but in reverse order.
+       + `wrap`: The flex items would be wrapped if needed.
+       + `nowrap`: This is the default value that says the items won’t be wrapped.
+       + `wrap-reverse`: This specifies that the items will be wrapped if needed but in reverse order.
     + `flex-flow`: This property is used for setting both flex-direction and flex-wrap properties in one statement.
     + `justify-content`: Used for aligning the flex items. Possible values are:
-       + center: It means that all the flex items are present at the center of the container.
-       + flex-start: This value states that the items are aligned at the start of the container. This is the default value.
-       + flex-end: This value ensures the items are aligned at the end of the container.
-       + space-around: This value displays the items having space between, before, around the items.
-       + space-between: This value displays items with spaces between the lines.
+       + `center`: It means that all the flex items are present at the center of the container.
+       + `flex-start`: This value states that the items are aligned at the start of the container. This is the default value.
+       + `flex-end`: This value ensures the items are aligned at the end of the container.
+       + `space-around`: This value displays the items having space between, before, around the items.
+       + `space-between`: This value displays items with spaces between the lines.
     + `align-items`: This is used for aligning flex items.
     + `align-content`: This is used for aligning the flex lines.
 
