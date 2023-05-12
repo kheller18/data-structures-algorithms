@@ -3,12 +3,12 @@
 ---
 
 1. To develop a project from scratch, what technologies and languages would you need or what skills a full stack developer should have?
-   + Programming Languages: Full-stack developers should be competent in more than one programming language, such as Java, Python, PHP, Ruby, C++, etc.
-   + Front End technologies: You should be familiar with front-end technologies such as HTML5, CSS3, JavaScript, etc. Knowledge of third-party libraries such as jQuery, Ajax, Angular, ReactJS, etc., is also important.
-   + Frameworks: This requires proficiency in a variety of development frameworks, including Spring, Spring Boot, Django, MyBatis, PHP, Hibernate, and others.
-   + Databases and caches: As a full stack developer, you should also know about various DBMS (Database Management Systems) technologies like MySQL, SQLite, Oracle, and MongoDB. It is helpful to have a basic understanding of caching mechanisms like redis, memcached, varnish.
-   + Design Ability: Having a good understanding of design is also important if you wish to become a successful Full-Stack web developer. Moreover, the person should be aware of the principles of prototyping and UX/UI design.
-   + Server: Experience with Apache or NGINX would be beneficial. Good knowledge of Linux helps enormously when administering servers.
+   + `Programming Languages`: Full-stack developers should be competent in more than one programming language, such as Java, Python, PHP, Ruby, C++, etc.
+   + `Front End technologies`: You should be familiar with front-end technologies such as HTML5, CSS3, JavaScript, etc. Knowledge of third-party libraries such as jQuery, Ajax, Angular, ReactJS, etc., is also important.
+   + `Frameworks`: This requires proficiency in a variety of development frameworks, including Spring, Spring Boot, Django, MyBatis, PHP, Hibernate, and others.
+   + `Databases and caches`: As a full stack developer, you should also know about various DBMS (Database Management Systems) technologies like MySQL, SQLite, Oracle, and MongoDB. It is helpful to have a basic understanding of caching mechanisms like redis, memcached, varnish.
+   + `Design Ability`: Having a good understanding of design is also important if you wish to become a successful Full-Stack web developer. Moreover, the person should be aware of the principles of prototyping and UX/UI design.
+   + `Server`: Experience with Apache or NGINX would be beneficial. Good knowledge of Linux helps enormously when administering servers.
 
 2. Which language is the most preferred by full-stack developers?
    + Full Stack Developers utilize several programming languages. Ideally, a candidate should be fluent in several languages, preferably some for designing the front end and others for fixing the back end. Since Full Stack developers work with a variety of technologies and applications, they must be proficient in at least two to three of the most popular languages such as Java, Python, Ruby, PHP, C++, etc.
