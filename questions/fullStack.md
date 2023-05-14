@@ -67,13 +67,13 @@
 
 11. Explain the benefits and drawbacks of using "use strict".
     + In ECMAScript5, a new feature known as strict mode allows you to run a program or function within a strict operating context. Certain actions, therefore, cannot be taken due to this strict context, and more exceptions are thrown. When the "use strict" statement is used, the browser is instructed to use "strict" mode, which is a more restricted and safer JavaScript feature set. You can specify "use strict" at the top of a function to evaluate the JS in strict mode. In strict mode, more errors are thrown and some features are disabled to make your code more robust, clear, and accurate.
-    + Advantages:
+    + `Advantages`:
       + Errors are thrown when some common coding mistakes are detected.
       + By having strict mode, mistakes that make JavaScript engines tough to optimize can be fixed. Sometimes, strict mode code runs faster than similar, non-strict mode code.
       + Generally, it prevents or throws an error when an "unsafe" action is taken (for example, accessing the global object).
       + It disables poorly thought-out or confusing features.
       + Strict mode simplifies the process of writing "secure" JavaScript.
-    + Disadvantages:
+    + `Disadvantages`:
       + Many of the functions that most developers use are absent.
       + It is not possible to access function.caller or function.arguments anymore.
       + If you concatenate scripts written in different strict modes, you may encounter problems.
@@ -89,18 +89,18 @@
       + Therefore, when an async function (or an I/O) needs to be executed, the main thread relays it to another thread, allowing v8 (Javascript engine) to continue processing or running its code. In the event loop, there are different phases, like pending callbacks, closing callbacks, timers, idle or preparing, polling, and checking, with different FIFO (First-In-First-Out) queues.
 
 14. Is there a way to decrease the load time of a web application?
-    + Image Optimization: The file size of an image can be dramatically reduced by switching to a different file format. For example, GIFs work well for images with few colors, such as logos, JPEG is ideal for images with lots of colors and details, such as photographs, and PNG format is ideal for transparent images with high quality.
-    + Keep JavaScript and CSS in external files: Embedding JavaScript and CSS in HTML documents forces them to be downloaded every time the HTML document is loaded. In this case, browser caching is not utilized, and the HTML document becomes larger. This is why you should always place CSS and JavaScript in external files; it is a best practice and simplifies maintenance.
-    + Reducing redirects: Too many redirects will delay the loading time of a website. HTTP requests and responses are delayed each time a page redirects. Getting rid of unnecessary redirects on your site will reduce the load time of your site significantly.
-    + Load CSS and JavaScript files asynchronously: Your website contains CSS and JavaScript files that can be loaded either synchronously or asynchronously. As part of synchronous loading, each file is loaded sequentially, in the order it appears on your site. As opposed to synchronous loading, asynchronous loading allows multiple files to be loaded simultaneously, boosting the performance of a website. 
-    + Minify HTML, CSS, and JavaScript: If you optimize the way your files load, your pages will load more quickly. You can do the same when it comes to HTML, CSS, and JavaScript code. By eliminating unnecessary spaces, characters, and comments, you can reduce the size of your files. This will make your web pages load faster.
+    + `Image Optimization`: The file size of an image can be dramatically reduced by switching to a different file format. For example, GIFs work well for images with few colors, such as logos, JPEG is ideal for images with lots of colors and details, such as photographs, and PNG format is ideal for transparent images with high quality.
+    + `Keep JavaScript and CSS in external files`: Embedding JavaScript and CSS in HTML documents forces them to be downloaded every time the HTML document is loaded. In this case, browser caching is not utilized, and the HTML document becomes larger. This is why you should always place CSS and JavaScript in external files; it is a best practice and simplifies maintenance.
+    + `Reducing redirects`: Too many redirects will delay the loading time of a website. HTTP requests and responses are delayed each time a page redirects. Getting rid of unnecessary redirects on your site will reduce the load time of your site significantly.
+    + `Load CSS and JavaScript files asynchronously`: Your website contains CSS and JavaScript files that can be loaded either synchronously or asynchronously. As part of synchronous loading, each file is loaded sequentially, in the order it appears on your site. As opposed to synchronous loading, asynchronous loading allows multiple files to be loaded simultaneously, boosting the performance of a website. 
+    + `Minify HTML, CSS, and JavaScript`: If you optimize the way your files load, your pages will load more quickly. You can do the same when it comes to HTML, CSS, and JavaScript code. By eliminating unnecessary spaces, characters, and comments, you can reduce the size of your files. This will make your web pages load faster.
 
 15. Explain dependency injection.
     + The Dependency Injection (DI) pattern is a design pattern for implementing the Inversion of Control (IoC). Dependent objects can be created outside of classes and made available to classes in different ways. Three types of classes are involved in Dependency Injection as follows:
     ![dependency injection](../images/full-stack/dependency_injection.png)
-    + Client Class: A client class (dependent class) is one that depends on the service class.
-    + Service Class: Service (dependency) classes provide services to client classes.
-    + Injector Class: This class injects the objects from the service class into the client class.
+    + `Client Class`: A client class (dependent class) is one that depends on the service class.
+    + `Service Class`: Service (dependency) classes provide services to client classes.
+    + `Injector Class`: This class injects the objects from the service class into the client class.
 
 16. What do you mean by observer pattern?
     + If several objects are tied together in one-to-many relationships, the observer pattern is used. Every time one object is modified, then all of its dependent objects are automatically notified and updated. It falls under the behavioural pattern category. It describes the coupling between the objects and the observer and provides support for broadcast-type communication. The object that observes the state of another object is known as the observer, and the object that is being observed is known as the subject as shown below:
@@ -108,11 +108,11 @@
 
 17. State difference between blue/green deployment and rolling deployment.
     + Today, the software is rapidly created and features are often changed based on customer needs, and then it is deployed into production. Each organization has its unique way of getting new applications into the production environment. Most organizations follow the standard deployment and release strategies such as Blue-Green and Rolling Deployment.
-    + Blue-Green Deployment Strategy:
+    + `Blue-Green Deployment Strategy`:
       + A deployment strategy like this creates two separate infrastructure environments i.e., blue and green. A blue environment contains older code (old version), while a green environment (production) contains the latest code (new version). There is only one live production environment at any given time.
       + Example: For instance, the green environment is live and is receiving all user traffic, while the clone (blue) is idle. Once a new version of an application is ready for release, it can be deployed to the blue environment for testing. As soon as the new release passes testing, application traffic is switched from green to blue. Blue then becomes the live production environment, and Green becomes idle, ready for testing the next release.
       ![blue-green deployment strategy](../images/full-stack/blue_green_deployment.png)
-    + Rolling Deployment Strategy
+    + `Rolling Deployment Strategy`
       + Using this deployment strategy, old versions of an application are completely replaced with the new versions by completely replacing the infrastructure on which they run.
       + Example: When a new version must be deployed to all nodes, the new version is deployed to the first node while all other nodes handle end-user traffic. As soon as the new version is successfully installed on the first node, it will begin managing end-user traffic while the new version is being installed on the second node. The process is repeated until all nodes have been successfully upgraded to the new version.
       ![rolling deployment strategy](../images/full-stack/rolling_deployment.png)
@@ -143,9 +143,9 @@
 22. What is Promise and explain its states?
     + Callback functions are functions that can be passed to another function as arguments and executed there to complete a routine or action. Those functions depend on one another, so it could get quite messy with so many callback functions nested in so many layers. This is what is referred to as callback hell.
     + As an alternative to callbacks in JavaScript, promises are used to handle asynchronous operations. In addition to handling multiple asynchronous operations, they provide better error handling than callbacks. Promises can be a better way for a user to read the code effectively and efficiently, especially when that particular code performs multiple asynchronous operations. The Promise object represents the result of an asynchronous operation (or its failure) and the resulting value. The promise is in one of the following states:
-      + Pending: In its initial state, neither fulfilled nor rejected.
-      + Fulfilled: Indicating that the operation was successful.
-      + Rejected: Indicating that the operation failed.
+      + `Pending`: In its initial state, neither fulfilled nor rejected.
+      + `Fulfilled`: Indicating that the operation was successful.
+      + `Rejected`: Indicating that the operation failed.
 
 23. State the difference between GET and POST.
     + GET and POST are two different HTTP request methods.
@@ -197,8 +197,8 @@
 
 30. What is event bubbling and capturing in JavaScript?
     + The propagation of events inside the DOM (Document Object Model) is known as 'Event Flow' in JavaScript. The event flow defines the order or sequence in which a particular web page receives an event. Accordingly, event flow (propagation) in JS is dependent on the following aspects:
-      + Event Bubbling: With Event Bubbling, the event is captured and handled first by the innermost element, and then propagates to the outermost element. Events propagate up the DOM tree from child elements until the topmost element is handled.
-      + Event Capturing: With Event Capturing, the event is captured and handled first by the outermost element, and then propagates to the innermost element. Event cycles propagate starting with the wrapper elements and ending with the target elements that initiated the event cycle.
+      + `Event Bubbling`: With Event Bubbling, the event is captured and handled first by the innermost element, and then propagates to the outermost element. Events propagate up the DOM tree from child elements until the topmost element is handled.
+      + `Event Capturing`: With Event Capturing, the event is captured and handled first by the outermost element, and then propagates to the innermost element. Event cycles propagate starting with the wrapper elements and ending with the target elements that initiated the event cycle.
       ![event propogation](../images/full-stack/event_propagation.png)
 
 31. Tell me about a project that you worked on and the technologies you used. Why did you choose them?
