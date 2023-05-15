@@ -6,7 +6,7 @@
    + Mendix bagged first place in the Computable Awards Software/SaaS category-2021.
    + Mendix was also named as the leader in the 2019 and 2021 Magic Quadrant for Multi-experience Development Platforms by Gartner.
    + Around 3400 organizations across the globe use Mendix for their operations.
-   + Junior Mendix developers can expect an average salary of about $70,000 per annum. And the average expected salary of senior developers is $120,000 per annum.
+   + Junior Mendix developers can expect an average salary of about `$70,000` per annum. And the average expected salary of senior developers is `$120,000` per annum.
 
 2. What are the features available in Mendix Studio?
    + Microflow creation

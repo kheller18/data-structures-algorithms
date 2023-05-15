@@ -3,7 +3,7 @@
 ---
 
 + `Domain model`: Where all the apps data is stored
-  + abstracted relational database based on standard UML orientation based on object oriented principles
+  + abstracted relational database based on standard Unified Modeling Language (UML), a visual language that helps software developers visualize and construct new systems. orientation based on object oriented principles
   + each box is an entity
     + populated in a table
     + can link entities together
