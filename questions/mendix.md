@@ -258,7 +258,7 @@
     + A wider set of features are available in Mendix studio pro than in Mendix studio. The code can be edited and customized with the in-built editors as well in Mendix studio pro. Also, it allows the users to control integration, build extensions, manage security, and manage branch lines. It is not provided in Mendix studio. Domain-specific languages are available in studio pro. The developer can also access the page editor, domain model, integrations, debugger, microflow editor, and security configuration within studio pro.
 
 41. Which great apps have been built with Mendix so far?
-+ Solomon group’s RFID wristband event access application
-+ AntTail’s app to track medicine
-+ Smart building management app based on Heijman’s IoT
-+ Equipment tracking app of KLM’s IoT
+    + Solomon group’s RFID wristband event access application
+    + AntTail’s app to track medicine
+    + Smart building management app based on Heijman’s IoT
+    + Equipment tracking app of KLM’s IoT
