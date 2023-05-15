@@ -63,17 +63,17 @@
 
 12. Why is it considered to be easy to work on Git?
     + With the help of git, developers have gained many advantages in terms of performing the development process faster and in a more efficient manner. Some of the main features of git which has made it easier to work are:
-      + Branching Capabilities:
+      + `Branching Capabilities`:
         + Due to its sophisticated branching capabilities, developers can easily work on multiple branches for the different features of the project.
         + It also has an easier merge option along with an efficient work-flow feature diagram for tracking it.
-      + Distributed manner of development:
+      + `Distributed manner of development`:
         + Git is a distributed system and due to this nature, it became easier to trace and locate data if it's lost from the main server.
         + In this system, the developer gets a repository file that is present on the server. Along with this file, a copy of this is also stored in the developer’s system which is called a local repository.
         + Due to this, the scalability of the project gets drastically improved.
-      + Pull requests feature:
+      + `Pull requests feature`:
         + This feature helps in easier interaction amongst the developers of a team to coordinate merge-operations.
         + It keeps a proper track of the changes done by developers to the code.
-      + Effective release cycle:
+      + `Effective release cycle`:
         + Due to the presence of a wide variety of features, git helps to increase the speed of the release cycle and helps to improve the project workflow in an efficient manner.
 
 13. How will you create a git repository?
@@ -105,8 +105,8 @@
     ![pull vs branch](../images/git/pull_branch.png)
 
 20. Why do we not call git “pull request” as “push request”?
-    + “Push request” is termed so because it is done when the target repository requests us to push our changes to it.
-    + “Pull request” is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it.
+    + `Push request`: is termed so because it is done when the target repository requests us to push our changes to it.
+    + `Pull request`: is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it.
     ![pull vs push request](../images/git/pull_push.png)
 
 21. Can you tell the difference between Git and GitHub?
@@ -177,8 +177,8 @@
 
 34. How to revert a bad commit which is already pushed?
     + There can be cases where we want to revert from the pushed changes and go back to the previous version. To handle this, there are two possible approaches based on the situations:
-      + Approach 1: Fix the bad changes of the files and create a new commit and push to the remote repository. This step is the simplest and most recommended approach to fix bad changes. You can use the command: `git commit -m "<message>"`
-      + Approach 2: New commit can be created that reverts changes done in the bad commit. It can be done using `git revert <name of bad commit>`
+      + `Approach 1`: Fix the bad changes of the files and create a new commit and push to the remote repository. This step is the simplest and most recommended approach to fix bad changes. You can use the command: `git commit -m "<message>"`
+      + `Approach 2`: New commit can be created that reverts changes done in the bad commit. It can be done using `git revert <name of bad commit>`
 
 35. What is the functionality of `git cherry-pick` command?
     + This command is used to introduce certain commits from one branch onto another branch within the repository. The most common use case is when we want to forward- or back-port commits from the maintenance branch to the development branch.
