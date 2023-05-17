@@ -142,23 +142,23 @@
     // this code is to retry with exponential backoff
     function wait (timeout) {
       return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve()
-      }, timeout);
+        setTimeout(() => {
+          resolve()
+        }, timeout);
       });
     }
     async function requestWithRetry (url) {
-    const MAX_RETRIES = 10;
-    for (let i = 0; i <= MAX_RETRIES; i++) {
-    try {
-      return await request(url);
-    } catch (err) {
-      const timeout = Math.pow(2, i);
-      console.log('Waiting', timeout, 'ms');
-      await wait(timeout);
-      console.log('Retrying', err.message, i);
-    }
-    }
+      const MAX_RETRIES = 10;
+      for (let i = 0; i <= MAX_RETRIES; i++) {
+        try {
+          return await request(url);
+        } catch (err) {
+          const timeout = Math.pow(2, i);
+          console.log('Waiting', timeout, 'ms');
+          await wait(timeout);
+          console.log('Retrying', err.message, i);
+        }
+      }
     }
     ```
 
@@ -271,7 +271,7 @@
       class MyEmitter extends EventEmitter {}
       const myEmitter = new MyEmitter();
       myEmitter.on('event', () => {
-      console.log('an event occurred!');
+        console.log('an event occurred!');
       });
       myEmitter.emit('event');
       ```
@@ -343,15 +343,15 @@
       ```
       const { PerformanceObserver, performance } = require('perf_hooks');
       const obs = new PerformanceObserver((items) => {
-      console.log(items.getEntries()[0].duration);
-      performance.clearMarks();
+        console.log(items.getEntries()[0].duration);
+        performance.clearMarks();
       });
       obs.observe({ entryTypes: ['measure'] });
       performance.measure('Start to Now');
       performance.mark('A');
       doSomeLongRunningProcess(() => {
-      performance.measure('A to Now', 'A');
-      performance.mark('B');
-      performance.measure('A to B', 'A', 'B');
+        performance.measure('A to Now', 'A');
+        performance.mark('B');
+        performance.measure('A to B', 'A', 'B');
       });
       ```
