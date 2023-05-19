@@ -185,7 +185,7 @@
       + Business Value Delivered: It is used to measure the efficiency of the working team.
 
 24. What is Scrum? Write its advantages.
-    + Scrum is a lightweight process framework that helps scrum teams to work together and manage product development to deliver products in the shortest time. The product provided by the scrum team in the shortest period is known as a print. Its main aim is to manage tasks within a team-based development environment. It is especially used to manage project development for software products and can also be used in business-related contexts.
+    + Scrum is a lightweight process framework that helps scrum teams to work together and manage product development to deliver products in the shortest time. The product provided by the scrum team in the shortest period is known as a sprint. Its main aim is to manage tasks within a team-based development environment. It is especially used to manage project development for software products and can also be used in business-related contexts.
       + Advantages of Scrum:
         + Releases product quickly to users and customers
         + Ensures effective use of time and money and therefore saves cost
