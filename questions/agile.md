@@ -198,7 +198,7 @@
     + There are basically three different roles in Scrum as given below:
       ![scrum roles](../images/agile/scrum_roles.png)
       + `Scrum Master`: Scrum Master is basically a team leader or supervisor of a team who is responsible for ensuring that the scrum team executes committed tasks properly.
-      + `Product Owner`: The product owner is basically a stakeholder of the project who is responsible for managing the product backlog. He is also responsible for defining a vision of what to build for the team.
+      + `Product Owner`: The product owner is basically a stakeholder of the project who is responsible for managing the product backlog. He/She is also responsible for defining a vision of what to build for the team.
       + `Development Team`: It involves an individual person and each person is responsible for working collectively to complete a particular project. It is the team that is responsible for developing actual product increments and meeting sprint goals.
 
 26. What do you mean by Scrum Master? What are the responsibilities of Scrum Master?
