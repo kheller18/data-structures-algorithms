@@ -1112,14 +1112,14 @@
         + Based on the above diagram, there are three threads. First Thread acquires the GIL first and starts the I/O execution. When the I/O operations are done, thread 1 releases the acquired GIL which is then taken up by the second thread. The process repeats and the GIL are used by different threads alternatively until the threads have completed their execution. The threads not having the GIL lock goes into the waiting state and resumes execution only when it acquires the lock.
 
 64. Define `PYTHONPATH`.
-    + It is an environment variable used for incorporating additional directories during the import of a module or a package. PYTHONPATH is used for checking if the imported packages or modules are available in the existing directories. Not just that, the interpreter uses this environment variable to identify which module needs to be loaded.
+    + It is an environment variable used for incorporating additional directories during the import of a module or a package. `PYTHONPATH` is used for checking if the imported packages or modules are available in the existing directories. Not just that, the interpreter uses this environment variable to identify which module needs to be loaded.
 
 65. Define `PIP`.
     + PIP stands for Python Installer Package. As the name indicates, it is used for installing different python modules. It is a command-line tool providing a seamless interface for installing different python modules. It searches over the internet for the package and installs them into the working directory without the need for any interaction with the user. The syntax for this is:
       + `pip install <package_name>`
 
 66. Are there any tools for identifying bugs and performing static analysis in python?
-    + Yes, there are tools like PyChecker and Pylint which are used as static analysis and linting tools respectively. PyChecker helps find bugs in python source code files and raises alerts for code issues and their complexity. Pylint checks for the module’s coding standards and supports different plugins to enable custom features to meet this requirement.
+    + Yes, there are tools like `PyChecker` and `Pylint` which are used as static analysis and linting tools respectively. `PyChecker` helps find bugs in python source code files and raises alerts for code issues and their complexity. `Pylint` checks for the module’s coding standards and supports different plugins to enable custom features to meet this requirement.
 
 67. Differentiate between deep and shallow copies.
     + Shallow copy does the task of creating new objects storing references of original elements. This does not undergo recursion to create copies of nested objects. It just copies the reference details of nested objects.
