@@ -445,7 +445,7 @@
     ```
 
 24. What does `*args` and `**kwargs` mean?
-    + *args
+    + `*args`
       + *args is a special syntax used in the function definition to pass variable-length arguments.
       + “*” means variable length and “args” is the name used by convention. You can use any other.
         ```
@@ -456,7 +456,7 @@
           return mul
         print(multiply(1, 2, 3, 4, 5)) #output: 120
         ```
-    + **kwargs
+    + `**kwargs`
       + **kwargs is a special syntax used in the function definition to pass variable-length keyworded arguments.
       + Here, also, “kwargs” is used just by convention. You can use any other name.
       + Keyworded argument means a variable that has a name when passed to a function.
@@ -526,7 +526,7 @@
 27. How does inheritance work in python? Explain it with an example.
     + Inheritance gives the power to a class to access all attributes and methods of another class. It aids in code reusability and helps the developer to maintain applications without redundant code. The class inheriting from another class is a child class or also called a derived class. The class from which a child class derives the members are called parent class or superclass.
       + Python supports different kinds of inheritance, they are:
-        + Single Inheritance: Child class derives members of one parent class.
+        + `Single Inheritance`: Child class derives members of one parent class.
           ![single inheritance](../images/python/single_inheritance.png)
           ```
           # Parent class
@@ -544,7 +544,7 @@
           obj1.par_func()
           obj1.child_func()
           ```
-        + Multi-level Inheritance: The members of the parent class, A, are inherited by child class which is then inherited by another child class, B. The features of the base class and the derived class are further inherited into the new derived class, C. Here, A is the grandfather class of class C.
+        + `Multi-level Inheritance`: The members of the parent class, A, are inherited by child class which is then inherited by another child class, B. The features of the base class and the derived class are further inherited into the new derived class, C. Here, A is the grandfather class of class C.
           ![multi-level inheritance](../images/python/multilevel_inheritance.png)
           ```
           # Parent class
@@ -576,7 +576,7 @@
           print(obj1.a_name)
           obj1.display_names()
           ```
-        + Multiple Inheritance: This is achieved when one child class derives members from more than one parent class. All features of parent classes are inherited in the child class.
+        + `Multiple Inheritance`: This is achieved when one child class derives members from more than one parent class. All features of parent classes are inherited in the child class.
           ![multiple inheritance](../images/python/multiple_inheritance.png)
           ```
           # Parent class1
@@ -599,7 +599,7 @@
           obj1 = Child()
           obj1.child_func()
           ```
-        + Hierarchical Inheritance: When a parent class is derived by more than one child class, it is called hierarchical inheritance.
+        + `Hierarchical Inheritance`: When a parent class is derived by more than one child class, it is called hierarchical inheritance.
           ![hierarchical inheritance](../images/python/hierarchical_inheritance.png)
           ```
           # Base class
@@ -627,7 +627,7 @@
           ```
 
 28. How do you access parent members in the child class?
-    + By using Parent class name: You can use the name of the parent class to access the attributes as shown in the example below:
+    + `By using Parent class name`: You can use the name of the parent class to access the attributes as shown in the example below:
       ```
       class Parent(object):
         # Constructor
@@ -647,7 +647,7 @@
       obj = Child("Interviewbit", 6)
       obj.display()
       ```
-    + By using super(): The parent class members can be accessed in child class using the super keyword.
+    + `By using super()`: The parent class members can be accessed in child class using the super keyword.
       ```
       class Parent(object):
         # Constructor
@@ -773,11 +773,11 @@
 
 38. How will you combine different pandas dataframes?
     + The dataframes can be combines using the below approaches:
-      + append() method: This is used to stack the dataframes horizontally. Syntax:
+      + `append() method`: This is used to stack the dataframes horizontally. Syntax:
         + `df1.append(df2)`
-      + concat() method: This is used to stack dataframes vertically. This is best used when the dataframes have the same columns and similar fields. Syntax:
+      + `concat() method`: This is used to stack dataframes vertically. This is best used when the dataframes have the same columns and similar fields. Syntax:
         + `pd.concat([df1, df2])`
-      + join() method: This is used for extracting data from various dataframes having one or more common columns.
+      + `join() method`: This is used for extracting data from various dataframes having one or more common columns.
         + `df1.join(df2)`
 
 39. Can you create a series from the dictionary object in pandas?
@@ -822,7 +822,7 @@
     ```
 
 43. How will you delete indices, rows and columns from a dataframe?
-    + To delete an Index:
+    + `To delete an Index`:
       + Execute del df.index.name for removing the index by name.
       + Alternatively, the df.index.name can be assigned to None.
       + For example, if you have the below dataframe:
@@ -846,7 +846,7 @@
           Judy          3
           Jim           4
           ```
-    + To delete row/column from dataframe:
+    + `To delete row/column from dataframe`:
       + drop() method is used to delete row/column from dataframe.
       + The axis argument is passed to the drop method where if the value is 0, it indicates to drop/delete a row and if 1 it has to drop the column.
       + Additionally, we can try to delete the rows/columns in place by setting the value of inplace to True. This makes sure that the job is done without the need for reassignment.
@@ -972,11 +972,11 @@
     + We can use the method numpy.loadtxt() which can automatically read the file’s header and footer lines and the comments if any.
     + This method is highly efficient and even if this method feels less efficient, then the data should be represented in a more efficient format such as CSV etc. Various alternatives can be considered depending on the version of NumPy used.
     + Following are the file formats that are supported:
-      + Text files: These files are generally very slow, huge but portable and are human-readable.
-      + Raw binary: This file does not have any metadata and is not portable. But they are fast.
-      + Pickle: These are borderline slow and portable but depends on the NumPy versions.
-      + HDF5: This is known as the High-Powered Kitchen Sink format which supports both PyTables and h5py format.
-      + .npy: This is NumPy's native binary data format which is extremely simple, efficient and portable.
+      + `Text files`: These files are generally very slow, huge but portable and are human-readable.
+      + `Raw binary`: This file does not have any metadata and is not portable. But they are fast.
+      + `Pickle`: These are borderline slow and portable but depends on the NumPy versions.
+      + `HDF5`: This is known as the High-Powered Kitchen Sink format which supports both PyTables and h5py format.
+      + `.npy`: This is NumPy's native binary data format which is extremely simple, efficient and portable.
 
 52. How will you read CSV data into an array in NumPy?
     + This can be achieved by using the genfromtxt() method by setting the delimiter as a comma.
