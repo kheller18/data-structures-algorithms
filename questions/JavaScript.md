@@ -4,17 +4,17 @@
 
 1. What are the different data types present in javascript?
    + To know the type of a JavaScript variable, we can use the typeof operator.
-   + Primitive types
-     + String - It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.
-     + Number - It represents a number and can be written with or without decimals.
-     + BigInt - This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.
-     + Boolean - It represents a logical entity and can have only two values: true or false. Booleans are generally used for conditional testing.
-     + Undefined - When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.
-     + Null - It represents a non-existent or a invalid value.
-     + Symbol - It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
-   + Non-primitive types:
+   + `Primitive types`:
+     + `String`: It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.
+     + `Number`: It represents a number and can be written with or without decimals.
+     + `BigInt`: This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.
+     + `Boolean`: It represents a logical entity and can have only two values: true or false. Booleans are generally used for conditional testing.
+     + `Undefined`: When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.
+     + `Null`: It represents a non-existent or a invalid value.
+     + `Symbol`: It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
+   + `Non-primitive types`:
      + Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
-     + Object - Used to store collection of data.
+     + `Object`: Used to store collection of data.
 
 2. Explain Hoisting in javascript.
    + Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
@@ -36,8 +36,8 @@
 3. Why do we use the word “debugger” in javascript?
    + The debugger for the browser must be activated in order to debug the code. Built-in debuggers may be switched on and off, requiring the user to report faults. The remaining section of the code should stop execution before moving on to the next line while debugging.
 
-4. Difference between “ == “ and “ === “ operators.
-   + Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
+4. Difference between  `==` and `===` operators.
+   + Both are comparison operators. The difference between both the operators is that `==` is used to compare values whereas, `===` is used to compare both values and types.
      ```
      var x = 2;
      var y = "2";
@@ -52,7 +52,7 @@
 
 6. Explain Implicit Type Coercion in javascript.
    + Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
-   + String coercion
+   + `String coercion`:
      + String coercion takes place while using the ‘ + ‘ operator. When a number is added to a string, the number type is always converted to the string type.
        ```
        var x = 3;
@@ -61,7 +61,7 @@
        ```
      + When JavaScript sees that the operands of the expression x + y are of different types ( one being a number type and the other being a string type ), it converts the number type to the string type and then performs the operation. Since after conversion, both the variables are of string type, the ‘ + ‘ operator outputs the concatenated string “33” in the first example and “24Hello” in the second example.
      + Note - Type coercion also takes place when using the ‘ - ‘ operator, but the difference while using ‘ - ‘ operator is that, a string is converted to a number and then subtraction takes place.
-   + Boolean Coercion
+   + `Boolean Coercion`:
      + Boolean coercion takes place when using logical operators, ternary operators, if statements, and loop checks. To understand boolean coercion in if statements and operators, we need to understand truthy and falsy values.
      + Truthy values are those which will be converted (coerced) to true. Falsy values are those which will be converted to false.
      + All values except false, 0, 0n, -0, “”, null, undefined, and NaN are truthy values.
@@ -73,7 +73,7 @@
 
        if(y) { console.log(y) }    // The code inside this block will run since the value of y is 23 (Truthy)
        ```
-   + Logical operators:
+   + `Logical operators`:
      + Logical operators in javascript, unlike operators in other programming languages, do not return true or false. They always return one of the operands.
      + OR ( | | ) operator - If the first value is truthy, then the first value is returned. Otherwise, always the second value gets returned.
      + AND ( && ) operator - If both the values are truthy, always the second value is returned. If the first value is falsy then the first value is returned or if the second value is falsy then the second value is returned.
@@ -98,7 +98,7 @@
          console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
        }
        ```
-   + Equality Coercion
+   + `Equality Coercion`
      + Equality coercion takes place when using ‘ == ‘ operator. As we have stated before
      + The ‘ == ‘ operator compares values and not types.
      + While the above statement is a simple way to explain == operator, it’s not completely true. The reality is that while using the ‘==’ operator, coercion takes place. The ‘==’ operator, converts both the operands to the same type and then compares them.
@@ -250,7 +250,7 @@
       x()   // Returns "Do something"
       ```
 
-13. Explain “this” keyword.
+13. Explain `this` keyword.
     + The “this” keyword refers to the object that the function is a property of.
     + The value of the “this” keyword will always depend on the object that is invoking the function.
       ```
@@ -539,12 +539,12 @@
       + Therefore, a callback is a function that will be executed after another function gets executed.
 
 24. What are the types of errors in javascript?
-    + Syntax error: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
-    + Logical error: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.
+    + `Syntax error`: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
+    + `Logical error`: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.
 
 25. What is memoization?
     + Memoization is a form of caching where the return value of a function is cached based on its parameters. If the parameter of that function is not changed, the cached version of the function is returned.
-    + Note- Memoization is used for expensive function calls but in the following example, we are considering a simple function for understanding the concept of memoization better.
+    + Note: Memoization is used for expensive function calls but in the following example, we are considering a simple function for understanding the concept of memoization better.
       ```
       function addTo256(num){
         return num + 256;
@@ -770,7 +770,7 @@
 
 35. What is the rest parameter and spread operator?
     + Both rest parameter and spread operator were introduced in the ES6 version of javascript.
-      + Rest parameter ( … ):
+      + `Rest parameter ( … )`:
         + It provides an improved way of handling the parameters of a function.
         + Using the rest parameter syntax, we can create functions that can take a variable number of arguments.
         + Any number of arguments will be converted into an array using the rest parameter.
@@ -808,7 +808,7 @@
           //Do something
           }
           ```
-      + Spread operator (…): Although the syntax of the spread operator is exactly the same as the rest parameter, the spread operator is used to spreading an array, and object literals. We also use spread operators where one or more arguments are expected in a function call.
+      + `Spread operator (…)`: Although the syntax of the spread operator is exactly the same as the rest parameter, the spread operator is used to spreading an array, and object literals. We also use spread operators where one or more arguments are expected in a function call.
         ```
         function addFourNumbers(num1,num2,num3,num4){
           return num1 + num2 + num3 + num4;
@@ -851,10 +851,10 @@
     + Promises are used to handle asynchronous operations in javascript.
     + Before promises, callbacks were used to handle asynchronous operations. But due to the limited functionality of callbacks, using multiple callbacks to handle asynchronous code can lead to unmanageable code.
     + Promise object has four states -
-      + Pending - Initial state of promise. This state represents that the promise has neither been fulfilled nor been rejected, it is in the pending state.
-      + Fulfilled - This state represents that the promise has been fulfilled, meaning the async operation is completed.
-      + Rejected - This state represents that the promise has been rejected for some reason, meaning the async operation has failed.
-      + Settled - This state represents that the promise has been either rejected or fulfilled.
+      + `Pending`: Initial state of promise. This state represents that the promise has neither been fulfilled nor been rejected, it is in the pending state.
+      + `Fulfilled`: This state represents that the promise has been fulfilled, meaning the async operation is completed.
+      + `Rejected`: This state represents that the promise has been rejected for some reason, meaning the async operation has failed.
+      + `Settled`: This state represents that the promise has been either rejected or fulfilled.
     + A promise is created using the Promise constructor which takes in a callback function with two parameters, resolve and reject respectively.
     ![resolve reject promise](../images/js/resolve_reject_promise.png)
       + resolve is a function that will be called when the async operation has been successfully completed.
@@ -866,7 +866,7 @@
             if(elements.length > 3 ){
               reject("Only three elements or less are allowed");
             }
-            else{
+            else {
               let sum = 0;
               let i = 0;
               while(i < elements.length){
@@ -910,7 +910,6 @@
       Student.prototype.getDetails = function(){
         return 'Name: ${this.name}, Roll no: ${this.rollNumber}, Grade: ${this.grade}, Section:${this.section}';
       }
-
 
       let student1 = new Student("Vivek", 354, "6th", "A");
       student1.getDetails();
@@ -1480,9 +1479,9 @@
 
 65. What are the object oriented features supported in ES6.
     + The object-oriented features supported in ES6 are:
-      + Classes: We can create classes in ES6. The class function essentially builds a template from which we may later create objects. When a new instance of the class is created, the constructor method is invoked.
-      + Methods: Static methods can also be found in classes. A static method, unlike an object, is a function that is bound to the class. A static method can't be called from a class instance. Let's take a look at getters and setters for a moment. Encapsulation is a fundamental notion in OOP. Data (object properties) should not be directly accessed or updated from outside the object, which is a crucial aspect of encapsulation. A getter (access) or a setter (modify) are particular methods we define in our class to access or edit a property.
-      + Inheritance: It is also possible for classes to inherit from one another. The parent is the class that is being inherited from, and the child is the class that is inheriting from the parent.
+      + `Classes`: We can create classes in ES6. The class function essentially builds a template from which we may later create objects. When a new instance of the class is created, the constructor method is invoked.
+      + `Methods`: Static methods can also be found in classes. A static method, unlike an object, is a function that is bound to the class. A static method can't be called from a class instance. Let's take a look at getters and setters for a moment. Encapsulation is a fundamental notion in OOP. Data (object properties) should not be directly accessed or updated from outside the object, which is a crucial aspect of encapsulation. A getter (access) or a setter (modify) are particular methods we define in our class to access or edit a property.
+      + `Inheritance`: It is also possible for classes to inherit from one another. The parent is the class that is being inherited from, and the child is the class that is inheriting from the parent.
 
 66. Give a thorough comparison between ES5 and ES6.
 ![es5 vs es6](../images/js/es5_es6.png)
@@ -1641,9 +1640,9 @@
 
 14. What are the states of Promises in ES6?
     + Promises mainly possess three states as follows:
-      + Pending: This refers to the initial state of every promise. It indicates that the result has not yet been computed.
-      + Fulfilled: It refers to the completion of a task.
-      + Rejected: It indicates the failure that arises during computation.
+      + `Pending`: This refers to the initial state of every promise. It indicates that the result has not yet been computed.
+      + `Fulfilled`: It refers to the completion of a task.
+      + `Rejected`: It indicates the failure that arises during computation.
     + The promise will be immutable once it has been fulfilled or rejected. A rejected function and a resolve function are the two arguments passed into the Promise() constructor. It returns either the first or second parameter, depending on the asynchronous operation.
 
 15. What is Export Default and Named Export in ES6?
@@ -1735,13 +1734,13 @@
 17. What is Bubbling and Capturing?
     + When an event occurs on the DOM, it does not take place completely on one element. The event bubbles up or goes to its parent, grandparents, and grandparent's parent until it reaches the window in the Bubbling Phase, whereas the event starts out from window down to the element that prompted the event or the event target in the Capturing Phase.
     + There are three stages of event propagation:
-      + Capturing Phase - the event begins with the window and progresses through each element until it reaches the target element.
-      + Target Phase - The event has arrived at the target element.
-      + Bubbling Phase - The event bubbles up from the target element and then up every element until it reaches the window.
+      + `Capturing Phase`: the event begins with the window and progresses through each element until it reaches the target element.
+      + `Target Phase`: The event has arrived at the target element.
+      + `Bubbling Phase`: The event bubbles up from the target element and then up every element until it reaches the window.
 
 18. What is the difference between for..of and for..in?
-    + for in: runs over an object's enumerable property names.
-    + for of: (new in ES6) takes an object-specific iterator and loops through the data it generates.
+    + `for in`: runs over an object's enumerable property names.
+    + `for of`: (new in ES6) takes an object-specific iterator and loops through the data it generates.
     + Both the for..of and for..in commands iterate over lists, but the results they return are different: for..in returns a list of keys on the object being iterated, whereas for..of returns a list of values of the object's numeric attributes.
       ```
       let arr = [3, 4, 5];
@@ -1989,10 +1988,10 @@
 
 12.  Explain Internationalization and Localization.
      + These are JavaScript standard APIs that assist with operations such as collation, number formatting, currency formatting, and date and time formatting.
-       + Collation: It is a method for searching and sorting strings within a collection. It has a locale argument and is Unicode-aware.
-       + Number Formatting: Localized separators and digit grouping can be used to format numbers. Style formatting, numeral system, percent, and precision are among the other items.
-       + Currency formatting: Currency symbols, localized separators, and digit grouping are the most common ways to format numbers.
-       + Date and time formatting: Localized separators and ordering are used for formatting. The format can be short or long, and other characteristics such as location and time zone can be included.
+       + `Collation`: It is a method for searching and sorting strings within a collection. It has a locale argument and is Unicode-aware.
+       + `Number Formatting`: Localized separators and digit grouping can be used to format numbers. Style formatting, numeral system, percent, and precision are among the other items.
+       + `Currency formatting`: Currency symbols, localized separators, and digit grouping are the most common ways to format numbers.
+       + `Date and time formatting`: Localized separators and ordering are used for formatting. The format can be short or long, and other characteristics such as location and time zone can be included.
 
 
 100. What is Webpack?
