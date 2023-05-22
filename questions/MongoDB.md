@@ -57,11 +57,11 @@
    ![scale out](../images/mongo/scale_out.png)
 
 7. What are some features of MongoDB?
-   + Indexing: It supports generic secondary indexes and provides unique, compound, geospatial, and full-text indexing capabilities as well.
-   + Aggregation: It provides an aggregation framework based on the concept of data processing pipelines.
-   + Special collection and index types: It supports time-to-live (TTL) collections for data that should expire at a certain time
-   + File storage: It supports an easy-to-use protocol for storing large files and file metadata.
-   + Sharding: Sharding is the process of splitting data up across machines.
+   + `Indexing`: It supports generic secondary indexes and provides unique, compound, geospatial, and full-text indexing capabilities as well.
+   + `Aggregation`: It provides an aggregation framework based on the concept of data processing pipelines.
+   + `Special collection and index types`: It supports time-to-live (TTL) collections for data that should expire at a certain time
+   + `File storage`: It supports an easy-to-use protocol for storing large files and file metadata.
+   + `Sharding`: Sharding is the process of splitting data up across machines.
 
 8. How to add data in MongoDB?
    + The basic method for adding data to MongoDB is “inserts”. To insert a single document, use the collection’s insertOne method:
@@ -90,30 +90,30 @@
 
 12. What are the data types in MongoDB?
     + MongoDB supports a wide range of data types as values in documents. Documents in MongoDB are similar to objects in JavaScript. Along with JSON’s essential key/value–pair nature, MongoDB adds support for a number of additional data types. The common data types in MongoDB are:
-      + Null
+      + `Null`
         + `{"x" : null}`
-      + Boolean
+      + `Boolean`
         + `{"x" : true}`
-      + Number
+      + `Number`
         + `{"x" : 4}`
-      + String
+      + `String`
         + `{"x" : "foobar"}`
-      + Date
+      + `Date`
         + `{"x" : new Date()}`
-      + Regular Expression
+      + `Regular Expression`
         + `{"x" : /foobar/i}`
-      + Array
+      + `Array`
         + `{"x" : ["a", "b", "c"]}`
-      + Embedded Document
+      + `Embedded Document`
         + `{"x" : {"foo" : "bar"}}`
-      + Object ID
+      + `Object ID`
         + `{"x" : ObjectId()}`
-      + Binary Data
+      + `Binary Data`
         + Binary data is a string of arbitrary bytes.
-      + Code
+      + `Code`
         + `{"x" : function() { /* ... */ }}`
 
-13. When to use MongoDB?
+13. When should you use MongoDB?
     + You should use MongoDB when you are building internet and business applications that need to evolve quickly and scale elegantly. MongoDB is popular with developers of all kinds who are building scalable applications using agile methodologies.
     + MongoDB is a great choice if one needs to:
       + Support a rapid iterative development.
@@ -162,7 +162,7 @@
       ![sharding](../images/mongo/sharding.png)
 
 18. Explain the SET Modifier in MongoDB?
-    + If the value of a field does not yet exist, the "$set" sets the value. This can be useful for updating schemas or adding user-defined keys.
+    + If the value of a field does not yet exist, the `$set` sets the value. This can be useful for updating schemas or adding user-defined keys.
       ```
       > db.users.findOne()
       {
@@ -183,8 +183,8 @@
 19. What do you mean by Transactions?
     + A transaction is a logical unit of processing in a database that includes one or more database operations, which can be read or write operations. Transactions provide a useful feature in MongoDB to ensure consistency.
     + MongoDB provides two APIs to use transactions:
-      + Core API: It is a similar syntax to relational databases (e.g., start_transaction and commit_transaction)
-      + Call-back API: This is the recommended approach to using transactions. It starts a transaction, executes the specified operations, and commits (or aborts on the error). It also automatically incorporates error handling logic for "TransientTransactionError" and "UnknownTransactionCommitResult".
+      + `Core API`: It is a similar syntax to relational databases (e.g., start_transaction and commit_transaction)
+      + `Call-back API`: This is the recommended approach to using transactions. It starts a transaction, executes the specified operations, and commits (or aborts on the error). It also automatically incorporates error handling logic for "TransientTransactionError" and "UnknownTransactionCommitResult".
 
 20. What are MongoDB Charts?
     + MongoDB Charts is a new, integrated tool in MongoDB for data visualization.
