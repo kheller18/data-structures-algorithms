@@ -190,11 +190,11 @@
 
 28. Describe the exit codes of Node.js?
     + Exit codes give us an idea of how a process got terminated/the reason behind termination.
-      + `Uncaught fatal exception - (code - 1)` - There has been an exception that is not handled
-      + `Unused - (code - 2)` - This is reserved by bash
-      + `Fatal Error - (code - 5)` - There has been an error in V8 with stderr output of the description
-      + `Internal Exception handler Run-time failure - (code - 7)` - There has been an exception when bootstrapping function was called
-      + `Internal JavaScript Evaluation Failure - (code - 4)` - There has been an exception when the bootstrapping process failed to return function value when evaluated.
+      + `Uncaught fatal exception - (code - 1)`: There has been an exception that is not handled
+      + `Unused - (code - 2)`: This is reserved by bash
+      + `Fatal Error - (code - 5)`: There has been an error in V8 with stderr output of the description
+      + `Internal Exception handler Run-time failure - (code - 7)`: There has been an exception when bootstrapping function was called
+      + `Internal JavaScript Evaluation Failure - (code - 4)`: There has been an exception when the bootstrapping process failed to return function value when evaluated.
 
 29. Explain the concept of stub in Node.js?
     + Stubs are used in writing tests which are an important part of development. It replaces the whole function which is getting tested.
