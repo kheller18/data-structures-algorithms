@@ -36,7 +36,7 @@
       ...
    };
    ```
-   + We can make use of setCounter() method for updating the state of count anywhere. In this example, we are using setCounter() inside the setCount function where various other things can also be done. The idea with the usage of hooks is that we will be able to keep our code more functional and avoid class-based components if they are not required.
+   + We can make use of `setCounter()` method for updating the state of count anywhere. In this example, we are using `setCounter()` inside the setCount function where various other things can also be done. The idea with the usage of hooks is that we will be able to keep our code more functional and avoid class-based components if they are not required.
 
 5. What are keys in React?
    + A key is a special string attribute that needs to be included when using lists of elements.
@@ -51,17 +51,17 @@
     )
    })
    ```
-   + Importance of keys:
+   + `Importance of keys`:
      + Keys help react identify which elements were added, changed or removed.
      + Keys should be given to array elements for providing a unique identity for each element.
      + Without keys, React does not understand the order or uniqueness of each element.
      + With keys, React has an idea of which particular element was deleted, edited, and added.
      + Keys are generally used for displaying a list of data coming from an API.
-   + ***Note- Keys used within arrays should be unique among siblings. They need not be globally unique.
+   + `***Note`: Keys used within arrays should be unique among siblings. They need not be globally unique.
 
 6. What is JSX?
-   + JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild() or createElement().
-   + As stated in the official docs of React, JSX provides syntactic sugar for React.createElement() function.
+   + JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like `appendChild()` or `createElement()`.
+   + As stated in the official docs of React, JSX provides syntactic sugar for `React.createElement()` function.
    + Without using JSX, we would have to create an element by the following process:
      ```
      const text = React.createElement('p', {}, 'This is a text');
@@ -855,12 +855,12 @@
     + Static typing refers to the process of code check during the time of compilation for ensuring all variables will be statically typed. React Hooks are functions that are designed to make sure about all attributes must be statically typed. For enforcing stricter static typing within our code, we can make use of the React API with custom Hooks.
 
 30. Explain about types of Hooks in React.
-    + Built-in Hooks: The built-in Hooks are divided into 2 parts as given below:
-      + Basic Hooks:
+    + `Built-in Hooks`: The built-in Hooks are divided into 2 parts as given below:
+      + `Basic Hooks`:
         + `useState()`: This functional component is used to set and retrieve the state.
         + `useEffect()`: It enables for performing the side effects in the functional components.
         + `useContext()`: It is used for creating common data that is to be accessed by the components hierarchy without having to pass the props down to each level.
-      + Additional Hooks:
+      + `Additional Hooks`:
         + `useReducer()`: It is used when there is a complex state logic that is having several sub-values or when the upcoming state is dependent on the previous state. It will also enable you to optimization of component performance that will trigger deeper updates as it is permitted to pass the dispatch down instead of callbacks.
         + `useMemo()`: This will be used for recomputing the memoized value when there is a change in one of the dependencies. This optimization will help for avoiding expensive calculations on each render.
         + `useCallback()`: This is useful while passing callbacks into the optimized child components and depends on the equality of reference for the prevention of unneeded renders.
@@ -868,7 +868,7 @@
         + `useDebugValue()`: It is used for displaying a label for custom hooks in React DevTools.
         + `useRef()`: It will permit creating a reference to the DOM element directly within the functional component.
         + `useLayoutEffect()`: It is used for the reading layout from the DOM and re-rendering synchronously.
-    + Custom Hooks: A custom Hook is basically a function of JavaScript. The Custom Hook working is similar to a regular function. The “use” at the beginning of the Custom Hook Name is required for React to understand that this is a custom Hook and also it will describe that this specific function follows the rules of Hooks. Moreover, developing custom Hooks will enable you for extracting component logic from within reusable functions.
+    + `Custom Hooks`: A custom Hook is basically a function of JavaScript. The Custom Hook working is similar to a regular function. The “use” at the beginning of the Custom Hook Name is required for React to understand that this is a custom Hook and also it will describe that this specific function follows the rules of Hooks. Moreover, developing custom Hooks will enable you for extracting component logic from within reusable functions.
     ![types of hooks](../images/react/types_of_hooks.png)
 
 31. Differentiate React Hooks vs Classes.
