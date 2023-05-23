@@ -4,9 +4,9 @@
 
 1. What are the primitive types in TypeScript?
    + TypeScript has three primitive types that are frequently used: string, number, and boolean. These correspond to the similarly named types in JavaScript.
-     + string: represents text values such as “javascript”, “typescript”, etc.
-     + number: represents numeric values like 1, 2, 32, 43, etc.
-     + boolean: represents a variable that can have either a ‘true’ or ‘false’ value.
+     + `string`: represents text values such as “javascript”, “typescript”, etc.
+     + `number`: represents numeric values like 1, 2, 32, 43, etc.
+     + `boolean`: represents a variable that can have either a ‘true’ or ‘false’ value.
    ![primitive types](../images/typescript/primitive_types.png)
 
 2. Explain how the arrays work in TypeScript.
@@ -61,9 +61,9 @@
        ```
 
 6. What are the different keywords to declare variables in TypeScript?
-   + var: Declares a function-scoped or global variable. You can optionally set its value during the declaration. Its behavior and scoping rules are similar to the var keyword in JavaScript. For example:
+   + `var`: Declares a function-scoped or global variable. You can optionally set its value during the declaration. Its behavior and scoping rules are similar to the var keyword in JavaScript. For example:
      + `var foo = "bar";`
-   + let: Declares a block-scoped local variable. Similar to var, you can optionally set the value of a variable during the declaration. For example:
+   + `let`: Declares a block-scoped local variable. Similar to var, you can optionally set the value of a variable during the declaration. For example:
      ```
      let a = 5;
 
@@ -462,9 +462,9 @@
 
 29. Explain the various ways to control member visibility in TypeScript.
     + TypeScript provides three keywords to control the visibility of class members, such as properties or methods.
-      + public: You can access a public member anywhere outside the class. All class members are public by default.
-      + protected: A protected member is visible only to the subclasses of the class containing that member. Outside code that doesn’t extend the container class can’t access a protected member.
-      + private: A private member is only visible inside the class. No outside code can access the private members of a class.
+      + `public`: You can access a public member anywhere outside the class. All class members are public by default.
+      + `protected`: A protected member is visible only to the subclasses of the class containing that member. Outside code that doesn’t extend the container class can’t access a protected member.
+      + `private`: A private member is only visible inside the class. No outside code can access the private members of a class.
 
 30. Does TypeScript support static classes? If not, why?
     + TypeScript doesn’t support static classes, unlike the popular object-oriented programming languages like C# and Java.
