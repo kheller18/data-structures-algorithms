@@ -3,20 +3,20 @@
 ---
 
 1. What are the various categories of software?
-   + System software: Softwares like operating systems, compilers, drivers, etc. fall into this category.
+   + `System software`: Softwares like operating systems, compilers, drivers, etc. fall into this category.
    + Networking and web development software: Computer networking software offers the necessary functionality for computers to communicate with one another and with data storage facilities.
-   + Embedded Software: Software used in instrumentation and control applications such as washing machines, satellites, microwaves, TVs, etc.
-   + Artificial Intelligence Software: Expert systems, decision support systems, pattern recognition software, artificial neural networks, and other types of software are included in this category.
-   + Scientific software: These support a scientific or engineering user's requirements for performing enterprise-specific tasks. Examples include MATLAB, AUTOCAD, etc.
+   + `Embedded Software`: Software used in instrumentation and control applications such as washing machines, satellites, microwaves, TVs, etc.
+   + `Artificial Intelligence Software`: Expert systems, decision support systems, pattern recognition software, artificial neural networks, and other types of software are included in this category.
+   + `Scientific software`: These support a scientific or engineering user's requirements for performing enterprise-specific tasks. Examples include MATLAB, AUTOCAD, etc.
 
 2. What are the characteristics of software?
    + There are six major characteristics of software:
-     + Functionality: The things that software is intended to do are called functionality. For example, a calculator's functionality is to perform mathematical operations.
-     + Efficiency: It is the ability of the software to use the provided resources in the best way possible. Increasing the efficiency of software increases resource utilization and reduces cost.
-     + Reliability: Reliability is the probability of failure-free operational software in an environment. It is an important characteristic of software.
-     + Usability: It refers to the user’s experience while using the software. Usability determines the satisfaction of the user.
-     + Maintainability: The ease with which you can repair, improve, and comprehend software code is referred to as maintainability. After the customer receives the product, a phase in the software development cycle called software maintenance begins.
-     + Portability: It refers to the ease with which the software product can be transferred from one environment to another.
+     + `Functionality`: The things that software is intended to do are called functionality. For example, a calculator's functionality is to perform mathematical operations.
+     + `Efficiency`: It is the ability of the software to use the provided resources in the best way possible. Increasing the efficiency of software increases resource utilization and reduces cost.
+     + `Reliability`: Reliability is the probability of failure-free operational software in an environment. It is an important characteristic of software.
+     + `Usability`: It refers to the user’s experience while using the software. Usability determines the satisfaction of the user.
+     + `Maintainability`: The ease with which you can repair, improve, and comprehend software code is referred to as maintainability. After the customer receives the product, a phase in the software development cycle called software maintenance begins.
+     + `Portability`: It refers to the ease with which the software product can be transferred from one environment to another.
    + Apart from the above-mentioned characteristics, the software also has the following characteristics:
      + Software is engineered, it is not developed or manufactured like hardware. Development is an aspect of the hardware manufacturing process. Manufacturing does not exist in the case of software.
      + The software doesn't wear out.
@@ -30,12 +30,12 @@
 
 5. Describe the Software Development Process in Brief.
    + The Software Development Life Cycle (SDLC) is a number of fundamental phases that teams must follow in order to produce and deliver high-quality software. Software typically goes through the following phases:
-     + Requirements Gathering: The team identifies, collects, and defines core issues, requirements, requests, and customer expectations related to the software application or service during this stage of the project. Generating software specifications, creating a thorough strategy, documentation, issue tracking, and project or product planning, including allocating the resources, are some tasks done during this phase.
-     + Software Design: The team makes software design decisions regarding the architecture and make of the software solution throughout this design phase of development.
-     + Software Development: Teams develop software solutions based on the design decisions made during earlier stages of the project
-     + Testing and Integration: Software is packaged and tested to ensure quality. Quality assurance, often known as testing, ensures that the solutions deployed fulfil the specified quality and performance criteria.
-     + Deployment: The software is installed in a production setting. The gathered, designed, built, and tested work is shared with the software service's customers and users.
-     + Operation and Maintenance: The software is installed in a production setting. The work is shared with the software service's customers and users.
+     + `Requirements Gathering`: The team identifies, collects, and defines core issues, requirements, requests, and customer expectations related to the software application or service during this stage of the project. Generating software specifications, creating a thorough strategy, documentation, issue tracking, and project or product planning, including allocating the resources, are some tasks done during this phase.
+     + `Software Design`: The team makes software design decisions regarding the architecture and make of the software solution throughout this design phase of development.
+     + `Software Development`: Teams develop software solutions based on the design decisions made during earlier stages of the project
+     + `Testing and Integration`: Software is packaged and tested to ensure quality. Quality assurance, often known as testing, ensures that the solutions deployed fulfil the specified quality and performance criteria.
+     + `Deployment`: The software is installed in a production setting. The gathered, designed, built, and tested work is shared with the software service's customers and users.
+     + `Operation and Maintenance`: The software is installed in a production setting. The work is shared with the software service's customers and users.
        ![operation and maintenance](../images/software-engineering/devlopment_process.png)
 
 6. What are different SDLC models available?
@@ -136,7 +136,7 @@
 24. What is the difference between cohesion and coupling?
 ![cohesion vs coupling](../images/software-engineering/cohesion_coupling.png)
 
-25.   What is Data Flow Diagram?
+25. What is Data Flow Diagram?
       + A Data Flow Diagram (DFD) shows the flow of information flows through a system. It shows data inputs, outputs, storage sites, and paths between each destination using symbols such as rectangles, circles, and arrows, as well as short text labels. Data flowcharts can range from simple to in-depth DFDs that go deeper into how data is processed. They can be used to evaluate a current system or to create a new system. A DFD can effortlessly express things that are difficult to describe in words, and it can be used by both technical and non-technical audiences.
        ![data flow diagram](../images/software-engineering/data_flow_diagram.png)
 
@@ -152,5 +152,5 @@
 28. What are functional and non-functional requirements?
 ![functional vs non-functional requirements](../images/software-engineering/functional_nonfunctional.png)
 
-29.   What is the difference between Quality Assurance and Quality control?
+29. What is the difference between Quality Assurance and Quality control?
 ![quality assurance vs quality control](../images/software-engineering/quality_assurance_control.png)
