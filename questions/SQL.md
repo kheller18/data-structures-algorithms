@@ -22,13 +22,13 @@
 
 7. What are Constraints in SQL?
    + Constraints are used to specify the rules concerning data in the table. It can be applied for single or multiple fields in an SQL table during the creation of the table or after creating using the ALTER TABLE command. The constraints are:
-     + NOT NULL - Restricts NULL value from being inserted into a column.
-     + CHECK - Verifies that all values in a field satisfy a condition.
-     + DEFAULT - Automatically assigns a default value if no value has been specified for the field.
-     + UNIQUE - Ensures unique values to be inserted into the field.
-     + INDEX - Indexes a field providing faster retrieval of records.
-     + PRIMARY KEY - Uniquely identifies each record in a table.
-     + FOREIGN KEY - Ensures referential integrity for a record in another table.
+     + `NOT NULL`: Restricts NULL value from being inserted into a column.
+     + `CHECK`: Verifies that all values in a field satisfy a condition.
+     + `DEFAULT`: Automatically assigns a default value if no value has been specified for the field.
+     + `UNIQUE`: Ensures unique values to be inserted into the field.
+     + `INDEX`: Indexes a field providing faster retrieval of records.
+     + `PRIMARY KEY`: Uniquely identifies each record in a table.
+     + `FOREIGN KEY`: Ensures referential integrity for a record in another table.
 
 8. What is a Primary Key?
    + The PRIMARY KEY constraint uniquely identifies each row in a table. It must contain UNIQUE values and has an implicit NOT NULL constraint. A table in SQL is strictly restricted to have one and only one primary key, which is comprised of single or multiple fields (columns).
@@ -104,7 +104,7 @@
     + The SQL Join clause is used to combine records (rows) from two or more tables in a SQL database based on a related column between the two.
       ![join](../images/sql/join.png)
     + There are four different types of JOINs in SQL:
-      + (INNER) JOIN: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
+      + `(INNER) JOIN`: Retrieves records that have matching values in both tables involved in the join. This is the widely used join for queries.
         ```
         SELECT *
         FROM Table_A
@@ -113,21 +113,21 @@
         FROM Table_A
         INNER JOIN Table_B;
         ```
-      + LEFT (OUTER) JOIN: Retrieves all the records/rows from the left and the matched records/rows from the right table.
+      + `LEFT (OUTER) JOIN`: Retrieves all the records/rows from the left and the matched records/rows from the right table.
         ```
         SELECT *
         FROM Table_A A
         LEFT JOIN Table_B B
         ON A.col = B.col;
         ```
-      + RIGHT (OUTER) JOIN: Retrieves all the records/rows from the right and the matched records/rows from the left table.
+      + `RIGHT (OUTER) JOIN`: Retrieves all the records/rows from the right and the matched records/rows from the left table.
         ```
         SELECT *
         FROM Table_A A
         RIGHT JOIN Table_B B
         ON A.col = B.col;
         ```
-      + FULL (OUTER) JOIN: Retrieves all the records where there is a match in either the left or right table.
+      + `FULL (OUTER) JOIN`: Retrieves all the records where there is a match in either the left or right table.
         ```
         SELECT *
         FROM Table_A A
@@ -161,14 +161,14 @@
       DROP INDEX index_name;   /* Drop Index */
       ```
     + There are different types of indexes that can be created for different purposes:
-      + Unique and Non-Unique Index:
+      +` Unique and Non-Unique Index`:
         + Unique indexes are indexes that help maintain data integrity by ensuring that no two rows of data in a table have identical key values. Once a unique index has been defined for a table, uniqueness is enforced whenever keys are added or changed within the index.
           ```
           CREATE UNIQUE INDEX myIndex
           ON students (enroll_no);
           ```
         + Non-unique indexes, on the other hand, are not used to enforce constraints on the tables with which they are associated. Instead, non-unique indexes are used solely to improve query performance by maintaining a sorted order of data values that are used frequently.
-      + Clustered and Non-Clustered Index:
+      + `Clustered and Non-Clustered Index`:
         + Clustered indexes are indexes whose order of the rows in the database corresponds to the order of the rows in the index. This is why only one clustered index can exist in a given table, whereas, multiple non-clustered indexes can exist in the table.
         + The only difference between clustered and non-clustered indexes is that the database manager attempts to keep the data in the database in the same order as the corresponding keys appear in the clustered index.
         + Clustering indexes can improve the performance of most query operations because they provide a linear-access path to data stored in the database.
@@ -205,26 +205,24 @@
       WHERE subject = 'Maths');
       ```
     + There are two types of subqueries:
-      + `Correlated`
-        + A correlated subquery cannot be considered as an independent query, but it can refer to the column in a table listed in the FROM of the main query.
-      + `Non-Correlated`
-        + A non-correlated subquery can be considered as an independent query and the output of the subquery is substituted in the main query.
+      + `Correlated`: A correlated subquery cannot be considered as an independent query, but it can refer to the column in a table listed in the FROM of the main query.
+      + `Non-Correlated`: A non-correlated subquery can be considered as an independent query and the output of the subquery is substituted in the main query.
 
 19. What is the SELECT statement?
     + SELECT operator in SQL is used to select data from a database. The data returned is stored in a result table, called the result-set.
       + `SELECT * FROM myDB.students;`
 
 20. What are some common clauses used with SELECT query in SQL?
-    + `WHERE` clause in SQL is used to filter records that are necessary, based on specific conditions.
-    + `ORDER BY` clause in SQL is used to sort the records based on some field(s) in ascending (ASC) or descending order (DESC).
+    + `WHERE`: clause in SQL is used to filter records that are necessary, based on specific conditions.
+    + `ORDER BY`: clause in SQL is used to sort the records based on some field(s) in ascending (ASC) or descending order (DESC).
       ```
       SELECT *
       FROM myDB.students
       WHERE graduation_year = 2019
       ORDER BY studentID DESC;
       ```
-    + `GROUP BY` clause in SQL is used to group records with identical data and can be used in conjunction with some aggregation functions to produce summarized results from the database.
-    + `HAVING` clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
+    + `GROUP BY`: clause in SQL is used to group records with identical data and can be used in conjunction with some aggregation functions to produce summarized results from the database.
+    + `HAVING`: clause in SQL is used to filter records in combination with the GROUP BY clause. It is different from WHERE, since the WHERE clause cannot filter aggregated records.
       ```
       SELECT COUNT(studentId), country
       FROM myDB.students
@@ -283,8 +281,8 @@
         ```
 
 23. What are Entities and Relationships?
-    + Entity: An entity can be a real-world object, either tangible or intangible, that can be easily identifiable. For example, in a college database, students, professors, workers, departments, and projects can be referred to as entities. Each entity has some associated properties that provide it an identity.
-    + Relationships: Relations or links between entities that have something to do with each other. For example - The employee's table in a company's database can be associated with the salary table in the same database.
+    + `Entity`: An entity can be a real-world object, either tangible or intangible, that can be easily identifiable. For example, in a college database, students, professors, workers, departments, and projects can be referred to as entities. Each entity has some associated properties that provide it an identity.
+    + `Relationships`: Relations or links between entities that have something to do with each other. For example - The employee's table in a company's database can be associated with the salary table in the same database.
     ![entities and relationships](../images/sql/entities_relationships.png)
 
 24. List the different types of relationships in SQL.
@@ -368,31 +366,31 @@
 
 33. What are Aggregate and Scalar functions?
     + An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
-      + AVG() - Calculates the mean of a collection of values.
-      + COUNT() - Counts the total number of records in a specific table or view.
-      + MIN() - Calculates the minimum of a collection of values.
-      + MAX() - Calculates the maximum of a collection of values.
-      + SUM() - Calculates the sum of a collection of values.
-      + FIRST() - Fetches the first element in a collection of values.
-      + LAST() - Fetches the last element in a collection of values.
-      + Note: All aggregate functions described above ignore NULL values except for the COUNT function.
+      + `AVG()`: Calculates the mean of a collection of values.
+      + `COUNT()`: Counts the total number of records in a specific table or view.
+      + `MIN()`: Calculates the minimum of a collection of values.
+      + `MAX()`: Calculates the maximum of a collection of values.
+      + `SUM()`: Calculates the sum of a collection of values.
+      + `FIRST()`: Fetches the first element in a collection of values.
+      + `LAST()`: Fetches the last element in a collection of values.
+      + `Note`: All aggregate functions described above ignore NULL values except for the COUNT function.
     + A scalar function returns a single value based on the input value. Following are the widely used SQL scalar functions:
-      + LEN() - Calculates the total length of the given field (column).
-      + UCASE() - Converts a collection of string values to uppercase characters.
-      + LCASE() - Converts a collection of string values to lowercase characters.
-      + MID() - Extracts substrings from a collection of string values in a table.
-      + CONCAT() - Concatenates two or more strings.
-      + RAND() - Generates a random collection of numbers of a given length.
-      + ROUND() - Calculates the round-off integer value for a numeric field (or decimal point values).
-      + NOW() - Returns the current date & time.
-      + FORMAT() - Sets the format to display a collection of values.
+      + `LEN()`: Calculates the total length of the given field (column).
+      + `UCASE()`: Converts a collection of string values to uppercase characters.
+      + `LCASE()`: Converts a collection of string values to lowercase characters.
+      + `MID()`: Extracts substrings from a collection of string values in a table.
+      + `CONCAT()`: Concatenates two or more strings.
+      + `RAND()`: Generates a random collection of numbers of a given length.
+      + `ROUND()`: Calculates the round-off integer value for a numeric field (or decimal point values).
+      + `NOW()`: Returns the current date & time.
+      + `FORMAT()`: Sets the format to display a collection of values.
 
 34. What is User-defined function? What are its various types?
     + The user-defined functions in SQL are like functions in any other programming language that accept parameters, perform complex calculations, and return a value. They are written to use the logic repetitively whenever required. There are two types of SQL user-defined functions:
-      + Scalar Function: As explained earlier, user-defined scalar functions return a single scalar value.
-      + Table-Valued Functions: User-defined table-valued functions return a table as output.
-        + Inline: returns a table data type based on a single SELECT statement.
-        + Multi-statement: returns a tabular result-set but, unlike inline, multiple SELECT statements can be used inside the function body.
+      + `Scalar Function`: As explained earlier, user-defined scalar functions return a single scalar value.
+      + `Table-Valued Functions`: User-defined table-valued functions return a table as output.
+        + `Inline`: returns a table data type based on a single SELECT statement.
+        + `Multi-statement`: returns a tabular result-set but, unlike inline, multiple SELECT statements can be used inside the function body.
 
 35. What is OLTP?
     + OLTP stands for Online Transaction Processing, is a class of software applications capable of supporting transaction-oriented programs. An essential attribute of an OLTP system is its ability to maintain concurrency. To avoid single points of failure, OLTP systems are often decentralized. These systems are usually designed for a large number of users who conduct short transactions. Database queries are usually simple, require sub-second response times, and return relatively few records. Here is an insight into the working of an OLTP system.
@@ -405,10 +403,10 @@
 
 37. What is Collation? What are the different types of Collation Sensitivity?
     + Collation refers to a set of rules that determine how data is sorted and compared. Rules defining the correct character sequence are used to sort the character data. It incorporates options for specifying case sensitivity, accent marks, kana character types, and character width. Below are the different types of collation sensitivity:
-      + Case sensitivity: A and a are treated differently.
-      + Accent sensitivity: a and á are treated differently.
-      + Kana sensitivity: Japanese kana characters Hiragana and Katakana are treated differently.
-      + Width sensitivity: Same character represented in single-byte (half-width) and double-byte (full-width) are treated differently.
+      + `Case sensitivity`: A and a are treated differently.
+      + `Accent sensitivity`: a and á are treated differently.
+      + `Kana sensitivity`: Japanese kana characters Hiragana and Katakana are treated differently.
+      + `Width sensitivity`: Same character represented in single-byte (half-width) and double-byte (full-width) are treated differently.
 
 38. What is a Stored Procedure?
     + A stored procedure is a subroutine available to applications that access a relational database management system (RDBMS). Such procedures are stored in the database data dictionary. The sole disadvantage of stored procedure is that it can be executed nowhere except in the database and occupies more memory in the database server. It also provides a sense of security and functionality as users who can't access the data directly can be granted access via stored procedures.
@@ -526,9 +524,9 @@
 
 47. What are partitioned tables called in PostgreSQL?
     + Partitioned tables are logical structures that are used for dividing large tables into smaller structures that are called partitions. This approach is used for effectively increasing the query performance while dealing with large database tables. To create a partition, a key called partition key which is usually a table column or an expression, and a partitioning method needs to be defined. There are three types of inbuilt partitioning methods provided by Postgres
-      + Range Partitioning: This method is done by partitioning based on a range of values. This method is most commonly used upon date fields to get monthly, weekly or yearly data. In the case of corner cases like value belonging to the end of the range, for example: if the range of partition 1 is 10-20 and the range of partition 2 is 20-30, and the given value is 10, then 10 belongs to the second partition and not the first.
-      + List Partitioning: This method is used to partition based on a list of known values. Most commonly used when we have a key with a categorical value. For example, getting sales data based on regions divided as countries, cities, or states.
-      + Hash Partitioning: This method utilizes a hash function upon the partition key. This is done when there are no specific requirements for data division and is used to access data individually. For example, you want to access data based on a specific product, then using hash partition would result in the dataset that we require.
+      + `Range Partitioning`: This method is done by partitioning based on a range of values. This method is most commonly used upon date fields to get monthly, weekly or yearly data. In the case of corner cases like value belonging to the end of the range, for example: if the range of partition 1 is 10-20 and the range of partition 2 is 20-30, and the given value is 10, then 10 belongs to the second partition and not the first.
+      + `List Partitioning`: This method is used to partition based on a list of known values. Most commonly used when we have a key with a categorical value. For example, getting sales data based on regions divided as countries, cities, or states.
+      + `Hash Partitioning`: This method utilizes a hash function upon the partition key. This is done when there are no specific requirements for data division and is used to access data individually. For example, you want to access data based on a specific product, then using hash partition would result in the dataset that we require.
     + The type of partition key and the type of method used for partitioning determines how positive the performance and the level of manageability of the partitioned table are.
 
 48. Define tokens in PostgreSQL?
@@ -616,9 +614,9 @@
 
 63. How will you take backup of the database in PostgreSQL?
     + We can achieve this by using the pg_dump tool for dumping all object contents in the database into a single file. The steps are as follows:
-      + Step 1: Navigate to the bin folder of the PostgreSQL installation path.
+      + `Step 1`: Navigate to the bin folder of the PostgreSQL installation path.
         + `C:\>cd C:\Program Files\PostgreSQL\10.0\bin`
-      + Step 2: Execute pg_dump program to take the dump of data to a .tar folder as shown below:
+      + `Step 2`: Execute pg_dump program to take the dump of data to a .tar folder as shown below:
         + `pg_dump -U postgres -W -F t sample_data > C:\Users\admin\pgbackup\sample_data.tar`
         + The database dump will be stored in the sample_data.tar file on the location specified.
 
@@ -664,11 +662,11 @@
     + A query is a specific request or a question. One can query a database for specific information and have a record returned.
 
 74. What are some of the common MySQL commands?
-![mysql commands](../images/sql/mysql_commands.png)
+  ![mysql commands](../images/sql/mysql_commands.png)
 
 75. How do you create a database in MySQL?
-     + Use the following command to create a new database called ‘books’
-       + `CREATE DATABASE books;`
+    + Use the following command to create a new database called ‘books’
+      + `CREATE DATABASE books;`
 
 76. How do you create a table using MySQL?
     ```
@@ -723,10 +721,10 @@
 83. What are the String Data Types in MySQL?
 ![string data types](../images/sql/string_data_types.png)
 
-84.  What are the Temporal Data Types in MySQL?
-![temporal data types](../images/sql/temporal_data_types.png)
+84.   What are the Temporal Data Types in MySQL?
+  ![temporal data types](../images/sql/temporal_data_types.png)
 
-85.  What is BLOB in MySQL?
+85. What is BLOB in MySQL?
      + BLOB is an acronym that stands for a binary large object. It is used to hold a variable amount of data.
      + There are four types of BLOB:
       + TINYBLOB
