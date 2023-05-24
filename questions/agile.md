@@ -13,7 +13,7 @@
    + `Kanban`: Kanban projects are generally managed through a board or table (Kanban Board). This Kanban board is a tool that helps team members to keep an eye on workflow for measuring its progress and includes all the information that is needed to be done on the product at each stage along with its path of completion. Its main purpose is flexibility in task management, continuous improvement, and enhanced workflow.
 
 2. What are advantages and disadvantages of Agile Process?
-   + There are several advantages of using the Agile Process as given below:
+   + `Advantages`:
      + Adapt well with changing requirements
      + Face-to-face conversation with team members and customers
      + Focuses on technical excellence and good design
@@ -26,7 +26,7 @@
      + Quick delivery of products
      + Easy to manage with more flexibility
      + The end goal can be unknown: Agile is beneficial for projects where the goal is not defined and as the project progresses, the goal becomes more evident.
-   + There are several disadvantages of using Agile Process as given below:
+   + `Disadvatages`:
      + Lack of formal documentation and designing
      + Difficult to estimate resource requirement and effort
      + Not good for small development projects
@@ -204,7 +204,7 @@
 26. What do you mean by Scrum Master? What are the responsibilities of Scrum Master?
     + Scrum Master, also referred to as servant leaders, is a person who is a master of Scrum i.e., the person who is responsible for managing and facilitating an agile development team and makes sure that the scrum framework is followed. Scrum master is also referred to as coach of the team that helps team members to do and give their best as much as possible.
       ![scrum master](../images/agile/scrum_master.png)
-      + Responsibilities of Scrum Master:
+      + `Responsibilities of Scrum Master`:
         + Protect the team from distractions
         + Motivate and guide the team to achieve the sprint goal
         + Build a self-organized and motivated team
