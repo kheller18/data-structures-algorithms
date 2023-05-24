@@ -14,7 +14,7 @@
      + `<protocol>://<service-name>/<ResourceType>/<ResourceID>`
    + There are 2 types of URI:
      ![URI](../images/rest/uri.png)
-     + URN:
+     + `URN`:
        + Uniform Resource Name identifies the resource by means of a name that is both unique and persistent.
        + URN doesn’t always specify where to locate the resource on the internet. They are used as templates that are used by other parsers to identify the resource.
        + These follow the urn scheme and usually prefixed with urn:. Examples include:
@@ -22,7 +22,7 @@
          + urn:mpeg:mpeg7:schema:2001 is the default namespace rules for metadata of MPEG-7 video.
        + Whenever a URN identifies a document, they are easily translated into a URL by using “resolver” after which the document can be downloaded.
 
-     + URL:
+     + `URL`:
        + Uniform Resource Locator has the information regarding fetching of a resource from its location.
        + Examples include:
          + http://abc.com/samplePage.html
@@ -196,7 +196,7 @@
   + The request flow difference between the REST and Web Socket is shown below:
     ![rest vs websocket img](../images/rest/rest_websocket_img.png)
 
-23.  Can we implement transport layer security (TLS) in REST?
+23. Can we implement transport layer security (TLS) in REST?
      + Yes, we can. TLS does the task of encrypting the communication between the REST client and the server and provides the means to authenticate the server to the client. It is used for secure communication as it is the successor of the Secure Socket Layer (SSL). HTTPS works well with both TLS and SSL thereby making it effective while implementing RESTful web services. One point to mention here is, the REST inherits the property of the protocol it implements. So security measures are dependent on the protocol REST implements.
 
 24. Should we make the resources thread safe explicitly if they are made to share across multiple clients?
