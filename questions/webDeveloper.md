@@ -17,12 +17,12 @@
 2. List the advantages of HTTP/2 over HTTP 1.1.
    + Hypertext Transfer Protocol (HTTP) is a set of standard protocols allowing internet users to exchange website knowledge on WWW (World Wide Web). HTTP has gone through four iterations since it was introduced in 1991 i.e., HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2.0. In 2015, HTTP/2 was released as a major revision to HTTP/1.1. HTTP/2.0 has the following advantages over HTTP/1.1:
      ![http](../images/web-developer/http_comparison.png)
-     + Increased performance: It was designed specifically to speed up page loading and reduce round-trip time (RTT) for resource-intensive websites.
-     + Handle multiple resources: With HTTP 1.1, the web pages were manageable simply by using HTML markups and images. But with HTTP 2.0, there are now multiple resources available for web pages, including images, fonts, scripts, and more. HTTP 1.1 was not designed to handle such a large amount of resources today.
-     + Multiplexing: Multiplexing is fully implemented in HTTP/2. It means that multiple requests are sent between browsers and servers simultaneously over a single TCP connection. Consequently, several elements of a web page can be delivered via a single TCP connection. As a result, the HTTP/1.1 head-of-line blocking problem is resolved, in which a packet at the front of the line blocks the transmission of other packets.
-     + Header Compression: HTTP 2.0 has the ability to compress HTTP headers to reduce overhead. When HTML headers on web pages are compressed, they can be sent between the browser and server in one trip, over a single TCP connection.
-     + Server push: HTTP/2 servers are able to push resources into a browser's cache even before they are requested. By doing this, browsers can display content without requiring additional requests.
-     + Binary protocols: HTTP/2 use binary protocols, not textual. HTML/2's binary protocols consume less bandwidth, can be parsed more efficiently, and are less error-prone compared to HTTP/1.1's textual protocols.
+     + `Increased performance`: It was designed specifically to speed up page loading and reduce round-trip time (RTT) for resource-intensive websites.
+     + `Handle multiple resources`: With HTTP 1.1, the web pages were manageable simply by using HTML markups and images. But with HTTP 2.0, there are now multiple resources available for web pages, including images, fonts, scripts, and more. HTTP 1.1 was not designed to handle such a large amount of resources today.
+     + `Multiplexing`: Multiplexing is fully implemented in HTTP/2. It means that multiple requests are sent between browsers and servers simultaneously over a single TCP connection. Consequently, several elements of a web page can be delivered via a single TCP connection. As a result, the HTTP/1.1 head-of-line blocking problem is resolved, in which a packet at the front of the line blocks the transmission of other packets.
+     + `Header Compression`: HTTP 2.0 has the ability to compress HTTP headers to reduce overhead. When HTML headers on web pages are compressed, they can be sent between the browser and server in one trip, over a single TCP connection.
+     + `Server push`: HTTP/2 servers are able to push resources into a browser's cache even before they are requested. By doing this, browsers can display content without requiring additional requests.
+     + `Binary protocols`: HTTP/2 use binary protocols, not textual. HTML/2's binary protocols consume less bandwidth, can be parsed more efficiently, and are less error-prone compared to HTTP/1.1's textual protocols.
 
 3. Explain CORS (Cross-Origin Resource Sharing) and Write its importance.
    + CORS stands for Cross-origin resource sharing. It is basically defined as a browser mechanism that enables web pages from one domain to have controlled access to resources that are located at different domains (cross-domain request). In other words, it allows scripts running on a browser client to interact with and access resources from other origins. It provides and extends flexibility to the SOP (Same-Origin Policy). A same-origin policy restricts a website's ability to access resources outside its source domain. For example, if a JavaScript app wanted to call an API (Application Programming Interface) running on another domain, it would be blocked and prevented from doing so because of the SOP. Due to restrictions caused by the same-origin policy, CORS was introduced.
@@ -77,8 +77,8 @@
    + HTML5 has many great features, including Web Storage, which is sometimes referred to as DOM storage (Document Object Model Storage). Web applications can use Web Storage to store data locally in the browser on the user/client’s side. Data is stored in the form of a key/value pair in the user's browser. Using web storage to store data is similar to using cookies, but web storage is faster and more convenient. Web Storage should never be used to store sensitive data. It isn't "more secure" than cookies since it isn't transmitted over the wire and isn't encrypted.
    + Types of Web Storage:
      ![web storage](../images/web-developer/web_storage.png)
-     + Local Storage: This storage uses Windows.localStorage object that stores data with no expiration date. Once stored in local storage, the data will remain available even after the user's browser is closed and reopened.
-     + Session Storage: This storage uses the Windows.sessionStorage object that stores data for one or single session only. As soon as the user closes his browser, data is lost or deleted from the browser, and the session would be lost. 
+     + `Local Storage`: This storage uses Windows.localStorage object that stores data with no expiration date. Once stored in local storage, the data will remain available even after the user's browser is closed and reopened.
+     + `Session Storage`: This storage uses the Windows.sessionStorage object that stores data for one or single session only. As soon as the user closes his browser, data is lost or deleted from the browser, and the session would be lost. 
 
 9.  Explain DOM (Document Object Model)?
     + DOM stands for Document Object Model. It is basically a cross-platform, language-independent API (Application Programming Interface) for XML (Extensible Markup Language) and HTML documents. To put it simply, DOM describes the logical structure of documents and how one can access and manipulate them. For example, here is an HTML document that illustrates the DOM hierarchy.
@@ -112,8 +112,8 @@
 
 14. What is the difference between `<window.onload>` and `<onDocumentReady>`?
     + It is true that both the `<window.onload>` and `<onDocumentReady>` functions perform tasks when the page has been loaded in the browser, however, the execution of the two functions differs slightly.
-      + Window.onload: This event is triggered when a web page has fully loaded. In other words, it waits for the DOM and all the associated resources to load, and then executes code. DOM contains all HTML tags, like anchor tag, h1 tag, p tag, etc.
-      + onDocumentReady: The "onDocumentReady" method, on the other hand, executes the code when the DOM has been loaded. It typically waits for HTML tags, anchor tags, etc., but not for images, videos, or other contents.
+      + `Window.onload`: This event is triggered when a web page has fully loaded. In other words, it waits for the DOM and all the associated resources to load, and then executes code. DOM contains all HTML tags, like anchor tag, h1 tag, p tag, etc.
+      + `onDocumentReady`: The "onDocumentReady" method, on the other hand, executes the code when the DOM has been loaded. It typically waits for HTML tags, anchor tags, etc., but not for images, videos, or other contents.
 
 15. Describe the different kinds of HTTP requests supported by RESTful Web services.
     + `GET`: It is used to retrieve data or resources from the server but only allows read-only access. You cannot modify it.
@@ -135,10 +135,10 @@
 
 18. Define NPM (Node Package Manager).
     + NPM stands for Node Package Manager. It is commonly used as a default package manager for Node.js (JavaScript runtime environment). It is included in every installation of Node.js. This command-line tool installs, updates, and uninstalls Node.js packages and modules required for Node applications or projects. A package contains all files for a module, and modules are basically JavaScript libraries that can be added to a Node project as needed. It contains a number of libraries that are extremely useful to Node.js developers, speeding up the process of developing applications.
-      + Installing NPM: In order to install NPM, you need to install Node.js as NPM automatically gets with Node.js.
-      + Check NPM Version: The following syntax can be used to check the version of NPM that is installed on the system:
+      + `Installing NPM`: In order to install NPM, you need to install Node.js as NPM automatically gets with Node.js.
+      + `Check NPM Version`: The following syntax can be used to check the version of NPM that is installed on the system:
         + npm -v
-      + Update NPM Version: NPM updates refer to updating the Node package manager to its latest version. One may always update the installed version if it is not the latest using the syntax given below:
+      + `Update NPM Version`: NPM updates refer to updating the Node package manager to its latest version. One may always update the installed version if it is not the latest using the syntax given below:
         + Syntax: `npm update [-g] [<pkg>...]`
           + The -g flag is used to update npm globally since it is a global package and pkg refers to the package.
         + Use npm@update command
@@ -150,7 +150,7 @@
 
 19. What are different popup boxes that are available in JavaScript?
     + Javascript uses pop-up boxes to display notifications and messages to users. Here are the different types of pop-up boxes in Javascript:
-      + Alert Box: This is used to display a warning message. After the alert box appears, the user needs to press the OK button to proceed.
+      + `Alert Box`: This is used to display a warning message. After the alert box appears, the user needs to press the OK button to proceed.
         + `alert("Your Alert Text")`
           ```
           <script>
@@ -165,7 +165,7 @@
             console.log(bool);
           </script>
           ```
-      + Prompt Box: The purpose of this type of pop-up box is to gather user input for further use. After entering the necessary information, the user has to click OK to proceed to the next stage, otherwise pressing the Cancel button returns the null value.
+      + `Prompt Box`: The purpose of this type of pop-up box is to gather user input for further use. After entering the necessary information, the user has to click OK to proceed to the next stage, otherwise pressing the Cancel button returns the null value.
         + `prompt("Your Prompt")`
           ```
           <script>
@@ -176,7 +176,7 @@
 
 20. Explain the term “Scope” in JavaScript and write its different type.
     + Managing the availability of variables or objects in an application is governed by the concept of scope. In JavaScript, there are two types of scope as follows:
-      + Global Scope: A variable having global scope can be accessed from anywhere in the program. These variables that are declared outside of any function can be accessed from any place in the program.
+      + `Global Scope`: A variable having global scope can be accessed from anywhere in the program. These variables that are declared outside of any function can be accessed from any place in the program.
         ```
         let scalerProgram = "DataScience"
         // code here can use scalerProgram
@@ -184,7 +184,7 @@
         // code here can also use scalerProgram
         }
         ```
-      + Local Scope: Variables with a local scope can only be accessed within the same function in which they are declared. Whenever a variable is declared inside a function, it becomes local to the function. As soon as a function begins, local variables are created and deleted when the function is executed.
+      + `Local Scope`: Variables with a local scope can only be accessed within the same function in which they are declared. Whenever a variable is declared inside a function, it becomes local to the function. As soon as a function begins, local variables are created and deleted when the function is executed.
         ```
         // code here can NOT use scalerProgram
         function myScaler() {
@@ -227,14 +227,14 @@
 
 25. What do you mean by CSS Selectors? Name a Few.
     + CSS selectors are used by web designers to specify or select HTML elements they want to style. Following are a few of the most commonly used CSS selectors:
-      + ID Selector: It selects HTML elements using specific id attributes.
+      + `ID Selector`: It selects HTML elements using specific id attributes.
         ```
         #para1 {
         text-align: left;
         color: blue;
         }
         ```
-      + Class Selector: It selects HTML elements using specific class attributes.
+      + `Class Selector`: It selects HTML elements using specific class attributes.
         ```
         .scaler {
         text-align: left;
@@ -252,14 +252,14 @@
     + A pseudo-class is basically used to define or specify a special state of an HTML element. This can be used in conjunction with an existing CSS selector to add effects to elements based on their state. For instance, changing the style of an element when a user hovers over it or using different styles for visited and unvisited links. The pseudo-class gives you the ability to do all of this.
       ```
       selector: pseudo-class{
-          property: value;
+        property: value;
       }
       ```
     + In CSS, there are many pseudo-classes, but the ones that are most frequently used are as follows:
-      + :visited pseudo-class: Select the links that the user has already visited.
-      + :hover pseudo-class: A special effect can be added to an element when the mouse pointer is over it.
-      + :active pseudo-class: Select the element that becomes active when the user clicks on it.
-      + :focus pseudo-class: Select an element that is currently focused by the user.
+      + `:visited pseudo-class`: Select the links that the user has already visited.
+      + `:hover pseudo-class`: A special effect can be added to an element when the mouse pointer is over it.
+      + `:active pseudo-class`: Select the element that becomes active when the user clicks on it.
+      + `:focus pseudo-class`: Select an element that is currently focused by the user.
 
 27. Why are media queries used in CSS?
     + Media queries are used in CSS to create responsive web designs. This means that the way a web page appears varies from one system to another based on the screen or the media type. The media query can be used to apply different styles or change the appearance (and even the behaviour) of a site or an app depending on a user's device type or specific characteristics (like browser viewport width, height, screen resolution, etc.). The following can be checked using media queries:
@@ -275,7 +275,7 @@
 29. State difference between Local Storage and Cookies.
   ![cookies vs local storage](../images/web-developer/local_storage_cookies.png)
 
-30.  What is the purpose of Canvas in HTML?
+30. What is the purpose of Canvas in HTML?
      + In simple terms, Canvas (`<canvas>` tag) is an HTML element that enables you to draw or create graphics on a web page using JavaScript. This is a new tag in HTML5. Canvas allows you to dynamically control graphics, images, and text on your web pages, adding a great deal of interactivity. You can create graphs, combine photos, and create animated elements using the CANVAS element.
        + `<canvas id = "script"> Contents... </canvas>`
        + Example
