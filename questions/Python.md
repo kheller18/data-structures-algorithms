@@ -124,12 +124,12 @@
     print(current)    # output => 0
     ```
 
-1.   What are unit tests in Python?
+1. What are unit tests in Python?
      + Unit test is a unit testing framework of Python.
      + Unit testing means testing different components of software separately. Can you think about why unit testing is important? Imagine a scenario, you are building software that uses three components namely A, B, and C. Now, suppose your software breaks at a point time. How will you find which component was responsible for breaking the software? Maybe it was component A that failed, which in turn failed component B, and this actually failed the software. There can be many such combinations.
      + This is why it is necessary to test each and every component properly so that we know which component might be highly responsible for the failure of the software.
 
-2.  What is docstring in Python?
+2. What is docstring in Python?
     + Documentation string or docstring is a multiline string used to document a specific code segment.
     + The docstring should describe what the function or method does.
 
@@ -150,8 +150,8 @@
     + Script file must begin with #!/usr/bin/env python
 
 5.  What is the difference between Python Arrays and lists?
-    + Arrays in python can only contain elements of same data types i.e., data type of array should be homogeneous. It is a thin wrapper around C language arrays and consumes far less memory than lists.
-    + Lists in python can contain elements of different data types i.e., data type of lists can be heterogeneous. It has the disadvantage of consuming large memory.
+    + `Arrays`: in python can only contain elements of same data types i.e., data type of array should be homogeneous. It is a thin wrapper around C language arrays and consumes far less memory than lists.
+    + `Lists`: in python can contain elements of different data types i.e., data type of lists can be heterogeneous. It has the disadvantage of consuming large memory.
       ```
       import array
       a = array.array('i', [1, 2, 3])
@@ -170,9 +170,9 @@
 
 7.  What are Python namespaces? Why are they used?
     + A namespace in Python ensures that object names in a program are unique and can be used without any conflict. Python implements these namespaces as dictionaries with 'name as key' mapped to a corresponding 'object as value'. This allows for multiple namespaces to use the same name and map it to a separate object. A few examples of namespaces are as follows:
-      + Local Namespace includes local names inside a function. the namespace is temporarily created for a function call and gets cleared when the function returns.
-      + Global Namespace includes names from various imported packages/ modules that are being used in the current project. This namespace is created when the package is imported in the script and lasts until the execution of the script.
-      + Built-in Namespace includes built-in functions of core Python and built-in names for various types of exceptions.
+      + `Local Namespace`: includes local names inside a function. the namespace is temporarily created for a function call and gets cleared when the function returns.
+      + `Global Namespace`: includes names from various imported packages/ modules that are being used in the current project. This namespace is created when the package is imported in the script and lasts until the execution of the script.
+      + `Built-in Namespace`: includes built-in functions of core Python and built-in names for various types of exceptions.
     + The lifecycle of a namespace depends upon the scope of objects they are mapped to. If the scope of an object ends, the lifecycle of that namespace comes to an end. Hence, it isn't possible to access inner namespace objects from an outer namespace.
       ![lifecycle namespace](../images/python/namespaces.png)
 
@@ -292,8 +292,8 @@
 
 12. How do you copy an object in Python?
     + In Python, the assignment statement (= operator) does not copy objects. Instead, it creates a binding between the existing object and the target variable name. To create copies of an object in Python, we need to use the copy module. Moreover, there are two ways of creating copies for the given object using the copy module:
-      + Shallow Copy is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object. If either of the values is a reference to other objects, just the reference addresses for the same are copied.
-      + Deep Copy copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.
+      + `Shallow Copy`: is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object. If either of the values is a reference to other objects, just the reference addresses for the same are copied.
+      + `Deep Copy`: copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.
       ```
       from copy import copy, deepcopy
       list_1 = [1, 2, [3, 5], 4]
@@ -327,16 +327,14 @@
 
 14. What is pickling and unpickling?
     + Python library offers a feature - serialization out of the box. Serializing an object refers to transforming it into a format that can be stored, so as to be able to deserialize it, later on, to obtain the original object. Here, the pickle module comes into play.
-      + `Pickling`:
-        + Pickling is the name of the serialization process in Python. Any object in Python can be serialized into a byte stream and dumped as a file in the memory. The process of pickling is compact but pickle objects can be compressed further. Moreover, pickle keeps track of the objects it has serialized and the serialization is portable across versions.
+      + `Pickling`: Pickling is the name of the serialization process in Python. Any object in Python can be serialized into a byte stream and dumped as a file in the memory. The process of pickling is compact but pickle objects can be compressed further. Moreover, pickle keeps track of the objects it has serialized and the serialization is portable across versions.
         + The function used for the above process is pickle.dump().
-      + `Unpickling`:
-        + Unpickling is the complete inverse of pickling. It deserializes the byte stream to recreate the objects stored in the file and loads the object to memory.
+      + `Unpickling`: Unpickling is the complete inverse of pickling. It deserializes the byte stream to recreate the objects stored in the file and loads the object to memory.
         + The function used for the above process is pickle.load().
     + Note: Python has another, more primitive, serialization module called marshall, which exists primarily to support .pyc files in Python and differs significantly from the pickle.
       ![picking vs unpickling](../images/python/pickling_unpickling.png)
 
-15. What are generators in Python?
+1.  What are generators in Python?
     + Generators are functions that return an iterable collection of items, one at a time, in a set manner. Generators, in general, are used to create iterators with a different approach. They employ the use of yield keyword rather than return to return a generator object. Let's try and build a generator for fibonacci numbers:
       ```
       ## generate fibonacci numbers upto n
@@ -362,28 +360,28 @@
         print(i)    # output => 0 1 1 2 3 5 8
       ```
 
-16. What is PYTHONPATH in Python?
+2.  What is PYTHONPATH in Python?
     + PYTHONPATH is an environment variable which you can set to add additional directories where Python will look for modules and packages. This is especially useful in maintaining Python libraries that you do not wish to install in the global default location.
 
-17. What is the use of `help()` and `dir()` functions?
+3.  What is the use of `help()` and `dir()` functions?
     + help() function in Python is used to display the documentation of modules, classes, functions, keywords, etc. If no parameter is passed to the help() function, then an interactive help utility is launched on the console.
     + dir() function tries to return a valid list of attributes and methods of the object it is called upon. It behaves differently with different objects, as it aims to produce the most relevant data, rather than the complete information.
       + For Modules/Library objects, it returns a list of all attributes, contained in that module.
       + For Class Objects, it returns a list of all valid attributes and base attributes.
       + With no arguments passed, it returns a list of attributes in the current scope.
 
-18. What is the difference between `.py` and `.pyc` files?
+4.  What is the difference between `.py` and `.pyc` files?
     + .py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program. We get bytecode after compilation of .py file (source code). pyc files are not created for all the files that you run. It is only created for the files that you import.
     + Before executing a python program python interpreter checks for the compiled files. If the file is present, the virtual machine executes it. If not found, it checks for .py file. If found, compiles it to .pyc file and then python virtual machine executes it.
     + Having .pyc file saves you the compilation time.
 
-19. How Python is interpreted?
+5.  How Python is interpreted?
     + Python as a language is not interpreted or compiled. Interpreted or compiled is the property of the implementation. Python is a bytecode(set of interpreter readable instructions) interpreted generally.
     + Source code is a file with .py extension.
     + Python compiles the source code to a set of instructions for a virtual machine. The Python interpreter is an implementation of that virtual machine. This intermediate format is called “bytecode”.
     + .py source code is first compiled to give .pyc which is bytecode. This bytecode can be then interpreted by the official CPython or JIT(Just in Time compiler) compiled by PyPy.
 
-20. How are arguments passed by value or by reference in python?
+6.  How are arguments passed by value or by reference in python?
     + `Pass by value`: Copy of the actual object is passed. Changing the value of the copy of the object will not change the value of the original object.
     + `Pass by reference`: Reference to the actual object is passed. Changing the value of the new object will change the value of the original object.
       ```
@@ -395,7 +393,7 @@
       print(arr)  #Output: => [1, 2, 3, 4]
       ```
 
-21. What are iterators in Python?
+7.  What are iterators in Python?
     + An iterator is an object.
     + It remembers its state i.e., where it is during iteration (see code below to see how)
     + `__iter__()` method initializes an iterator.
@@ -426,7 +424,7 @@
     #StopIteration
     ```
 
-22. Explain how to delete a file in Python?
+8.  Explain how to delete a file in Python?
     + Use command os.remove(file_name)
       ```
       import os
@@ -434,7 +432,7 @@
       print("File Removed!")
       ```
 
-23. Explain `split()` and `join()` functions in Python?
+9.  Explain `split()` and `join()` functions in Python?
     + You can use split() function to split a string based on a delimiter to a list of strings.
     + You can use join() function to join a list of strings based on a delimiter to give a single string.
     ```
@@ -444,7 +442,7 @@
     print(' '.join(string_list)) #output: This is a string.
     ```
 
-24. What does `*args` and `**kwargs` mean?
+10. What does `*args` and `**kwargs` mean?
     + `*args`
       + *args is a special syntax used in the function definition to pass variable-length arguments.
       + “*” means variable length and “args” is the name used by convention. You can use any other.
@@ -472,7 +470,7 @@
         # arg3: argument 3
         ```
 
-25. What are negative indexes and why are they used?
+11. What are negative indexes and why are they used?
     + Negative indexes are the indexes from the end of the list or tuple or string.
     + Arr[-1] means the last element of array Arr[]
       ```
@@ -483,7 +481,7 @@
       print(arr[-2]) #output 5
       ```
 
-26. How do you create a class in Python?
+12. How do you create a class in Python?
     + To create a class in python, we use the keyword “class” as shown in the example below:
       ```
       class InterviewbitEmployee:
@@ -523,7 +521,7 @@
       emp_1.introduce()        #introduce the employee
       ```
 
-27. How does inheritance work in python? Explain it with an example.
+13. How does inheritance work in python? Explain it with an example.
     + Inheritance gives the power to a class to access all attributes and methods of another class. It aids in code reusability and helps the developer to maintain applications without redundant code. The class inheriting from another class is a child class or also called a derived class. The class from which a child class derives the members are called parent class or superclass.
       + Python supports different kinds of inheritance, they are:
         + `Single Inheritance`: Child class derives members of one parent class.
@@ -626,7 +624,7 @@
           obj2.c_func()    #child 2 method
           ```
 
-28. How do you access parent members in the child class?
+14. How do you access parent members in the child class?
     + `By using Parent class name`: You can use the name of the parent class to access the attributes as shown in the example below:
       ```
       class Parent(object):
@@ -673,7 +671,7 @@
       obj.display()
       ```
 
-29. Are access specifiers used in python?
+15. Are access specifiers used in python?
     + Python does not make use of access specifiers specifically like private, public, protected, etc. However, it does not derive this from any variables. It has the concept of imitating the behaviour of variables by making use of a single (protected) or double underscore (private) as prefixed to the variable names. By default, the variables without prefixed underscores are public.
       ```
       # to demonstrate access specifiers
@@ -697,10 +695,10 @@
               print(self._emp_name +" "+self._age+" "+self.__branch)
       ```
 
-30. Is it possible to call parent class without its instance creation?
+16. Is it possible to call parent class without its instance creation?
     + Yes, it is possible if the base class is instantiated by other child classes or if the base class is a static method.
 
-31. How is an empty class created in python?
+17. How is an empty class created in python?
     + An empty class does not have any members defined in it. It is created by using the pass keyword (the pass command does nothing in python). We can create objects for this class outside the class.
       ```
       class EmptyClassDemo:
@@ -711,13 +709,13 @@
       ```
       + Output: `Name created = Interviewbit`
 
-32. Differentiate between new and override modifiers.
+18. Differentiate between new and override modifiers.
     + The new modifier is used to instruct the compiler to use the new implementation and not the base class function. The Override modifier is useful for overriding a base class function inside the child class.
 
-33. Why is finalize used?
+19. Why is finalize used?
     + Finalize method is used for freeing up the unmanaged resources and clean up before the garbage collection method is invoked. This helps in performing memory management tasks.
 
-34. What is init method in python?
+20. What is init method in python?
     + The init method works similarly to the constructors in Java. The method is run as soon as an object is instantiated. It is useful for initializing any attributes or default behaviour of the object at the time of instantiation.
       ```
       class InterviewbitEmployee:
@@ -734,7 +732,7 @@
       emp.introduce()
       ```
 
-35. How will you check if a class is a child of another class?
+21. How will you check if a class is a child of another class?
     + This is done by using a method called issubclass() provided by python. The method tells us if any class is a child of another class by returning true or false accordingly.
       ```
       class Parent(object):
@@ -755,23 +753,23 @@
       print(isinstance(obj2, Parent))   #True
       ```
 
-36. What do you know about pandas?
+22. What do you know about pandas?
     + Pandas is an open-source, python-based library used in data manipulation applications requiring high performance. The name is derived from “Panel Data” having multidimensional data. This was developed in 2008 by Wes McKinney and was developed for data analysis.
     + Pandas are useful in performing 5 major steps of data analysis - Load the data, clean/manipulate it, prepare it, model it, and analyze the data.
 
-37. Define pandas dataframe.
+23. Define pandas dataframe.
     + A dataframe is a 2D mutable and tabular structure for representing data labelled with axes - rows and columns.
       ```
       import pandas as pd
       dataframe = pd.DataFrame(data, index, columns, dtype)
       ```
       + Where:
-        + data - Represents various forms like series, map, ndarray, lists, dict etc.
-        + index - Optional argument that represents an index to row labels.
-        + columns - Optional argument for column labels.
-        + Dtype - the data type of each column. Again optional.
+        + `data`: Represents various forms like series, map, ndarray, lists, dict etc.
+        + `index`: Optional argument that represents an index to row labels.
+        + `columns`: Optional argument for column labels.
+        + `Dtype`: the data type of each column. Again optional.
 
-38. How will you combine different pandas dataframes?
+24. How will you combine different pandas dataframes?
     + The dataframes can be combines using the below approaches:
       + `append() method`: This is used to stack the dataframes horizontally. Syntax:
         + `df1.append(df2)`
@@ -780,7 +778,7 @@
       + `join() method`: This is used for extracting data from various dataframes having one or more common columns.
         + `df1.join(df2)`
 
-39. Can you create a series from the dictionary object in pandas?
+25. Can you create a series from the dictionary object in pandas?
     + One dimensional array capable of storing different data types is called a series. We can create pandas series from a dictionary object as shown below:
       ```
       import pandas as pd
@@ -795,7 +793,7 @@
       ```
       + If an index is not specified in the input method, then the keys of the dictionaries are sorted in ascending order for constructing the index. In case the index is passed, then values of the index label will be extracted from the dictionary.
 
-40. How will you identify and deal with missing values in a dataframe?
+26. How will you identify and deal with missing values in a dataframe?
     + We can identify if a dataframe has missing values by using the isnull() and isna() methods.
       + `missing_data_count=df.isnull().sum()`
     + We can handle missing values by either replacing the values in the column with 0 as follows:
@@ -803,10 +801,10 @@
     + Or by replacing it with the mean value of the column:
       + `df[‘column_name’] = df[‘column_name’].fillna((df[‘column_name’].mean()))`
 
-41. What do you understand by reindexing in pandas?
+27. What do you understand by reindexing in pandas?
     + Reindexing is the process of conforming a dataframe to a new index with optional filling logic. If the values are missing in the previous index, then NaN/NA is placed in the location. A new object is returned unless a new index is produced that is equivalent to the current one. The copy value is set to False. This is also used for changing the index of rows and columns in the dataframe.
 
-42. How to add new column to pandas dataframe?
+28. How to add new column to pandas dataframe?
     ```
     import pandas as pd
     data_info = {'first' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
@@ -821,7 +819,7 @@
     print (df)
     ```
 
-43. How will you delete indices, rows and columns from a dataframe?
+29. How will you delete indices, rows and columns from a dataframe?
     + `To delete an Index`:
       + Execute del df.index.name for removing the index by name.
       + Alternatively, the df.index.name can be assigned to None.
@@ -853,7 +851,7 @@
       + The duplicate values from the row/column can be deleted by using the drop_duplicates() method.
         ![delete row and column](../images/python/delete_row_column.png)
 
-44. Can you get items of series A that are not available in another series B?
+30. Can you get items of series A that are not available in another series B?
     + This can be achieved by using the ~ (not/negation symbol) and isin() method as shown below.
       ```
       import pandas as pd
@@ -869,7 +867,7 @@
       """
       ```
 
-45. How will you get the items that are not common to both the given series A and B?
+31. How will you get the items that are not common to both the given series A and B?
     + We can achieve this by first performing the union of both series, then taking the intersection of both series. Then we follow the approach of getting items of union that are not there in the list of the intersection.
       ![uncommon items](../images/python/uncommon_items.png)
       ```
@@ -893,7 +891,7 @@
       """
       ```
 
-46. While importing data from different sources, can the pandas library recognize dates?
+32. While importing data from different sources, can the pandas library recognize dates?
     + Yes, they can, but with some bit of help. We need to add the parse_dates argument while we are reading data from the sources. Consider an example where we read data from a CSV file, we may encounter different date-time formats that are not readable by the pandas library. In this case, pandas provide flexibility to build our custom date parser with the help of lambda functions as shown below:
       ```
       import pandas as pd
@@ -902,15 +900,15 @@
       df = pd.read_csv("some_file.csv", parse_dates=['datetime_column'], date_parser=dateparser)
       ```
 
-47. What do you understand by NumPy?
+33. What do you understand by NumPy?
     + NumPy is one of the most popular, easy-to-use, versatile, open-source, python-based, general-purpose package that is used for processing arrays. NumPy is short for NUMerical PYthon. This is very famous for its highly optimized tools that result in high performance and powerful N-Dimensional array processing feature that is designed explicitly to work on complex arrays. Due to its popularity and powerful performance and its flexibility to perform various operations like trigonometric operations, algebraic and statistical computations, it is most commonly used in performing scientific computations and various broadcasting functions. The following image shows the applications of NumPy:
       ![NumPy applications](../images/python/numpy_uses.png)
 
-48. How are NumPy arrays advantageous over python lists?
+34. How are NumPy arrays advantageous over python lists?
     + The list data structure of python is very highly efficient and is capable of performing various functions. But, they have severe limitations when it comes to the computation of vectorized operations which deals with element-wise multiplication and addition. The python lists also require the information regarding the type of every element which results in overhead as type dispatching code gets executes every time any operation is performed on any element. This is where the NumPy arrays come into the picture as all the limitations of python lists are handled in NumPy arrays.
     + Additionally, as the size of the NumPy arrays increases, NumPy becomes around 30x times faster than the Python List. This is because the Numpy arrays are densely packed in the memory due to their homogenous nature. This ensures the memory free up is also faster.
 
-49. What are the steps to create 1D, 2D and 3D arrays?
+35. What are the steps to create 1D, 2D and 3D arrays?
     + 1D array creation:
       ```
       import numpy as np
@@ -940,7 +938,7 @@
       print('Dimensions of array:', ndArray.ndim)
       ```
 
-50. You are given a numpy array and a new column as inputs. How will you delete the second column and replace the column with a new column value?
+36. You are given a numpy array and a new column as inputs. How will you delete the second column and replace the column with a new column value?
     + Given array:
       ```
       [[35 53 63]
@@ -968,7 +966,7 @@
       print (arr)
       ```
 
-51. How will you efficiently load data from a text file?
+37. How will you efficiently load data from a text file?
     + We can use the method numpy.loadtxt() which can automatically read the file’s header and footer lines and the comments if any.
     + This method is highly efficient and even if this method feels less efficient, then the data should be represented in a more efficient format such as CSV etc. Various alternatives can be considered depending on the version of NumPy used.
     + Following are the file formats that are supported:
@@ -978,14 +976,14 @@
       + `HDF5`: This is known as the High-Powered Kitchen Sink format which supports both PyTables and h5py format.
       + `.npy`: This is NumPy's native binary data format which is extremely simple, efficient and portable.
 
-52. How will you read CSV data into an array in NumPy?
+38. How will you read CSV data into an array in NumPy?
     + This can be achieved by using the genfromtxt() method by setting the delimiter as a comma.
       ```
       from numpy import genfromtxt
       csv_data = genfromtxt('sample_file.csv', delimiter=',')
       ```
 
-53. How will you sort the array based on the Nth column?
+39. How will you sort the array based on the Nth column?
     + For example, consider an array arr.
       ```
       arr = np.array([[8, 3, 2],
@@ -1012,7 +1010,7 @@
     + We can also perform sorting and that too inplace sorting by doing:
       + `arr.view('i8,i8,i8').sort(order=['f1'], axis=0)`
 
-54. How will you find the nearest value in a given numpy array?
+40. How will you find the nearest value in a given numpy array?
     + We can use the argmin() method of numpy as shown below:
       ```
       import numpy as np
@@ -1026,11 +1024,11 @@
       print(find_nearest_value(arr, value)) # Prints 0.5645
       ```
 
-55. How will you reverse the numpy array using one line of code?
+41. How will you reverse the numpy array using one line of code?
     + `reversed_array = arr[::-1]`
       + where arr = original given array, reverse_array is the resultant after reversing all elements in the input.
 
-56. How will you find the shape of any given NumPy array?
+42. How will you find the shape of any given NumPy array?
     + We can use the shape attribute of the numpy array to find the shape. It returns the shape of the array in terms of row count and column count of the array.
       ```
       import numpy as np
@@ -1047,7 +1045,7 @@
       """
       ```
 
-57. Differentiate between a package and a module in python.
+43. Differentiate between a package and a module in python.
     + The module is a single python file. A module can import other modules (other python files) as objects. Whereas, a package is the folder/directory where different sub-packages and the modules reside.
     + A python module is created by saving a file with the extension of .py. This file will have classes and functions that are reusable in the code as well as across modules.
     + A python package is created by following the below steps:
@@ -1055,7 +1053,7 @@
       + Place modules of one kind in this directory.
       + Create `__init__.py` file in this directory. This lets python know the directory we created is a package. The contents of this package can be imported across different modules in other packages to reuse the functionality.
 
-58. What are some of the most commonly used built-in modules in Python?
+44. What are some of the most commonly used built-in modules in Python?
     + Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are:
       + os
       + math
@@ -1065,7 +1063,7 @@
       + datetime
       + JSON
 
-59. What are lambda functions?
+45. What are lambda functions?
     + Lambda functions are generally inline, anonymous functions represented by a single expression. They are used for creating function objects during runtime. They can accept any number of parameters. They are usually used where functions are required only for a short period. They can be used as:
     ```
     mul_func = lambda x,y : x*y
@@ -1073,7 +1071,7 @@
     # Output: 24
     ```
 
-60. How can you generate random numbers?
+46. How can you generate random numbers?
     + Python provides a module called random using which we can generate random numbers.
       + We have to import a random module and call the random() method as shown below:
         + The random() method generates float values lying between 0 and 1 randomly.
@@ -1088,7 +1086,7 @@
           print(random.randrange(5,100,2))
           ```
 
-61. Can you easily check if all characters in the given string is alphanumeric?
+47. Can you easily check if all characters in the given string is alphanumeric?
     + This can be easily done by making use of the isalnum() method that returns true in case the string has only alphanumeric characters.
       ```
       "abdc1321".isalnum() #Output: True
@@ -1101,31 +1099,31 @@
       print(bool(re.match('[A-Za-z0-9]+$','xyz@123$'))) # Output: False
       ```
 
-62. What are the differences between pickling and unpickling?
+48. What are the differences between pickling and unpickling?
     + Pickling is the conversion of python objects to binary form. Whereas, unpickling is the conversion of binary form data to python objects. The pickled objects are used for storing in disks or external memory locations. Unpickled objects are used for getting the data back as python objects upon which processing can be done in python.
     + Python provides a pickle module for achieving this. Pickling uses the pickle.dump() method to dump python objects into disks. Unpickling uses the pickle.load() method to get back the data as python objects.
     ![picking vs unpickling](../images/python/pickling_unpickling.png)
 
-63. Define `GIL`.
+49. Define `GIL`.
     + GIL stands for Global Interpreter Lock. This is a mutex used for limiting access to python objects and aids in effective thread synchronization by avoiding deadlocks. GIL helps in achieving multitasking (and not parallel computing). The following diagram represents how GIL works.
       ![GIL](../images/python/gil.png)
         + Based on the above diagram, there are three threads. First Thread acquires the GIL first and starts the I/O execution. When the I/O operations are done, thread 1 releases the acquired GIL which is then taken up by the second thread. The process repeats and the GIL are used by different threads alternatively until the threads have completed their execution. The threads not having the GIL lock goes into the waiting state and resumes execution only when it acquires the lock.
 
-64. Define `PYTHONPATH`.
+50. Define `PYTHONPATH`.
     + It is an environment variable used for incorporating additional directories during the import of a module or a package. `PYTHONPATH` is used for checking if the imported packages or modules are available in the existing directories. Not just that, the interpreter uses this environment variable to identify which module needs to be loaded.
 
-65. Define `PIP`.
+51. Define `PIP`.
     + PIP stands for Python Installer Package. As the name indicates, it is used for installing different python modules. It is a command-line tool providing a seamless interface for installing different python modules. It searches over the internet for the package and installs them into the working directory without the need for any interaction with the user. The syntax for this is:
       + `pip install <package_name>`
 
-66. Are there any tools for identifying bugs and performing static analysis in python?
+52. Are there any tools for identifying bugs and performing static analysis in python?
     + Yes, there are tools like `PyChecker` and `Pylint` which are used as static analysis and linting tools respectively. `PyChecker` helps find bugs in python source code files and raises alerts for code issues and their complexity. `Pylint` checks for the module’s coding standards and supports different plugins to enable custom features to meet this requirement.
 
-67. Differentiate between deep and shallow copies.
+53. Differentiate between deep and shallow copies.
     + Shallow copy does the task of creating new objects storing references of original elements. This does not undergo recursion to create copies of nested objects. It just copies the reference details of nested objects.
     + Deep copy creates an independent and new copy of an object and even copies all the nested objects of the original element recursively.
 
-68. What is main function in python? How do you invoke it?
+54. What is main function in python? How do you invoke it?
     + In the world of programming languages, the main is considered as an entry point of execution for a program. But in python, it is known that the interpreter serially interprets the file line-by-line. This means that python does not provide main() function explicitly. But this doesn't mean that we cannot simulate the execution of main. This can be done by defining user-defined main() function and by using the `__name__` property of python file. This `__name__` variable is a special built-in variable that points to the name of the current module. This can be done as shown below:
       ```
       def main():
@@ -1134,7 +1132,7 @@
         main()
       ```
 
-69. Write python function which takes a variable number of arguments.
+55. Write python function which takes a variable number of arguments.
     + A function that takes variable arguments is called a function prototype. Syntax:
       + `def function_name(*arg_list)`
       ```
@@ -1146,7 +1144,7 @@
       ```
       + The * in the function argument represents variable arguments in the function.
 
-70. WAP (Write a program) which takes a sequence of numbers and check if all numbers are unique.
+56. WAP (Write a program) which takes a sequence of numbers and check if all numbers are unique.
     + You can do this by converting the list to set by using set() method and comparing the length of this set with the length of the original list. If found equal, return True.
       ```
       def check_distinct(data_list):
@@ -1158,7 +1156,7 @@
       print(check_distinct([2,2,5,5,7,8])) #Prints False
       ```
 
-71. Write a program for counting the number of every character of a given text file.
+57. Write a program for counting the number of every character of a given text file.
     + The idea is to use collections and print module as shown below:
       ```
       import collections
@@ -1169,7 +1167,7 @@
       print(count_value)
       ```
 
-72. Write a program to check and return the pairs of a given array A whose sum value is equal to a target value N.
+58. Write a program to check and return the pairs of a given array A whose sum value is equal to a target value N.
     + This can be done easily by using the phenomenon of hashing. We can use a hash map to check for the current value of the array, x. If the map has the value of (N-x), then there is our pair.
       ```
       def print_pairs(arr, N):
@@ -1188,7 +1186,7 @@
       print_pairs(arr, N)
       ```
 
-73. Write a Program to add two integers >0 without using the plus operator.
+59. Write a Program to add two integers >0 without using the plus operator.
     + We can use bitwise operators to achieve this.
       ```
       def add_nums(num1, num2):
@@ -1200,7 +1198,7 @@
       print(add_nums(2, 10))
       ```
 
-74. Write a Program to solve the given equation assuming that `a,b,c,m,n,o` are constants:
+60. Write a Program to solve the given equation assuming that `a,b,c,m,n,o` are constants:
     ```
     ax + by = c
     mx + ny = o
@@ -1215,7 +1213,7 @@
         print(str(x), str(y))
       ```
 
-75. Write a Program to match a string that has the letter `a` followed by 4 to 8 `b’s`.
+61. Write a Program to match a string that has the letter `a` followed by 4 to 8 `b’s`.
     ```
     import re
     def match_text(txt_data):
@@ -1228,7 +1226,7 @@
     print(match_text("aabbbbbc"))    #prints Match found
     ```
 
-76. Write a Program to convert date from yyyy-mm-dd format to dd-mm-yyyy format.
+62. Write a Program to convert date from yyyy-mm-dd format to dd-mm-yyyy format.
     ```
     import re
     def transform_date_format(date):
@@ -1243,7 +1241,7 @@
       print(new_data)
       ```
 
-77. Write a Program to combine two different dictionaries. While combining, if you find the same keys, you can add the values of these same keys. Output the new dictionary
+63. Write a Program to combine two different dictionaries. While combining, if you find the same keys, you can add the values of these same keys. Output the new dictionary
     + We can use the Counter method from the collections module
       ```
       from collections import Counter
@@ -1253,7 +1251,7 @@
       print(new_dict)
       ```
 
-78. How will you access the dataset of a publicly shared spreadsheet in CSV format stored in Google Drive?
+64. How will you access the dataset of a publicly shared spreadsheet in CSV format stored in Google Drive?
     + We can use the StringIO module from the io module to read from the Google Drive link and then we can use the pandas library using the obtained data source.
       ```
       from io import StringIO
