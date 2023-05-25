@@ -185,7 +185,7 @@
         ```
 
 23. What is CDN?
-    + CDN is an acronym that stands for Content Delivery Network or Content Distribution Network. It is a big distributed system of servers spread throughout the internet in many data centres. It downloads content from servers at a greater bandwidth, resulting in speedier loading times. Several firms offer free public CDNs, including Google, Amazon, Microsoft, Yahoo, etc.
+    + `CDN`: an acronym that stands for Content Delivery Network or Content Distribution Network. It is a big distributed system of servers spread throughout the internet in many data centres. It downloads content from servers at a greater bandwidth, resulting in speedier loading times. Several firms offer free public CDNs, including Google, Amazon, Microsoft, Yahoo, etc.
 
 24. What is the difference between javascript and jQuery?
     + JavaScript is an interpreted language written in C and is a combination of ECMAScript and DOM whereas jQuery is a JavaScript library developed to run things faster and make things simplified for JavaScript. jQuery doesn't have the ECMAScript.
@@ -195,20 +195,20 @@
 25. In jQuery, what is the difference between the `$(window).load` and `$(document)`.ready functions?
 ![window.load vs document.load](../images/jQuery/load_ready.png)
 
-26. What exactly is a jQuery Data Table plug-in? Also, explain the uses with examples.
+1.  What exactly is a jQuery Data Table plug-in? Also, explain the uses with examples.
     + A data table plug-in is a jQuery plugin that can be used to create custom tables. It allows you to create a table with a custom layout, without having to write any code. It can be used to create tables with different layouts, or even to create tables with custom columns. The data table plug-in is a great way to add extra functionality to your websites, especially if you want to add a table to your website that is not included in the default layout.
     + Some of the uses for data tables are listed below:
       + Data tables are great for displaying a lot of data at once. For example, you could display a list of products on your website. You could also display the same data in a table in your blog.
       + Data tables are also great for displaying information that you want your visitors to see. For example, you could display a list of products that you're selling on your website. You could also display the same information in a table in your blog.
       + Data tables are great for showing a lot of information in one place. For example, you could display a list. of products on your website and then add additional information about each product in the table.
 
-27. What is the purpose of JQuery's `serialize()` method?
+2.  What is the purpose of JQuery's `serialize()` method?
     + The `serialize()` method is a utility method of the jQuery library that allows you to serialize data from a DOM element and return it in a format that can be used by other libraries.
     + This is useful when you want to pass data between different libraries or frameworks, or if you want to create a custom API that can be used by other developers. For example - if you want to pass JSON data from your application to a third-party API, you can use the `serialize()` method to serialize the data and then pass it to the API. This way, the API knows how to handle the data, and you don't have to worry about the format of the data.
     + The `serialize()` method is also useful when you need to send data between different browsers. For example - if you want to send JSON data from one browser to another, you can use the `serialize()` method to serialize the data and then send it using a custom HTTP request.
     + If you're not sure what data you need to serialize, there's an easy way to find out: Just type "serialize" into the console. You'll see a list of all the methods that are available on your element. `ul> li>serialize/li> li>unserialize/li> /ul> div id="example"> ul> li>serialize/li> li>unserialize/li> /ul> /div>`
 
-28. What are the selectors in jQuery? How many types of selectors in jQuery?
+3.  What are the selectors in jQuery? How many types of selectors in jQuery?
     + In order to work with any element on the web page, we would first need to find it. Selectors find the HTML elements in jQuery. Some of the most commonly used and basic selectors are:
       + `Name`: Used to select all elements which match the given element Name.
       + `#ID`: Used to select a single element which matches with the given ID
@@ -217,7 +217,7 @@
       +` Multiple Elements E, F, G`: Used to select the combined results of all the specified selectors E, F or G.
       + `Attribute Selector`: Used to select elements based on their attribute value.
 
-29. Explain how CSS classes can be manipulated in HTML using jQuery.
+4.  Explain how CSS classes can be manipulated in HTML using jQuery.
     + Query provides several methods to manipulate the CSS classes assigned to HTML elements. The most important methods are `addClass()`, `removeClass()` and `toggleClass()`.
       + `addClass()`:
         + This method adds one or more classes to the selected elements.
@@ -233,15 +233,15 @@
         + This method is used for adding or removing one or more classes from the selected elements in such a way that if the selected element already has the class, then it is removed. Else if an element does not have the specified class, then it is added i.e. it toggles the application of classes.
         + Syntax: `$(selector).toggleClass(className)`;
 
-30. State some different types of jQuery Methods.
+5.  State some different types of jQuery Methods.
     + jQuery provides a variety of methods for doing various tasks, such as manipulating the DOM, events, and ajax. The table below covers many technique categories.
       ![jQuery Methods](../images/jQuery/methods.png)
 
-31. Explain jQuery no-conflict.
+6.  Explain jQuery no-conflict.
     + jQuery no-conflict is a jQuery option that allows you to avoid conflicts between various javascript frameworks or libraries. When you utilize jQuery's no-conflict mode, you substitute the `$` variable with a new variable and assign jQuery to other JavaScript libraries. In addition, the $ symbol is utilized as a function or variable name in jQuery.
     + When no conflict is enabled, the `$` symbol in jQuery becomes the global function name and not the library name. For example, you may use the `$` function to access other libraries' data, but not their code. You can also use this option to avoid conflicts between various jQuery plugins.
 
-32. In jQuery, distinguish between the `bind()`, `live()`, and `delegate()` functions.
+7.  In jQuery, distinguish between the `bind()`, `live()`, and `delegate()` functions.
     + The `bind()` function does not connect events to items added after loading the DOM. In contrast, the `live()` and `delegate()` methods also attach events to future items.
     + The distinction between `live()` and `delegate()` methods is that `live()` does not support chaining. It will only function on a selection or an element. However, the `delegate()` function supports chaining.
     + The `bind()` method works only within a dom element. If you want to bind events to items in a different element, you can use the `delegate()` function. The `bind()` method is not recommended for use in JavaScript. It is a best practice to call event handlers on items as they are added to the DOM. The `bind()` method is only used to control the order in which items are displayed. If you need to add items to a different order, you can use the `delegate()` function. The `bind()` method is not intended to be used in a production environment. It does not offer the same performance benefits as the `delegate()` method.
@@ -262,25 +262,25 @@
         });
         ```
 
-33. Explain the operation of the jQuery `connect()` method.
+8.  Explain the operation of the jQuery `connect()` method.
     + The `connect()` method of jQuery is a utility function that allows you to create a new jQuery object and pass it to the jQuery object's constructor. This allows you to create a new object with the same functionality as the original object, but without having to manually set up the object's properties. For example, you can pass in an existing jQuery object and it will be automatically set up to use the same properties as the original object.
     + When using `connect()` method, you can pass in a callback function that will be called when the new object is ready. The callback function can be used to perform any additional setup that needs to be done before the new object can be used.
     + For example: you can set up a data source using the `data()` method of jQuery. When using `connect()` method, you can pass in a callback function that will be called when the new object is ready.
 
-34. Distinguish between `jquery.min.js` and `jquery.js`.
+9.  Distinguish between `jquery.min.js` and `jquery.js`.
     + The functionality of `jquery.min.js` and `jquery.js` is the same. However, If you are serving a page that contains a lot of JavaScript, it is a good idea to minify it. Minifying JavaScript (`jquery.min.js`) reduces the size of your file and makes it faster to load on all platforms. Minifying your code also reduces the chances that erroneous code will be rendered as a malicious attack because it makes it more difficult to test. With minified JavaScript, you will get better page performance, faster loading, and shorter wait times for your visitors.
     + There are also some of the major advantages of the `jquery.min.js`:
       + When JS files are minified in a production environment, they load faster and provide faster and better page performance.
       + Minifying a script also reduces the size of the file in the server’s temporary directory and browser cache, which results in a faster download and a smaller server response.
       + Another advantage of using minified JS is that it removes the need to include any external JS files in the HTML document. This makes it easier to structure the code and easier to edit the code.
 
-35. Explain the benefits of using a CDN for the jQuery files.
+10. Explain the benefits of using a CDN for the jQuery files.
     + Hosting jQuery on a Content Delivery Network (CDN) improves availability and performance at a reduced cost and with less network traffic, improves latency (the time it takes to send and receive a data packet from the server), and provides a device-specific version of the contents.
     + CDNs are a great way to host your JavaScript and CSS files. By caching these files, you can reduce the amount of time it takes for your site to load, making it faster and more responsive. This is especially important for sites that serve large amounts of content, such as blogs or e-commerce sites. By using a CDN, you can also reduce the number of load times that occur when visitors access your site. In addition, by hosting your JavaScript and CSS files on a CDN, you can also reduce the amount of bandwidth that is consumed by your site.
     + Example - It makes it simple to maintain responsiveness for mobile screen sizes, as well as safe storage space for important data or files.
     + Caching JavaScript and CSS files on a CDN is an important optimization that should be considered when building a site with a lot of JavaScript and CSS files.
 
-36. In jQuery, what is the difference between `$(this)` and `this`.
+11. In jQuery, what is the difference between `$(this)` and `this`.
     + `$(this)` is a jQuery object, whereas this is a JavaScript global object reference. We may refer to DOM elements in HTML documents using this.
     + `$(this)` refers to the parent object, whereas this is a DOM element that, in the case of an array, represents an object with the `.each()` method, which shows the current iteration.
     + We use this as an alternative to `this.parent()` to refer to the parent object in JavaScript. This is more convenient than using `this.parent()`. We can also use this to refer to other elements in HTML, as in an ul element:
@@ -291,34 +291,34 @@
       ```
       + This is useful when you need to iterate over a list of elements and their children, but you do not want to reference the parent object.
 
-37. Can you describe the various methods for extracting a query text using regular expressions?
+12. Can you describe the various methods for extracting a query text using regular expressions?
     + There are two methods for obtaining a query string using regular expressions.
       + `String-based approach`: This method aids in the generation of Strings by comparing similar regular expressions using the.replace() function.
       + `Regular Express Based Approach`: When compared to strings in JavaScript, the regular expression technique is the most powerful method for extracting a query string and pattern. Using the `.exec()` and. `test()` methods to compare against patterns. Other String methods include `match()`, `matchAll()`, `replace()`, `search()`, and `split()`.
 
-38. Explain the use of `event.preventDefault()` method.
-    + Event.PreventDefault is a jQuery event that stops an event from firing when the user clicks on a link or other trigger. It basically stops the default behaviour of the triggers and allows any other event to occur. It is useful for preventing unwanted events from firing when a user clicks on a link or other trigger. This can be useful when you want to prevent users from accidentally clicking on links that open up new windows or tabs.
+13. Explain the use of `event.preventDefault()` method.
+    + `Event.PreventDefault`: a jQuery event that stops an event from firing when the user clicks on a link or other trigger. It basically stops the default behaviour of the triggers and allows any other event to occur. It is useful for preventing unwanted events from firing when a user clicks on a link or other trigger. This can be useful when you want to prevent users from accidentally clicking on links that open up new windows or tabs.
     + When you use an event like click or keypress, you can prevent the event from firing by adding the `event.preventDefault()` method to the event object. When you use event.preventDefault(), the event will not fire unless the user clicks on a link or other trigger.
     + `Event.preventDefault()` is only available in jQuery 1.7 and later versions of jQuery.
     + Example: Assume you're developing an AJAX-based application in which you need to submit form data through AJAX when a button in the form is clicked. So, if you click on a button without preventing it, the button behaves normally and the website reloads. As a result, the other event will not occur when you click the button. So, if we use prevent default there, we can skip the button's default behaviour and instead perform the AJAX event and alter the HTML DOM accordingly.
 
-39. What Are the Benefits of Using Jquery Instead of Javascript in an Asp.net Web Application?
+14. What are the benefits of using jQuery Instead of Javascript in an Asp.net Web Application?
     + Below are some of the benefits of using jQuery instead of javascript in ASP.net Web Application:
-      + Jquery is well-written optimized javascript code, thus it will execute quicker until we create the same standard optimized javascript code.
-      + Jquery is javascript code that is succinct, which implies that it requires the least amount of code to do the same functionality as javascript.
-      + Jquery makes Javascript development faster since much of the functionality is already provided in the library and we only need to access it.
-      + Because Jquery supports cross-browser compatibility, we save time on supporting all browsers.
+      + jQuery is well-written optimized javascript code, thus it will execute quicker until we create the same standard optimized javascript code.
+      + jQuery is javascript code that is succinct, which implies that it requires the least amount of code to do the same functionality as javascript.
+      + jQuery makes Javascript development faster since much of the functionality is already provided in the library and we only need to access it.
+      + Because jQuery supports cross-browser compatibility, we save time on supporting all browsers.
 
-40. What is `event.stopPropagation()`?
+15. What is `event.stopPropagation()`?
     + `event.stopPropagation()` stops the event from propagating up the DOM tree, preventing any parent handlers from being notified of the event. For example, if a link with a click method is linked inside of a DIV or FORM that also has a click method attached, the DIV or FORM click method will not fire.
 
-41. Is it possible to pause or postpone the execution of the `document.ready()` for a period of time?
+16. Is it possible to pause or postpone the execution of the `document.ready()` for a period of time?
     + Yes, that is possible. With the release of jQuery 1.6, a new method called `jQuery.holdReady(hold)` was added. This function allows you to postpone the execution of the `document.ready()` event. The `document.ready()` event is triggered as soon as your DOM is ready, however, there may be occasions when you wish to load extra JavaScript or plugins that you have referenced.
 
-42. Would you still favor jQuery in a case when things can be done simply using javascript?
+17. Would you still favor jQuery in a case when things can be done simply using javascript?
     + No. If we can accomplish our goals using simple JavaScript, then we should avoid using jQuery. It is because the jQuery library is always xx kilobytes in size, thus there is no use in wasting bandwidth. And because jQuery is built on top of javascript, it has numerous functions that are more complicated than the simple job you can accomplish with javascript. jQuery will also load all dependencies. It will have some speed issues as compared to the javascript code.
 
-43. How to perform jQuery AJAX requests?
+18. How to perform jQuery AJAX requests?
     + jQuery provides the `ajax()` method to perform an AJAX (asynchronous HTTP) request.
     + Syntax:
       + $.ajax({name:value, name:value, ... }). The parameters specify one or more values of name-value pairs.
@@ -342,18 +342,18 @@
       });
       ```
 
-44. What does the following code do?
+19. What does the following code do?
     + `$( "div#firstDiv, div.firstDiv, ol#items > [name$='firstDiv']" )`
       + The given code is an example of getting elements that satisfy multiple selectors at once. The function returns a jQuery object having the results of the query.
       + The given code does a query to retrieve those `<div>` element with the id value firstDiv along with all `<div>` elements that has the class value firstDiv and all elements that are children of the `<ol id="items">` element and whose name attribute ends with the string firstDiv.
 
-45. Write a jQuery code to create and delete cookies from the browser.
+20. Write a jQuery code to create and delete cookies from the browser.
     + There is no direct way to access the cookies using jquery. We can easily do this with the help of pure javascript. To work with cookies in jQuery, you must install the Dough cookie plugin or any other cookies plugins. The dough is simple to use and offers a number of useful capabilities.
       + `Creating cookies`: $.dough("cookieName", "cookieValue");
       + `Reading cookies`: $.dough("cookieName");
       + `Deleting cookies`: $.dough("cookieName", "remove");
 
-46. Consider the following code that exists in following HTML with the CSS:
+21. Consider the following code that exists in following HTML with the CSS:
     ```
     <div id="expand"></div>
 
@@ -377,7 +377,7 @@
         );
         ```
 
-47.  What does the following code do?
+22.  What does the following code do?
     ```
     $( "div" ).css( "width", "500px" )
               .add( "p" )
@@ -386,7 +386,7 @@
     + The given code first selects all the `<div>` elements and applies width of 500px to them and adds all the `<p>` elements to the elements selection after which the code can finally change the background color to yellow for all the `<div>` and `<p>` elements
     + The given code is an example of method chaining in jQuery which is used to accomplish a couple of things in one single instruction.
 
-48.  Can you explain the difference between `jQuery.get()` and `jQuery.ajax()`?
+23.  Can you explain the difference between `jQuery.get()` and `jQuery.ajax()`?
      + `jQuery.ajax()` allows the creation of highly-customized AJAX requests, with options for how long to wait for a response, what to do once the request is successful, how to handle a failure scenarios, whether the request to be sent is blocking (synchronous) or non-blocking (asynchronous), what format to expect as the response, and many more customizable options.
      + `jQuery.get()` is uses `jQuery.ajax()` underneath to create an AJAX request typically meant for simple retrieval of information.
        + There are various other pre-built AJAX requests given by jQuery such as:
@@ -394,7 +394,7 @@
          + `jQuery.getScript()` meant for loading and then executing a JavaScript file from the server using GET request.
          + `jQuery.getJSON()` for loading JSON-encoded data from the server using a GET HTTP request.
 
-49. Write a code snippet for preventing the default behavior of the submit button for performing another event.
+24. Write a code snippet for preventing the default behavior of the submit button for performing another event.
     ```
     <script>
         $(document).ready(function(){
@@ -405,27 +405,27 @@
     </script>
     ```
 
-50.  Which of the two lines of code below is more efficient and why?
+25.  Which of the two lines of code below is more efficient and why?
      + `document.getElementById("interviewBit");`
      + `$("#interviewBit");`
        + The code `document.getElementById( "interviewBit" );` is more efficient because its the pure JavaScript version.
        + The reason being jQuery is built on top of JavaScript and internally uses its methods to make DOM manipulation easier. This introduces some performance overhead. We need to remember that jQuery is not always better than pure JavaScript and we need to use it only if it adds advantage to our project.
 
-51. How do you disable elements in Jquery Using "attr"?
+26. How do you disable elements in Jquery Using "attr"?
     + `$('class_or_id_of_element_to_disable').attr('disabled', true);`
     + `$('class_or_id_of_element_to_disable').attr('disabled', false);`
 
-52. Can you write a jQuery code selector that needs to be used for querying all elements whose ID ends with string “IB”?
+27. Can you write a jQuery code selector that needs to be used for querying all elements whose ID ends with string “IB”?
     + We can use the following selector:
       + `$("[id$='IB']")`
 
-53. Explain the `.promise()` method in jQuery.
+28. Explain the `.promise()` method in jQuery.
     + The `.promise()` method returns a dynamically generated promise that is resolved when all actions of a certain type bound to the collection, queued or not, have ended.
     + The method takes two optional arguments:
       + `type`: The default type is “fx” which indicates that the returned promise is resolved only when all animations of the selected elements have been completed.
       + `target`: If a target object is specified, `.promise()` will attach to promise to that specified object and then return it rather than creating a new one.
 
-54. Write a jquery Code Snippet To Sort A String Array?
+29. Write a jquery Code Snippet To Sort A String Array?
     ```
     $(document).ready(function(){
         var arr = [ "jQuery","Interview","Questions","By","InterviewBit"];
@@ -436,7 +436,7 @@
     + Output:
       + `["By","InterviewBit","Interview","jQuery","Questions"]`
 
-55.  Consider the below code snippet and assume that there are 5 `<div>` elements on the page. What is the difference between the start and end times displayed?
+30.  Consider the below code snippet and assume that there are 5 `<div>` elements on the page. What is the difference between the start and end times displayed?
     ```
     function getMinsSeconds() {
       var dt = new Date();
@@ -456,8 +456,8 @@
     + For the above code, the difference between the start and end times will be 10 seconds.
     + This is because `.promise()` will wait for all `<div>` animations (here, all `fadeOut()` calls) to complete, the last one will complete 10 seconds (i.e. 5 * 2 = 10 seconds) after the `fadeOut()` starts.
 
-56.  Can you provide an example of chaining using a code snippet?
-     + Old Code:
+31.  Can you provide an example of chaining using a code snippet?
+     + `Old Code`:
        ```
        $(document).ready(function(){
            $('#id').addClass('ib);
@@ -465,7 +465,7 @@
            $('#id').fadeIn('slow');
        });
        ```
-     + New Code after Chaining:
+     + `New Code after Chaining`:
        ```
        $(document).ready(function(){
            $('#id').addClass('ib)
@@ -474,6 +474,6 @@
        });
        ```
 
-57. Can you tell the difference between `prop()` and `attr()`s?
+32. Can you tell the difference between `prop()` and `attr()`s?
     + Both `prop()` and `attr()` can be used to get or set the value of the specified property of an element attribute.
     + The `attr()` gives the default value of a property whereas prop() returns its current value.
