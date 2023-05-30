@@ -145,3 +145,72 @@
       + Assigning the requirements of particular character types, including uppercase letters, lowercase letters, numbers, and non-alphanumeric characters.
       + You can enforce automatic password expiration, prevent the reuse of old passwords, and request for a password reset upon their next AWS sign-in.
       + You can have the AWS users contact an account administrator when the user has allowed the password to expire.
+
+35. What is "AWS Lambda"?
+35. Is there a programming language that AWS Lambda is not compatible with?
+35. What are the procedures for entering EC2?
+35. What are the constraints that AWS lambda function imposes?
+35. Which capabilities of AWS lambda contribute to the automation of the deployment process?
+35. What is the maximum execution time allowed for an AWS Lambda function to be customised?
+35. What are the available frameworks for the serverless approach?
+35. For instance, how can Amazon Elastic Compute Cloud (AWS Lambda) guarantee the safety of my programmes?
+35. How long may a lambda function in AWS be allowed to run before it is considered a DDOS attack?
+35. What is meant by the term "auto-scaling"?
+35. What are your thoughts on the concept of payments that have no downtime?
+35. Is there access available to the servers that AWS lambda uses by the general public?
+35. Kindly clarify what the EC2 services are?
+35. What do you think about the idea of using packages with AWS lambda?
+35. What is "AMI" in AWS Lambda?
+35. What are the limits of the availability of lambda functions on Amazon Web Services?
+35. What are the various storage choices that are available through Amazon?
+35. Is there a maximum limit that has been predetermined and that needs to be adhered to in any way?
+35. What exactly is meant by the term "elastic blocker" when referring to AWS lambda?
+35. How can we automate apps that do not require a server?
+35. How do I build my first serverless app?
+35. What is SQS and what does it perform in relation to AWS lambda?
+35. What actions should I take to fix my app that does not require a server?
+35.  If adjustments are made to the code or configuration, will the AWS lambda-based function still be accessible after these changes have been made?
+35. Is there a limit to the number of AWS lambda functions that can run in parallel at the same time?
+35. What will happen if the total amount of my execution goes beyond the normal limit?
+35. What is a Serverless Application?
+35. How might we benefit if we did away with the requirement of having a server?
+35. What exactly are the drawbacks of deciding to follow the road of serverless computing?
+35. What is the main difference between an anonymous class and a lambda function?
+35. What exactly does it mean to have anything "automated" when it comes to deployment?
+35. How does AWS lambda facilitate deployment automation?
+35. What are the procedures for entering EC2?
+35. Explain the many different serverless frameworks that are available.
+35. Why exactly should someone take into consideration implementing a serverless strategy?
+35. If a microservice or a small service fails, is it possible to debug and repair it?
+35. Is there any other potential downside to using the serverless method? Do you have any ideas or suggestions?
+35. Is there a particular explanation for why utilizing Lambda results in greater levels of efficiency?
+35. How long may a Lambda function be allowed to run before it is considered a successful distributed denial of service attack?
+35. Tell me more about the zero-downtime deployment.
+35. How could you possibly manage exceedingly intricate querying capabilities if you did not have a warehouse? Which database would you check first given the circumstances of the situation?
+35. What advantages does AWS Lambda have over its rival technologies, such as Google Cloud Functions and Microsoft Azure Functions?
+35. Serverless computing is something you might be able to explain if you're familiar with Amazon Web Services.
+36. What kinds of storage options does Amazon provide its customers with?
+37. In your perspective, is there a link between Instance and AMI?
+37. What are the best practices for maximizing Lambda's security?
+37. In the context of Lambda, what precisely does it mean to speak of elastic blockage storage?
+37. What is one simple way that the efficiency of your AWS Lambda deployment might be improved?
+37. What is your level of expertise in the craft of AMI construction?
+37. Is it possible to scale Lambda vertically?
+37. What are your thoughts on Configuration Management?
+37. What is SQS in Lambda. In what way does it function?
+37. How well versed are you in Lambda Expression?
+37. Where can I find more information about the Final Variables and Effectively Final Variables of Lambda?
+37. Where exactly is the functionality that Lambda was designed for?
+37. What is "Serverless App"?
+37. In what ways are anonymous classes and Lambda functions distinct from one another?
+37. Is code allowed to be paused in Lambda Expression without a label?
+38. In what ways does the coding that governs AWS Lambda functions impose limitations?
+38. What kinds of computer programmes can be run on Amazon Web Services' Lambda?
+38. How exactly does one go about automating a serverless app's processes?
+38. What happens when the maximum number of executions that can take place on an account has been reached?
+38. An application that does not need a server in order to execute is referred to as serverless.
+38. What exactly is the Lambda architecture of AWS?
+38. What are some of the ways in which a serverless architecture might be useful?
+38. How do I begin using a serverless application?
+38. What are the factors that decide how AWS Lambda is charged?
+
