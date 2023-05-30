@@ -147,70 +147,282 @@
       + You can have the AWS users contact an account administrator when the user has allowed the password to expire.
 
 35. What is "AWS Lambda"?
-35. Is there a programming language that AWS Lambda is not compatible with?
-35. What are the procedures for entering EC2?
-35. What are the constraints that AWS lambda function imposes?
-35. Which capabilities of AWS lambda contribute to the automation of the deployment process?
-35. What is the maximum execution time allowed for an AWS Lambda function to be customised?
-35. What are the available frameworks for the serverless approach?
-35. For instance, how can Amazon Elastic Compute Cloud (AWS Lambda) guarantee the safety of my programmes?
-35. How long may a lambda function in AWS be allowed to run before it is considered a DDOS attack?
-35. What is meant by the term "auto-scaling"?
-35. What are your thoughts on the concept of payments that have no downtime?
-35. Is there access available to the servers that AWS lambda uses by the general public?
-35. Kindly clarify what the EC2 services are?
-35. What do you think about the idea of using packages with AWS lambda?
-35. What is "AMI" in AWS Lambda?
-35. What are the limits of the availability of lambda functions on Amazon Web Services?
-35. What are the various storage choices that are available through Amazon?
-35. Is there a maximum limit that has been predetermined and that needs to be adhered to in any way?
-35. What exactly is meant by the term "elastic blocker" when referring to AWS lambda?
-35. How can we automate apps that do not require a server?
-35. How do I build my first serverless app?
-35. What is SQS and what does it perform in relation to AWS lambda?
-35. What actions should I take to fix my app that does not require a server?
-35.  If adjustments are made to the code or configuration, will the AWS lambda-based function still be accessible after these changes have been made?
-35. Is there a limit to the number of AWS lambda functions that can run in parallel at the same time?
-35. What will happen if the total amount of my execution goes beyond the normal limit?
-35. What is a Serverless Application?
-35. How might we benefit if we did away with the requirement of having a server?
-35. What exactly are the drawbacks of deciding to follow the road of serverless computing?
-35. What is the main difference between an anonymous class and a lambda function?
-35. What exactly does it mean to have anything "automated" when it comes to deployment?
-35. How does AWS lambda facilitate deployment automation?
-35. What are the procedures for entering EC2?
-35. Explain the many different serverless frameworks that are available.
-35. Why exactly should someone take into consideration implementing a serverless strategy?
-35. If a microservice or a small service fails, is it possible to debug and repair it?
-35. Is there any other potential downside to using the serverless method? Do you have any ideas or suggestions?
-35. Is there a particular explanation for why utilizing Lambda results in greater levels of efficiency?
-35. How long may a Lambda function be allowed to run before it is considered a successful distributed denial of service attack?
-35. Tell me more about the zero-downtime deployment.
-35. How could you possibly manage exceedingly intricate querying capabilities if you did not have a warehouse? Which database would you check first given the circumstances of the situation?
-35. What advantages does AWS Lambda have over its rival technologies, such as Google Cloud Functions and Microsoft Azure Functions?
-35. Serverless computing is something you might be able to explain if you're familiar with Amazon Web Services.
-36. What kinds of storage options does Amazon provide its customers with?
-37. In your perspective, is there a link between Instance and AMI?
-37. What are the best practices for maximizing Lambda's security?
-37. In the context of Lambda, what precisely does it mean to speak of elastic blockage storage?
-37. What is one simple way that the efficiency of your AWS Lambda deployment might be improved?
-37. What is your level of expertise in the craft of AMI construction?
-37. Is it possible to scale Lambda vertically?
-37. What are your thoughts on Configuration Management?
-37. What is SQS in Lambda. In what way does it function?
-37. How well versed are you in Lambda Expression?
-37. Where can I find more information about the Final Variables and Effectively Final Variables of Lambda?
-37. Where exactly is the functionality that Lambda was designed for?
-37. What is "Serverless App"?
-37. In what ways are anonymous classes and Lambda functions distinct from one another?
-37. Is code allowed to be paused in Lambda Expression without a label?
-38. In what ways does the coding that governs AWS Lambda functions impose limitations?
-38. What kinds of computer programmes can be run on Amazon Web Services' Lambda?
-38. How exactly does one go about automating a serverless app's processes?
-38. What happens when the maximum number of executions that can take place on an account has been reached?
-38. An application that does not need a server in order to execute is referred to as serverless.
-38. What exactly is the Lambda architecture of AWS?
-38. What are some of the ways in which a serverless architecture might be useful?
-38. How do I begin using a serverless application?
-38. What are the factors that decide how AWS Lambda is charged?
++ Lambda, a software service platform offered by Amazon Web Services, is an example of this type of platform. Lambda enables serverless computing in specific scenarios. Events generated by AWS can be used to initiate the execution of code in any application.
++ You have access to a wide range of AWS services, including the Amazon Simple Storage Service (S3) for storing files, the Amazon DynamoDB for updating tables, the Amazon API Gateway for gaining access, and many more. AWS Lambda frees developers from the burden of configuring and managing software servers, allowing them to focus on writing and running their programmes.
+
+
+
+36. Is there a programming language that AWS Lambda is not compatible with?
++ AWS Lambda allows for the use of the following programming languages: C#, .NET, Node.js, Javascript, Java (version 8), and Go. These programming languages already have their libraries and other built-in features set up and ready to go.
+
+
+
+37. What are the procedures for entering EC2?
++ Users are able to connect to EC2 with either a command-line interface or a web-based interface. A further benefit of using AWS lambda is that it equips Windows power shells with the necessary tools.
+
+38. What are the constraints that AWS lambda function imposes?
++ AWS Lambda imposes only a few light constraints on the kinds of things that may be done with an operating system and the kinds of programming languages that can be used with it. You cannot simply cease doing things like creating instances, tracking phone calls, or blocking incoming network connections.
++ These activities are not possible. While you're doing it, you should disable things like the system debugger and any TCP ports (More than 25 traffic available to measure the anti-spam). When it comes to establishing connections with the wider world, IP/TCP sockets are an extremely handy tool.
+
+
+
+39. Which capabilities of AWS lambda contribute to the automation of the deployment process?
++ A diverse range of environments is available for use with AWS Lambda. You can use these configurations to retrieve the appropriate data and user credentials in the event that you need to make modifications to your deployment packages, but do not have access to the original packages.
++ Aliases are something that can be used with AWS Lambda, which is a serverless technique. This is something that is already common information. It is not difficult to take into account the many AWS Lambda variants throughout the pre-production phase and the development of an application.
++ As a consequence of this, the Lambda function can be considered for testing without seriously affecting the user code when it is being run in production. It is not important how you do the work as long as you follow the plan and do it in the correct sequence.
+
+
+
+40. What is the maximum execution time allowed for an AWS Lambda function to be customised?
++ The entirety of the execution will be finished within three hundred seconds of the first user call being made to AWS lambda. The length of timeouts can be customized anywhere from 1 and 300 seconds, with 3 seconds serving as the default value.
+
+
+
+41. What are the available frameworks for the serverless approach?
++ There are currently a number of powerful serverless frameworks available. They provide outstanding customer service, an open-source whisk, and capabilities for Microsoft Azure, all of which contribute to their product's high level of user-friendliness. 
++ During the process of constructing a cloud infrastructure, the concept of serverless application software is only taken into consideration. The AWS Lambda Application Programming Interface (API) makes scripting a snap, which in turn makes complicated processes more manageable and reliable.
+
+
+
+42. For instance, how can Amazon Elastic Compute Cloud (AWS Lambda) guarantee the safety of my programmes?
++ The user codes for AWS Lambda can be saved in Amazon S3, and after that, they can be encrypted by following the necessary steps. During the processing, additional tests on the data's integrity are performed by using AWS Lambda.
+
+
+
+43. How long may a lambda function in AWS be allowed to run before it is considered a DDOS attack?
++ DDOS attacks are possible with AWS lambda, but you only have five minutes to complete the process.
+
+
+
+44. What is meant by the term "auto-scaling"?
++ Simply said, auto-scaling in AWS lambda is a function of the Amazon web service that enables users to start new instances of a service and carry out any necessary configuration chores without having to manually interfere.
+  ![auto-scaling](../images/aws/auto_scaling.png)
++ This function enables users to save time and effort. You are free to relax and see how the installation is carried out while keeping a close check on the threshold and key performance indicators as they appear in real-time. In other circumstances, all that is required of you is to cross the threshold in order to instantly begin the work and any instances related to it. This entails no additional horizontal disruption.
+
+
+1.  What are your thoughts on the concept of payments that have no downtime?
++ For deployment purposes, Lambda on AWS often makes use of instance functions. In addition, if the programmes are exceptionally difficult to understand, the AWS lambda framework can be segmented into more manageable parts. In reality, the application is inaccessible online while it is doing a process because that takes some amount of time. The finished thing turned out quite well.
+
+
+
+1.  Is there access available to the servers that AWS lambda uses by the general public?
++ The answer is not positive, to put it succinctly. With the release of AWS Lambda, it is now possible to use the cloud computing infrastructure to carry out activities without requiring any input from the user. In addition to this, there is no way to access the Lambda infrastructure. Because of the way that this arrangement is configured, Lambda is able to perform preventative maintenance, check its health, and update its security measures.
+
+
+
+1.  Kindly clarify what the EC2 services are?
++ Aws Lambda requires scalable computational capabilities so that it can process user data in the cloud. Managing EC2 is just as easy as managing any other online service, and all of the same measures for network security should be taken. Using this strategy, configuring capacity and working with EC2 with as little effort as feasible is achievable.
+
+
+
+1.  What do you think about the idea of using packages with AWS lambda?
++ In AWS Lambda, it is very natural for user-created packages as well as NPM packages to be utilized efficiently.
+
+
+
+1.  What is "AMI" in AWS Lambda?
++ `Amazon Machine Image` is referred to by its acronym, AMI, and is utilized rather commonly in Lambda-based processing. In its most basic form, it is a starting point that has commonly used software such as an operating system, an application server, and potentially some extra programs already installed on it.
++ The duplicate in the cloud can be created because it already has several copies and can handle running multiple instances at the same time. In addition, the Amazon Machine image can be used to run a virtual server that is hosted in the cloud.
+
+
+
+1.  What are the limits of the availability of lambda functions on Amazon Web Services?
++ The lambda application hosted on Amazon Web Services makes use of redundancy and replication to ensure that your lambda and Amazon services continue to run without interruption. In addition, the management of Amazon Lambda's downtime and maintenance windows is incorporated into this offering.
+
+
+
+1.  What are the various storage choices that are available through Amazon?
++ Amazon Lambda is designed to work with a broad range of storage alternatives, but the most important thing to keep in mind is that every one of these choices offers the highest possible level of dependability and productivity. There is no logical impediment to employing both of them in tandem. Access can also be gained without the use of a guide or assistant.
++ I'll only list a few, but one of them is Elastic Block Storage (EBS), which is a method for storing data that utilizes block-level storage. If separate storage is required, this product, which comes with built-in encryption features, is one option that could be considered. The subsequent type is known as an EC2 instance, and it operates very similarly to a storage disc that is directly connected to the host computer.
++ This form of storage is designed for use over a relatively short period of time, as the name suggests. After some time has gone by, the user has the opportunity to consider whether or not the financial investment in good storage is worthwhile. The user data will continue to be valid so long as the instances themselves continue to be valid. The next option is for adding storage, which is effectively the user's root storage and can be utilized for running instances.
++ This will almost always include data pertaining to the boot instance. Following that, Amazon Simple Storage Service (S3) -> is another type of AWS lambda storage that enables users to store an unlimited quantity of data at an affordable cost.
+
+
+
+1.  Is there a maximum limit that has been predetermined and that needs to be adhered to in any way?
++ The account level is the only place where the default limit for AWS lambda is enforced. At the functional level, there is no limit that is predetermined.
+
+
+
+1.  What exactly is meant by the term "elastic blocker" when referring to AWS lambda?
++ Users can make use of the elastic storage, which is effectively a digital file cabinet, in order to get started with the networking-related responsibilities that need to be completed. The user does not need to be concerned about the possibility of data loss due to a damaged disc as long as the RAID array is in good health.
++ The storage in question also supports the process of allocating and provisioning memory space. On occasion, a connection can be made between this and the application programming interface that exists on a node that serves a specific purpose.
+
+
+
+1.  How can we automate apps that do not require a server?
++ Following the completion of the serverless application development with AWS Lambda, the automated procedure is then released, and the application is then deployed. Because of this, the serverless application can be deployed with the help of the AWS code pipeline, a continuous form of service delivery that enables the required modeling, data visualization, and automation of activities.
++ Automated code deployment for lambda-based applications is also on the roadmap for AWS code deployment. This enables the user to coordinate deployments in accordance with best practice application methodologies, such as a canary deployment and a linear deployment, which helps verify that the newly created deployment programme is safe, reliable, and fit for use at an industrial level.
+
+1.  How do I build my first serverless app?
++ n order to get started with serverless applications, you will need to access the AWS Lambda dashboard and save the blueprint. This file's original version will be downloaded, and it should include both an AWS Sam file (which the programme refers to as an AWS resource) and a ZIP file (which mostly included the function code). With the assistance of the AWS Cloud Formation commands, you will be able to successfully complete tasks such as documenting your serverless apps and deploying them.
+
+
+
+1.  What is SQS and what does it perform in relation to AWS lambda?
++ A way of sharing data between various hosts on a local network and network endpoints is what the Simple Queue Service (SQS) in AWS lambda is all about. SQS makes it possible for applications to communicate with one another and provides users with access to lambda's many different functions.
++ It makes no difference which functional components you make use of because they are all connected to one another. As a consequence of this, a failure mechanism is no longer required, and the ability of individual elements to communicate with one another has been significantly improved.
+
+
+
+1.  What actions should I take to fix my app that does not require a server?
++ AWS x-ray can be used to activate an AWS lambda function for tracking by first providing x-ray access to lambda functional roles for execution and then setting the function's "mode of code tracing" to active.
++ When a user activates X-RAY for lambda functional components, the system starts recording various amounts of information, including the amount of time spent on each lambda service, the overall amount of time spent on all lambda services, the duration of each functional execution, and more. There are X-ray software development kits (SDKs) available right now for both Node.js and Java.
+
+
+
+1.   If adjustments are made to the code or configuration, will the AWS lambda-based function still be accessible after these changes have been made?
++ If you're wondering whether or not an update to an AWS lambda function will cause a brief interval (less than a minute) during which requests can be fulfilled by either the old or new version of the lambda functions, the answer is yes. If you're wondering whether or not an update to an AWS lambda function will cause a brief interval (less than a minute), the answer is yes.
+
+
+
+1.  Is there a limit to the number of AWS lambda functions that can run in parallel at the same time?
++ Because the AWS lambda application was designed to work only on certain instances of functional codes, the answer is "no." In addition, there is a default safety threshold in AWS lambda for a specific number of consecutive executions for each subscription. This barrier is based on the number of executions.
++ You will be able to save your most important resources for the times when they are required the most if you restrict the number of times that a single AWS function can execute a lambda in succession.
+
+
+
+1.  What will happen if the total amount of my execution goes beyond the normal limit?
++ The AWS Lambda functions are called in real time whenever the threshold is exceeded, and the threshold error is returned (429 errors –code). A substantial quantity of traffic may be handled by Lambda functions for 15–30 minutes at a time, and they can be run asynchronously in order to fulfil their primary objectives. The operation will come to a close by filtering out and slowing down upcoming events.
++ After the AWS lambda function that manages the configuration has suppressed it, the storage tool will no longer be able to get it to respond to Amazon S3 events. The vast bulk of the events is supplied by Amazon Kinesis, Amazon DynamoDB, and the data that has been deprecated. The fact that Amazon Kinesis and Amazon DB events preserve data for more than twenty-four hours makes them extremely useful.
+
+
+
+1.  What is a Serverless Application?
++ The serverless applications are lambda-based, which means that they are made up of functions that are triggered into action in response to particular events. Every one of the functional events, such as an item being uploaded to Amazon S3, an Amazon SNS message being received, or an API request being made, will activate one or more functions in the default serverless application.
++ These methods can function independently, making use of other Amazon Web Services (AWS) technologies such as DynamoDB tables and S3 buckets. The most popular kind of serverless application is called a function.
+
+
+
+1.  How might we benefit if we did away with the requirement of having a server?
++ The following is a list of the primary advantages of using the Serverless method:
++ To get things started, the uncomplicated procedures of the Serverless technique provide a quicker time to market and an increase in revenue.
++ The user is only charged for the code while it is being compiled, and by increasing earnings, many expenses can be avoided.
++ You are able to simply manage the smaller applications that make up the larger program, and you have the appropriate infrastructure in place to back it up.
+
+
+1.  What exactly are the drawbacks of deciding to follow the road of serverless computing?
++ 1. There are advantages and disadvantages to utilizing each component of AWS lambda, and these aspects change according to the type of work that is being carried out.
++ 2. In the serverless paradigm, scalability is totally dependent on the vendor, therefore there is an increased chance for outages. Additionally, the serverless model has a higher failure rate.
++ 3. The elimination of functionality and the introduction of new limitations are two examples of common issues. In addition, the serverless method of Amazon Web Services does not make use of any specialized hardware in any way.
++ 4. Problems are frequently brought about by the blunders made by the customer.
+
+
+
+1.  What is the main difference between an anonymous class and a lambda function?
++ The fundamental difference is in the emphasis that is placed on a number of different phrases. Keywords are utilized by lambda functions so that they can successfully resolve the functional classes. On the other hand, keywords are employed in order to resolve the anonymous functional class within the anonymous class.
+
+
+
+1.  What exactly does it mean to have anything "automated" when it comes to deployment?
++ 
+
+1.  How does AWS lambda facilitate deployment automation?
++ 
+
+1.  What are the procedures for entering EC2?
++ 
+
+1.  Explain the many different serverless frameworks that are available.
++ 
+
+1.  Why exactly should someone take into consideration implementing a serverless strategy?
++ 
+
+1.  If a microservice or a small service fails, is it possible to debug and repair it?
++ 
+
+1.  Is there any other potential downside to using the serverless method? Do you have any ideas or suggestions?
++ 
+
+1.  Is there a particular explanation for why utilizing Lambda results in greater levels of efficiency?
++ 
+
+1.  How long may a Lambda function be allowed to run before it is considered a successful distributed denial of service attack?
++ 
+
+1.  Tell me more about the zero-downtime deployment.
++ 
+
+1.  How could you possibly manage exceedingly intricate querying capabilities if you did not have a warehouse? Which database would you check first given the circumstances of the situation?
++ 
+
+1.  What advantages does AWS Lambda have over its rival technologies, such as Google Cloud Functions and Microsoft Azure Functions?
++ 
+
+1.  Serverless computing is something you might be able to explain if you're familiar with Amazon Web Services.
++ 
+
+1.  What kinds of storage options does Amazon provide its customers with?
++ 
+
+1.  In your perspective, is there a link between Instance and AMI?
++ 
+
+1.  What are the best practices for maximizing Lambda's security?
++ 
+
+1.  In the context of Lambda, what precisely does it mean to speak of elastic blockage storage?
++ 
+
+1.  What is one simple way that the efficiency of your AWS Lambda deployment might be improved?
++ 
+
+1.  What is your level of expertise in the craft of AMI construction?
++ 
+
+1.  Is it possible to scale Lambda vertically?
++ 
+
+1.  What are your thoughts on Configuration Management?
++ 
+
+1.  What is SQS in Lambda. In what way does it function?
++ 
+
+1.  How well versed are you in Lambda Expression?
++ 
+
+1.  Where can I find more information about the Final Variables and Effectively Final Variables of Lambda?
++ 
+
+1.  Where exactly is the functionality that Lambda was designed for?
++ 
+
+1.  What is "Serverless App"?
++ 
+
+1.  In what ways are anonymous classes and Lambda functions distinct from one another?
++ 
+
+1.  Is code allowed to be paused in Lambda Expression without a label?
++ 
+
+1.  In what ways does the coding that governs AWS Lambda functions impose limitations?
++ 
+
+1.  What kinds of computer programmes can be run on Amazon Web Services' Lambda?
++ 
+
+1.  How exactly does one go about automating a serverless app's processes?
++ 
+
+1.  What happens when the maximum number of executions that can take place on an account has been reached?
++ 
+
+1.  An application that does not need a server in order to execute is referred to as serverless.
++ 
+
+1.  What exactly is the Lambda architecture of AWS?
++ 
+
+1.   What are some of the ways in which a serverless architecture might be useful?
++ 
+
+1.   How do I begin using a serverless application?
++ 
+
+1.   What are the factors that decide how AWS Lambda is charged?
++ 
+
 
