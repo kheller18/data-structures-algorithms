@@ -54,7 +54,7 @@
       + `Synchronous, blocking functions` - mostly operations that influence the process running in the main loop.
 
 12. What is REPL?
-    + `REPL` in Node.js stands for Read, Eval, Print, and Loop, which further means evaluating code on the go.
+    + `REPL`: in Node.js stands for Read, Eval, Print, and Loop, which further means evaluating code on the go.
 
 13. List down the two arguments that async.queue takes as input?
     + Task Function
@@ -174,7 +174,7 @@
     + In general, buffers is a temporary memory that is mainly used by stream to hold on to some data until consumed. Buffers are introduced with additional use cases than JavaScript’s Unit8Array and are mainly used to represent a fixed-length sequence of bytes. This also supports legacy encodings like ASCII, utf-8, etc. It is a fixed(non-resizable) allocated memory outside the v8.
 
 24. What is middleware?
-    + Middleware comes in between your request and business logic. It is mainly used to capture logs and enable rate limit, routing, authentication, basically whatever that is not a part of business logic. There are third-party middleware also such as body-parser and you can write your own middleware for a specific use case.
+    + `Middleware`: comes in between your request and business logic. It is mainly used to capture logs and enable rate limit, routing, authentication, basically whatever that is not a part of business logic. There are third-party middleware also such as body-parser and you can write your own middleware for a specific use case.
 
 25. Explain what a Reactor Pattern in Node.js?
     + Reactor pattern again a pattern for nonblocking I/O operations. But in general, this is used in any event-driven architecture.
@@ -265,7 +265,7 @@
       ```
 
 30. What is an Event Emitter in Node.js?
-    + EventEmitter is a Node.js class that includes all the objects that are basically capable of emitting events. This can be done by attaching named events that are emitted by the object using an eventEmitter.on() function. Thus whenever this object throws an even the attached functions are invoked synchronously.
+    + `EventEmitter`: is a Node.js class that includes all the objects that are basically capable of emitting events. This can be done by attaching named events that are emitted by the object using an eventEmitter.on() function. Thus whenever this object throws an even the attached functions are invoked synchronously.
       ```
       const EventEmitter = require('events');
       class MyEmitter extends EventEmitter {}
@@ -304,27 +304,27 @@
       'use strict';
       const async_hooks = require('async_hooks');
       const {
-      performance,
-      PerformanceObserver
+        performance,
+        PerformanceObserver
       } = require('perf_hooks');
       const set = new Set();
       const hook = async_hooks.createHook({
       init(id, type) {
-      if (type === 'Timeout') {
-        performance.mark(`Timeout-${id}-Init`);
-        set.add(id);
-      }
+        if (type === 'Timeout') {
+          performance.mark(`Timeout-${id}-Init`);
+          set.add(id);
+        }
       },
       destroy(id) {
-      if (set.has(id)) {
-        set.delete(id);
-        performance.mark(`Timeout-${id}-Destroy`);
-        performance.measure(
-          `Timeout-${id}`,
-          `Timeout-${id}-Init`,
-          `Timeout-${id}-Destroy`
-        );
-      }
+        if (set.has(id)) {
+          set.delete(id);
+          performance.mark(`Timeout-${id}-Destroy`);
+          performance.measure(
+            `Timeout-${id}`,
+            `Timeout-${id}-Init`,
+            `Timeout-${id}-Destroy`
+          );
+        }
       }
       });
       hook.enable();
