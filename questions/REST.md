@@ -162,7 +162,7 @@
 19. What are the differences between PUT and POST in REST?
 ![put vs post](../images/rest/put_post.png)
 
-20.  What makes REST services to be easily scalable?
+20. What makes REST services to be easily scalable?
      + REST services follow the concept of statelessness which essentially means no storing of any data across the requests on the server. This makes it easier to scale horizontally because the servers need not communicate much with each other while serving requests.
 
 21. Based on what factors, you can decide which type of web services you need to use - SOAP or REST?
