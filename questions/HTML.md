@@ -544,9 +544,9 @@
 
 59. What is a manifest file in HTML5?
     + The manifest file is used to list down resources that can be cached. Browsers use this information to make the web page load faster than the first time. There are 3 sections in the manifest file
-      + CACHE Manifest - Files needs to be cached
-      + Network - File never to be cached, always need a network connection.
-      + Fallback - Fallback files in case a page is inaccessible
+      + `CACHE Manifest`: Files needs to be cached
+      + `Network`: File never to be cached, always need a network connection.
+      + `Fallback`: Fallback files in case a page is inaccessible
     + ```
       CACHE MANIFEST
       # 2012-06-16 v1.0.0
@@ -600,8 +600,8 @@
 
 61. Explain Web Components and it’s usage.
     + These are used to create reusable custom elements which are very difficult in traditional HTML. It consists of three technologies:
-      + Custom elements - These are JavaScript APIs that help in defining custom elements and their behavior.
-      + Shadow DOM - These are JavaScript APIs that attach an encapsulated shadow DOM tree to an element to keep the element’s features private and unaffected by other parts.
+      + `Custom elements`: These are JavaScript APIs that help in defining custom elements and their behavior.
+      + `Shadow DOM`: These are JavaScript APIs that attach an encapsulated shadow DOM tree to an element to keep the element’s features private and unaffected by other parts.
       + ```
           <!DOCTYPE html>
           <html>
