@@ -9,11 +9,11 @@
    + Improves the performance of an application when using the minimised version of the jQuery library. The size of the minimized js file is almost 50% less than the normal js file. A reduction in the file size makes the web page load and work faster.
    + Commonly implemented UI-related functionalities are written using minimal lines of code.
 
-2. How is jQuery different from other javascript frameworks?
+2. How is jQuery different from other JavaScript frameworks?
    + jQuery is much smaller than other libraries.
    + jQuery does not have any dependencies on other libraries or frameworks. (Like babel).
    + jQuery is not as complex as other libraries. This makes it easier to use and understand.
-   + jQuery is not as heavy as other frameworks, It only uses the predefined javascript to make web apps interactive.
+   + jQuery is not as heavy as other frameworks, It only uses the predefined JavaScript to make web apps interactive.
 
 3. List some Features of jQuery.
    + DOM element choices utilizing the multi-browser open source selector engine Sizzle, a jQuery project spin-off.
@@ -38,10 +38,10 @@
    + Query Mobile is a JavaScript library that enables developers to create mobile-first applications. It is a lightweight framework that allows developers to create rich, touch-first interfaces that are optimized for touch devices.
    + jQuery Mobile is a mobile-first JavaScript library that aims to provide a modern and easy-to-use framework for developing mobile apps. It was originally developed by Facebook to improve the performance of its iOS and Android apps. Since then, it has been adopted by many other companies, including Google, Yahoo, and Mozilla.
    + When using jQuery Mobile, you can use the library to create a mobile-first app that is faster and easier to maintain than traditional web apps. It also makes it easier to add new features to your app without having to rewrite your code.
-   + JQuery Mobile is built on top of the jQuery JavaScript library. It works by using the same techniques that are used when you are developing a traditional web app. However, instead of using JavaScript, jQuery Mobile uses HTML5 and CSS3 to create a modern and easy-to-use framework for developing mobile apps.
+   + jQuery Mobile is built on top of the jQuery JavaScript library. It works by using the same techniques that are used when you are developing a traditional web app. However, instead of using JavaScript, jQuery Mobile uses HTML5 and CSS3 to create a modern and easy-to-use framework for developing mobile apps.
 
 7. What is the `$()` function in the jQuery library?
-   + The `$()` function is used to access the properties of elements in the DOM (Document Object Model). `$()` is similar to javascript’s selector functions, but it is more powerful and has more options.
+   + The `$()` function is used to access the properties of elements in the DOM (Document Object Model). `$()` is similar to JavaScript’s selector functions, but it is more powerful and has more options.
    + `$()` can be used to access attributes, classes, id, data-* attributes, and more.
    + Example - Suppose you want to change the colour of all the heading1 (h1) to green, then you can do this with the help of jQuery as:
      ```
@@ -59,7 +59,7 @@
       ![onload vs document.ready](../images/jQuery/onload_ready.png)
 
 10. Describe jQuery Connect in brief. Also, list its uses.
-    + JQuery connect is a JavaScript library that provides a declarative API for binding data to elements. It allows you to specify the data source, the element that should be bound to the data, and the callback function that will be invoked when the element is bound.
+    + jQuery connect is a JavaScript library that provides a declarative API for binding data to elements. It allows you to specify the data source, the element that should be bound to the data, and the callback function that will be invoked when the element is bound.
     + The most common use case for jQuery connect is binding data to an element using an attribute or value. However, it can also be used to bind data to elements dynamically or to bind data to an element based on a condition.
 
 11. What are the jQuery functions used to provide effects?
@@ -122,9 +122,9 @@
       });
       ```
 
-18. What is the purpose of JQuery's `delay()` method? Can you use this for different types of browsers like (Internet Explorer)?
+18. What is the purpose of jQuery's `delay()` method? Can you use this for different types of browsers like (Internet Explorer)?
     + The `delay()` method is used to set the delay between two events, such as a click or a change in state. The delay can be set to a number of different values, including milliseconds, seconds, and even hours. This can be useful when you want to wait for an event to occur before doing something else.
-      + For example - you could use a delay of 5 minutes to wait for a user to click on your button before moving on to the next step in your workflow.
+      + For example: you could use a delay of 5 minutes to wait for a user to click on your button before moving on to the next step in your workflow.
       + Although the `delay()` method is not available in all browsers. In order to use it in Internet Explorer, you will need to add the following line of code:
         + `window.addEventListener('click', function() { delay(5000); });`
         + But the latest Microsoft browser (Microsoft Edge) that replaces the internet explorer has support for the jQuery `delay()` method.
@@ -151,7 +151,7 @@
 22. Can you tell something about jQuery `each()` method?
     + The `each()` method in jQuery allows us to loop through different datasets such as arrays or objects (even DOM objects).
     + It can be used to loop through a number of DOM objects from the same selectors.
-    + For example, if you want to add a `width=“600”` to all the images in a page then we select all images and loop through each of them and add `width = "600"` to each tag. We can write the code as below:
+    + For example: if you want to add a `width=“600”` to all the images in a page then we select all images and loop through each of them and add `width = "600"` to each tag. We can write the code as below:
       ```
       $("img").each(function(im){
         $(this).attr("width","600")
@@ -184,10 +184,10 @@
         type - jQuery
         ```
 
-23. What is CDN?
-    + `CDN`: an acronym that stands for Content Delivery Network or Content Distribution Network. It is a big distributed system of servers spread throughout the internet in many data centres. It downloads content from servers at a greater bandwidth, resulting in speedier loading times. Several firms offer free public CDNs, including Google, Amazon, Microsoft, Yahoo, etc.
+23. What is Content Delivery Network (CDN)?
+    + `Content Delivery Network (CDN)`: an acronym that stands for Content Delivery Network or Content Distribution Network. It is a big distributed system of servers spread throughout the internet in many data centres. It downloads content from servers at a greater bandwidth, resulting in speedier loading times. Several firms offer free public CDNs, including Google, Amazon, Microsoft, Yahoo, etc.
 
-24. What is the difference between javascript and jQuery?
+24. What is the difference between JavaScript and jQuery?
     + JavaScript is an interpreted language written in C and is a combination of ECMAScript and DOM whereas jQuery is a JavaScript library developed to run things faster and make things simplified for JavaScript. jQuery doesn't have the ECMAScript.
     + JavaScript requires long lines of code to code a functionality whereas in the case of jQuery, just import the library and call the functions which would reduce the programmer’s effort in coding.
     + JavaScript doesn't have cross-browser compatible functionality which is why a developer has to write code manually to implement the functionality. Whereas the cross-browser code compatibility is inbuilt in jQuery.
@@ -202,7 +202,7 @@
       + Data tables are also great for displaying information that you want your visitors to see. For example, you could display a list of products that you're selling on your website. You could also display the same information in a table in your blog.
       + Data tables are great for showing a lot of information in one place. For example, you could display a list. of products on your website and then add additional information about each product in the table.
 
-2.  What is the purpose of JQuery's `serialize()` method?
+2.  What is the purpose of jQuery's `serialize()` method?
     + The `serialize()` method is a utility method of the jQuery library that allows you to serialize data from a DOM element and return it in a format that can be used by other libraries.
     + This is useful when you want to pass data between different libraries or frameworks, or if you want to create a custom API that can be used by other developers. For example - if you want to pass JSON data from your application to a third-party API, you can use the `serialize()` method to serialize the data and then pass it to the API. This way, the API knows how to handle the data, and you don't have to worry about the format of the data.
     + The `serialize()` method is also useful when you need to send data between different browsers. For example - if you want to send JSON data from one browser to another, you can use the `serialize()` method to serialize the data and then send it using a custom HTTP request.
@@ -238,7 +238,7 @@
       ![jQuery Methods](../images/jQuery/methods.png)
 
 6.  Explain jQuery no-conflict.
-    + jQuery no-conflict is a jQuery option that allows you to avoid conflicts between various javascript frameworks or libraries. When you utilize jQuery's no-conflict mode, you substitute the `$` variable with a new variable and assign jQuery to other JavaScript libraries. In addition, the $ symbol is utilized as a function or variable name in jQuery.
+    + jQuery no-conflict is a jQuery option that allows you to avoid conflicts between various JavaScript frameworks or libraries. When you utilize jQuery's no-conflict mode, you substitute the `$` variable with a new variable and assign jQuery to other JavaScript libraries. In addition, the $ symbol is utilized as a function or variable name in jQuery.
     + When no conflict is enabled, the `$` symbol in jQuery becomes the global function name and not the library name. For example, you may use the `$` function to access other libraries' data, but not their code. You can also use this option to avoid conflicts between various jQuery plugins.
 
 7.  In jQuery, distinguish between the `bind()`, `live()`, and `delegate()` functions.
@@ -277,7 +277,7 @@
 10. Explain the benefits of using a CDN for the jQuery files.
     + Hosting jQuery on a Content Delivery Network (CDN) improves availability and performance at a reduced cost and with less network traffic, improves latency (the time it takes to send and receive a data packet from the server), and provides a device-specific version of the contents.
     + CDNs are a great way to host your JavaScript and CSS files. By caching these files, you can reduce the amount of time it takes for your site to load, making it faster and more responsive. This is especially important for sites that serve large amounts of content, such as blogs or e-commerce sites. By using a CDN, you can also reduce the number of load times that occur when visitors access your site. In addition, by hosting your JavaScript and CSS files on a CDN, you can also reduce the amount of bandwidth that is consumed by your site.
-    + Example - It makes it simple to maintain responsiveness for mobile screen sizes, as well as safe storage space for important data or files.
+    + Example: It makes it simple to maintain responsiveness for mobile screen sizes, as well as safe storage space for important data or files.
     + Caching JavaScript and CSS files on a CDN is an important optimization that should be considered when building a site with a lot of JavaScript and CSS files.
 
 11. In jQuery, what is the difference between `$(this)` and `this`.
@@ -303,20 +303,20 @@
     + Example: Assume you're developing an AJAX-based application in which you need to submit form data through AJAX when a button in the form is clicked. So, if you click on a button without preventing it, the button behaves normally and the website reloads. As a result, the other event will not occur when you click the button. So, if we use prevent default there, we can skip the button's default behaviour and instead perform the AJAX event and alter the HTML DOM accordingly.
 
 14. What are the benefits of using jQuery Instead of Javascript in an Asp.net Web Application?
-    + Below are some of the benefits of using jQuery instead of javascript in ASP.net Web Application:
-      + jQuery is well-written optimized javascript code, thus it will execute quicker until we create the same standard optimized javascript code.
-      + jQuery is javascript code that is succinct, which implies that it requires the least amount of code to do the same functionality as javascript.
+    + Below are some of the benefits of using jQuery instead of JavaScript in ASP.net Web Application:
+      + jQuery is well-written optimized JavaScript code, thus it will execute quicker until we create the same standard optimized JavaScript code.
+      + jQuery is JavaScript code that is succinct, which implies that it requires the least amount of code to do the same functionality as JavaScript.
       + jQuery makes Javascript development faster since much of the functionality is already provided in the library and we only need to access it.
       + Because jQuery supports cross-browser compatibility, we save time on supporting all browsers.
 
 15. What is `event.stopPropagation()`?
-    + `event.stopPropagation()` stops the event from propagating up the DOM tree, preventing any parent handlers from being notified of the event. For example, if a link with a click method is linked inside of a DIV or FORM that also has a click method attached, the DIV or FORM click method will not fire.
+    + `event.stopPropagation()`: stops the event from propagating up the DOM tree, preventing any parent handlers from being notified of the event. For example, if a link with a click method is linked inside of a DIV or FORM that also has a click method attached, the DIV or FORM click method will not fire.
 
 16. Is it possible to pause or postpone the execution of the `document.ready()` for a period of time?
     + Yes, that is possible. With the release of jQuery 1.6, a new method called `jQuery.holdReady(hold)` was added. This function allows you to postpone the execution of the `document.ready()` event. The `document.ready()` event is triggered as soon as your DOM is ready, however, there may be occasions when you wish to load extra JavaScript or plugins that you have referenced.
 
-17. Would you still favor jQuery in a case when things can be done simply using javascript?
-    + No. If we can accomplish our goals using simple JavaScript, then we should avoid using jQuery. It is because the jQuery library is always xx kilobytes in size, thus there is no use in wasting bandwidth. And because jQuery is built on top of javascript, it has numerous functions that are more complicated than the simple job you can accomplish with javascript. jQuery will also load all dependencies. It will have some speed issues as compared to the javascript code.
+17. Would you still favor jQuery in a case when things can be done simply using JavaScript?
+    + No. If we can accomplish our goals using simple JavaScript, then we should avoid using jQuery. It is because the jQuery library is always xx kilobytes in size, thus there is no use in wasting bandwidth. And because jQuery is built on top of JavaScript, it has numerous functions that are more complicated than the simple job you can accomplish with JavaScript. jQuery will also load all dependencies. It will have some speed issues as compared to the JavaScript code.
 
 18. How to perform jQuery AJAX requests?
     + jQuery provides the `ajax()` method to perform an AJAX (asynchronous HTTP) request.
@@ -348,7 +348,7 @@
       + The given code does a query to retrieve those `<div>` element with the id value firstDiv along with all `<div>` elements that has the class value firstDiv and all elements that are children of the `<ol id="items">` element and whose name attribute ends with the string firstDiv.
 
 20. Write a jQuery code to create and delete cookies from the browser.
-    + There is no direct way to access the cookies using jquery. We can easily do this with the help of pure javascript. To work with cookies in jQuery, you must install the Dough cookie plugin or any other cookies plugins. The dough is simple to use and offers a number of useful capabilities.
+    + There is no direct way to access the cookies using jquery. We can easily do this with the help of pure JavaScript. To work with cookies in jQuery, you must install the Dough cookie plugin or any other cookies plugins. The dough is simple to use and offers a number of useful capabilities.
       + `Creating cookies`: $.dough("cookieName", "cookieValue");
       + `Reading cookies`: $.dough("cookieName");
       + `Deleting cookies`: $.dough("cookieName", "remove");
@@ -411,7 +411,7 @@
        + The code `document.getElementById( "interviewBit" );` is more efficient because its the pure JavaScript version.
        + The reason being jQuery is built on top of JavaScript and internally uses its methods to make DOM manipulation easier. This introduces some performance overhead. We need to remember that jQuery is not always better than pure JavaScript and we need to use it only if it adds advantage to our project.
 
-26. How do you disable elements in Jquery Using "attr"?
+26. How do you disable elements in jQuery Using "attr"?
     + `$('class_or_id_of_element_to_disable').attr('disabled', true);`
     + `$('class_or_id_of_element_to_disable').attr('disabled', false);`
 
