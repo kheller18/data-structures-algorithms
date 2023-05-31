@@ -245,7 +245,7 @@
     + While native apps are written to run on mobile devices, PWAs are written to run inside a web browser. Native apps are developed with the programming languages of each platform (Objective-C and Swift for iOS and Java for Android), whereas, PWA uses HTML, CSS, and JavaScript.
 
 7.  What is GraphQL?
-    + GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+    + `GraphQL`: is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
 
 8.  What is the difference between RESTful APIs and GraphQL?
     + GraphQL is an application layer server-side technology which is developed by Facebook for executing queries with existing data. REST is a software architectural style that defines a set of constraints for creating Web services.
@@ -256,7 +256,7 @@
 10. What are the difference between defer and async attributes in script tag?
     + Async allows your script to run as soon as it's loaded, without blocking other elements on the page. Defer means your script will only execute after the page has finished loading.
 
-11. What is the difference between package.json and package-lock.json?
+11. What is the difference between `package.json` and `package-lock.json`?
     + In Node.js, package.json is a versioning file used to install multiple packages in your project. As you initialize your node application, you will see three files installed in your app that is node_modules, package.json, and package.lock.json.
     + package.lock.json is created for locking the dependency with the installed version. It will install the exact latest version of that package in your application and save it in package.json. Let’s say if the current version of the package is 1.3.2 then it will save the version with (^) sign. Here carot(^) means, it will support any higher version with major version 1 for eg. 1.2.2.
     ![package.json vs package-lock.json](../images/front-end/package_package_lock.png)
@@ -307,8 +307,10 @@
 14. What is the difference between visibility:hidden and display:none?
     + `display:none` , `visibility:hidden` , and `opacity:0` can be used to hide elements visually but: `display:none` turns off the layout of the elements, so they are not rendered.` visibility:hidden` hides the elements without changing their layouts.
 
-15. What is the difference between local storage session storage and cookies?
-    + Local storage is useful for storing data that the user will need to access later, such as offline data. Session storage is a great way to improve the performance of your web applications. Cookies are a good choice for storing data that should not be persisted for a long time, such as session IDs.
+15. What is the difference between local storage, session storage and cookies?
+    + `Local storage`: is useful for storing data that the user will need to access later, such as offline data.
+    + `Session storage`: is a great way to improve the performance of your web applications.
+    + `Cookies`: are a good choice for storing data that should not be persisted for a long time, such as session IDs.
 
 16. What is the difference between responsive and adaptive web-design?
     + The responsive design will reconfigure all design elements whether it's viewed on a desktop, laptop, tablet, or mobile phone. With adaptive design, different fixed layouts are created that adapt to the users screen size.
