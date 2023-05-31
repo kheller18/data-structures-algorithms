@@ -2,22 +2,21 @@
 
 ---
 
-1. What are the different data types present in javascript?
+1. What are the different data types present in JavaScript?
    + To know the type of a JavaScript variable, we can use the typeof operator.
-   + `Primitive types`:
+   + `Primitive types`: Primitive data types can store only a single value
      + `String`: It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.
      + `Number`: It represents a number and can be written with or without decimals.
      + `BigInt`: This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.
      + `Boolean`: It represents a logical entity and can have only two values: true or false. Booleans are generally used for conditional testing.
      + `Undefined`: When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.
      + `Null`: It represents a non-existent or a invalid value.
-     + `Symbol`: It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
-   + `Non-primitive types`:
-     + Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
+     + `Symbol`: It is a new data type introduced in the ES6 version of JavaScript. It is used to store an anonymous and unique value.
+   + `Non-primitive types`: To store multiple and complex values, non-primitive data types are used.
      + `Object`: Used to store collection of data.
 
-2. Explain Hoisting in javascript.
-   + Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
+2. Explain Hoisting in JavaScript.
+   + `Hoisting`: is the default behaviour of JavaScript where all the variable and function declarations are moved on top.
    ![hoisting](../images/js/hoisting.png)
    + This means that irrespective of where the variables and functions are declared, they are moved on top of the scope. The scope can be both local and global.
      ```
@@ -33,7 +32,7 @@
      }
      ```
 
-3. Why do we use the word “debugger” in javascript?
+3. Why do we use the word “debugger” in JavaScript?
    + The debugger for the browser must be activated in order to debug the code. Built-in debuggers may be switched on and off, requiring the user to report faults. The remaining section of the code should stop execution before moving on to the next line while debugging.
 
 4. Difference between  `==` and `===` operators.
@@ -45,15 +44,14 @@
      (x === y) // Returns false since the typeof x is "number" and typeof y is "string"
      ```
 
-5. Difference between var and let keyword in javascript.
+5. Difference between `var` and `let` keyword in JavaScript.
    + From the very beginning, the 'var' keyword was used in JavaScript programming whereas the keyword 'let' was just added in 2015.
    + The keyword 'Var' has a function scope. Anywhere in the function, the variable specified using var is accessible but in ‘let’ the scope of a variable declared with the 'let' keyword is limited to the block in which it is declared. Let's start with a Block Scope.
    + In ECMAScript 2015, let and const are hoisted but not initialized. Referencing the variable in the block before the variable declaration results in a ReferenceError because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
 
-6. Explain Implicit Type Coercion in javascript.
-   + Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
-   + `String coercion`:
-     + String coercion takes place while using the ‘ + ‘ operator. When a number is added to a string, the number type is always converted to the string type.
+6. Explain Implicit Type Coercion in JavaScript.
+   + Implicit type coercion in JavaScript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
+   + `String coercion`: String coercion takes place while using the ‘ + ‘ operator. When a number is added to a string, the number type is always converted to the string type.
        ```
        var x = 3;
        var y = "3";
@@ -61,8 +59,7 @@
        ```
      + When JavaScript sees that the operands of the expression x + y are of different types ( one being a number type and the other being a string type ), it converts the number type to the string type and then performs the operation. Since after conversion, both the variables are of string type, the ‘ + ‘ operator outputs the concatenated string “33” in the first example and “24Hello” in the second example.
      + Note - Type coercion also takes place when using the ‘ - ‘ operator, but the difference while using ‘ - ‘ operator is that, a string is converted to a number and then subtraction takes place.
-   + `Boolean Coercion`:
-     + Boolean coercion takes place when using logical operators, ternary operators, if statements, and loop checks. To understand boolean coercion in if statements and operators, we need to understand truthy and falsy values.
+   + `Boolean Coercion`: Boolean coercion takes place when using logical operators, ternary operators, if statements, and loop checks. To understand boolean coercion in if statements and operators, we need to understand truthy and falsy values.
      + Truthy values are those which will be converted (coerced) to true. Falsy values are those which will be converted to false.
      + All values except false, 0, 0n, -0, “”, null, undefined, and NaN are truthy values.
        ```
@@ -73,10 +70,9 @@
 
        if(y) { console.log(y) }    // The code inside this block will run since the value of y is 23 (Truthy)
        ```
-   + `Logical operators`:
-     + Logical operators in javascript, unlike operators in other programming languages, do not return true or false. They always return one of the operands.
-     + OR ( | | ) operator - If the first value is truthy, then the first value is returned. Otherwise, always the second value gets returned.
-     + AND ( && ) operator - If both the values are truthy, always the second value is returned. If the first value is falsy then the first value is returned or if the second value is falsy then the second value is returned.
+   + `Logical operators`: Logical operators in JavaScript, unlike operators in other programming languages, do not return true or false. They always return one of the operands.
+     + `OR ( | | ) operator`: If the first value is truthy, then the first value is returned. Otherwise, always the second value gets returned.
+     + `AND ( && ) operator`: If both the values are truthy, always the second value is returned. If the first value is falsy then the first value is returned or if the second value is falsy then the second value is returned.
        ```
        var x = 220;
        var y = "Hello";
@@ -98,16 +94,15 @@
          console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
        }
        ```
-   + `Equality Coercion`
-     + Equality coercion takes place when using ‘ == ‘ operator. As we have stated before
-     + The ‘ == ‘ operator compares values and not types.
-     + While the above statement is a simple way to explain == operator, it’s not completely true. The reality is that while using the ‘==’ operator, coercion takes place. The ‘==’ operator, converts both the operands to the same type and then compares them.
+   + `Equality Coercion`: Equality coercion takes place when using `==` operator. As we have stated before
+     + The  `==` operator compares values and not types.
+     + While the above statement is a simple way to explain == operator, it’s not completely true. The reality is that while using the `==` operator, coercion takes place. The `==` operator, converts both the operands to the same type and then compares them.
        ```
        var a = 12;
        var b = "12";
        a == b // Returns true because both 'a' and 'b' are converted to the same type and then compared. Hence the operands are equal.
        ```
-       + Coercion does not take place when using the ‘===’ operator. Both operands are not converted to the same type in the case of ‘===’ operator.
+       + Coercion does not take place when using the `===` operator. Both operands are not converted to the same type in the case of `===` operator.
        ```
        var a = 226;
        var b = "226";
@@ -115,17 +110,17 @@
        a === b // Returns false because coercion does not take place and the  operands are of different types. Hence they are not equal.
        ```
 
-7. Is javascript a statically typed or a dynamically typed language?
+1. Is JavaScript a statically typed or a dynamically typed language?
    + JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to a statically typed language, where the type of a variable is checked during compile-time.
    ![static vs dynamic typing](../images/js/static_dynamic_typing.png)
-   + Since javascript is a loosely(dynamically) typed language, variables in JS are not associated with any type. A variable can hold the value of any data type.
+   + Since JavaScript is a loosely(dynamically) typed language, variables in JS are not associated with any type. A variable can hold the value of any data type.
    + For example, a variable that is assigned a number type can be converted to a string type:
      ```
      var a = 23;
      var a = "Hello World!";
      ```
 
-8. What is NaN property in JavaScript?
+2. What is NaN property in JavaScript?
    + NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.
    + typeof of NaN will return a Number.
    + To check if a value is NaN, we use the isNaN() function
@@ -140,7 +135,7 @@
      9
      ```
 
-9.  Explain passed by value and passed by reference.
+3.  Explain passed by value and passed by reference.
     + In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
     + For understanding passed by value and passed by reference, we need to understand what happens when we create a variable and assign a value to it: `var x = 2;`
       + In the above example, we created a variable x and assigned it a value of “2”. In the background, the “=” (assign operator) allocates some space in the memory, stores the value “2” and returns the location of the allocated memory space. Therefore, the variable x in the above code points to the location of the memory space instead of pointing to the value 2 directly.
@@ -184,8 +179,8 @@
         ```
         + From the above example, we can see that while passing non-primitive data types, the assign operator directly passes the address (reference).Therefore, non-primitive data types are always passed by reference.
 
-10. What is an Immediately Invoked Function in JavaScript?
-    + An Immediately Invoked Function ( known as IIFE and pronounced as IIFY) is a function that runs as soon as it is defined.
+4.  What is an Immediately Invoked Function in JavaScript?
+    + An Immediately Invoked Function (known as IIFE and pronounced as IIFY) is a function that runs as soon as it is defined.
     + Syntax of IIFE:
       ```
       (function(){
@@ -199,7 +194,7 @@
           //Do something;
         })
         ```
-        + While executing javascript code, whenever the compiler sees the word “function”, it assumes that we are declaring a function in the code. Therefore, if we do not use the first set of parentheses, the compiler throws an error because it thinks we are declaring a function, and by the syntax of declaring a function, a function should always have a name.
+        + While executing JavaScript code, whenever the compiler sees the word “function”, it assumes that we are declaring a function in the code. Therefore, if we do not use the first set of parentheses, the compiler throws an error because it thinks we are declaring a function, and by the syntax of declaring a function, a function should always have a name.
           ```
           function() {
             //Do something;
@@ -222,17 +217,17 @@
               ```
               + Therefore to invoke the function, we use the second set of parenthesis.
 
-11. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+5.  What do you mean by strict mode in JavaScript and characteristics of JavaScript strict-mode?
     + In ECMAScript 5, a new feature called JavaScript Strict Mode allows you to write a code or a function in a "strict" operational environment. In most cases, this language is 'not particularly severe' when it comes to throwing errors. In 'Strict mode,' however, all forms of errors, including silent errors, will be thrown. As a result, debugging becomes a lot simpler.  Thus programmer's chances of making an error are lowered.
-    + Characteristics of strict mode in javascript:
+    + `Characteristics of strict mode in JavaScript`:
       + Duplicate arguments are not allowed by developers.
       + In strict mode, you won't be able to use the JavaScript keyword as a parameter or function name.
       + The 'use strict' keyword is used to define strict mode at the start of the script. Strict mode is supported by all browsers.
       + Engineers will not be allowed to create global variables in 'Strict Mode.
 
-12. Explain Higher Order Functions in javascript.
+6.  Explain Higher Order Functions in JavaScript.
     + Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
-    + Higher-order functions are a result of functions being first-class citizens in javascript.
+    + Higher-order functions are a result of functions being first-class citizens in JavaScript.
       ```
       function higherOrder(fn) {
         fn();
@@ -250,7 +245,7 @@
       x()   // Returns "Do something"
       ```
 
-13. Explain `this` keyword.
+7.  Explain `this` keyword.
     + The “this” keyword refers to the object that the function is a property of.
     + The value of the “this” keyword will always depend on the object that is invoking the function.
       ```
@@ -294,13 +289,13 @@
       + The output will be an error.
       + Although in the code above, this keyword refers to the object obj2, obj2 does not have the property “address”‘, hence the getAddress function throws an error.
 
-14. What do you mean by Self Invoking Functions?
+8.  What do you mean by Self Invoking Functions?
     + Without being requested, a self-invoking expression is automatically invoked (initiated). If a function expression is followed by (), it will execute automatically. A function declaration cannot be invoked by itself.
     + Normally, we declare a function and call it, however, anonymous functions may be used to run a function automatically when it is described and will not be called again. And there is no name for these kinds of functions.
 
-15. Explain call(), apply() and, bind() methods.
-    + call():
-      + It’s a predefined method in javascript.
+9.  Explain call(), apply() and, bind() methods.
+    + `call()`:
+      + It’s a predefined method in JavaScript.
       + This method invokes a method (function) by specifying the owner object.
         ```
         function sayHello(){
@@ -334,8 +329,7 @@
         saySomething.call(person4, "awesome");
         // Returns "John is awesome"
         ```
-    + apply()
-      + The apply method is similar to the call() method. The only difference is that call() method takes arguments separately whereas, apply() method takes arguments as an array.
+    + `apply()`: The apply method is similar to the call() method. The only difference is that call() method takes arguments separately whereas, apply() method takes arguments as an array.
         ```
         function saySomething(message){
           return this.name + " is " + message;
@@ -343,8 +337,7 @@
         var person4 = {name:  "John"};
         saySomething.apply(person4, ["awesome"]);
         ```
-    + bind():
-      + This method returns a new function, where the value of “this” keyword will be bound to the owner object, which is provided as a parameter.
+    + `bind()`: This method returns a new function, where the value of “this” keyword will be bound to the owner object, which is provided as a parameter.
         ```
         var bikeDetails = {
             displayDetails: function(registrationNumber,brandName){
@@ -362,13 +355,13 @@
         //Returns Vivek, bike details: TS0122, Bullet
         ```
 
-16. What is the difference between exec() and test() methods in javascript?
-    + test () and exec () are RegExp expression methods used in javascript.
-    + We'll use exec () to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
-    + We will use a test () to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'.
+1.  What is the difference between `exec()` and `test()` methods in JavaScript?
+    + `test()` and `exec()` are RegExp expression methods used in JavaScript.
+    + We'll use `exec()` to search a string for a specific pattern, and if it finds it, it'll return the pattern directly; else, it'll return an 'empty' result.
+    + We will use a `test()` to find a string for a specific pattern. It will return the Boolean value 'true' on finding the given text otherwise, it will return 'false'.
 
-17. What is currying in JavaScript?
-    + Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+2.  What is currying in JavaScript?
+    + `Currying`: is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
       ```
       function multiply(a,b){
         return a*b;
@@ -390,19 +383,19 @@
       ```
       + As one can see in the code above, we have transformed the function multiply(a,b) to a function curriedMultiply , which takes in one parameter at a time.
 
-18. What are some advantages of using External JavaScript?
+3.  What are some advantages of using External JavaScript?
     + External JavaScript is the JavaScript Code (script) written in a separate file with the extension.js, and then we link that file inside the `<head>` or `<body>` element of the HTML file where the code is to be placed.
-    + Some advantages of external javascript are
-      + It allows web designers and developers to collaborate on HTML and javascript files.
+    + Some advantages of external JavaScript are
+      + It allows web designers and developers to collaborate on HTML and JavaScript files.
       + We can reuse the code.
-      + Code readability is simple in external javascript.
+      + Code readability is simple in external JavaScript.
 
 
-19. Explain Scope and Scope Chain in javascript.
+19. Explain Scope and Scope Chain in JavaScript.
     + Scope in JS determines the accessibility of variables and functions at various parts of one’s code.
     + In general terms, the scope will let us know at a given part of code, what are variables and functions we can or cannot access.
     + There are three types of scopes in JS:
-      + Global Scope: Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can be accessed from anywhere inside the code.
+      + `Global Scope`: Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can be accessed from anywhere inside the code.
         ```
         var globalVariable = "Hello world";
 
@@ -414,7 +407,7 @@
         }
         sendMessage2();  // Returns “Hello world”
         ```
-      + Function Scope: Any variables or functions declared inside a function have local/function scope, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
+      + `Function Scope`: Any variables or functions declared inside a function have local/function scope, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
         ```
         function awesomeFunction(){
           var a = 2;
@@ -427,7 +420,7 @@
 
         multiplyBy2(); // Throws reference error since multiplyBy2 is written in local scope
         ```
-      + Block Scope: Block scope is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block { }, can be accessed only inside that block and cannot be accessed outside of it.
+      + `Block Scope`: Block scope is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us that any variable declared inside a block { }, can be accessed only inside that block and cannot be accessed outside of it.
         ```
         {
           let x = 45;
@@ -441,7 +434,7 @@
 
         console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
         ```
-    + Scope Chain: JavaScript engine also uses Scope to find variables. Let’s understand that using an example:
+    + `Scope Chain`: JavaScript engine also uses Scope to find variables. Let’s understand that using an example:
       ```
       var y = 24;
 
@@ -460,10 +453,10 @@
       }
       favFunction();
       ```
-      + As you can see in the code above, if the javascript engine does not find the variable in local scope, it tries to check for the variable in the outer scope. If the variable does not exist in the outer scope, it tries to find the variable in the global scope. If the variable is not found in the global space as well, a reference error is thrown.
+      + As you can see in the code above, if the JavaScript engine does not find the variable in local scope, it tries to check for the variable in the outer scope. If the variable does not exist in the outer scope, it tries to find the variable in the global scope. If the variable is not found in the global space as well, a reference error is thrown.
 
 20. Explain Closures in JavaScript.
-    + Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
+    + `Closures`: are an ability of a function to remember the variables and functions that are declared in its outer scope.
       ```
       function randomFunc(){
         var obj1 = {name:"Vivian", age:45};
@@ -487,14 +480,14 @@
                   + Therefore randomFunc(), instead of destroying the value of obj1 after execution, saves the value in the memory for further reference. This is the reason why the returning function is able to use the variable declared in the outer scope even after the function is already executed.
                   + This ability of a function to store a variable for further reference even after it is executed is called Closure.
 
-21. Mention some advantages of javascript.
+21. Mention some advantages of JavaScript.
     + Javascript is executed on the client-side as well as server-side also. There are a variety of Frontend Frameworks that you may study and utilize. However, if you want to use JavaScript on the backend, you'll need to learn NodeJS. It is currently the only JavaScript framework that may be used on the backend.
     + Javascript is a simple language to learn.
     + Web pages now have more functionality because of Javascript.
     + To the end-user, Javascript is quite quick.
 
 22. What are object prototypes?
-    + All javascript objects inherit properties from a prototype. For example,
+    + All JavaScript objects inherit properties from a prototype. For example,
       + Date objects inherit properties from the Date prototype.
       + Math objects inherit properties from the Math prototype.
       + Array objects inherit properties from the Array prototype.
@@ -507,13 +500,13 @@
 
         console.log(arr); // Outputs [2]
         ```
-        + In the code above, as one can see, we have not defined any property or method called push on the array “arr” but the javascript engine does not throw an error.
+        + In the code above, as one can see, we have not defined any property or method called push on the array “arr” but the JavaScript engine does not throw an error.
         + The reason is the use of prototypes. As we discussed before, Array objects inherit properties from the Array prototype.
-        + The javascript engine sees that the method push does not exist on the current array object and therefore, looks for the method push inside the Array prototype and it finds the method.
-        + Whenever the property or method is not found on the current object, the javascript engine will always try to look in its prototype and if it still does not exist, it looks inside the prototype's prototype and so on.
+        + The JavaScript engine sees that the method push does not exist on the current array object and therefore, looks for the method push inside the Array prototype and it finds the method.
+        + Whenever the property or method is not found on the current object, the JavaScript engine will always try to look in its prototype and if it still does not exist, it looks inside the prototype's prototype and so on.
 
 23. What are callbacks?
-    + A callback is a function that will be executed after another function gets executed. In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function, and can be used as a property of an object.
+    + A callback is a function that will be executed after another function gets executed. In JavaScript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function, and can be used as a property of an object.
     + Functions that are used as an argument to another function are called callback functions.
       ```
       function divideByHalf(sum){
@@ -538,12 +531,12 @@
       + These callback functions will be executed only after the function operationOnSum is executed.
       + Therefore, a callback is a function that will be executed after another function gets executed.
 
-24. What are the types of errors in javascript?
+24. What are the types of errors in JavaScript?
     + `Syntax error`: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through. Error messages are usually supplied as well.
     + `Logical error`: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect. The application executes without problems in this case. However, the output findings are inaccurate. These are sometimes more difficult to correct than syntax issues since these applications do not display error signals for logic faults.
 
 25. What is memoization?
-    + Memoization is a form of caching where the return value of a function is cached based on its parameters. If the parameter of that function is not changed, the cached version of the function is returned.
+    + `Memoization`: is a form of caching where the return value of a function is cached based on its parameters. If the parameter of that function is not changed, the cached version of the function is returned.
     + Note: Memoization is used for expensive function calls but in the following example, we are considering a simple function for understanding the concept of memoization better.
       ```
       function addTo256(num){
@@ -582,7 +575,7 @@
         + Note- Although using memoization saves time, it results in larger consumption of memory since we are storing all the computed results.
 
 26. What is recursion in a programming language?
-    + Recursion is a technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.
+    + `Recursion`: is a technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.
       ```
       function add(number) {
         if (number <= 0) {
@@ -609,8 +602,8 @@
       computeSum([7, 8, 9, 99]); // Returns 123
       ```
 
-27. What is the use of a constructor function in javascript?
-    + Constructor functions are used to create objects in javascript.
+27. What is the use of a constructor function in JavaScript?
+    + Constructor functions are used to create objects in JavaScript.
     + If we want to create multiple objects having similar properties and methods, constructor functions are used.
     + Note- The name of a constructor function should always be written in Pascal Notation: every word should start with a capital letter.
       ```
@@ -630,17 +623,17 @@
         + `var person3 = new Person("Lilly", 17, "female");`
           + The above line of code will create a new object of the type Person. Constructor functions allow us to group similar objects.
 
-28. What is DOM?
-    + DOM stands for Document Object Model.  DOM is a programming interface for HTML and XML documents.
+28. What is the Document Object Model (DOM)?
+    + `Document Object Model (DOM)`: DOM is a programming interface for HTML and XML documents.
     + When the browser tries to render an HTML document, it creates an object based on the HTML document called DOM. Using this DOM, we can manipulate or change various elements inside the HTML document.
     + Example of how HTML code gets converted to DOM:
     ![dom](../images/js/dom.png)
 
 29. Which method is used to retrieve a character from a certain index?
-    + The charAt() function of the JavaScript string finds a char element at the supplied index. The index number begins at 0 and continues up to n-1, Here n is the string length. The index value must be positive, higher than, or the same as the string length.
+    + The `charAt()` function of the JavaScript string finds a char element at the supplied index. The index number begins at 0 and continues up to n-1, Here n is the string length. The index value must be positive, higher than, or the same as the string length.
 
-30. What do you mean by BOM?
-    + Browser Object Model is known as BOM. It allows users to interact with the browser. A browser's initial object is a window. As a result, you may call all of the window's functions directly or by referencing the window. The document, history, screen, navigator, location, and other attributes are available in the window object.
+30. What do you mean by Browser Object Model (BOM)?
+    +` Browser Object Model (BOM)`: allows users to interact with the browser. A browser's initial object is a window. As a result, you may call all of the window's functions directly or by referencing the window. The document, history, screen, navigator, location, and other attributes are available in the window object.
 
 31. What is the distinction between client-side and server-side JavaScript?
     + Client-side JavaScript is made up of two parts, a fundamental language and predefined objects for performing JavaScript in a browser. JavaScript for the client is automatically included in the HTML pages. At runtime, the browser understands this script.
@@ -648,7 +641,7 @@
     + Client-side JavaScript is similar to server-side JavaScript. It includes JavaScript that will execute on a server. Only after processing is the server-side JavaScript deployed.
 
 32. What are arrow functions?
-    + Arrow functions were introduced in the ES6 version of javascript. They provide us with a new and shorter syntax for declaring functions. Arrow functions can only be used as a function expression.
+    + Arrow functions were introduced in the ES6 version of JavaScript. They provide us with a new and shorter syntax for declaring functions. Arrow functions can only be used as a function expression.
       ```
       // Traditional Function Expression
       var add = function(a,b){
@@ -692,29 +685,27 @@
     + The Prototype pattern is hardly used in traditional languages, however, it is used in the development of new objects and templates in JavaScript, which is a prototypal language.
 
 34. Differences between declaring variables using var, let and const.
-    + Before the ES6 version of javascript, only the keyword var was used to declare variables. With the ES6 Version, keywords let and const were introduced to declare variables.
+    + Before the ES6 version of JavaScript, only the keyword var was used to declare variables. With the ES6 Version, keywords let and const were introduced to declare variables.
     ![var let const](../images/js/const_let_var.png)
       ```
       var variable1 = 23;
-
       let variable2 = 89;
 
       function catchValues(){
         console.log(variable1);
         console.log(variable2);
 
-      // Both the variables can be accessed anywhere since they are declared in the global scope
+        // Both the variables can be accessed anywhere since they are declared in the global scope
       }
 
       window.variable1; // Returns the value 23
-
       window.variable2; // Returns undefined
       ```
       + The variables declared with the let keyword in the global scope behave just like the variable declared with the var keyword in the global scope.
       + Variables declared in the global scope with var and let keywords can be accessed from anywhere in the code.
       + But, there is one difference! Variables that are declared with the var keyword in the global scope are added to the window/global object. Therefore, they can be accessed using window.variableName.
       + Whereas, the variables declared with the let keyword are not added to the global object, therefore, trying to access such variables using window.variableName results in an error.
-    + var vs let in functional scope
+    + `var vs let in functional scope`
       ```
       function varVsLetFunction(){
         let awesomeCar1 = "Audi";
@@ -750,26 +741,22 @@
 
         console.log(j) // Outputs 2
         ```
-        + In javascript, a block means the code written inside the curly braces {}.
+        + In JavaScript, a block means the code written inside the curly braces {}.
         + Variables declared with var keyword do not have block scope. It means a variable declared in block scope {} with the var keyword is the same as declaring the variable in the global scope.
         + Variables declared with let keyword inside the block scope cannot be accessed from outside of the block.
-    + Const keyword
+    + `Const keyword`
       + Variables with the const keyword behave exactly like a variable declared with the let keyword with only one difference, any variable declared with the const keyword cannot be reassigned.
         ```
         const x = {name:"Vivek"};
-
         x = {address: "India"}; // Throws an error
-
         x.name = "Nikhil"; // No error is thrown
-
         const y = 23;
-
         y = 44; // Throws an error
         ```
         + In the code above, although we can change the value of a property inside the variable declared with const keyword, we cannot completely reassign the variable itself.
 
 35. What is the rest parameter and spread operator?
-    + Both rest parameter and spread operator were introduced in the ES6 version of javascript.
+    + Both rest parameter and spread operator were introduced in the ES6 version of JavaScript.
       + `Rest parameter ( … )`:
         + It provides an improved way of handling the parameters of a function.
         + Using the rest parameter syntax, we can create functions that can take a variable number of arguments.
@@ -847,10 +834,10 @@
       + using Function.
       + Object Constructor.
 
-37. What is the use of promises in javascript?
-    + Promises are used to handle asynchronous operations in javascript.
+37. What is the use of promises in JavaScript?
+    + `Promises`: are used to handle asynchronous operations in JavaScript.
     + Before promises, callbacks were used to handle asynchronous operations. But due to the limited functionality of callbacks, using multiple callbacks to handle asynchronous code can lead to unmanageable code.
-    + Promise object has four states -
+    + Promise object has four states:
       + `Pending`: Initial state of promise. This state represents that the promise has neither been fulfilled nor been rejected, it is in the pending state.
       + `Fulfilled`: This state represents that the promise has been fulfilled, meaning the async operation is completed.
       + `Rejected`: This state represents that the promise has been rejected for some reason, meaning the async operation has failed.
@@ -895,8 +882,8 @@
             // In the code above, the promise is rejected hence the catch() method gets executed
             ```
 
-38. What are classes in javascript?
-    + Introduced in the ES6 version, classes are nothing but syntactic sugars for constructor functions. They provide a new way of declaring constructor functions in javascript.  Below are the examples of how classes are declared and used:
+38. What are classes in JavaScript?
+    + Introduced in the ES6 version, classes are nothing but syntactic sugars for constructor functions. They provide a new way of declaring constructor functions in JavaScript.  Below are the examples of how classes are declared and used:
       ```
       // Before ES6 version, using constructor functions
       function Student(name,rollNumber,grade,section){
@@ -937,7 +924,7 @@
     + Key points to remember about classes:
       + Unlike functions, classes are not hoisted. A class cannot be used before it is declared.
       + A class can inherit properties and methods from other classes by using the extend keyword.
-      + All the syntaxes inside the class must follow the strict mode(‘use strict’) of javascript. An error will be thrown if the strict mode rules are not followed.
+      + All the syntaxes inside the class must follow the strict mode(‘use strict’) of JavaScript. An error will be thrown if the strict mode rules are not followed.
 
 39. What are generator functions?
     + Introduced in the ES6 version, generator functions are a special class of functions. They can be stopped midway and then continue from where they had stopped
@@ -983,8 +970,8 @@
       ```
       + As you can see in the code above, the last line returns done:true, since the code reaches the return statement.
 
-40. Explain WeakSet in javascript.
-    + In javascript, a Set is a collection of unique and ordered elements. Just like Set, WeakSet is also a collection of unique and ordered elements with some key differences:
+40. Explain WeakSet in JavaScript.
+    + In JavaScript, a Set is a collection of unique and ordered elements. Just like Set, WeakSet is also a collection of unique and ordered elements with some key differences:
     + Weakset contains only objects and no other type.
     + An object inside the weakset is referenced weakly. This means, that if the object inside the weakset does not have a reference, it will be garbage collected.
     + Unlike Set, WeakSet only has three methods, add() , delete() and has().
@@ -1003,8 +990,8 @@
     + A callback function is a method that is sent as an input to another function (now let us name this other function "thisFunction"), and it is performed inside the thisFunction after the function has completed execution.
     + JavaScript is a scripting language that is based on events. Instead of waiting for a reply before continuing, JavaScript will continue to run while monitoring for additional events. Callbacks are a technique of ensuring that a particular code does not run until another code has completed its execution.
 
-42. Explain WeakMap in javascript.
-    + In javascript, Map is used to store key-value pairs. The key-value pairs can be of both primitive and non-primitive types. WeakMap is similar to Map with key differences:
+42. Explain WeakMap in JavaScript.
+    + In JavaScript, Map is used to store key-value pairs. The key-value pairs can be of both primitive and non-primitive types. WeakMap is similar to Map with key differences:
       + The keys and values in weakmap should always be an object.
       + If there are no references to the object, the object will be garbage collected.
         ```
@@ -1021,7 +1008,7 @@
 
 43. What is Object Destructuring?
     + Object destructuring is a new way to extract elements from an object or an array.
-    + Object destructuring: Before ES6 version:
+    + `Object destructuring`: Before ES6 version:
       ```
       const classDetails = {
         strength: 78,
@@ -1053,7 +1040,7 @@
           // The above line of code can be written as:
           const {strength} = classDetails;
           ```
-    + Array destructuring: Before ES6 version:
+    + `Array destructuring`: Before ES6 version:
       ```
       const arr = [1, 2, 3, 4];
       const first = arr[0];
@@ -1124,12 +1111,12 @@
     var scope = "global scope";
     function check()
     {
-        var scope = "local scope";
-        function f()
-        {
-          return scope;
-        }
-        return f;
+      var scope = "local scope";
+      function f()
+      {
+        return scope;
+      }
+      return f;
     }
     ```
     + Every executing function, code block, and script as a whole in JavaScript has a related object known as the Lexical Environment. The preceding code line returns the value in scope.
@@ -1167,16 +1154,16 @@
       console.log(4);
     })();
     ```
-    + Code 1 - Outputs 2 and 12. Since, even though let variables are not hoisted, due to the async nature of javascript, the complete function code runs before the setTimeout function. Therefore, it has access to both x and y.
-    + Code 2 - Outputs 3, three times since variable declared with var keyword does not have block scope. Also, inside the for loop, the variable i is incremented first and then checked.
-    + Code 3 - Output in the following order:
+    + `Code 1`: Outputs 2 and 12. Since, even though let variables are not hoisted, due to the async nature of JavaScript, the complete function code runs before the setTimeout function. Therefore, it has access to both x and y.
+    + `Code 2`: Outputs 3, three times since variable declared with var keyword does not have block scope. Also, inside the for loop, the variable i is incremented first and then checked.
+    + `Code 3`: Output in the following order:
       ```
       2
       4
       3
       1 // After two seconds
       ```
-      + Even though the second timeout function has a waiting time of zero seconds, the javascript engine always evaluates the setTimeout function using the Web API, and therefore, the complete function executes before the setTimeout function can execute.
+      + Even though the second timeout function has a waiting time of zero seconds, the JavaScript engine always evaluates the setTimeout function using the Web API, and therefore, the complete function executes before the setTimeout function can execute.
 
 54.  Guess the outputs of the following code:
     ```
@@ -1205,7 +1192,7 @@
     console.log((a == b));
     console.log((a === b));
     ```
-    + Code 1 - Output will be `{name: “Akki”}`. Adding objects as properties of another object should be done carefully. Writing `x[y] = {name:”Vivek”}`, is same as writing `x[‘object Object’] = {name:”Vivek”}`. While setting a property of an object, javascript coerces the parameter into a string.Therefore, since y is an object, it will be converted to ‘object Object’. Both x[y] and x[z] are referencing the same property.
+    + Code 1 - Output will be `{name: “Akki”}`. Adding objects as properties of another object should be done carefully. Writing `x[y] = {name:”Vivek”}`, is same as writing `x[‘object Object’] = {name:”Vivek”}`. While setting a property of an object, JavaScript coerces the parameter into a string.Therefore, since y is an object, it will be converted to ‘object Object’. Both x[y] and x[z] are referencing the same property.
     + Code 2 - Outputs in the following order:
       ```
       11
@@ -1331,7 +1318,7 @@
 
       if(arr[middleIndex] === value) return middleIndex;
 
-      elsif(arr[middleIndex > value]){
+      elseif(arr[middleIndex > value]){
         return binarySearch(arr,value,startPos,middleIndex-1);
       }
       else{
@@ -1365,7 +1352,7 @@
     <html>
     <head>
     <title>inserting new components dynamically</title>
-    <script type="text/javascript">
+    <script type="text/JavaScript">
         function addNode () { var newP = document. createElement("p");
         var textNode = document.createTextNode(" This is other node");
         newP.appendChild(textNode); document.getElementById("parent1").appendChild(newP); }
@@ -1499,7 +1486,7 @@
           //body of the function
       }
       ```
-    + Few things to note:
+    + `Few things to note`:
       + It reduces the size of the code.
       + For a single-line function, the return statement is optional.
       + Bind the context lexically.
@@ -1507,9 +1494,9 @@
       + Doesn’t work with new
 
 3.  When should one not use arrow functions?
-    + Function Hoisting, Named Functions:
+    + `Function Hoisting, Named Functions`:
       + As arrow functions are anonymous, we cannot use them when we want function hoisting or when we want to use named functions.
-    + Object methods:
+    + `Object methods`:
       ```
       var a = {
         b: 7,
@@ -1519,7 +1506,7 @@
       }
       ```
       + The value of b does not drop when you call a.func. It's because this isn't bound to anything and will inherit the value from its parent scope.
-    + Callback functions with dynamic context:
+    + `Callback functions with dynamic context`:
       ```
       var btn = document.getElementById('clickMe');
       btn.addEventListener('click', () => {
@@ -1527,7 +1514,7 @@
       });
       ```
       + We'd get a TypeError if we clicked the button. This is due to the fact that this is not bound to the button, but rather to its parent scope.
-    + this/arguments:
+    + `this/arguments`:
       + Since arrow functions don’t have this/arguments of their own and they depend on their outer context, we cannot use them in cases where we need to use this/arguments in a function.
 
 4.  What is the “spread” operator in ES6?
@@ -1761,7 +1748,7 @@
       + In truth, Symbols are only a little different means of attaching properties to an object; the well-known Symbols could easily be provided as standard methods, just like Object.prototype.has Own Property which appears in anything that inherits from Object.
 
 20. What is Babel?
-    + Babel is an open-source JavaScript transpiler that converts ECMAScript 2015+ (ES6+) code into a backwards compatible version of JavaScript that can be run by previous JavaScript engines. Babel is a popular tool for exploiting the JavaScript programming language's latest capabilities.
+    + `Babel`: is an open-source JavaScript transpiler that converts ECMAScript 2015+ (ES6+) code into a backwards compatible version of JavaScript that can be run by previous JavaScript engines. Babel is a popular tool for exploiting the JavaScript programming language's latest capabilities.
     + Babel plugins are used to convert syntax that isn't widely supported into a version that is backwards compatible. Arrow functions, for example, which are defined in ES6, are translated to ordinary function declarations. It's also possible to translate non-standard JavaScript syntax, such as JSX. Babel may automatically inject core-js polyfills for support capabilities that aren't available in JavaScript environments. Static methods like Array.from and built-ins like Promise, for example, are only accessible in ES6+, but they can be utilised in previous contexts by using core-js.
 
 21. Name some array methods that were introduced in ES6.
@@ -1771,7 +1758,7 @@
 ![string functions](../images/js/string_functions.png)
 
 1.  Compare the ES5 and ES6 codes for object initialization and parsing returned objects.
-    + Object initialization: Variables with the same name are frequently used to create object properties. Consider the following scenario:
+    + `Object initialization`: Variables with the same name are frequently used to create object properties. Consider the following scenario:
       ```
       // ES5 code
       var
@@ -1797,7 +1784,7 @@
 
         // ob.x = 1, ob.y = 2, ob.z = 3
         ```
-    + Parsing returned objects: Only one value can be returned by a function, but that value could be an object with hundreds of properties and/or methods. In ES5, you must first get the returned object and then extract values from it. Consider the following scenario:
+    + `Parsing returned objects`: Only one value can be returned by a function, but that value could be an object with hundreds of properties and/or methods. In ES5, you must first get the returned object and then extract values from it. Consider the following scenario:
       ```
       // ES5 code
       var
@@ -1878,7 +1865,7 @@
       ```
 
 8.   What is the difference between Set and WeakSet in ES6?
-     + Set: By using the Set() class, users can define an array-like heterogeneous iterable object, which will consist of distinct values. The elements should not just be distinct by values but also by types. i.e. "2" and 2 will be considered as different.
+     + `Set()`: By using the Set() class, users can define an array-like heterogeneous iterable object, which will consist of distinct values. The elements should not just be distinct by values but also by types. i.e. "2" and 2 will be considered as different.
        ```
        var set1= new Set([0, 1, 2]);
 
@@ -1895,7 +1882,7 @@
        set1.size; // 4
        set1.clear(); // Set Cleared
        ```
-     + WeakSet(): A WeakSet() is a collection that is similar to a Set because it retains unique values; but it can only hold Objects. If an object in your WeakSet has no other reference variables left, it will be removed automatically.
+     + `WeakSet()`: A WeakSet() is a collection that is similar to a Set because it retains unique values; but it can only hold Objects. If an object in your WeakSet has no other reference variables left, it will be removed automatically.
        ```
        var weakSet1 = new WeakSet([{x:1}]);
        var ob1 = {o:1};
@@ -1916,9 +1903,9 @@
      + The proxy objects are used to customize behaviour for basic operations like property lookup, assignment, enumeration, function invocation, etc.
      + For basic actions, the Proxy object is used to create custom behaviour (e.g. property lookup, assignment, enumeration, function invocation, etc).
      + We need to define three crucial terms:
-       + handler —  a placeholder object that holds the trap(s)
-       + traps — the method(s) that let you access a property.
-       + target — the virtualized object by the proxy
+       + `handler`:  a placeholder object that holds the trap(s)
+       + `traps`: the method(s) that let you access a property.
+       + `target`: the virtualized object by the proxy
        ```
        const handle = {
          get: function(ob, prp) {
@@ -1944,7 +1931,7 @@
        + extensions for property lookup
        + property accesses are being tracked
        + references that can be revoked
-       + implementation of the DOM in javascript
+       + implementation of the DOM in JavaScript
 
 10.  What is the difference between const and Object.freeze()?
      + Const is a property that applies to bindings ("variables"). It creates an immutable binding, which means you can't change its value.
@@ -1995,7 +1982,7 @@
 
 
 100. What is Webpack?
-     + Webpack is a tool for bundling javascript files for usage in browsers. Webpack analyses the application and generates the bundles by creating a dependency graph that maps each module of the project required. It enables you to execute the environment that was hosted by Babel. A web pack has the advantage of combining numerous modules and packs into a single JavaScript file. It includes a dev server, which aids with code updates and asset management.
+     + `Webpack`: is a tool for bundling JavaScript files for usage in browsers. Webpack analyses the application and generates the bundles by creating a dependency graph that maps each module of the project required. It enables you to execute the environment that was hosted by Babel. A web pack has the advantage of combining numerous modules and packs into a single JavaScript file. It includes a dev server, which aids with code updates and asset management.
        + folder_name/index.js
          ```
          import bar from './func.js';
