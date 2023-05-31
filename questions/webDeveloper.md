@@ -15,7 +15,7 @@
    + Monitor web traffic.
 
 2. List the advantages of HTTP/2 over HTTP 1.1.
-   + Hypertext Transfer Protocol (HTTP) is a set of standard protocols allowing internet users to exchange website knowledge on WWW (World Wide Web). HTTP has gone through four iterations since it was introduced in 1991 i.e., HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2.0. In 2015, HTTP/2 was released as a major revision to HTTP/1.1. HTTP/2.0 has the following advantages over HTTP/1.1:
+   + `Hypertext Transfer Protocol (HTTP)`: is a set of standard protocols allowing internet users to exchange website knowledge on WWW (World Wide Web). HTTP has gone through four iterations since it was introduced in 1991 i.e., HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2.0. In 2015, HTTP/2 was released as a major revision to HTTP/1.1. HTTP/2.0 has the following advantages over HTTP/1.1:
      ![http](../images/web-developer/http_comparison.png)
      + `Increased performance`: It was designed specifically to speed up page loading and reduce round-trip time (RTT) for resource-intensive websites.
      + `Handle multiple resources`: With HTTP 1.1, the web pages were manageable simply by using HTML markups and images. But with HTTP 2.0, there are now multiple resources available for web pages, including images, fonts, scripts, and more. HTTP 1.1 was not designed to handle such a large amount of resources today.
@@ -25,19 +25,19 @@
      + `Binary protocols`: HTTP/2 use binary protocols, not textual. HTML/2's binary protocols consume less bandwidth, can be parsed more efficiently, and are less error-prone compared to HTTP/1.1's textual protocols.
 
 3. Explain CORS (Cross-Origin Resource Sharing) and Write its importance.
-   + CORS stands for Cross-origin resource sharing. It is basically defined as a browser mechanism that enables web pages from one domain to have controlled access to resources that are located at different domains (cross-domain request). In other words, it allows scripts running on a browser client to interact with and access resources from other origins. It provides and extends flexibility to the SOP (Same-Origin Policy). A same-origin policy restricts a website's ability to access resources outside its source domain. For example, if a JavaScript app wanted to call an API (Application Programming Interface) running on another domain, it would be blocked and prevented from doing so because of the SOP. Due to restrictions caused by the same-origin policy, CORS was introduced.
+   + `Cross-Origin Resource Sharing (CORS)`: It is basically defined as a browser mechanism that enables web pages from one domain to have controlled access to resources that are located at different domains (cross-domain request). In other words, it allows scripts running on a browser client to interact with and access resources from other origins. It provides and extends flexibility to the SOP (Same-Origin Policy). A same-origin policy restricts a website's ability to access resources outside its source domain. For example, if a JavaScript app wanted to call an API (Application Programming Interface) running on another domain, it would be blocked and prevented from doing so because of the SOP. Due to restrictions caused by the same-origin policy, CORS was introduced.
      ![CORS](../images/web-developer/cors.png)
      + When a website's CORS policy is set up poorly, it also poses the risk of cross-domain attacks. As such, it cannot prevent cross-origin attacks such as  CSRF (Cross-Site Request Forgery).
 
 4. What do you mean by ETag (Entity Tag) and how does it work?
-   + The ETag (entity tag) is a part of the HTTP protocol. This is one of several mechanisms that HTTP provides to validate Web caches, which allows conditional requests to be made from a browser to resources. Moreover, Etags make sure that simultaneous updates of the same resource don't overwrite each other (mid-air collisions).
+   + `ETag (entity tag)`: is a part of the HTTP protocol. This is one of several mechanisms that HTTP provides to validate Web caches, which allows conditional requests to be made from a browser to resources. Moreover, Etags make sure that simultaneous updates of the same resource don't overwrite each other (mid-air collisions).
    + ETags are opaque identifiers assigned by a server to a specific version of a resource found at a specific URL. Every time the resource representation at that URL changes, an entirely new ETag is assigned. As such, ETags can be compared in the same way as fingerprints and determine if two representations of a resource are identical.
    + Syntax:
      + `ETag: W/"<etag_value>"`
      + `ETag: "<etag_value>"`
 
 5. Explain Webpack.
-   + Webpack is a tool that bundles JavaScript modules, also known as static module bundlers. Modules are reusable chunks of code that are built from the JavaScript, node_modules, images, and CSS styles of your application, and packaged so that they can be easily added to your website. If you have a large number of files, Webpack generates a single (or a few) file that runs your application.
+   + `Webpack`: is a tool that bundles JavaScript modules, also known as static module bundlers. Modules are reusable chunks of code that are built from the JavaScript, node_modules, images, and CSS styles of your application, and packaged so that they can be easily added to your website. If you have a large number of files, Webpack generates a single (or a few) file that runs your application.
      ![webpack](../images/web-developer/webpack.png)
    + When Webpack processes your application or package, it generates a dependency graph, which consists of various modules that your webapp needs in order to function as expected. Based on this graph, it then creates a new package that contains only the bare minimum files required, often only one or a few bundle.js files which can be easily plugged into the HTML file and used in the application.
 
@@ -81,12 +81,12 @@
      + `Session Storage`: This storage uses the Windows.sessionStorage object that stores data for one or single session only. As soon as the user closes his browser, data is lost or deleted from the browser, and the session would be lost. 
 
 9.  Explain DOM (Document Object Model)?
-    + DOM stands for Document Object Model. It is basically a cross-platform, language-independent API (Application Programming Interface) for XML (Extensible Markup Language) and HTML documents. To put it simply, DOM describes the logical structure of documents and how one can access and manipulate them. For example, here is an HTML document that illustrates the DOM hierarchy.
+    + `Document Object Model (DOM)`: a cross-platform, language-independent API (Application Programming Interface) for XML (Extensible Markup Language) and HTML documents. To put it simply, DOM describes the logical structure of documents and how one can access and manipulate them. For example, here is an HTML document that illustrates the DOM hierarchy.
       ![DOM](../images/web-developer/dom.png)
     + These documents are usually treated as a tree structure in which every node is an object that represents a specific part of the document. In a tree, each branch ends with a node, and each node contains objects. The DOM represents the webpage in a hierarchical structure in order for programmers and users to navigate it more easily.
 
 10. What do you know about pair programming?
-    + Pair programming is sometimes referred to as pairing. In pair programming, two programmers work together at one (single) workstation. Those who write code are known as drivers, and those who monitor and navigate each line of code are known as navigators. Both of them may switch roles frequently.
+    + `Pair programming`: is sometimes referred to as pairing. In pair programming, two programmers work together at one (single) workstation. Those who write code are known as drivers, and those who monitor and navigate each line of code are known as navigators. Both of them may switch roles frequently.
 
 11. While building a web application, how do you consider SEO, maintainability, UX, performance, and security?
     + Security should be a top priority in any organization that handles vital data. On the other hand, SEO and UX should be prioritized for small and medium-sized online businesses.  You will need to pay more attention to performance and SEO if you write an online publication.
@@ -127,28 +127,25 @@
       + `<link rel="stylesheet" href="styles.css">`
 
 17. How do you optimize the loading time of your web application as a Web Developer?
-    + Image compression and optimization: Using images on your website will improve the appearance and quality of your pages. However, larger images will also slow down the loading process. Compressing and optimizing images is one of the easiest ways to improve the speed of your site. The smaller your images' file sizes, the less weight they have, which, in turn, helps your pages load faster.
-    + Put JavaScript and CSS in external files: When JavaScript and CSS are embedded in HTML documents, they are downloaded each time the HTML document is loaded. As a result, this does not utilize browser caching, increasing the size of HTML documents. You should always place CSS and JavaScript in external files; this is best practice and makes maintaining your site easier.
-    + Reduce the number of redirects: A website with too many redirects will take a long time to load. HTTP request and response times are prolonged every time a page redirects. If you eliminate unnecessary redirects on your site, your page load time will be significantly reduced.
-    + CSS and JavaScript files should be loaded asynchronously: You have CSS and JavaScript files on your website that can be loaded synchronously or asynchronously. In synchronous loading, each file is loaded one at a time, in the order in which it appears on your web page. Asynchronous loading, on the other hand, allows multiple files to be loaded simultaneously, which can speed up the performance of a website. '
-    + Minify HTML, CSS, and JavaScript: Your pages will load faster if you optimize how your files to load. In a similar vein, you can minify your HTML, CSS, and JavaScript code. You can reduce the size of files by eliminating unnecessary spaces, characters, comments, and other components. As a result, web pages will load faster with cleaner code.
+    + `Image compression and optimization`: Using images on your website will improve the appearance and quality of your pages. However, larger images will also slow down the loading process. Compressing and optimizing images is one of the easiest ways to improve the speed of your site. The smaller your images' file sizes, the less weight they have, which, in turn, helps your pages load faster.
+    + `Put JavaScript and CSS in external files`: When JavaScript and CSS are embedded in HTML documents, they are downloaded each time the HTML document is loaded. As a result, this does not utilize browser caching, increasing the size of HTML documents. You should always place CSS and JavaScript in external files; this is best practice and makes maintaining your site easier.
+    + `Reduce the number of redirects`: A website with too many redirects will take a long time to load. HTTP request and response times are prolonged every time a page redirects. If you eliminate unnecessary redirects on your site, your page load time will be significantly reduced.
+    + `CSS and JavaScript files should be loaded asynchronously`: You have CSS and JavaScript files on your website that can be loaded synchronously or asynchronously. In synchronous loading, each file is loaded one at a time, in the order in which it appears on your web page. Asynchronous loading, on the other hand, allows multiple files to be loaded simultaneously, which can speed up the performance of a website. '
+    + `Minify HTML, CSS, and JavaScript`: Your pages will load faster if you optimize how your files to load. In a similar vein, you can minify your HTML, CSS, and JavaScript code. You can reduce the size of files by eliminating unnecessary spaces, characters, comments, and other components. As a result, web pages will load faster with cleaner code.
 
 18. Define NPM (Node Package Manager).
-    + NPM stands for Node Package Manager. It is commonly used as a default package manager for Node.js (JavaScript runtime environment). It is included in every installation of Node.js. This command-line tool installs, updates, and uninstalls Node.js packages and modules required for Node applications or projects. A package contains all files for a module, and modules are basically JavaScript libraries that can be added to a Node project as needed. It contains a number of libraries that are extremely useful to Node.js developers, speeding up the process of developing applications.
+    + `Node Package Manager (NPM)`: commonly used as a default package manager for Node.js (JavaScript runtime environment). It is included in every installation of Node.js. This command-line tool installs, updates, and uninstalls Node.js packages and modules required for Node applications or projects. A package contains all files for a module, and modules are basically JavaScript libraries that can be added to a Node project as needed. It contains a number of libraries that are extremely useful to Node.js developers, speeding up the process of developing applications.
       + `Installing NPM`: In order to install NPM, you need to install Node.js as NPM automatically gets with Node.js.
       + `Check NPM Version`: The following syntax can be used to check the version of NPM that is installed on the system:
         + npm -v
       + `Update NPM Version`: NPM updates refer to updating the Node package manager to its latest version. One may always update the installed version if it is not the latest using the syntax given below:
         + Syntax: `npm update [-g] [<pkg>...]`
           + The -g flag is used to update npm globally since it is a global package and pkg refers to the package.
-        + Use npm@update command
-          + `npm install npm@latest -g`
-        + Use update command
-          + `npm update -g`
-        + Use npm@latest command
-          + `npm install npm@latest -g`
+        + `npm@update command`: `npm install npm@latest -g`
+        + `update command`: `npm update -g`
+        + `npm@latest command`: `npm install npm@latest -g`
 
-19. What are different popup boxes that are available in JavaScript?
+1.  What are different popup boxes that are available in JavaScript?
     + Javascript uses pop-up boxes to display notifications and messages to users. Here are the different types of pop-up boxes in Javascript:
       + `Alert Box`: This is used to display a warning message. After the alert box appears, the user needs to press the OK button to proceed.
         + `alert("Your Alert Text")`
@@ -157,7 +154,7 @@
             alert("This is Scaler Academy");
           </script>
           ```
-      + Confirm Box: These pop-up boxes are used as a means of obtaining authorization or permission from the user. In order to proceed, the user must click the OK or Cancel button.
+      + `Confirm Box`: These pop-up boxes are used as a means of obtaining authorization or permission from the user. In order to proceed, the user must click the OK or Cancel button.
         + `confirm("Your query")`
           ```
           <script>
@@ -174,7 +171,7 @@
           </script>
           ```
 
-20. Explain the term “Scope” in JavaScript and write its different type.
+2.  Explain the term “Scope” in JavaScript and write its different type.
     + Managing the availability of variables or objects in an application is governed by the concept of scope. In JavaScript, there are two types of scope as follows:
       + `Global Scope`: A variable having global scope can be accessed from anywhere in the program. These variables that are declared outside of any function can be accessed from any place in the program.
         ```
@@ -194,38 +191,38 @@
         // code here can NOT use scalerProgram
         ```
 
-21. State difference between HTML and XHTML.
+3.  State difference between HTML and XHTML.
     + Both HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Language) can be used to create web-based and Android applications.
       ![html vs xhtml](../images/web-developer/html_xhtml.png)
 
-22. Can you explain what AJAX is?
-    + AJAX (Asynchronous JavaScript and XML) refers to a set of technologies used for developing web applications. The purpose of AJAX is to create better, faster, and more interactive web applications using these technologies such as XML, HTML/XHTML, CSS, DOM, JavaScript, XMLHttpRequest etc. Through Ajax, web applications are able to send and receive data asynchronously from the server without hampering the display or behaviour of the existing site. Using AJAX, you can exchange information with a server and update portions of a webpage without having to reload the whole page. The term "AJAX" refers to a technique for creating dynamic, fast web pages.
+4.  Can you explain what AJAX is?
+    + `AJAX (Asynchronous JavaScript and XML)`: refers to a set of technologies used for developing web applications. The purpose of AJAX is to create better, faster, and more interactive web applications using these technologies such as XML, HTML/XHTML, CSS, DOM, JavaScript, XMLHttpRequest etc. Through Ajax, web applications are able to send and receive data asynchronously from the server without hampering the display or behaviour of the existing site. Using AJAX, you can exchange information with a server and update portions of a webpage without having to reload the whole page. The term "AJAX" refers to a technique for creating dynamic, fast web pages.
       ![AJAX](../images/web-developer/ajax.png)
 
-23. What do you mean by CDN (Content Delivery Network) in jQuery?
-    + CDN stands for Content Delivery Network. CDNs are geographically distributed groups of servers that deliver Internet content quickly. To provide end-users with fast, secure media delivery and web content, the servers are dispersed across many physical and network locations. Using CDNs can significantly reduce load times since they deliver files at higher bandwidth from servers located closer to your visitors than your own web server.
+5.  What do you mean by CDN (Content Delivery Network) in jQuery?
+    + `Content Delivery Network (CDN)`: geographically distributed groups of servers that deliver Internet content quickly. To provide end-users with fast, secure media delivery and web content, the servers are dispersed across many physical and network locations. Using CDNs can significantly reduce load times since they deliver files at higher bandwidth from servers located closer to your visitors than your own web server.
     + For faster access and better performance, web programmers and developers can leverage CDNs to host their jQuery Libraries. Microsoft and Google have already put jQuery on their CDNs, so developers don't have to worry about that. Their only task now is to reference the hosted jQuery library.
-    + Google CDN:
+    + `Google CDN`:
       ```
       <head>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       </head>
       ```
-    + Microsoft CDN:
+    + `Microsoft CDN`:
       ```
       <head>
         <script type="text/javascript"   src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
       </head>
       ```
 
-24. Explain W3C (World Wide Consortium).
-    + W3C stands for World Wide Web Consortium. Founded in 1994, W3C is an international organization devoted to the improvement of the web. The W3C strives to help the web reach its full potential and ensure its continuous development. It sets standards (protocols) for the WWW (World Wide Web) to allow for interoperability and cooperation between all stakeholders. It develops various protocols or standards as a means of growing the web.
+6.  Explain W3C (World Wide Consortium).
+    + `World Wide Web Consortium (W3C)`: Founded in 1994, W3C is an international organization devoted to the improvement of the web. The W3C strives to help the web reach its full potential and ensure its continuous development. It sets standards (protocols) for the WWW (World Wide Web) to allow for interoperability and cooperation between all stakeholders. It develops various protocols or standards as a means of growing the web.
       + It develops and publishes web standards or protocols.
       + Furthermore, it ensures the development and growth of the web.
       + In addition, it sets the standards or protocols for web scripts, web applications, and other dynamic content.
       + While designing web protocols, W3C adheres to the principles of modularity, simplicity, and extensibility.
 
-25. What do you mean by CSS Selectors? Name a Few.
+7.  What do you mean by CSS Selectors? Name a Few.
     + CSS selectors are used by web designers to specify or select HTML elements they want to style. Following are a few of the most commonly used CSS selectors:
       + `ID Selector`: It selects HTML elements using specific id attributes.
         ```
@@ -241,15 +238,15 @@
         color: blue;
         }
         ```
-      + Child Selector or Combinator: It selects all HTML elements that are children of the specified element. In a child selector, there are two or more selectors separated by ">".
+      + `Child Selector or Combinator`: It selects all HTML elements that are children of the specified element. In a child selector, there are two or more selectors separated by ">".
         ```
         div > p {
         background-color: blue;
         }
         ```
 
-26. What are pseudo-classes?
-    + A pseudo-class is basically used to define or specify a special state of an HTML element. This can be used in conjunction with an existing CSS selector to add effects to elements based on their state. For instance, changing the style of an element when a user hovers over it or using different styles for visited and unvisited links. The pseudo-class gives you the ability to do all of this.
+8.  What are pseudo-classes?
+    + `pseudo-class`: is basically used to define or specify a special state of an HTML element. This can be used in conjunction with an existing CSS selector to add effects to elements based on their state. For instance, changing the style of an element when a user hovers over it or using different styles for visited and unvisited links. The pseudo-class gives you the ability to do all of this.
       ```
       selector: pseudo-class{
         property: value;
@@ -261,25 +258,24 @@
       + `:active pseudo-class`: Select the element that becomes active when the user clicks on it.
       + `:focus pseudo-class`: Select an element that is currently focused by the user.
 
-27. Why are media queries used in CSS?
-    + Media queries are used in CSS to create responsive web designs. This means that the way a web page appears varies from one system to another based on the screen or the media type. The media query can be used to apply different styles or change the appearance (and even the behaviour) of a site or an app depending on a user's device type or specific characteristics (like browser viewport width, height, screen resolution, etc.). The following can be checked using media queries:
+9.  Why are media queries used in CSS?
+    + `Media queries`: are used in CSS to create responsive web designs. This means that the way a web page appears varies from one system to another based on the screen or the media type. The media query can be used to apply different styles or change the appearance (and even the behaviour) of a site or an app depending on a user's device type or specific characteristics (like browser viewport width, height, screen resolution, etc.). The following can be checked using media queries:
       + Dimensions (width and height) of the viewport
       + Dimensions (width and height) of the device
       + Orientation
       + Resolution
 
-28. Explain long polling.
-    + Long polling is generally a web application development method that is used to push information or data from the server to the client as quickly as possible. Long-polling maintains the connection between client and server after a request has been made from the client to the server. The connection is maintained until information becomes available from the server and it is ready to send it to the client.  If the server receives a request from the client, it doesn't close the connection immediately; the connection is only closed when the server sends the data back to the client or when a timeout threshold is reached (connection timeout).
+10. Explain long polling.
+    + `Long polling`: is generally a web application development method that is used to push information or data from the server to the client as quickly as possible. Long-polling maintains the connection between client and server after a request has been made from the client to the server. The connection is maintained until information becomes available from the server and it is ready to send it to the client.  If the server receives a request from the client, it doesn't close the connection immediately; the connection is only closed when the server sends the data back to the client or when a timeout threshold is reached (connection timeout).
       ![long polling](../images/web-developer/long_polling.png)
 
-29. State difference between Local Storage and Cookies.
+11. State difference between Local Storage and Cookies.
   ![cookies vs local storage](../images/web-developer/local_storage_cookies.png)
 
-30. What is the purpose of Canvas in HTML?
+1.  What is the purpose of Canvas in HTML?
      + In simple terms, Canvas (`<canvas>` tag) is an HTML element that enables you to draw or create graphics on a web page using JavaScript. This is a new tag in HTML5. Canvas allows you to dynamically control graphics, images, and text on your web pages, adding a great deal of interactivity. You can create graphs, combine photos, and create animated elements using the CANVAS element.
        + `<canvas id = "script"> Contents... </canvas>`
-       + Example
-         + In this example, we have a simple *canvas> element that only has two specific attributes: width (set width of the canvas) and height (set height of the canvas), along with the HTML5 core attributes such as id, name, and class.
+       + Example: In this example, we have a simple *canvas> element that only has two specific attributes: width (set width of the canvas) and height (set height of the canvas), along with the HTML5 core attributes such as id, name, and class.
            ```
            <!DOCTYPE html>
            <html>
@@ -309,9 +305,9 @@
            + Output
              ![output](../images/web-developer/canvas_output.png)
 
-31. What is the purpose of closures in JavaScript?
+1.  What is the purpose of closures in JavaScript?
     + In JavaScript, a closure is known as a JavaScript closure or JS closure. Closures allow you to access the scope (variables and parameters) of an outer function from an inner function. Every time a JavaScript function is created, a closure is created. JavaScript closures allow you to control which variables are and are not in scope in a given function, as well as which variables are shared among siblings within the same containing scope.
 
-32. What is an event loop in Node JS?
+2.  What is an event loop in Node.js?
     + Asynchronous programming in JavaScript is made possible by the event loop. With JS, all operations occur on a single thread, but we can create the illusion of multi-threading by using smart data structures. Event loop takes care of anything that's async using a queue and listener.
     + So, when an async function has to be executed (or an I/O has to be performed), the main thread sends it to another thread, allowing v8 (Javascript engine) to continue running its code. The event loop consists of different phases with specific tasks like pending callbacks, close callbacks, timers, idle or prepare, poll, check, with different FIFO (First-In-First-Out) queues.
