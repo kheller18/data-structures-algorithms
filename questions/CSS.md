@@ -477,7 +477,7 @@
     + `align-content`: This is used for aligning the flex lines.
 
 23. What is cascading in CSS?
-    + “Cascading” refers to the process of going through the style declarations and defining weight or importance to the styling rules that help the browser to select what rules have to be applied in times of conflict. The conflict here refers to multiple rules that are applicable to a particular HTML element. In such cases, we need to let the browser know what style needs to be applied to the element. This is done by cascading down the list of style declarations elements.
+    + `Cascading`: refers to the process of going through the style declarations and defining weight or importance to the styling rules that help the browser to select what rules have to be applied in times of conflict. The conflict here refers to multiple rules that are applicable to a particular HTML element. In such cases, we need to let the browser know what style needs to be applied to the element. This is done by cascading down the list of style declarations elements.
     + ```
       p {
           color:white;
@@ -586,18 +586,18 @@
            ```
 
 28. Can you name the four types of @media properties?
-    + `All` → It’s the default property. Used for all media-type devices.
-    + `Screen` → Used for computer screen, mobile screen.
-    + `Print` → Used for printers.
-    + `Speech` → Used for screen readers.
+    + `All`: It’s the default property. Used for all media-type devices.
+    + `Screen`: Used for computer screen, mobile screen.
+    + `Print`: Used for printers.
+    + `Speech`: Used for screen readers.
 
 29. What is the grid system?
     + CSS Grid Layout is the most powerful layout system available in CSS. It is said to be a 2-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system.
 
 30. What are the different ways to hide the element using CSS?
-    + Using display property(display: none). It’s not available for screen readers. The element will not exist in the DOM if display: none is used.
-    + Using visibility property(visibility: hidden), will take up the space of the element. It will be available to screen reader users. The element will actually be present in the DOM, but not shown on the screen.
-    + Using position property (position: absolute). Make it available outside the screen.
+    + `display: none`: It’s not available for screen readers. The element will not exist in the DOM if display: none is used.
+    + `visibility: hidden`: will take up the space of the element. It will be available to screen reader users. The element will actually be present in the DOM, but not shown on the screen.
+    + `position: absolute`: Make it available outside the screen.
 
 31. What does the `:root` pseudo-class refer to?
     + The `:root` selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
@@ -610,8 +610,8 @@
     + The keyword initial can be used to reset it to its default value.
 
 34. Difference between CSS grid vs flexbox?
-    + CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows. Grid layout is intended for larger-scale layouts which aren’t linear in design.
-    + Flexbox is largely a one-dimensional system (either in a column or a row). Flexbox layout is most appropriate to the components of an application.
+    + `CSS Grid Layout`: is a two-dimensional system, meaning it can handle both columns and rows. Grid layout is intended for larger-scale layouts which aren’t linear in design.
+    + `Flexbox`: is largely a one-dimensional system (either in a column or a row). Flexbox layout is most appropriate to the components of an application.
 
 35. How does Calc work?
     + The CSS3 `calc()` function allows us to perform mathematical operations on property values. Instead of declaring, for example, static pixel values for an element's width, we can use `calc()` to specify that the width is the result of the addition of two or more numeric values.
@@ -698,8 +698,8 @@
       });
       ```
 
-42. What are the advantages of using `translate()` instead of absolute position?
-    + `Translate()` does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM reflow. So, `translate()` gives better performance.
+42. What are the advantages of using `translate()` instead of `position:absolute`?
+    + `Translate()` does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The `position:absolute` triggers the repaint or DOM reflow. So, `translate()` gives better performance.
 
 43. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
     + No, the browsers will download the CSS in the order of its appearance on the HTML page.
@@ -767,10 +767,10 @@
        + margin-bottom
        + margin-left
        + margin property by itself has the values as:
-         + auto – The browser auto-calculates the margin while we use this.
-         + length – The value of this property can be in `px`, `pt`, `cm`, `em`, etc. The values can be positive or negative.
-         + % – We can also give percentage value as margin to the element.
-         + inherit – Using this property, the margin properties can be inherited from the parent elements.
+         + `auto` – The browser auto-calculates the margin while we use this.
+         + `length` – The value of this property can be in `px`, `pt`, `cm`, `em`, etc. The values can be positive or negative.
+         + `%`– We can also give percentage value as margin to the element.
+         + `inherit` – Using this property, the margin properties can be inherited from the parent elements.
     + The padding property is used for generating the space around the element’s content and inside any known border. Padding does not allow negative values. The padding also has sub-properties like:
        + padding-top
        + padding-right
@@ -975,15 +975,15 @@
     + We can use auto-prefix for automatically adding vendor prefixes in the code.
     + We can also use normalize.css or reset CSS techniques.
     + Avoiding browser compatibility issues
-     + Validate HTML and CSS: We know that the code will be read, interpreted and handled differently by different browsers. We need to validate our HTML and CSS files for the missing closing tags, or missing semicolons in the syntaxes because there are chances that the old browsers will throw errors while rendering the code. We can avoid those errors by:
+     + `Validate HTML and CSS`: We know that the code will be read, interpreted and handled differently by different browsers. We need to validate our HTML and CSS files for the missing closing tags, or missing semicolons in the syntaxes because there are chances that the old browsers will throw errors while rendering the code. We can avoid those errors by:
        + Maintaining well-aligned code that helps in easy readability.
        + Inserting comments at necessary places.
        + Make use of validation tools like Jigsaw CSS validator, W3C HTML Validators to identify syntax issues in the code.
-     + Maintain Cross-Browser Compatibility in the Layouts: Cross-Browser compatibility is a must while developing web applications. We expect our application to be responsive across all devices, browsers and platforms. Some of the effects of layout incompatibilities are unresponsiveness of the layouts in mobile devices, the difference in layout rendering between modern and old browsers, etc. These incompatibilities can be avoided by using:
+     + `Maintain Cross-Browser Compatibility in the Layouts`: Cross-Browser compatibility is a must while developing web applications. We expect our application to be responsive across all devices, browsers and platforms. Some of the effects of layout incompatibilities are unresponsiveness of the layouts in mobile devices, the difference in layout rendering between modern and old browsers, etc. These incompatibilities can be avoided by using:
        + `CSS Multi-Column layouts` - For maintaining proper layouts w.r.t columns and containers.
        + `HTML viewport metatag` – For ensuring content is properly spanned across mobile devices.
        + `CSS Flexbox and Grids` - To layout child elements depending on the content and available space.
        + `CSS resets stylesheets` - For reducing browser inconsistencies in default line heights, font sizes, margins etc.
-     + Check JavaScript Library issues: Ensure the libraries are used judiciously and the ones used are supported by the browsers.
-     + Check DOCTYPE tag keyword: The `DOCTYPE` keyword is meant for defining rules of what needs to be used in the code. Older browser versions check for `DOCTYPE` tag at the beginning and if not found, the application rendering won't be proper.
-     + Test on real devices: Although applications can be tested on virtual environments, it would be more beneficial if the testing is carried out on real devices and platforms. We can use tools like Testsigma for this purpose that enables us to test in real devices parallelly.
+     + `Check JavaScript Library issues`: Ensure the libraries are used judiciously and the ones used are supported by the browsers.
+     + `Check DOCTYPE tag keyword`: The `DOCTYPE` keyword is meant for defining rules of what needs to be used in the code. Older browser versions check for `DOCTYPE` tag at the beginning and if not found, the application rendering won't be proper.
+     + `Test on real devices`: Although applications can be tested on virtual environments, it would be more beneficial if the testing is carried out on real devices and platforms. We can use tools like Testsigma for this purpose that enables us to test in real devices parallelly.
