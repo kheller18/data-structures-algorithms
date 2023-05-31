@@ -80,7 +80,7 @@
    ![agile vs traditional](../images/agile/agile_traditional.png)
 
 9.  What do you mean by the term “velocity” in Agile?
-    + A velocity is basically a measurement unit that measures or calculates how much work an agile development team can successfully complete in a single sprint and how much time will be required to finish a project. It is widely used as a calibration tool that helps development teams to create accurate and efficient timelines. It is also used to identify problems and measure the improvements that occur with time.
+    + `velocity`: is basically a measurement unit that measures or calculates how much work an agile development team can successfully complete in a single sprint and how much time will be required to finish a project. It is widely used as a calibration tool that helps development teams to create accurate and efficient timelines. It is also used to identify problems and measure the improvements that occur with time.
       ![velocity](../images/agile/velocity.png)
 
 10. What do you mean by Daily Stand-Up meeting?
@@ -97,7 +97,7 @@
     + `Incremental Development`: It is basically a software development process where development works are sliced into increments or pieces or portions. In this, the software is developed and delivered in pieces or increments and each piece has a complete set of functionalities. The increment can either be small or large, and each increment is coded and tested fully. After testing each increment, they all are integrated so that they work as a whole.
 
 12. What is a Product Roadmap?
-    + A product roadmap, as the name suggests, is a powerful tool that describes how a product is likely to grow over time. It is a holistic view of product features that create the product vision. It also indicates what development is building, business goals that the new product will achieve, problems that the product will solve, etc. A product roadmap is owned by the product manager. It also encourages the development team to work together to achieve the desired goal for the successful delivery of the product.
+    + `product roadmap`: as the name suggests, is a powerful tool that describes how a product is likely to grow over time. It is a holistic view of product features that create the product vision. It also indicates what development is building, business goals that the new product will achieve, problems that the product will solve, etc. A product roadmap is owned by the product manager. It also encourages the development team to work together to achieve the desired goal for the successful delivery of the product.
 
 13. What are different project management tools that are mostly used in Agile?
     + Icescrum
@@ -114,7 +114,7 @@
       ![agile vs scrum](../images/agile/agile_scrum.png)
 
 15. What do you mean by Pair Programming? Write its advantages.
-    + Pair programming, as the name suggests, is a type of programming where two people write code together and work side-by-side on one machine or computer. It is basically a technique mostly used in agile software development. In this type of programming, one person writes code and another person checks and reviews each line of code. Both of them also switch their roles while doing work.
+    + `Pair programming`: as the name suggests, is a type of programming where two people write code together and work side-by-side on one machine or computer. It is basically a technique mostly used in agile software development. In this type of programming, one person writes code and another person checks and reviews each line of code. Both of them also switch their roles while doing work.
       ![pair programming](../images/agile/pair_programming.png)
       + Advantages of Pair Programming
         + Develop higher-quality code
@@ -160,7 +160,7 @@
     + Feature Driven Development (FDD)
 
 20. What is “Planning Poker” technique?
-    + Planning Poker, also known as Scrum Poker, is a consensus-based technique that not only helps agile teams to estimate the time and effort that is required to complete each initiative on their product backlog but also identifies issues before time and within the course of a user story. It makes the meeting more short, productive and creates estimates with the involvement of the whole team. It is mainly used to avoid the influence of other participants, and force each person to think independently and give their opinion.
+    + `Planning Poker`: also known as Scrum Poker, is a consensus-based technique that not only helps agile teams to estimate the time and effort that is required to complete each initiative on their product backlog but also identifies issues before time and within the course of a user story. It makes the meeting more short, productive and creates estimates with the involvement of the whole team. It is mainly used to avoid the influence of other participants, and force each person to think independently and give their opinion.
 
 21. What is a Sprint Planning Meeting, Sprint Review Meeting and Sprint Retrospective Meeting?
     + `Sprint Planning Meeting`: In this meeting, the discussion takes place about features and product backlog items (user stories) that are important to the team. This meeting is usually attended by the product owner, Scrum Master and Scrum Team. It is a weekly meeting and usually lasts for about an hour.
@@ -170,7 +170,7 @@
       ![sprint review](../images/agile/sprint_review.png)
 
 22. What do you mean by the term “increment”?
-    + The increment is simply the sum or total of all the product backlog items that were completed during a sprint and the value of increments of all previous sprints. It is the total work completed within the current and previous sprints.
+    + `increment`: is simply the sum or total of all the product backlog items that were completed during a sprint and the value of increments of all previous sprints. It is the total work completed within the current and previous sprints.
 
 23. What are standard or common metrics for Agile? Explain.
     + Agile Metrics are basically standard metrics that are used to measure the work of the team. These metrics are used to determine the quality of work, productivity, progress, team health, etc. Its main focus is on value delivered to customers and how much end-users were impacted by it.
@@ -185,8 +185,8 @@
       + Business Value Delivered: It is used to measure the efficiency of the working team.
 
 24. What is Scrum? Write its advantages.
-    + Scrum is a lightweight process framework that helps scrum teams to work together and manage product development to deliver products in the shortest time. The product provided by the scrum team in the shortest period is known as a sprint. Its main aim is to manage tasks within a team-based development environment. It is especially used to manage project development for software products and can also be used in business-related contexts.
-      + Advantages of Scrum:
+    + `Scrum`: is a lightweight process framework that helps scrum teams to work together and manage product development to deliver products in the shortest time. The product provided by the scrum team in the shortest period is known as a sprint. Its main aim is to manage tasks within a team-based development environment. It is especially used to manage project development for software products and can also be used in business-related contexts.
+      + `Advantages of Scrum`:
         + Releases product quickly to users and customers
         + Ensures effective use of time and money and therefore saves cost
         + Best suited for fast-moving development projects
@@ -202,7 +202,7 @@
       + `Development Team`: It involves an individual person and each person is responsible for working collectively to complete a particular project. It is the team that is responsible for developing actual product increments and meeting sprint goals.
 
 26. What do you mean by Scrum Master? What are the responsibilities of Scrum Master?
-    + Scrum Master, also referred to as servant leaders, is a person who is a master of Scrum i.e., the person who is responsible for managing and facilitating an agile development team and makes sure that the scrum framework is followed. Scrum master is also referred to as coach of the team that helps team members to do and give their best as much as possible.
+    + `Scrum Master`: also referred to as servant leaders, is a person who is a master of Scrum i.e., the person who is responsible for managing and facilitating an agile development team and makes sure that the scrum framework is followed. Scrum master is also referred to as coach of the team that helps team members to do and give their best as much as possible.
       ![scrum master](../images/agile/scrum_master.png)
       + `Responsibilities of Scrum Master`:
         + Protect the team from distractions
@@ -235,7 +235,7 @@
     + RTC Jazz, etc.
 
 30. Explain TimeBoxing in Scrum.
-    + Timeboxing is an important time management technique or tool that is used to limit the amount of time that is being spent to complete a task. It simply allows a fixed unit of time for each and every task and this unit is known as a time box. The maximum length of the time box is 15 minutes. It not only helps to improve focus but also results in an increase in productivity. There are some events in Scrum and all these events are timeboxed which means all these events are allotted with a maximum and fixed unit of time for the task. The events that are time-boxed are listed below:
+    + `Timeboxing`: is an important time management technique or tool that is used to limit the amount of time that is being spent to complete a task. It simply allows a fixed unit of time for each and every task and this unit is known as a time box. The maximum length of the time box is 15 minutes. It not only helps to improve focus but also results in an increase in productivity. There are some events in Scrum and all these events are timeboxed which means all these events are allotted with a maximum and fixed unit of time for the task. The events that are time-boxed are listed below:
       + Sprint
       + Sprint Planning
       + Daily Scrum
@@ -244,7 +244,7 @@
     ![timeboxing](../images/agile/timeboxing.png)
 
 31. Explain the term “impediments” in Scrum.
-    + Impediments are something that blocks or stops the progress of teamwork. It causes the team not able to perform their task in a better way and on time that in turn also slows down the velocity. It’s the responsibility of the Scrum master to remove or resolve impediments. Impediments can be anything as listed below:
+    + `Impediments`: are something that blocks or stops the progress of teamwork. It causes the team not able to perform their task in a better way and on time that in turn also slows down the velocity. It’s the responsibility of the Scrum master to remove or resolve impediments. Impediments can be anything as listed below:
       + Missing resource
       + Strict boss or team member
       + Technical or operational issue
@@ -254,11 +254,11 @@
       + Business problems
 
 32. What is the main role of Sashimi in Scrum?
-    + Sashimi is basically a Japanese word whose meaning is pierced body. In scrum, Sashimi is a technique that is simply used to check whether all functions (every phase of the software development cycle) are completed or not after the product is displayed. Functions include requirement analysis, planning, design, development, testing, and documentation.
+    + `Sashimi`: a Japanese word whose meaning is pierced body. In scrum, Sashimi is a technique that is simply used to check whether all functions (every phase of the software development cycle) are completed or not after the product is displayed. Functions include requirement analysis, planning, design, development, testing, and documentation.
 
 33. Explain the term “story point” in Scrum.
-    + Story point is basically a unit to estimate total efforts that are required to complete or to do a particular task or user story. It gives more accurate measures, reduces planning time, predicts releases date more accurately.
+    + `Story point`: a unit to estimate total efforts that are required to complete or to do a particular task or user story. It gives more accurate measures, reduces planning time, predicts releases date more accurately.
 
 34. What do you mean by Scrum of Scrums (SoS)?
-    + Scrum of Scrum, as the name suggests, is an Agile technique that involves meeting more than one scrum team and integrating the work of each team working on the same project. In simple words, it coordinates the work of multiple teams who need to work together to deliver complex solutions. In this meeting, members or representatives of individual teams share their high-level updates about their respective team’s work. Its main is to ensure coordination and integration of output from multiple teams by eliminating impediments if present.
+    + `Scrum of Scrums (SoS)`: as the name suggests, is an Agile technique that involves meeting more than one scrum team and integrating the work of each team working on the same project. In simple words, it coordinates the work of multiple teams who need to work together to deliver complex solutions. In this meeting, members or representatives of individual teams share their high-level updates about their respective team’s work. Its main is to ensure coordination and integration of output from multiple teams by eliminating impediments if present.
       ![scrum of scrums](../images/agile/sos.png)
