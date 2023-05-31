@@ -280,18 +280,18 @@
           </div>
           </div>
         ```
-      + itemid – The unique, global identifier of an item.
-      + itemprop – Used to add properties to an item.
-      + itemref – Provides a list of element ids with additional properties.
-      + itemscope – It defines the scope of the itemtype associated with it.
-      + itemtype – Specifies the URL of the vocabulary that will be used to define itemprop.
+      + `itemid`: The unique, global identifier of an item.
+      + `itemprop`: Used to add properties to an item.
+      + `itemref`: Provides a list of element ids with additional properties.
+      + `itemscope`: It defines the scope of the itemtype associated with it.
+      + `itemtype`: Specifies the URL of the vocabulary that will be used to define itemprop.
     ![microdata](../images/html/microdata.png)
 
 46. Which tag is used for representing the result of a calculation? Explain its attributes.
     + The `<output>` tag is used for representing the result of a calculation. It has the following attributes:
-      + for - It defines the relationship between the elements used in calculation and result.
-      + form - This is used to define the form the output element belongs to.
-      + name - The name of the output element.
+      + `for`: It defines the relationship between the elements used in calculation and result.
+      + `form`: This is used to define the form the output element belongs to.
+      + `name`: The name of the output element.
       + ```
           <form oninput = "result.value=parseInt(n1.value)+parseInt(n2.value)">
               <input type = "number" name = "n1" value = "1" /> +
@@ -305,7 +305,7 @@
 
 48. Explain HTML5 Graphics.
     + HTML5 supports two kinds of graphics:
-      + Canvas - It is like drawing on a whitepaper or a blank webpage. We can add different graphic designs on web pages with available methods for drawing various geometrical shapes.
+      + `Canvas`: It is like drawing on a whitepaper or a blank webpage. We can add different graphic designs on web pages with available methods for drawing various geometrical shapes.
         + ```
           <!DOCTYPE HTML>
           <html>
@@ -316,7 +316,7 @@
           </body>
           </html>
           ```
-      + SVG - Scalable Vector Graphics are used mostly for diagrams or icons. It follows the XML format.
+      + `SVG`: Scalable Vector Graphics are used mostly for diagrams or icons. It follows the XML format.
         + ```
           <!DOCTYPE html>
           <html>
@@ -329,20 +329,20 @@
           ```
 
 49. Explain new input types provided by HTML5 for forms?
-    + Date - Only select date by using type = "date"
-    + Week - Pick a week by using type = "week"
-    + Month - Only select month by using type = "month"
-    + Time - Only select time by using type = "time".
-    + Datetime - Combination of date and time by using type = "datetime"
-    + Datetime-local - Combination of  date and time by using type = "datetime-local." but ignoring the timezone
-    + Color - Accepts multiple colors using type = "color"
-    + Email - Accepts one or more email addresses using type = "email"
-    + Number - Accepts a numerical value with additional checks like min and max using type = "number"
-    + Search - Allows searching queries by inputting text using type = "search"
-    + Tel - Allows different phone numbers by using type = "tel"
-    + Placeholder - To display a short hint in the input fields before entering a value using type = "placeholder"
-    + Range - Accepts a numerical value within a specific range using type = "range"
-    + Url - Accepts a web address using type = "url”
+    + `Date`: Only select date by using type = "date"
+    + `Week`: Pick a week by using type = "week"
+    + `Month`: Only select month by using type = "month"
+    + `Time`: Only select time by using type = "time".
+    + `Datetime`: Combination of date and time by using type = "datetime"
+    + `Datetime-local`: Combination of date and time by using type = "datetime-local." but ignoring the timezone
+    + `Color`: Accepts multiple colors using type = "color"
+    + `Email`: Accepts one or more email addresses using type = "email"
+    + `Number`: Accepts a numerical value with additional checks like min and max using type = "number"
+    + `Search`: Allows searching queries by inputting text using type = "search"
+    + `Tel`: Allows different phone numbers by using type = "tel"
+    + `Placeholder`: To display a short hint in the input fields before entering a value using type = "placeholder"
+    + `Range`: Accepts a numerical value within a specific range using type = "range"
+    + `Url`: Accepts a web address using type = "url”
     + ```
         <form>
           <div>
@@ -389,11 +389,11 @@
       ```
 
 50. What are the New tags in Media Elements in HTML5?
-    + `<audio>` - Used for sounds, audio streams, or music, embed audio content without any additional plug-in.
-    + `<video>` - Used for video streams, embed video content etc.
-    + `<source>` - Used for multiple media resources in media elements, such as audio, video, etc.
-    + `<embed>` - Used for an external application or embedded content.
-    + `<track>` - Used for subtitles in the media elements such as video or audio.
+    + `<audio>`: Used for sounds, audio streams, or music, embed audio content without any additional plug-in.
+    + `<video>`: Used for video streams, embed video content etc.
+    + `<source>`: Used for multiple media resources in media elements, such as audio, video, etc.
+    + `<embed>`: Used for an external application or embedded content.
+    + `<track>`: Used for subtitles in the media elements such as video or audio.
     + ```
       <label>
             Video:
@@ -483,29 +483,29 @@
 
 54. What are Web Workers?
     + These are added to bring parallelism and async capability. It runs in the background to do the computationally expensive tasks without yielding to make the page responsive. It is achieved by starting a separate thread for such tasks. These are not meant to perform UI operations. There are three types of web workers:
-      + Dedicated Workers - These are workers that are utilized by a single script.
-      + Shared Workers -These are workers that are utilized by multiple scripts running in different windows, IFrames, etc.
-      + Service Workers - These act as proxy servers between web applications, the browser, and the network. Mostly used for push notifications and sync APIs.
+      + `Dedicated Workers`: These are workers that are utilized by a single script.
+      + `Shared Workers`: These are workers that are utilized by multiple scripts running in different windows, IFrames, etc.
+      + `Service Workers`: These act as proxy servers between web applications, the browser, and the network. Mostly used for push notifications and sync APIs.
     + ```
       <p>Count numbers: <output id="result"></output></p>
       <button onclick="startWorker()">Start Worker</button>
       <button onclick="stopWorker()">Stop Worker</button>
       <script>
-      var w;
-      function startWorker() {
-      if(typeof(Worker) !== "undefined") {
-      if(typeof(w) == "undefined") {
-        w = new Worker("demo_workers.js");
-      }
-      w.onmessage = function(event) {
-        document.getElementById("result").innerHTML = event.data;
-      };
-      }
-      }
-      function stopWorker() {
-      w.terminate();
-      w = undefined;
-      }
+        var w;
+        function startWorker() {
+            if(typeof(Worker) !== "undefined") {
+            if(typeof(w) == "undefined") {
+              w = new Worker("demo_workers.js");
+            }
+            w.onmessage = function(event) {
+              document.getElementById("result").innerHTML = event.data;
+            };
+          }
+        }
+        function stopWorker() {
+        w.terminate();
+        w = undefined;
+        }
       </script>
       ```
 
@@ -520,8 +520,8 @@
       ```
 
 56. What are raster images and vector images?
-    + Raster Images - The raster image is defined by the arrangement of pixels in a grid with exactly what color the pixel should be. Few raster file formats include PNG(.png), JPEG(.jpg), etc.
-    + Vector Images - The vector image is defined using algorithms with shape and path definitions that can be used to render the image on-screen written in a similar markup fashion. The file extension is .svg.
+    + `Raster Images`: The raster image is defined by the arrangement of pixels in a grid with exactly what color the pixel should be. Few raster file formats include PNG(.png), JPEG(.jpg), etc.
+    + `Vector Images`: The vector image is defined using algorithms with shape and path definitions that can be used to render the image on-screen written in a similar markup fashion. The file extension is .svg.
 
 57. How to support SVG in old browsers?
     + To support old browsers instead of defining the resource of svg in src attribute of `<img>` tag, it should be defined in srcset attribute and in src the fallback png file should be defined.
