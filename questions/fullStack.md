@@ -16,7 +16,7 @@
 3. Explain Pair Programming.
    + In pair programming, two programmers share only one machine and work together. During the development process, one programmer will be the driver who codes and another will act as the observer (navigator) who will make sure the code is written correctly, proofread and spell-check it, while also deciding where to go next. Roles can be swapped at any time: the driver becomes the observer and vice versa. You can also call it "pairing", "paired programming", or "programming in pairs".
    ![pair programming](../images/full-stack/pair_programming.png)
-   + Advantages:
+   + `Advantages`:
      + Two of them will fix the problem if the driver encounters any issues with the code.
      + The two programmers working on the same program are only 15% slower than if they worked independently instead of 50%.
      + As a result of having another programmer look over your work, you are more likely to write better code. One study showed that it results in 15% fewer bugs than code written by a single programmer.
@@ -25,7 +25,7 @@
      + The team develops better communication skills.
 
 4. What do you mean by CORS (Cross-Origin Resource Sharing)?
-   + CORS refers to cross-origin resource sharing. It's a browser mechanism that allows web pages in one domain to have controlled access to resources in other domains (cross-domain requests). This allows scripts that are run on a browser client to interact with and access resources from other origins. In doing so, it extends and provides greater flexibility to the SOP (Same-Origin Policy). Same-origin policies restrict the ability of a website to access resources outside of its source domain. For example, a JavaScript app that wants to make a call to an API (Application Programming Interface) that runs on another domain will be blocked due to the SOP. A CORS policy was implemented to circumvent restrictions caused by same-origin policies.
+   + `Cross-Origin Resource Sharing (CORS)`: It's a browser mechanism that allows web pages in one domain to have controlled access to resources in other domains (cross-domain requests). This allows scripts that are run on a browser client to interact with and access resources from other origins. In doing so, it extends and provides greater flexibility to the SOP (Same-Origin Policy). Same-origin policies restrict the ability of a website to access resources outside of its source domain. For example, a JavaScript app that wants to make a call to an API (Application Programming Interface) that runs on another domain will be blocked due to the SOP. A CORS policy was implemented to circumvent restrictions caused by same-origin policies.
    ![cors](../images/full-stack/cors.png)
 
 5. What is Callback Hell?
@@ -33,7 +33,7 @@
    + This also makes it more difficult to identify the flow of the application, which is the main obstacle to debugging, which is the reason for the famous name of this problem: Callback Hell.
 
 6. Explain Long Polling.
-   + Long polling is defined as a web application development technique used to push information/data from servers to clients as quickly as possible. When a request is made from the client to the server, long-polling maintains the connection between the two. This connection is maintained until the information is ready to be sent from the server to the client.  Once a server receives a request from a client, the connection does not close immediately; the connection is only closed once the server has sent the data back to the client or when a timeout threshold has been reached (connection timeout).
+   + `Long polling`: is defined as a web application development technique used to push information/data from servers to clients as quickly as possible. When a request is made from the client to the server, long-polling maintains the connection between the two. This connection is maintained until the information is ready to be sent from the server to the client.  Once a server receives a request from a client, the connection does not close immediately; the connection is only closed once the server has sent the data back to the client or when a timeout threshold has been reached (connection timeout).
    ![long polling](../images/full-stack/long_polling.png)
 
 7. Can you tell me what are the latest trends in Full Stack Development? Also, how do you keep yourself updated about the new trends in the industry?
@@ -48,9 +48,9 @@
    ![GraphQL vs REST](../images/full-stack/graphql_rest.png)
 
 9.  What is CI (Continuous Integration)?
-    + CI (Continuous Integration), as its name implies, is the process of automating and integrating code changes into a single software project, often several times a day. The purpose of this DevOps practice is to enable developers to merge their code changes into a central repository where automated tests and builds can run. Automated tools are used to assert the new code’s correctness before integration. A source code version control system is the crux of the CI process. The version control system is also supplemented with other checks like automated code quality tests, syntax style review tools, and more.
+    + `CI (Continuous Integration)`: as its name implies, is the process of automating and integrating code changes into a single software project, often several times a day. The purpose of this DevOps practice is to enable developers to merge their code changes into a central repository where automated tests and builds can run. Automated tools are used to assert the new code’s correctness before integration. A source code version control system is the crux of the CI process. The version control system is also supplemented with other checks like automated code quality tests, syntax style review tools, and more.
     ![continuous integration](../images/full-stack/continuous_integration.png)
-    + Advantages:
+    + `Advantages`:
       + Integrating regularly has the main benefit of detecting errors quickly and more easily. Since most changes introduced are small, pinpointing the specific change that caused a defect is easy.
       + As a result of the smaller code changes and easier fault isolations, CI reduces MTTR (Mean Time to Resolution).
       + When CI is incorporated into your organization's development process, you are less likely to have noncritical defects on your backlog. Before production, these small defects are detected and fixed before they are released to the public.
@@ -58,7 +58,7 @@
 10. Explain the meaning of multithreading.
     + The thread is an independent part or unit of a process (or an application) that is being executed. Whenever multiple threads execute in a process at the same time, we call this "multithreading". You can think of it as a way for an application to multitask.
     ![multithreading](../images/full-stack/multithreading.png)
-    + Advantages:
+    + `Advantages`:
       + By multithreading, computing resources are also minimized and used more effectively.
       + The response time of the application is improved since requests from one thread do not block requests from other threads.
       + Consequently, if one of the threads encounters an exception, it will not affect the other threads.
@@ -96,11 +96,11 @@
     + `Minify HTML, CSS, and JavaScript`: If you optimize the way your files load, your pages will load more quickly. You can do the same when it comes to HTML, CSS, and JavaScript code. By eliminating unnecessary spaces, characters, and comments, you can reduce the size of your files. This will make your web pages load faster.
 
 15. Explain dependency injection.
-    + The Dependency Injection (DI) pattern is a design pattern for implementing the Inversion of Control (IoC). Dependent objects can be created outside of classes and made available to classes in different ways. Three types of classes are involved in Dependency Injection as follows:
+    + `The Dependency Injection (DI)`: is a design pattern for implementing the Inversion of Control (IoC). Dependent objects can be created outside of classes and made available to classes in different ways. Three types of classes are involved in Dependency Injection as follows:
     ![dependency injection](../images/full-stack/dependency_injection.png)
-    + `Client Class`: A client class (dependent class) is one that depends on the service class.
-    + `Service Class`: Service (dependency) classes provide services to client classes.
-    + `Injector Class`: This class injects the objects from the service class into the client class.
+      + `Client Class`: A client class (dependent class) is one that depends on the service class.
+      + `Service Class`: Service (dependency) classes provide services to client classes.
+      + `Injector Class`: This class injects the objects from the service class into the client class.
 
 16. What do you mean by observer pattern?
     + If several objects are tied together in one-to-many relationships, the observer pattern is used. Every time one object is modified, then all of its dependent objects are automatically notified and updated. It falls under the behavioural pattern category. It describes the coupling between the objects and the observer and provides support for broadcast-type communication. The object that observes the state of another object is known as the observer, and the object that is being observed is known as the subject as shown below:
@@ -118,7 +118,7 @@
       ![rolling deployment strategy](../images/full-stack/rolling_deployment.png)
 
 18. Explain inversion of control.
-    + IoC (Inversion of Control), as the name suggests, is a design principle in software engineering. With IoC, different kinds of controls can be inverted in an object-oriented design to attain loose coupling. The term "controls" refers to any other responsibilities a class may have other than its primary responsibility. These include controlling the flow of an application, controlling the creation of objects, or controlling the binding and creation of dependent objects. IoC allows classes to be loosely coupled, making testing and maintenance easier.
+    + `IoC (Inversion of Control)`: as the name suggests, is a design principle in software engineering. With IoC, different kinds of controls can be inverted in an object-oriented design to attain loose coupling. The term "controls" refers to any other responsibilities a class may have other than its primary responsibility. These include controlling the flow of an application, controlling the creation of objects, or controlling the binding and creation of dependent objects. IoC allows classes to be loosely coupled, making testing and maintenance easier.
 
 19. What do you mean by referential transparency in functional programming?
     + In functional programming, referential transparency is the key differentiating factor.  An expression is considered referential transparent if it can be replaced or substituted with the corresponding value it computes or vice-versa without affecting the program’s result.
@@ -155,7 +155,7 @@
     + APIs (Application Programming Interfaces) are sets of rules and protocols that define how software programs or devices can communicate with each other. APIs that conform to the design principles of REST, or representational state transfer, are known as REST APIs. REST APIs may also be referred to as RESTful APIs. Using RESTful APIs, developers can create requests and receive responses via an HTTP request. REST API can also be used for mapping data from a cloud platform to a data warehouse or vice versa.
 
 25. What do you mean by MEAN Stack?
-    + MEAN stands for MongoDB, ExpressJS, AngularJS, and Node.js. It is a collection of JavaScript-based technologies for developing web applications. Despite being a stack of different technologies, all of them are based on the JavaScript language. It is an ideal solution for building dynamic websites and applications as it is a very user-friendly stack. With this free and open-source stack, you can quickly and easily build web-based prototypes.
+    + `MEAN`: stands for MongoDB, ExpressJS, AngularJS, and Node.js. It is a collection of JavaScript-based technologies for developing web applications. Despite being a stack of different technologies, all of them are based on the JavaScript language. It is an ideal solution for building dynamic websites and applications as it is a very user-friendly stack. With this free and open-source stack, you can quickly and easily build web-based prototypes.
 
 26. Do you know how to prevent a bot from scraping your publicly accessible API?
     + As long as the data within the API is accessible to the public, it will technically not be possible to completely prevent data scraping. It is possible, however, to minimize bot activity (automated computer programs on the internet that perform certain tasks) by throttling or rare limiting. Rare limiting will be able to prevent a certain device from making an unlimited number of requests within a defined time. If too many requests are made beyond the defined limit, a 429 Too Many Attempts HTTP error is thrown. It is vital to record more than just the IP address of the device since the IP address is not unique to each device and can stop the whole network from accessing the API.
@@ -188,7 +188,7 @@
       var timesTwo = params => params * 2
       timesTwo(5);  // 10
       ```
-    + Differences & Limitations:
+    + `Differences & Limitations`:
       + Has no bindings to 'this' or 'super', so it shouldn't be used as a method.
       + Has no new.target keyword.
       + The call, apply, and bind methods are not suitable since they rely on establishing scope.
