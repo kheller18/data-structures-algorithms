@@ -21,9 +21,9 @@
    + `There is no parent selector`: Currently, Using CSS, you can’t select a parent tag.
 
 4. How to include CSS in the webpage?
-   + External Style Sheet: An external file linked to your HTML document: Using `link` tag, we can link the style sheet to the HTML page.
+   + `External Style Sheet`: An external file linked to your HTML document: Using `link` tag, we can link the style sheet to the HTML page.
      + `<link rel="stylesheet" type="text/css" href="mystyles.css" />`
-   + Embed CSS with a `style` tag: A set of CSS styles included within your HTML page.
+   + `Embed CSS with a `style` tag`: A set of CSS styles included within your HTML page.
      + ```
         <style type="text/css">
 
@@ -31,9 +31,9 @@
 
         </style>
        ```
-   + Add inline styles to HTML elements(CSS rules applied directly within an HTML tag.): Style can be added directly to the HTML element using a `style` tag.
+   + `inline styles to HTML elements(CSS rules applied directly within an HTML tag)`: Style can be added directly to the HTML element using a `style` tag.
      + `<h2 style="color:red;background:black">Inline Style</h2>`
-   + Import a stylesheet file (An external file imported into another CSS file): Another way to add CSS is by using the `@import` rule. This is to add a new CSS file within CSS itself.
+   + `Import a stylesheet file (An external file imported into another CSS file)`: Another way to add CSS is by using the `@import` rule. This is to add a new CSS file within CSS itself.
      + `@import "path/to/style.css";`
 
 5. What are the different types of Selectors in CSS?
