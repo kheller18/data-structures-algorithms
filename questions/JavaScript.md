@@ -1748,7 +1748,7 @@
       + In truth, Symbols are only a little different means of attaching properties to an object; the well-known Symbols could easily be provided as standard methods, just like Object.prototype.has Own Property which appears in anything that inherits from Object.
 
 20. What is Babel?
-    + Babel is an open-source JavaScript transpiler that converts ECMAScript 2015+ (ES6+) code into a backwards compatible version of JavaScript that can be run by previous JavaScript engines. Babel is a popular tool for exploiting the JavaScript programming language's latest capabilities.
+    + `Babel`: is an open-source JavaScript transpiler that converts ECMAScript 2015+ (ES6+) code into a backwards compatible version of JavaScript that can be run by previous JavaScript engines. Babel is a popular tool for exploiting the JavaScript programming language's latest capabilities.
     + Babel plugins are used to convert syntax that isn't widely supported into a version that is backwards compatible. Arrow functions, for example, which are defined in ES6, are translated to ordinary function declarations. It's also possible to translate non-standard JavaScript syntax, such as JSX. Babel may automatically inject core-js polyfills for support capabilities that aren't available in JavaScript environments. Static methods like Array.from and built-ins like Promise, for example, are only accessible in ES6+, but they can be utilised in previous contexts by using core-js.
 
 21. Name some array methods that were introduced in ES6.
@@ -1758,7 +1758,7 @@
 ![string functions](../images/js/string_functions.png)
 
 1.  Compare the ES5 and ES6 codes for object initialization and parsing returned objects.
-    + Object initialization: Variables with the same name are frequently used to create object properties. Consider the following scenario:
+    + `Object initialization`: Variables with the same name are frequently used to create object properties. Consider the following scenario:
       ```
       // ES5 code
       var
@@ -1784,7 +1784,7 @@
 
         // ob.x = 1, ob.y = 2, ob.z = 3
         ```
-    + Parsing returned objects: Only one value can be returned by a function, but that value could be an object with hundreds of properties and/or methods. In ES5, you must first get the returned object and then extract values from it. Consider the following scenario:
+    + `Parsing returned objects`: Only one value can be returned by a function, but that value could be an object with hundreds of properties and/or methods. In ES5, you must first get the returned object and then extract values from it. Consider the following scenario:
       ```
       // ES5 code
       var
@@ -1865,7 +1865,7 @@
       ```
 
 8.   What is the difference between Set and WeakSet in ES6?
-     + Set: By using the Set() class, users can define an array-like heterogeneous iterable object, which will consist of distinct values. The elements should not just be distinct by values but also by types. i.e. "2" and 2 will be considered as different.
+     + `Set()`: By using the Set() class, users can define an array-like heterogeneous iterable object, which will consist of distinct values. The elements should not just be distinct by values but also by types. i.e. "2" and 2 will be considered as different.
        ```
        var set1= new Set([0, 1, 2]);
 
@@ -1882,7 +1882,7 @@
        set1.size; // 4
        set1.clear(); // Set Cleared
        ```
-     + WeakSet(): A WeakSet() is a collection that is similar to a Set because it retains unique values; but it can only hold Objects. If an object in your WeakSet has no other reference variables left, it will be removed automatically.
+     + `WeakSet()`: A WeakSet() is a collection that is similar to a Set because it retains unique values; but it can only hold Objects. If an object in your WeakSet has no other reference variables left, it will be removed automatically.
        ```
        var weakSet1 = new WeakSet([{x:1}]);
        var ob1 = {o:1};
@@ -1903,9 +1903,9 @@
      + The proxy objects are used to customize behaviour for basic operations like property lookup, assignment, enumeration, function invocation, etc.
      + For basic actions, the Proxy object is used to create custom behaviour (e.g. property lookup, assignment, enumeration, function invocation, etc).
      + We need to define three crucial terms:
-       + handler —  a placeholder object that holds the trap(s)
-       + traps — the method(s) that let you access a property.
-       + target — the virtualized object by the proxy
+       + `handler`:  a placeholder object that holds the trap(s)
+       + `traps`: the method(s) that let you access a property.
+       + `target`: the virtualized object by the proxy
        ```
        const handle = {
          get: function(ob, prp) {
@@ -1982,7 +1982,7 @@
 
 
 100. What is Webpack?
-     + Webpack is a tool for bundling JavaScript files for usage in browsers. Webpack analyses the application and generates the bundles by creating a dependency graph that maps each module of the project required. It enables you to execute the environment that was hosted by Babel. A web pack has the advantage of combining numerous modules and packs into a single JavaScript file. It includes a dev server, which aids with code updates and asset management.
+     + `Webpack`: is a tool for bundling JavaScript files for usage in browsers. Webpack analyses the application and generates the bundles by creating a dependency graph that maps each module of the project required. It enables you to execute the environment that was hosted by Babel. A web pack has the advantage of combining numerous modules and packs into a single JavaScript file. It includes a dev server, which aids with code updates and asset management.
        + folder_name/index.js
          ```
          import bar from './func.js';
