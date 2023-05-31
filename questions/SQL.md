@@ -358,8 +358,8 @@
     + If a table is dropped, all things associated with the tables are dropped as well. This includes - the relationships defined on the table with other tables, the integrity checks and constraints, access privileges and other grants that the table has. To create and use the table again in its original form, all these relations, checks, constraints, privileges and relationships need to be redefined. However, if a table is truncated, none of the above problems exist and the table retains its original structure.
 
 3.  What is the difference between DELETE and TRUNCATE statements?
-    + The TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
-    + The DELETE command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
+    + `TRUNCATE`: command is used to delete all the rows from the table and free the space containing the table.
+    + `DELETE`: command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
 
 4.  What are Aggregate and Scalar functions?
     + An aggregate function performs operations on a collection of values to return a single scalar value. Aggregate functions are often used with the GROUP BY and HAVING clauses of the SELECT statement. Following are the widely used SQL aggregate functions:
@@ -383,30 +383,30 @@
       + `FORMAT()`: Sets the format to display a collection of values.
 
 5.  What is User-defined function? What are its various types?
-    + The user-defined functions in SQL are like functions in any other programming language that accept parameters, perform complex calculations, and return a value. They are written to use the logic repetitively whenever required. There are two types of SQL user-defined functions:
+    + `user-defined functions`: similar to functions in any other programming language that accept parameters, perform complex calculations, and return a value. They are written to use the logic repetitively whenever required. There are two types of SQL user-defined functions:
       + `Scalar Function`: As explained earlier, user-defined scalar functions return a single scalar value.
       + `Table-Valued Functions`: User-defined table-valued functions return a table as output.
         + `Inline`: returns a table data type based on a single SELECT statement.
         + `Multi-statement`: returns a tabular result-set but, unlike inline, multiple SELECT statements can be used inside the function body.
 
-6.  What is OLTP?
-    + OLTP stands for Online Transaction Processing, is a class of software applications capable of supporting transaction-oriented programs. An essential attribute of an OLTP system is its ability to maintain concurrency. To avoid single points of failure, OLTP systems are often decentralized. These systems are usually designed for a large number of users who conduct short transactions. Database queries are usually simple, require sub-second response times, and return relatively few records. Here is an insight into the working of an OLTP system.
+6.  What is Online Transaction Processing (OLTP)?
+    + `Online Transaction Processing (OLTP)`: is a class of software applications capable of supporting transaction-oriented programs. An essential attribute of an OLTP system is its ability to maintain concurrency. To avoid single points of failure, OLTP systems are often decentralized. These systems are usually designed for a large number of users who conduct short transactions. Database queries are usually simple, require sub-second response times, and return relatively few records. Here is an insight into the working of an OLTP system.
     ![OLTP](../images/sql/oltp.png)
 
-7.  What are the differences between OLTP and OLAP?
-    + OLTP stands for Online Transaction Processing, is a class of software applications capable of supporting transaction-oriented programs. An important attribute of an OLTP system is its ability to maintain concurrency. OLTP systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times, and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
-    + OLAP stands for Online Analytical Processing, a class of software programs that are characterized by the relatively low frequency of online transactions. Queries are often too complex and involve a bunch of aggregations. For OLAP systems, the effectiveness measure relies highly on response time. Such systems are widely used for data mining or maintaining aggregated, historical data, usually in multi-dimensional schemas.
+7.  What are the differences between Online Transaction Processing (OLTP) and Online Analytical Processing (OLAP)?
+    + `Online Transaction Processing (OLTP)`: a class of software applications capable of supporting transaction-oriented programs. An important attribute of an OLTP system is its ability to maintain concurrency. OLTP systems often follow a decentralized architecture to avoid single points of failure. These systems are generally designed for a large audience of end-users who conduct short transactions. Queries involved in such databases are generally simple, need fast response times, and return relatively few records. A number of transactions per second acts as an effective measure for such systems.
+    + `Online Analytical Processing (OLAP)`: a class of software programs that are characterized by the relatively low frequency of online transactions. Queries are often too complex and involve a bunch of aggregations. For OLAP systems, the effectiveness measure relies highly on response time. Such systems are widely used for data mining or maintaining aggregated, historical data, usually in multi-dimensional schemas.
     ![OLTP vs OLAP](../images/sql/otlp_olap.png)
 
 8.  What is Collation? What are the different types of Collation Sensitivity?
-    + Collation refers to a set of rules that determine how data is sorted and compared. Rules defining the correct character sequence are used to sort the character data. It incorporates options for specifying case sensitivity, accent marks, kana character types, and character width. Below are the different types of collation sensitivity:
+    + `Collation`: refers to a set of rules that determine how data is sorted and compared. Rules defining the correct character sequence are used to sort the character data. It incorporates options for specifying case sensitivity, accent marks, kana character types, and character width. Below are the different types of collation sensitivity:
       + `Case sensitivity`: A and a are treated differently.
       + `Accent sensitivity`: a and á are treated differently.
       + `Kana sensitivity`: Japanese kana characters Hiragana and Katakana are treated differently.
       + `Width sensitivity`: Same character represented in single-byte (half-width) and double-byte (full-width) are treated differently.
 
 9.  What is a Stored Procedure?
-    + A stored procedure is a subroutine available to applications that access a relational database management system (RDBMS). Such procedures are stored in the database data dictionary. The sole disadvantage of stored procedure is that it can be executed nowhere except in the database and occupies more memory in the database server. It also provides a sense of security and functionality as users who can't access the data directly can be granted access via stored procedures.
+    + `Stored Procedure`: is a subroutine available to applications that access a relational database management system (RDBMS). Such procedures are stored in the database data dictionary. The sole disadvantage of stored procedure is that it can be executed nowhere except in the database and occupies more memory in the database server. It also provides a sense of security and functionality as users who can't access the data directly can be granted access via stored procedures.
       ```
       DELIMITER $$
       CREATE PROCEDURE FetchAllStudents()
@@ -418,7 +418,7 @@
     ![stored procedure](../images/sql/stored_procedure.png)
 
 10. What is a Recursive Stored Procedure?
-    + A stored procedure that calls itself until a boundary condition is reached, is called a recursive stored procedure. This recursive function helps the programmers to deploy the same set of code several times as and when required. Some SQL programming languages limit the recursion depth to prevent an infinite loop of procedure calls from causing a stack overflow, which slows down the system and may lead to system crashes.
+    + `Recursive Stored Procedure`: A stored procedure that calls itself until a boundary condition is reached, is called a recursive stored procedure. This recursive function helps the programmers to deploy the same set of code several times as and when required. Some SQL programming languages limit the recursion depth to prevent an infinite loop of procedure calls from causing a stack overflow, which slows down the system and may lead to system crashes.
       ```
       DELIMITER $$     /* Set a new delimiter => $$ */
       CREATE PROCEDURE calctotal( /* Create the procedure */
@@ -446,36 +446,31 @@
 
 12. What is Pattern Matching in SQL?
     + SQL pattern matching provides for pattern search in data if you have no clue as to what that word should be. This kind of SQL query uses wildcards to match a string pattern, rather than writing the exact word. The LIKE operator is used in conjunction with SQL Wildcards to fetch the required information.
-      + Using the % wildcard to perform a simple search
-        + The % wildcard matches zero or more characters of any type and can be used to define wildcards both before and after the pattern. Search a student in your database with first name beginning with the letter K:
+      + `Using the % wildcard to perform a simple search`: The % wildcard matches zero or more characters of any type and can be used to define wildcards both before and after the pattern. Search a student in your database with first name beginning with the letter K:
           ```
           SELECT *
           FROM students
           WHERE first_name LIKE 'K%'
           ```
-      + Omitting the patterns using the NOT keyword
-        + Use the NOT keyword to select records that don't match the pattern. This query returns all students whose first name does not begin with K.
+      + `Omitting the patterns using the NOT keyword`: Use the NOT keyword to select records that don't match the pattern. This query returns all students whose first name does not begin with K.
           ```
           SELECT *
           FROM students
           WHERE first_name NOT LIKE 'K%'
           ```
-      + Matching a pattern anywhere using the % wildcard twice
-        + Search for a student in the database where he/she has a K in his/her first name.
+      + `Matching a pattern anywhere using the % wildcard twice`: Search for a student in the database where he/she has a K in his/her first name.
           ```
           SELECT *
           FROM students
           WHERE first_name LIKE '%Q%'
           ```
-      + Using the _ wildcard to match pattern at a specific position
-        + The _ wildcard matches exactly one character of any type. It can be used in conjunction with % wildcard. This query fetches all students with letter K at the third position in their first name.
+      + `Using the _ wildcard to match pattern at a specific position`: The _ wildcard matches exactly one character of any type. It can be used in conjunction with % wildcard. This query fetches all students with letter K at the third position in their first name.
           ```
           SELECT *
           FROM students
           WHERE first_name LIKE '__K%'
           ```
-      + Matching patterns for a specific length
-        + The _ wildcard plays an important role as a limitation when it matches exactly one character. It limits the length and position of the matched results.
+      + `Matching patterns for a specific length`: The _ wildcard plays an important role as a limitation when it matches exactly one character. It limits the length and position of the matched results.
           ```
           SELECT *   /* Matches first names with three or more letters */
           FROM students
@@ -486,26 +481,26 @@
           WHERE first_name LIKE '____'
           ```
 
-13. What is PostgreSQL?
-    + PostgreSQL was first called Postgres and was developed by a team led by Computer Science Professor Michael Stonebraker in 1986. It was developed to help developers build enterprise-level applications by upholding data integrity by making systems fault-tolerant. PostgreSQL is therefore an enterprise-level, flexible, robust, open-source, and object-relational DBMS that supports flexible workloads along with handling concurrent users. It has been consistently supported by the global developer community. Due to its fault-tolerant nature, PostgreSQL has gained widespread popularity among developers.
+1.  What is PostgreSQL?
+    + `PostgreSQL`: was first called Postgres and was developed by a team led by Computer Science Professor Michael Stonebraker in 1986. It was developed to help developers build enterprise-level applications by upholding data integrity by making systems fault-tolerant. PostgreSQL is therefore an enterprise-level, flexible, robust, open-source, and object-relational DBMS that supports flexible workloads along with handling concurrent users. It has been consistently supported by the global developer community. Due to its fault-tolerant nature, PostgreSQL has gained widespread popularity among developers.
 
-14. How do you define Indexes in PostgreSQL?
+2.  How do you define Indexes in PostgreSQL?
     + Indexes are the inbuilt functions in PostgreSQL which are used by the queries to perform search more efficiently on a table in the database. Consider that you have a table with thousands of records and you have the below query that only a few records can satisfy the condition, then it will take a lot of time to search and return those rows that abide by this condition as the engine has to perform the search operation on every single to check this condition. This is undoubtedly inefficient for a system dealing with huge data. Now if this system had an index on the column where we are applying search, it can use an efficient method for identifying matching rows by walking through only a few levels. This is called indexing.
     + `Select * from some_table where table_col=120`
 
-15. How will you change the datatype of a column?
+3.  How will you change the datatype of a column?
     + This can be done by using the ALTER TABLE statement as shown below:
       ```
       ALTER TABLE tname
       ALTER COLUMN col_name [SET DATA] TYPE new_data_type;
       ```
 
-16. What is the command used for creating a database in PostgreSQL?
+4.  What is the command used for creating a database in PostgreSQL?
     + The first step of using PostgreSQL is to create a database. This is done by using the createdb command as shown below: `createdb db_name`
       + After running the above command, if the database creation was successful, then the below message is shown:
         + `CREATE DATABASE`
 
-17. How can we start, restart and stop the PostgreSQL server?
+5.  How can we start, restart and stop the PostgreSQL server?
     + To start the PostgreSQL server, we run:
       + `service postgresql start`
       + Once the server is successfully started, we get the below message:
@@ -519,17 +514,17 @@
       + Once stopped successfully, we get the message:
         + `Stopping PostgreSQL: server stopped ok`
 
-18. What are partitioned tables called in PostgreSQL?
+6.  What are partitioned tables called in PostgreSQL?
     + Partitioned tables are logical structures that are used for dividing large tables into smaller structures that are called partitions. This approach is used for effectively increasing the query performance while dealing with large database tables. To create a partition, a key called partition key which is usually a table column or an expression, and a partitioning method needs to be defined. There are three types of inbuilt partitioning methods provided by Postgres
       + `Range Partitioning`: This method is done by partitioning based on a range of values. This method is most commonly used upon date fields to get monthly, weekly or yearly data. In the case of corner cases like value belonging to the end of the range, for example: if the range of partition 1 is 10-20 and the range of partition 2 is 20-30, and the given value is 10, then 10 belongs to the second partition and not the first.
       + `List Partitioning`: This method is used to partition based on a list of known values. Most commonly used when we have a key with a categorical value. For example, getting sales data based on regions divided as countries, cities, or states.
       + `Hash Partitioning`: This method utilizes a hash function upon the partition key. This is done when there are no specific requirements for data division and is used to access data individually. For example, you want to access data based on a specific product, then using hash partition would result in the dataset that we require.
     + The type of partition key and the type of method used for partitioning determines how positive the performance and the level of manageability of the partitioned table are.
 
-19. Define tokens in PostgreSQL?
+7.  Define tokens in PostgreSQL?
     + A token in PostgreSQL is either a keyword, identifier, literal, constant, quotes identifier, or any symbol that has a distinctive personality. They may or may not be separated using a space, newline or a tab. If the tokens are keywords, they are usually commands with useful meanings. Tokens are known as building blocks of any PostgreSQL code.
 
-20. What is the importance of the TRUNCATE statement?
+8.  What is the importance of the TRUNCATE statement?
     + `TRUNCATE TABLE name_of_table` statement removes the data efficiently and quickly from the table. The truncate statement can also be used to reset values of the identity columns along with data cleanup as shown below:
       ```
       TRUNCATE TABLE name_of_table
@@ -543,31 +538,31 @@
         table_3;
       ```
 
-21. What is the capacity of a table in PostgreSQL?
+9.  What is the capacity of a table in PostgreSQL?
     + The maximum size of PostgreSQL is 32TB.
 
-22. Define sequence.
-    + A sequence is a schema-bound, user-defined object which aids to generate a sequence of integers. This is most commonly used to generate values to identity columns in a table. We can create a sequence by using the `CREATE SEQUENCE` statement as shown below:
+10. Define sequence.
+    + `sequence`: is a schema-bound, user-defined object which aids to generate a sequence of integers. This is most commonly used to generate values to identity columns in a table. We can create a sequence by using the `CREATE SEQUENCE` statement as shown below:
       + `CREATE SEQUENCE serial_num START 100;`
       + To get the next number 101 from the sequence, we use the nextval() method as shown below:
         + `SELECT nextval('serial_num')`
       + We can also use this sequence while inserting new records using the INSERT command:
         + `INSERT INTO ib_table_name VALUES (nextval('serial_num'), 'interviewbit');`
 
-23. What are string constants in PostgreSQL?
+11. What are string constants in PostgreSQL?
     + They are character sequences bound within single quotes. These are using during data insertion or updation to characters in the database.
     There are special string constants that are quoted in dollars. Syntax: `$tag$<string_constant>$tag$` The tag in the constant is optional and when we are not specifying the tag, the constant is called a double-dollar string literal.
 
-24. How can you get a list of all databases in PostgreSQL?
+12. How can you get a list of all databases in PostgreSQL?
     + This can be done by using the command `\l -> backslash followed by the lower-case letter L`.
 
-25. How can you delete a database in PostgreSQL?
+13. How can you delete a database in PostgreSQL?
     + This can be done by using the DROP DATABASE command as shown in the syntax below:
       + `DROP DATABASE database_name;`
       + If the database has been deleted successfully, then the following message would be shown:
         + `DROP DATABASE`
 
-26. What are ACID properties? Is PostgreSQL compliant with ACID?
+14. What are ACID properties? Is PostgreSQL compliant with ACID?
     + ACID stands for Atomicity, Consistency, Isolation, Durability. They are database transaction properties which are used for guaranteeing data validity in case of errors and failures.
       + `Atomicity`: This property ensures that the transaction is completed in all-or-nothing way.
       + `Consistency`: This ensures that updates made to the database is valid and follows rules and restrictions.
@@ -575,18 +570,18 @@
       + `Durability`: This property ensures that the committed transactions are stored permanently in the database.
     + PostgreSQL is compliant with ACID properties.
 
-27. Can you explain the architecture of PostgreSQL?
+15. Can you explain the architecture of PostgreSQL?
     + The architecture of PostgreSQL follows the client-server model.
     + The server side comprises of background process manager, query processer, utilities and shared memory space which work together to build PostgreSQL’s instance that has access to the data. The client application does the task of connecting to this instance and requests data processing to the services. The client can either be GUI (Graphical User Interface) or a web application. The most commonly used client for PostgreSQL is pgAdmin.
     ![postgresql architecture](../images/sql/postgre_architecture.png)
 
-28. What do you understand by multi-version concurrency control?
-    + MVCC or Multi-version concurrency control is used for avoiding unnecessary database locks when 2 or more requests tries to access or modify the data at the same time. This ensures that the time lag for a user to log in to the database is avoided. The transactions are recorded when anyone tries to access the content.
+16. What do you understand by multi-version concurrency (MVCC) control?
+    + `Multi-version Concurrency Control (MVCC)`: is used for avoiding unnecessary database locks when 2 or more requests tries to access or modify the data at the same time. This ensures that the time lag for a user to log in to the database is avoided. The transactions are recorded when anyone tries to access the content.
 
-29. What do you understand by command enable-debug?
-    + The command enable-debug is used for enabling the compilation of all libraries and applications. When this is enabled, the system processes get hindered and generally also increases the size of the binary file. Hence, it is not recommended to switch this on in the production environment. This is most commonly used by developers to debug the bugs in their scripts and help them spot the issues.
+17. What do you understand by the command enable-debug?
+    + `enable-debug`: is used for enabling the compilation of all libraries and applications. When this is enabled, the system processes get hindered and generally also increases the size of the binary file. Hence, it is not recommended to switch this on in the production environment. This is most commonly used by developers to debug the bugs in their scripts and help them spot the issues.
 
-30. How do you check the rows affected as part of previous transactions?
+18. How do you check the rows affected as part of previous transactions?
     + SQL standards state that the following three phenomena should be prevented whilst concurrent transactions. SQL standards define 4 levels of transaction isolations to deal with these phenomena.
       + `Dirty reads`: If a transaction reads data that is written due to concurrent uncommitted transaction, these reads are called dirty reads.
       + `Phantom reads`: This occurs when two same queries when executed separately return different rows. For example, if transaction A retrieves some set of rows matching search criteria. Assume another transaction B retrieves new rows in addition to the rows obtained earlier for the same search criteria. The results are different.
@@ -599,17 +594,17 @@
     + The following table clearly explains which type of unwanted reads the levels avoid:
       ![rows affected transactions](../images/sql/rows_affected_previous_transactions.png)
 
-31. What can you tell about WAL (Write Ahead Logging)?
-    + Write Ahead Logging is a feature that increases the database reliability by logging changes before any changes are done to the database. This ensures that we have enough information when a database crash occurs by helping to pinpoint to what point the work has been complete and gives a starting point from the point where it was discontinued.
+19. What can you tell about WAL (Write Ahead Logging)?
+    + `Write Ahead Logging (WAL)`: is a feature that increases the database reliability by logging changes before any changes are done to the database. This ensures that we have enough information when a database crash occurs by helping to pinpoint to what point the work has been complete and gives a starting point from the point where it was discontinued.
 
-32. What is the main disadvantage of deleting data from an existing table using the DROP TABLE command?
+20. What is the main disadvantage of deleting data from an existing table using the DROP TABLE command?
     + `DROP TABLE` command deletes complete data from the table along with removing the complete table structure too. In case our requirement entails just remove the data, then we would need to recreate the table to store data in it. In such cases, it is advised to use the TRUNCATE command.
 
-33. How do you perform case-insensitive searches using regular expressions in PostgreSQL?
+21. How do you perform case-insensitive searches using regular expressions in PostgreSQL?
     + To perform case insensitive matches using a regular expression, we can use POSIX (~*) expression from pattern matching operators. For example:
       + `'interviewbit' ~* '.*INTervIewBit.*'`
 
-34. How will you take backup of the database in PostgreSQL?
+22. How will you take backup of the database in PostgreSQL?
     + We can achieve this by using the pg_dump tool for dumping all object contents in the database into a single file. The steps are as follows:
       + `Step 1`: Navigate to the bin folder of the PostgreSQL installation path.
         + `C:\>cd C:\Program Files\PostgreSQL\10.0\bin`
@@ -617,20 +612,20 @@
         + `pg_dump -U postgres -W -F t sample_data > C:\Users\admin\pgbackup\sample_data.tar`
         + The database dump will be stored in the sample_data.tar file on the location specified.
 
-35. Does PostgreSQL support full text search?
+23. Does PostgreSQL support full text search?
     + Full-Text Search is the method of searching single or collection of documents stored on a computer in a full-text based database. This is mostly supported in advanced database systems like SOLR or ElasticSearch. However, the feature is present but is pretty basic in PostgreSQL.
 
-36. What are parallel queries in PostgreSQL?
-    + Parallel Queries support is a feature provided in PostgreSQL for devising query plans capable of exploiting multiple CPU processors to execute the queries faster.
+24. What are parallel queries in PostgreSQL?
+    + `Parallel Queries`: support is a feature provided in PostgreSQL for devising query plans capable of exploiting multiple CPU processors to execute the queries faster.
     ![parallel queries](../images/sql/parallel_queries.png)
 
-37. Differentiate between commit and checkpoint.
+25. Differentiate between commit and checkpoint.
     + The commit action ensures that the data consistency of the transaction is maintained and it ends the current transaction in the section. Commit adds a new record in the log that describes the COMMIT to the memory. Whereas, a checkpoint is used for writing all changes that were committed to disk up to SCN which would be kept in datafile headers and control files.
 
-38. What is MySQL?
-    + MySQL is a database management system for web servers. It can grow with the website as it is highly scalable. Most of the websites today are powered by MySQL.
+26. What is MySQL?
+    + `MySQL`: is a database management system for web servers. It can grow with the website as it is highly scalable. Most of the websites today are powered by MySQL.
 
-39. What are some of the advantages of using MySQL?
+27. What are some of the advantages of using MySQL?
     + `Flexibility`: MySQL runs on all operating systems
     + `Power`: MySQL focuses on performance
     + `Enterprise-Level SQL Features`: MySQL had for some time been lacking in advanced features such as subqueries, views, and stored procedures.
@@ -639,26 +634,26 @@
     + `Replication`: One MySQL server can be duplicated on another, providing numerous advantages
     + `Configuration and Security`
 
-40. What do you mean by ‘databases’?
+28. What do you mean by ‘databases’?
     + A database is a structured collection of data stored in a computer system and organized in a way to be quickly searched. With databases, information can be rapidly retrieved.
 
-41. What does SQL in MySQL stand for?
+29. What does SQL in MySQL stand for?
     + The SQL in MySQL stands for Structured Query Language. This language is also used in other databases such as Oracle and Microsoft SQL Server.  One can use commands such as the following to send requests from a database:
       + `SELECT title FROM publications WHERE author = ' J. K. Rowling’;`
 
-42. What does a MySQL database contain?
+30. What does a MySQL database contain?
     + A MySQL database contains one or more tables, each of which contains records or rows. Within these rows are various columns or fields that contain the data itself.
 
-43. How can you interact with MySQL?
+31. How can you interact with MySQL?
     + There are three main ways you can interact with MySQL:
       + using a command line
       + via a web interface
       + through a programming language
 
-44. What are MySQL Database Queries?
+32. What are MySQL Database Queries?
     + A query is a specific request or a question. One can query a database for specific information and have a record returned.
 
-45. What are some of the common MySQL commands?
+33. What are some of the common MySQL commands?
   ![mysql commands](../images/sql/mysql_commands.png)
 
 1.  How do you create a database in MySQL?
@@ -723,7 +718,7 @@
 
 1.  What is BLOB in MySQL?
      + BLOB is an acronym that stands for a binary large object. It is used to hold a variable amount of data.
-     + There are four types of BLOB:
+     + `There are four types of BLOB`:
       + TINYBLOB
       + BLOB
       + MEDIUMBLOB
@@ -754,7 +749,7 @@
       ```
 
 5.  What are MySQL Triggers?
-    + A trigger is a task that executes in response to some predefined database event, such as after a new row is added to a particular table. Specifically, this event involves inserting, modifying, or deleting table data, and the task can occur either prior to or immediately following any such event.
+    + `trigger`: is a task that executes in response to some predefined database event, such as after a new row is added to a particular table. Specifically, this event involves inserting, modifying, or deleting table data, and the task can occur either prior to or immediately following any such event.
     + Triggers have many purposes, including:
       + Audit Trails
       + Validation
@@ -774,10 +769,10 @@
 
 8.  What are the MySQL clients and utilities?
     + Several MySQL programs are available to help you communicate with the server. For administrative tasks, some of the most important ones are listed here:
-      + `mysql—An` interactive program that enables you to send SQL statements to the server and to view the results. You can also use mysql to execute batch scripts (text files containing SQL statements).
-      + `mysqladmin—An` administrative program for performing tasks such as shutting down the server, checking its configuration, or monitoring its status if it appears not to be functioning properly.
-      + `mysqldump—A` tool for backing up your databases or copying databases to another server.
-      + `mysqlcheck` and `myisamchk—Programs` that help you perform table checking, analysis, and optimization, as well as repairs if tables become damaged. mysqlcheck works with MyISAM tables and to some extent with tables for other storage engines. myisamchk is for use only with MyISAM tables.
+      + `mysql—An`: interactive program that enables you to send SQL statements to the server and to view the results. You can also use mysql to execute batch scripts (text files containing SQL statements).
+      + `mysqladmin—An`: administrative program for performing tasks such as shutting down the server, checking its configuration, or monitoring its status if it appears not to be functioning properly.
+      + `mysqldump—A`: tool for backing up your databases or copying databases to another server.
+      + `mysqlcheck`: and `myisamchk—Programs` that help you perform table checking, analysis, and optimization, as well as repairs if tables become damaged. mysqlcheck works with MyISAM tables and to some extent with tables for other storage engines. myisamchk is for use only with MyISAM tables.
 
 9.  What are the types of relationships used in MySQL?
     + There are three categories of relationships in MySQL:
@@ -786,9 +781,9 @@
       + `Many-to-Many`: In a many-to-many relationship, many rows in one table are linked to many rows in another table. To create this relationship, add a third table containing the same key column from each of
 
 10. Can you explain the logical architecture of MySQL?
-    + The top layer contains the services most network-based client/server tools or servers need such as connection handling, authentication, security, and so forth.
-    + The second layer contains much of MySQL’s brains. This has the code for query parsing, analysis, optimization, caching, and all the built-in functions.
-    + The third layer contains the storage engines that are responsible for storing and retrieving the data stored in MySQL.
+    + `top layer`: contains the services most network-based client/server tools or servers need such as connection handling, authentication, security, and so forth.
+    + `second layer`: contains much of MySQL’s brains. This has the code for query parsing, analysis, optimization, caching, and all the built-in functions.
+    + `third layer`: contains the storage engines that are responsible for storing and retrieving the data stored in MySQL.
     ![logical architecture](../images/sql/logical_architecture.png)
 
 11. What is Scaling in MySQL?
@@ -799,7 +794,7 @@
       + Size of related datasets
 
 12. What is Sharding in SQL?
-    + The process of breaking up large tables into smaller chunks (called shards) that are spread across multiple servers is called Sharding.
+    + `Sharding`: The process of breaking up large tables into smaller chunks (called shards) that are spread across multiple servers is called Sharding.
     + The advantage of Sharding is that since the sharded database is generally much smaller than the original; queries, maintenance, and all other tasks are much faster.
 
 13. What are Transaction Storage Engines in MySQL?
