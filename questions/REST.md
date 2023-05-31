@@ -49,21 +49,21 @@
 
 7. What are HTTP Status codes?
    + These are the standard codes that refer to the predefined status of the task at the server. Following are the status codes formats available:
-     + `1xx` - represents informational responses
-     + `2xx` - represents successful responses
-     + `3xx` - represents redirects
-     + `4xx` - represents client errors
-     + `5xx` - represents server errors
+     + `1xx`: represents informational responses
+     + `2xx`: represents successful responses
+     + `3xx`: represents redirects
+     + `4xx`: represents client errors
+     + `5xx`: represents server errors
    + Most commonly used status codes are:
-     + `200` - success/OK
-     + `201` - CREATED - used in POST or PUT methods.
-     + `304` - NOT MODIFIED - used in conditional GET requests to reduce the bandwidth use of the network. Here, the body of the response sent should be empty.
-     + `400` - BAD REQUEST - This can be due to validation errors or missing input data.
-     + `401`- UNAUTHORIZED - This is returned when there is no valid authentication credentials sent along with the request.
-     + `403` - FORBIDDEN - sent when the user does not have access (or is forbidden) to the resource.
-     + `404` - NOT FOUND - Resource method is not available.
-     + `500` - INTERNAL SERVER ERROR - server threw some exceptions while running the method.
-     + `502` - BAD GATEWAY - Server was not able to get the response from another upstream server.
+     + `200`: success/OK
+     + `201`: CREATED - used in POST or PUT methods.
+     + `304`: NOT MODIFIED - used in conditional GET requests to reduce the bandwidth use of the network. Here, the body of the response sent should be empty.
+     + `400`: BAD REQUEST - This can be due to validation errors or missing input data.
+     + `401`: UNAUTHORIZED - This is returned when there is no valid authentication credentials sent along with the request.
+     + `403`: FORBIDDEN - sent when the user does not have access (or is forbidden) to the resource.
+     + `404`: NOT FOUND - Resource method is not available.
+     + `500`: INTERNAL SERVER ERROR - server threw some exceptions while running the method.
+     + `502`: BAD GATEWAY - Server was not able to get the response from another upstream server.
 
 8. What are the HTTP Methods?
    + HTTP Methods are also known as HTTP Verbs. They form a major portion of uniform interface restriction followed by the REST that specifies what action has to be followed to get the requested resource. Below are some examples of HTTP Methods:
@@ -103,22 +103,22 @@
         + To ensure that the request sends the data in JSON format, again the Content-Type must be set to application/JSON on the request header.
       + While naming the resource endpoints, ensure to use plural nouns and not verbs. The API endpoints should be clear, brief, easy to understand, and informative. Using verbs in the resource name doesn’t contribute much information because an HTTP request already has what the request is doing in its HTTP method/verb. An appropriate HTTP verb should be used to represent the task of the API endpoint.
         + Below are the most commonly used HTTP methods to define the verb:
-          + `GET` - indicates get/retrieve the resource data
-          + `POST` - indicates create new resource data
-          + `PUT` - indicates update the existing resource data
-          + `DELETE` - indicates remove the resource data
+          + `GET`: indicates get/retrieve the resource data
+          + `POST`: indicates create new resource data
+          + `PUT`: indicates update the existing resource data
+          + `DELETE`: indicates remove the resource data
       + To represent the hierarchy of resources, use the nesting in the naming convention of the endpoints. In case, you want to retrieve data of one object residing in another object, the endpoint should reflect this to communicate what is happening. For example, to get the address of an author, we can use the GET method for the URI /authors/:id/address'
         + Please ensure there are no more than 2 or 3 levels of nesting as the name of the URI can become too long and unwieldy.
       + Error Handling should be done gracefully by returning appropriate error codes the application has encountered. REST has defined standard HTTP Status codes that can be sent along with the response based on the scenario.
         + Error codes should also be accompanied by appropriate error messages that can help the developers to take corrective actions. However, the message should not be too elaborate as well which can help the hacker to hack your application.
         + Common status codes are:
-          + `400` - Bad Request – client-side error - failed input validation.
-          + `401` - Unauthorized – The user is not authenticated and hence does not have authority to access the resource.
-          + `403` - Forbidden – User is authenticated but is not authorized to access the resource.
-          + `404` - Not Found – The resource is not found.
-          + `500` - Internal server error – This is a very generic server-side error that is thrown when the server goes down. This shouldn’t be returned by the programmer explicitly.
-          + `502` - Bad Gateway – Server did not receive a valid response from the upstream server.
-          + `503` - Service Unavailable – Some unexpected things happened on the server such as system failure, overload, etc.
+          + `400`: Bad Request – client-side error - failed input validation.
+          + `401`: Unauthorized – The user is not authenticated and hence does not have authority to access the resource.
+          + `403`: Forbidden – User is authenticated but is not authorized to access the resource.
+          + `404`: Not Found – The resource is not found.
+          + `500`: Internal server error – This is a very generic server-side error that is thrown when the server goes down. This shouldn’t be returned by the programmer explicitly.
+          + `502`: Bad Gateway – Server did not receive a valid response from the upstream server.
+          + `503`: Service Unavailable – Some unexpected things happened on the server such as system failure, overload, etc.
       + While retrieving huge resource data, it is advisable to include filtering and pagination of the resources. This is because returning huge data all at once can slow down the system and reduce the application performance. Hence, filter some items reduces the data to some extent. Pagination of data is done to ensure only some results are sent at a time. Doing this can increase the server performance and reduce the burden of the server resources.
       + Good security practices are a must while developing REST APIs. The client-server communication must be private due to the nature of data sensitivity. Hence, incorporating SSL/TLS becomes the most important step while developing APIs as they facilitate establishing secure communication. SSL certificates are easier to get and load on the server.
         + Apart from the secure channels, we need to ensure that not everyone should be able to access the resource. For example, normal users should not access the data of admins or another user. Hence, role-based access controls should be in place to make sure only the right set of users can access the right set of data.
