@@ -335,7 +335,7 @@
             ![border-box box model](../images/css/border_box_model.png)
 
 18. How is opacity specified in CSS3?
-    + Opacity refers to the degree to which the content is transparent or opaque. We can use the property named opacity which takes the values ranging from 0 to 1. 0 specifies that the element is completely transparent where 1 means that the element is completely opaque. We can use the opacity property as follows:
+    + `Opacity`: refers to the degree to which the content is transparent or opaque. We can use the property named opacity which takes the values ranging from 0 to 1. 0 specifies that the element is completely transparent where 1 means that the element is completely opaque. We can use the opacity property as follows:
      + ```
         div {
             opacity: 0.6;
@@ -371,8 +371,7 @@
        + From the above figure, we can see that as the value of the z-index increases along the z-axis, the order of stacking would be towards the top of other elements along the vertical axis.
 
 21. What do the following CSS selectors mean?
-    + `div, p`
-     + This selector implies selecting all `div` elements and all `p` elements
+    + `div, p`: `div` elements and all `p` elements
      + ```
         <h1>Heading 1</h1>
           <div>
@@ -387,8 +386,7 @@
           <span> Span 1 </span>
        ```
        + Here, all the `div` elements and the `p` elements would be selected by the browser irrespective of their parents or where they are placed. The remaining tags like `h1` and `span` are ignored.
-    + `div p`
-     + This selector tells to select all `p` elements that are inside `div` elements.
+    + `div p`: `p` elements that are inside `div` elements.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -406,8 +404,7 @@
         <span> Span 1 </span>
        ```
        + Here, `<p>paragraph 1</p>` and `<p> Inner Div Paragraph </p>` would be selected by the browser and the properties are applied. The rest of the paragraph tags are not selected.
-    + `div ~ p`
-     + This selector tells to select all `p` elements that have `div` elements preceeded anywhere.
+    + `div ~ p`: `p` elements that have `div` elements preceeded anywhere.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -422,8 +419,7 @@
         <span> Span 1 </span>
        ```
        + Here, paragraph 2 and paragraph 3 elements would be selected as marked in the code above.
-    + `div + p`
-     + This selector says to select all `p` elements placed immediately after the `div` element.
+    + `div + p`: `p` elements placed immediately after the `div` element.
      + ```
         <h1>Heading 1</h1>
         <div>
@@ -438,8 +434,7 @@
         <span> Span 1 </span>
        ```
        + In this case, we have 2 `p` elements immediately after the `div` tag.
-    + `div > p`
-     + This selector says to select all `p` elements which has `div` as an immediate parent.
+    + `div > p`: This selector says to select all `p` elements which has `div` as an immediate parent.
      + ```
         <h1>Heading 1</h1>
         <div>
