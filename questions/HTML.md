@@ -6,7 +6,7 @@
    + No. HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, `<h1>Heading 1</h1>` is a HTML element but just `<h1>` is a starting tag and `</h1>` is a closing tag
 
 2. What are tags and attributes in HTML?
-   + Tags are the primary component of the HTML that defines how the content will be structured/ formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element. For example, `<p align=” center”>Interview questions</p>`, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.
+   + Tags are the primary component of the HTML that defines how the content will be structured/formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element. For example, `<p align=” center”>Interview questions</p>`, in this the ‘align’ is the attribute using which we will align the paragraph to show in the center of the view.
 
 3. What are void elements in HTML?
    + HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example `<br />`, `<img />`, `<hr />`, etc.
@@ -15,7 +15,7 @@
    + In HTML, a blank sequence of whitespace characters is treated as a single space character, Because the browser collapses multiple spaces into a single space character and this helps a developer to indent lines of text without worrying about multiple spaces and maintain readability and understandability of HTML codes.
 
 5. What are HTML Entities?
-   + In HTML some characters are reserved like ‘<’, ‘>’, ‘/’, etc. To use these characters in our webpage we need to use the character entities called HTML Entities. Below are a few mapping between the reserved character and its respective entity character to be used.
+   + In HTML some characters are reserved like `<`, `>`, `/`, etc. To use these characters in our webpage we need to use the character entities called HTML Entities. Below are a few mapping between the reserved character and its respective entity character to be used.
    ![html entities](../images/html/html_entities.png)
 
 6. What are different types of lists in HTML?
@@ -123,10 +123,10 @@
 
 24. How to specify the link in HTML and explain the target attribute?
     + HTML provides a hyperlink - `<a>` tag to specify the links in a webpage. The ‘href’ attribute is used to specify the link and the ‘target’ attribute is used to specify, where do we want to open the linked document. The ‘target’ attribute can have the following values:
-      + _self: This is a default value. It opens the document in the same window or tab as it was clicked.
-      + _blank: It opens the document in a new window or tab.
-      + _parent: It opens the document in a parent frame.
-      + _top: It opens the document in a full-body window.
+      + `_self`: This is a default value. It opens the document in the same window or tab as it was clicked.
+      + `_blank`: It opens the document in a new window or tab.
+      + `_parent`: It opens the document in a parent frame.
+      + `_top`: It opens the document in a full-body window.
 
 25. In how many ways can we specify the CSS styles for the HTML element?
     + There are three ways in which we can specify the styles for HTML elements:
