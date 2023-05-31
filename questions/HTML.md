@@ -528,14 +528,14 @@
     + `<img src="circle.png" alt="circle" srcset="circle.svg">`
 
 58. What are different approaches to make an image responsive?
-    + Art direction - Using `<picture>` element the landscape image fully shown in desktop layout can be zoomed in with the main subject in focus for a portrait layout.
+    + `Art direction`: Using `<picture>` element the landscape image fully shown in desktop layout can be zoomed in with the main subject in focus for a portrait layout.
     + ```
       <picture>
         <source media="(min-width: 650px)" srcset="img_cup.jpg">
         <img src="img_marsh.jpg" style="width:auto;">
       </picture>
       ```
-    + Resolution switching - Instead of zoom and crop the images can be scaled accordingly using vector graphics. Also, this can be further optimized to serve different pixel density screens as well.
+    + `Resolution switching`: Instead of zoom and crop the images can be scaled accordingly using vector graphics. Also, this can be further optimized to serve different pixel density screens as well.
       + ```
           <svg width="100" height="100">
             <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
