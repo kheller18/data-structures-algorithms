@@ -90,30 +90,19 @@
 
 12. What are the data types in MongoDB?
     + MongoDB supports a wide range of data types as values in documents. Documents in MongoDB are similar to objects in JavaScript. Along with JSON’s essential key/value–pair nature, MongoDB adds support for a number of additional data types. The common data types in MongoDB are:
-      + `Null`
-        + `{"x" : null}`
-      + `Boolean`
-        + `{"x" : true}`
-      + `Number`
-        + `{"x" : 4}`
-      + `String`
-        + `{"x" : "foobar"}`
-      + `Date`
-        + `{"x" : new Date()}`
-      + `Regular Expression`
-        + `{"x" : /foobar/i}`
-      + `Array`
-        + `{"x" : ["a", "b", "c"]}`
-      + `Embedded Document`
-        + `{"x" : {"foo" : "bar"}}`
-      + `Object ID`
-        + `{"x" : ObjectId()}`
-      + `Binary Data`
-        + Binary data is a string of arbitrary bytes.
-      + `Code`
-        + `{"x" : function() { /* ... */ }}`
+      + `Null`: `{"x" : null}`
+      + `Boolean`: `{"x" : true}`
+      + `Number`: `{"x" : 4}`
+      + `String`: `{"x" : "foobar"}`
+      + `Date`: `{"x" : new Date()}`
+      + `Regular Expression`: `{"x" : /foobar/i}`
+      + `Array`: `{"x" : ["a", "b", "c"]}`
+      + `Embedded Document`: `{"x" : {"foo" : "bar"}}`
+      + `Object ID`: `{"x" : ObjectId()}`
+      + `Binary Data`: Binary data is a string of arbitrary bytes.
+      + `Code`: `{"x" : function() { /* ... */ }}`
 
-13. When should you use MongoDB?
+1.  When should you use MongoDB?
     + You should use MongoDB when you are building internet and business applications that need to evolve quickly and scale elegantly. MongoDB is popular with developers of all kinds who are building scalable applications using agile methodologies.
     + MongoDB is a great choice if one needs to:
       + Support a rapid iterative development.
@@ -122,18 +111,18 @@
       + Evolve the type of deployment as the business changes.
       + Store, manage and search data with text, geospatial, or time-series dimensions.
 
-14. How is Querying done in MongoDB?
+2.  How is Querying done in MongoDB?
     + The find method is used to perform queries in MongoDB. Querying returns a subset of documents in a collection, from no documents at all to the entire collection. Which documents get returned is determined by the first argument to find, which is a document specifying the query criteria.
     + If we have a string we want to match, such as a "username" key with the value "alice", we use that key/value pair instead:
       + `> db.users.find({"username" : "alice"})`
 
-15. Explain the term “Indexing” in MongoDB.
+3.  Explain the term “Indexing” in MongoDB.
     + In MongoDB, indexes help in efficiently resolving queries. What an Index does is that it stores a small part of the data set in a form that is easy to traverse. The index stores the value of the specific field or set of fields, ordered by the value of the field as specified in the index. MongoDB’s indexes work almost identically to typical relational database indexes.
     + Indexes look at an ordered list with references to the content. These in turn allow MongoDB to query orders of magnitude faster. To create an index, use the createIndex collection method.
       + `> db.users.find({"username": "user101"}).explain("executionStats")`
         + Here, executionStats mode helps us understand the effect of using an index to satisfy queries.
 
-16. What are Geospatial Indexes in MongoDB?
+4.  What are Geospatial Indexes in MongoDB?
     + MongoDB has two types of geospatial indexes: 2dsphere and 2d. 2dsphere indexes work with spherical geometries that model the surface of the earth based on the WGS84 datum. This datum model the surface of the earth as an oblate spheroid, meaning that there is some flattening at the poles. Distance calculations using 2sphere indexes, therefore, take the shape of the earth into account and provide a more accurate treatment of distance between, for example, two cities, than do 2d indexes. Use 2d indexes for points stored on a two-dimensional plane.
     + 2dsphere allows you to specify geometries for points, lines, and polygons in the GeoJSON format. A point is given by a two-element array, representing [longitude, latitude]:
       ```
@@ -156,12 +145,12 @@
       }
       ```
 
-17. Explain the process of Sharding.
-    + Sharding is the process of splitting data up across machines. We also use the term “partitioning” sometimes to describe this concept. We can store more data and handle more load without requiring larger or more powerful machines, by putting a subset of data on each machine.
+5.  Explain the process of Sharding.
+    + `Sharding`: is the process of splitting data up across machines. We also use the term “partitioning” sometimes to describe this concept. We can store more data and handle more load without requiring larger or more powerful machines, by putting a subset of data on each machine.
     + In the figure below, RS0 and RS1 are shards. MongoDB’s sharding allows you to create a cluster of many machines (shards) and break up a collection across them, putting a subset of data on each shard. This allows your application to grow beyond the resource limits of a standalone server or replica set.
       ![sharding](../images/mongo/sharding.png)
 
-18. Explain the SET Modifier in MongoDB?
+6.  Explain the SET Modifier in MongoDB?
     + If the value of a field does not yet exist, the `$set` sets the value. This can be useful for updating schemas or adding user-defined keys.
       ```
       > db.users.findOne()
@@ -180,13 +169,13 @@
         ... {"$set" : {"favorite book" : "Start with Why"}})
         ```
 
-19. What do you mean by Transactions?
+7.  What do you mean by Transactions?
     + A transaction is a logical unit of processing in a database that includes one or more database operations, which can be read or write operations. Transactions provide a useful feature in MongoDB to ensure consistency.
     + MongoDB provides two APIs to use transactions:
       + `Core API`: It is a similar syntax to relational databases (e.g., start_transaction and commit_transaction)
       + `Call-back API`: This is the recommended approach to using transactions. It starts a transaction, executes the specified operations, and commits (or aborts on the error). It also automatically incorporates error handling logic for "TransientTransactionError" and "UnknownTransactionCommitResult".
 
-20. What are MongoDB Charts?
+8.  What are MongoDB Charts?
     + MongoDB Charts is a new, integrated tool in MongoDB for data visualization.
     + MongoDB Charts offers the best way to create visualizations using data from a MongoDB database.
     + It allows users to perform quick data representation from a database without writing code in a programming language such as Java or Python.
@@ -194,20 +183,20 @@
       + MongoDB Charts PaaS (Platform as a Service)
       + MongoDB Charts Server
 
-21. What is the Aggregation Framework in MongoDB?
+9.  What is the Aggregation Framework in MongoDB?
     + The aggregation framework is a set of analytics tools within MongoDB that allow you to do analytics on documents in one or more collections.
     + The aggregation framework is based on the concept of a pipeline. With an aggregation pipeline, we take input from a MongoDB collection and pass the documents from that collection through one or more stages, each of which performs a different operation on its inputs (See figure below). Each stage takes as input whatever the stage before it produced as output. The inputs and outputs for all stages are documents—a stream of documents.
     ![aggregation framework](../images/mongo/aggregation_framework.png)
 
-22. Explain the concept of pipeline in the MongoDB aggregation framework.
+10. Explain the concept of pipeline in the MongoDB aggregation framework.
     + An individual stage of an aggregation pipeline is a data processing unit. It takes in a stream of input documents one at a time, processes each document one at a time, and produces an output stream of documents one at a time (see figure below).
       ![pipeline](../images/mongo/pipeline.png)
 
-23. What is a Replica Set in MongoDB?
+11. What is a Replica Set in MongoDB?
     + To keep identical copies of your data on multiple servers, we use replication. It is recommended for all production deployments. Use replication to keep your application running and your data safe, even if something happens to one or more of your servers.
     + Such replication can be created by a replica set with MongoDB. A replica set is a group of servers with one primary, the server taking writes, and multiple secondaries, servers that keep copies of the primary’s data. If the primary crashes, the secondaries can elect a new primary from amongst themselves.
 
-24. Explain the Replication Architecture in MongoDB.
+12. Explain the Replication Architecture in MongoDB.
     + The following diagram depicts the architecture diagram of a simple replica set cluster with only three server nodes – one primary node and two secondary nodes:
       ![replication architecture](../images/mongo/replication_architecture.png)
         + In the preceding model, the PRIMARY database is the only active replica set member that receives write operations from database clients. The PRIMARY database saves data changes in the Oplog. Changes saved in the Oplog are sequential—that is, saved in the order that they are received and executed.
@@ -215,7 +204,7 @@
         + Then, the SECONDARY database applies changes from the Oplog to its own datafiles. Oplog entries are applied in the same order they were inserted in the log. As a result, datafiles on SECONDARY are kept in sync with changes on PRIMARY.
         + Usually, SECONDARY databases copy data changes directly from PRIMARY. Sometimes a SECONDARY database can replicate data from another SECONDARY. This type of replication is called Chained Replication because it is a two-step replication process. Chained replication is useful in certain replication topologies, and it is enabled by default in MongoDB.
 
-25. What are some utilities for backup and restore in MongoDB?
+13. What are some utilities for backup and restore in MongoDB?
     + The mongo shell does not include functions for exporting, importing, backup, or restore. However, MongoDB has created methods for accomplishing this, so that no scripting work or complex GUIs are needed. For this, several utility scripts are provided that can be used to get data in or out of the database in bulk. These utility scripts are:
       + mongoimport
       + mongoexport
