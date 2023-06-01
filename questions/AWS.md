@@ -16,8 +16,8 @@
 4. What is Elastic Transcoder?
    + Elastic Transcoder is an AWS Service Tool that helps you in changing a video’s format and resolution to support various devices like tablets, smartphones, and laptops of different resolutions.
 
-5. What do you understand by VPC?
-   + VPC stands for Virtual Private Cloud. It allows you to customize your networking configuration. VPC is a network that is logically isolated from other networks in the cloud. It allows you to have your private IP Address range, internet gateways, subnets, and security groups.
+5. What do you understand by Virtual Private Cloud (VPC)?
+   + `Virtual Private Cloud (VPC)`: allows you to customize your networking configuration. VPC is a network that is logically isolated from other networks in the cloud. It allows you to have your private IP Address range, internet gateways, subnets, and security groups.
 
 6. DNS and Load Balancer Services come under which type of Cloud Service?
    + DNS and Load Balancer are a part of IaaS-Storage Cloud Service.
