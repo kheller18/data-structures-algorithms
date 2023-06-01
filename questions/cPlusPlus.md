@@ -16,16 +16,16 @@ It is widely used in the development of games and servers while some of the real
 ---
 
 1. What are the different data types present in C++?
-   + Primitive (basic datatype): Example- char, short, int, float, long, double, bool, etc.
-   + Derived: Example- array, pointer, etc.
-   + Enumeration: Example- enum
-   + User-defined: Example- structure, class, etc.
+   + `Primitive (basic datatype)`: Example- char, short, int, float, long, double, bool, etc.
+   + `Derived`: Example- array, pointer, etc.
+   + `Enumeration`: Example- enum
+   + `User-defined`: Example- structure, class, etc.
 
 2. What is the difference between C and C++?
   ![c vs c++](../images/cPlusPlus/c_cplusplus.png)
 
 3. What are class and object in C++?
-   + Class: is a user-defined data type that has data members and member functions. Data members are the data variables and member functions are the functions that are used to perform operations on these variables.
+   + `Class`: is a user-defined data type that has data members and member functions. Data members are the data variables and member functions are the functions that are used to perform operations on these variables.
      ```
      class A{
        private:
@@ -37,13 +37,13 @@ It is widely used in the development of games and servers while some of the real
      ```
      ![class image](../images/cPlusPlus/class_object.png)
      + For example, the following is a class car that can have properties like name, color, etc. and they can have methods like speed().
-   + Object: is an instance of a class. Since a class is a user-defined data type so an object can also be called a variable of that data type.
+   + `Object`: is an instance of a class. Since a class is a user-defined data type so an object can also be called a variable of that data type.
 
 4. What is the difference between struct and class?
   ![struct vs class](../images/cPlusPlus/struct_class.png)
 
 5. What is operator overloading?
-   + Operator Overloading: is a very essential element to perform the operations on user-defined data types. By operator overloading we can modify the default meaning to the operators like +, -, *, /, <=, etc.
+   + `Operator Overloading`: is a very essential element to perform the operations on user-defined data types. By operator overloading we can modify the default meaning to the operators like +, -, *, /, <=, etc.
      ```
      class complex{
        private:
@@ -72,16 +72,15 @@ It is widely used in the development of games and servers while some of the real
      ```
 
 6. What is polymorphism in C++?
-   + Polymorphism: in simple means having many forms. Its behavior is different in different situations. And this occurs when we have multiple classes that are related to each other by inheritance.
+   + `Polymorphism`: in simple means having many forms. Its behavior is different in different situations. And this occurs when we have multiple classes that are related to each other by inheritance.
      + For example, think of a base class called a car that has a method called car brand(). Derived classes of cars could be Mercedes, BMW, Audi - And they also have their own implementation of a cars
      + The two types of polymorphism in c++ are:
        + Compile Time Polymorphism
        + Runtime Polymorphism
      ![polymorphism](../images/cPlusPlus/polymorphism.png)
 
-
 7. Explain constructor in C++.
-   + Constructor: is a member function that is executed automatically whenever an object is created. Constructors have the same name as the class of which they are members so that compiler knows that the member function is a constructor. And no return type is used for constructors.
+   + `Constructor`: is a member function that is executed automatically whenever an object is created. Constructors have the same name as the class of which they are members so that compiler knows that the member function is a constructor. And no return type is used for constructors.
      ```
      class A{
      private:
@@ -100,15 +99,14 @@ It is widely used in the development of games and servers while some of the real
      ```
 
 8. What is a virtual function?
-   + Virtual function: is a member function in the base class that you redefine in a derived class. A virtual function is declared using the virtual keyword. When the function is made virtual, C++ determines which function is to be invoked at the runtime based on the type of the object pointed by the base class pointer.
-
+   + `Virtual function`: is a member function in the base class that you redefine in a derived class. A virtual function is declared using the virtual keyword. When the function is made virtual, C++ determines which function is to be invoked at the runtime based on the type of the object pointed by the base class pointer.
 
 9. Compare compile time polymorphism and Runtime polymorphism.
   ![polymorphism vs runtime polymorphism](../images/cPlusPlus/polymorphism_runtime.png)
 
 10. What do you know about friend class and friend function?
-    + Friend Class: can access private, protected, and public members of other classes in which it is declared as friends.
-    + Friend Function: can also access private, protected, and public members. But, Friend functions are not member functions.
+    + `Friend Class`: can access private, protected, and public members of other classes in which it is declared as friends.
+    + `Friend Function`: can also access private, protected, and public members. But, Friend functions are not member functions.
       ```
       class A{
       private:
@@ -140,16 +138,12 @@ It is widely used in the development of games and servers while some of the real
       ```
 
 11. What are the C++ access specifiers?
-    + Public: All data members and member functions are accessible outside the class.
-    + Protected: All data members and member functions are accessible inside the class and to the derived class
-    + Private: All data members and member functions are not accessible outside the class.
-
-
+    + `Public`: All data members and member functions are accessible outside the class.
+    + `Protected`: All data members and member functions are accessible inside the class and to the derived class
+    + `Private`: All data members and member functions are not accessible outside the class.
 
 12. What is an inline function?
     + If a function is inline, the compiler places a copy of the code of that function at each point where the function is called at compile time. One of the important advantages of using an inline function is that it eliminates the function calling overhead of a traditional function.
-
-
 
 13. What is a reference in C++?
     + A reference is like a pointer. It is another name of an already existing variable. Once a reference name is initialized with a variable, that variable can be accessed by the variable name or reference name both.
@@ -159,29 +153,18 @@ It is widely used in the development of games and servers while some of the real
       ```
       + If we change the value of ref it will be reflected in x. Once a reference variable is initialized it cannot refer to any other variable. We can declare an array of pointers but an array of references is not possible.
 
-
-
-
 14. What do you mean by abstraction in C++?
-    + Abstraction is the process of showing the essential details to the user and hiding the details which we don’t want to show to the user or hiding the details which are irrelevant to a particular user.
-
-
+    + `Abstraction`: is the process of showing the essential details to the user and hiding the details which we don’t want to show to the user or hiding the details which are irrelevant to a particular user.
 
 15. Is deconstructor overloading possible? If yes then explain and if no then why?
     + No destructor overloading is not possible. Destructors take no arguments, so there’s only one way to destroy an object. That’s the reason destructor overloading is not possible.
 
-
-
 16. What do you mean by call by value and call by reference?
-    + Call by Ralue: method, we pass a copy of the parameter is passed to the functions. For these copied values a new memory is assigned and changes made to these values do not reflect the variable in the main function.
-    + Call by Reference: method, we pass the address of the variable and the address is used to access the actual argument used in the function call. So changes made in the parameter alter the passing argument.
-
-
+    + `Call by Value`: method, we pass a copy of the parameter is passed to the functions. For these copied values a new memory is assigned and changes made to these values do not reflect the variable in the main function.
+    + `Call by Reference`: method, we pass the address of the variable and the address is used to access the actual argument used in the function call. So changes made in the parameter alter the passing argument.
 
 17. What is an abstract class and when do you use it?
     + A class is called an abstract class whose objects can never be created. Such a class exists as a parent for the derived classes. We can make a class abstract by placing a pure virtual function in the class.
-
-
 
 18. What are destructors in C++?
     + A constructor is automatically called when an object is first created. Similarly when an object is destroyed a function called destructor automatically gets called. A destructor has the same name as the constructor (which is the same as the class name) but is preceded by a tilde.
@@ -208,16 +191,14 @@ It is widely used in the development of games and servers while some of the real
     + When a variable in a class is declared static, space for it is allocated for the lifetime of the program. No matter how many objects of that class have been created, there is only one copy of the static member. So same static member can be accessed by all the objects of that class.
     + `static member function`: can be called even if no objects of the class exist and the static function are accessed using only the class name and the scope resolution operator ::
 
-
-
 20. Explain inheritance
-    + Inheritance is the process of creating new classes, called derived classes, from existing classes. These existing classes are called base classes. The derived classes inherit all the capabilities of the base class but can add new features and refinements of their own.
+    + `Inheritance`: is the process of creating new classes, called derived classes, from existing classes. These existing classes are called base classes. The derived classes inherit all the capabilities of the base class but can add new features and refinements of their own.
     ![inheritance](../images/cPlusPlus/inheritance.png)
       + Class Bus, Class Car, and Class Truck inherit the properties of Class Vehicle.
       + The most important thing about inheritance is that it permits code reusability.
 
 21. What is a copy constructor?
-    + A copy constructor is a member function that initializes an object using another object of the same class.
+    + `Copy constructor`: is a member function that initializes an object using another object of the same class.
       ```
       class A{
       int x,y;
@@ -235,13 +216,11 @@ It is widely used in the development of games and servers while some of the real
       ```
       + We can define our copy constructor. If we don’t define a copy constructor then the default copy constructor is called.
 
-
-
 22. What is the difference between shallow copy and deep copy?
   ![deep vs shallow copy](../images/cPlusPlus/shallow_deep_copy.png)
 
 23.  What is the difference between virtual functions and pure virtual functions?
-     + Virtual Function: is a member function in the base class that you redefine in a derived class. It is declared using the virtual keyword.
+     + `Virtual Function`: is a member function in the base class that you redefine in a derived class. It is declared using the virtual keyword.
        ```
        class base{
        public:
@@ -249,7 +228,7 @@ It is widely used in the development of games and servers while some of the real
        }
        };
        ```
-     + Pure Virtual Function: is a function that has no implementation and is declared by assigning 0. It has no body.
+     + `Pure Virtual Function`: is a function that has no implementation and is declared by assigning 0. It has no body.
        ```
        class base{
        public:
@@ -263,8 +242,6 @@ It is widely used in the development of games and servers while some of the real
     + So the first Constructor of class B will be called and then the constructor of class D will be called.
     + During the destruction exactly reverse order is followed. That is destructor starts at the most-derived class and works its way down to base class.
     + So the first destructor of class D will be called and then the destructor of class B will be called.
-
-
 
 25. Can we call a virtual function from a constructor?
     + Yes, we can call a virtual function from a constructor. But the behavior is a little different in this case. When a virtual function is called, the virtual call is resolved at runtime. It is always the member function of the current class that gets called. That is the virtual machine doesn’t work within the constructor.
