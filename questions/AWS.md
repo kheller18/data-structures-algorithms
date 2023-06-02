@@ -390,3 +390,177 @@
 
 101. What are the factors that decide how AWS Lambda is charged?
      + When you use AWS Lambda, you are only going to be charged for the resources that you actually put to use. The total number of requests made to your functions and the total amount of time that your code is in execution will be used to determine the amount of money that you are responsible for paying. Even in the case of test invokes from the console, if Lambda begins running as a result of receiving an event notification or invoking a function, it will have registered a request. This is true even if the console is used to test invokes.
+
+102. Define and explain the three basic types of cloud services and the AWS products that are built based on them?
+102. What is the relation between the Availability Zone and Region?
+102. What is auto-scaling?
+102. What is geo-targeting in CloudFront?
+102. What are the steps involved in a CloudFormation Solution?
+102. How do you upgrade or downgrade a system with near-zero downtime?
+102. What are the tools and techniques that you can use in AWS to identify if you are paying more than you should be, and how to correct it?
+102. Is there any other alternative tool to log into the cloud environment other than console?
+102. What services can be used to create a centralized logging solution?
+102. What are the native AWS Security logging capabilities?
+102. What is a DDoS attack, and what services can minimize them?
+
+102. 12. You are trying to provide a service in a particular region, but you do not see the service in that region. Why is this happening, and how do you fix it?
+102. How do you set up a system to monitor website metrics in real-time in AWS?
+
+102. What are the different types of virtualization in AWS, and what are the differences between them?
+102. Name some of the AWS services that are not region-specific
+102. What are the differences between NAT Gateways and NAT Instances?
+102. What is CloudWatch?
+102. What is an Elastic Transcoder?
+102. With specified private IP addresses, can an Amazon Elastic Compute Cloud (EC2) instance be launched? If so, which Amazon service makes it possible?
+102. Define Amazon EC2 regions and availability zones?
+102. Explain Amazon EC2 root device volume?
+102. Mention the different types of instances in  Amazon EC2 and explain its features.
+102. Will your standby RDS be launched in the same availability zone as your primary?
+
+102. What is the difference between a Spot Instance, an On-demand Instance, and a Reserved Instance?
+102. How would you address a situation in which the relational database engine frequently collapses when traffic to your RDS instances increases, given that the RDS instance replica is not promoted as the master instance?
+102. What do you understand by 'changing' in Amazon EC2?
+102. Define Snapshots in Amazon Lightsail?
+102. On an EC2 instance, an application of yours is active. Once the CPU usage on your instance hits 80%, you must reduce the load on it. What strategy do you use to complete the task?
+102. Multiple Linux Amazon EC2 instances running a web application for a firm are being used, and data is being stored on Amazon EBS volumes. The business is searching for a way to provide storage that complies with atomicity, consistency, isolation, and durability while also increasing the application's resilience in the event of a breakdown (ACID). What steps should a solutions architect take to fulfill these demands?
+102. Your business prefers to use its email address and domain to send and receive compliance emails. What service do you recommend to implement it easily and budget-friendly?
+102. Describe SES.
+102. Describe PaaS.
+102. How many S3 buckets can be created?
+102. What is the maximum limit of elastic IPs anyone can produce?
+103. When Would You Prefer Provisioned IOPS over Standard Rds Storage?
+103. How Do Amazon Rds, Dynamodb, and Redshift Differ from Each Other?
+
+103. What Are the Benefits of AWS’s Disaster Recovery?
+103. How can you add an existing instance to a new Auto Scaling group?
+
+103. What are the factors to consider while migrating to Amazon Web Services?
+103. What is RTO and RPO in AWS?
+103. If you would like to transfer vast amounts of data, which is the best option among Snowball, Snowball Edge, and Snowmobile?
+103. Explain what T2 instances are?
+103. What are the advantages of AWS IAM?
+103. Explain Connection Draining
+103. What is Power User Access in AWS?
+103. 
+103. 
+103. 
+103. 
+103. 
+
+---
+## EC2 Questions
+
+---
+
+103. What is Amazon EC2?
+104. What Are Some of the Security Best Practices for Amazon EC2?
+105. Can S3 Be Used with EC2 Instances, and If Yes, How?
+106. What is the difference between stopping and terminating an EC2 instance?
+
+107. What are the different types of EC2 instances based on their costs?
+108. How do you set up SSH agent forwarding so that you do not have to copy the key every time you log in?
+109. What are Solaris and AIX operating systems? Are they available with AWS?
+110. How do you configure CloudWatch to recover an EC2 instance?
+
+111. What are the common types of AMI designs?
+112. What are Key-Pairs in AWS?
+
+---
+## S3 Questions
+
+---
+
+113. What is Amazon S3?
+114. How can you recover/login to an EC2 instance for which you have lost the key?
+115. What are some critical differences between AWS S3 and EBS?
+116. How do you allow a user to gain access to a specific bucket?
+117. How can you monitor S3 cross-region replication to ensure consistency without actually checking the bucket?
+118. What is SnowBall?
+119. What are the Storage Classes available in Amazon S3?
+
+---
+## VPC Questions
+
+---
+
+120. What Is Amazon Virtual Private Cloud (VPC) and Why Is It Used?
+121. VPC is not resolving the server through DNS. What might be the issue, and how can you fix it?
+122. How do you connect multiple sites to a VPC?
+123. Name and explain some security products and features available in VPC?
+124. How do you monitor Amazon VPC?
+125. How many Subnets can you have per VPC?
+
+---
+## CloudFormation Questions
+
+---
+
+126. How is AWS CloudFormation different from AWS Elastic Beanstalk?
+127. What are the elements of an AWS CloudFormation template?
+128. What happens when one of the resources in a stack cannot be created successfully?
+
+---
+## Elastic Block Storage Questions
+
+---
+
+129. How can you automate EC2 backup using EBS?
+130. What is the difference between EBS and Instance Store?
+131. Can you take a backup of EFS like EBS, and if yes, how?
+132. How do you auto-delete old snapshots?
+
+---
+## Elastic Load Balancing Questions
+
+---
+
+133. What are the different types of load balancers in AWS?
+
+---
+## Security Questions
+
+---
+
+134. What Is Identity and Access Management (IAM) and How Is It Used?
+
+135. How can you use AWS WAF in monitoring your AWS applications?
+
+136. What are the different AWS IAM categories that you can control?
+137. What are the policies that you can set for your users’ passwords?
+138. What is the difference between an IAM role and an IAM user?
+138. What are the managed policies in AWS IAM?
+138. Can you give an example of an IAM policy and a policy summary?
+
+138. How does AWS IAM help your business?
+
+---
+## Route 53 Questions
+
+---
+
+139. What Is Amazon Route 53?
+140. What Is Cloudtrail and How Do Cloudtrail and Route 53 Work Together?
+141. What is the difference between Latency Based Routing and Geo DNS?
+142. What is the difference between a Domain and a Hosted Zone?
+
+143. How does Amazon Route 53 provide high availability and low latency?
+
+---
+## Config Questions
+
+---
+
+144. How does AWS config work with AWS CloudTrail?
+145. Can AWS Config aggregate data across different AWS accounts?
+
+---
+## Database Questions
+
+---
+
+146. How are reserved instances different from on-demand DB instances?
+147. Which type of scaling would you recommend for RDS and why?
+148. What is a maintenance window in Amazon RDS? Will your DB instance be available during maintenance events?
+149. What are the consistency models in DynamoDB?
+150. What type of query functionality does DynamoDB support?
+
