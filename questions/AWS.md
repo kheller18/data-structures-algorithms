@@ -252,10 +252,10 @@
     + You are able to simply manage the smaller applications that make up the larger program, and you have the appropriate infrastructure in place to back it up.
 
 63. What exactly are the drawbacks of deciding to follow the road of serverless computing?
-    + 1. There are advantages and disadvantages to utilizing each component of AWS lambda, and these aspects change according to the type of work that is being carried out.
-    + 2. In the serverless paradigm, scalability is totally dependent on the vendor, therefore there is an increased chance for outages. Additionally, the serverless model has a higher failure rate.
-    + 3. The elimination of functionality and the introduction of new limitations are two examples of common issues. In addition, the serverless method of Amazon Web Services does not make use of any specialized hardware in any way.
-    + 4. Problems are frequently brought about by the blunders made by the customer.
+    + There are advantages and disadvantages to utilizing each component of AWS lambda, and these aspects change according to the type of work that is being carried out.
+    + In the serverless paradigm, scalability is totally dependent on the vendor, therefore there is an increased chance for outages. Additionally, the serverless model has a higher failure rate.
+    + The elimination of functionality and the introduction of new limitations are two examples of common issues. In addition, the serverless method of Amazon Web Services does not make use of any specialized hardware in any way.
+    + Problems are frequently brought about by the blunders made by the customer.
 
 64. What is the main difference between an anonymous class and a lambda function?
     + The fundamental difference is in the emphasis that is placed on a number of different phrases. Keywords are utilized by lambda functions so that they can successfully resolve the functional classes. On the other hand, keywords are employed in order to resolve the anonymous functional class within the anonymous class.
