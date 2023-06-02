@@ -392,19 +392,19 @@
      + When you use AWS Lambda, you are only going to be charged for the resources that you actually put to use. The total number of requests made to your functions and the total amount of time that your code is in execution will be used to determine the amount of money that you are responsible for paying. Even in the case of test invokes from the console, if Lambda begins running as a result of receiving an event notification or invoking a function, it will have registered a request. This is true even if the console is used to test invokes.
 
 102. Define and explain the three basic types of cloud services and the AWS products that are built based on them?
-     + Computing: These include EC2, Elastic Beanstalk, Lambda, Auto-Scaling, and Lightsat.
-     + Storage: These include S3, Glacier, Elastic Block Storage, Elastic File System.
-     + Networking: These include VPC, Amazon CloudFront, Route53
+     + `Computing`: These include EC2, Elastic Beanstalk, Lambda, Auto-Scaling, and Lightsat.
+     + `Storage`: These include S3, Glacier, Elastic Block Storage, Elastic File System.
+     + `Networking`: These include VPC, Amazon CloudFront, Route53
 
 103. What is the relation between the Availability Zone and Region?
      + AWS regions are separate geographical areas, like the US-West 1 (North California) and Asia South (Mumbai). On the other hand, availability zones are the areas that are present inside the regions. These are generally isolated zones that can replicate themselves whenever required.
      ![availabity zone and region](../images/aws/availablity_zone_region.png)
 
 104. What is auto-scaling?
-     + Auto-scaling: is a function that allows you to provision and launch new instances whenever there is a demand. It allows you to automatically increase or decrease resource capacity in relation to the demand.
+     + `Auto-scaling`: is a function that allows you to provision and launch new instances whenever there is a demand. It allows you to automatically increase or decrease resource capacity in relation to the demand.
 
 105. What is geo-targeting in CloudFront?
-     + Geo-Targeting: is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL. This helps you create customized content for the audience of a specific geographical area, keeping their needs in the forefront.
+     + `Geo-Targeting`: is a concept where businesses can show personalized content to their audience based on their geographic location without changing the URL. This helps you create customized content for the audience of a specific geographical area, keeping their needs in the forefront.
 
 106. What are the steps involved in a CloudFormation Solution?
     ![cloudformation solution steps](../images/aws/cloudformation_steps.png)
@@ -424,10 +424,10 @@
      + Once it’s deployed, you can upgrade or downgrade the system with near-zero downtime.
 
 108. What are the tools and techniques that you can use in AWS to identify if you are paying more than you should be, and how to correct it?
-     + Check the Top Services Table: It is a dashboard in the cost management console that shows you the top five most used services. This will let you know how much money you are spending on the resources in question.
-     + Cost Explorer: There are cost explorer services available that will help you to view and analyze your usage costs for the last 13 months. You can also get a cost forecast for the upcoming three months.
-     + AWS Budgets: This allows you to plan a budget for the services. Also, it will enable you to check if the current plan meets your budget and the details of how you use the services.
-     + Cost Allocation Tags: This helps in identifying the resource that has cost more in a particular month. It lets you organize your resources and cost allocation tags to keep track of your AWS costs.
+     + `Check the Top Services Table`: It is a dashboard in the cost management console that shows you the top five most used services. This will let you know how much money you are spending on the resources in question.
+     + `Cost Explorer`: There are cost explorer services available that will help you to view and analyze your usage costs for the last 13 months. You can also get a cost forecast for the upcoming three months.
+     + `AWS Budgets`: This allows you to plan a budget for the services. Also, it will enable you to check if the current plan meets your budget and the details of how you use the services.
+     + `Cost Allocation Tags`: This helps in identifying the resource that has cost more in a particular month. It lets you organize your resources and cost allocation tags to keep track of your AWS costs.
 
 109. Is there any other alternative tool to log into the cloud environment other than console?
      + Putty
@@ -443,11 +443,11 @@
 
 111. What are the native AWS Security logging capabilities?
      + Most of the AWS services have their logging options. Also, some of them have an account level logging, like in AWS CloudTrail, AWS Config, and others. Let’s take a look at two services in specific:
-       + AWS CloudTrail: This is a service that provides a history of the AWS API calls for every account. It lets you perform security analysis, resource change tracking, and compliance auditing of your AWS environment as well. The best part about this service is that it enables you to configure it to send notifications via AWS SNS when new logs are delivered.
-       + AWS Config: This helps you understand the configuration changes that happen in your environment. This service provides an AWS inventory that includes configuration history, configuration change notification, and relationships between AWS resources. It can also be configured to send information via AWS SNS when new logs are delivered.
+       + `AWS CloudTrail`: This is a service that provides a history of the AWS API calls for every account. It lets you perform security analysis, resource change tracking, and compliance auditing of your AWS environment as well. The best part about this service is that it enables you to configure it to send notifications via AWS SNS when new logs are delivered.
+       + `AWS Config`: This helps you understand the configuration changes that happen in your environment. This service provides an AWS inventory that includes configuration history, configuration change notification, and relationships between AWS resources. It can also be configured to send information via AWS SNS when new logs are delivered.
 
 112. What is a DDoS attack, and what services can minimize them?
-     + DDoS: is a cyber-attack in which the perpetrator accesses a website and creates multiple sessions so that the other legitimate users cannot access the service. The native tools that can help you deny the DDoS attacks on your AWS services are:
+     + `DDoS`: is a cyber-attack in which the perpetrator accesses a website and creates multiple sessions so that the other legitimate users cannot access the service. The native tools that can help you deny the DDoS attacks on your AWS services are:
        + AWS Shield
        + AWS WAF
        + Amazon Route53
@@ -469,9 +469,9 @@
      ![aws system metrics](../images/aws/web_metrics.png)
 
 115. What are the different types of virtualization in AWS, and what are the differences between them?
-     + Hardware Virtual Machine (HVM): It is a fully virtualized hardware, where all the virtual machines act separate from each other. These virtual machines boot by executing a master boot record in the root block device of your image.
-     + Paravirtualization (PV): Paravirtualization-GRUB is the bootloader that boots the PV AMIs. The PV-GRUB chain loads the kernel specified in the menu.
-     + Paravirtualization on HVM: PV on HVM helps operating systems take advantage of storage and network I/O available through the host.
+     + `Hardware Virtual Machine (HVM)`: It is a fully virtualized hardware, where all the virtual machines act separate from each other. These virtual machines boot by executing a master boot record in the root block device of your image.
+     + `Paravirtualization (PV)`: Paravirtualization-GRUB is the bootloader that boots the PV AMIs. The PV-GRUB chain loads the kernel specified in the menu.
+     + `Paravirtualization on HVM`: PV on HVM helps operating systems take advantage of storage and network I/O available through the host.
 
 116. Name some of the AWS services that are not region-specific
      + IAM
@@ -494,18 +494,18 @@
      + Yes. Utilizing VPC makes it possible (Virtual Private Cloud).
 
 121. Define Amazon EC2 regions and availability zones?
-     + Availability zones: are geographically separate locations. As a result, failure in one zone has no effect on EC2 instances in other zones.
-     + Regions: they may have one or more availability zones. This configuration also helps to reduce latency and costs.
+     + `Availability zones`: are geographically separate locations. As a result, failure in one zone has no effect on EC2 instances in other zones.
+     + `Regions`: they may have one or more availability zones. This configuration also helps to reduce latency and costs.
 
 122. Explain Amazon EC2 root device volume?
      + The image that will be used to boot an EC2 instance is stored on the root device drive. This occurs when an Amazon AMI runs a new EC2 instance. And this root device volume is supported by EBS or an instance store. In general, the root device data on Amazon EBS is not affected by the lifespan of an EC2 instance.
 
 123. Mention the different types of instances in  Amazon EC2 and explain its features.
-     + General Purpose Instances: They are used to compute a range of workloads and aid in the allocation of processing, memory, and networking resources.
-     + Compute Optimized Instances: These are ideal for compute-intensive applications. They can handle  batch processing workloads, high-performance web servers, machine learning inference, and various other tasks.
-     + Memory Optimized: They process workloads that handle massive datasets in memory and deliver them quickly.
-     + Accelerated Computing: It aids in the execution of floating-point number calculations, data pattern matching, and graphics processing. These functions are carried out using hardware accelerators.
-     + Storage Optimised: They handle tasks that require sequential read and write access to big data sets on local storage.
+     + `General Purpose Instances`: They are used to compute a range of workloads and aid in the allocation of processing, memory, and networking resources.
+     + `Compute Optimized Instances`: These are ideal for compute-intensive applications. They can handle  batch processing workloads, high-performance web servers, machine learning inference, and various other tasks.
+     + `Memory Optimized`: They process workloads that handle massive datasets in memory and deliver them quickly.
+     + `Accelerated Computing`: It aids in the execution of floating-point number calculations, data pattern matching, and graphics processing. These functions are carried out using hardware accelerators.
+     + `Storage Optimised`: They handle tasks that require sequential read and write access to big data sets on local storage.
 
 124. Will your standby RDS be launched in the same availability zone as your primary?
      + No, standby instances are launched in different availability zones than the primary, resulting in physically separate infrastructures. This is because the entire purpose of standby instances is to prevent infrastructure failure. As a result, if the primary instance fails, the backup instance will assist in recovering all of the data.
@@ -546,11 +546,11 @@
      + A maximum of five elastic IP addresses can be generated per location and AWS account.
 
 136. When Would You Prefer Provisioned IOPS over Standard Rds Storage?
-     + You would use Provisioned IOPS when you have batch-oriented workloads. Provisioned IOPS delivers high IO rates, but it is also expensive. However, batch processing workloads do not require manual intervention. 
+     + You would use Provisioned IOPS when you have batch-oriented workloads. Provisioned IOPS delivers high IO rates, but it is also expensive. However, batch processing workloads do not require manual intervention.
 
 137. How Do Amazon Rds, Dynamodb, and Redshift Differ from Each Other?
-     + Amazon RDS: is a database management service for relational databases. It manages patching, upgrading, and data backups automatically. It’s a database management service for structured data only.
-     + DynamoDB: is a NoSQL database service for dealing with unstructured data. Redshift is a data warehouse product used in data analysis.
+     + `Amazon RDS`: is a database management service for relational databases. It manages patching, upgrading, and data backups automatically. It’s a database management service for structured data only.
+     + `DynamoDB`: is a NoSQL database service for dealing with unstructured data. Redshift is a data warehouse product used in data analysis.
 
 138. What Are the Benefits of AWS’s Disaster Recovery?
      + Businesses use cloud computing in part to enable faster disaster recovery of critical IT systems without the cost of a second physical site. The AWS cloud supports many popular disaster recovery architectures ranging from small customer workload data center failures to environments that enable rapid failover at scale. With data centers all over the world, AWS provides a set of cloud-based disaster recovery services that enable rapid recovery of your IT infrastructure and data.
@@ -572,8 +572,8 @@
      + Business agility
 
 141. What is Recovery Time Objective (RTO) and Recovery Point Objective (RPO) in AWS?
-     + Recovery Time Objective (RTO): or Recovery Time Objective is the maximum time your business or organization is willing to wait for a recovery to complete in the wake of an outage.
-     + Recovery Point Objective (RPO): or Recovery Point Objective is the maximum amount of data loss your company is willing to accept as measured in time.
+     + `Recovery Time Objective (RTO)`: or Recovery Time Objective is the maximum time your business or organization is willing to wait for a recovery to complete in the wake of an outage.
+     + `Recovery Point Objective (RPO)`: or Recovery Point Objective is the maximum amount of data loss your company is willing to accept as measured in time.
 
 142. If you would like to transfer vast amounts of data, which is the best option among Snowball, Snowball Edge, and Snowmobile?
      + AWS Snowball is basically a data transport solution for moving high volumes of data into and out of a specified AWS region. On the other hand, AWS Snowball Edge adds additional computing functions apart from providing a data transport solution. The snowmobile is an exabyte-scale migration service that allows you to transfer data up to 100 PB.
@@ -587,7 +587,7 @@
      + It further gives us Federated Access, which allows us to grant applications and users access to resources without having to create IAM Roles.
 
 145. Explain Connection Draining
-     + Connection Draining: is an AWS service that allows us to serve current requests on the servers that are either being decommissioned or updated.
+     + `Connection Draining`: is an AWS service that allows us to serve current requests on the servers that are either being decommissioned or updated.
        + By enabling this Connection Draining, we let the Load Balancer make an outgoing instance finish its existing requests for a set length of time before sending it any new requests. A departing instance will immediately go off if Connection Draining is not enabled, and all pending requests will fail.
 
 146. What is Power User Access in AWS?
@@ -600,7 +600,7 @@
 ---
 
 147. What is Amazon Elastic Compute Cloud (EC2)?
-     + Elastic Compute Cloud (EC2): it provides scalable computing capacity. Using Amazon EC2 eliminates the need to invest in hardware, leading to faster development and deployment of applications. You can use Amazon EC2 to launch as many or as few virtual servers as needed, configure security and networking, and manage storage. It can scale up or down to handle changes in requirements, reducing the need to forecast traffic. EC2 provides virtual computing environments called “instances.”
+     + `Elastic Compute Cloud (EC2)`: it provides scalable computing capacity. Using Amazon EC2 eliminates the need to invest in hardware, leading to faster development and deployment of applications. You can use Amazon EC2 to launch as many or as few virtual servers as needed, configure security and networking, and manage storage. It can scale up or down to handle changes in requirements, reducing the need to forecast traffic. EC2 provides virtual computing environments called “instances.”
 
 
 148. What Are Some of the Security Best Practices for Amazon EC2?
@@ -615,9 +615,9 @@
      + While you may think that both stopping and terminating are the same, there is a difference. When you stop an EC2 instance, it performs a normal shutdown on the instance and moves to a stopped state. However, when you terminate the instance, it is transferred to a stopped state, and the EBS volumes attached to it are deleted and can never be recovered.
 
 151. What are the different types of EC2 instances based on their costs?
-     + On-demand Instance: It is cheap for a short time but not when taken for the long term
-     + Spot Instance: It is less expensive than the on-demand instance and can be bought through bidding. 
-     + Reserved Instance: If you are planning to use an instance for a year or more, then this is the right one for you.
+     + `On-demand Instance`: It is cheap for a short time but not when taken for the long term
+     + `Spot Instance`: It is less expensive than the on-demand instance and can be bought through bidding. 
+     + `Reserved Instance`: If you are planning to use an instance for a year or more, then this is the right one for you.
 
 152. How do you set up SSH agent forwarding so that you do not have to copy the key every time you log in?
      + Go to your PuTTY Configuration
@@ -626,8 +626,8 @@
        ![ssh agent](../images/aws/ssh_agent.png)
 
 153. What are Solaris and AIX operating systems? Are they available with AWS?
-     + Solaris: is an operating system that uses SPARC processor architecture, which is not supported by the public cloud currently.
-     + AIX: is an operating system that runs only on Power CPU and not on Intel, which means that you cannot create AIX instances in EC2.
+     + `Solaris`: is an operating system that uses SPARC processor architecture, which is not supported by the public cloud currently.
+     + `AIX`: is an operating system that runs only on Power CPU and not on Intel, which means that you cannot create AIX instances in EC2.
      + Since both the operating systems have their limitations, they are not currently available with AWS.
 
 154. How do you configure CloudWatch to recover an EC2 instance?
@@ -643,7 +643,7 @@
        + Hybrid AMI
 
 156. What are Key-Pairs in AWS?
-     + Key-Pairs: are password-protected login credentials for the Virtual Machines that are used to prove our identity while connecting the Amazon EC2 instances. The Key-Pairs are made up of a Private Key and a Public Key which lets us connect to the instances.
+     + `Key-Pairs`: are password-protected login credentials for the Virtual Machines that are used to prove our identity while connecting the Amazon EC2 instances. The Key-Pairs are made up of a Private Key and a Public Key which lets us connect to the instances.
 
 
 ## S3 Questions
@@ -651,7 +651,7 @@
 ---
 
 157. What is Amazon Simple Storage Service (S3)?
-     + Amazon Simple Storage Service (S3): Amazon S3 is the most supported storage platform available. S3 is object storage that can store and retrieve any amount of data from anywhere. Despite that versatility, it is practically unlimited as well as cost-effective because it is storage available on demand. In addition to these benefits, it offers unprecedented levels of durability and availability. Amazon S3 helps to manage data for cost optimization, access control, and compliance.
+     + `Amazon Simple Storage Service (S3)`: Amazon S3 is the most supported storage platform available. S3 is object storage that can store and retrieve any amount of data from anywhere. Despite that versatility, it is practically unlimited as well as cost-effective because it is storage available on demand. In addition to these benefits, it offers unprecedented levels of durability and availability. Amazon S3 helps to manage data for cost optimization, access control, and compliance.
 
 158. How can you recover/login to an EC2 instance for which you have lost the key?
      + Verify that the EC2Config service is running
@@ -696,7 +696,7 @@
 ---
 
 164. What Is Amazon Virtual Private Cloud (VPC) and Why Is It Used?
-     + Virtual Private Cloud (VPC): is the best way of connecting to your cloud resources from your own data center. Once you connect your datacenter to the VPC in which your instances are present, each instance is assigned a private IP address that can be accessed from your data center. That way, you can access your public cloud resources as if they were on your own private network.
+     + `Virtual Private Cloud (VPC)`: is the best way of connecting to your cloud resources from your own data center. Once you connect your datacenter to the VPC in which your instances are present, each instance is assigned a private IP address that can be accessed from your data center. That way, you can access your public cloud resources as if they were on your own private network.
 
 165. VPC is not resolving the server through DNS. What might be the issue, and how can you fix it?
      + To fix this problem, you need to enable the DNS hostname resolution, so that the problem resolves itself.
@@ -706,9 +706,9 @@
        ![vpc multiple sites](../images/aws/vpc_multiple_sites.png)
 
 167. Name and explain some security products and features available in VPC?
-     + Security groups: This acts as a firewall for the EC2 instances, controlling inbound and outbound traffic at the instance level.
-     + Network access control lists: It acts as a firewall for the subnets, controlling inbound and outbound traffic at the subnet level.
-     + Flow logs: These capture the inbound and outbound traffic from the network interfaces in your VPC.
+     + `Security groups`: This acts as a firewall for the EC2 instances, controlling inbound and outbound traffic at the instance level.
+     + `Network access control lists`: It acts as a firewall for the subnets, controlling inbound and outbound traffic at the subnet level.
+     + `Flow logs`: These capture the inbound and outbound traffic from the network interfaces in your VPC.
 
 168. How do you monitor Amazon VPC?
      + CloudWatch and CloudWatch logs
@@ -749,7 +749,8 @@
        + Make sure to remove the snapshot if it is older than the retention period.
 
 174. What is the difference between EBS and Instance Store?
-     + EBS is a kind of permanent storage in which the data can be restored at a later point. When you save data in the EBS, it stays even after the lifetime of the EC2 instance. On the other hand, Instance Store is temporary storage that is physically attached to a host machine. With an Instance Store, you cannot detach one instance and attach it to another. Unlike in EBS, data in an Instance Store is lost if any instance is stopped or terminated.
+     + `EBS`: is a kind of permanent storage in which the data can be restored at a later point. When you save data in the EBS, it stays even after the lifetime of the EC2 instance.
+     + `Instance Store`: is temporary storage that is physically attached to a host machine. With an Instance Store, you cannot detach one instance and attach it to another. Unlike in EBS, data in an Instance Store is lost if any instance is stopped or terminated.
 
 175. Can you take a backup of EFS like EBS, and if yes, how?
      + Yes, you can use the EFS-to-EFS backup solution to recover from unintended changes or deletion in Amazon EFS. Follow these steps:
@@ -772,9 +773,9 @@
 ---
 
 177. What are the different types of load balancers in AWS?
-     + Application Load Balancer: Used if you need flexible application management and TLS termination.
-     + Network Load Balancer: Used if you require extreme performance and static IPs for your applications.
-     + Classic Load Balancer: Used if your application is built within the EC2 Classic network
+     + `Application Load Balancer`: Used if you need flexible application management and TLS termination.
+     + `Network Load Balancer`: Used if you require extreme performance and static IPs for your applications.
+     + `Classic Load Balancer`: Used if your application is built within the EC2 Classic network
 
 
 ## Security Questions
@@ -782,7 +783,7 @@
 ---
 
 178. What Is Identity and Access Management (IAM) and How Is It Used?
-     + Identity and Access Management (IAM): is a web service for securely controlling access to AWS services. IAM lets you manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.
+     + `Identity and Access Management (IAM)`: is a web service for securely controlling access to AWS services. IAM lets you manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.
 
 179. How can you use AWS WAF in monitoring your AWS applications?
      + AWS WAF or AWS Web Application Firewall protects your web applications from web exploitations. It helps you control the traffic flow to your applications. With WAF, you can also create custom rules that block common attack patterns. It can be used for three cases: allow all requests, prevent all requests, and count all requests for a new policy.
@@ -797,10 +798,10 @@
      + You can set a minimum length of the password, or you can ask the users to add at least one number or special characters in it.
      + You can assign requirements of particular character types, including uppercase letters, lowercase letters, numbers, and non-alphanumeric characters.
      + You can enforce automatic password expiration, prevent reuse of old passwords, and request for a password reset upon their next AWS sign in.
-     + You can have the AWS users contact an account administrator when the user has allowed the password to expire. 
+     + You can have the AWS users contact an account administrator when the user has allowed the password to expire.
 
 182. What is the difference between an IAM role and an IAM user?
-     + An IAM role is an IAM entity that defines a set of permissions for making AWS service requests, while an IAM user has permanent long-term credentials and is used to interact with the AWS services directly.  
+     + An IAM role is an IAM entity that defines a set of permissions for making AWS service requests, while an IAM user has permanent long-term credentials and is used to interact with the AWS services directly.
      + In the IAM role, trusted entities, like IAM users, applications, or an AWS service, assume roles whereas the IAM user has full access to all the AWS IAM functionalities.
 
 183. What are the managed policies in AWS IAM?
@@ -822,22 +823,22 @@
 ---
 
 186. What Is Amazon Route 53?
-     + Amazon Route 53: is a scalable and highly available Domain Name System (DNS). The name refers to TCP or UDP port 53, where DNS server requests are addressed.
+     + `Amazon Route 53`: is a scalable and highly available Domain Name System (DNS). The name refers to TCP or UDP port 53, where DNS server requests are addressed.
 
 187. What Is Cloudtrail and How Do Cloudtrail and Route 53 Work Together?
-     + CloudTrail is a service that captures information about every request sent to the Amazon Route 53 API by an AWS account, including requests that are sent by IAM users. CloudTrail saves log files of these requests to an Amazon S3 bucket. CloudTrail captures information about all requests. You can use information in the CloudTrail log files to determine which requests were sent to Amazon Route 53, the IP address that the request was sent from, who sent the request, when it was sent, and more.
+     + `CloudTrail`: is a service that captures information about every request sent to the Amazon Route 53 API by an AWS account, including requests that are sent by IAM users. CloudTrail saves log files of these requests to an Amazon S3 bucket. CloudTrail captures information about all requests. You can use information in the CloudTrail log files to determine which requests were sent to Amazon Route 53, the IP address that the request was sent from, who sent the request, when it was sent, and more.
 
 188. What is the difference between Latency Based Routing and Geo DNS?
      + The Geo Based DNS routing takes decisions based on the geographic location of the request. Whereas, the Latency Based Routing utilizes latency measurements between networks and AWS data centers. Latency Based Routing is used when you want to give your customers the lowest latency possible. On the other hand, Geo Based routing is used when you want to direct the customer to different websites based on the country or region they are browsing from. 
 
 189. What is the difference between a Domain and a Hosted Zone?
-     + Domain: A domain is a collection of data describing a self-contained administrative and technical unit. For example, www.simplilearn.com is a domain and a general DNS concept.
-     + Hosted zone: A hosted zone is a container that holds information about how you want to route traffic on the internet for a specific domain. For example, lms.simplilearn.com is a hosted zone.
+     + `Domain`: A domain is a collection of data describing a self-contained administrative and technical unit. For example, www.simplilearn.com is a domain and a general DNS concept.
+     + `Hosted zone`: A hosted zone is a container that holds information about how you want to route traffic on the internet for a specific domain. For example, lms.simplilearn.com is a hosted zone.
 
 190. How does Amazon Route 53 provide high availability and low latency?
-     + Globally Distributed Servers: Amazon is a global service and consequently has DNS services globally. Any customer creating a query from any part of the world gets to reach a DNS server local to them that provides low latency. 
-     + Dependency: Route 53 provides a high level of dependability required by critical applications
-     + Optimal Locations: Route 53 uses a global anycast network to answer queries from the optimal position automatically.
+     + `Globally Distributed Servers`: Amazon is a global service and consequently has DNS services globally. Any customer creating a query from any part of the world gets to reach a DNS server local to them that provides low latency. 
+     + `Dependency`: Route 53 provides a high level of dependability required by critical applications
+     + `Optimal Locations`: Route 53 uses a global anycast network to answer queries from the optimal position automatically.
 
 
 ## Config Questions
@@ -861,8 +862,8 @@
 
 194. Which type of scaling would you recommend for RDS and why?
      + There are two types of scaling. vertical scaling and horizontal scaling:
-       + Vertical scaling: lets you vertically scale up your master database with the press of a button. A database can only be scaled vertically, and there are 18 different instances in which you can resize the RDS. 
-       + horizontal scaling: is good for replicas. These are read-only replicas that can only be done through Amazon Aurora.
+       + `Vertical scaling`: lets you vertically scale up your master database with the press of a button. A database can only be scaled vertically, and there are 18 different instances in which you can resize the RDS. 
+       + `Horizontal scaling`: is good for replicas. These are read-only replicas that can only be done through Amazon Aurora.
 
 195. What is a maintenance window in Amazon RDS? Will your DB instance be available during maintenance events?
      + RDS maintenance window lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur. The automatic scheduling is done only for patches that are related to security and durability. By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.
