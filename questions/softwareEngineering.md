@@ -145,7 +145,7 @@
       ![modularization](../images/software-engineering/modularization.png)
         + In the above diagram, both the applications have been divided into smaller modules. These modules can then be dealt with separately.
 
-27. What is Software Configuration Management?
+27. What is Software Configuration Management (SCM)?
     + When a piece of software is created, there is always room for improvement. To modify or improve an existing solution or to establish a new solution for a problem, changes may be required. Changes to the existing system should be examined before being implemented, recorded before being implemented, documented with details of before and after, and controlled in a way that improves quality and reduces error. This is where System Configuration Management is required.
     + During the Software Development Life Cycle, Software Configuration Management (SCM) is a technique for systematically managing, organizing, and controlling changes in documents, codes, and other entities. The main goal is to enhance production while making as few mistakes as possible.
 
