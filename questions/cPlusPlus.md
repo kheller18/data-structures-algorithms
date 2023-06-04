@@ -288,18 +288,18 @@ It is widely used in the development of games and servers while some of the real
     + The member functions of every object have a pointer named this, which points to the object itself. The value of this is set to the address of the object for which it is called. It can be used to access the data in the object it points to.
       ```
       class A{
-      private:
-        int value;
-      public:
-        void setvalue(int x){
-        this->value=x;
-        }
+        private:
+          int value;
+        public:
+          void setvalue(int x){
+          this->value=x;
+          }
       };
 
       int main(){
-      A a;
-      a.setvalue(5);
-      return 0;
+        A a;
+        a.setvalue(5);
+        return 0;
       }
       ```
 
