@@ -128,8 +128,8 @@
 
 23. What are Software Metrics?
     + A software metric is a quantitative measure of program properties. Software metrics can be used for a range of things, such as analyzing software performance, planning, estimating productivity, and so on. Load testing, stress testing, average failure rate, code complexities, lines of code, etc. are some software metrics. The benefits of software metrics are many, some of them being:
-      + It reduces cost.
-      + It increases ROI (return on investment).
+      + Reduces cost.
+      + Increases ROI (return on investment).
       + Reduces workload.
       + Highlights areas for improvement.
 
