@@ -27,3 +27,93 @@ Before diving deep into algorithm interview questions, let us first understand t
 + The cost of design is also reduced if proper algorithms are used.
 
 ---
+
+1. How can we compare between two algorithms written for the same problem?
++ 
+
+2. What do you understand by the best case, worst case and average case scenario of an algorithm?
++ 
+
+2. What do you understand by the Asymptotic Notations?
++ 
+
+2. Write an algorithm to swap two given numbers in Java without using a temporary variable.
++ 
+
+2. Explain the Divide and Conquer Algorithmic Paradigm. Also list a few algorithms which use this paradigm.
++ 
+
+2. What do you understand about greedy algorithms? List a few examples of greedy algorithms.
++ 
+
+2. What do you understand by a searching algorithm? List a few types of searching algorithms.
++ 
+
+2. Describe the Linear Search Algorithm.
++ 
+
+2. Describe the Binary Search Algorithm.
++ 
+
+2. Write down an algorithm for adding a node to a linked list sorted in ascending order(maintaining the sorting property).
++ 
+
+2. Write an algorithm for counting the number of leaf nodes in a binary tree.
++ 
+
+2. What do you understand about the Dynamic Programming (DP) Algorithmic Paradigm? List a few problems which can be solved using the same.
++ 
+
+2. Write down a string reversal algorithm. If the given string is "kitiR," for example, the output should be "Ritik".
++ 
+
+2. What do you understand about the BFS (Breadth First Search) algorithm.
++ 
+
+2. What do you understand about the DFS (Depth First Search) algorithm.
++ 
+
+2. How do the encryption algorithms work?
++ 
+
+2. What are few of the most widely used cryptographic algorithms?
++ 
+
+2. Describe the merge sort algorithm.
++ 
+
+2. Describe the quick sort algorithm.
++ 
+
+2. Describe the bubble sort algorithm with the help of an example.
++ 
+
+2. Write an algorithm to find the maximum subarray sum for a given array. In other words, find the maximum sum that can be achieved by taking contiguous elements from a given array of integers.
++ 
+
+2. Explain the Dijkstra's Algorithm to find the shortest path between a given node in a graph to any other node in the graph.
++ 
+
+2. Can we use the binary search algorithm for linked lists? Justify your answer.
++ 
+
+2. What are recursive algorithms? State the important rules which every recursive algorithm must follow.
++ 
+
+2. Devise an algorithm to insert a node in a Binary Search Tree.
++ 
+
+2. Define insertion sort and selection sort.
++ 
+
+2. Define tree traversal and list some of the algorithms to traverse a binary tree.
++ 
+
+2. Describe the heap sort algorithm.
++ 
+
+2. What is the space complexity of the insertion sort algorithm?
++ 
+
+2. What is the space complexity of the selection sort algorithm?
++ 
