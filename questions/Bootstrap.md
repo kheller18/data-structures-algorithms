@@ -9,7 +9,7 @@
    + Bootstrap 4 is compatible with all modern browsers, including Chrome, Firefox, Internet Explorer 10+, Edge, Safari, and Opera.
 
 2. What is a Bootstrap Container, and how does it work?
-   + A bootstrap container is a handy class that generates a central region on the page where we can put our site content. The bootstrap .container has the advantage of being responsive and containing all of our other HTML code. Containers are used to pad the content within them, and there are two types of containers:
+   + Bootstrap Container: a handy class that generates a central region on the page where we can put our site content. The bootstrap .container has the advantage of being responsive and containing all of our other HTML code. Containers are used to pad the content within them, and there are two types of containers:
      + The .container class creates a fixed-width container that is responsive.
      + The .container-fluid class creates a full-width container that spans the entire viewport width.
      ![bootstrap container](../images/bootstrap/container.png)
@@ -20,7 +20,7 @@
    + Margin-top: 0 and margin-bottom: 1rem are also set on all `<p>` elements (16px by default).
 
 4. What do you know about the Bootstrap Grid System?
-   + The Bootstrap Grid System is a mobile-first, responsive grid system that scales up to 12 columns as the device or viewport size grows. Predefined classes for quick layout options and powerful mix-ins for creating successful semantic layouts are included in the system.
+   + `Bootstrap Grid System`: a mobile-first, responsive grid system that scales up to 12 columns as the device or viewport size grows. Predefined classes for quick layout options and powerful mix-ins for creating successful semantic layouts are included in the system.
    + There are five classes in the Bootstrap 4 grid system:
      + `.col-` for extra small devices, whose screen width is less than 576px.
      + `.col-sm-` small devices, whose screen width is equal to or greater than 576px.
@@ -31,10 +31,10 @@
      ![grid system](../images/bootstrap/grid.png)
 
 5. What is the difference between Bootstrap 4 and Bootstrap 5?
-![bootstrap4 vs bootstrap5](../images/bootstrap/bootstrap4_bootstrap5.png)
+  ![bootstrap4 vs bootstrap5](../images/bootstrap/bootstrap4_bootstrap5.png)
 
 6. What is the difference between Bootstrap 3 and Bootstrap 4?
-![bootstrap3 vs bootstrap4](../images/bootstrap/bootstrap3_bootstrap4.png)
+  ![bootstrap3 vs bootstrap4](../images/bootstrap/bootstrap3_bootstrap4.png)
 
 7. What is a Button Group, and what is the class for a basic Button Group?
    + Multiple buttons can be placed together on a single line using button groups. You can use this to group objects together, such as alignment buttons.
@@ -42,8 +42,8 @@
      ![button group](../images/bootstrap/button_group.png)
 
 8. What is a breadcrumb in Bootstrap?
-   + Breadcrumbs are a wonderful way to display a site's hierarchy-based information. Breadcrumbs can show the dates of publication, categories, and tags in the case of blogs. They show where the current page is in the navigational hierarchy.
-   + In Bootstrap, a breadcrumb is essentially an unordered list with the class .breadcrumb. CSS adds the separator for you automatically.
+   + `Breadcrumbs`: a wonderful way to display a site's hierarchy-based information. Breadcrumbs can show the dates of publication, categories, and tags in the case of blogs. They show where the current page is in the navigational hierarchy.
+     + In Bootstrap, a breadcrumb is essentially an unordered list with the class .breadcrumb. CSS adds the separator for you automatically.
 
 9.  How can you use Bootstrap to make thumbnails?
     + To make thumbnails with Bootstrap, go through the steps below:
@@ -55,12 +55,12 @@
       + You can use the `<pre>` tag to display a code that has multiple lines or even a block element.
 
 11. What is a lead?
-    + Lead adds some emphasis to a paragraph. The .lead class is used to achieve this and it makes the font larger, taller, and lighter in weight.
+    + `Lead`: adds some emphasis to a paragraph. The .lead class is used to achieve this and it makes the font larger, taller, and lighter in weight.
     + `<p class= "lead" > Paragraph </p>`
       ![typography](../images/bootstrap/typography.png)
 
 12. In Bootstrap 4, what is flexbox?
-    + Flexbox is a layout module for flexible boxes. Without using float or positioning, you can quickly create a flexible layout design with flexbox.
+    + `Flexbox`: is a layout module for flexible boxes. Without using float or positioning, you can quickly create a flexible layout design with flexbox.
 
 13. In Bootstrap, how do you make navigation elements?
     + The navigation elements in Bootstrap can be styled in a variety of ways. The markup and base class are the same in all of these .nav. To build tabular navigation or tabs, execute the following steps:
@@ -128,7 +128,7 @@
       ```
 
 21. What is the media object in Bootstrap and what are their types?
-    + Bootstrap's media objects allow you to position media objects such as images, videos, and audio to the left or right of content blocks. Media elements can be constructed using the class .media and the source is specified by using the class .media-object. There are two types of media objects:
+    + `Bootstrap's media objects`: allow you to position media objects such as images, videos, and audio to the left or right of content blocks. Media elements can be constructed using the class .media and the source is specified by using the class .media-object. There are two types of media objects:
       + `.media`
       + `.media-list`
 
@@ -174,31 +174,31 @@
     </a>
     </div>
     ```
-    + The outermost `<div>` is as follows:
+    + `The outermost <div> is as follows`:
       + For carousel controls to work properly, they must have an id (in this case, `id="myCarousel"`).
       + This `<div>` has the class="carousel" to indicate that it contains a carousel.
       + When a new item is displayed, the `.slide` class adds a CSS transition and animation effect that causes the objects to slide. If you don't want this effect, leave this class out.
       + When the page loads, the `data-ride= "carousel"` attribute tells Bootstrap to start animating the carousel right away.
-    + The section on "Indicators" is as follows:
+    + `The section on "Indicators" is as follows`:
       + Each slide's indicators are the small dots at the bottom (which indicates how many slides there are in the carousel, and which slide the user is currently viewing).
       + With the class `.carousel-indications`, the indicators are supplied in an ordered list.
       + The data-target attribute refers to the carousel's id.
       + When a user clicks on a given dot, the `data-slide-to` attribute defines the slide they should go to.
-    + The "Wrapper" section is as follows:
+    + `The "Wrapper" section is as follows`:
       + A div with the class `.carousel-inner` specifies the slides.
       + Each slide's content is defined by a `div` with the class `.item`. This can be in the form of text or visuals.
       + One of the slides must have the `.active` class applied to it. The carousel will not be viewable otherwise.
       + To generate a caption for each slide, a `<div class="carousel-caption">` is added within each `<div class="item">`
-    + The section on "Left and Right Controls" is as follows:
+    + `The section on "Left and Right Controls" is as follows`:
       + This code adds "left" and "right" buttons, allowing the user to manually navigate between slides.
       + The data-slide attribute takes the keywords "prev" or "next," which change the position of the slide in relation to its current location.
       ![carousel](../images/bootstrap/carousel.png)
 
 23. What do you mean by the Bootstrap well?
-    + The Bootstrap well is simply a container that makes the content appear sunken. It can also produce an inset effect on the webpage. With the aid of `<div>` and class, a developer may create a well and also wrap the content in the well. The content will be displayed according to your preferences.
+    + `Bootstrap well`: simply a container that makes the content appear sunken. It can also produce an inset effect on the webpage. With the aid of `<div>` and class, a developer may create a well and also wrap the content in the well. The content will be displayed according to your preferences.
 
 24. What are glyphicons?
-    + Glyphicons are icon fonts that you can use on your website. Their developer has made them freely available for Bootstrap projects.
+    + `Glyphicons`: icon fonts that you can use on your website. Their developer has made them freely available for Bootstrap projects.
     + To utilize the icons, simply copy and paste the following code anywhere in your code. To ensure adequate padding, leave a space between the icon and the text.
     + `<span class = "glyphicon glyphicon-search" ></span>`
     + Note: Bootstrap 4 lacks an icon library of its own (Glyphicons from Bootstrap 3 are not supported in BS4).
@@ -216,13 +216,13 @@
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
         ```
-    + Pagination is how Bootstrap handles an unordered list. The following classes are provided by bootstrap to manage pagination:
+    + `Pagination`: how Bootstrap handles an unordered list. The following classes are provided by bootstrap to manage pagination:
       + `.pagination`: This class is required to enable pagination on your page.
       + `.disabled, .active`: Use .disabled for unclickable links and .active to indicate the current page when customising links.
       + `.pagination-Ig and .pagination-sm`: use these to get different size items.
 
 26. What are badges? Which class will you use to make your badge look more rounded?
-    + Badges are used to supplement any content with additional information. To make rectangular badges, use the .badge class with a contextual class (like .badge-secondary) within `<span>` elements. It's worth noting that badges scale to fit the parent element's size (if any).
+    + `Badges`: used to supplement any content with additional information. To make rectangular badges, use the .badge class with a contextual class (like .badge-secondary) within `<span>` elements. It's worth noting that badges scale to fit the parent element's size (if any).
     + To make the badges more rounded, we use the .badge-pill class.
     ![badges](../images/bootstrap/badges.png)
 
@@ -231,16 +231,16 @@
     + `.col-xs-push-#` and `.col-xs-pull-#` are the push and pull classes for the Bootstrap grid. This also works well for sm, md, and lg. The pull class moves columns to the left, whereas the push class moves them to the right.
 
 28. Explain the affix plugin.
-    + The affix plugin allows you to affix a `<div>` to a particular location on the page. You may also use this plugin to turn on and off the pinning. Social icons are a good example of this. They'll start in one position, but when the page reaches a certain point, the `<div>` will be frozen in place and will no longer scroll with the rest of the page.
+    + `Affix plugin`: allows you to affix a `<div>` to a particular location on the page. You may also use this plugin to turn on and off the pinning. Social icons are a good example of this. They'll start in one position, but when the page reaches a certain point, the `<div>` will be frozen in place and will no longer scroll with the rest of the page.
 
 29. What are Bootstrap collapsing elements?
-    + You may collapse any element with Bootstrap collapsing elements without creating any JavaScript code or accordion markup. To automatically delegate control of a collapsible element in bootstrap, add data-toggle= "collapse" to the controller element along with a data-target or href. You may also do the same thing with `.collapse (options)`, `.collapse (‘show')`, or `.collapse (‘hide')`.
+    + `Bootstrap collapsing elements`: You may collapse any element without creating any JavaScript code or accordion markup. To automatically delegate control of a collapsible element in bootstrap, add data-toggle= "collapse" to the controller element along with a data-target or href. You may also do the same thing with `.collapse (options)`, `.collapse (‘show')`, or `.collapse (‘hide')`.
 
 30. In Bootstrap, what is a scrollspy?
-    + It's an auto-updating nav component that allows you to grab sections of the page based on where you're scrolling. Based on the scroll position, the .active class will update from one nav item to the next.
+    + `Scrollspy`: an auto-updating nav component that allows you to grab sections of the page based on where you're scrolling. Based on the scroll position, the .active class will update from one nav item to the next.
 
 31. Why is Jumbotron used in Bootstrap?
-    + In Bootstrap, Jumbotron is used to highlight contents. It enlarges the headline and provides a margin for the landing page's content. In order to implement Jumbotron in Bootstrap, create a container div with the `.jumbotron` class.
+    + `Jumbotron`: used to highlight contents. It enlarges the headline and provides a margin for the landing page's content. In order to implement Jumbotron in Bootstrap, create a container div with the `.jumbotron` class.
 
 32. How is tooltip different from popover?
     + When the user moves the mouse pointer over an element, the Tooltip component appears as a little pop-up box. The Popover component is a pop-up box that emerges when the user clicks on an element. The popover may hold a lot more information.
@@ -291,7 +291,6 @@
         + You can change the vertical alignment of gathered flex items with the `.align-content-*` classes. .`align-content-start` (default), `.align-content-end`, `.align-content-center`, `.align-content-baseline`, and `.align-content-stretch` are valid classes.
 
 35. What are the important rules that you should follow while using Grids in Bootstrap?
-    + The following three rules should be strictly kept in mind while using Grids in Bootstrap:
       + A row's immediate child must be a Column.
       + Rows are just used to contain Columns and are not utilized for anything else.
       + Rows should be put within a container.

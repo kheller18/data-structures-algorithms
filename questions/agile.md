@@ -37,7 +37,7 @@
      + Difficulty in testing and test construction.
 
 3. Explain Agile Testing? What are the principles of Agile Testing?
-   + Agile testing, as the name suggests, is a software testing process where software is tested for any defects, errors, or other issues. It is considered a core part of the development process as it enables testers and developers to work together as a team that in turn improves overall performance. It also helps in ensuring the successful delivery of high-quality products. Testing is usually performed so that testers can identify and resolve the problems early and at every point in the development process.
+   + `Agile testing`: as the name suggests, is a software testing process where software is tested for any defects, errors, or other issues. It is considered a core part of the development process as it enables testers and developers to work together as a team that in turn improves overall performance. It also helps in ensuring the successful delivery of high-quality products. Testing is usually performed so that testers can identify and resolve the problems early and at every point in the development process.
      ![agile testing](../images/agile/agile_testing.png)
      + Principles of Agile Testing
        + `Continuous Testing`: Testing should be conducted continuously by the Agile team to ensure continuous development progress.
@@ -60,31 +60,31 @@
    + Cope up with change
 
 5. What do you mean by refactoring?
-   + Re-factoring is basically an activity that involves alteration or modification of the internal structure of software without any change in its external behaviors or functionality. In this, developers make some changes or tinker with code to enhance and improve the internal structure of software. One of the most popular and widely used refactoring techniques in the agile software development process is Red-Green. The refactoring process makes the code more readable, understandable, and clean. The continuous habit of refactoring helps to make it easier to extend and maintain code.
+   + `Re-factoring`: an activity that involves alteration or modification of the internal structure of software without any change in its external behaviors or functionality. In this, developers make some changes or tinker with code to enhance and improve the internal structure of software. One of the most popular and widely used refactoring techniques in the agile software development process is Red-Green. The refactoring process makes the code more readable, understandable, and clean. The continuous habit of refactoring helps to make it easier to extend and maintain code.
      ![refactoring](../images/agile/refactoring.png)
 
 6. What's the difference between sprint backlog and product backlog?
-   + `Sprint Backlog`: It is generally owned by the development team. It only contains those features and requirements that are related to the specific sprint only. It is considered a subset of the product backlog. It is compiled of everything that must be done to complete a particular sprint. It only includes items that can be completed during each agile sprint. It is specific to the sprint goal only in a particular sprint.
-   + `Product Backlog`: It is generally owned and maintained by the project owner. It usually contains each and every feature of the product as well as the requirements of the product. It is compiled to everything that must be done to complete the whole process. It just breaks down every item into a series of steps. It is more specific to the end goal of the product.
+   + `Sprint Backlog`: generally owned by the development team. It only contains those features and requirements that are related to the specific sprint only. It is considered a subset of the product backlog. It is compiled of everything that must be done to complete a particular sprint. It only includes items that can be completed during each agile sprint. It is specific to the sprint goal only in a particular sprint.
+   + `Product Backlog`: generally owned and maintained by the project owner. It usually contains each and every feature of the product as well as the requirements of the product. It is compiled to everything that must be done to complete the whole process. It just breaks down every item into a series of steps. It is more specific to the end goal of the product.
    ![sprint vs product backlog](../images/agile/sprint_product.png)
 
 7. What is Spike and Zero Sprint in Agile?
-   + `Spike`: It generally refers to a too large and complex user story in software development that cannot be estimated until the development team runs a timeboxed investigation. These stories can be used for various activities like research, design, exploration, prototyping, etc. Spikes are usually created to resolve some technical issues and design problems in the project.
-   + `Zero Sprint`: It generally refers to the first step or pre-preparation step that comes just before the first sprint. It includes all activities such as setting a development environment, preparing backlog, etc.
+   + `Spike`: refers to a too large and complex user story in software development that cannot be estimated until the development team runs a timeboxed investigation. These stories can be used for various activities like research, design, exploration, prototyping, etc. Spikes are usually created to resolve some technical issues and design problems in the project.
+   + `Zero Sprint`: refers to the first step or pre-preparation step that comes just before the first sprint. It includes all activities such as setting a development environment, preparing backlog, etc.
 
 8. What’s the difference between Agile methodology and Traditional methodology of Software Development?
-   + `Agile Software Development`: It is an iterative approach that is used to design complicated software. In this method, project teams are allowed to be more flexible and ensure that the final is fulfilling the customer’s requirements. It develops customer-centric products and delivers in shorter sprints.
+   + `Agile Software Development`: an iterative approach that is used to design complicated software. In this method, project teams are allowed to be more flexible and ensure that the final is fulfilling the customer’s requirements. It develops customer-centric products and delivers in shorter sprints.
      ![agile approach](../images/agile/agile_methodology.png)
-   + `Traditional Software Development`: It is a linear approach that is used to design simple software. In this method, all the phases of the process usually occur in sequence. It is more suitable for projects where the possibility of changes is negligible in the scope.
+   + `Traditional Software Development`: a linear approach that is used to design simple software. In this method, all the phases of the process usually occur in sequence. It is more suitable for projects where the possibility of changes is negligible in the scope.
      ![traditional approach](../images/agile/traditional_methodology.png)
    ![agile vs traditional](../images/agile/agile_traditional.png)
 
 9.  What do you mean by the term “velocity” in Agile?
-    + `velocity`: is basically a measurement unit that measures or calculates how much work an agile development team can successfully complete in a single sprint and how much time will be required to finish a project. It is widely used as a calibration tool that helps development teams to create accurate and efficient timelines. It is also used to identify problems and measure the improvements that occur with time.
+    + `Velocity`: a measurement unit that measures or calculates how much work an agile development team can successfully complete in a single sprint and how much time will be required to finish a project. It is widely used as a calibration tool that helps development teams to create accurate and efficient timelines. It is also used to identify problems and measure the improvements that occur with time.
       ![velocity](../images/agile/velocity.png)
 
 10. What do you mean by Daily Stand-Up meeting?
-    + A daily stand-up meeting is a day-to-day meeting among all the members of the agile team. Its main purpose is to know the current progress and performance of every team member that works on Scrum tasks. The meetings take place mostly in the morning and usually involves product owners, developers, and the scrum master.
+    + `Daily stand-up meeting`: a day-to-day meeting among all the members of the agile team. Its main purpose is to know the current progress and performance of every team member that works on Scrum tasks. The meetings take place mostly in the morning and usually involves product owners, developers, and the scrum master.
       + These meetings usually take place for the following reasons:
         + To know what was done yesterday and what is the plan for today.
         + To provide a better understanding of goals.
@@ -93,11 +93,11 @@
         + To bring everyone up to date on the information and help the team to stay organized.
 
 11. What is Incremental and Iterative Development?
-    + `Iterative Development`: It is basically a software development process where software development cycles (sprint and releases) are repeated until the final product is obtained. On the basis of feedback from customers or users, the product is again developed in cycles or releases and sprints i.e., adding new functionality in a repetitive manner.
-    + `Incremental Development`: It is basically a software development process where development works are sliced into increments or pieces or portions. In this, the software is developed and delivered in pieces or increments and each piece has a complete set of functionalities. The increment can either be small or large, and each increment is coded and tested fully. After testing each increment, they all are integrated so that they work as a whole.
+    + `Iterative Development`: a software development process where software development cycles (sprint and releases) are repeated until the final product is obtained. On the basis of feedback from customers or users, the product is again developed in cycles or releases and sprints i.e., adding new functionality in a repetitive manner.
+    + `Incremental Development`: software development process where development works are sliced into increments or pieces or portions. In this, the software is developed and delivered in pieces or increments and each piece has a complete set of functionalities. The increment can either be small or large, and each increment is coded and tested fully. After testing each increment, they all are integrated so that they work as a whole.
 
 12. What is a Product Roadmap?
-    + `product roadmap`: as the name suggests, is a powerful tool that describes how a product is likely to grow over time. It is a holistic view of product features that create the product vision. It also indicates what development is building, business goals that the new product will achieve, problems that the product will solve, etc. A product roadmap is owned by the product manager. It also encourages the development team to work together to achieve the desired goal for the successful delivery of the product.
+    + `Product Roadmap`: as the name suggests, is a powerful tool that describes how a product is likely to grow over time. It is a holistic view of product features that create the product vision. It also indicates what development is building, business goals that the new product will achieve, problems that the product will solve, etc. A product roadmap is owned by the product manager. It also encourages the development team to work together to achieve the desired goal for the successful delivery of the product.
 
 13. What are different project management tools that are mostly used in Agile?
     + Icescrum
@@ -108,15 +108,15 @@
     + X-planner
 
 14. What is the difference between Agile and Scrum?
-    + `Agile`: It is an approach mainly used for software development. In this methodology, complex projects are broken down into smaller units that are achievable in a specific time frame. It always involves customers in the development process.
+    + `Agile`: an approach mainly used for software development. In this methodology, complex projects are broken down into smaller units that are achievable in a specific time frame. It always involves customers in the development process.
     + `Scrum`: There are different agile methodologies, and Scrum is one of them. It promotes accountability, function, and teamwork similar to Agile. In simple words, it is an improved way of Agile methodology and shares the same principles and values of Agile with adding some of its own unique features.
-    + Agile and Scrum, both provide a flawless experience to customers in the software development cycle and share similar methods like collaborative iterations. But still, both of them cannot be substituted for each other. It mainly depends upon the type of project, budget, time, and feasibility to choose any one of them for project development.  There are several differences between them as given below:
+    + Agile and Scrum both provide a flawless experience to customers in the software development cycle and share similar methods like collaborative iterations. But still, both of them cannot be substituted for each other. It mainly depends upon the type of project, budget, time, and feasibility to choose any one of them for project development.  There are several differences between them as given below:
       ![agile vs scrum](../images/agile/agile_scrum.png)
 
 15. What do you mean by Pair Programming? Write its advantages.
-    + `Pair programming`: as the name suggests, is a type of programming where two people write code together and work side-by-side on one machine or computer. It is basically a technique mostly used in agile software development. In this type of programming, one person writes code and another person checks and reviews each line of code. Both of them also switch their roles while doing work.
+    + `Pair Programming`: as the name suggests, is a type of programming where two people write code together and work side-by-side on one machine or computer. It is basically a technique mostly used in agile software development. In this type of programming, one person writes code and another person checks and reviews each line of code. Both of them also switch their roles while doing work.
       ![pair programming](../images/agile/pair_programming.png)
-      + Advantages of Pair Programming
+      + Advantages of Pair Programming:
         + Develop higher-quality code
         + Reduce the risk of errors
         + An effective way to share knowledge
@@ -124,13 +124,13 @@
         + Improved team collaboration
 
 16. What is Agile Manifesto? What are its values and principles?
-    + The agile manifesto is basically a document consisting of values and principles that are expressed in Agile. It was created in early 2001. It simply consists of 4 values and 12 key principles. This manifesto helps the development team to work more efficiently and provides a clear and measurable structure that promotes team collaboration, iterative development, etc. It is specially designed to improve development methodologies.
-      + The 4 Agile Values
+    + Agile Manifesto: a document consisting of values and principles that are expressed in Agile. It was created in early 2001. It simply consists of 4 values and 12 key principles. This manifesto helps the development team to work more efficiently and provides a clear and measurable structure that promotes team collaboration, iterative development, etc. It is specially designed to improve development methodologies.
+      + The 4 Agile Values:
         + `Individuals and Interactions over Processes and Tools`: It focuses on giving more attention and importance to communication with clients.
         + `Working Software over Comprehensive Documentation`: It focuses on the completion of the project and making sure that the project is completing the final deliverables.
         + `Customer Collaboration over Contract Negotiation`: It focuses on involving customers in all phases of the project so that the final product doesn’t lack any requirement that the client needs. It is done to ensure 100% customer satisfaction.
         + `Responding to Change over Following a Plan`: It focuses on changes and motivates the team to adopt the change quickly so that higher quality products can be delivered. Therefore, agile works in short sprints so that changes can be utilized for good.
-      + The 12 Agile Principles
+      + The 12 Agile Principles:
         + `Customer Satisfaction`: First priority is to fulfill customer demands to ensure 100% customer satisfaction.
         + `Welcome Change`: Changes are important for improvement therefore even late in the development process, changes can be introduced and addressed throughout the development period.
         + `Deliver Frequently`: Products have to be delivered as soon as possible therefore focus on a shorter timescale.
@@ -145,14 +145,14 @@
         + `Reflect and Adjust`: To improve the effectiveness of a team, the team reflects on how to become more effective and assess their working style at regular intervals. This is done so that one can learn from their mistakes and take some steps to improve their performance in the next iterations.
 
 17. What are Burn-up and Burn-down charts in Agile?
-    + `Burn-up Chart`: It is a type of chart that is used to display or represent the amount of work that has been completed and the total amount of work for a sprint or iteration.
-    + `Burn-down Chart`: It is a type of chart that is used to display or represent the amount of work that is remaining to be completed in the project. These charts are very simple and easy to understand.
+    + `Burn-up Chart`: chart that is used to display or represent the amount of work that has been completed and the total amount of work for a sprint or iteration.
+    + `Burn-down Chart`: chart that is used to display or represent the amount of work that is remaining to be completed in the project. These charts are very simple and easy to understand.
 
 18. What are different types of Burn-Down charts?
-    + `Product Burndown Chart`: It is a type of chart that is used to show story points of each completed sprint so that it depicts the completion of requirements over time. It mainly shows how many of the product goals are being achieved by the team and how much work is remaining.
-    + `Sprint Burndown Chart`: It is a type of chart that is used to show the remaining works for the scrum team of a particular sprint. It makes the work of the team visible and shows the rate at which work is completed and how much is remaining to be completed.
-    + `Release Burndown Chart`: It is a type of chart that is used to show how a team is progressing against the work for a release. This chart is updated by the scrum team at the end of each sprint. It is very essential to see what process is being made during each sprint.
-    + `Defect Burndown Chart`: It is a type of chart that is used to show the total number of defects that are being identified and fixed or removed.
+    + `Product Burndown Chart`: chart that is used to show story points of each completed sprint so that it depicts the completion of requirements over time. It mainly shows how many of the product goals are being achieved by the team and how much work is remaining.
+    + `Sprint Burndown Chart`: chart that is used to show the remaining works for the scrum team of a particular sprint. It makes the work of the team visible and shows the rate at which work is completed and how much is remaining to be completed.
+    + `Release Burndown Chart`: chart that is used to show how a team is progressing against the work for a release. This chart is updated by the scrum team at the end of each sprint. It is very essential to see what process is being made during each sprint.
+    + `Defect Burndown Chart`: chart that is used to show the total number of defects that are being identified and fixed or removed.
 
 19. Name three main Agile frameworks other than Scrum for product development.
     + Kanban
@@ -163,17 +163,17 @@
     + `Planning Poker`: also known as Scrum Poker, is a consensus-based technique that not only helps agile teams to estimate the time and effort that is required to complete each initiative on their product backlog but also identifies issues before time and within the course of a user story. It makes the meeting more short, productive and creates estimates with the involvement of the whole team. It is mainly used to avoid the influence of other participants, and force each person to think independently and give their opinion.
 
 21. What is a Sprint Planning Meeting, Sprint Review Meeting and Sprint Retrospective Meeting?
-    + `Sprint Planning Meeting`: In this meeting, the discussion takes place about features and product backlog items (user stories) that are important to the team. This meeting is usually attended by the product owner, Scrum Master and Scrum Team. It is a weekly meeting and usually lasts for about an hour.
-    + `Sprint Review Meeting`: In this meeting, the Scrum team gives a demonstration of the product. After this, the product owner determines which items completed and which are not completed. He also adds some additional items to the product backlog on the basis of feedback from customers or stakeholders. Its main aim is to inspect the product being created in the sprint and modify it if required.
+    + `Sprint Planning Meeting`: the discussion takes place about features and product backlog items (user stories) that are important to the team. This meeting is usually attended by the product owner, Scrum Master and Scrum Team. It is a weekly meeting and usually lasts for about an hour.
+    + `Sprint Review Meeting`: the Scrum team gives a demonstration of the product. After this, the product owner determines which items completed and which are not completed. He also adds some additional items to the product backlog on the basis of feedback from customers or stakeholders. Its main aim is to inspect the product being created in the sprint and modify it if required.
       ![sprint review](../images/agile/sprint_planning.png)
     + `Sprint Retrospective Meeting`: This meeting takes place after the Sprint planning meeting. In this meeting, the Scrum team meets again to inspect itself and discuss the past mistakes, potential issues and methods to resolve them. Main aim of this meeting is to improve the development process. This meeting lasts for about 2-3 hours.
       ![sprint review](../images/agile/sprint_review.png)
 
 22. What do you mean by the term “increment”?
-    + `increment`: is simply the sum or total of all the product backlog items that were completed during a sprint and the value of increments of all previous sprints. It is the total work completed within the current and previous sprints.
+    + `Increment`: is simply the sum or total of all the product backlog items that were completed during a sprint and the value of increments of all previous sprints. It is the total work completed within the current and previous sprints.
 
 23. What are standard or common metrics for Agile? Explain.
-    + Agile Metrics are basically standard metrics that are used to measure the work of the team. These metrics are used to determine the quality of work, productivity, progress, team health, etc. Its main focus is on value delivered to customers and how much end-users were impacted by it.
+    + `Agile Metrics`: standard metrics that are used to measure the work of the team. These metrics are used to determine the quality of work, productivity, progress, team health, etc. Its main focus is on value delivered to customers and how much end-users were impacted by it.
     + Standard Metrics for the Agile project:
       + `Velocity`: It measures the amount of work done by the development team during a sprint. It gives ideas about progress, capacity, etc.
       + `Cumulative Flow Diagram`: It is a flow diagram used to measure the current status of work in progress of the team. It is simply used to track the progress of agile teams and manage flow stability.
@@ -185,7 +185,7 @@
       + Business Value Delivered: It is used to measure the efficiency of the working team.
 
 24. What is Scrum? Write its advantages.
-    + `Scrum`: is a lightweight process framework that helps scrum teams to work together and manage product development to deliver products in the shortest time. The product provided by the scrum team in the shortest period is known as a sprint. Its main aim is to manage tasks within a team-based development environment. It is especially used to manage project development for software products and can also be used in business-related contexts.
+    + `Scrum`: a lightweight process framework that helps scrum teams to work together and manage product development to deliver products in the shortest time. The product provided by the scrum team in the shortest period is known as a sprint. Its main aim is to manage tasks within a team-based development environment. It is especially used to manage project development for software products and can also be used in business-related contexts.
       + `Advantages of Scrum`:
         + Releases product quickly to users and customers
         + Ensures effective use of time and money and therefore saves cost
@@ -195,7 +195,7 @@
         + Large and complex projects are divided into small and easily manageable sprints
 
 25. What are different roles in Scrum?
-    + There are basically three different roles in Scrum as given below:
+    + There are three different roles in Scrum as given below:
       ![scrum roles](../images/agile/scrum_roles.png)
       + `Scrum Master`: Scrum Master is basically a team leader or supervisor of a team who is responsible for ensuring that the scrum team executes committed tasks properly.
       + `Product Owner`: The product owner is basically a stakeholder of the project who is responsible for managing the product backlog. He/She is also responsible for defining a vision of what to build for the team.
@@ -222,7 +222,6 @@
       + `Product Increment`: It is the version of the end product derived from the completion of each Sprint.
 
 28. Explain the terms User story, Epic, and Tasks in Scrum?
-    + There are a lot of technical terms that are normally used in Scrum activities. Some of them are given below:
       ![user story vs epic vs tasks](../images/agile/story_epic_tasks.png)
       + `Epic`: It is basically a large story that cannot be completed in a single sprint. Therefore, epics are sub-divided into multiple, smaller user stories before they can be worked on.
       + `User story`: These are the smallest units that can be fitted and completed in one sprint. User stories are further broken down into different tasks.
@@ -235,7 +234,7 @@
     + RTC Jazz, etc.
 
 30. Explain TimeBoxing in Scrum.
-    + `Timeboxing`: is an important time management technique or tool that is used to limit the amount of time that is being spent to complete a task. It simply allows a fixed unit of time for each and every task and this unit is known as a time box. The maximum length of the time box is 15 minutes. It not only helps to improve focus but also results in an increase in productivity. There are some events in Scrum and all these events are timeboxed which means all these events are allotted with a maximum and fixed unit of time for the task. The events that are time-boxed are listed below:
+    + `Timeboxing`: an important time management technique or tool that is used to limit the amount of time that is being spent to complete a task. It simply allows a fixed unit of time for each and every task and this unit is known as a time box. The maximum length of the time box is 15 minutes. It not only helps to improve focus but also results in an increase in productivity. There are some events in Scrum and all these events are timeboxed which means all these events are allotted with a maximum and fixed unit of time for the task. The events that are time-boxed are listed below:
       + Sprint
       + Sprint Planning
       + Daily Scrum
