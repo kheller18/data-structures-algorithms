@@ -3,7 +3,7 @@
 ---
 
 1. What are design patterns?
-   + Design patterns are the reusable solutions that solve common problems of software development. These problems include repetitive code, redundant functions and logic etc. These help to save considerable effort and time required for the developers while developing software. Design patterns are commonly used in object-oriented software products by incorporating best practices and promoting reusability for developing robust code.
+   + `Design patterns`: the reusable solutions that solve common problems of software development. These problems include repetitive code, redundant functions and logic etc. These help to save considerable effort and time required for the developers while developing software. Design patterns are commonly used in object-oriented software products by incorporating best practices and promoting reusability for developing robust code.
      ![design patterns](../images/design-patterns/design_patterns.png)
 
 2. What are the advantages of Java Design Patterns?
@@ -20,14 +20,14 @@
    + What are the real-time use cases and the efficiency of the software that uses these patterns?
 
 4. What are the types of design patterns in Java?
-   + `Creational Patterns`: These patterns provide freedom of choice between creating objects by hiding the logic. The objects constructed are decoupled from the implemented system. Some of the examples of creational patterns are - Factory design pattern, Builder design, Prototype design, Singleton design, Abstract Factory design.
-   + `Structural Patterns`: These patterns help in defining how the structures of classes and objects should be like for defining the composition between classes, interfaces and objects. Some of the examples of structural patterns are - Adaptor design, Facade design, Decorator design, proxy design etc.
-   + `Behavioural Patterns`: These patterns help to define how the objects should communicate and interact with one another. Some of the examples of behavioural patterns are - Command pattern, Iterator pattern, Observer pattern, Strategy pattern, etc.
+   + `Creational Patterns`: provide freedom of choice between creating objects by hiding the logic. The objects constructed are decoupled from the implemented system. Some of the examples of creational patterns are - Factory design pattern, Builder design, Prototype design, Singleton design, Abstract Factory design.
+   + `Structural Patterns`: help in defining how the structures of classes and objects should be like for defining the composition between classes, interfaces and objects. Some of the examples of structural patterns are - Adaptor design, Facade design, Decorator design, proxy design etc.
+   + `Behavioural Patterns`: help to define how the objects should communicate and interact with one another. Some of the examples of behavioural patterns are - Command pattern, Iterator pattern, Observer pattern, Strategy pattern, etc.
    + The following diagram represents the summary of the types of design patterns.
      ![design pattern types](../images/design-patterns/design_patterns_types.png)
 
 5. What is Inversion of Control?
-   + Inversion of control is a pattern used to decouple the dependencies between layers and components in the system. The Dependency-Injection (DI) pattern is an example of an IoC pattern that helps in removing dependencies in the code.
+   + `Inversion of control`: a pattern used to decouple the dependencies between layers and components in the system. The Dependency-Injection (DI) pattern is an example of an IoC pattern that helps in removing dependencies in the code.
      + Let us understand this with the help of an example. Consider we have a class A that makes use of class B as shown below:
        ```
        public class A{
@@ -50,35 +50,35 @@
        + We have inverted the control of handing the dependency of instantiating the object of class B to the IoC class IocB.
 
 6. What Is Gang of Four (GOF) in Design Patterns?
-   + Gang of Four (GOF) are the 4 superheroes who invented the concept of design patterns. These heroes are Erich Gamma, Ralph Johnson, Richard Hel and John Vlissides. These people documented the design patterns in a book called “Design Patterns: Elements of Reusable Object-Oriented Software” in 1995. If not for these people, the software developers would have wasted time-solving problems of recurring nature instead of focussing on business requirements.
+   + `Gang of Four (GOF)`: the 4 superheroes who invented the concept of design patterns. These heroes are Erich Gamma, Ralph Johnson, Richard Hel and John Vlissides. These people documented the design patterns in a book called “Design Patterns: Elements of Reusable Object-Oriented Software” in 1995. If not for these people, the software developers would have wasted time-solving problems of recurring nature instead of focussing on business requirements.
 
 7. What are the SOLID Principles?
    + SOLID principles were the Object-Oriented principles introduced by Robert C. Martin in his paperwork “Design Principles and Design patterns” in the year 2000. The acronym for SOLID goes as follows:
      ![SOLID](../images/design-patterns/solid.png)
-     + `S`: Single Responsibility Principle (SRP): The single responsibility principle ensures that every class or module should be accountable and responsible for only one functionality. There should be one and only one reason for changing any class.
+     + `S`: Single Responsibility Principle (SRP): ensures that every class or module should be accountable and responsible for only one functionality. There should be one and only one reason for changing any class.
      + `O`: Open Closed Principle (OCP): Every class is open for extension but closed for modification. Here, we are allowed to extend the entities behaviour by not modifying anything in the existing source code.
-     + `L`: Liskov Substitution Principle(LSP): LSP principle states that the objects can be replaced by the subtype instances without affecting the correctness of the program.
-     + `I`: Interface Segregation Principle (ISP): The ISP principle states that we can use as many interfaces specific to the client’s requirements instead of creating only one general interface. Clients should not be forced to implement the functionalities that they do not require.
+     + `L`: Liskov Substitution Principle(LSP): states that the objects can be replaced by the subtype instances without affecting the correctness of the program.
+     + `I`: Interface Segregation Principle (ISP): states that we can use as many interfaces specific to the client’s requirements instead of creating only one general interface. Clients should not be forced to implement the functionalities that they do not require.
      + `D`: Dependency Inversion Principle: Here, the high-level modules should not be dependent on the lower level modules or concrete implementations. Instead, they should be dependent on the abstractions.
 
 8. What do you understand by the Open-Closed Principle (OCP)?
-   + The Open close principle states that any class, component or entity should be open for extension but closed for modification. A class can be extended via Inheritance, Interfaces, Composition whenever required instead of modifying the code of the class. Consider an instance where we have a class that calculates the area of a square. Later, we get the requirement of calculating the area of a rectangle. Here, instead of modifying the original class, we can create one base class and this base class can be extended by the new class rectangle.
+   + `Open-Closed Principle (OCP)`: states that any class, component or entity should be open for extension but closed for modification. A class can be extended via Inheritance, Interfaces, Composition whenever required instead of modifying the code of the class. Consider an instance where we have a class that calculates the area of a square. Later, we get the requirement of calculating the area of a rectangle. Here, instead of modifying the original class, we can create one base class and this base class can be extended by the new class rectangle.
 
-9.  What are some of the design patterns used in Java’s JDK library?
+9. What are some of the design patterns used in Java’s JDK library?
     + Decorator pattern are used by the Wrapper classes.
     + Singleton pattern is used in classes like Calendar and Runtime.
     + Factory pattern is used for methods like Integer.valueOf methods in wrapper classes.
     + Observer pattern is used for handling event frameworks like awt, swing etc.
 
 10. How are design principles different from design patterns?
-    + Design principles are those principles that are followed while designing software systems for any platform by making use of any programming language. SOLID principles are the design principles that we follow as guidelines to develop robust, extensible and scalable software systems. These apply to all aspects of programming.
-    + Design Patterns are the reusable template solutions for commonly occurring problems that can be customized as per the problem requirements. These are well-implemented solutions that are tested properly and are safe to use. Factory Design Pattern, Singleton pattern, Strategy patterns are a few of the examples of design patterns.
+    + `Design principles`: principles that are followed while designing software systems for any platform by making use of any programming language. SOLID principles are the design principles that we follow as guidelines to develop robust, extensible and scalable software systems. These apply to all aspects of programming.
+    + `Design Patterns`: reusable template solutions for commonly occurring problems that can be customized as per the problem requirements. These are well-implemented solutions that are tested properly and are safe to use. Factory Design Pattern, Singleton pattern, Strategy patterns are a few of the examples of design patterns.
 
 11. How are design patterns different from algorithms?
     + Both Design Patterns and Algorithms describe typical solutions to any given problem. But the main difference is that the algorithm defines a clear set of actions for achieving a goal and a design pattern provides a high-level description of any solution. Design patterns applied to two different problems might be the same but the logic of implementation would be different and is based on the requirements.
 
 12. What is a Factory Design Pattern?
-    + Factory design pattern belongs to the category of Creational Design Patterns. Here, the objects are created without exposing the logic of creation to the client. The objects refer to the common interface.
+    + `Factory Design Pattern`: belongs to the category of Creational Design Patterns. Here, the objects are created without exposing the logic of creation to the client. The objects refer to the common interface.
     + Let’s consider 3 classes Square, Rectangle and Triangle. We will be using factory patterns to create objects of these three classes without exposing the creation logic by making use of ShapeFactory class. The Driver class would be passing the information like RECTANGLE/SQUARE/TRIANGLE for getting the required object. The following UML diagram represents the scenario.
       ![factory design pattern](../images/design-patterns/factory_design_pattern.png)
       + Now to implement the factory design pattern for the above example, let us follow the below steps:
@@ -165,7 +165,7 @@
         + Introduces loose coupling in the application by allowing flexibility in the implementation of methods when new classes are introduced.
 
 13. What is an Adapter Design Pattern?
-    + The adapter design pattern falls under the category of a structural design pattern that lets incompatible objects collaborate. It acts as a wrapper between 2 different objects. The adapter catches the call for one object and transforms them to be recognizable by the second object.
+    + `Adapter Design Pattern`: falls under the category of a structural design pattern that lets incompatible objects collaborate. It acts as a wrapper between 2 different objects. The adapter catches the call for one object and transforms them to be recognizable by the second object.
     + Let us understand this with the help of an example of a USB to Ethernet adapter that is used when we have an ethernet interface at one end and the USB interface on the other end. The USB and ethernet are incompatible with each other which is why we require an adapter. The adapter class has a Client class that expects some object type and it has an Adaptee class that offers the same feature but by exposing a different interface. Now to make these both communicate, we have an Adapter class. The client requests the Adapter by using the target interface. The Adapter class translates the request using the Adaptee Interface on the adaptee. The Client receives the results unaware of the adapter’s role. This has been described in the class diagram as shown below:
       ![adapter design pattern](../images/design-patterns/adapter_design_patterns.png)
     + Let us consider that we have a MediaPlayer Interface which is implemented by the AudioPlayer class. The AudioPlayer can play mp3 format by default. Consider another interface AdvancedPlayer that is being implemented by MP4Player class that plays mp4 formats and WAVPlayer that plays wav formats. If we want to make AudioPlayer class play other formats, then we make use of the MediaAdapter class that implements the MediaPlayer Interface and uses the AdvancedPlayer objects for playing the required format. The code implementation of this scenario is as follows:
@@ -268,12 +268,12 @@
       ```
 
 14. What is a Proxy Design Pattern?
-    + Proxy design pattern falls under the category of structural design that represents the functionality of other classes. This pattern lets the developers provide a substitute for another object. This is called a proxy object. This helps to control the access to the original object and allows us to perform many tasks before or after the request reaches the original object.
+    + `Proxy Design Pattern`: falls under the category of structural design that represents the functionality of other classes. This pattern lets the developers provide a substitute for another object. This is called a proxy object. This helps to control the access to the original object and allows us to perform many tasks before or after the request reaches the original object.
       ![proxy design pattern](../images/design-patterns/proxy_design_pattern.png)
         + As shown in the figure above, in this pattern, we have a ServiceInterface interface that has some operation. This interface is being implemented by a Service class and a Proxy class. The Service class has useful business logic and the Proxy class has a reference field pointing to the service object. Once the proxy finishes processing lazy initialization, logging, caching etc, the request will be passed to the service object. And finally, we have a client that works with the services and the proxies by using the interface. This helps to pass proxy objects to any piece of code.
 
 15. What is a Bridge Design Pattern?
-    + The bridge pattern is a type of structural design pattern that lets to split large class or closely related classes into 2 hierarchies - abstraction and implementation. These hierarchies are independent of each other and are used whenever we need to decouple an abstraction from implementation. This is called a Bridge pattern because it acts as a bridge between the abstract class and the implementation class. In this pattern, the abstract classes and the implementation classes can be altered or modified independently without affecting the other one.
+    + `Bridge Design Pattern`: a type of structural design pattern that lets to split large class or closely related classes into 2 hierarchies - abstraction and implementation. These hierarchies are independent of each other and are used whenever we need to decouple an abstraction from implementation. This is called a Bridge pattern because it acts as a bridge between the abstract class and the implementation class. In this pattern, the abstract classes and the implementation classes can be altered or modified independently without affecting the other one.
       ![bridge design pattern](../images/design-patterns/bridge_design_pattern.png)
       + The above image is the UML representation of the Bridge Pattern. There are 4 main elements of Bridge Pattern. They are:
         + `Abstraction`: This is the core of the pattern and it defines its crux. This contains a reference to the implementer.
@@ -289,7 +289,7 @@
       + In cases where there are common behaviours across the inheritance hierarchy, these can be coded at one place in abstract classes. Interfaces and abstract classes can also be used together to define a function in interface and functionality in abstract class.
 
 17. What is a Chain of Responsibility pattern? In what scenarios to apply this pattern?
-    + Chain of Responsibility belongs to the category of a behavioural design pattern that passes requests via a chain of handlers. Whenever a request is received, the handler decides whether to process the request or pass it to the next handler of the chain. It is used for achieving loose coupling where the client request is passed through an object chain to process them.
+    + `Chain of Responsibility`: belongs to the category of a behavioural design pattern that passes requests via a chain of handlers. Whenever a request is received, the handler decides whether to process the request or pass it to the next handler of the chain. It is used for achieving loose coupling where the client request is passed through an object chain to process them.
       ![chain of responsibility](../images/design-patterns/chain_responsibility.png)
       + The above image represents the UML diagram of this pattern. There are 3 components of this design, they are:
         + `Client`: This is the point of request origination and the component that accesses the handler for handling the request.
@@ -302,7 +302,7 @@
         + Whenever we want to issue a request to several objects without explicitly specifying handlers.
 
 18. What is Decorator Design Pattern?
-    + Decorator design pattern belongs to the category of structural pattern that lets users add new features to an existing object without modifying the structure. This pattern creates a class called decorator class that acts as a wrapper to the existing class by keeping the signatures of class methods intact. This pattern makes use of abstract classes and interfaces with composition for implementing the wrapper. They are mostly used to apply SRP (Single Responsibility Principle) as we divide functionalities into classes with unique concerns. This pattern is structurally similar to the chain of responsibility pattern. Following are the steps to implement decorator design pattern:
+    + `Decorator Design Pattern`: belongs to the category of structural pattern that lets users add new features to an existing object without modifying the structure. This pattern creates a class called decorator class that acts as a wrapper to the existing class by keeping the signatures of class methods intact. This pattern makes use of abstract classes and interfaces with composition for implementing the wrapper. They are mostly used to apply SRP (Single Responsibility Principle) as we divide functionalities into classes with unique concerns. This pattern is structurally similar to the chain of responsibility pattern. Following are the steps to implement decorator design pattern:
       + Create an interface and concrete classes that implement this interface.
       + Create an abstract decorator class that implements the above interface.
       + Create a concrete decorator class that extends the above abstract class.
@@ -406,7 +406,7 @@
         ```
 
 19. What is a Command pattern?
-    + The command pattern is a type of behavioural design pattern that transforms a request into a stand-alone object containing all the details about the request. This pattern is a data-driven pattern because we make use of the information about the request by wrapping it as an object and is passed to the invoker object as a command. The invoker object checks for the object that can handle the command and passes it to that object to execute the command. The following diagram is the UML diagram that represents the command design pattern.
+    + `Command Pattern`: a type of behavioural design pattern that transforms a request into a stand-alone object containing all the details about the request. This pattern is a data-driven pattern because we make use of the information about the request by wrapping it as an object and is passed to the invoker object as a command. The invoker object checks for the object that can handle the command and passes it to that object to execute the command. The following diagram is the UML diagram that represents the command design pattern.
       ![command pattern](../images/design-patterns/command_design_pattern.png)
       + We have a client that calls the invoker to run a command. We have a Command interface that acts as an abstraction to the underlying concrete classes. Let us understand this with the help of an example of remote control that has only one button. Using this button, we will be controlling the behaviour of two objects tubelight and a radio. The command to control the objects will be implemented using the command design pattern.
         + Create Command interface:
@@ -557,15 +557,15 @@
           ```
 
 20. What is an Observer Design Pattern?
-    + An observer design pattern is a type of behavioural design pattern that is used for defining the one to many dependencies between the objects. It is most useful when we want to get notified about any change in the state of an object. In this pattern, when the state of one object changes, all the dependent objects are notified automatically. The object whose state is monitored is called the Subject whereas the dependents are called the Observers. In Java, we can implement this pattern by making use of the java.util.Observable class and the java.util.Observer interface. The following UML diagram represents the observer design pattern clearly:
+    + `Observer Design Pattern`: a type of behavioural design pattern that is used for defining the one to many dependencies between the objects. It is most useful when we want to get notified about any change in the state of an object. In this pattern, when the state of one object changes, all the dependent objects are notified automatically. The object whose state is monitored is called the Subject whereas the dependents are called the Observers. In Java, we can implement this pattern by making use of the java.util.Observable class and the java.util.Observer interface. The following UML diagram represents the observer design pattern clearly:
       ![observer design pattern](../images/design-patterns/observer_design_pattern.png)
     + This design pattern has 3 main components:
-      + `Subject`: This can be an interface or an abstract class that defines operations for attaching (registerObserver()) and detaching the observers (removeObserver()) to the subject.
-      + `Concrete Subject`: This is a concrete class of the Subject. This maintains the object state and whenever any change occurs in that state, the observers are notified about it using notifyObservers() method.
-      + `Observer`: This is an interface or an abstract class that defines the operations for notifying this object (update()). One real work example of this pattern is Facebook or Twitter. Whenever a person updates the status, all the followers would get a notification about his update. An observer can get the notification of the subject as long as it is subscribed or keeping track of it.
+      + `Subject`: can be an interface or an abstract class that defines operations for attaching (registerObserver()) and detaching the observers (removeObserver()) to the subject.
+      + `Concrete Subject`: a concrete class of the Subject. This maintains the object state and whenever any change occurs in that state, the observers are notified about it using notifyObservers() method.
+      + `Observer`: an interface or an abstract class that defines the operations for notifying this object (update()). One real work example of this pattern is Facebook or Twitter. Whenever a person updates the status, all the followers would get a notification about his update. An observer can get the notification of the subject as long as it is subscribed or keeping track of it.
 
 21. What problem does Builder Pattern try to solve?
-    + A builder pattern is a type of creational design pattern that lets to construct complex objects in a step by step manner. The pattern lets to produce different representations of an object using the same construction logic. It helps in creating immutable classes having a large set of attributes. In the Factory and Abstract Factory Design Patterns, we encounter the following issues if the object contains a lot of attributes:
+    + `Builder Pattern`: a type of creational design pattern that lets to construct complex objects in a step by step manner. The pattern lets to produce different representations of an object using the same construction logic. It helps in creating immutable classes having a large set of attributes. In the Factory and Abstract Factory Design Patterns, we encounter the following issues if the object contains a lot of attributes:
       + When the arguments are too many, the program will be error-prone while passing from the client to the Factory Class in a specific order. It becomes tedious to maintain the order of arguments when the types are the same.
       + There might be some optional attributes of the object and yet we would be forced to send all parameters and optional attributes as Null.
       + When the object creation becomes complex due to heavy attributes, the complexity of this class would become confusing.
@@ -702,25 +702,25 @@
     + We can do this by having an interface called “MarketData” which will consist of the methods required by the Client. The MarketData should have the MarketDataProvider as the dependency by employing Dependency Injection. This ensures that even if the provider changes, the market data will not be impacted.
 
 23. What do you understand by the Null Object pattern?
-    + In this pattern, a null object is used for replacing the check of validating if the object instance is null or not. This Null Object has a “do nothing” relationship and these can be used for providing default behaviour if the data is unavailable.
+    + `Null Object Pattern`: a null object is used for replacing the check of validating if the object instance is null or not. This Null Object has a “do nothing” relationship and these can be used for providing default behaviour if the data is unavailable.
 
-24. What is the MVC design pattern?
-    + MVC stands for Model-View-Controller. This pattern is used for separating the application’s concerns as listed below:
-      + `Model`: This represents the object (Java POJO) that carries the data. It can also consist of the logic of updating the controller in case the data changes.
-      + `View`: This represents the data visualization of the model.
-      + `Controller`: This is an interface between the Model and the View by controlling the flow of data into the model and updating the view whenever the model gets updated. This ensures that the model and the views are kept separate.
+24. What is the Model-View-Controller (MVC) design pattern?
+    + `Model-View-Controller (MVC)`: pattern is used for separating the application’s concerns as listed below:
+      + `Model`: represents the object (Java POJO) that carries the data. It can also consist of the logic of updating the controller in case the data changes.
+      + `View`: represents the data visualization of the model.
+      + `Controller`: an interface between the Model and the View by controlling the flow of data into the model and updating the view whenever the model gets updated. This ensures that the model and the views are kept separate.
       ![MVC](../images/design-patterns/mvc_design_pattern.png)
         + The above image represents how the request flow happens in the MVC Pattern. First, the Browser (client) sends request for a page to the controller of the server. The controller invokes the model, retrieves the data and sends the response. The response is then sent to the view for rendering. The view will be rendered and it is sent back to the client for display.
 
 25. What are the components of the Composite Entity pattern?
-    + This pattern is used in EJB (Enterprise Java Beans) persistence mechanism. A composite entity represents the object graph and is an EJB entity. Whenever a composite entity is updated, the object beans that are internally dependent on this bean are updated automatically. There are 4 main components of the Composite Entity Pattern:
+    + `Composite Entity Pattern`: used in EJB (Enterprise Java Beans) persistence mechanism. A composite entity represents the object graph and is an EJB entity. Whenever a composite entity is updated, the object beans that are internally dependent on this bean are updated automatically. There are 4 main components of the Composite Entity Pattern:
       + `Composite Entity`: Primary entity bean that can have a coarse-grained object that is meant for persistence.
       + `Coarse-Grained Object`: This contains the dependent objects which have their life cycle and in turn manages the lifecycle of dependent objects.
       + `Dependent Object`: This object is dependent on the coarse-grained object throughout the persistence lifecycle.
       + `Strategies`: These represent how to implement the composite entity.
 
 26. What is the main advantage of using a prototype design pattern over object creation using a new keyword?
-    + Prototype design pattern is used for creating duplicate objects based on the prototype of the already existing object using cloning. Doing this has a positive impact on the performance of object creation. Creating objects using the new keyword requires a lot of resources and is a heavyweight process that impacts performance. Hence, the prototype design pattern is more advantageous than the object created using a new keyword.
+    + `Prototype design pattern`: used for creating duplicate objects based on the prototype of the already existing object using cloning. Doing this has a positive impact on the performance of object creation. Creating objects using the new keyword requires a lot of resources and is a heavyweight process that impacts performance. Hence, the prototype design pattern is more advantageous than the object created using a new keyword.
 
 27. How can you achieve thread-safe singleton patterns in Java?
     + A thread-safe singleton class is created which helps in object initialization in the presence of multiple threads. It can be done using multiple ways:
