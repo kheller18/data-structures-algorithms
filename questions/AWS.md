@@ -23,10 +23,10 @@
    + DNS and Load Balancer are a part of IaaS-Storage Cloud Service.
 
 7. What are the Storage Classes available in Amazon S3?
-  + Amazon S3 Standard
-  + Amazon S3 Standard-Infrequent Access
-  + Amazon S3 Reduced Redundancy Storage
-  + Amazon Glacier
+   + Amazon S3 Standard
+   + Amazon S3 Standard-Infrequent Access
+   + Amazon S3 Reduced Redundancy Storage
+   + Amazon Glacier
 
 8. Explain what T2 instances are?
    + `T2 Instances`: designed to provide moderate baseline performance and the capability to burst to higher performance as required by the workload.
@@ -79,8 +79,8 @@
     + VPC Flow Logs
 
 19. What are the different types of EC2 instances based on their costs?
-      + `On-Demand Instance`: These instances are prepared as and when needed. Whenever you feel the need for a new EC2 instance, you can go ahead and create an on-demand instance. It is cheap for the short-time but not when taken for the long term.
-      + `Spot Instance`: These types of instances can be bought through the bidding model. These are comparatively cheaper than On-Demand Instances.
+      + `On-Demand Instance`: prepared as and when needed. Whenever you feel the need for a new EC2 instance, you can go ahead and create an on-demand instance. It is cheap for the short-time but not when taken for the long term.
+      + `Spot Instance`: can be bought through the bidding model. These are comparatively cheaper than On-Demand Instances.
       + `Reserved Instance`: On AWS, you can create instances that you can reserve for a year or so. These types of instances are especially useful when you know in advance that you will be needing an instance for the long term. In such cases, you can create a reserved instance and save heavily on costs.
 
 20. What do you understand by stopping and terminating an EC2 Instance?
@@ -857,7 +857,6 @@
      + Reserved instances are purchased as one-year or three-year reservations, and in return, you get very low hourly based pricing when compared to the on-demand cases that are billed on an hourly basis.
 
 194. Which type of scaling would you recommend for RDS and why?
-     + There are two types of scaling. vertical scaling and horizontal scaling:
        + `Vertical scaling`: lets you vertically scale up your master database with the press of a button. A database can only be scaled vertically, and there are 18 different instances in which you can resize the RDS.
        + `Horizontal scaling`: is good for replicas. These are read-only replicas that can only be done through Amazon Aurora.
 
@@ -865,8 +864,8 @@
      + `RDS maintenance window`: lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur. The automatic scheduling is done only for patches that are related to security and durability. By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.
 
 196. What are the consistency models in DynamoDB?
-     + Eventual Consistency Model: which maximizes your read throughput. However, it might not reflect the results of a recently completed write. Fortunately, all the copies of data usually reach consistency within a second.
-     + Strong Consistency Model: This model has a delay in writing the data, but it guarantees that you will always see the updated data every time you read it.
+     + `Eventual Consistency Model`: which maximizes your read throughput. However, it might not reflect the results of a recently completed write. Fortunately, all the copies of data usually reach consistency within a second.
+     + `Strong Consistency Model`: This model has a delay in writing the data, but it guarantees that you will always see the updated data every time you read it.
 
 197. What type of query functionality does DynamoDB support?
      + DynamoDB supports GET/PUT operations by using a user-defined primary key. It provides flexible querying by letting you query on non-primary vital attributes using global secondary indexes and local secondary indexes.
