@@ -3,14 +3,14 @@
 ---
 
 ## Background
-Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another. 
+Data structures are the building blocks of any computer program as they help in organizing and manipulating data in an efficient manner. Without data structures, the computer would be unable to understand how to follow a program's instructions properly. It also defines their relationship with one another.
 
 Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure. Data structures also provide clarity, organization and structure to the program's code while also helping the programmer ensure that each line of code performs its function correctly.
 
 ---
 
 1. What are Data Structures?
-   + `Data structure`: is a mechanical or logical way that data is organized within a program. The organization of data is what determines how a program performs. There are many types of data structures, each with its own uses. When designing code, we need to pay particular attention to the way data is structured. If data isn't stored efficiently or correctly structured, then the overall performance of the code will be reduced.
+   + `Data structure`: a mechanical or logical way that data is organized within a program. The organization of data is what determines how a program performs. There are many types of data structures, each with its own uses. When designing code, we need to pay particular attention to the way data is structured. If data isn't stored efficiently or correctly structured, then the overall performance of the code will be reduced.
 
 2. Why Create Data Structures?
    + Data structures serve a number of important functions in a program. They ensure that each line of code performs its function correctly and efficiently, they help the programmer identify and fix problems with his/her code, and they help to create a clear and organized code base.
@@ -33,16 +33,16 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
 
 5. Can you explain the difference between file structure and storage structure?
    + `File Structure`: Representation of data into secondary or auxiliary memory say any device such as a hard disk or pen drives that stores data which remains intact until manually deleted is known as a file structure representation.
-   + `Storage Structure`: In this type, data is stored in the main memory i.e RAM, and is deleted once the function that uses this data gets completely executed.
+   + `Storage Structure`: data is stored in the main memory i.e RAM, and is deleted once the function that uses this data gets completely executed.
    + The difference is that the storage structure has data stored in the memory of the computer system, whereas the file structure has the data stored in the auxiliary memory.
 
 6. Describe the types of Data Structures?
   ![data structure types](../images/data-structures/types.png)
-  + `Linear Data Structure`: A data structure that includes data elements arranged sequentially or linearly, where each element is connected to its previous and next nearest elements, is referred to as a linear data structure. Arrays and linked lists are two examples of linear data structures.
-  + `Non-Linear Data Structure`: Non-linear data structures are data structures in which data elements are not arranged linearly or sequentially. We cannot walk through all elements in one pass in a non-linear data structure, as in a linear data structure. Trees and graphs are two examples of non-linear data structures.
+  + `Linear Data Structure`: includes data elements arranged sequentially or linearly, where each element is connected to its previous and next nearest elements, is referred to as a linear data structure. Arrays and linked lists are two examples of linear data structures.
+  + `Non-Linear Data Structure`: data structures in which data elements are not arranged linearly or sequentially. We cannot walk through all elements in one pass in a non-linear data structure, as in a linear data structure. Trees and graphs are two examples of non-linear data structures.
 
 7. What is a stack data structure? What are the applications of stack?
-   + `Stack`: is a data structure that is used to represent the state of an application at a particular point in time. The stack consists of a series of items that are added to the top of the stack and then removed from the top. It is a linear data structure that follows a particular order in which operations are performed. LIFO (Last In First Out) or FILO (First In Last Out) are two possible orders. A stack consists of a sequence of items. The element that's added last will come out first, a real-life example might be a stack of clothes on top of each other. When we remove the cloth that was previously on top, we can say that the cloth that was added last comes out first.
+   + `Stack`: a data structure that is used to represent the state of an application at a particular point in time. The stack consists of a series of items that are added to the top of the stack and then removed from the top. It is a linear data structure that follows a particular order in which operations are performed. LIFO (Last In First Out) or FILO (First In Last Out) are two possible orders. A stack consists of a sequence of items. The element that's added last will come out first, a real-life example might be a stack of clothes on top of each other. When we remove the cloth that was previously on top, we can say that the cloth that was added last comes out first.
      ![stack](../images/data-structures/stack.png)
      + Following are some applications for stack data structure:
        + It acts as temporary storage during recursive operations
@@ -53,14 +53,14 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
        + Function calls order
 
 8. What are different operations available in stack data structure?
-   + `push`: This adds an item to the top of the stack. The overflow condition occurs if the stack is full.
-   + `pop`: This removes the top item of the stack. Underflow condition occurs if the stack is empty.
-   + `top`: This returns the top item from the stack.
-   + `isEmpty`: This returns true if the stack is empty else false.
-   + `size`:  This returns the size of the stack.
+   + `push`: adds an item to the top of the stack. The overflow condition occurs if the stack is full.
+   + `pop`: removes the top item of the stack. Underflow condition occurs if the stack is empty.
+   + `top`: returns the top item from the stack.
+   + `isEmpty`: returns true if the stack is empty else false.
+   + `size`: returns the size of the stack.
 
 9. What is a queue data structure? What are the applications of queue?
-   + `Queue`: is a linear data structure that allows users to store items in a list in a systematic manner. The items are added to the queue at the rear end until they are full, at which point they are removed from the queue from the front. Queues are commonly used in situations where the users want to hold items for a long period of time, such as during a checkout process. A good example of a queue is any queue of customers for a resource where the first consumer is served first.
+   + `Queue`: a linear data structure that allows users to store items in a list in a systematic manner. The items are added to the queue at the rear end until they are full, at which point they are removed from the queue from the front. Queues are commonly used in situations where the users want to hold items for a long period of time, such as during a checkout process. A good example of a queue is any queue of customers for a resource where the first consumer is served first.
      ![queue](../images/data-structures/queue.png)
      + Following are some applications of queue data structure:
        + Breadth-first search algorithm in graphs
@@ -68,19 +68,19 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
        + Call management in call centres
 
 10. What are different operations available in queue data structure?
-    + `enqueue`: This adds an element to the rear end of the queue.  Overflow conditions occur if the queue is full.
-    + `dequeue`: This removes an element from the front end of the queue. Underflow conditions occur if the queue is empty.
-    + `isEmpty`: This returns true if the queue is empty or else false.
-    + `rear`: This returns the rear end element without removing it.
-    + `front`: This returns the front-end element without removing it.
-    + `size`: This returns the size of the queue.
+    + `enqueue`: adds an element to the rear end of the queue.  Overflow conditions occur if the queue is full.
+    + `dequeue`: removes an element from the front end of the queue. Underflow conditions occur if the queue is empty.
+    + `isEmpty`: returns true if the queue is empty or else false.
+    + `rear`: returns the rear end element without removing it.
+    + `front`: returns the front-end element without removing it.
+    + `size`: returns the size of the queue.
 
 11. Differentiate between stack and queue data structure.
   ![stack vs queue](../images/data-structures/stack_queue.png)
   ![stack vs queue table](../images/data-structures/stack_queue_table.png)
 
-12.  How to implement a queue using stack?
-     + A queue can be implemented using two stacks. Let q be the queue andstack1 and stack2 be the 2 stacks for implementing q. We know that stack supports push, pop, and peek operations and using these operations, we need to emulate the operations of the queue - enqueue and dequeue. Hence, queue q can be implemented in two methods (Both the methods use auxillary space complexity of O(n)):
+12.   How to implement a queue using stack?
+      + A queue can be implemented using two stacks. Let q be the queue andstack1 and stack2 be the 2 stacks for implementing q. We know that stack supports push, pop, and peek operations and using these operations, we need to emulate the operations of the queue - enqueue and dequeue. Hence, queue q can be implemented in two methods (Both the methods use auxillary space complexity of O(n)):
        + `By making enqueue operation costly`:
          + Here, the oldest element is always at the top of stack1 which ensures dequeue operation occurs in O(1) time complexity.
          + To place the element at top of stack1, stack2 is used.
@@ -159,11 +159,11 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
     + Array data structures are commonly used in databases and other computer systems to store large amounts of data efficiently. They are also useful for storing information that is frequently accessed, such as large amounts of text or images.
 
 15. Elaborate on different types of array data structure
-    + `One-dimensional array`: A one-dimensional array stores its elements in contiguous memory locations, accessing them using a single index value. It is a linear data structure holding all the elements in a sequence.
+    + `One-dimensional array`: stores its elements in contiguous memory locations, accessing them using a single index value. It is a linear data structure holding all the elements in a sequence.
       ![one dimensional array](../images/data-structures/1d_array.png)
-    + `Two-dimensional array`: A two-dimensional array is a tabular array that includes rows and columns and stores data. An M × N two-dimensional array is created by grouping M rows and N columns into N columns and rows.
+    + `Two-dimensional array`: a tabular array that includes rows and columns and stores data. An M × N two-dimensional array is created by grouping M rows and N columns into N columns and rows.
       ![two dimensional array](../images/data-structures/2d_array.png)
-    + `Three-dimensional array`: A three-dimensional array is a grid that has rows, columns, and depth as a third dimension. It comprises a cube with rows, columns, and depth as a third dimension. The three-dimensional array has three subscripts for a position in a particular row, column, and depth. Depth (dimension or layer) is the first index, row index is the second index, and column index is the third index.
+    + `Three-dimensional array`: a grid that has rows, columns, and depth as a third dimension. It comprises a cube with rows, columns, and depth as a third dimension. The three-dimensional array has three subscripts for a position in a particular row, column, and depth. Depth (dimension or layer) is the first index, row index is the second index, and column index is the third index.
       ![three dimensional array](../images/data-structures/3d_array.png)
 
 16. What is a linked list data structure? What are the applications for the Linked list?
@@ -176,26 +176,26 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
         + Forward and backward operation in the browser.
 
 17. Elaborate on different types of Linked List data structures?
-    + `Singly Linked List`: A singly linked list is a data structure that is used to store multiple items. The items are linked together using the key. The key is used to identify the item and is usually a unique identifier. In a singly linked list, each item is stored in a separate node. The node can be a single object or it can be a collection of objects. When an item is added to the list, the node is updated and the new item is added to the end of the list. When an item is removed from the list, the node that contains the removed item is deleted and its place is taken by another node. The key of a singly linked list can be any type of data structure that can be used to identify an object. For example, it could be an integer, a string, or even another singly linked list. Singly-linked lists are useful for storing many different types of data. For example, they are commonly used to store lists of items such as grocery lists or patient records. They are also useful for storing data that is time sensitive such as stock market prices or flight schedules.
+    + `Singly Linked List`: a data structure that is used to store multiple items. The items are linked together using the key. The key is used to identify the item and is usually a unique identifier. In a singly linked list, each item is stored in a separate node. The node can be a single object or it can be a collection of objects. When an item is added to the list, the node is updated and the new item is added to the end of the list. When an item is removed from the list, the node that contains the removed item is deleted and its place is taken by another node. The key of a singly linked list can be any type of data structure that can be used to identify an object. For example, it could be an integer, a string, or even another singly linked list. Singly-linked lists are useful for storing many different types of data. For example, they are commonly used to store lists of items such as grocery lists or patient records. They are also useful for storing data that is time sensitive such as stock market prices or flight schedules.
       ![singly linked list](../images/data-structures/singly_linked_list.png)
-    + `Doubly Linked List`: A doubly linked list is a data structure that allows for two-way data access such that each node in the list points to the next node in the list and also points back to its previous node. In a doubly linked list, each node can be accessed by its address, and the contents of the node can be accessed by its index. It's ideal for applications that need to access large amounts of data in a fast manner. A disadvantage of a doubly linked list is that it is more difficult to maintain than a single-linked list. In addition, it is more difficult to add and remove nodes than in a single-linked list.
+    + `Doubly Linked List`: a data structure that allows for two-way data access such that each node in the list points to the next node in the list and also points back to its previous node. In a doubly linked list, each node can be accessed by its address, and the contents of the node can be accessed by its index. It's ideal for applications that need to access large amounts of data in a fast manner. A disadvantage of a doubly linked list is that it is more difficult to maintain than a single-linked list. In addition, it is more difficult to add and remove nodes than in a single-linked list.
       ![double linked list](../images/data-structures/doubly_linked_list.png)
-    + `Circular Linked List`: A circular linked list is a unidirectional linked list where each node points to its next node and the last node points back to the first node, which makes it circular.
+    + `Circular Linked List`: a unidirectional linked list where each node points to its next node and the last node points back to the first node, which makes it circular.
       ![circular linked list](../images/data-structures/circular_linked_list.png)
-    + `Doubly Circular Linked List`: A doubly circular linked list is a linked list where each node points to its next node and its previous node and the last node points back to the first node and first node’s previous points to the last node.
+    + `Doubly Circular Linked List`: a linked list where each node points to its next node and its previous node and the last node points back to the first node and first node’s previous points to the last node.
       ![doubly circular linked list](../images/data-structures/doubly_circular_linked_list.png)
-    + `Header List`: A list that contains the header node at the beginning of the list, is called the header-linked list. This is helpful in calculating some repetitive operations like the number of elements in the list etc.
+    + `Header List`: a list that contains the header node at the beginning of the list, is called the header-linked list. This is helpful in calculating some repetitive operations like the number of elements in the list etc.
 
 18. Difference between Array and Linked List.
   ![array comparison](../images/data-structures/array_comparison.png)
   ![linked list](../images/data-structures/linked_list_comparison.png)
   ![arrays linked list](../images/data-structures/array_linked_list_table.png)
 
-19.  What is an asymptotic analysis of an algorithm?
-     + `Asymptotic analysis`: defines the run-time performance as per its mathematical boundations. Asymptotic analysis helps us articulate the best case(Omega Notation, Ω), average case(Theta Notation, θ), and worst case(Big Oh Notation, Ο) performance of an algorithm.
+19.   What is an asymptotic analysis of an algorithm?
+      + `Asymptotic analysis`: defines the run-time performance as per its mathematical boundations. Asymptotic analysis helps us articulate the best case(Omega Notation, Ω), average case(Theta Notation, θ), and worst case(Big Oh Notation, Ο) performance of an algorithm.
 
 20. What is hashmap in data structure?
-    + `Hashmap`: is a data structure that uses an implementation of a hash table data structure which allows access to data in constant time (O(1)) complexity if you have the key.
+    + `Hashmap`: a data structure that uses an implementation of a hash table data structure which allows access to data in constant time (O(1)) complexity if you have the key.
 
 21. What is the requirement for an object to be used as key or value in HashMap?
     + The key or value object that gets used in the hashmap must implement equals() and hashcode() method.
@@ -209,7 +209,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
     + The time complexity is O(1) assuming that the hash function used in the hash map distributes elements uniformly among the buckets.
 
 24. What is binary tree data structure? What are the applications for binary trees?
-    + `Binary Tree`: is a data structure that is used to organize data in a way that allows for efficient retrieval and manipulation. It is a data structure that uses two nodes, called leaves and nodes, to represent the data. The leaves represent the data and the nodes represent the relationships between the leaves. Each node has two children, called siblings, and each child has one parent. The parent is the node that is closest to the root of the tree. When a node is deleted from the tree, it is deleted from both its child and its parent.
+    + `Binary Tree`: a data structure that is used to organize data in a way that allows for efficient retrieval and manipulation. It is a data structure that uses two nodes, called leaves and nodes, to represent the data. The leaves represent the data and the nodes represent the relationships between the leaves. Each node has two children, called siblings, and each child has one parent. The parent is the node that is closest to the root of the tree. When a node is deleted from the tree, it is deleted from both its child and its parent.
       + Following are some applications for binary tree data structure:
         + It's widely used in computer networks for storing routing table information.
         + Decision Trees.
@@ -218,7 +218,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
       ![binary tree](../images/data-structures/binary_tree.png)
 
 25. What is binary search tree data structure? What are the applications for binary search trees?
-    + `Binary Search Tree`: is a data structure that stores items in sorted order. In a binary search tree, each node stores a key and a value. The key is used to access the item and the value is used to determine whether the item is present or not. The key can be any type of value such as an integer, floating point number, character string, or even a combination of these types. The value can be any type of items such as an integer, floating point number, character string, or even a combination of these types. When a node is added to the tree, its key is used to access the item stored at that node. When a node is removed from the tree, its key is used to access the item stored at that node.
+    + `Binary Search Tree (BST)`: a data structure that stores items in sorted order. In a binary search tree, each node stores a key and a value. The key is used to access the item and the value is used to determine whether the item is present or not. The key can be any type of value such as an integer, floating point number, character string, or even a combination of these types. The value can be any type of items such as an integer, floating point number, character string, or even a combination of these types. When a node is added to the tree, its key is used to access the item stored at that node. When a node is removed from the tree, its key is used to access the item stored at that node.
       + A binary search tree is a special type of binary tree that has a specific order of elements in it. It has three basic qualities:
         + All elements in the left subtree of a node should have a value less than or equal to the parent node's value
         + All elements in the right subtree of a node should have a value greater than or equal to the parent node's value.
@@ -230,7 +230,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
         + It is helpful in organizing a sorted stream of data.
 
 26. What are tree traversals?
-    + `Tree traversal`: is the process of visiting all the nodes of a tree. Since the root (head) is the first node and all nodes are connected via edges (or links) we always start with that node. There are three ways which we use to traverse a tree:
+    + `Tree traversal`: the process of visiting all the nodes of a tree. Since the root (head) is the first node and all nodes are connected via edges (or links) we always start with that node. There are three ways which we use to traverse a tree:
       + `Inorder Traversal`:
         + `Algorithm`:
           + `Step 1`: Traverse the left subtree, i.e., call Inorder(root.left)
@@ -318,14 +318,14 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
         + Operating systems job scheduling algorithm.
 
 28. What are some key operations performed on the Deque data structure?
-    + `insertFront()`: This adds an element to the front of the Deque.
-    + `insertLast()`: This adds an element to the rear of the Deque.
-    + `deleteFront()`: This deletes an element from the front of the Deque.
-    + `deleteLast()`:This deletes an element from the front of the Deque.
-    + `getFront()`: This gets an element from the front of the Deque.
-    + `getRear()`: This gets an element from the rear of the Deque.
-    + `isEmpty()`: This checks whether Deque is empty or not.
-    + `isFull()`: This checks whether Deque is full or not.
+    + `insertFront()`: adds an element to the front of the Deque.
+    + `insertLast()`: adds an element to the rear of the Deque.
+    + `deleteFront()`: deletes an element from the front of the Deque.
+    + `deleteLast()`: deletes an element from the front of the Deque.
+    + `getFront()`: gets an element from the front of the Deque.
+    + `getRear()`: gets an element from the rear of the Deque.
+    + `isEmpty()`: checks whether Deque is empty or not.
+    + `isFull()`: checks whether Deque is full or not.
 
 29. What is a priority queue? What are the applications for priority queue?
     + `Priority Queue`: an abstract data type that is similar to a queue in that each element is assigned a priority value. The order in which elements in a priority queue are served is determined by their priority (i.e., the order in which they are removed). If the elements have the same priority, they are served in the order they appear in the queue.
@@ -338,14 +338,14 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
 30. Compare different implementations of priority queue
   ![priority queue implementations](../images/data-structures/priority_queue_implementations.png)
 
-31.   What is graph data structure and its representations? What are the applications for graphs?
-      + `Graph`: is a type of non-linear data structure made up of nodes and edges. The nodes are also known as vertices, and edges are lines or arcs that connect any two nodes in the graph.
+31. What is graph data structure and its representations? What are the applications for graphs?
+      + `Graph`: a type of non-linear data structure made up of nodes and edges. The nodes are also known as vertices, and edges are lines or arcs that connect any two nodes in the graph.
        ![graph data structure](../images/data-structures/graph.png)
        + The following are the two most common graph representations:
-         + `Adjacency Matrix`: Adjacency Matrix is a two-dimensional array with the dimensions V x V, where V is the number of vertices in a graph. Representation is simpler to implement and adhere to. It takes O(1) time to remove an edge. Queries such as whether there is an edge from vertex 'u' to vertex 'v' are efficient and can be completed in O(1).
+         + `Adjacency Matrix`: a two-dimensional array with the dimensions V x V, where V is the number of vertices in a graph. Representation is simpler to implement and adhere to. It takes O(1) time to remove an edge. Queries such as whether there is an edge from vertex 'u' to vertex 'v' are efficient and can be completed in O(1).
            ![adjacency matrix](../images/data-structures/adjacency_matrix.png)
            + One of the cons of this representation is that even if the graph is sparse (has fewer edges), it takes up the same amount of space. Adding a vertex takes O(V^2). It also takes O(V) time to compute all of a vertex's neighbours, which is not very efficient.
-         + `Adjacency List`: In this method, each Node holds a list of Nodes that are directly connected to that vertex. Each node at the end of the list is connected with null values to indicate that it is the last node in the list. This saves space O(|V|+|E|). In the worst-case scenario, a graph can have C(V, 2) edges, consuming O(V^2) space. It is simpler to add a vertex. It takes the least amount of time to compute all of a vertex's neighbours.
+         + `Adjacency List`: each Node holds a list of Nodes that are directly connected to that vertex. Each node at the end of the list is connected with null values to indicate that it is the last node in the list. This saves space O(|V|+|E|). In the worst-case scenario, a graph can have C(V, 2) edges, consuming O(V^2) space. It is simpler to add a vertex. It takes the least amount of time to compute all of a vertex's neighbours.
            ![adjacency list](../images/data-structures/adjacency_list.png)
            + One of the cons of this representation is that ​queries such as "is there an edge from vertex u to vertex v?" are inefficient and take O (V) in the worst case.
 
@@ -353,13 +353,13 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
   ![BFS DFS](../images/data-structures/bfs_dfs.png)
   ![BFS DFS Table](../images/data-structures/bfs_dfs_table.png)
 
-33.   What is AVL tree data structure, its operations, and its rotations? What are the applications for AVL trees?
+33. What is AVL tree data structure, its operations, and its rotations? What are the applications for AVL trees?
       + `AVL trees`: are height balancing binary search trees named after their inventors Adelson, Velski, and Landis. The AVL tree compares the heights of the left and right subtrees and ensures that the difference is less than one. This distinction is known as the Balance Factor.
        + `BalanceFactor = height(left-subtree) − height(right-subtree)`
        ![balance factor AVL tree](../images/data-structures/balance_factor.png)
        + We can perform the following two operations on AVL tree:
-         + `Insertion`: Insertion in an AVL tree is done in the same way that it is done in a binary search tree. However, it may cause a violation in the AVL tree property, requiring the tree to be balanced. Rotations can be used to balance the tree.
-         + `Deletion`: Deletion can also be performed in the same manner as in a binary search tree. Because deletion can disrupt the tree's balance, various types of rotations are used to rebalance it.
+         + `Insertion`: done in the same way that it is done in a binary search tree. However, it may cause a violation in the AVL tree property, requiring the tree to be balanced. Rotations can be used to balance the tree.
+         + `Deletion`: performed in the same manner as in a binary search tree. Because deletion can disrupt the tree's balance, various types of rotations are used to rebalance it.
        + An AVL tree can balance itself by performing the four rotations listed below:
          + `Left rotation`: When a node is inserted into the right subtree of the right subtree and the tree becomes unbalanced, we perform a single left rotation.
          + `Right rotation`: If a node is inserted in the left subtree of the left subtree, the AVL tree may become unbalanced. The tree then requires right rotation.
@@ -371,7 +371,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
          + Apart from database applications, it is used in applications that require improved searching.
 
 34. What is a B-tree data structure? What are the applications for B-trees?
-    + `B-tree`: is a type of m-way tree that is commonly used for disc access. A B-Tree with order m can only have m-1 keys and m children. One of the primary reasons for using a B tree is its ability to store a large number of keys in a single node as well as large key values while keeping the tree's height relatively small.
+    + `B-tree`: a type of m-way tree that is commonly used for disc access. A B-Tree with order m can only have m-1 keys and m children. One of the primary reasons for using a B tree is its ability to store a large number of keys in a single node as well as large key values while keeping the tree's height relatively small.
       + B-tree order 4:
         ![b-tree](../images/data-structures/b_tree.png)
       + Following are the key properties of a B-tree data structure:
@@ -389,13 +389,13 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
         + The B-tree approach is also used by the majority of servers.
 
 35. Define Segment Tree data structure and its applications.
-    + `Segment Tree`: is a binary tree that is used to store intervals or segments. The Segment Tree is made up of nodes that represent intervals. Segment Tree is used when there are multiple range queries on an array and changes to array elements.
+    + `Segment Tree`: a binary tree that is used to store intervals or segments. The Segment Tree is made up of nodes that represent intervals. Segment Tree is used when there are multiple range queries on an array and changes to array elements.
       + The segment tree of array `A[7]` will look like this:
         ![segment tree](../images/data-structures/segment_tree.png)
       + Following are key operations performed on the Segment tree data structure:
-        + `Building Tree`: In this step, we create the structure and initialize the segment tree variable.
-        + `Updating the Tree`: In this step, we change the tree by updating the array value at a point or over an interval.
-        + `Querying Tree`: This operation can be used to run a range query on the array.
+        + `Building Tree`: we create the structure and initialize the segment tree variable.
+        + `Updating the Tree`: we change the tree by updating the array value at a point or over an interval.
+        + `Querying Tree`: used to run a range query on the array.
       + Following are real-time applications for Segment Tree:
         + Used to efficiently list all pairs of intersecting rectangles from a list of rectangles in the plane.
         + The segment tree has become popular for use in pattern recognition and image processing.
@@ -406,7 +406,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
         + Storing segments in an arbitrary manner
 
 36. Define Trie data structure and its applications
-    + `Trie`: is a data structure that stores a set of strings as a sorted tree.The word "Trie" is an abbreviation for "retrieval."  Each node has the same number of pointers as the number of alphabet characters. It can look up a word in the dictionary by using its prefix. Assuming that all strings are formed from the letters 'a' to 'z' in the English alphabet, each trie node can have a maximum of 26 points.
+    + `Trie`: a data structure that stores a set of strings as a sorted tree.The word "Trie" is an abbreviation for "retrieval."  Each node has the same number of pointers as the number of alphabet characters. It can look up a word in the dictionary by using its prefix. Assuming that all strings are formed from the letters 'a' to 'z' in the English alphabet, each trie node can have a maximum of 26 points.
     + Trie is also referred to as the digital tree or the prefix tree. The key to which a node is connected is determined by its position in the Trie. Trie allows us to insert and find strings in O(L) time, where L is the length of a single word. This is clearly faster than BST. Because of how it is implemented, this is also faster than Hashing. There is no need to compute a hash function. There is no need to handle collisions (like we do in open addressing and separate chaining)
     + Another benefit of Trie is that we can easily print all words in alphabetical order, which is not easy with hashing. Trie can also perform prefix search (or auto-complete) efficiently.
     ![trie](../images/data-structures/trie.png)
@@ -419,7 +419,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
         + Spell Checker
 
 37. Define Red-Black Tree and its applications
-    + `Red-Black Trees`: are a type of self-balancing binary search tree. Rudolf Bayer invented it in 1972 and dubbed it "symmetric binary B-trees."
+    + `Red-Black Trees`: a type of self-balancing binary search tree. Rudolf Bayer invented it in 1972 and dubbed it "symmetric binary B-trees."
     + A red-black tree is a Binary tree in which each node has a colour attribute, either red or black. By comparing the node colours on any simple path from the root to a leaf, red-black trees ensure that no path is more than twice as long as any other, ensuring that the tree is generally balanced.
     + Red-black trees are similar to binary trees in that they both store their data in two's complementary binary formats. However, red-black trees have one important advantage over binary trees: they are faster to access. Because red-black trees are so fast to access, they are often used to store large amounts of data.
     + Red-black trees can be used to store any type of data that can be represented as a set of values.
@@ -438,17 +438,17 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
 
 38. Which data structures are used for implementing Least Recently Used (LRU) cache?
     + `Least Recently Used Cache (LRU)`: allows quick identification of an element that hasn’t been put to use for the longest time by organizing items in order of use. In order to achieve this, two data structures are used:
-      + `Queue`: This is implemented using a doubly-linked list. The maximum size of the queue is determined by the cache size, i.e by the total number of available frames. The least recently used pages will be near the front end of the queue whereas the most recently used pages will be towards the rear end of the queue.
+      + `Queue`: implemented using a doubly-linked list. The maximum size of the queue is determined by the cache size, i.e by the total number of available frames. The least recently used pages will be near the front end of the queue whereas the most recently used pages will be towards the rear end of the queue.
       + `Hashmap`: Hashmap stores the page number as the key along with the address of the corresponding queue node as the value.
       ![LRU cache](../images/data-structures/lru_cache.png)
 
 39. What is a heap data structure?
-    + `Heap`: is a special tree-based non-linear data structure in which the tree is a complete binary tree. A binary tree is said to be complete if all levels are completely filled except possibly the last level and the last level has all elements as left as possible. Heaps are of two types:
+    + `Heap`: a special tree-based non-linear data structure in which the tree is a complete binary tree. A binary tree is said to be complete if all levels are completely filled except possibly the last level and the last level has all elements as left as possible. Heaps are of two types:
       + `Max-Heap`:
-        + In a Max-Heap the data element present at the root node must be the greatest among all the data elements present in the tree.
+        + the data element present at the root node must be the greatest among all the data elements present in the tree.
         + This property should be recursively true for all sub-trees of that binary tree.
       + `Min-Heap`:
-        + In a Min-Heap the data element present at the root node must be the smallest (or minimum) among all the data elements present in the tree.
+        + the data element present at the root node must be the smallest (or minimum) among all the data elements present in the tree.
         + This property should be recursively true for all sub-trees of that binary tree.
 
 40. Write a program to remove duplicates from a sorted array in place?
@@ -1400,7 +1400,7 @@ Arrays, Linked Lists, Stacks, Queues, and others are examples of Data Structure.
       ```
 
 59. What is topological sorting in a graph?
-    + `Topological sorting`: is a linear ordering of vertices such that for every directed edge ij, vertex i comes before j in the ordering.
+    + `Topological sorting`: a linear ordering of vertices such that for every directed edge ij, vertex i comes before j in the ordering.
     + Topological sorting is only possible for Directed Acyclic Graph (DAG).
     + `Applications`:
       + jobs scheduling from the given dependencies among jobs.
