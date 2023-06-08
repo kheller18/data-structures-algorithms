@@ -10,7 +10,7 @@ However, Cloud Computing doesn’t mean that it consists of only one cloud. The 
 ---
 
 1. What is a Cloud Technology?
-   + `Cloud Technology`: is a combination of services, networks, hardware, storage, and interfaces that helps in delivering computing as a service. It broadly has three users. These are the end-user, business management user, and cloud service, provider. The end-user is the one who uses the services provided by the cloud. The responsibility of the data and the services provided by the cloud is taken by the business management user in the cloud. The one who takes care of or is responsible for the maintenance of the IT assets of the cloud is the cloud service provider. The cloud acts as a common center for its users to fulfill their computing needs.
+   + `Cloud Technology`: a combination of services, networks, hardware, storage, and interfaces that helps in delivering computing as a service. It broadly has three users. These are the end-user, business management user, and cloud service, provider. The end-user is the one who uses the services provided by the cloud. The responsibility of the data and the services provided by the cloud is taken by the business management user in the cloud. The one who takes care of or is responsible for the maintenance of the IT assets of the cloud is the cloud service provider. The cloud acts as a common center for its users to fulfill their computing needs.
 
 2. What are some of the key features of Cloud Computing?
    + `Agility`: Helps in quick and inexpensive re-provisioning of resources.
@@ -21,10 +21,10 @@ However, Cloud Computing doesn’t mean that it consists of only one cloud. The 
 
 3. What do you mean by cloud delivery models?
    + `Cloud delivery models`: are models that represent the computing environments. These are as follows:
-     + `Infrastructure as a Service (IaaS)`: Infrastructure as a Service (IaaS) is the delivery of services, including an operating system, storage, networking, and various utility software elements, on a request basis.
-     + `Platform as a Service (PaaS)`: Platform as a Service (PaaS) is a mechanism for combining Infrastructure as a Service with an abstracted set of middleware services, software development, and deployment tools. These allow the organization to have a consistent way to create and deploy applications on a cloud or on-premises environment.
-     + `Software as a Service (SaaS)`: Software as a Service (SaaS) is a business application created and hosted by a provider in a multi-tenant model.
-     + `Function as a Service (FaaS)`: Function as a Service (FaaS) gives a platform for customers to build, manage and run app functionalities without the difficulty of maintaining infrastructure. One can thus achieve a "serverless" architecture.
+     + `Infrastructure as a Service (IaaS)`: the delivery of services, including an operating system, storage, networking, and various utility software elements, on a request basis.
+     + `Platform as a Service (PaaS)`: a mechanism for combining Infrastructure as a Service with an abstracted set of middleware services, software development, and deployment tools. These allow the organization to have a consistent way to create and deploy applications on a cloud or on-premises environment.
+     + `Software as a Service (SaaS)`: a business application created and hosted by a provider in a multi-tenant model.
+     + `Function as a Service (FaaS)`:gives a platform for customers to build, manage and run app functionalities without the difficulty of maintaining infrastructure. One can thus achieve a "serverless" architecture.
      ![cloud delivery models](../images/cloud-computing/delivery_models.png)
 
 4. What are the different versions of the cloud?
@@ -39,16 +39,16 @@ However, Cloud Computing doesn’t mean that it consists of only one cloud. The 
    + Cloud service providers
 
 6. Who are the Cloud Consumers in a cloud ecosystem?
-   + The individuals and groups within your business unit that use different types of cloud services to get a task accomplished. A cloud consumer could be a developer using compute services from a public cloud.
+   + `Cloud Consumers`: individuals and groups within your business unit that use different types of cloud services to get a task accomplished. A cloud consumer could be a developer using compute services from a public cloud.
 
-7. Who are the Direct customers in a cloud ecosystem?
-   + Users who often take advantage of services that your business has created within a cloud environment. The end-users of your service have no idea that you’re using a public or private cloud. As long as the users are concerned, they’re interacting directly with the services and value.
+7. Who are the Direct Customers in a cloud ecosystem?
+   + `Direct Customers`: users who often take advantage of services that your business has created within a cloud environment. The end-users of your service have no idea that you’re using a public or private cloud. As long as the users are concerned, they’re interacting directly with the services and value.
 
 8. Who are the Cloud service providers in a cloud ecosystem?
-   + `Cloud service providers`: are the commercial vendors or companies that create their own capabilities. The commercial vendors sell their services to cloud consumers. In contrast to this, a company might decide to become an internal cloud service provider to its own partners, employees, and customers, either as an internal service or as a profit center. Cloud service providers also create applications or services for such environments.
+   + `Cloud service providers`: the commercial vendors or companies that create their own capabilities. The commercial vendors sell their services to cloud consumers. In contrast to this, a company might decide to become an internal cloud service provider to its own partners, employees, and customers, either as an internal service or as a profit center. Cloud service providers also create applications or services for such environments.
 
 9.  Describe the Cloud Computing Architecture.
-    + `Cloud computing architecture`: is all the components of a cloud model that fit together from an architectural perspective. The figure below depicts how the various cloud services are related to support the needs of businesses. On the left side, the cloud service consumer represents the types of uses of cloud services. No matter what the requirements of the particular constituent are, it is important to bring the right type of services together that can support both internal and external users. Management of the consumers should be able to make services readily available to support the changing business needs. The applications, middleware, infrastructure, and services that are built based on on-premises computing models are within this category. In addition to this, the model depicts the role of a cloud auditor. This organization provides an oversight either by an internal or external group which makes sure that the consumer group meets its obligations.
+    + `Cloud computing architecture`: all the components of a cloud model that fit together from an architectural perspective. The figure below depicts how the various cloud services are related to support the needs of businesses. On the left side, the cloud service consumer represents the types of uses of cloud services. No matter what the requirements of the particular constituent are, it is important to bring the right type of services together that can support both internal and external users. Management of the consumers should be able to make services readily available to support the changing business needs. The applications, middleware, infrastructure, and services that are built based on on-premises computing models are within this category. In addition to this, the model depicts the role of a cloud auditor. This organization provides an oversight either by an internal or external group which makes sure that the consumer group meets its obligations.
       ![cloud computing architecture](../images/cloud-computing/architecture.png)
 
 10. What are the Cloud Storage Levels?
@@ -102,22 +102,22 @@ However, Cloud Computing doesn’t mean that it consists of only one cloud. The 
       + Polling Agent
 
 17. How does the Monitoring Agent monitor the cloud usage?
-    + An intermediary and an event-driven program that exists as a service agent and resides along the existing communication paths is a monitoring agent.  It transparently monitors and analyzes dataflows. Commonly, the monitoring agent is used to measure the network traffic and also message metrics.
+    + `Monitoring Agent`: an intermediary and an event-driven program that exists as a service agent and resides along the existing communication paths. It transparently monitors and analyzes dataflows. Commonly, the monitoring agent is used to measure the network traffic and also message metrics.
 
 18. How does the Resource Agent monitor the cloud usage?
-    + A processing module that is used to collect usage data by having event-driven interactions with the specialized resource software, is a resource agent. This agent is applied to check the usage metrics based on pre-defined, observable events at the resource software level, like initiating, suspending, resuming, and vertical scaling.
+    + `Resource Agent`: a processing module that is used to collect usage data by having event-driven interactions with the specialized resource software. This agent is applied to check the usage metrics based on pre-defined, observable events at the resource software level, like initiating, suspending, resuming, and vertical scaling.
 
 19. How does the Polling Agent monitor cloud usage?
-    + A processing module that gathers cloud service usage data by polling IT resources is called a polling agent. The polling agent has also been used to timely monitor the IT resource status, like uptime and downtime.
+    + `Polling Agent`: a processing module that gathers cloud service usage data by polling IT resources. The polling agent has also been used to timely monitor the IT resource status, like uptime and downtime.
     + Each of these can be designed to forward collected usage data to a log database for post-processing and for reporting purposes.
 
 20. What are Cloud-Native Applications?
-    + `Cloud native`: is a software framework designed with containers, microservices, dynamic orchestration, and also continuous delivery of software. Every part of the cloud-native application has within it its own container and is dynamically orchestrated with other containers to optimize the way the resources are utilized.
+    + `Cloud native`: a software framework designed with containers, microservices, dynamic orchestration, and also continuous delivery of software. Every part of the cloud-native application has within it its own container and is dynamically orchestrated with other containers to optimize the way the resources are utilized.
 
 21. How does the Cloud Native Computing Foundation define cloud-native applications?
-    + `Container packaged`: This means a standard way to package applications that is resource-efficient. By using a standard container format, more applications can be densely packed.
-    + `Dynamically managed`: This means a standard way to discover, deploy, and scale up and down containerized applications.
-    + `Microservices oriented`: This means a method to decompose the application into modular, independent services that interact through well-defined service contracts.
+    + `Container packaged`: a standard way to package applications that is resource-efficient. By using a standard container format, more applications can be densely packed.
+    + `Dynamically managed`: a standard way to discover, deploy, and scale up and down containerized applications.
+    + `Microservices oriented`: a method to decompose the application into modular, independent services that interact through well-defined service contracts.
 
 22. What is meant by Edge Computing?
     + `Edge computing`: unlike cloud computing, is all about the physical location and issues related to latency. Cloud and edge combine the strengths of a centralized system, along with the advantages of distributed operations at the physical location where things and people connect. In IoT scenarios, the edge is very common. Cloud is different from the edge, in that it has never been about location. As opposed, it has always been about the independence of location.
@@ -128,7 +128,7 @@ However, Cloud Computing doesn’t mean that it consists of only one cloud. The 
     + `API gateway`: allows multiple APIs to act together as a single gateway to provide a uniform experience to the user. In this, each API call is processed reliably. The API gateway manages the APIs centrally and provides enterprise-grade security. Common tasks of the API services can be handled by the API gateway. These tasks include services like statistics, rate limiting, and user authentication.
 
 24. What do you mean by Rate Limiting?
-    + `Rate Limiting`: is a way to limit the network traffic. Rate limiting runs within the app rather than the server. It typically tracks the IP addresses and the time between each request. It can eliminate certain suspicious and malicious activities. Bots that impact a website can also be stopped by Rate Limiting. This protects against API overuse which is important to prevent.
+    + `Rate Limiting`: a way to limit the network traffic. Rate limiting runs within the app rather than the server. It typically tracks the IP addresses and the time between each request. It can eliminate certain suspicious and malicious activities. Bots that impact a website can also be stopped by Rate Limiting. This protects against API overuse which is important to prevent.
 
 25. What do you mean by encapsulation in cloud computing?
     + A container is a packaged software code along with all of its dependencies so that it can run consistently across clouds and on-premises. This packaging up of code is often called encapsulation. Encapsulating code is important for developers as they don’t have to develop code based on each individual environment.
@@ -138,10 +138,10 @@ However, Cloud Computing doesn’t mean that it consists of only one cloud. The 
     + Low-Density Data Centers
 
 27. What are Containerized Data Centers?
-    + `Containerized Data Centers`: are the traditional data centers that allow a high level of customization with servers, mainframes, and other resources. These require planning, cooling, networking, and power to access and work.
+    + `Containerized Data Centers`: the traditional data centers that allow a high level of customization with servers, mainframes, and other resources. These require planning, cooling, networking, and power to access and work.
 
 28. What are Low-Density Data Centers?
-    + `Low-Density Data Centers`: are optimized to give high performance. The space constraint is being removed and there is an increased density in these data centers. One drawback it has is that with high density the heat issue also creeps in. These data centers are quite suitable to develop the cloud infrastructure.
+    + `Low-Density Data Centers`: optimized to give high performance. The space constraint is being removed and there is an increased density in these data centers. One drawback it has is that with high density the heat issue also creeps in. These data centers are quite suitable to develop the cloud infrastructure.
 
 29. What are some issues with Cloud Computing?
     + `Security Issues`: As it would be in any other computing paradigms, security is as much of a concern as Cloud computing. Cloud Computing is vaguely defined as the outsourcing of services, which in turn causes users to lose significant control over their data. With the public Cloud, there is also a risk of seizure associated.
