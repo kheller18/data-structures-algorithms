@@ -3,22 +3,22 @@
 ---
 
 1. What is Git and why is it used?
-   + `Git`: is the most popular, open-source, widely used, and an example of distributed version control system (DVCS) used for handling the development of small and large projects in a more efficient and neat manner.
-   + It is most suitable when there are multiple people working on projects as a team and is used for tracking the project changes and efficiently supports the collaboration of the development process.
-   + With the help of the versioning system, the developer can identify who has made what changes and then run tests and fix bugs if any and then do necessary feature implementation. In case of any unforeseen circumstances, the code can be reverted to any of the previously working versions thereby saving huge efforts.
-   ![git overview](../images/git/overview.png)
+   + `Git`: the most popular, open-source, widely used, and an example of distributed version control system (DVCS) used for handling the development of small and large projects in a more efficient and neat manner.
+     + It is most suitable when there are multiple people working on projects as a team and is used for tracking the project changes and efficiently supports the collaboration of the development process.
+     + With the help of the versioning system, the developer can identify who has made what changes and then run tests and fix bugs if any and then do necessary feature implementation. In case of any unforeseen circumstances, the code can be reverted to any of the previously working versions thereby saving huge efforts.
+     ![git overview](../images/git/overview.png)
 
-2. What is a version control system (VCS)?
-   + `VCS`: keeps track of the contributions of the developers working as a team on the projects. They maintain the history of code changes done and with project evolution, it gives an upper hand to the developers to introduce new code, fixes bugs, and run tests with confidence that their previously working copy could be restored at any moment in case things go wrong.
+2. What is a Version Control System (VCS)?
+   + `Version Control System (VCS)`: keeps track of the contributions of the developers working as a team on the projects. They maintain the history of code changes done and with project evolution, it gives an upper hand to the developers to introduce new code, fixes bugs, and run tests with confidence that their previously working copy could be restored at any moment in case things go wrong.
 
 3. What is a git repository?
-   + A repository is a file structure where git stores all the project-based files. Git can either stores the files on the local or the remote repository.
+   + `Repository`: a file structure where git stores all the project-based files. Git can either stores the files on the local or the remote repository.
 
 4. What does git clone do?
-   + The command creates a copy (or clone) of an existing git repository. Generally, it is used to get a copy of the remote repository to the local repository.
+   + `Git Clone`:creates a copy (or clone) of an existing git repository. Generally, it is used to get a copy of the remote repository to the local repository.
 
 5. What does the command `git config` do?
-   + The `git config` command is a convenient way to set configuration options for defining the behavior of the repository, user information and preferences, git installation-based configurations, and many such things.
+   + `Git Config`: a convenient way to set configuration options for defining the behavior of the repository, user information and preferences, git installation-based configurations, and many such things.
        ```
        git config --global
        user.name
@@ -29,7 +29,7 @@
        ```
 
 6. Can you explain `head` in terms of git and also tell the number of heads that can be present in a repository?
-   + A `head` is nothing but a reference to the last commit object of a branch.
+   + `head`: a reference to the last commit object of a branch.
    + For every repository, there will always be a default head referred to as “master” or now “main” (as per GitHub) but there is no restriction to the count of heads available. In other words, it can have any number of heads.
      + To go or checkout to 1 commit before the latest commit, we use `git checkout HEAD~1`
      + To uncommit the last 3 commits without losing the changes, we first run `git reset HEAD~3`. Then we can see the changes made in the last 3 commits and then update it manually and commit it finally.
@@ -45,21 +45,21 @@
    ![git conflict](../images/git/conflict.png)
 
 8. What is the functionality of `git ls-tree`?
-   + This command returns a tree object representation of the current repository along with the mode and the name of each item and the SHA-1 value of the blob.
+   + `git ls-tree`: returns a tree object representation of the current repository along with the mode and the name of each item and the SHA-1 value of the blob.
 
 9.  What does `git status` command do?
-    + `git status` command is used for showing the difference between the working directory and the index which is helpful for understanding git in-depth and also keep track of the tracked and non-tracked changes.
+    + `git status`: for showing the difference between the working directory and the index which is helpful for understanding git in-depth and also keep track of the tracked and non-tracked changes.
 
 10. Define “Index”.
-    + Before making commits to the changes done, the developer is given provision to format and review the files and make innovations to them. All these are done in the common area which is known as ‘Index’ or ‘Staging Area’.
+    + `Index`: before making commits to the changes done, the developer is given provision to format and review the files and make innovations to them. All these are done in the common area which is known as ‘Index’ or ‘Staging Area’.
     ![index](../images/git/index.png)
       + In the above image, the “staged” status indicates the staging area and provides an opportunity for the people to evaluate changes before committing them.
 
 11. What does `git add` command do?
-    + This command adds files and changes to the index of the existing directory.
-    + You can add all changes at once using `git add .` command.
-    + You can add files one by one specifically using `git add <file_name>` command.
-    + You can add contents of a particular folder by using `git add /<folder_name>/` command.
+    + `git add`: adds files and changes to the index of the existing directory.
+      + `add all changes at once`: `git add .` command.
+      + `add files one by one`: `git add <file_name>` command.
+      + `add contents of a particular folder`: `git add /<folder_name>/` command.
 
 12. Why is it considered to be easy to work on Git?
     + With the help of git, developers have gained many advantages in terms of performing the development process faster and in a more efficient manner. Some of the main features of git which has made it easier to work are:
@@ -82,7 +82,7 @@
     + Doing this will create a `.git` file in the project folder which indicates that the repository has been created.
 
 14. Tell me something about `git stash`?
-    + Git stash can be used in cases where we need to switch in between branches and at the same time not wanting to lose edits in the current branch. Running the `git stash` command basically pushes the current working directory state and index to the stack for future use and thereby providing a clean working directory for other tasks.
+    + `Git Stash`: used in cases where we need to switch in between branches and at the same time not wanting to lose edits in the current branch. Running the `git stash` command basically pushes the current working directory state and index to the stack for future use and thereby providing a clean working directory for other tasks.
 
 15. What is the command used to delete a branch?
     + To delete a branch we can simply use the command `git branch –d [head]`.
@@ -91,10 +91,11 @@
     + Deleting a branching scenario occurs for multiple reasons. One such reason is to get rid of the feature branches once it has been merged into the development branch.
 
 16. What differentiates between the commands `git remote` and `git clone`?
-    + `git remote` command creates an entry in `git config` that specifies a name for a particular URL. Whereas `git clone` creates a new git repository by copying an existing one located at the URL.
+    + `git remote`: creates an entry in `git config` that specifies a name for a particular URL.
+    + `git clone`: creates a new git repository by copying an existing one located at the URL.
 
 17. What does git stash apply command do?
-    + `git stash apply` command is used for bringing the works back to the working directory from the stack where the changes were stashed using `git stash` command.
+    + `git stash apply`: used for bringing the works back to the working directory from the stack where the changes were stashed using `git stash` command.
     + This helps the developers to resume their work where they had last left their work before switching to other branches.
 
 18. Differentiate between `git pull` and `git fetch`.
@@ -105,8 +106,8 @@
     ![pull vs branch](../images/git/pull_branch.png)
 
 20. Why do we not call git “pull request” as “push request”?
-    + `Push request`: is termed so because it is done when the target repository requests us to push our changes to it.
-    + `Pull request`: is named as such due to the fact that the repo requests the target repository to grab (or pull) the changes from it.
+    + `Push request`: the target repository requests us to push our changes to it.
+    + `Pull request`: the repo requests the target repository to grab (or pull) the changes from it.
     ![pull vs push request](../images/git/pull_push.png)
 
 21. Can you tell the difference between Git and GitHub?
@@ -124,15 +125,14 @@
     + We can recover this by checking out the latest commit of this branch in the reflog and then checking it out as a new branch.
 
 25. Can you tell something about `git reflog`?
-    + This command tracks every single change made in the repository references (that can be branches or tags) and also maintains the branches/tags log history that was either created locally or checked out. Reference logs such as the commit snapshot of when the branch was created or cloned, checked-out, renamed, or any commits made on the branch are maintained by Git and listed by the ‘reflog’ command.
+    + `git reflog`: tracks every single change made in the repository references (that can be branches or tags) and also maintains the branches/tags log history that was either created locally or checked out. Reference logs such as the commit snapshot of when the branch was created or cloned, checked-out, renamed, or any commits made on the branch are maintained by Git and listed by the ‘reflog’ command.
       + This recovery of the branch is only possible when the branch was either created locally or checked-out from a remote repository in your local repository for Git to store its reference history logs.
       + This command should be executed in the repository that had the lost branch.
 
 26. What consists of a commit object?
-    + A commit object consists of the following components:
-      + A set of files that represents the state of a project at a given point in time.
-      + Reference to parent commit objects.
-      + A 40 character string termed as SHA-1 name uniquely identifies the commit object.
+    + A set of files that represents the state of a project at a given point in time.
+    + Reference to parent commit objects.
+    + A 40 character string termed as SHA-1 name uniquely identifies the commit object.
 
 27. Explain the levels in `git config` and how can you configure values using them?
     + In order to make git work, it uses a set of configurations that are pre-defined by default by means of configuration files (or config files). We can change the default behavior of git by just modifying these files which are basically text files. In order to do this, it is important to understand how git identifies these files. It does so by following the below steps:
@@ -144,23 +144,23 @@
         + These config values are specific to that particular repository alone and can be accessed by passing `--local` to the `git config` command.This is the default config file that gets accessed and modified upon in case we do not specify any levels.
 
 28. What is a detached HEAD and what causes this and how to avoid this?
-    + Detached HEAD indicates that the currently checked-out repository is not a local branch. This can be caused by the following scenarios:
+    + `Detached HEAD`: indicates that the currently checked-out repository is not a local branch. This can be caused by the following scenarios:
       + When a branch is a read-only branch and we try to create a commit to that branch, then the commits can be termed as “free-floating” commits not connected to any branch. They would be in a detached state.
       + When we checkout a tag or a specific commit and then we try to perform a new commit, then again the commits would not be connected to any branch. When we now try to checkout a branch, these new commits would be automatically placed at the top.
     + In order to ensure that detached state doesn't happen, =instead of checking out commit/tag, we can create a branch emanating from that commit and then we can switch to that newly created branch by using the command: `git checkout -b <<new_branch_name>>`. This ensures that a new branch is checkout out and not a commit/tag thereby ensuring that a detached state wouldn't happen.
 
 29. What does `git annotate` command do?
-    + This command annotates each line within the given file with information from the commit which introduced that change. This command can also optionally annotate from a given revision.
+    + `git annotate`: annotates each line within the given file with information from the commit which introduced that change. This command can also optionally annotate from a given revision.
     + Syntax: `git annotate [<options>] <file> [<revision>]`
 
 30. What is the difference between `git stash apply` vs `git stash pop` command?
-    + `git stash pop` command throws away the specified stash (topmost stash by default) after applying it.
-    + `git stash apply` command leaves the stash in the stash list for future reuse. In case we wanted to remove it from the list, we can use the `git stash drop` command.
+    + `git stash pop`: throws away the specified stash (topmost stash by default) after applying it.
+    + `git stash apply`: leaves the stash in the stash list for future reuse. In case we wanted to remove it from the list, we can use the `git stash drop` command.
     + `git stash pop = git stash apply + git stash drop`
 
 31. What command helps us know the list of branches merged to master?
-    + `git branch --merged` helps to get the list of the branches that have been merged into the current branch.
-    + Note: `git branch --no-merged` lists the branches that have not been merged to the current branch.
+    + `git branch --merged`: helps to get the list of the branches that have been merged into the current branch.
+      + Note: `git branch --no-merged` lists the branches that have not been merged to the current branch.
 
 32. How will you resolve conflict in Git?
     + Conflicts occur whenever there are multiple people working on the same file across multiple branches. In such cases, git won't be able to resolve it automatically as it is not capable of deciding what changes has to get the precedence.
@@ -181,7 +181,7 @@
       + `Approach 2`: New commit can be created that reverts changes done in the bad commit. It can be done using `git revert <name of bad commit>`
 
 35. What is the functionality of `git cherry-pick` command?
-    + This command is used to introduce certain commits from one branch onto another branch within the repository. The most common use case is when we want to forward- or back-port commits from the maintenance branch to the development branch.
+    + `git cherry-pick`: used to introduce certain commits from one branch onto another branch within the repository. The most common use case is when we want to forward- or back-port commits from the maintenance branch to the development branch.
 
 36. Explain steps involved in removing a file from git index without removing from the local file system?
     + Sometimes we end up having certain files that are not needed in the git index when we are not being careful while using the `git add` command. Using the command `git rm` will remove the file from both the index and the local working tree which is not always desirable.
@@ -210,8 +210,8 @@
     + Upon running the above commands, git checks out a revision that is labeled as halfway between “good” and “bad” versions. This step can be run again by marking the commit as “good” or “bad” and the process continues until the commit which has a bug is found.
 
 39. What are the functionalities of `git reset --mixed` and `git merge --abort`?
-    + `git reset --mixed` command is used for undoing changes of the working directory and the git index.
-    + `git merge --abort` command is used for stopping the merge process and returning back to the state before the merging occurred.
+    + `git reset --mixed`: used for undoing changes of the working directory and the git index.
+    + `git merge --abort`: used for stopping the merge process and returning back to the state before the merging occurred.
 
 40. Can you tell the differences between `git revert` and `git reset`?
-![git revert vs git reset](../images/git/revert_reset.png)
+  ![git revert vs git reset](../images/git/revert_reset.png)
