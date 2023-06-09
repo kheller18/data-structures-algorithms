@@ -3,7 +3,7 @@
 ---
 
 1. What is GraphQL?
-   + GraphQL is a new API standard designed and developed by Facebook. It is an open-source server-side technology that is now maintained by a large community of companies and individuals worldwide. It is also an execution engine that works as a data query language and used to fetch declarative data.
+   + `GraphQL`: a new API standard designed and developed by Facebook. It is an open-source server-side technology that is now maintained by a large community of companies and individuals worldwide. It is also an execution engine that works as a data query language and used to fetch declarative data.
 
 2. What was the reason behind the development of GraphQL?
    + GraphQL was initially developed by Facebook as an internal solution for their mobile apps. It was designed to optimize RESTful API calls and provide a flexible, robust, and efficient alternative to REST. It is not a replacement for REST. It is an alternative to writing APIs using REST.
@@ -12,7 +12,7 @@
    + There are many big organizations such as Facebook, Github, Pinterest, Intuit, coursera, shopify, dailymotion, yelp etc. that uses GraphQL.
    + Actually GraphQL was designed and developed by Facebook itself.
 
-4. How GraphQL utilizes the data loading process?
+4. How does GraphQL utilize the data loading process?
    + When the users fetch the data in GraphQL, it retrieves only the minimum amount of data that is required by the client. Even if the object model contains a lot of fields, the client can request only the required fields.
 
 5. Is GraphQL a Database Technology?
@@ -31,11 +31,11 @@
 
 9.  What is Authentication and Authorization in GraphQL?
     + Authentication and AuthorizationAuthorization are the processes used in services. Sometimes people get confused in these two terms and exchange their definitions for each other.
-      + `Authentication`: Authentication is a process that is used to claim an identity. Authentication is done when you want to log in to a service with a username and password. Here, you have to authenticate yourself. In GraphQL, Authentication can be implemented with common patterns such as OAuth. OAuth is an open protocol that is used to allow secure AuthorizationAuthorization in a simple and standard method from web, mobile, and desktop applications.
-      + `Authorization`: On the other hand, AuthorizationAuthorization is a process that is used to give permission rules that specify the access rights of individual users and user groups to certain parts of the system. For authorization implementation in GraphQL, it is recommended to delegate any data access logic to the business logic layer and not handle it directly.
+      + `Authentication`: used to claim an identity. Authentication is done when you want to log in to a service with a username and password. Here, you have to authenticate yourself. In GraphQL, Authentication can be implemented with common patterns such as OAuth. OAuth is an open protocol that is used to allow secure AuthorizationAuthorization in a simple and standard method from web, mobile, and desktop applications.
+      + `Authorization`: used to give permission rules that specify the access rights of individual users and user groups to certain parts of the system. For authorization implementation in GraphQL, it is recommended to delegate any data access logic to the business logic layer and not handle it directly.
 
 10. How to do Error Handling in GraphQL?
-    + It is easy to see the error in GraphQL. A successful GraphQL query is supposed to return a JSON object with a root field called "data." If your request query fails or partially fails, you will see a second root field called "errors" in the response. See the below example:
+    + `Error Handling`: a successful GraphQL query is supposed to return a JSON object with a root field called "data." If your request query fails or partially fails, you will see a second root field called "errors" in the response. See the below example:
       ```
       {
         "data": { ... },
@@ -50,12 +50,12 @@
     + In GraphQL, when a client requests a query, the server returns the JSON format response. The response returned by the server is based on the query the client uses for the request.
 
 13. What is Over-fetching in GraphQL?
-    + Over-fetching is a response where the client gets too much data or extra data for an API request. In over-fetching, you have a lot of additional data in the response you don't use. Over-fetching unnecessarily increases the payload size.
+    + `Over-fetching`: a response where the client gets too much data or extra data for an API request. In over-fetching, you have a lot of additional data in the response you don't use. Over-fetching unnecessarily increases the payload size.
 
 14. What is Under-fetching in GraphQL?
-    + Under-fetching is a response where the client doesn't get enough data. The under-fetching response doesn't have enough data with a call to an endpoint, so you have to call a second endpoint to fulfill your request or multiple API calls to fetch the complete data.
+    + `Under-fetching`: a response where the client doesn't get enough data. The under-fetching response doesn't have enough data with a call to an endpoint, so you have to call a second endpoint to fulfill your request or multiple API calls to fetch the complete data.
 
-15. How GraphQL fixes the issues of Over-Fetching or Under-fetching?
+15. How does GraphQL fixes the issues of Over-Fetching or Under-fetching?
     + Over-Fetching and Under-fetching both are the performance issues that can be solved by using GraphQL. You won't see these problems if you have precisely the right endpoints to give your products exactly the correct data. These problems occur when you have to maintain multiple endpoints to get the exact right data. It has increased the data load, which finally results in a performance issue.
     + GraphQL resolves this issue because it facilitates you to request the specific data which you want from the server. Here, you can specify what you need in a single request and get the exact result that you need in just one response from the server.
 
@@ -73,39 +73,41 @@
 18. Is it true that we can use GraphQl only with the SQL database?
     + No. GraphQL is a query language for APIs that can be used with any SQL or NoSQL databases.
 
-19. What is SDL, and what is the use of it?
-    + SDL is an acronym that stands for Schema Definition Language. It is used for writing schemas. SDL is the language that is used to write GraphQL schemas.
+19. What is Schema Definition Language (SDL), and what is the use of it?
+    + `Schema Definition Language (SDL)`: used for writing schemas. SDL is the language that is used to write GraphQL schemas.
 
 20. Can GraphQL API be used to handle offline usage?
     + GraphQL is a query language for web APIs that is designed only to work online. The caching abilities of some GraphQL libraries such as Relay and Apollo can be used for some cases, but there is not any proper offline solution developed or available yet.
 
 21. What do you know about GraphiQL?
-    + GraphiQL is used to provide UI representation for GraphQL. It is an in-browser IDE used to explore GraphQL and make GraphQl usage easy. GraphQL supports real-time error highlighting, so you can see and handle errors easily.
+    + `GraphiQL`: used to provide UI representation for GraphQL. It is an in-browser IDE used to explore GraphQL and make GraphQl usage easy. GraphQL supports real-time error highlighting, so you can see and handle errors easily.
 
 22. Does GraphQL support server-side caching like REST?
     + No. GraphQL doesn't support server-side caching like REST.
 
 23. What are the main operations that GraphQL supports?
-    + GraphQL supports three types of operations: query, mutation, and subscription. The query is used for the request, and it is a read operation, the mutation is used for write operations, and subscription is used for listening for any data changes. The server sends a notification message to the client after any data changes, if the client is subscribed to that event.
+    + `query`: used for the request, and it is a read operation
+    + `mutation`: used for write operations
+    + `subscription`: used for listening for any data changes. The server sends a notification message to the client after any data changes, if the client is subscribed to that event.
 
 24. Can queries be used to modify data?
     + Yes. Queries can be used to modify server-side data. But according to the conventional method, it is the best practice to use mutation for any write operation.
 
 25. What is Apollo in GraphQL?
-    + Apollo is a platform for the implementation of GraphQL. As we know that GraphQL is a query language, so in order to use this query language easily, we need a platform, Apollo provides that platform.
+    + `Apollo`: a platform for the implementation of GraphQL. As we know that GraphQL is a query language, so in order to use this query language easily, we need a platform, Apollo provides that platform.
     + Apollo provides two open-sourced libraries to create client and server. Here, the client is used to fetch data from a GraphQL server, and the server is used to create an API for GraphQL client.
 
 26. What do you know by Mutation in GraphQL?
-    + Mutation is one of the most important operations in GraphQL. It is used for write operation when you want to add delete and edit data.
+    + `Mutation`: one of the most important operations in GraphQL. It is used for write operation when you want to add delete and edit data.
 
 27. What is subscription in GraphQL?
-    + In GraphQL, the subscription is used for listening for any data changes. The server sends a notification message to the client after any data changes, if the client is subscribed to that event.
+    + `Subscription`: used for listening for any data changes. The server sends a notification message to the client after any data changes, if the client is subscribed to that event.
 
 28. What do you mean by a Query in GraphQL?
-    + A GraphQL query is used to read data. It is similar to the GET request we use in REST APIs. The GraphQL queries are used to retrieve data from the GraphQL server.
+    + `Query`: used to read data. It is similar to the GET request we use in REST APIs. The GraphQL queries are used to retrieve data from the GraphQL server.
 
 29. What do you know by Fields in GraphQL?
-    + The keys of an object that are used in the GraphQL query are known as Fields.
+    + `Fields`: the keys of an object that are used in the GraphQL query.
       ```
       {
         employee {
@@ -117,22 +119,22 @@
       + In the above query, 'name' and 'salary' are fields.
 
 30. What is the use of object types in GraphQL?
-    + The resources that are accessed by a client is called Objects. Objects can contain a list of GraphQL fields.
+    + `Objects`: the resources that are accessed by a client. Objects can contain a list of GraphQL fields.
 
 31. What is the use of an interface in GraphQL?
-    + In GraphQL, an interface is used to list down the common fields of a GraphQL object. Other objects can use this interface to inherit properties.
+    + `Interface` used to list down the common fields of a GraphQL object. Other objects can use this interface to inherit properties.
 
 32. What is the union in GraphQL?
-    + In GraphQL, sometimes we have to represent multiple objects, that's why the union is used. The user can define more than one type as return type using a union.
+    + `Union`: represent multiple objects,. The user can define more than one type as return type using a union.
 
 33. What is the use of Enums in GraphQL?
-    + The enum or enumeration type in GraphQL is a special kind of scalar used to define a type, including a list of allowed values.
+    + `Enums (Enumeration)`: a special kind of scalar used to define a type, including a list of allowed values.
 
 34. What is the use of resolver in GraphQL?
-    + In GraphQL, a resolver is used to handle queries and produce a response to the GraphQL query.
+    + `Resolver`: used to handle queries and produce a response to the GraphQL query.
 
 35. What do you know by arguments in GraphQL?
-    + The arguments are used in GraphQL Queries and Fields when we want to request specific data.
+    + `Arguments`: used in Queries and Fields when we want to request specific data.
       ```
       {
         employee(id: "001"){
@@ -144,10 +146,10 @@
       + In the above query, the 'id' is an argument passed to return the 'name' and 'salary' of 'employee' where we want a specific data with 'id' equals to '001'.
 
 36. What do you know by a non-null type modifier in GraphQL?
-    + In GraphQL, a non-null type modifier is used to specify an argument as non-null value. If you pass null for a non-null argument, the GraphQL server will send a validation error. The exclamation mark "!" is used to mark an argument as non-null.
+    + `Non-null type modifier`: used to specify an argument as non-null value. If you pass null for a non-null argument, the GraphQL server will send a validation error. The exclamation mark "!" is used to mark an argument as non-null.
 
 37. What do you mean by aliases in GraphQL?
-    + In GraphQL, the alias is used to change the field name of the query. It facilitates you to rename the result of a field according to yourself.
+    + `Alias`: used to change the field name of the query. It facilitates you to rename the result of a field according to yourself.
       ```
       {
       classA : employee(id : String){
@@ -161,25 +163,25 @@
       + In the above query, we have used an alias to use a different name for two 'employees.' Without alias, you will get an error in the result.
 
 38. What do you understand by Fragment in GraphQL?
-    + In GraphQL, the fragment is used when the query is very large, and your query contains the reusable units. You can create a fragment by taking the reusable part and use that fragment in the query. The fragment concept was designed to arrange the code in a simple way and avoid duplicate code.
+    + `Fragment`: used when the query is very large, and your query contains the reusable units. You can create a fragment by taking the reusable part and use that fragment in the query. The fragment concept was designed to arrange the code in a simple way and avoid duplicate code.
 
 39. What do you understand by GraphQL Voyager?
-    + GraphQL Voyager is an open-sourced library used to represent any GraphQL API to an interactive graph.
+    + `GraphQL Voyager`: an open-sourced library used to represent any GraphQL API to an interactive graph.
 
 40. What is the use of the validation step in GraphQL?
-    + The validation step is a crucial step in GraphQL. It is used to check whether a GraphQL query is in a valid format or not. If it gets that the query is invalid, it informs on the client-side before the runtime check.
+    + `Validation Step` used to check whether a GraphQL query is in a valid format or not. If it gets that the query is invalid, it informs on the client-side before the runtime check.
 
 41. What is the use of the execution step in GraphQL?
-    + The execution step is used to execute a query in GraphQL. This step comes and executes after the validation step.
+    + E`xecution Step`: used to execute a query in GraphQL. This step comes and executes after the validation step.
 
 42. What is the name of the GraphQL library for Java, Python, and JavaScript?
-![GraphQL libraries](../images/graphQL/libraries.png)
+  ![GraphQL libraries](../images/graphQL/libraries.png)
 
-43.  How can you host a GraphQL server online?
+43. How can you host a GraphQL server online?
      + You can use any programming language such as Node.js or Python to create a GraphQL server and host it the same as any other servers.
 
 44. What do you know about the Remote Schemas in Apollo GraphQL?
-    + The Remote schemas are used to create GraphQL schema objects that delete to a separate remote server.
+    + `Remote Schemas`: used to create GraphQL schema objects that delete to a separate remote server.
 
 45. What is the use of Schema stitching in Apollo?
-    + Schema stitching is used to merge or combine multiple GraphQL APIs into a single API.
+    + `Schema Stitching`: used to merge or combine multiple GraphQL APIs into a single API.
