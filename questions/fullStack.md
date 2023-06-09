@@ -3,18 +3,18 @@
 ---
 
 1. To develop a project from scratch, what technologies and languages would you need or what skills a full stack developer should have?
-   + `Programming Languages`: Full-stack developers should be competent in more than one programming language, such as Java, Python, PHP, Ruby, C++, etc.
-   + `Front End technologies`: You should be familiar with front-end technologies such as HTML5, CSS3, JavaScript, etc. Knowledge of third-party libraries such as jQuery, Ajax, Angular, ReactJS, etc., is also important.
-   + `Frameworks`: This requires proficiency in a variety of development frameworks, including Spring, Spring Boot, Django, MyBatis, PHP, Hibernate, and others.
-   + `Databases and caches`: As a full stack developer, you should also know about various DBMS (Database Management Systems) technologies like MySQL, SQLite, Oracle, and MongoDB. It is helpful to have a basic understanding of caching mechanisms like redis, memcached, varnish.
-   + `Design Ability`: Having a good understanding of design is also important if you wish to become a successful Full-Stack web developer. Moreover, the person should be aware of the principles of prototyping and UX/UI design.
+   + `Programming Languages`: Java, Python, PHP, Ruby, C++, etc.
+   + `Front End technologies`: HTML5, CSS3, JavaScript, etc. Knowledge of third-party libraries such as jQuery, Ajax, Angular, ReactJS, etc., is also important.
+   + `Frameworks`: Spring, Spring Boot, Django, MyBatis, PHP, Hibernate, and others.
+   + `Databases and caches`:  various DBMS (Database Management Systems) technologies like MySQL, SQLite, Oracle, and MongoDB. It is helpful to have a basic understanding of caching mechanisms like redis, memcached, varnish.
+   + `Design Ability`: should be aware of the principles of prototyping and UX/UI design.
    + `Server`: Experience with Apache or NGINX would be beneficial. Good knowledge of Linux helps enormously when administering servers.
 
 2. Which language is the most preferred by full-stack developers?
    + Full Stack Developers utilize several programming languages. Ideally, a candidate should be fluent in several languages, preferably some for designing the front end and others for fixing the back end. Since Full Stack developers work with a variety of technologies and applications, they must be proficient in at least two to three of the most popular languages such as Java, Python, Ruby, PHP, C++, etc.
 
 3. Explain Pair Programming.
-   + In pair programming, two programmers share only one machine and work together. During the development process, one programmer will be the driver who codes and another will act as the observer (navigator) who will make sure the code is written correctly, proofread and spell-check it, while also deciding where to go next. Roles can be swapped at any time: the driver becomes the observer and vice versa. You can also call it "pairing", "paired programming", or "programming in pairs".
+   + Pair Programming: two programmers share only one machine and work together. During the development process, one programmer will be the driver who codes and another will act as the observer (navigator) who will make sure the code is written correctly, proofread and spell-check it, while also deciding where to go next. Roles can be swapped at any time: the driver becomes the observer and vice versa. You can also call it "pairing", "paired programming", or "programming in pairs".
    ![pair programming](../images/full-stack/pair_programming.png)
    + `Advantages`:
      + Two of them will fix the problem if the driver encounters any issues with the code.
@@ -25,15 +25,15 @@
      + The team develops better communication skills.
 
 4. What do you mean by CORS (Cross-Origin Resource Sharing)?
-   + `Cross-Origin Resource Sharing (CORS)`: It's a browser mechanism that allows web pages in one domain to have controlled access to resources in other domains (cross-domain requests). This allows scripts that are run on a browser client to interact with and access resources from other origins. In doing so, it extends and provides greater flexibility to the SOP (Same-Origin Policy). Same-origin policies restrict the ability of a website to access resources outside of its source domain. For example, a JavaScript app that wants to make a call to an API (Application Programming Interface) that runs on another domain will be blocked due to the SOP. A CORS policy was implemented to circumvent restrictions caused by same-origin policies.
+   + `Cross-Origin Resource Sharing (CORS)`: a browser mechanism that allows web pages in one domain to have controlled access to resources in other domains (cross-domain requests). This allows scripts that are run on a browser client to interact with and access resources from other origins. In doing so, it extends and provides greater flexibility to the SOP (Same-Origin Policy). Same-origin policies restrict the ability of a website to access resources outside of its source domain. For example, a JavaScript app that wants to make a call to an API (Application Programming Interface) that runs on another domain will be blocked due to the SOP. A CORS policy was implemented to circumvent restrictions caused by same-origin policies.
    ![cors](../images/full-stack/cors.png)
 
 5. What is Callback Hell?
-   + Callback Hell, or Pyramid of Doom, is a common anti-pattern seen in asynchronous programming code (multiple functions running at the same time). This slang term describes a large number of nested "if" statements or functions. In simple terms, Callback hell is a situation where you have multiple asynchronous functions. Those functions depend on one another, so it could get quite messy with so many callback functions nested in so many layers. The use of callback functions leaves you with code that is difficult to read and maintain, and looks like a pyramid as shown below:
+   + `Callback Hell`: or Pyramid of Doom, is a common anti-pattern seen in asynchronous programming code (multiple functions running at the same time). This slang term describes a large number of nested "if" statements or functions. In simple terms, Callback hell is a situation where you have multiple asynchronous functions. Those functions depend on one another, so it could get quite messy with so many callback functions nested in so many layers. The use of callback functions leaves you with code that is difficult to read and maintain, and looks like a pyramid as shown below:
    + This also makes it more difficult to identify the flow of the application, which is the main obstacle to debugging, which is the reason for the famous name of this problem: Callback Hell.
 
 6. Explain Long Polling.
-   + `Long polling`: is defined as a web application development technique used to push information/data from servers to clients as quickly as possible. When a request is made from the client to the server, long-polling maintains the connection between the two. This connection is maintained until the information is ready to be sent from the server to the client.  Once a server receives a request from a client, the connection does not close immediately; the connection is only closed once the server has sent the data back to the client or when a timeout threshold has been reached (connection timeout).
+   + `Long polling`: defined as a web application development technique used to push information/data from servers to clients as quickly as possible. When a request is made from the client to the server, long-polling maintains the connection between the two. This connection is maintained until the information is ready to be sent from the server to the client.  Once a server receives a request from a client, the connection does not close immediately; the connection is only closed once the server has sent the data back to the client or when a timeout threshold has been reached (connection timeout).
    ![long polling](../images/full-stack/long_polling.png)
 
 7. Can you tell me what are the latest trends in Full Stack Development? Also, how do you keep yourself updated about the new trends in the industry?
@@ -84,7 +84,7 @@
       + Docker's primary purpose is to simplify configuration. With VM (Virtual Machine), you can run any platform with its configuration on top of your infrastructure. Docker offers the same functionality without the overhead of virtual machines.
 
 13. Explain event loop in Node.js.
-    + The event loop in JavaScript enables asynchronous programming. With JS, every operation takes place on a single thread, but through smart data structures, we can create the illusion of multi-threading. With the Event Loop, any async work is handled by a queue and listener. Consider the diagram below:
+    + `Event Loop`: enables asynchronous programming. With JS, every operation takes place on a single thread, but through smart data structures, we can create the illusion of multi-threading. With the Event Loop, any async work is handled by a queue and listener. Consider the diagram below:
     ![event loop NodeJS](../images/full-stack/event_loop_nodejs.png)
       + Therefore, when an async function (or an I/O) needs to be executed, the main thread relays it to another thread, allowing v8 (Javascript engine) to continue processing or running its code. In the event loop, there are different phases, like pending callbacks, closing callbacks, timers, idle or preparing, polling, and checking, with different FIFO (First-In-First-Out) queues.
 
@@ -96,7 +96,7 @@
     + `Minify HTML, CSS, and JavaScript`: If you optimize the way your files load, your pages will load more quickly. You can do the same when it comes to HTML, CSS, and JavaScript code. By eliminating unnecessary spaces, characters, and comments, you can reduce the size of your files. This will make your web pages load faster.
 
 15. Explain dependency injection.
-    + `The Dependency Injection (DI)`: is a design pattern for implementing the Inversion of Control (IoC). Dependent objects can be created outside of classes and made available to classes in different ways. Three types of classes are involved in Dependency Injection as follows:
+    + `The Dependency Injection (DI)`: a design pattern for implementing the Inversion of Control (IoC). Dependent objects can be created outside of classes and made available to classes in different ways. Three types of classes are involved in Dependency Injection as follows:
     ![dependency injection](../images/full-stack/dependency_injection.png)
       + `Client Class`: A client class (dependent class) is one that depends on the service class.
       + `Service Class`: Service (dependency) classes provide services to client classes.
@@ -108,12 +108,10 @@
 
 17. State difference between blue/green deployment and rolling deployment.
     + Today, the software is rapidly created and features are often changed based on customer needs, and then it is deployed into production. Each organization has its unique way of getting new applications into the production environment. Most organizations follow the standard deployment and release strategies such as Blue-Green and Rolling Deployment.
-    + `Blue-Green Deployment Strategy`:
-      + A deployment strategy like this creates two separate infrastructure environments i.e., blue and green. A blue environment contains older code (old version), while a green environment (production) contains the latest code (new version). There is only one live production environment at any given time.
+    + `Blue-Green Deployment Strategy`: creates two separate infrastructure environments i.e., blue and green. A blue environment contains older code (old version), while a green environment (production) contains the latest code (new version). There is only one live production environment at any given time.
       + Example: For instance, the green environment is live and is receiving all user traffic, while the clone (blue) is idle. Once a new version of an application is ready for release, it can be deployed to the blue environment for testing. As soon as the new release passes testing, application traffic is switched from green to blue. Blue then becomes the live production environment, and Green becomes idle, ready for testing the next release.
       ![blue-green deployment strategy](../images/full-stack/blue_green_deployment.png)
-    + `Rolling Deployment Strategy`
-      + Using this deployment strategy, old versions of an application are completely replaced with the new versions by completely replacing the infrastructure on which they run.
+    + `Rolling Deployment Strategy`: old versions of an application are completely replaced with the new versions by completely replacing the infrastructure on which they run.
       + Example: When a new version must be deployed to all nodes, the new version is deployed to the first node while all other nodes handle end-user traffic. As soon as the new version is successfully installed on the first node, it will begin managing end-user traffic while the new version is being installed on the second node. The process is repeated until all nodes have been successfully upgraded to the new version.
       ![rolling deployment strategy](../images/full-stack/rolling_deployment.png)
 
@@ -121,7 +119,7 @@
     + `IoC (Inversion of Control)`: as the name suggests, is a design principle in software engineering. With IoC, different kinds of controls can be inverted in an object-oriented design to attain loose coupling. The term "controls" refers to any other responsibilities a class may have other than its primary responsibility. These include controlling the flow of an application, controlling the creation of objects, or controlling the binding and creation of dependent objects. IoC allows classes to be loosely coupled, making testing and maintenance easier.
 
 19. What do you mean by referential transparency in functional programming?
-    + In functional programming, referential transparency is the key differentiating factor.  An expression is considered referential transparent if it can be replaced or substituted with the corresponding value it computes or vice-versa without affecting the program’s result.
+    + `Referential Transparency`: an expression is considered referential transparent if it can be replaced or substituted with the corresponding value it computes or vice-versa without affecting the program’s result.
       + Example: Imagine that we have an expression called four: `val four= add(1,3)`
       + If four is used anywhere in our code, it can safely be replaced with add(1,3), 1 + 3 or 4 wherever it appears. Thus, all the expressions below are equivalent in meaning and output:
         ```
@@ -137,22 +135,21 @@
     ![normalization vs denormalization](../images/full-stack/normalization_denormalization.png)
 
 21. In Java, what is a connection leak? How can you fix this?
-    + If a connection is opened and forgotten about, this is known as a "leak" since each time it occurs, a connection is no longer available for reuse. Connection leaks occur when some database requests or transactions are not closed properly or are not committed, causing the connections to be abandoned and closed permanently.
+    + `Connection Leak`: a connection is opened and forgotten about, this is known as a "leak" since each time it occurs, a connection is no longer available for reuse. Connection leaks occur when some database requests or transactions are not closed properly or are not committed, causing the connections to be abandoned and closed permanently.
     + Java developers commonly experience Connection Leaks when using Connection Pools. In the case where there is a section of code that fails to close a connection properly, a connection will leak from the pool each time the section of code is executed. Eventually, if this situation continues, the pool will run out of connections, which is known as Pool Exhaustion. The application will hang once all available connections have been leaked. We can fix this by closing the connection and paying particular attention to any error handling code.
 
 22. What is Promise and explain its states?
     + Callback functions are functions that can be passed to another function as arguments and executed there to complete a routine or action. Those functions depend on one another, so it could get quite messy with so many callback functions nested in so many layers. This is what is referred to as callback hell.
-    + As an alternative to callbacks in JavaScript, promises are used to handle asynchronous operations. In addition to handling multiple asynchronous operations, they provide better error handling than callbacks. Promises can be a better way for a user to read the code effectively and efficiently, especially when that particular code performs multiple asynchronous operations. The Promise object represents the result of an asynchronous operation (or its failure) and the resulting value. The promise is in one of the following states:
+    + `Promise`: an alternative to callbacks in JavaScript, promises are used to handle asynchronous operations. In addition to handling multiple asynchronous operations, they provide better error handling than callbacks. Promises can be a better way for a user to read the code effectively and efficiently, especially when that particular code performs multiple asynchronous operations. The Promise object represents the result of an asynchronous operation (or its failure) and the resulting value. The promise is in one of the following states:
       + `Pending`: In its initial state, neither fulfilled nor rejected.
       + `Fulfilled`: Indicating that the operation was successful.
       + `Rejected`: Indicating that the operation failed.
 
 23. State the difference between GET and POST.
-    + GET and POST are two different HTTP request methods.
     ![get vs post](../images/full-stack/get_post.png)
 
 24. Explain the Restful API and write its usage.
-    + APIs (Application Programming Interfaces) are sets of rules and protocols that define how software programs or devices can communicate with each other. APIs that conform to the design principles of REST, or representational state transfer, are known as REST APIs. REST APIs may also be referred to as RESTful APIs. Using RESTful APIs, developers can create requests and receive responses via an HTTP request. REST API can also be used for mapping data from a cloud platform to a data warehouse or vice versa.
+    + `APIs (Application Programming Interfaces)`: are sets of rules and protocols that define how software programs or devices can communicate with each other. APIs that conform to the design principles of REST, or representational state transfer, are known as REST APIs. REST APIs may also be referred to as RESTful APIs. Using RESTful APIs, developers can create requests and receive responses via an HTTP request. REST API can also be used for mapping data from a cloud platform to a data warehouse or vice versa.
 
 25. What do you mean by MEAN Stack?
     + `MEAN`: stands for MongoDB, ExpressJS, AngularJS, and Node.js. It is a collection of JavaScript-based technologies for developing web applications. Despite being a stack of different technologies, all of them are based on the JavaScript language. It is an ideal solution for building dynamic websites and applications as it is a very user-friendly stack. With this free and open-source stack, you can quickly and easily build web-based prototypes.
@@ -165,7 +162,7 @@
     ![MVC vs MVP](../images/full-stack/mvp_mvc.png)
 
 28. What do you mean by Temporal Dead Zone in ES6?
-    + Before ES6, variable declarations were only possible using var. With ES6, we got let and const. Both let and const declarations are block-scoped, i.e., they can only be accessed within the " { } " surrounding them. On the other hand, var doesn't have such a restriction. Unlike var, which can be accessed before its declaration, you cannot access the let or const variables until they are initialized with some value. Temporal Dead Zone is the time from the beginning of the execution of a block in which let or const variables are declared until these variables are initialized. If anyone tries to access those variables during that zone, Javascript will always throw a reference error as given below.
+    + `Temporal Dead Zone`: the time from the beginning of the execution of a block in which let or const variables are declared until these variables are initialized. If anyone tries to access those variables during that zone, Javascript will always throw a reference error as given below.Before ES6, variable declarations were only possible using var. With ES6, we got let and const. Both let and const declarations are block-scoped, i.e., they can only be accessed within the " { } " surrounding them. On the other hand, var doesn't have such a restriction. Unlike var, which can be accessed before its declaration, you cannot access the let or const variables until they are initialized with some value. 
       ```
       console.log(varNumber); // undefined
       console.log(letNumber); // Throws the reference error letNumber is not defined
@@ -197,8 +194,8 @@
 
 30. What is event bubbling and capturing in JavaScript?
     + The propagation of events inside the DOM (Document Object Model) is known as 'Event Flow' in JavaScript. The event flow defines the order or sequence in which a particular web page receives an event. Accordingly, event flow (propagation) in JS is dependent on the following aspects:
-      + `Event Bubbling`: With Event Bubbling, the event is captured and handled first by the innermost element, and then propagates to the outermost element. Events propagate up the DOM tree from child elements until the topmost element is handled.
-      + `Event Capturing`: With Event Capturing, the event is captured and handled first by the outermost element, and then propagates to the innermost element. Event cycles propagate starting with the wrapper elements and ending with the target elements that initiated the event cycle.
+      + `Event Bubbling`: the event is captured and handled first by the innermost element, and then propagates to the outermost element. Events propagate up the DOM tree from child elements until the topmost element is handled.
+      + `Event Capturing`: the event is captured and handled first by the outermost element, and then propagates to the innermost element. Event cycles propagate starting with the wrapper elements and ending with the target elements that initiated the event cycle.
       ![event propogation](../images/full-stack/event_propagation.png)
 
 31. Tell me about a project that you worked on and the technologies you used. Why did you choose them?
