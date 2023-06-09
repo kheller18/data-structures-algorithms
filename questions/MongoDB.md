@@ -26,14 +26,14 @@
        ```
 
 4. What are Databases in MongoDB?
-   + Databases: groups of collections. MongoDB can host several databases, each grouping together collections.
+   + `Databases`: groups of collections. MongoDB can host several databases, each grouping together collections.
    + Some reserved database names are as follows:
      + admin
      + local
      + config
 
 5. What is the Mongo Shell?
-   + Mongo Shell: a JavaScript shell that allows interaction with a MongoDB instance from the command line. With that one can perform administrative functions, inspecting an instance, or exploring MongoDB.
+   + `Mongo Shell`: a JavaScript shell that allows interaction with a MongoDB instance from the command line. With that one can perform administrative functions, inspecting an instance, or exploring MongoDB.
    + To start the shell, run the mongo executable:
      ```
      $ mongod
