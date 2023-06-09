@@ -23,7 +23,7 @@
    + Ability to configure security settings
 
 4. What is meant by a workflow in Mendix?
-   + Workflow is a visual language in Mendix Studio pro as well as Mendix Studio that enables building extendable processes for the business. There is complete integration available with the page editor and microflow editor as well.
+   + `Workflow`: a visual language in Mendix Studio pro as well as Mendix Studio that enables building extendable processes for the business. There is complete integration available with the page editor and microflow editor as well.
    ![mendix workflow](../images/mendix/workflow.png)
 
 5. What basic functions can be performed with workflows?
@@ -52,11 +52,11 @@
    + Company feed
 
 9. What is the function of a microflow in Mendix?
-   + Microflows enable expressing the logic of the application. We can create objects, update objects, show pages, and make choices using a microflow. It is a visual representation of the traditional textual program code. Microflows can't be used in offline apps as they run on a run-time server.
+   + `Microflows`: enable expressing the logic of the application. We can create objects, update objects, show pages, and make choices using a microflow. It is a visual representation of the traditional textual program code. Microflows can't be used in offline apps as they run on a run-time server.
    ![mendix microflow](../images/mendix/microflow.png)
 
 10. What is the function of a nanoflow in Mendix?
-    + Nanoflows are somewhat similar to microflows in the context that they enable expressing the logic of the application. But we can use them in an offline app as well because they directly run on the device/browser. Also, there is a speed benefit for logic for which access to the server is not needed because of the actions being run directly on the device.
+    + `Nanoflows`: somewhat similar to microflows in the context that they enable expressing the logic of the application. But we can use them in an offline app as well because they directly run on the device/browser. Also, there is a speed benefit for logic for which access to the server is not needed because of the actions being run directly on the device.
       ![mendix nanoflow](../images/mendix/nanoflow.png)
 
 11. Which widgets are available in the ListView controls?
@@ -85,26 +85,25 @@
       + Selecting a filter from an options list
 
 14. Explain what is Mendix Marketplace?
-    + The Mendix Marketplace is an advanced and vibrant marketplace containing a list of sample apps that are capable of being used right away. It also contains several components such as widgets, connectors, and modules to customize apps in quick time. At this marketplace, we can get what we need, browse the content, and share the content that we have created.
+    + `Mendix Marketplace`: is an advanced and vibrant marketplace containing a list of sample apps that are capable of being used right away. It also contains several components such as widgets, connectors, and modules to customize apps in quick time. At this marketplace, we can get what we need, browse the content, and share the content that we have created.
       ![mendix marketplace](../images/mendix/marketplace.png)
 
 15. Mention some cloud vendors supported by Mendix.
-    + Most of the public cloud vendors are supported by the Mendix platform, such as:
-      + Mendix cloud
-      + IBM cloud
-      + SAP cloud platform
-      + Amazon web services
-      + Microsoft Azure
-      + Google
+    + Mendix cloud
+    + IBM cloud
+    + SAP cloud platform
+    + Amazon web services
+    + Microsoft Azure
+    + Google
 
 16. What are the elements of the toolbox on a page?
-    + The Toolbox, as the name suggests, shows the available tools on a page. The following are contained in this tab:
+    + Toolbox: as the name suggests, shows the available tools on a page. The following are contained in this tab:
       + Widgets
       + Building Blocks
         ![mendix toolbox](../images/mendix/toolbox.png)
 
 17. What is the function of the company brand page?
-    + The company logo that will be appeared on the company page can be added and edited on this page. We can avail the company page in the control center’s future iteration.
+    + `Company Brand Page`: the company logo that will be appeared on the company page can be added and edited on this page. We can avail the company page in the control center’s future iteration.
     + We can also add and set a cover image as the background header of our company page through this feature. And if we don’t set an image by clicking upload, it will use the primary color set in the Brand colors section.
 
 18. Mention the steps which need to be followed to create a new page in Studio.
@@ -144,30 +143,30 @@
     + Set the ‘Workflow name.’
 
 22. Why are microflows needed?
-    + For adding custom logic to our application,
-    + For extending/changing the standard behavior of the buttons,
-    + For integrating with other databases, systems, web services, etc.
+    + adding custom logic to our application,
+    + extending/changing the standard behavior of the buttons,
+    + integrating with other databases, systems, web services, etc.
 
 23. Explain the functions of a loop.
     + When building microflows, we can use a loop for iterating over a list of objects and performing actions on each list item as well. For instance, a list of orders can be retrieved from the database, the list can be looped over, and orders can be marked as processed.
       ![mendix loop functions](../images/mendix/loop_functions.png)
 
 24. Explain the use of a break event and a continuing event in loops.
-    + We use a break event in loops to stop it from iterating over the list of objects and continue with the rest of the flow in our microflow. In contrast, we use a continuing event in loops for stopping the current iteration and starting the next object iteration.
+    + `Break Event`: in loops to stop it from iterating over the list of objects and continue with the rest of the flow in our microflow.
+    + `Continuing Event`: in loops for stopping the current iteration and starting the next object iteration.
 
 25. What options does the Workflow activities section contain?
-    + Various activities to interact with workflows are contained in the Workflow activities section, such as:
-      + Call workflow
-      + Complete task
-      + Retrieve workflow data
-      + Show user task page
+    + Call workflow
+    + Complete task
+    + Retrieve workflow data
+    + Show user task page
 
 26. Explain the elements of the general section in the toolbox of workflows.
-    + `Start event`: This is used to open the workflow properties.
-    + `Decision`:  A choice is made based on a condition. And only one of the outgoing paths is used.
-    + `Jump activity:` It is used to jump on other activities in the workflow.
-    + `Parallel split`:  It is used for adding two or more parallel paths to the workflow.
-    + `End activity`:  It is used for ending the path of our workflow.
+    + `Start event`: used to open the workflow properties.
+    + `Decision`:  a choice is made based on a condition. And only one of the outgoing paths is used.
+    + `Jump activity:`: used to jump on other activities in the workflow.
+    + `Parallel split`: used for adding two or more parallel paths to the workflow.
+    + `End activity`: used for ending the path of our workflow.
 
 27. Mention the steps to upload a company logo.
     + Open the 'Theme customizer' by clicking on the paintbrush icon in the left menu bar.
@@ -191,13 +190,13 @@
     + Toolbox
 
 29. What is the function of a connector panel in Studio Pro?
-    + A connector panel is used to link the data with pages quickly. An entity could be dragged onto a data grid or data view for displaying the app’s data quickly on a page using the connector.
+    + `Connector Panel`: used to link the data with pages quickly. An entity could be dragged onto a data grid or data view for displaying the app’s data quickly on a page using the connector.
       ![mendix connector panel](../images/mendix/connector_panel.png)
 
 30. What is a domain model in Studio pro?
-    + The information used by our application abstractly is described by the domain model. It is an integral part of the architecture of any application. There is a specific domain module attached to each module describing its data. The data from all the domains can be used by all modules in an application.
-    + In each domain model, ‘associations’ represent the relationship of its ‘entities’ with other entities. ‘Annotations’ can also be added for further explanation.
-      ![mendix domain model](../images/mendix/domain_model.png)
+    + `Domain Model`: information used by our application abstractly. It is an integral part of the architecture of any application. There is a specific domain module attached to each module describing its data. The data from all the domains can be used by all modules in an application.
+      + In each domain model, ‘associations’ represent the relationship of its ‘entities’ with other entities. ‘Annotations’ can also be added for further explanation.
+        ![mendix domain model](../images/mendix/domain_model.png)
 
 31. What are the three main characteristics of the progressive web apps in studio pro?
     + Reliable
@@ -250,11 +249,11 @@
       ![mendix environments](../images/mendix/environments.png)
 
 39. Tell us something about Mendix studio.
-    + It is a no-code application development platform. Mendix studio is specially designed for people who do not know much code, such as citizen developers and business users. The user doesn't even have to install software to use it.
+    + `Mendix Studio`: a no-code application development platform. Mendix studio is specially designed for people who do not know much code, such as citizen developers and business users. The user doesn't even have to install software to use it.
     + The intuitive design and the drag-and-drop environment allow a non-IT professional to build a no-code application. This is highly beneficial because the in-depth knowledge of the business needs mostly rests with business users.
 
 40. Tell us something about Mendix Studio Pro.
-    + It is a low-code application development platform. The Mendix applications can be created, viewed, and edited in this environment. Developers with different experience levels can use Mendix studio pro to develop mobile and web apps through complex logic.
+    + `Mendix Studio Pro`: a low-code application development platform. The Mendix applications can be created, viewed, and edited in this environment. Developers with different experience levels can use Mendix studio pro to develop mobile and web apps through complex logic.
     + A wider set of features are available in Mendix studio pro than in Mendix studio. The code can be edited and customized with the in-built editors as well in Mendix studio pro. Also, it allows the users to control integration, build extensions, manage security, and manage branch lines. It is not provided in Mendix studio. Domain-specific languages are available in studio pro. The developer can also access the page editor, domain model, integrations, debugger, microflow editor, and security configuration within studio pro.
 
 41. Which great apps have been built with Mendix so far?
