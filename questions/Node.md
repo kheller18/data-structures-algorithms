@@ -3,10 +3,10 @@
 ---
 
 1. What is a first class function in Javascript?
-   + First-Class functions: when functions can be treated like any other variable then those functions are first-class functions. There are many other programming languages, for example, scala, Haskell, etc which follow this including JS. Now because of this function can be passed as a param to another function(callback) or a function can return another function(higher-order function). map() and filter() are higher-order functions that are popularly used.
+   + `First-Class Functions`: when functions can be treated like any other variable then those functions are first-class functions. There are many other programming languages, for example, scala, Haskell, etc which follow this including JS. Now because of this function can be passed as a param to another function(callback) or a function can return another function(higher-order function). map() and filter() are higher-order functions that are popularly used.
 
 2. What is Node.js and how it works?
-   + Node.js is a virtual machine that uses JavaScript as its scripting language and runs Chrome’s V8 JavaScript engine. Basically, Node.js is based on an event-driven architecture where I/O runs asynchronously making it lightweight and efficient. It is being used in developing desktop applications as well with a popular framework called electron as it provides API to access OS-level features such as file system, network, etc.
+   + `Node.js`: a virtual machine that uses JavaScript as its scripting language and runs Chrome’s V8 JavaScript engine. Basically, Node.js is based on an event-driven architecture where I/O runs asynchronously making it lightweight and efficient. It is being used in developing desktop applications as well with a popular framework called electron as it provides API to access OS-level features such as file system, network, etc.
 
 3. How do you manage packages in your node.js project?
    + It can be managed by a number of package installers and their configuration file accordingly. Out of them mostly use npm or yarn. Both provide almost all libraries of javascript with extended features of controlling environment-specific configurations. To maintain versions of libs being installed in a project we use package.json and package-lock.json so that there is no issue in porting that app to a different environment.
@@ -24,16 +24,16 @@
    + Call the following step in the program.
 
 6. What are some commonly used timing features of Node.js?
-   + `setTimeout/clearTimeout`: This is used to implement delays in code execution.
-   + `setInterval/clearInterval`: This is used to run a code block multiple times.
-   + `setImmediate/clearImmediate`: Any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop.
+   + `setTimeout/clearTimeout`: used to implement delays in code execution.
+   + `setInterval/clearInterval`: used to run a code block multiple times.
+   + `setImmediate/clearImmediate`: any function passed as the setImmediate() argument is a callback that's executed in the next iteration of the event loop.
    + `process.nextTick`: Both setImmediate and process.nextTick appear to be doing the same thing; however, you may prefer one over the other depending on your callback’s urgency.
 
 7. What are the advantages of using promises instead of callbacks?
    + The main advantage of using promise is you get an object to decide the action that needs to be taken after the async task completes. This gives more manageable code and avoids callback hell.
 
 8. What is fork in node JS?
-   + A fork in general is used to spawn child processes. In node it is used to create a new instance of v8 engine to run multiple workers to execute the code.
+   + `Fork`: used to spawn child processes. In node it is used to create a new instance of v8 engine to run multiple workers to execute the code.
 
 9.  Why is Node.js single-threaded?
     + Node.js was created explicitly as an experiment in async processing. This was to try a new theory of doing async processing on a single thread over the existing thread-based implementation of scaling via different frameworks.
@@ -49,19 +49,18 @@
     ```
 
 11. How many types of API functions are there in Node.js?
-    + There are two types of API functions:
-      + `Asynchronous, non-blocking functions` - mostly I/O operations which can be fork out of the main loop.
-      + `Synchronous, blocking functions` - mostly operations that influence the process running in the main loop.
+    + `Asynchronous, non-blocking functions` - mostly I/O operations which can be fork out of the main loop.
+    + `Synchronous, blocking functions` - mostly operations that influence the process running in the main loop.
 
-12. What is REPL?
-    + `REPL`: in Node.js stands for Read, Eval, Print, and Loop, which further means evaluating code on the go.
+12. What is Read, Eval, Print, and Loop (REPL)?
+    + `Read, Eval, Print, and Loop (REPL)`: evaluating code on the go.
 
 13. List down the two arguments that async.queue takes as input?
     + Task Function
     + Concurrency Value
 
 14. What is the purpose of module.exports?
-    + This is used to expose functions of a particular module or file to be used elsewhere in the project. This can be used to encapsulate all similar functions in a file which further improves the project structure.
+    + `module.exports`: sed to expose functions of a particular module or file to be used elsewhere in the project. This can be used to encapsulate all similar functions in a file which further improves the project structure.
       + For example, you have a file for all utils functions with util to get solutions in a different programming language of a problem statement.
         ```
         const getSolutionInJavaScript = async ({
@@ -80,9 +79,10 @@
           + `const { getSolutionInJavaScript, getSolutionInPython} = require("./utils")`
 
 15. What tools can be used to assure consistent code style?
-    + ESLint can be used with any IDE to ensure a consistent coding style which further helps in maintaining the codebase.
+    + `ESLint`: can be used with any IDE to ensure a consistent coding style which further helps in maintaining the codebase.
 
 16. What do you understand by callback hell?
+    + `CallBack Hell`: For the below example, we are passing callback functions and it makes the code unreadable and not maintainable, thus we should change the async logic to avoid this.
       ```
       async_A(function(){
         async_B(function(){
@@ -94,15 +94,15 @@
         });
       });
       ```
-      + For the above example, we are passing callback functions and it makes the code unreadable and not maintainable, thus we should change the async logic to avoid this.
 
 17.  What is an event-loop in Node JS?
+     + `Event loop`: involves different phases with specific tasks such as timers, pending callbacks, idle or prepare, poll, check, close callbacks with different FIFO queues. Also in between iterations it checks for async I/O or timers and shuts down cleanly if there aren't any.
      + Whatever that is async is managed by event-loop using a queue and listener.  We can get the idea using the following diagram:
-       ![event loop](../images/node/event_loop.png)
-     + So when an async function needs to be executed(or I/O) the main thread sends it to a different thread allowing v8 to keep executing the main code. Event loop involves different phases with specific tasks such as timers, pending callbacks, idle or prepare, poll, check, close callbacks with different FIFO queues. Also in between iterations it checks for async I/O or timers and shuts down cleanly if there aren't any.
+     ![event loop](../images/node/event_loop.png)
+     + So when an async function needs to be executed(or I/O) the main thread sends it to a different thread allowing v8 to keep executing the main code.
 
 18. If Node.js is single threaded then how does it handle concurrency?
-    + The main loop is single-threaded and all async calls are managed by libuv library.
+    + `Main Loop`: single-threaded and all async calls are managed by libuv library.
       + For example:
         ```
         const crypto = require("crypto");
@@ -147,6 +147,7 @@
         }, timeout);
       });
     }
+
     async function requestWithRetry (url) {
       const MAX_RETRIES = 10;
       for (let i = 0; i <= MAX_RETRIES; i++) {
@@ -163,41 +164,41 @@
     ```
 
 22. What is node.js streams?
-    + Streams are instances of EventEmitter which can be used to work with streaming data in Node.js. They can be used for handling and manipulating streaming large files(videos, mp3, etc) over the network. They use buffers as their temporary storage.
-    + There are mainly four types of the stream:
-      + `Writable`: streams to which data can be written (for example, fs.createWriteStream()).
-      + `Readable`: streams from which data can be read (for example, fs.createReadStream()).
-      + `Duplex`: streams that are both Readable and Writable (for example, net.Socket).
-      + `Transform`: Duplex streams that can modify or transform the data as it is written and read (for example, zlib.createDeflate()).
+    + `Streams`: instances of EventEmitter which can be used to work with streaming data in Node.js. They can be used for handling and manipulating streaming large files(videos, mp3, etc) over the network. They use buffers as their temporary storage.
+    + There are mainly four types of streams:
+      + `Writable`: data can be written (for example, fs.createWriteStream()).
+      + `Readable`: data can be read (for example, fs.createReadStream()).
+      + `Duplex`: both Readable and Writable (for example, net.Socket).
+      + `Transform`: duplex streams that can modify or transform the data as it is written and read (for example, zlib.createDeflate()).
 
 23. What are node.js buffers?
-    + In general, buffers is a temporary memory that is mainly used by stream to hold on to some data until consumed. Buffers are introduced with additional use cases than JavaScript’s Unit8Array and are mainly used to represent a fixed-length sequence of bytes. This also supports legacy encodings like ASCII, utf-8, etc. It is a fixed(non-resizable) allocated memory outside the v8.
+    + `Buffers`: a temporary memory that is mainly used by stream to hold on to some data until consumed. Buffers are introduced with additional use cases than JavaScript’s Unit8Array and are mainly used to represent a fixed-length sequence of bytes. This also supports legacy encodings like ASCII, utf-8, etc. It is a fixed(non-resizable) allocated memory outside the v8.
 
 24. What is middleware?
     + `Middleware`: comes in between your request and business logic. It is mainly used to capture logs and enable rate limit, routing, authentication, basically whatever that is not a part of business logic. There are third-party middleware also such as body-parser and you can write your own middleware for a specific use case.
 
 25. Explain what a Reactor Pattern in Node.js?
-    + Reactor pattern again a pattern for nonblocking I/O operations. But in general, this is used in any event-driven architecture.
+    + `Reactor Pattern`: a pattern for nonblocking I/O operations. But in general, this is used in any event-driven architecture.
     + There are two components in this:
-      + `Reactor`: Its job is to dispatch the I/O event to appropriate handlers
-      + `Handler`: Its job is to actually work on those events
+      + `Reactor`: dispatch the I/O event to appropriate handlers
+      + `Handler`: work on those events
 
 26. Why should you separate Express app and server?
     + The server is responsible for initializing the routes, middleware, and other application logic whereas the app has all the business logic which will be served by the routes initiated by the server. This ensures that the business logic is encapsulated and decoupled from the application logic which makes the project more readable and maintainable.
 
-27. For Node.js, why Google uses V8 engine?
+27. For Node.js, why does Google use the V8 engine?
     + Well, are there any other options available? Yes, of course, we have Spidermonkey from Firefox, Chakra from Edge but Google’s v8 is the most evolved(since it’s open-source so there’s a huge community helping in developing features and fixing bugs) and fastest(since it’s written in c++) we got till now as a JavaScript and WebAssembly engine. And it is portable to almost every machine known.
 
 28. Describe the exit codes of Node.js?
     + Exit codes give us an idea of how a process got terminated/the reason behind termination.
-      + `Uncaught fatal exception - (code - 1)`: There has been an exception that is not handled
-      + `Unused - (code - 2)`: This is reserved by bash
-      + `Fatal Error - (code - 5)`: There has been an error in V8 with stderr output of the description
-      + `Internal Exception handler Run-time failure - (code - 7)`: There has been an exception when bootstrapping function was called
-      + `Internal JavaScript Evaluation Failure - (code - 4)`: There has been an exception when the bootstrapping process failed to return function value when evaluated.
+      + `Uncaught fatal exception - (code - 1)`: an exception that is not handled
+      + `Unused - (code - 2)`: reserved by bash
+      + `Fatal Error - (code - 5)`: an error in V8 with stderr output of the description
+      + `Internal Exception handler Run-time failure - (code - 7)`: an exception when bootstrapping function was called
+      + `Internal JavaScript Evaluation Failure - (code - 4)`: an exception when the bootstrapping process failed to return function value when evaluated.
 
 29. Explain the concept of stub in Node.js?
-    + Stubs are used in writing tests which are an important part of development. It replaces the whole function which is getting tested.
+    + `Stubs`: used in writing tests which are an important part of development. It replaces the whole function which is getting tested.
       + This helps in scenarios where we need to test:
         + External calls which make tests slow and difficult to write (e.g HTTP calls/ DB calls)
         + Triggering different outcomes for a piece of code (e.g. what happens if an error is thrown/ if it passes)
@@ -265,7 +266,7 @@
       ```
 
 30. What is an Event Emitter in Node.js?
-    + `EventEmitter`: is a Node.js class that includes all the objects that are basically capable of emitting events. This can be done by attaching named events that are emitted by the object using an eventEmitter.on() function. Thus whenever this object throws an even the attached functions are invoked synchronously.
+    + `EventEmitter`: a Node.js class that includes all the objects that are basically capable of emitting events. This can be done by attaching named events that are emitted by the object using an eventEmitter.on() function. Thus whenever this object throws an even the attached functions are invoked synchronously.
       ```
       const EventEmitter = require('events');
       class MyEmitter extends EventEmitter {}
@@ -281,10 +282,10 @@
     ![clustering](../images/node/clustering.png)
 
 32. What is a thread pool and which library handles it in Node.js?
-    + The Thread pool is handled by the libuv library. libuv is a multi-platform C library that provides support for asynchronous I/O-based operations such as file systems, networking, and concurrency.
+    + Thread Pool: handled by the libuv library. libuv is a multi-platform C library that provides support for asynchronous I/O-based operations such as file systems, networking, and concurrency.
     ![thread pool](../images/node/thread_pool.png)
 
-33. What is WASI and why is it being introduced?
+33. What is WebAssembly System Interface (WASI) and why is it being introduced?
     + Web assembly provides an implementation of WebAssembly System Interface specification through WASI API in node.js implemented using WASI class. The introduction of WASI was done by keeping in mind its possible to use the underlying operating system via a collection of POSIX-like functions thus further enabling the application to use resources more efficiently and features that require system-level access.
 
 34. How are worker threads different from clusters?
@@ -299,7 +300,7 @@
       + This can be used for CPU-intensive tasks like processing data or accessing the file system since NodeJS is single-threaded, synchronous tasks can be made more efficient leveraging the worker's threads.
 
 35. How to measure the duration of async operations?
-    + Performance API provides us with tools to figure out the necessary performance metrics. A simple example would be using async_hooks and perf_hooks.
+    + `Performance API`: provides tools to figure out the necessary performance metrics. A simple example would be using async_hooks and perf_hooks.
       ```
       'use strict';
       const async_hooks = require('async_hooks');
@@ -339,7 +340,7 @@
       + This would give us the exact time it took to execute the callback.
 
 36. How to measure the performance of async operations?
-    + Performance API provides us with tools to figure out the necessary performance metrics.
+    + `Performance API`: provides tools to figure out the necessary performance metrics.
       ```
       const { PerformanceObserver, performance } = require('perf_hooks');
       const obs = new PerformanceObserver((items) => {
