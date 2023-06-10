@@ -195,8 +195,8 @@
         + Should the limiter notify the user if the requests are blocked?
         + The limiter should handle traffic suitable according to the scale.
       + What are some of the common problems encountered?
-        + How to measure the requests per given time?
-        + How to design the rate limiter for the distributed systems when compared to a local system?
+        + How do you measure the requests per given time?
+        + How do you design the rate limiter for the distributed systems when compared to a local system?
       + Possible tips for consideration:
         + Evaluate the usage of sliding time windows for avoiding hourly resets.
         + Try using a counter integer instead of a request for saving space.
@@ -208,7 +208,7 @@
     + What are some of the common problems encountered?
       + Where to store the files?
       + How can you handle updates? Should the files be re-uploaded or does just the modified version has to be updated?
-      + How to handle updation of two documents at the same time?
+      + How do you handle updation of two documents at the same time?
     + Possible tips for consideration:
       + Consider using chunking for splitting files into multiple sections for supporting re-uploads of a particular section rather than the whole file.
       + Make use of cloud storage for storing the files.
@@ -220,8 +220,8 @@
         + The system has to display n number of suggestions (say 5, for example) based on the written query.
         + The suggestions have to be updated based on the query updation.
       + What are some of the common problems encountered?
-        + How to update the suggestions without much latency?
-        + How to determine the most likely suggestion?
+        + How do you update the suggestions without much latency?
+        + How do you determine the most likely suggestion?
         + Are the suggestions adapting to the user’s search results?
         + When do the suggestions appear? Is it updated on the fly or once the user stops writing?
       + Possible tips for consideration:
@@ -249,7 +249,7 @@
         + Design algorithm to calculate the win and loss results.
       + What are some of the common problems encountered?
         + What happens if both players play optimally?
-        + How to decide the winning strategy?
+        + How do you decide the winning strategy?
       + Possible tips for consideration:
         + If one player is a computer, then make use of the rand() method for ensuring moves are completely random.
 
@@ -269,8 +269,8 @@
         + Design and develop a Scalable service for collecting information from the entire web and fetching millions of web documents.
         + Fresh data has to be fetched for every search query.
       + What are some of the common problems encountered?
-        + How to handle the updates when users are typing very fast?
-        + How to prioritize dynamically changing web pages?
+        + How do you handle the updates when users are typing very fast?
+        + How do you prioritize dynamically changing web pages?
       + Possible tips for consideration:
         + Look into URL Frontier Architecture for implementing this system.
         + Know how crawling is different from scraping.
@@ -292,8 +292,8 @@
       + Should have the capability of assigning rides that lets the user reach the destination fast.
       + Show the ETA (Estimated Time of Arrival) of the driver after booking the ride and once the ride has been started, show the ETA of the vehicle arriving at the destination.
     + What are some of the common problems encountered?
-      + How to store geographical locations for drivers always on move?
-      + How to assign drivers to the customers efficiently?
+      + How do you store geographical locations for drivers always on move?
+      + How do you assign drivers to the customers efficiently?
       + How do you calculate the ETA of the driver arrival or the destination arrival?
     + Possible tips for consideration:
       + Make use of the microservices concept with fast databases for booking rides faster.
