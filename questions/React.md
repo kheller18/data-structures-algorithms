@@ -479,10 +479,10 @@
       + `Warning about the usage of findDOMNode`: Previously, findDOMNode( ) method was used to search the tree of a DOM node. This method is deprecated in React. Hence, the StrictMode gives us a warning about the usage of this method.
       + `Warning about the usage of legacy context API (because the API is error-prone).`
 
-22. How to prevent re-renders in React?
+22. How do you prevent re-renders in React?
     + `Reason for re-renders in React`: occur when props or the state of the component has been changed.
       + Re-rendering components that are not updated, affects the performance of an application.
-    + `How to prevent re-rendering`:
+    + `How do you prevent re-rendering`:
       + Consider the following components:
         ```
         class Parent extends React.Component {
@@ -626,7 +626,7 @@
       + It is better to shift states which are less valuable to the parent component, to a separate component.
     + `Lazy Loading`: a technique used to reduce the load time of a React app. Lazy loading helps reduce the risk of web app performances to a minimum.
 
-25. How to pass data between React components?
+25. How do you pass data between React components?
     ![pass data between components](../images/React/pass_data_between_components.png)
     + `Parent Component to Child Component (using props)`:
       + With the help of props, we can send data from a parent to a child component.
@@ -934,7 +934,7 @@
             + You can notice that the element `<SearchItem/>` has been used just similar to an HTML element. The JSX syntax will enable for including the components in this approach directly within the JavaScript code. Your application can be tested by running the below-given command in your terminal. `npm start`. This command will compile your application and open your default browser into `http://localhost:4000`. This command can be kept on running when code development is in progress to make sure that the application is up-to-date, and also this browser page will be reloaded each time you modify and save the code.
             + This application will work finely, but it doesn’t look nice as it doesn’t React to any input from the user. You can make it more interactive by adding a state with React Hooks, adding authentication, etc.
 
-38. How to create a switching component for displaying different pages?
+38. How do you create a switching component for displaying different pages?
     + `Switching component`: a component that will render one of the multiple components. We should use an object for mapping prop values to components.
     + A below-given example will show you how to display different pages based on page prop using switching component:
       ```
@@ -960,7 +960,7 @@
       }
       ```
 
-39. How to re-render the view when the browser is resized?
+39. How do you re-render the view when the browser is resized?
     + It is possible to listen to the resize event in componentDidMount() and then update the width and height dimensions. It requires the removal of the event listener in the componentWillUnmount() method.
     + Using the below-given code, we can render the view when the browser is resized.
       ```
@@ -988,7 +988,7 @@
       }
       ```
 
-40. How to pass data between sibling components using React router?
+40. How do you pass data between sibling components using React router?
     + Passing data between sibling components of React is possible using React Router with the help of `history.push` and `match.params`.
     + In the code given below, we have a Parent component `AppDemo.js` and have two Child Components `HomePage` and `AboutPage`. Everything is kept inside a Router by using React-router Route. It is also having a route for `/about/{params}` where we will pass the data.
       ```
@@ -1043,7 +1043,7 @@
           }
           ```
 
-41. How to perform automatic redirect after login?
+41. How do you perform automatic redirect after login?
     + The React-router package will provide the component `<Redirect>` in React Router. Rendering of a `<Redirect>` component will navigate to a newer location. In the history stack, the current location will be overridden by the new location just like the server-side redirects.
       ```
       import React, { Component } from 'React'
