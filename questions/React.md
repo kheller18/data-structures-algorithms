@@ -1043,7 +1043,7 @@
           }
           ```
 
-41. How to perform automatic redirect after login?
+41. How do you perform automatic redirect after login?
     + The React-router package will provide the component `<Redirect>` in React Router. Rendering of a `<Redirect>` component will navigate to a newer location. In the history stack, the current location will be overridden by the new location just like the server-side redirects.
       ```
       import React, { Component } from 'React'
