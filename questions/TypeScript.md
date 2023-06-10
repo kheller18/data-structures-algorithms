@@ -4,9 +4,9 @@
 
 1. What are the primitive types in TypeScript?
    + TypeScript has three primitive types that are frequently used: string, number, and boolean. These correspond to the similarly named types in JavaScript.
-     + `string`: represents text values such as “javascript”, “typescript”, etc.
-     + `number`: represents numeric values like 1, 2, 32, 43, etc.
-     + `boolean`: represents a variable that can have either a ‘true’ or ‘false’ value.
+     + `string`: text values such as “javascript”, “typescript”, etc.
+     + `number`: numeric values like 1, 2, 32, 43, etc.
+     + `boolean`: a variable that can have either a ‘true’ or ‘false’ value.
    ![primitive types](../images/typescript/primitive_types.png)
 
 2. Explain how the arrays work in TypeScript.
@@ -39,7 +39,7 @@
    + TypeScript assumes a variable is of type any when you don’t explicitly provide the type, and the compiler cannot infer the type from the surrounding context.
 
 4. What is void, and when to use the void type?
-   + The void indicates the absence of type on a variable. It acts as the opposite type to any. It is especially useful in functions that don’t return a value.
+   + `Void`: the absence of type on a variable. It acts as the opposite type to any. It is especially useful in functions that don’t return a value.
      ```
      function notify(): void {
        alert("The user has been notified.");
@@ -48,7 +48,7 @@
    + If a variable is of type void, you can only assign the null or undefined values to that variable.
 
 5. What is an unknown type, and when to use it in TypeScript?
-   + The unknown type is the type-safe counterpart of any type. You can assign anything to the unknown, but the unknown isn’t assignable to anything but itself and any, without performing a type assertion of a control-flow-based narrowing. You cannot perform any operations on a variable of an unknown type without first asserting or narrowing it to a more specific type.
+   + `Unknown Type`: the type-safe counterpart of any type. You can assign anything to the unknown, but the unknown isn’t assignable to anything but itself and any, without performing a type assertion of a control-flow-based narrowing. You cannot perform any operations on a variable of an unknown type without first asserting or narrowing it to a more specific type.
    + Consider the following example. We create the foo variable of unknown type and assign a string value to it. If we try to assign that unknown variable to a string variable bar, the compiler gives an error.
      ```
      let foo: unknown = "Akshay";
@@ -61,9 +61,9 @@
        ```
 
 6. What are the different keywords to declare variables in TypeScript?
-   + `var`: Declares a function-scoped or global variable. You can optionally set its value during the declaration. Its behavior and scoping rules are similar to the var keyword in JavaScript. For example:
+   + `var`: a function-scoped or global variable. You can optionally set its value during the declaration. Its behavior and scoping rules are similar to the var keyword in JavaScript. For example:
      + `var foo = "bar";`
-   + `let`: Declares a block-scoped local variable. Similar to var, you can optionally set the value of a variable during the declaration. For example:
+   + `let`: a block-scoped local variable. Similar to var, you can optionally set the value of a variable during the declaration. For example:
      ```
      let a = 5;
 
@@ -83,7 +83,7 @@
      ```
 
 7. Provide the syntax of a function with the type annotations.
-   + Functions are blocks of code to perform a specific code. Functions can optionally take one or more arguments, process them, and optionally return a value.
+   + `Functions`: blocks of code to perform a specific code. Functions can optionally take one or more arguments, process them, and optionally return a value.
      ```
      function greet(name: string): string {
        return `Hello, ${name}`;
@@ -93,8 +93,8 @@
      console.log(greeting);  // "Hello, Anders"
      ```
 
-8. How to create objects in TypeScript?
-   + Objects are dictionary-like collections of keys and values. The keys have to be unique. They are similar to arrays and are also sometimes called associative arrays. However, an array uses numbers to index the values, whereas an object allows you to use any other type as the key.
+8. How do you create objects in TypeScript?
+   + `Objects`: dictionary-like collections of keys and values. The keys have to be unique. They are similar to arrays and are also sometimes called associative arrays. However, an array uses numbers to index the values, whereas an object allows you to use any other type as the key.
    + In TypeScript, an Object type refers to any value with properties. It can be defined by simply listing the properties and their types. For example:
      ```
      let pt: { x: number; y: number } = {
@@ -103,7 +103,7 @@
      };
      ```
 
-9.  How to specify optional properties in TypeScript?
+9. How do you specify optional properties in TypeScript?
     + An object type can have zero or more optional properties by adding a ‘?’ after the property name.
       ```
       let pt: { x: number; y: number; z?: number } = {
@@ -115,7 +115,7 @@
       + In the example above, because the property ‘z’ is marked as optional, the compiler won’t complain if we don’t provide it during the initialization.
 
 10. Explain the concept of null and its use in TypeScript.
-    + In programming, a null value indicates an absence of value. A null variable doesn’t point to any object. Hence you cannot access any properties on the variable or call a method on it.
+    + `Null`: value indicates an absence of value. A null variable doesn’t point to any object. Hence you cannot access any properties on the variable or call a method on it.
     + In TypeScript, the null value is indicated by the ‘null’ keyword. You can check if a value is null as follows:
       ```
       function greet(name: string | null) {
@@ -134,7 +134,7 @@
       ```
 
 11. What is undefined in TypeScript?
-    + When a variable is declared without initialization, it’s assigned the undefined value. It’s not very useful on its own. A variable is undefined if it’s declared, but no value has been assigned to it. In contrast, null is assigned to a variable, and it represents no value.
+    + `Undefined`: a variable is declared without initialization, it’s assigned the undefined value. It’s not very useful on its own. A variable is undefined if it’s declared, but no value has been assigned to it. In contrast, null is assigned to a variable, and it represents no value.
       ```
       console.log(null == null); // true
       console.log(undefined == undefined); // true
@@ -146,7 +146,7 @@
       ```
 
 12. Explain the purpose of the never type in TypeScript.
-    + As the name suggests, the never type represents the type of values that never occur. For example, a function that never returns a value or that always throws an exception can mark its return type as never.
+    + `Never Type`: the type of values that never occur. For example, a function that never returns a value or that always throws an exception can mark its return type as never.
       ```
       function error(message: string): never {
       throw new Error(message);
@@ -168,7 +168,7 @@
       + A function that throws an error e.g function foo(){throw new Exception('Error message')}
 
 13. Explain how enums work in TypeScript?
-    + Enums allow us to create named constants. It is a simple way to give more friendly names to numeric constant values. An enum is defined by the keyword enum, followed by its name and the members.
+    + `Enums`: allow us to create named constants. It is a simple way to give more friendly names to numeric constant values. An enum is defined by the keyword enum, followed by its name and the members.
     + Consider the following example that defines an enum Team with four values in it.
       ```
       enum Team {
@@ -189,7 +189,7 @@
         ```
 
 14. What is the typeof operator? How is it used in TypeScript?
-    + Similar to JavaScript, the typeof operator in TypeScript returns the type of the operand as a string.
+    + `typeof`: operator in TypeScript returns the type of the operand as a string.
       ```
       console.log(typeof 10);  // "number"
 
@@ -206,7 +206,7 @@
       ```
 
 15. What are the rest parameters and arguments in TypeScript?
-    + A rest parameter allows a function to accept an indefinite number of arguments as an array. It is denoted by the ‘…’ syntax and indicates that the function can accept one or more arguments.
+    + `Rest Parameter`: allows a function to accept an indefinite number of arguments as an array. It is denoted by the ‘…’ syntax and indicates that the function can accept one or more arguments.
       ```
       function add(...values: number[]) {
       let sum = 0;
@@ -216,7 +216,7 @@
       const sum = add(5, 10, 15, 20);
       console.log(sum);  // 50
       ```
-      + In contrast, the rest arguments allow a function caller to provide a variable number of arguments from an array. Consider the following example.
+    + `Rest Arguments`: allow a function caller to provide a variable number of arguments from an array. Consider the following example.
         ```
         const first = [1, 2, 3];
         const second = [4, 5, 6];
@@ -226,7 +226,7 @@
         ```
 
 16. What is parameter destructuring?
-    + Parameter destructing allows a function to unpack the object provided as an argument into one or more local variables.
+    + `Parameter destructing`: allows a function to unpack the object provided as an argument into one or more local variables.
       ```
       function multiply({ a, b, c }: { a: number; b: number; c: number }) {
       console.log(a * b * c);
@@ -272,7 +272,7 @@
         ```
 
 18. Explain the arrow function syntax in TypeScript.
-    + Arrow functions provide a short and convenient syntax to declare functions. They are also called lambdas in other programming languages.
+    + `Arrow functions`: provide a short and convenient syntax to declare functions. They are also called lambdas in other programming languages.
     + Consider a regular function that adds two numbers and returns a number.
       ```
       function add(x: number, y: number): number {
@@ -314,7 +314,7 @@
       ```
 
 20. What is the purpose of the tsconfig.json file?
-    + A tsconfig.json file in a directory marks that directory as the root of a TypeScript project. It provides the compiler options to compile the project.
+    + `tsconfig.json file`: in a directory marks that directory as the root of a TypeScript project. It provides the compiler options to compile the project.
       ```
       {
       "compilerOptions": {
@@ -331,7 +331,7 @@
 
 21. Explain the different variants of the for loop in TypeScript.
     + TypeScript provides the following three ways to loop over collections.
-      + ‘for’ loop:
+      + `‘for’ loop`:
         ```
         let values = [10, "foo", true];
 
@@ -339,7 +339,7 @@
           console.log(values[i]);  // 10, "foo", true
         }
         ```
-      + ‘forEach’ function:
+      + ‘`forEach’ function`:
         ```
         let values = [10, "foo", true];
         values.forEach(val => {
@@ -355,7 +355,7 @@
         ```
 
 22. Explain the symbol type in TypeScript.
-    + Symbols were introduced in ES6 and are supported by TypeScript. Similar to numbers and strings, symbols are primitive types. You can use Symbols to create unique properties for objects.
+    + `Symbols`: introduced in ES6 and are supported by TypeScript. Similar to numbers and strings, symbols are primitive types. You can use Symbols to create unique properties for objects.
       + You can create symbol values by calling the Symbol() constructor, optionally providing a string key.
         ```
         let foo = Symbol();
@@ -371,7 +371,7 @@
         ```
 
 23. Explain how optional chaining works in TypeScript.
-    + Optional chaining allows you to access properties and call methods on them in a chain-like fashion. You can do this using the ‘?.’ operator.
+    + `Optional chaining`: allows you to access properties and call methods on them in a chain-like fashion. You can do this using the ‘?.’ operator.
     + TypeScript immediately stops running some expression if it runs into a ‘null’ or ‘undefined’ value and returns ‘undefined’ for the entire expression chain.
     + Using optional chaining, the following expression
       + `let x = foo === null || foo === undefined ? undefined : foo.bar.baz();`
@@ -379,7 +379,7 @@
         + `let x = foo?.bar.baz();`
 
 24. Provide the TypeScript syntax to create function overloads.
-    + Function overloading allows us to define multiple functions with the same name, as long as their number of parameters or the types of parameters are different.
+    + `Function overloading`: allows us to define multiple functions with the same name, as long as their number of parameters or the types of parameters are different.
     + The following example defines two overloads for the function buildDate. The first overload takes a number as a parameter, whereas the second takes three numbers as parameters. These are called overload signatures.
     + The body of the function also called an implementation signature, follows the overload signatures. You can’t call this signature directly, as it’s not visible from the outside. It should be compatible with the overload signatures.
       ```
@@ -398,7 +398,7 @@
       ```
 
 25. What is meant by type inference?
-    + TypeScript can infer the type of a variable when you don’t provide an explicit type. This is known as type inference. This is usually done when the variables or parameters are initialized during the declaration.
+    + `Type Inference`: TypeScript can infer the type of a variable when you don’t provide an explicit type. This is usually done when the variables or parameters are initialized during the declaration.
     + For example, TypeScript knows that the variable foo is a string, even though we don’t mention string as a type.
       ```
       let foo = "this is a string";
@@ -406,7 +406,7 @@
       ```
 
 26. What is meant by contextual typing?
-    + When the TypeScript compiler uses the location (or context) of a variable to infer its type, it’s called contextual typing.
+    + `Contextual Typing`: when the TypeScript compiler uses the location (or context) of a variable to infer its type.
     + In the following example, TypeScript uses the Window.onmousedown function type information to infer the type of the function expression on the right-hand side of the assignment. This allows it to infer the type of the e parameter, which does have a button property but not a property named foo.
       ```
       window.onmousedown = function (e) {
@@ -416,7 +416,7 @@
       ```
 
 27. What is the purpose of noImplicitAny?
-    + Usually, when we don’t provide any type on a variable, TypeScript assumes ‘any’ type. For example, TypeScript compiles the following code, assuming the parameter ‘s’ is of any type. It works as long as the caller passes a string.
+    + `noImplicitAny`: usually, when we don’t provide any type on a variable, TypeScript assumes ‘any’ type. For example, TypeScript compiles the following code, assuming the parameter ‘s’ is of any type. It works as long as the caller passes a string.
       ```
       function parse(s) {
       console.log(s.split(' '));
@@ -439,7 +439,7 @@
       ```
 
 28. What is an interface?
-    + An interface defines a contract by specifying the type of data an object can have and its operations. In TypeScript, you can specify an object’s shape by creating an interface and using it as its type. It’s also called “duck typing”.
+    + `interface`: defines a contract by specifying the type of data an object can have and its operations. In TypeScript, you can specify an object’s shape by creating an interface and using it as its type. It’s also called “duck typing”.
     + In TypeScript, you can create and use an interface as follows:
       ```
       interface Employee {
@@ -462,9 +462,9 @@
 
 29. Explain the various ways to control member visibility in TypeScript.
     + TypeScript provides three keywords to control the visibility of class members, such as properties or methods.
-      + `public`: You can access a public member anywhere outside the class. All class members are public by default.
-      + `protected`: A protected member is visible only to the subclasses of the class containing that member. Outside code that doesn’t extend the container class can’t access a protected member.
-      + `private`: A private member is only visible inside the class. No outside code can access the private members of a class.
+      + `public`: can access a public member anywhere outside the class. All class members are public by default.
+      + `protected`: visible only to the subclasses of the class containing that member. Outside code that doesn’t extend the container class can’t access a protected member.
+      + `private`: only visible inside the class. No outside code can access the private members of a class.
 
 30. Does TypeScript support static classes? If not, why?
     + TypeScript doesn’t support static classes, unlike the popular object-oriented programming languages like C# and Java.
@@ -472,7 +472,7 @@
     + In TypeScript, you can create any data and functions as simple objects without creating a containing class. Hence TypeScript doesn’t need static classes. A singleton class is just a simple object in TypeScript.
 
 31. What are abstract classes? When should you use one?
-    + Abstract classes are similar to interfaces in that they specify a contract for the objects, and you cannot instantiate them directly. However, unlike interfaces, an abstract class may provide implementation details for one or more of its members.
+    + `Abstract classes`: similar to interfaces in that they specify a contract for the objects, and you cannot instantiate them directly. However, unlike interfaces, an abstract class may provide implementation details for one or more of its members.
     + An abstract class marks one or more of its members as abstract. Any classes that extend an abstract class have to provide an implementation for the abstract members of the superclass.
     + Here is an example of an abstract class Writer with two member functions. The write() method is marked as abstract, whereas the greet() method has an implementation. Both the FictionWriter and RomanceWriter classes that extend from Writer have to provide their specific implementation for the write method.
       ```
@@ -506,7 +506,7 @@
       ```
 
 32. What are anonymous functions? Provide their syntax in TypeScript.
-    + An anonymous function is a function without a name. Anonymous functions are typically used as callback functions, i.e., they are passed around to other functions, only to be invoked by the other function at a later point in time. For example:
+    + `Anonymous function`: a function without a name. Anonymous functions are typically used as callback functions, i.e., they are passed around to other functions, only to be invoked by the other function at a later point in time. For example:
       ```
       setTimeout(function () {
         console.log('Run after 2 seconds')
@@ -519,7 +519,7 @@
       ```
 
 33. What are union types in TypeScript?
-    + A union type is a special construct in TypeScript that indicates that a value can be one of several types. A vertical bar (|) separates these types.
+    + `Union Type`: a special construct in TypeScript that indicates that a value can be one of several types. A vertical bar (|) separates these types.
     + Consider the following example where the variable value belongs to a union type consisting of strings and numbers. The value is initialized to string “Foo”. Because it can only be a string or a number, we can change it to a number later, and the TypeScript compiler doesn’t complain.
       ```
       let value: string | number = "Foo";
@@ -530,7 +530,7 @@
     + Union types allow you to create new types out of existing types. This removes a lot of boilerplate code as you don’t have to create new classes and type hierarchies.
 
 34. What are intersection types?
-    + Intersection types let you combine the members of two or more types by using the ‘&’ operator. This allows you to combine existing types to get a single type with all the features you need.
+    + `Intersection types`: combine the members of two or more types by using the ‘&’ operator. This allows you to combine existing types to get a single type with all the features you need.
     + The following example creates a new type Supervisor that has the members of types Employee and Manager.
       ```
       interface Employee {
@@ -548,7 +548,7 @@
       ```
 
 35. What are type aliases? How do you create one?
-    + Type aliases give a new, meaningful name for a type. They don’t create new types but create new names that refer to that type.
+    + `Type aliases`: give a new, meaningful name for a type. They don’t create new types but create new names that refer to that type.
     + For example, you can alias a union type to avoid typing all the types everywhere that value is being used.
       ```
       type alphanumeric = string | number;
@@ -557,7 +557,7 @@
       ```
 
 36. Explain the tuple types in TypeScript.
-    + Tuples are a special type in TypeScript. They are similar to arrays with a fixed number of elements with a known type. However, the types need not be the same.
+    + `Tuples`: a special type in TypeScript. They are similar to arrays with a fixed number of elements with a known type. However, the types need not be the same.
       ```
       // Declare a tuple type and initialize it
       let values: [string, number] = ["Foo", 15];
@@ -581,28 +581,28 @@
         + `emp_name = true;  // Type 'boolean' is not assignable to type 'string'.(2322)`
 
 38. What are type assertions in TypeScript?
-    + Sometimes, you as a programmer might know more about the type of a variable than TypeScript can infer. Usually, this happens when you know the type of an object is more specific than its current type. In such cases, you can tell the TypeScript compiler not to infer the type of the variable by using type assertions.
+   + `Type assertions`: similar to typecasting in other programming languages such as C# or Java. However, unlike those languages, there’s no runtime penalty of boxing and unboxing variables to fit the types. Type assertions simply let the TypeScript compiler know the type of the variable.
+   + Sometimes, you as a programmer might know more about the type of a variable than TypeScript can infer. Usually, this happens when you know the type of an object is more specific than its current type. In such cases, you can tell the TypeScript compiler not to infer the type of the variable by using type assertions.
     + TypeScript provides two forms to assert the types.
-      + as syntax:
+      + `as syntax`:
         ```
         let value: unknown = "Foo";
         let len: number = (value as string).length;
         ```
-      + <> syntax:
+      + `<> syntax`:
         ```
         let value: unknown = "Foo";
         let len: number = (<string>value).length;
         ```
-    + Type assertions are similar to typecasting in other programming languages such as C# or Java. However, unlike those languages, there’s no runtime penalty of boxing and unboxing variables to fit the types. Type assertions simply let the TypeScript compiler know the type of the variable.
 
-39. How to enforce strict null checks in TypeScript?
-    + Null pointers are one of the most common sources of unexpected runtime errors in programming. TypeScript helps you avoid them to a large degree by enforcing strict null checks.
+39. How do you enforce strict null checks in TypeScript?
+    + `Null pointers`: one of the most common sources of unexpected runtime errors in programming. TypeScript helps you avoid them to a large degree by enforcing strict null checks.
     + You can enforce strict null checks in two ways:
       + providing the --strictNullChecks flag to the TypeScript (tsc) compiler
       + setting the strictNullChecks property to true in the tsconfig.json configuration file.
     + When the flag is false, TypeScript ignores null and undefined values in the code. When it is true, null and undefined have their distinct types. The compiler throws a type error if you try to use them where a concrete value is expected.
 
-40. How to make object properties immutable in TypeScript? (hint: readonly)
+40. How do you make object properties immutable in TypeScript? (hint: readonly)
     + You can mark object properties as immutable by using the readonly keyword before the property name. For example:
       ```
       interface Coordinate {
@@ -617,18 +617,18 @@
       ```
 
 41. What is a type declaration file?
+    + `Type Declaration file`: a text file ending with a .d.ts extension providing a way to declare the existence of some types or values without actually providing implementations for those values. It contains the type declarations but doesn’t have any source code. It doesn’t produce a .js file after compilation.
     + A typical TypeScript project references other third-party TypeScript libraries such as JQuery to perform routine tasks. Having type information for the library code helps you in coding by providing detailed information about the types, method signatures, etc., and provides IntelliSense.
-    + A type declaration file is a text file ending with a .d.ts extension providing a way to declare the existence of some types or values without actually providing implementations for those values. It contains the type declarations but doesn’t have any source code. It doesn’t produce a .js file after compilation.
 
 42. What are triple-slash directives?
-    + Triple-slash directives are single-line comments that contain a single XML tag. TypeScript uses this XML tag as a compiler directive.
+    + `Triple-slash directives`: single-line comments that contain a single XML tag. TypeScript uses this XML tag as a compiler directive.
     + You can only place a triple-slash directive at the top of the containing file. Only single or multi-line comments can come before a triple-slash directive. TypeScript treats them as regular comments if it occurs in the middle of a code block, after a statement.
     + The primary use of triple-slash directives is to include other files in the compilation process. For example, the following directive instructs the compiler to include a file specified by the path in the containing TypeScript file.
       + `/// <reference path="..." />`
     + Triple-slash directives also order the output when using --out or --outFile. The output files are produced to the output file location in the same order as the input files.
 
 43. Explain the purpose of the ‘in’ operator.
-    + The in operator is used to find if a property is in the specified object. It returns true if the property belongs to the object. Otherwise, it returns false.
+    + `in operator`: used to find if a property is in the specified object. It returns true if the property belongs to the object. Otherwise, it returns false.
       ```
       const car = { make: 'Hyundai', model: 'Elantra', year: 2017 };
       console.log('model' in car);  // true
@@ -636,7 +636,7 @@
       ```
 
 44. What are the ‘implements’ clauses in TypeScript?
-    + An implements clause is used to check that a class satisfies the contract specified by an interface. If a class implements an interface and doesn’t implement that interface, the TypeScript compiler issues an error.
+    + `implements clause`: used to check that a class satisfies the contract specified by an interface. If a class implements an interface and doesn’t implement that interface, the TypeScript compiler issues an error.
       ```
       interface Runnable {
       run(): void;
@@ -683,7 +683,7 @@
     + String literal types can help us spell-check the string values.
 
 46. What are template literal types?
-    + Template literal types are similar to the string literal types. You can combine them with concrete, literal types to produce a new string literal type. Template literal types allow us to use the string literal types as building blocks to create new string literal types.
+    + `Template literal types`: similar to the string literal types. You can combine them with concrete, literal types to produce a new string literal type. Template literal types allow us to use the string literal types as building blocks to create new string literal types.
       ```
       type Point = "GraphPoint";
 
@@ -700,7 +700,7 @@
       ```
 
 47. Explain the concept of inheritance in TypeScript.
-    + Inheritance allows a class to extend another class and reuse and modify the behavior defined in the other class. The class which inherits another class is called the derived class, and the class getting inherited is called the base class.
+    + `Inheritance`: allows a class to extend another class and reuse and modify the behavior defined in the other class. The class which inherits another class is called the derived class, and the class getting inherited is called the base class.
     + In TypeScript, a class can only extend one class. TypeScript uses the keyword ‘extends’ to specify the relationship between the base class and the derived classes.
       ```
       class Rectangle {
@@ -735,12 +735,12 @@
       + In the above example, because the class Square extends functionality from Rectangle, we can create an instance of square and call both the area() and volume() methods.
 
 48. What are conditional types? How do you create them?
-    + A conditional type allows you to dynamically select one of two possible types based on a condition. The condition is expressed as a type relationship test.
+    + `Conditional type`: allows you to dynamically select one of two possible types based on a condition. The condition is expressed as a type relationship test.
       + `C extends B ? TypeX : TypeY`
         + Here, if type C extends B, the value of the above type is TypeX. Otherwise, it is TypeY.
 
 49. What is the Function type in TypeScript?
-    + Function is a global type in TypeScript. It has properties like bind, call, and apply, along with the other properties present on all function values.
+    + `Function`: is a global type in TypeScript. It has properties like bind, call, and apply, along with the other properties present on all function values.
       ```
       function perform(fn: Function) {
         fn(10);

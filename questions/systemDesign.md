@@ -3,21 +3,21 @@
 ---
 
 1. What is Consistency-Availability-Partition Tolerance (CAP) theorem?
-   + `Consistency-Availability-Partition Tolerance (CAP)`: theorem says that a distributed system cannot guarantee C, A and P simultaneously. It can at max provide any 2 of the 3 guarantees. Let us understand this with the help of a distributed database system.
-     + `Consistency`: This states that the data has to remain consistent after the execution of an operation in the database. For example, post database updation, all queries should retrieve the same result.
-     + `Availability`: The databases cannot have downtime and should be available and responsive always.
-     + `Partition Tolerance`: The database system should be functioning despite the communication becoming unstable.
+   + `Consistency-Availability-Partition Tolerance (CAP) theorem`: a distributed system cannot guarantee C, A and P simultaneously. It can at max provide any 2 of the 3 guarantees. Let us understand this with the help of a distributed database system.
+     + `Consistency`: states that the data has to remain consistent after the execution of an operation in the database. For example, post database updation, all queries should retrieve the same result.
+     + `Availability`: the databases cannot have downtime and should be available and responsive always.
+     + `Partition Tolerance`: the database system should be functioning despite the communication becoming unstable.
    + The following image represents what databases guarantee what aspects of the CAP Theorem simultaneously. We see that RDBMS databases guarantee consistency and Availability simultaneously. Redis, MongoDB, Hbase databases guarantee Consistency and Partition Tolerance. Cassandra, CouchDB guarantees Availability and Partition Tolerance.
      ![cap](../images/system-design/cap.png)
 
 2. How is Horizontal scaling different from Vertical scaling?
-   + `Horizontal scaling`: refers to the addition of more computing machines to the network that shares the processing and memory workload across a distributed network of devices. In simple words, more instances of servers are added to the existing pool and the traffic load is distributed across these devices in an efficient manner.
-   + `Vertical scaling`: refers to the concept of upgrading the resource capacity such as increasing RAM, adding efficient processors etc of a single machine or switching to a new machine with more capacity. The capability of the server can be enhanced without the need for code manipulation.
+   + `Horizontal scaling`: the addition of more computing machines to the network that shares the processing and memory workload across a distributed network of devices. In simple words, more instances of servers are added to the existing pool and the traffic load is distributed across these devices in an efficient manner.
+   + `Vertical scaling`: the concept of upgrading the resource capacity such as increasing RAM, adding efficient processors etc of a single machine or switching to a new machine with more capacity. The capability of the server can be enhanced without the need for code manipulation.
    ![scaling image](../images/system-design/scaling_image.png)
    ![scaling table](../images/system-design/scaling_table.png)
 
 3. What do you understand by load balancing? Why is it important in system design?
-   + `Load balancing`: refers to the concept of distributing incoming traffic efficiently across a group of various backend servers. These servers are called server pools. Modern-day websites are designed to serve millions of requests from clients and return the responses in a fast and reliable manner. In order to serve these requests, the addition of more servers is required. In such a scenario, it is essential to distribute request traffic efficiently across each server so that they do not face undue loads. Load balancer acts as a traffic police cop facing the requests and routes them across the available servers in a way that not a single server is overwhelmed which could possibly degrade the application performance.
+   + `Load balancing`: the concept of distributing incoming traffic efficiently across a group of various backend servers. These servers are called server pools. Modern-day websites are designed to serve millions of requests from clients and return the responses in a fast and reliable manner. In order to serve these requests, the addition of more servers is required. In such a scenario, it is essential to distribute request traffic efficiently across each server so that they do not face undue loads. Load balancer acts as a traffic police cop facing the requests and routes them across the available servers in a way that not a single server is overwhelmed which could possibly degrade the application performance.
      ![load balancing](../images/system-design/load_balancing.png)
    + When a server goes down, the load balancer redirects traffic to the remaining available servers. When a new server gets added to the configuration, the requests are automatically redirected to it. Following are the benefits of load balancers:
      + They help to prevent requests from going to unhealthy or unavailable servers.
@@ -28,44 +28,44 @@
 
 4. What do you understand by Latency, throughput, and availability of a system?
    + Performance is an important factor in system design as it helps in making our services fast and reliable. Following are the three key metrics for measuring the performance:
-     + `Latency`: This is the time taken in milliseconds for delivering a single message.
-     + `Throughput`: This is the amount of data successfully transmitted through a system in a given amount of time. It is measured in bits per second.
-     + `Availability`: This determines the amount of time a system is available to respond to requests. It is calculated: System Uptime / (System Uptime+Downtime).
+     + `Latency`: the time taken in milliseconds for delivering a single message.
+     + `Throughput`: the amount of data successfully transmitted through a system in a given amount of time. It is measured in bits per second.
+     + `Availability`: determines the amount of time a system is available to respond to requests. It is calculated: System Uptime / (System Uptime+Downtime).
 
 5. What is Sharding?
-   + `Sharding`: is a process of splitting the large logical dataset into multiple databases. It also refers to horizontal partitioning of data as it will be stored on multiple machines. By doing so, a sharded database becomes capable of handling more requests than a single large machine. Consider an example - in the following image, assume that we have around 1TB of data present in the database, when we perform sharding, we divide the large 1TB data into smaller chunks of 256GB into partitions called shards.
+   + `Sharding`: a process of splitting the large logical dataset into multiple databases. It also refers to horizontal partitioning of data as it will be stored on multiple machines. By doing so, a sharded database becomes capable of handling more requests than a single large machine. Consider an example - in the following image, assume that we have around 1TB of data present in the database, when we perform sharding, we divide the large 1TB data into smaller chunks of 256GB into partitions called shards.
      ![sharding](../images/system-design/sharding.png)
    + Sharding helps to scale databases by helping to handle the increased load by providing increased throughput, storage capacity and ensuring high availability.
 
 6. How is NoSQL database different from SQL databases?
-![NoSQL vs SQL](../images/system-design/nosql_sql.png)
+  ![NoSQL vs SQL](../images/system-design/nosql_sql.png)
 
 7. How is sharding different from partitioning?
-   + `Database Sharding`: Sharding is a technique for dividing a single dataset among many databases, allowing it to be stored across multiple workstations. Larger datasets can be divided into smaller parts and stored in numerous data nodes, boosting the system’s total storage capacity. A sharded database, similarly, can accommodate more requests than a single system by dividing the data over numerous machines. Sharding, also known as horizontal scaling or scale-out, is a type of scaling in which more nodes are added to distribute the load. Horizontal scaling provides near-limitless scalability for handling large amounts of data and high-volume tasks.
-   + `Database Partitioning`: Partitioning is the process of separating stored database objects (tables, indexes, and views) into distinct portions. Large database items are partitioned to improve controllability, performance, and availability. Partitioning can enhance performance when accessing partitioned tables in specific instances. Partitioning can act as a leading column in indexes, reducing index size and increasing the likelihood of finding the most desired indexes in memory. When a large portion of one area is used in the resultset, scanning that region is much faster than accessing data scattered throughout the entire table by index. Adding and deleting sections allows for large-scale data uploading and deletion, which improves performance. Data that are rarely used can be uploaded to more affordable data storage devices.
+   + `Database Sharding`: a technique for dividing a single dataset among many databases, allowing it to be stored across multiple workstations. Larger datasets can be divided into smaller parts and stored in numerous data nodes, boosting the system’s total storage capacity. A sharded database, similarly, can accommodate more requests than a single system by dividing the data over numerous machines. Sharding, also known as horizontal scaling or scale-out, is a type of scaling in which more nodes are added to distribute the load. Horizontal scaling provides near-limitless scalability for handling large amounts of data and high-volume tasks.
+   + `Database Partitioning`: the process of separating stored database objects (tables, indexes, and views) into distinct portions. Large database items are partitioned to improve controllability, performance, and availability. Partitioning can enhance performance when accessing partitioned tables in specific instances. Partitioning can act as a leading column in indexes, reducing index size and increasing the likelihood of finding the most desired indexes in memory. When a large portion of one area is used in the resultset, scanning that region is much faster than accessing data scattered throughout the entire table by index. Adding and deleting sections allows for large-scale data uploading and deletion, which improves performance. Data that are rarely used can be uploaded to more affordable data storage devices.
    ![sharding vs partitioning](../images/system-design/sharding_partitioning.png)
 
 8. How is performance and scalability related to each other?
    + A system is said to be scalable if there is increased performance is proportional to the resources added. Generally, performance increase in terms of scalability refers to serving more work units. But this can also mean being able to handle larger work units when datasets grow. If there is a performance problem in the application, then the system will be slow only for a single user. But if there is a scalability problem, then the system may be fast for a single user but it can get slow under heavy user load on the application.
 
 9.  What is Caching? What are the various cache update strategies available in caching?
-    + `Caching`: refers to the process of storing file copies in a temporary storage location called cache which helps in accessing data more quickly thereby reducing site latency. The cache can only store a limited amount of data. Due to this, it is important to determine cache update strategies that are best suited for the business requirements. Following are the various caching strategies available:
-      + `Cache-aside`: In this strategy, our application is responsible to write and read data from the storage. Cache interaction with the storage is not direct. Here, the application looks for an entry in the cache, if the result is not found, then the entry is fetched from the database and is added to the cache for further use. Memcached is an example of using this update strategy
+    + `Caching`: the process of storing file copies in a temporary storage location called cache which helps in accessing data more quickly thereby reducing site latency. The cache can only store a limited amount of data. Due to this, it is important to determine cache update strategies that are best suited for the business requirements. Following are the various caching strategies available:
+      + `Cache-aside`: our application is responsible to write and read data from the storage. Cache interaction with the storage is not direct. Here, the application looks for an entry in the cache, if the result is not found, then the entry is fetched from the database and is added to the cache for further use. Memcached is an example of using this update strategy
         ![cache aside](../images/system-design/caching.png)
         + Cache-aside strategy is also known as lazy loading because only the requested entry will be cached thereby avoiding unnecessary caching of the data. Some of the disadvantages of this strategy are:
           + In cases of a cache miss, there would be a noticeable delay as it results in fetching data from the database and then caching it.
           + The chances of data being stale are more if it is updated in the database. This can be reduced by defining the time-to-live parameter which forces an update of the cache entry.
           + When a cache node fails, it will be replaced by a new, empty node which results in increased latency.
-          + `Write-through`: In this strategy, the cache will be considered as the main data store by the system and the system reads and writes data into it. The cache then updates the database accordingly as shown in the database.
+          + `Write-through`: the cache will be considered as the main data store by the system and the system reads and writes data into it. The cache then updates the database accordingly as shown in the database.
             ![cache write-through](../images/system-design/caching_write_through.png)
             + The system adds or updates the entry in the cache.
             + The cache synchronously writes entries to the database. This strategy is overall a slow operation because of the synchronous write operation. However, the subsequent reads of the recently written data will be very fast. This strategy also ensures that the cache is not stale. But, there are chances that the data written in the cache might never be read. This issue can be reduced by providing appropriate TTL.
-          + `Write-behind (write-back)`: In this strategy, the application does the following steps:
+          + `Write-behind (write-back)`: the application does the following steps:
             + Add or update an entry in the cache
             + Write the entry into the data store asynchronously for improving the write performance. This is demonstrated in the image below:
               ![cache write-behind](../images/system-design/caching_write_behind.png)
             + The main disadvantage of this method is that there are chances of data loss if the cache goes down before the contents of the cache are written into the database.
-          + `Refresh-ahead`: Using this strategy, we can configure the cache to refresh the cache entry automatically before its expiration.
+          + `Refresh-ahead`: we can configure the cache to refresh the cache entry automatically before its expiration.
             ![refresh ahead](../images/system-design/caching_refresh_ahead.png)
             + This cache strategy results in reduced latency if it can predict accurately what items are needed in future.
 
@@ -75,8 +75,8 @@
       + `Eventual consistency`: Post data write, the reads will eventually see the latest data within milliseconds. Here, the data is replicated asynchronously. These are seen in DNS and email systems. This works well in highly available systems.
       + `Strong consistency`: After a data write, the subsequent reads will see the latest data. Here, the data is replicated synchronously. This is seen in RDBMS and file systems and are suitable in systems requiring transactions of data.
 
-11. What do you understand by Content delivery network?
-    + Content delivery network or in short CDN is a globally distributed proxy server network that serves content from locations close by to the end-users. Usually, in websites, static files like HTML, CSS, JS files, images and videos are served from CDN.
+11. What do you understand by Content Delivery Network (CDN)?
+    + `Content Delivery Network (CDN)`: a globally distributed proxy server network that serves content from locations close by to the end-users. Usually, in websites, static files like HTML, CSS, JS files, images and videos are served from CDN.
     + Using CDN in delivering content helps to improve performance:
       + Since users receive data from centres close to them as shown in the image below, they don't have to wait for long.
         ![cdn](../images/system-design/cdn.png)
@@ -94,11 +94,11 @@
     + The primary objective of system design interviews is to evaluate how well a developer can plan, prioritize, evaluate various options to choose the best possible solution for a given problem.
 
 14. What are some of the design issues in distributed systems?
-    + `Heterogeneity`: The Internet allows applications to run over a heterogeneous collection of computers and networks. There would be different types of networks and the differences are masked by the usage of standard Internet protocols for communicating with each other. This becomes an issue while designing distributed applications
-    + `Openness`: Openness represents the measure by which a system can be extended and re-implemented in different ways. In distributed systems, it specifies the degree to which new sharing services can be added and made available for client usage.
-    + `Security`: The information maintained in distributed systems need to be secure as they are valuable to the users. The confidentiality, availability and integrity of the distributed systems have to be maintained and this sometimes becomes a challenge.
-    + `Scalability`: A system is scalable if it remains effective when there is a significant increase in the request traffic and resources. Designing a distributed system involves planning well in advance how well the system can be made scalable under varying user loads.
-    + `Failure Handling`: In a distributed environment, the failures are partial, meaning if some components fail, others would still function. It becomes challenging to handle these failures as it involves identifying right components where the failures occur.
+    + `Heterogeneity`: the Internet allows applications to run over a heterogeneous collection of computers and networks. There would be different types of networks and the differences are masked by the usage of standard Internet protocols for communicating with each other. This becomes an issue while designing distributed applications
+    + `Openness`: the measure by which a system can be extended and re-implemented in different ways. In distributed systems, it specifies the degree to which new sharing services can be added and made available for client usage.
+    + `Security`: the information maintained in distributed systems need to be secure as they are valuable to the users. The confidentiality, availability and integrity of the distributed systems have to be maintained and this sometimes becomes a challenge.
+    + `Scalability`: a system is scalable if it remains effective when there is a significant increase in the request traffic and resources. Designing a distributed system involves planning well in advance how well the system can be made scalable under varying user loads.
+    + `Failure Handling`: the failures are partial, meaning if some components fail, others would still function. It becomes challenging to handle these failures as it involves identifying right components where the failures occur.
 
 15. Design a global chat service like Whatsapp or a facebook messenger.
     + What are some of the required features?
@@ -195,8 +195,8 @@
         + Should the limiter notify the user if the requests are blocked?
         + The limiter should handle traffic suitable according to the scale.
       + What are some of the common problems encountered?
-        + How to measure the requests per given time?
-        + How to design the rate limiter for the distributed systems when compared to a local system?
+        + How do you measure the requests per given time?
+        + How do you design the rate limiter for the distributed systems when compared to a local system?
       + Possible tips for consideration:
         + Evaluate the usage of sliding time windows for avoiding hourly resets.
         + Try using a counter integer instead of a request for saving space.
@@ -208,7 +208,7 @@
     + What are some of the common problems encountered?
       + Where to store the files?
       + How can you handle updates? Should the files be re-uploaded or does just the modified version has to be updated?
-      + How to handle updation of two documents at the same time?
+      + How do you handle updation of two documents at the same time?
     + Possible tips for consideration:
       + Consider using chunking for splitting files into multiple sections for supporting re-uploads of a particular section rather than the whole file.
       + Make use of cloud storage for storing the files.
@@ -220,8 +220,8 @@
         + The system has to display n number of suggestions (say 5, for example) based on the written query.
         + The suggestions have to be updated based on the query updation.
       + What are some of the common problems encountered?
-        + How to update the suggestions without much latency?
-        + How to determine the most likely suggestion?
+        + How do you update the suggestions without much latency?
+        + How do you determine the most likely suggestion?
         + Are the suggestions adapting to the user’s search results?
         + When do the suggestions appear? Is it updated on the fly or once the user stops writing?
       + Possible tips for consideration:
@@ -249,7 +249,7 @@
         + Design algorithm to calculate the win and loss results.
       + What are some of the common problems encountered?
         + What happens if both players play optimally?
-        + How to decide the winning strategy?
+        + How do you decide the winning strategy?
       + Possible tips for consideration:
         + If one player is a computer, then make use of the rand() method for ensuring moves are completely random.
 
@@ -269,8 +269,8 @@
         + Design and develop a Scalable service for collecting information from the entire web and fetching millions of web documents.
         + Fresh data has to be fetched for every search query.
       + What are some of the common problems encountered?
-        + How to handle the updates when users are typing very fast?
-        + How to prioritize dynamically changing web pages?
+        + How do you handle the updates when users are typing very fast?
+        + How do you prioritize dynamically changing web pages?
       + Possible tips for consideration:
         + Look into URL Frontier Architecture for implementing this system.
         + Know how crawling is different from scraping.
@@ -292,8 +292,8 @@
       + Should have the capability of assigning rides that lets the user reach the destination fast.
       + Show the ETA (Estimated Time of Arrival) of the driver after booking the ride and once the ride has been started, show the ETA of the vehicle arriving at the destination.
     + What are some of the common problems encountered?
-      + How to store geographical locations for drivers always on move?
-      + How to assign drivers to the customers efficiently?
+      + How do you store geographical locations for drivers always on move?
+      + How do you assign drivers to the customers efficiently?
       + How do you calculate the ETA of the driver arrival or the destination arrival?
     + Possible tips for consideration:
       + Make use of the microservices concept with fast databases for booking rides faster.
