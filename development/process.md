@@ -5,10 +5,10 @@
 ## Seven Stages of Software Development Lifecycle (SDLC)
 ### 1. Analysis and Planning
 + Once a customer or stakeholder has requested a project, the first step of the SDLC is planning. This usually means looking into:
-  + Alignment: How does this project connect to your company’s larger mission and goals?
-  + Resource availability and allocation: Do you have the people and tools you need to take this on? Or do you need to hire a new development team?
-  + Project scheduling: How does this project fit within your company’s goals and other tasks?
-  + Cost estimation: How much is it going to cost?
+  + `Alignment`: How does this project connect to your company’s larger mission and goals?
+  + `Resource availability and allocation`: Do you have the people and tools you need to take this on? Or do you need to hire a new development team?
+  + `Project scheduling`: How does this project fit within your company’s goals and other tasks?
+  + `Cost estimation`: How much is it going to cost?
 + The planning phase ensures you’re starting off on the right foot. So try to make sure you include all of the departments that are going to be impacted by this project, including project managers, developers, operations, security, and key stakeholders.
 + At the end of the planning phase, you should have enough information to put together a high-level scope of work (SOW)—a plan that details what’s being built, why, and how you see it coming together.
 
@@ -49,10 +49,10 @@
 ## Five Software Development Processes
 ### 1. Waterfall
 ![waterfall image](../images/development-process/waterfall.png)
-+ What it is:
++ `What it is`:
   + The Waterfall software development process (also known as the “linear sequential model” or “Classic lifecycle model”) is one of the oldest and most traditional models for building software. In its most basic form, you can think of the Waterfall method as following each step of the SDLC in sequence–you have to finish each one sequentially before moving on. However, in most practical applications the phases overlap slightly, with feedback and information being passed between them.
   + Some people also like to call this a “plan-driven” process as in order to complete a project, you first need to know everything that needs to be done and in what order. Hence the name “Waterfall” as each section flows into the next one.
-+ Phases:
++ `Phases`:
   + Planning
   + Requirements
   + System and software design
@@ -60,62 +60,62 @@
   + Testing
   + Deployment
   + Maintenance/Updates
-+ Who it's for:
++ `Who it's for`:
   + Teams with rigid structures and documentation needs.
   + Due to its rigid structure and big up-front planning time, the Waterfall software development process works best when your goals, requirements, and technology stack are unlikely to radically change during the development process (such as during shorter one-off projects).
   + In more practical terms, the Waterfall process is best suited for larger organizations (like government agencies) that require sign-offs and documentation on all requirements and scope before a project starts.
-+ Who it's not for:
++ `Who it's not for`:
   + If you’re testing a new product, need user feedback mid-stream, or want to be more dynamic in your development process, following the Waterfall development process probably isn’t right for you.
   + While straightforward, this process’s biggest drawback is that it lacks flexibility. You won’t be creating and testing MVPs or prototypes and changing your mind along the way. And because of this, unless your scope is tightly written, you might end up committing to the wrong path without knowing it until launch day.
 
 ### 2. Agile and Scrum
 ![agile and scrum image](../images/development-process/agile_scrum.png)
-+ What it is:
++ `What it is`:
   + The Agile software development process (and its most popular methodology, Scrum) opt for an iterative and dynamic approach to development.
   + As opposed to the Waterfall process’ strict, sequential flow, in Agile, cross-functional teams work in “Sprints” of 2 weeks to 2 months to build and release usable software to customers for feedback.
   + Agile is all about moving fast, releasing often, and responding to the real needs of your users, even if it goes against what’s in your initial plan. This means you don’t need a full list of requirements and a complete SOW before starting work. Instead, you’re essentially moving in one direction with the understanding that you’ll change course along the way.
   + There’s a lot more to Agile than just this (which we cover in this Guide to implementing Agile and Scrum). However, here’s a simple example of how it might look in practice. Let’s say you’re building a new feature for one of your products that could have X, Y, and Z features. Rather than spend months building everything, you would spend 2-4 weeks creating the bare minimum that is both useful and usable (in what’s called an “Agile Sprint”) and then release it to your customers.
-+ Phases:
++ `Phases`:
   + Product Backlog
   + Sprint backlog
   + Sprint (Design & Develop)
   + Release working software
   + Feedback and validation (add to backlog)
   + Plan next sprint
-+ Who it's for:
++ `Who it's for`:
   + Dynamic teams doing continuous updates to products.
   + Thanks to its dynamic and user-focused nature, Agile is the software development process favored by most startups and technology companies testing new products or doing continuous updates to long-standing ones.
   + As it becomes easier to do small releases and gather user feedback, Agile allows companies to move faster and test theories without risking their entire livelihood on a major release their users hate. Also, as testing takes place after each small iteration, it’s easier to track bugs or roll back to a previous product version if something more serious is broken.
-+ Who it's not for:
++ `Who it's not for`:
   + Team's with extremely tight budgets and timelines.
   + On the flipside, Agile’s dynamic nature means projects can easily go over their initial timeframe or budget, create conflicts with existing architecture, or get derailed by mismanagement. This means it’s not the best choice for risk-averse or resource-strapped teams.
   + Additionally, using Agile and Scrum takes dedication and a solid understanding of the underlying process to pull off properly. Which is why it’s important to have at least one dedicated Scrum master on your team to make sure sprints and milestones are being hit and the project doesn’t stall out.
 
 ### 3. Incremental and Iterative
-+ What it is:
++ `What it is`:
   + The incremental and iterative software development processes are a middle-ground between the structure and upfront planning of the Waterfall process and the flexibility of Agile.
   + While both follow the idea of creating small bits of software and exposing them to users for feedback, they differ in what you create during each release.
 ![incremental image](../images/development-process/incremental.png)
   + In the Incremental software development process, each “incremental” increase of the product adds a simple form of a new function or feature. Think of it like coming up with an overall plan, building an MVP with only the core functionality, and then adding features based on feedback.
 ![iterative image](../images/development-process/iterative.png)
   + In the Iterative software development process, however, each version you release includes a version of all your planned features. Think of it like building a v0.1 with the most simple version of each feature and then upgrading it across the board in v0.2, v0.3, and so on.
-+ Incremental Phases:
++ `Incremental Phases`:
   + Increment Planning
     + Specifications
     + Development
     + Validation
   + Repeat for each version
-+ Iterative Phases:
++ `Iterative Phases`:
   + Analysis
   + Design
   + Development
   + Testing (Repeat these until you’re ready to release)
-+ Who it's for:
++ `Who it's for`:
   + Teams with clear requirement who want more flexibility than the Waterfall method provides.
   + Both of these add a certain level of flexibility to your software development process without throwing an overall plan out the window, making them ideal for large projects with defined scopes (or teams with less risk tolerance).
   + With the incremental process, you get early feedback on your core feature, which can help you validate your business case right away. Whereas the iterative approach gives users an early look at what the full product could be so you’re able to get better and more focused feedback.
   + In both cases, you’re talking to users early on about what they actually want, which can save you tons of time, money, and headaches than if you waited until later in the development cycle.
-+ Who it's not for:
++ `Who it's not for`:
   + Team's without a clear long-term technology plan.
   + Unfortunately, trying to add structure to a flexible approach has its own issues. Maybe your company’s goals, procedures, or technologies change over time, making previous iterations useless or broken. Or perhaps your codebase gets messy and bloated due to adding functionality without looking for efficiencies.
   + Additionally, both of these models (and the iterative approach especially) require heavy planning and architecture-building early on. Meaning they aren’t ideal for smaller projects or teams who are still testing out use-cases and trying to find product-market fit.
@@ -126,10 +126,10 @@
 
 ### 4. V-Shaped
 ![v-shaped image](../images/development-process/v_shaped.png)
-+ What it is:
++ `What it is`:
   + The V-shaped software development process is a take on the classic Waterfall method that makes up for its biggest downfall: A lack of testing.
   + Rather than work sequentially through the development process and save all your testing for the end, each stage of the V-shaped process is followed by a strict “validation and verification” step where requirements are tested before moving on.
-+ Phases:
++ `Phases`:
   + Requirements
   + Specifications
   + High-level design
@@ -139,28 +139,28 @@
   + Integration testing
   + System testing
   + Acceptance testing
-+ Who it's for:
++ `Who it's for`:
   + Teams working on smaller projects with a tight scope.
   + The V-shaped software development process is great if you’ve got a small project with relatively clear (and static) requirements and scope. Instead of running the risk of following a plan only to find issues at the very end, it provides ample opportunities to test along the way.
-+ Who it's not for:
++ `Who it's not for`:
   + Teams who want more flexibility and early input from users.
   + Even the best-laid plans often go astray. And the downsides of this process are basically the inverse of its positive features.
   + First, there’s a lack of control due to the fact that you’re following a rigid structure and testing schedule. Without early input and feedback from your users, you still run the risk of building the wrong software for your business case. And finally, if you’re building anything beyond a simple, small project, it’s nearly impossible to create a specific enough development plan beforehand.
 
 ### 5. Spiral
 ![spiral image](../images/development-process/spiral.png)
-+ What it is:
++ `What it is`:
   + The Spiral software development process combines the V-shaped process’ focus on testing and risk assessment with the incremental nature of Iterative, Incremental, and Agile.
   + Once a plan is in place for a specific iteration or milestone, the next step is to do an in-depth risk analysis to identify errors or areas of excessive risk. For example, let’s say as part of your plan you come up with a feature that hasn’t been validated with customers. Rather than just add it to your current milestone, you might build out a prototype to test with users before moving into the full development phase. After each milestone has been completed, the scope expands further out (like a spiral) and you start with planning and another risk assessment.
-+ Phases:
++ `Phases`:
   + Planning
   + Risk Assessment
   + Development and validation
   + Evaluate results and plan next “loop”
-+ Who it's for:
++ `Who it's for`:
   + Risk-averse teams working on large projects.
   + Obviously, the core purpose of a process like this is to reduce risk. If you’re working on a large or critical project that requires a high level of documentation and validation along the way, following a path like this might make sense. It’s also beneficial if a customer isn’t totally sure about the requirements and is expecting major edits during the product’s development.
-+ Who it's not for:
++ `Who it's not for`:
   + Most people.
   + While fantastic in theory, the spiral software development process is rarely actually put into practice due to the time and costs associated with taking such a calculated approach. Instead, it’s mostly used as an example of how to think critically about an iterative approach to development.
 
