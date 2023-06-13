@@ -50,7 +50,7 @@
         6. Continue until we locate the target or till we reach the last element, which indicates that the element is not present in the list.
         7. With every iteration, the size of our search list shrinks by half. Therefore traversing and finding an entry in the list takes O(log(n)) time.
 
-+ `Quadratic time: O(n^2)`: the performance of a quadratic time complexity algorithm is directly related to the squared size of the input data collection. You will encounter such time complexity in programs when you perform several iterations on data sets.
++ `Quadratic time: O(n^2)`: the performance is directly related to the squared size of the input data collection. You will encounter such time complexity in programs when you perform several iterations on data sets.
     + ```
       def quadratic_function(lst, size):
           for i in range(size):
