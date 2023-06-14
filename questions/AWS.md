@@ -70,8 +70,8 @@
     + General Purpose
 
 17. What is the relation between the Availability Zone and Region?
-    + `AWS Availability Zone`: is a physical location where an Amazon data center is located.
-    + `AWS Region`: is a collection or group of Availability Zones or Data Centers.
+    + `AWS Availability Zone`: a physical location where an Amazon data center is located.
+    + `AWS Region`: a collection or group of Availability Zones or Data Centers.
     + This setup helps your services to be more available as you can place your VMs in different data centers within an AWS Region. If one of the data centers fails in a Region, the client requests still get served from the other data centers located in the same Region. This arrangement, thus, helps your service to be available even if a Data Center goes down.
 
 18. How do you monitor Amazon VPC?
@@ -100,7 +100,7 @@
 
 24. What do you understand by a Security Group?
     + When you create an instance in AWS, you may or may not want that instance to be accessible from the public network. Moreover, you may want that instance to be accessible from some networks and not from others.
-    + `Security Groups`: are a type of rule-based Virtual Firewall using which you can control access to your instances. You can create rules defining the Port Numbers, Networks, or protocols from which you want to allow access or deny access.
+    + `Security Groups`: a type of rule-based Virtual Firewall using which you can control access to your instances. You can create rules defining the Port Numbers, Networks, or protocols from which you want to allow access or deny access.
 
 25. What are Spot Instances and On-Demand Instances?
     + `Spot Instances`: When AWS creates EC2 instances, there are some blocks of computing capacity and processing power left unused. AWS releases these blocks as Spot Instances. Spot Instances run whenever capacity is available. These are a good option if you are flexible about when your applications can run and if your applications can be interrupted.
@@ -111,7 +111,7 @@
       + If Connection Draining is enabled, the Load Balancer will allow an outgoing instance to complete the current requests for a specific period but will not send any new request to it. Without Connection Draining, an outgoing instance will immediately go off and the requests pending on that instance will error out.
 
 27. What is a Stateful and a Stateless Firewall?
-    + `Stateful Firewall`: the one that maintains the state of the rules defined. It requires you to define only inbound rules. Based on the inbound rules defined, it automatically allows the outbound traffic to flow.
+    + `Stateful Firewall`: maintains the state of the rules defined. It requires you to define only inbound rules. Based on the inbound rules defined, it automatically allows the outbound traffic to flow.
     + `Stateless Firewall`: requires you to explicitly define rules for inbound as well as outbound traffic.
     + For example, if you allow inbound traffic from Port 80, a Stateful Firewall will allow outbound traffic to Port 80, but a Stateless Firewall will not do so.
 
@@ -133,7 +133,7 @@
 32. Can you change the Private IP Address of an EC2 instance while it is running or in a stopped state?
     + No, a Private IP Address of an EC2 instance cannot be changed. When an EC2 instance is launched, a private IP Address is assigned to that instance at the boot time. This private IP Address is attached to the instance for its entire lifetime and can never be changed.
 
-33. What is the use of lifecycle hooks is Autoscaling?
+33. What is the use of lifecycle hooks in Autoscaling?
     + Lifecycle hooks are used for Auto-scaling to put an additional wait time to a scale-in or a scale-out event.
 
 34. What are the policies that you can set for your user’s passwords?

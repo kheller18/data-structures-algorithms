@@ -44,7 +44,7 @@ API testing is a category of software testing that helps test systems defined as
 8. What are the advantages of API Testing?
    + `Core Functionality Testing`: provides access to the entire system without the need for a user interface. The functionalities of the application would be evaluated end-to-end without the need for GUI (Graphical User Interface) which helps in detecting issues that can prove to be bigger at the time of GUI testing.
    + `Time and Cost Effectiveness`: usually less time-consuming when compared to GUI testing. It also requires less code for testing the functionalities thereby making it easier to set up and get faster access to test coverage. It also results in effective cost savings for the project.
-   + `Language-Independent`: The data transfer between the test platform to the applications is done utilizing XML or JSON and is completely independent of the languages used in developing the systems. The test automation suite can be developed in any language.
+   + `Language-Independent`: the data transfer between the test platform to the applications is done utilizing XML or JSON and is completely independent of the languages used in developing the systems. The test automation suite can be developed in any language.
    + `Ease of Integration with GUI`: API testing provides highly flexible test suites that help in easier integration with the GUI tests. For instance, before the GUI test cases are initiated, employing API test cases, we can create sample users that can act as an initial base for the GUI tests.
    ![api advantages](../images/api-testing/testing_advantages.png)
 
@@ -91,13 +91,13 @@ API testing is a category of software testing that helps test systems defined as
     + `API Specification Review`: the first and foremost step of documentation of the API testing needs and requirements. It should clearly state the purpose of the API, the application workflow and its features along with all other required details which could possibly help to plan the API testing process smoothly.
 
 17. What is Latency in API testing?
-    + `Latency`: refers to the response time or the delay taken by the request to reach the server. We need to ensure that the latency involved in reaching the server is minimum as higher the latency, greater is the impact in the application’s speed and performance.
+    + `Latency`: the response time or the delay taken by the request to reach the server. We need to ensure that the latency involved in reaching the server is minimum as higher the latency, greater is the impact in the application’s speed and performance.
 
 18. What do you understand by Throughput in Performance testing?
-    + `Throughput`: refers to the number of transactions per second that an application can handle under the influence of lot of users (load). The API needs to ensure that required throughput is met before it is deployed on production. We can identify this by performing the Load Testing of the APIs. We can do this by identifying multiple transactions of different priorities and check how many requests are successfully passed in acceptable time governed by the SLAs (Service Level Agreements) defined by us.
+    + `Throughput`: the number of transactions per second that an application can handle under the influence of lot of users (load). The API needs to ensure that required throughput is met before it is deployed on production. We can identify this by performing the Load Testing of the APIs. We can do this by identifying multiple transactions of different priorities and check how many requests are successfully passed in acceptable time governed by the SLAs (Service Level Agreements) defined by us.
 
 19. How do you document an API functionality? What are the tools available for achieving the same?
-    + `API documentation`: represents any description of the functionality of the API. Since this documentation will be used by external developers, we need to follow some best practices. They are:
+    + `API documentation`: any description of the functionality of the API. Since this documentation will be used by external developers, we need to follow some best practices. They are:
       + Plan what needs to be shown in your documentation.
       + Do not exclude any fundamental sections of the API functionality.
       + Use simple words by avoiding technical jargon.
@@ -111,7 +111,7 @@ API testing is a category of software testing that helps test systems defined as
       + Swagger UI
 
 20. What is the most important difference between API testing and UI testing?
-    + `UI testing`: represents testing by using Graphical User Interface. The main area of focus in this is to test the look and feel of the software application by focusing on how the application is feasible for the end-users, do the functionalities of all the items shown on the UI screen - images, fonts, buttons, layouts etc are appearing properly as expected.
+    + `UI testing`: testing by using Graphical User Interface. The main area of focus in this is to test the look and feel of the software application by focusing on how the application is feasible for the end-users, do the functionalities of all the items shown on the UI screen - images, fonts, buttons, layouts etc are appearing properly as expected.
     + `API testing`: ensures the testing of communication of data between various software systems. It mostly falls under the validation of back-end functionality.
 
 21. What are the major blockers or challenges faced while performing API testing?
@@ -125,11 +125,11 @@ API testing is a category of software testing that helps test systems defined as
     + `Optimal Testing`: Since it is not possible to test anything exhaustively, there needs to be at least some optimal amount of testing depending on the risk assessment performed on the application.
     + `Defect Clustering`: represents the clustering of modules containing most defects. As a general rule, almost 80% of the defects are found in 20% of the application modules. These risky modules can be identified by following this approach.
     However this principle has a problem. We might have to perform API testing repeatedly on the application which might be obstructive to finding new bugs.
-    + `Pesticide Paradox`: This paradox states that if the testers use the same test cases repeatedly, then they would not be capable of finding new bugs over a period of time. Hence, the testers need to be fully equipped by reviewing and revising the test cases regularly. New test cases are more effective in finding new bugs. However, no amount of testing can ensure that the product is 100% bug-free.
+    + `Pesticide Paradox`: states that if the testers use the same test cases repeatedly, then they would not be capable of finding new bugs over a period of time. Hence, the testers need to be fully equipped by reviewing and revising the test cases regularly. New test cases are more effective in finding new bugs. However, no amount of testing can ensure that the product is 100% bug-free.
     + `Presence of defects`: Another principle of testing is that the aim of testing should be the presence of bugs and not the absence of defects. The goal of testing is to reduce the probability of finding undiscovered bugs. In case 0 defects are found, yet we cannot fully claim that our software is 100% bug-free.
     + `Error absence fallacy`: There can be an increased possibility of software being unusable even if it is 99% bug-free which can be wrong. The main focus of software testing is to ensure that the software addresses the business requirements correctly. This principle states that even if we identify and fix the defects if the software does not fulfil the business requirements, then the system is unusable.
-    + `Early Testing`: This principle states that it is easier to fix bugs early in the software development lifecycle. Hence, it is recommended to start testing the application as early as possible.
-    + `Context Dependent Testing`: The way we test an application depending on the type of the system. We use different techniques, methodologies and test cases to test the applications depending on the type. For example, the way we test e-commerce applications is different from the way we test online streaming applications.
+    + `Early Testing`: states that it is easier to fix bugs early in the software development lifecycle. Hence, it is recommended to start testing the application as early as possible.
+    + `Context Dependent Testing`: the way we test an application depending on the type of the system. We use different techniques, methodologies and test cases to test the applications depending on the type. For example, the way we test e-commerce applications is different from the way we test online streaming applications.
 
 23. What are the different bugs that can be found in API testing?
     + Duplicate or missing API functionality
@@ -145,7 +145,7 @@ API testing is a category of software testing that helps test systems defined as
     + Improper status codes
 
 24. Define Test API.
-    + `Test API`: refers to a set of APIs or library utilities that helps developers to create automated test cases for testing .NET or WIN 32 systems. It has a set of basic data building blocks, data types, data structures etc.
+    + `Test API`: a set of APIs or library utilities that helps developers to create automated test cases for testing .NET or WIN 32 systems. It has a set of basic data building blocks, data types, data structures etc.
 
 25. What is Payload?
     + `Payload`: the most common term used in the case of REST APIs. It refers to the actual data sent to the server in the API request in different formats like JSON, XML etc.

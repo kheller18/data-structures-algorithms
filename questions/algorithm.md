@@ -31,24 +31,24 @@ Before diving deep into algorithm interview questions, let us first understand t
 
 1. How can we compare between two algorithms written for the same problem?
    + The complexity of an algorithm is a technique that is used to categorise how efficient it is in comparison to other algorithms. It focuses on how the size of the data set to be processed affects execution time. In computing, the algorithm's computational complexity is critical. It is a good idea to categorise algorithms according to how much time or space they take up and to describe how much time or space they take up as a function of input size.
-     + `Complexity of Time`: The running time of a program as a function of the size of the input is known as time complexity.
-     + `Complexity of Space`: Space complexity examines algorithms based on how much space they require to fulfil their tasks. In the early days of computers, space complexity analysis was crucial (when storage space on the computer was limited).
+     + `Complexity of Time`: the running time of a program as a function of the size of the input is known as time complexity.
+     + `Complexity of Space`: examines algorithms based on how much space they require to fulfil their tasks. In the early days of computers, space complexity analysis was crucial (when storage space on the computer was limited).
    + `Note`: Nowadays, a lack of space is rarely an issue because computer storage is plentiful. Therefore, it is mostly the Time Complexity that is given more importance while evaluating an Algorithm.
 
 2. What do you understand by the best case, worst case and average case scenario of an algorithm?
    + The mathematical foundation/framing of an algorithm's run time performance is defined by asymptotic analysis. We can easily determine the best case, average case, and worst-case scenarios of an algorithm using asymptotic analysis.
-     + `Best Case Scenario of an Algorithm`: The best-case scenario for an algorithm is defined as the data arrangement in which the algorithm performs the best. Take a binary search, for example, where the best-case scenario is if the target value is in the very centre of the data we are looking for. The best-case scenario for binary search would have a time complexity of O(1) or constant time complexity.
+     + `Best Case Scenario of an Algorithm`: the data arrangement in which the algorithm performs the best. Take a binary search, for example, where the best-case scenario is if the target value is in the very centre of the data we are looking for. The best-case scenario for binary search would have a time complexity of O(1) or constant time complexity.
      + `Worst Case Scenario of an Algorithm`: The worst collection of input for a given algorithm is referred to as the worst-case scenario of an Algorithm. For example, quicksort can perform poorly if the pivot value is set to the largest or smallest element of a sublist. Quicksort will degenerate into an algorithm with a time complexity of O(n^2), where n is the size of the list to be sorted.
-     + `Average Case Scenario of an Algorithm`: The average-case complexity of an algorithm is the amount of some computational resource (usually time) used by the process, averaged over all possible inputs, according to computational complexity theory. For example, the average-case complexity of the randomised quicksort algorithm is O(n*log(n)), where n is the size of the list to be sorted.
+     + `Average Case Scenario of an Algorithm`: the amount of some computational resource (usually time) used by the process, averaged over all possible inputs, according to computational complexity theory. For example, the average-case complexity of the randomised quicksort algorithm is O(n*log(n)), where n is the size of the list to be sorted.
 
 3. What do you understand by the Asymptotic Notations?
-   + `Asymptotic analysis`: is a technique that is used for determining the efficiency of an algorithm that does not rely on machine-specific constants and avoids the algorithm from comparing itself to the time-consuming approach. For asymptotic analysis, asymptotic notation is a mathematical technique that is used to indicate the temporal complexity of algorithms.
+   + `Asymptotic analysis`: a technique that is used for determining the efficiency of an algorithm that does not rely on machine-specific constants and avoids the algorithm from comparing itself to the time-consuming approach. For asymptotic analysis, asymptotic notation is a mathematical technique that is used to indicate the temporal complexity of algorithms.
    + The following are the three most common asymptotic notations:
-     + `Big Theta Notation: (θ Notation)`: The exact asymptotic behaviour is defined using the theta (θ) Notation. It binds functions from above and below to define behaviour. Dropping low order terms and ignoring leading constants is a convenient approach to get Theta notation for an expression.
+     + `Big Theta Notation: (θ Notation)`: the exact asymptotic behaviour is defined using the theta (θ) Notation. It binds functions from above and below to define behaviour. Dropping low order terms and ignoring leading constants is a convenient approach to get Theta notation for an expression.
        ![big theta notation](../images/algorithm/big_theta.png)
-     + `Big O Notation`: The Big O notation defines an upper bound for an algorithm by bounding a function from above. Consider the situation of insertion sort: in the best case scenario, it takes linear time, and in the worst case, it takes quadratic time. Insertion sort has a time complexity O(n^2). It is useful when we just have an upper constraint on an algorithm's time complexity.
+     + `Big O Notation`: defines an upper bound for an algorithm by bounding a function from above. Consider the situation of insertion sort: in the best case scenario, it takes linear time, and in the worst case, it takes quadratic time. Insertion sort has a time complexity O(n^2). It is useful when we just have an upper constraint on an algorithm's time complexity.
        ![big O notation](../images/algorithm/big_o.png)
-     + `Big Omega (Ω) Notation`: The Ω Notation provides an asymptotic lower bound on a function, just like Big O notation does. It is useful when we have a lower bound on an algorithm's time complexity.
+     + `Big Omega (Ω) Notation`: provides an asymptotic lower bound on a function, just like Big O notation does. It is useful when we have a lower bound on an algorithm's time complexity.
        ![big omega](../images/algorithm/big_omega.png)
 
 4. Write an algorithm to swap two given numbers in Java without using a temporary variable.
@@ -70,9 +70,9 @@ Before diving deep into algorithm interview questions, let us first understand t
 
 5. Explain the Divide and Conquer Algorithmic Paradigm. Also list a few algorithms which use this paradigm.
    + `Divide and Conquer`: an algorithm paradigm, not an algorithm itself. It is set up in such a way that it can handle a large amount of data, split it down into smaller chunks, and determine the solution to the problem for each of the smaller chunks. It combines all of the piecewise solutions of the smaller chunks to form a single global solution. This is known as the divide and conquer technique. The Divide and Conquer algorithmic paradigm employ the steps given below:
-     + `Divide`: The algorithm separates the original problem into a set of subproblems in this step.
-     + `Conquer`: The algorithm solves each subproblem individually in this step.
-     + `Combine`: In this step, the algorithm combines the solutions to the subproblems to obtain the overall solution.
+     + `Divide`: separates the original problem into a set of subproblems in this step.
+     + `Conquer`: solves each subproblem individually in this step.
+     + `Combine`: the algorithm combines the solutions to the subproblems to obtain the overall solution.
      ![divide and conquer](../images/algorithm/divide_conquer.png)
      + Some of the algorithms which use the Divide and Conquer Algorithmic paradigm are as follows:
        + Binary Search
@@ -96,10 +96,10 @@ Before diving deep into algorithm interview questions, let us first understand t
 7. What do you understand by a searching algorithm? List a few types of searching algorithms.
    + `Searching Algorithms`: used to look for an element or get it from a data structure (usually a list of elements). These algorithms are divided into two categories based on the type of search operation:
      + `Sequential Search`: traverses the list of elements consecutively, checking each element and reporting if the element to be searched is found. Linear Search is an example of a Sequential Search Algorithm.
-     + `Interval Search`: These algorithms were created specifically for searching sorted data structures. Because they continually target the centre of the search structure and divide the search space in half, these types of search algorithms are far more efficient than Sequential Search algorithms. Binary Search is an example of an Interval Search Algorithm.
+     + `Interval Search`: created specifically for searching sorted data structures. Because they continually target the centre of the search structure and divide the search space in half, these types of search algorithms are far more efficient than Sequential Search algorithms. Binary Search is an example of an Interval Search Algorithm.
 
 8. Describe the Linear Search Algorithm.
-   + `Linear Search Algorithm`: Used to find an element in a group of elements. It works by traversing the list of elements from the beginning to the end and inspecting the properties of all the elements encountered along the way. Let us consider the case of an array containing some integer elements. We want to find out and print all of the elements' positions that match a particular value (also known as the "key" for the linear search). The linear search works in a flow here, matching each element with the number from the beginning to the end of the list, and then printing the element's location if the element at that position is equal to the key.
+   + `Linear Search Algorithm`: used to find an element in a group of elements. It works by traversing the list of elements from the beginning to the end and inspecting the properties of all the elements encountered along the way. Let us consider the case of an array containing some integer elements. We want to find out and print all of the elements' positions that match a particular value (also known as the "key" for the linear search). The linear search works in a flow here, matching each element with the number from the beginning to the end of the list, and then printing the element's location if the element at that position is equal to the key.
    + Given below is an algorithm describing Linear Search:
      + `Step 1`: Using a loop, traverse the list of elements given.
      + `Step 2`: In each iteration, compare the target value (or key-value) to the list's current value.
@@ -188,7 +188,7 @@ Before diving deep into algorithm interview questions, let us first understand t
       + `Step 3`: Call the recursive function with the index of the adjacent node after traversing all nearby and unmarked nodes.
 
 16. How do the encryption algorithms work?
-    + The process of transforming plaintext into a secret code format known as "Ciphertext'' is known as encryption. For calculations, this technique uses a string of bits known as "keys" to convert the text. The larger the key, the more potential patterns for producing ciphertext there are. The majority of encryption algorithms use fixed blocks of input with lengths ranging from 64 to 128 bits, while others use the stream technique.
+    + `Encryption`: the process of transforming plaintext into a secret code format known as "Ciphertext''. For calculations, this technique uses a string of bits known as "keys" to convert the text. The larger the key, the more potential patterns for producing ciphertext there are. The majority of encryption algorithms use fixed blocks of input with lengths ranging from 64 to 128 bits, while others use the stream technique.
 
 17. What are few of the most widely used cryptographic algorithms?
     + IDEA
