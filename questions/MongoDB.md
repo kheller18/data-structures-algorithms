@@ -99,7 +99,7 @@
       + `Array`: `{"x" : ["a", "b", "c"]}`
       + `Embedded Document`: `{"x" : {"foo" : "bar"}}`
       + `Object ID`: `{"x" : ObjectId()}`
-      + `Binary Data`: Binary data is a string of arbitrary bytes.
+      + `Binary Data`: a string of arbitrary bytes.
       + `Code`: `{"x" : function() { /* ... */ }}`
 
 13. When should you use MongoDB?
